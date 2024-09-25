@@ -1,0 +1,418 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{array}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{pgfplots}
+\usepackage{siunitx}
+\usepackage{wrapfig}
+
+\title{Homework \#2}
+\author{Donald Aingworth IV}
+\date{September 4, 2024}
+
+\pgfplotsset{width=8cm,compat=1.9}
+\usepgfplotslibrary{external}
+% \tikzexternalize
+
+\begin{document}
+
+\DeclareSIUnit{\mile}{mi}
+\DeclareSIUnit{\gal}{gal}
+\DeclareSIUnit{\foot}{ft}
+\DeclareSIUnit{\h}{h}
+
+\maketitle
+
+\section*{Problem 1}
+In the graph below, is there any time, or time interval, for which the following hold? (a) v = 0, a = 0; (b) v = 0, a $\ne$ 0; (c) v $\ne$ 0, a = 0; (d) v $>$ 0, a $>$ 0; (e) v $>$ 0, a $<$ 0; (f) v $<$ 0, a $<$ 0; (g) v $<$ 0, a $>$ 0
+
+\begin{center}
+    \includegraphics*[width=13cm]{graph_1.png}
+\end{center}
+
+\subsection*{Solution}
+a) \boxed{t=(3,4)} From 3 to 4, the magnitude indicated by the line stays the same, as does the slope. \\
+b) \boxed{t=7} At the point t = 7, there is an upwards peak, implying that there is a nonzero acceleration, despite a negative slope. \\
+c) \boxed{t=(1,2)} The line is sloped, but it is straight. This implies that the velocity is nonzero, but the acceleration is. \\
+d) \boxed{t=(4,5)} At t = 4, the slope is zero. At t = 5, the slope is positive. The velocity is positive, including on average. The slope also has a positive rate of change. \\
+e) \boxed{t=(6,7)} At t = 6, the slope is positive. At t = 7, the slope is zero. The velocity is positive beause the magnitude of x is increasing. The acceleration is negative because the slope is decreasing. \\
+f) \boxed{t=(0,1)} At t = 0, the slope is near zero but negative. At t = 1, the slope is negative. The velocity is negative because the magnitude of x is decreasing. The acceleration is negative because the slope of the line is decreasing. \\
+g) \boxed{t=(2,3)} At t = 2, the slope is negative. At t = 3, the slope is near zero. The velocity is negative because the magnitude of x is decreasing. The acceleration is positive because the slope of the line is increasing. 
+
+\pagebreak
+\section*{Problem 2}
+The figure below shows the v versus t graphs for cars A and B. At t = 0 both are at x = 0.
+Estimate: (a) where and when they meet again; and (b) their velocities when they meet.
+
+\begin{center}
+    \includegraphics*[width=10cm]{graph_2.png}
+\end{center}
+
+\subsection*{Solution}
+a) (t,x) = (6 s, 48 m)
+
+As it appears, $v_A = v_B$ at (t,v) = (3, 8). The two cars cross paths at $x_A = x_B$. Since $x(t) = \int_0^a v(t) dt$, we can make an equation for the position to have to be equivalent.
+\begin{equation*}
+    \int_{0}^{a} v_A(t)\ dt = \int_{0}^{a} v_B(t)\ dt
+\end{equation*}
+
+\pagebreak
+We can also give a formula for the velocity of both cars A and B at time t, then use that to find formulae for position relative to time.
+\begin{align*}
+    v_A(t) &= 8\ \unit{\m/\s} \\
+    v_B(t) &= t \cdot \frac{8}{3}\ \unit{m/s^2} \\
+    \int_{0}^{a} v_A(t)\ dt &= \int_{0}^{a} v_B(t)\ dt \\
+    \int_{0}^{a} 8\ \unit{\m/\s}\ dt &= \int_{0}^{a} \frac{8}{3}t\ \unit{\m/\s}^2\ dt \\
+    8t\ \unit{\m} &= \frac{4}{3} t^2\ \unit{\m} \\
+    x_A(t) &= x_B(t)
+\end{align*}
+
+We can now solve for t to find the estimate for when $v_A = v_B$.
+\begin{align*}
+    8t\ \unit{\m} &= \frac{4}{3} t^2\ \unit{\m} \\
+    8\ \unit{\m} &= \frac{4}{3} t\ \unit{\m} \\
+    2*3\ \unit{\s} &= t \\
+    t &= 6 \unit{s}
+\end{align*}
+
+We can use this and the above to find the position at the given time:
+\begin{align*}
+    x_A(t) &= 8t\ \unit{\m} \\
+    x_A(5) &= 8 \cdot 6\ \unit{m} \\
+    &= 48\ \unit{\m}
+\end{align*}
+
+As such, \boxed{(t,x) = (6\ \unit{\s},\ 48\ \unit{\m})}. 
+
+
+b) $v_A$ = 8; $v_B$ = 16 m/s
+
+We can now plug in the time value for the velocity formulae. Beginning, the velocity for car A is constant at \boxed{v = 8\ \unit{\m/\s}}. 
+\begin{equation*}
+    v_B(t) = \frac{8}{3}t\ \unit{\m/\s} \rightarrow v_B(6) = \frac{8}{3}\unit{m/s^2} * 6\unit{s} = \boxed{16\ \unit{\m/\s}}
+\end{equation*}
+
+\pagebreak
+
+\section*{Problem 3}
+
+A Honda Fit is initially with a speed of 115 km/h. Find its acceleration and the time taken
+to stop given that: (a) it brakes to a stop in 64.0 m; (b) it crashes head-on into a barrier and
+crumples by 1.00 m.
+\subsection*{Solution}
+a) Acceleration: $-\frac{330625}{41472}\unit{m/s^2} \approx -7.97 \unit{m/s^2}$. 
+Time: $\frac{2304}{575} s \approx 4.01 s$
+
+We first convert the troublesom 115 km/h to m/s.
+\begin{equation*}
+    115 \unit{km/h} * \frac{1 \unit{hr}}{60 \unit{min}} * \frac{1 \unit{min}}{60 \unit{sec}} * \frac{1000 \unit{\kilo\meter}}{1 \unit{\meter}} = \frac{575}{18} \unit{m/s}
+\end{equation*}
+
+Then, we use the third kinematic equation to find the acceleration.
+\begin{align*}
+    v_f^2 &= v_i^2 + 2a\Delta x\\
+    a &= \frac{v_f^2 - v_i^2}{2\Delta x} = \frac{(0 \unit{m/s})^2 - (\frac{575}{18} \unit{m/s})^2}{2*64\unit{m}} = -\frac{575^2}{18^2}\unit{m^2/s^2} * \frac{1}{128\unit{m}}\\
+        &= -\frac{330625}{324 * 128}\unit{m/s^2} = \boxed{-\frac{330625}{41472}\unit{m/s^2} \approx -7.97 \unit{m/s^2}}
+\end{align*}
+
+Now that we have the acceleration, we can use this to find the time.
+\begin{align*}
+    v_f &= v_i + at\\
+    t &= \frac{v_f - v_i}{a} = \frac{0\unit{m/s} - \frac{575}{18}\unit{m/s}}{-\frac{330625}{41472}\unit{m/s^2}} = \frac{575}{18}*\frac{41472}{330625}\ \unit{s} = \boxed{\frac{2304}{575} s \approx 4.01 \unit{s}}
+\end{align*}
+
+b) Acceleration: $-\frac{330625}{648}\unit{m/s^2} \approx -510.22 \unit{m/s^2}$.
+Time: $\frac{36}{575} \unit{s} \approx 0.0626 \unit{s}$
+
+We use the third kinematic equation to find the acceleration.
+\begin{align*}
+    0 &= (\frac{575}{18} \unit{m/s})^2 + 2a*1\unit{m/s} = \frac{330625}{324}\unit{m^2/s^2} + 2a*1\unit{m/s}\\
+    a &= \frac{330625}{324*2}\unit{m/s^2} = \boxed{-\frac{330625}{648}\unit{m/s^2} \approx -510.22 \unit{m/s^2}}
+\end{align*}
+
+Now, we use the acceleration to find the time.
+\begin{align*}
+    t &= \frac{0\unit{m/s} - \frac{575}{18}\unit{m/s}}{-\frac{330625}{648}\unit{m/s^2}} = \frac{575}{18}*\frac{648}{330625}\ \unit{s} = \boxed{\frac{36}{575} \unit{s} \approx 0.0626 \unit{s}}
+\end{align*}
+
+\pagebreak
+
+\section*{Problem 4}
+
+An object moves with constant acceleration. At t = 2.50 s, the position of the object is
+x = 2.00 m and its velocity is v = 4.50 m/s. At t = 7.00 s, v = -12.0 m/s. Find: (a) the
+position and the velocity at t = 0; (b) the average speed from 2.50 s to 7.00 s, and (c) the
+average velocity from 2.50 s to 7.00 s.
+
+\subsection*{Solution}
+
+a) Velocity: $\frac{41}{3}$ \unit{\m/\s} $\approx$ 13.67 \unit{\m/\s}; Position: -$\frac{124.25}{6}$ \unit{m} $\approx$ -20.708 \unit{\m}
+
+We have here the fact that the acceleration is constant. As such, we can formulate the following equation.
+\begin{align*}
+    a&= \frac{\Delta v}{\Delta t} = \frac{v_1 - v_0}{t_1 - t_0} 
+      = \frac{-12\ \unit{\m/\s} - 4.5\ \unit{\m/\s}}{7\ \unit{\s} - 2.5\ \unit{\s}}\\
+     &= -\frac{-16.5\ \unit{\m/\s}}{4.5\ \unit{\s}}
+      = -\frac{11}{3} \unit{\m/\s^2} \approx -3.67 \unit{\m/\s^2}
+\end{align*}
+
+We can then plug this in for $v=v_0+at$, offsetting the point at which t = 0 by -2.50s.
+\begin{equation*}
+    v(-2.50\unit{s}) = 4.50\unit{m/s} + \frac{11}{3}*\frac{5}{2}\ \unit{m/s} = \boxed{\frac{41}{3}\unit{m/s} \approx 13.67\unit{m/s}}
+\end{equation*}
+
+We can then plug the acceleration in for the equation $x(0) = x_0 + v_0t + \frac{1}{2}at^2$.
+\begin{align*}
+    x(0\unit{s}) &= 2.00 \unit{m} + 4.50\unit{m/s}*0.00\unit{s} - \frac{1}{2}*\frac{11}{3}\unit{m/s^2}*0.00^2\unit{s}^2 = 2.00 \unit{m}\\
+    x(-2.50\unit{s}) &= 2.00 \unit{m} + 4.50\unit{m/s}*(-2.50\unit{s}) - \frac{1}{2}*\frac{11}{3}\unit{m/s^2}*(-2.50^2\unit{s}^2) \\
+        &= 2.00 \unit{m} - 11.250\unit{m} - \frac{11}{3}\unit{m/s^2}*6.250\unit{s}^2 = -\frac{1}{2}*\frac{68.75}{3}\unit{m} - 9.250 \unit{m}\\
+        &= \frac{-68.75 - 55.50}{6}\unit{m} = \boxed{ -\frac{124.25}{6} \unit{m} \approx -20.708 \unit{\m} }
+\end{align*}
+
+\pagebreak
+b) $\frac{219}{44} \unit{m/s} \approx 4.977\unit{m/s}$
+
+Since $s = |v|$, we can formulate the following equations:
+\begin{align*}
+    s_{avg} = |v_{avg}| = \left| \frac{\Delta x}{\Delta t} \right| = \left| \frac{x_1 - x_0}{t_1 - t_0} \right|
+\end{align*}
+
+We have $x_0, t_1,\text{and }t_0$. We can find $x_1$, reusing the offset from part (a).
+\begin{align*}
+    x_1 &= x(4.50\unit{s}) = 2.00 \unit{m} + 4.50\unit{m/s}*(4.50\unit{s}) - \frac{11}{6}\unit{m/s^2}*(4.50^2\unit{s}^2) \\
+        &= 2.00 \unit{m} + 20.25 \unit{m} - \frac{11}{6}\unit{m/s^2}*(20.25\unit{s}^2) = 22.25\unit{m} - \frac{297}{8} \unit{m} \\
+        &= -\frac{297}{8}\unit{m} + 22.25\unit{m} = -14.875\unit{m}
+\end{align*}
+
+Next, we compute the value of t for which the velocity is zero.
+\begin{align*}
+    v = v_0 + at \rightarrow
+    0 = 4.5 - \frac{11}{3} * t \rightarrow
+    t = \frac{\frac{9}{2}}{\frac{11}{3}} = \frac{27}{22}\rightarrow
+    \frac{9}{2} - t = \frac{36}{11}
+\end{align*}
+
+Inserting this into the equation for position but starting instead t position 0, we get:
+\begin{align*}
+    x_2 &= 4.50\unit{m/s}*(\frac{27}{22}\unit{s}) - \frac{11}{6}\unit{m/s^2}*(\frac{27}{22}^2\unit{s}^2)\\
+        &= 2 + \frac{243}{44} - \frac{243}{88} \unit{m} = \frac{419}{88} \unit{m}
+\end{align*}
+
+Doing the same for the remaining amount of time, this time with the initial velocity being zero because of the stats quo at that time, we get:
+\begin{align*}
+    x_3 = -\frac{11}{6}\unit{m/s^2}*(\frac{36}{11}^2\unit{s}^2) = -\frac{216}{11} \unit{m}
+\end{align*}
+
+Adding the absolute values of the two together and dividing by the total time, we get the average speed:
+\begin{align*}
+    s_{avg} = \frac{|x_3| + |x_2|}{\Delta t} = \frac{\frac{243}{88}\unit{m} + \frac{216}{11}\unit{m}}{\frac{9}{2}\unit{s}} = \boxed{\frac{219}{44} \unit{m/s} \approx 4.977\unit{m/s}}
+\end{align*}
+
+c) -3.75 m/s
+
+We can here recycle values we used in part (b). 
+\begin{align*}
+    v_{avg} = \frac{x_1 - x_0}{t_1 - t_0} = \frac{-14.875\unit{m} - 2.0\unit{m}}{4.5\unit{s} - 0\unit{s}} = \frac{-16.875\unit{m}}{4.5\unit{s}} = \boxed{-\frac{15}{4} \unit{m/s} = -3.75 \unit{m/s}}
+\end{align*}
+
+\pagebreak
+
+\section*{Problem 5}
+
+A ball thrown vertically up from the ground rises to height of 24.0 m. How high would it rise
+on the moon if given the same initial speed? The acceleration due to gravity on the moon is one-
+sixth that on earth.
+
+\subsection*{Solution}
+We begin by taking the formula $v_f^2 = v_i^2 + 2a\Delta x$. We presently know that $v_f=0$ and $a=-9.8\unit{m/s}$ from the laws of nature and logic, and $\Delta x=24\unit{m}$ from the given information. From this, we can calculate the initial (vertical) velocity.
+
+\begin{align*}
+    v_f^2 &= v_i^2 + 2a\Delta x\\
+    v_i^2 &= v_f^2 - 2a\Delta x\\
+        &= 0^2 - 2*(-9.8\unit{m/s^2})*24\unit{m}\\
+        &= 4.80 * 9.8\ \unit{m^2/s^2} = 470.4\ \unit{m^2/s^2}\\
+    v_i &= \sqrt{470.4}\ \unit{m/s}
+\end{align*}
+
+We can from this calculate the height which it would reach on the moon. We can calculate the acceleration due to gravity on the moon as one sixth that on earth, or $a_{Moon} = \frac{a_{Earth}}{6} = \frac{-9.8 \unit{m/s^2}}{6} = -\frac{49}{30}\unit{m/s^2}$.
+
+\begin{align*}
+    v_f^2 &= v_i^2 + 2a\Delta x\\
+    \Delta x &= \frac{v_f^2 - v_i^2}{2a} = \frac{0^2 \unit{m^2/s^2} - 470.4 \unit{m^2/s^2}}{-2*\frac{49}{30}\unit{m/s^2}}\\
+            &= \frac{470.4 * 15}{49} \unit{m}= \boxed{144\ \unit{\meter}}
+\end{align*}
+
+\pagebreak
+\section*{Problem 6}
+
+A ball is thrown up from the top of a building 55.0 m high. It rises to a maximum height
+of 20.0 m above the roof. (a) When does it land on the ground below? (b) At what velocity
+does it land? (c) When is it 20.0 m below the roof?
+
+\subsection*{Solution}
+a) 5.93 \unit{s}
+
+First, we can calculate the initial vertical velocity from the velocity where x = 20m.
+\begin{align*}
+    v_0^2 &= v^2 - 2a\Delta x = 0^2 - 2(-9.8\unit{m/s^2})(20\unit{m}) = 40*9.8 \unit{m^2/s^2} = 392 \unit{m^2/s^2}\\
+    v_0 &= \sqrt{392} \unit{m/s}
+\end{align*}
+
+Now, we can calculate the velocity when the ball hits the ground.
+\begin{align*}
+    v^2 &= v_0^2 + 2a\Delta x = 392 \unit{m^2/s^2} + 2(-9.8\unit{m/s^2})(-55\unit{m})\\
+        &= 392 \unit{m^2/s^2} + 110 * 9.8\ \unit{m^2/s^2} = 392 \unit{m^2/s^2} + 1078 \unit{m^2/s^2}\\
+        &= 1470 \unit{m^2/s^2}\\
+    v &= \pm\sqrt{1470}\ \unit{m/s} = \pm7*\sqrt{30}\ \unit{m/s}
+\end{align*}
+
+Since the object is travelling in a downward direction, we can confirm that $v = -7*\sqrt{30}\ \unit{m/s}$, which happens to be the answer to part (b). Now, we can calculate the time using another kinematic equation.
+\begin{align*}
+    v &= v_0 + at\\
+    t &= \frac{v - v_0}{a} = \frac{-7*\sqrt{30}\ \unit{m/s} - \sqrt{392} \unit{m/s}}{-9.8 \unit{m/s^2}} \approx \boxed{5.93 \unit{s}}
+\end{align*}
+
+b) $-7\sqrt{30}$ \unit{m/s}. Operations to come to this are listed in part (a).
+
+\pagebreak
+
+c) 4.88 \unit{s}
+\begin{align*}
+    v^2 &= v_0^2 + 2a\Delta x = 392 \unit{m^2/s^2} + 2(-9.8\unit{m/s^2})(-20.0\unit{m}) \\
+        &= 392\unit{m^2/s^2} + 4*98\ \unit{m^2/s^2} = 392\unit{m^2/s^2} + 392\unit{m^2/s^2} = 784\unit{m^2/s^2}\\
+    v &= \sqrt{784} \unit{m/s} = -28 \unit{m/s} = v_0 + at\\
+    t &= \frac{-28 \unit{m/s} - \sqrt{392} \unit{m/s}}{-9.8 \unit{m/s^2}} \approx \boxed{4.88 \unit{s}}
+\end{align*}
+
+\pagebreak
+\section*{Problem 7}
+
+From the v versus t graph below, plot the following graphs: (a) a versus t; (b) x versus t. (c) What is the average acceleration for the first 6.0 s? (d) What is the instantaneous acceleration at 2.0 s? Assume x = 0 at t = 0.
+
+\begin{center}
+    \includegraphics*[width=10cm]{graph_7.png}
+\end{center}
+
+\subsection*{Solution}
+a)
+
+\begin{tikzpicture}
+    \begin{axis}[
+        % axis lines = left,
+        xlabel = \(t (\unit{s})\),
+        ylabel = {\(a(x) (\unit{m/s^2})\)},
+        ymin=-11, ymax=11,
+        ]
+        \addplot [
+            domain=0:4,
+            samples=100,
+            color=red,
+        ]
+        {5};
+        \addplot +[color=red, mark=none] coordinates {(4, 0) (4, 5)};
+        \addplot [
+            domain=4:5,
+            samples=100,
+            color=red,
+        ]
+        {0};
+        \addplot +[color=red, mark=none] coordinates {(5, 0) (5, -10)};
+        \addplot [
+            domain=5:6,
+            samples=100,
+            color=red,
+        ]
+        {-10};
+    \end{axis}
+\end{tikzpicture}
+
+\pagebreak
+b) 
+
+\begin{tikzpicture}
+    \begin{axis}[
+        % axis lines = left,
+        xlabel = \(t\ (\unit{s})\),
+        ylabel = {\(x\ (\unit{m})\)},
+        xmin=0,   xmax=6,
+        ymin=-11, ymax=15,
+        ]
+        \addplot [
+            domain=0:4,
+            samples=100,
+            color=red,
+        ]
+        {(5/2)*x^2 - 10*x};
+        \addplot [
+            domain=4:5,
+            samples=100,
+            color=red,
+        ]
+        {10*(x-4)};
+        \addplot [
+            domain=5:6,
+            samples=100,
+            color=red,
+        ]
+        {-5*x^2+60*x-165};
+    \end{axis}
+\end{tikzpicture}
+
+c) $\frac{5}{3} \unit{m/s^2}$
+
+\begin{equation*}
+    a_{avg} = \frac{\Delta v}{\Delta t} = \frac{0 - (-10)\ \unit{m/s}}{6 - 0\ \unit{s}} = \frac{10}{6} \unit{m/s^2} = \boxed{\frac{5}{3} \unit{m/s^2}}
+\end{equation*}
+
+d) a(2) = 5 \unit{m/s^2}
+
+\pagebreak
+\section*{Problem 8}
+
+The length of a train is 44.5 m. Its front is 100. m from a pole. It accelerates from rest at 0.500 \unit{m/s^2}. (a) How long does it take to go past the pole? (b) At what speeds do its front and rear pass the pole?
+
+
+\subsection*{Solution}
+a) 4.04 s from when the front passes the pole until the rear passes the pole. 20 s from rest until the front passes the pole. 24.04 s from when the train starts moving until the rear passes the pole.
+
+This part of the question is ambiguous as to whether it is requesting the time taken from when the train's front passes the pole to when the trains rear passes the pole, from when the train starts moving until the front passes the pole, until the rear passes the pole, so we will go through these in reverse order. We have some values to work with.
+\begin{align*}
+    &v_0 = 0 \unit{m/s}     &a = 0.500 \unit{m/s^2}\\
+    &\Delta x_1 = 100\unit{m}   &\Delta x_2 = 144.5\unit{m}
+\end{align*}
+
+We can now calculate the velocity at which the front ($v_1$) and the rear ($v_2$) pass the first pole.
+\begin{align*}
+    v_1^2 &= v_0^2 + 2a\Delta x_1           &v_2^2 &= v_0^2 + 2a\Delta x_2\\
+        &= 0 + 2*0.500*100 \unit{m^2/s^2}       &&= 0 + 2*0.500*144.5 \unit{m^2/s^2}\\
+        &= 100 \unit{m^2/s^2}                   &&= 144.5 \unit{m^2/s^2}\\
+    v_1 &= 10 \unit{m/s}                    &v_2 &= \sqrt{144.5} \unit{m/s}
+\end{align*}
+
+Given these, we can calculate that the entire train takes to pass the pole, starting from when the front passes and ending with when the rear passes.
+\begin{align*}
+    v &= v_0 + at\\
+    v_2 &= v_1 + at\\
+    \sqrt{144.5} \unit{m/s} &= 10 \unit{m/s} + (0.500\unit{m/s^2})t\\
+    t &= 2*(\sqrt{144.5} - 10) \unit{s} \approx \boxed{4.04 \unit{s}}
+\end{align*}
+
+We can also calculate the time from rest until the front passes the pole.
+\begin{align*}
+    v &= v_0 + at\\
+    v_1 &= v_0 + at\\
+    10 \unit{m/s} &= 0 \unit{m/s} + (0.500\unit{m/s^2})t\\
+    t &= 2*(10 - 0) \unit{s} \approx \boxed{20.0 \unit{s}}
+\end{align*}
+
+We can also calculate the time from rest until the rear passes the pole.
+\begin{align*}
+    v &= v_0 + at\\
+    v_2 &= v_0 + at\\
+    \sqrt{144.5} \unit{m/s} &= 0 \unit{m/s} + (0.500\unit{m/s^2})t\\
+    t &= 2*(\sqrt{144.5} - 0) \unit{s} \approx \boxed{24.04 \unit{s}}
+\end{align*}
+
+b) In part (a), we found the values $v_{front}$ = 10 m/s and $v_{rear} = \sqrt{144.5}$ m/s
+\end{document}

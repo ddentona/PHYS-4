@@ -1,0 +1,246 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{array}
+\usepackage{gensymb}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{pgfplots}
+\usepackage{siunitx}
+\usepackage{wrapfig}
+
+\title{Homework \#4}
+\author{Donald Aingworth IV}
+\date{September 18, 2024}
+
+\pgfplotsset{width=8cm,compat=1.9}
+\usepgfplotslibrary{external}
+% \tikzexternalize
+
+\begin{document}
+
+\DeclareSIUnit{\mile}{mi}
+\DeclareSIUnit{\gal}{gal}
+\DeclareSIUnit{\foot}{ft}
+\DeclareSIUnit{\h}{h}
+
+\maketitle
+
+\section*{Problem 1}
+Given the three vectors $\vec{A}$ = 1.00 $\hat{i}$ - 4.00 $\hat{j}$ , $\vec{B}$ = 3.00 $\hat{i}$, and $\vec{C}$ = -2.00 $\hat{j}$ evaluate the following expressions if they are allowed mathematically: (a) $\vec{C} \cdot (\vec{A} + \vec{B})$; (b) $\vec{C} \cdot ( \vec{A} \cdot \vec{B} )$; (c) $ C + \vec{A} \cdot \vec{B} $
+
+\subsection*{Solution}
+a) 8
+\begin{align*}
+    \vec{C} \cdot (\vec{A} + \vec{B}) &= (-2.00 \hat{j}) \cdot ((1.00 \hat{i} - 4.00 \hat{j}) + (3.00 \hat{i}))\\
+        &= (-2.00 \hat{j}) \cdot (4.00 \hat{i} - 4.00 \hat{j})\\
+        &= 0 + 8 = \boxed{8}
+\end{align*}
+
+b) DNE. If we turn dot product to scalar multiplication, $-6.00 \hat{j}$.
+\begin{align*}
+    \vec{C} \cdot ( \vec{A} \cdot \vec{B} ) &= (-2.00 \hat{j}) \cdot ((1.00 \hat{i} - 4.00 \hat{j}) \cdot (3.00 \hat{i}))\\
+        &= (-2.00 \hat{j}) \cdot (3*1 + 0*(-4)) = (-2.00 \hat{j}) \cdot 3
+\end{align*}
+From here, we cannot conduct the dot product of a scalar and a vector. If we transform the dot product into scalar multiplication, we can find a vector.
+\begin{equation*}
+    \vec{C} \cdot ( \vec{A} \cdot \vec{B} ) = (-2.00 \hat{j}) \cdot 3 = \boxed{-6.00 \hat{j}}
+\end{equation*}
+
+c) 5.00 if C is the scalar magnitude. DNE if C denotes a vector.
+
+If when using C you are referring to the vector C, this expression is not allowed mathematically. if not and you are referring to the scalar magnitude of C, the answer is as follows.
+\begin{equation*}
+    C + ( \vec{A} \cdot \vec{B} ) = 2.00 + 3.00 = \boxed{5.00}
+\end{equation*}
+
+\pagebreak
+\section*{Problem 2}
+Given the three vectors $\vec{A}$ = 2.00 $\hat{i}$ - 5.00 $\hat{j}$ , $\vec{B}$ = 4.00 $\hat{i}$, and $\vec{C}$ = 3.00 $\hat{j}$ evaluate the following expressions if they are allowed mathematically: (a) $C (\vec{A} \times \vec{B})$; (b) $\vec{C} \cdot ( \vec{A} \times \vec{B} )$; (c) $ \vec{C} \times (\vec{A} \cdot \vec{B}) $
+
+\subsection*{Solution}
+a) $24 \hat{k}$
+\begin{align*}
+    C (\vec{A} \times \vec{B}) &= 3.00((2.00 \hat{i} - 5.00 \hat{j}) \times (4.00 \hat{j}))\\
+            &= 3.00 * (\begin{pmatrix} 2\\ -5\\ 0 \end{pmatrix} \times \begin{pmatrix} 0\\ 4\\ 0 \end{pmatrix})
+            = 3.00 * \det \begin{pmatrix} \hat{i} & \hat{j} & \hat{k}\\ 2 & -5 & 0\\ 0 & 4 & 0 \end{pmatrix}\\
+            &= 3.00 * \begin{pmatrix} \det\left[\begin{smallmatrix} -5 & 0\\ 4 & 0 \end{smallmatrix}\right]\\ -\det\left[\begin{smallmatrix} 2 & 0\\ 0 & 0 \end{smallmatrix}\right]\\ \det\left[\begin{smallmatrix} 2 & -5\\ 0 & 4 \end{smallmatrix}\right] \end{pmatrix}
+            = 3.00 * \begin{pmatrix} 0\\ 0\\ 8 \end{pmatrix}
+            = \boxed{ \begin{pmatrix} 0\\ 0\\ 24.00 \end{pmatrix} }
+\end{align*}
+
+b) 0
+\begin{align*}
+    \vec{C} \cdot ( \vec{A} \times \vec{B} ) &= \begin{pmatrix} 0\\ -2\\ 0 \end{pmatrix} \cdot ( \begin{pmatrix} 1\\ 4\\ 0 \end{pmatrix} \times \begin{pmatrix} 3\\ 0\\ 0 \end{pmatrix} )\\
+            &= \begin{pmatrix} 0\\ -2\\ 0 \end{pmatrix} \cdot \begin{pmatrix} 0\\ 0\\ 8 \end{pmatrix} 
+            = \boxed{ 0 }
+\end{align*}
+
+c) DNE \\
+A dot product produces a scalar. You cannot cross product a scalar by a vector. As such, you cannot perform this operation.
+
+\pagebreak
+\section*{Problem 3}
+Consider two vectors $\vec{A}$ and $\vec{B}$ where:
+\begin{center}
+    $\vec{A} = -6.00 \hat{i} + 3.00 \hat{j} + 3.00 \hat{k}$\\
+    $\vec{B} = 6.00 \hat{i} - 8.00 \hat{j} + 4.00 \hat{k}$
+\end{center}
+If we want to find the angle between these two vectors, we have two possible options: we can
+use the magnitude of the dot product, or the magnitude of the cross product.
+\begin{center}
+    $\vec{A} \cdot \vec{B} = AB \cos(\theta)$\\
+    $\lvert\vec{A} \times \vec{B} \rvert = AB \sin(\theta)$
+\end{center}
+However, these approaches give conflicting answers for the value of $\theta$.
+
+a) What is the correct value of theta?
+
+b) Why does the other formula give the wrong answer?
+
+\subsection*{Solution}
+For the sake of keeping track of data, we here calculate the magnitudes of $\vec{A}$ and $\vec{B}$.
+\begin{eqnarray*}
+    A = \lVert\vec{A}\rVert = \sqrt{(-6.00)^2 + 3.00^2 + 3.00^2} = \sqrt{36 + 9 + 9} = \sqrt{54} = 3\sqrt{6}\\
+    B = \lVert\vec{B}\rVert = \sqrt{6.00^2 + (-8.00)^2 + 4.00^2} = \sqrt{36 + 64 + 16} = \sqrt{116} = 2\sqrt{29}\\
+    AB = (3\sqrt{6})(2\sqrt{29}) = 6\sqrt{6*29} = 6\sqrt{174}
+\end{eqnarray*}
+
+a) $127.34\degree$
+
+The dot product is more reliable. See below.
+\begin{eqnarray*}
+    \theta = \arccos\left(\frac{\vec{A}\cdot\vec{B}}{AB}\right) = \arccos\left(\frac{-36 - 24 + 12}{6\sqrt{174}}\right) = \arccos\left(-\frac{8}{\sqrt{174}}\right) = \boxed{127.34\degree}
+\end{eqnarray*}
+
+b) The dot product is more reliable. Both sine and cosine can be negative. However, the formula for the magnitude of the result of a cross product is always positive, since it takes a square root. Due to this limitation, we cannot determine whether the answer we find is the correct answer by using the cross product or if we have to multiply the cross product by $-1$ to find the correct answer. 
+
+\pagebreak
+\section*{Problem 4}
+The position of an object as a function of time is given by $r(t) = (3.00 t^2 - 2.00 t) \hat{i} - 1.00 t^3 \hat{j}\ \unit{\m}$ . Find: (a) its velocity at t=2.00 s; (b) its acceleration at t=4.00 s; (c) its average acceleration between t=1.00 s and t = 3.00 s.
+
+\subsection*{Solution}
+a) $ 10.00 \hat{i} - 12.00 \hat{j}\ \unit{\m} $
+\begin{align*}
+    r(t) &= (3.00 t^2 - 2.00 t) \hat{i} - 1.00 t^3 \hat{j}\ \unit{\m}\\
+    v(t) &= (6.00 t - 2.00) \hat{i} - 3.00 t^2 \hat{j}\ \unit{\m/\s}\\
+    v(2) &= (6.00 * 2.00 - 2.00) \hat{i} - 3.00 * 2.00^2 \hat{j}\ \unit{\m/\s}\\
+        &= (12.00 - 2.00) \hat{i} - 3.00 * 4.00 \hat{j}\ \unit{\m/\s}\\
+        &= \boxed{10.00 \hat{i} - 12.00 \hat{j}\ \unit{\m/\s}}
+\end{align*}
+
+b) $6.00 \hat{i} - 24.00 \hat{j}\ \unit{\m}$
+\begin{align*}
+    r(t) &= (3.00 t^2 - 2.00 t) \hat{i} - 1.00 t^3 \hat{j}\ \unit{\m}\\
+    v(t) &= (6.00 t - 2.00) \hat{i} - 3.00 t^2 \hat{j}\ \unit{\m/\s}\\
+    a(t) &= 6.00 \hat{i} - 6.00 t \hat{j}\ \unit{\m/\s^2}\\
+    a(4) &= 6.00 \hat{i} - 6.00 * 4.00 \hat{j}\ \unit{\m/\s^2}\\
+        &= \boxed{6.00 \hat{i} - 24.00 \hat{j}\ \unit{\m/\s^2}}
+\end{align*}
+
+\pagebreak
+c) $6 \hat{i} - 12 \hat{j}\ \unit{\m/\s^2}$
+
+Numbers may have been shortened.
+\begin{align*}
+    a_{avg}(1.00:3.00) &= \frac{v(3.00) - v(1.00)}{3.00\unit{\s} - 1.00\unit{\s}}\\
+        &= \frac{((6 * 3 - 2) \hat{i} - 3 * 3^2 \hat{j}) - ((6 * 1 - 2) \hat{i} - 3 * 1^2 \hat{j})\ \unit{\m/\s}}{2\ \unit{\s}}\\
+        &= \frac{((18 - 2) \hat{i} - 3 * 9 \hat{j}) - ((6 - 2) \hat{i} - 3 \hat{j})\ \unit{\m/\s}}{2\ \unit{\s}}\\
+        &= \frac{(16 \hat{i} - 27 \hat{j}) - (4 \hat{i} - 3 \hat{j})\ \unit{\m/\s}}{2\ \unit{\s}}\\
+        &= \frac{12 \hat{i} - 24 \hat{j}\ \unit{\m/\s}}{2\ \unit{\s}}
+        = \boxed{6 \hat{i} - 12 \hat{j}\ \unit{\m/\s^2}}
+\end{align*}
+
+\pagebreak
+\section*{Problem 5}
+At t = 0 a particle at the origin has a velocity of 15.1 m/s at 36° above the horizontal x axis. At t = 5.00 s it is at x = 21.0 m and y = 35.0 m and its velocity is 30.0 m/s at 53° above the horizontal. Find: (a) its average velocity; (b) its average acceleration.
+
+\subsection*{Solution}
+a) $4.2\hat{i} + 7\hat{j}\ \unit{\meter/\second}$
+\begin{equation*}
+    v_{avg}(0:5) = \frac{r(5.00) - r(0.00)}{5.00\unit{\s} - 0.00\unit{\s}} 
+                = \frac{21\hat{i} + 35\hat{j}\ \unit{\meter}}{5\ \unit{\second}} 
+                = \boxed{4.2\hat{i} + 7\hat{j}\ \unit{\meter/\second}}
+\end{equation*}
+
+b) $1.17\hat{i} + 3.02\hat{j}$
+\begin{align*}
+    a_{avg} &= \frac{v(5) - v(0)}{5\unit{\s} - 0\unit{\s}}\\
+        &= \frac{(30*\cos(53\degree)\hat{i} + 30*\sin(53\degree)\hat{j}) - (15.1*\cos(36\degree)\hat{i} + 15.1*\sin(36\degree)\hat{j})}{5 \unit{s}}\\
+        &= \frac{(18.054\hat{i} + 23.959\hat{j}) - (12.216\hat{i} + 8.876\hat{j})}{5 \unit{s}}\\
+        &= \frac{5.838\hat{i} + 15.084\hat{j}}{5 \unit{s}}
+        = \boxed{1.17\hat{i} + 3.02\hat{j}}
+\end{align*}
+
+\pagebreak
+\section*{Problem 6}
+Personnel at an airport control tower track a UFO. At 11:02 a.m. it is located at a horizontal distance of 2.00 km in the direction 30° N of E at an altitude of 1200 m. At 11:15a.m. the location is 1.00 km at 45° S of E at an altitude of 800 m. What was the displacement of the UFO? Express your result in component notation.
+
+\begin{center}
+    \includegraphics*[width=10cm]{graph_6.png}
+\end{center}
+
+\subsection*{Solution}
+\begin{align*}
+    \Delta r &= \Delta x \hat{i} + \Delta y \hat{j} + \Delta z \hat{k} = (x_2 - x_1) \hat{i} + (y_2 - y_1) \hat{j} + (z_2 - z_1) \hat{k}\\
+        &= (1\cos(-45\degree) - 2\cos(30\degree)) \hat{i} + (1\sin(-45\degree) - 2\sin(30\degree)) \hat{j} + (0.8 - 1.2) \hat{k}\ \unit{\kilo\meter}\\
+        &= (\frac{\sqrt{2}}{2} - \sqrt{3}) \hat{i} + (-\frac{\sqrt{2}}{2} - 1) \hat{j} - 0.4 \hat{k}\ \unit{\kilo\meter}\\
+        &= \boxed{-1.025 \hat{i} - 1.707 \hat{j} - 0.4 \hat{k}\ \unit{\kilo\meter}}
+\end{align*}
+
+\pagebreak
+\section*{Problem 7}
+A fastball pitcher can throw a baseball at a speed of 90.0 mi/h. (a) Assuming the pitcher can release the ball 16.7 m from home plate so the ball is moving horizontally, how long does it take the ball to reach home plate? (b) How far does the ball drop between the pitcher's hand and home plate?
+
+\subsection*{Solution}
+
+First, we canvert miles per hour to meters per second.
+\begin{equation*}
+    \frac{90\unit{\mile}}{1\unit{\hour}} * \frac{1\unit{\hour}}{3600\unit{\second}} * \frac{1609.34\unit{\meter}}{1\unit{\mile}} 
+    = \frac{90\unit{\mile}}{1\unit{\hour}} * \frac{1609.34\unit{\hour*\meter}}{3600\unit{\second*\mile}}
+    = \frac{80467}{2000}\unit{\meter/\second} = 40.2335 \unit{\meter/\second}
+\end{equation*}
+
+a) $\frac{167}{900}\unit{\second} \approx 0.415 \unit{\second}$
+
+Discounting for air resistance, there is no horizontal acceleration.
+\begin{align*}
+    x(t) &= x_0 + v_0 t + \frac{1}{2}at^2 \rightarrow 16.7\unit{\meter} = 90.0*t\\
+    t &= \frac{16.7\unit{\meter}}{90.0\unit{\mile/\hour}} = \boxed{\frac{16.7}{40.2335}\unit{\second} \approx 0.415 \unit{\second}}
+\end{align*}
+
+b) 0.845 m
+
+We can plug this into the formula for position from gravitational acceleration.
+\begin{align*}
+    y(t) &= y_0 + v_0 t + \frac{1}{2}at^2\\
+    \Delta y &= \frac{1}{2}at^2 = \frac{9.81}{2}*0.415^2 \unit{\meter}\\
+            &\approx \boxed{0.845 \unit{\meter}}
+\end{align*}
+This means that the pitcher would have to be at least 85 cm tall for their pitch to reach home plate.
+
+\pagebreak
+\section*{Problem 8 (Labeled 6 in the Problem Set)}
+A soccer goal is 2.44 m high. A player kicks the ball at a distance 10.0 m from the goal at an angle of 25.0°. The ball hits the crossbar at the top of the goal. What is the initial speed of the soccer ball?
+
+\subsection*{Solution}
+First, we account for all the information we do have. The initial speed of the ball is $v_0 = \sqrt{v_{x0}^2 + v_{y0}^2}$. We also know (from this) that $v_{x0} = v_0\cos(25\degree)$ and $v_{y0} = v_0\sin(25\degree)$ Since there is nothing indicating any acceleration on the horizontal plane, we can assume that $v_{x0} = v_{x}$. Next, we apply this to the equation for horizontal position from time and apply it to the corresponding equation for the vertical position.
+\begin{equation*}
+    x = x_0 + v_{x0} t + \frac{1}{2}at^2 \rightarrow 
+    10\unit{\meter} = v_0\cos(25\degree)t \rightarrow
+    v_0 = \frac{10\unit{\meter}}{\cos(25\degree)t}
+\end{equation*}
+\begin{align*}
+    y &= y_0 + v_{y0} t + \frac{1}{2}at^2\\
+    2.4\unit{\meter} &= v_0\sin(25\degree)t - \frac{1}{2}gt^2 
+        = \frac{10\unit{\meter}\sin(25\degree)t}{v_0\cos(25\degree)t} - \frac{1}{2}gt^2\\
+        &= 10\unit{\meter}\tan(25\degree) - \frac{1}{2}gt^2\\
+    -\frac{1}{2}gt^2 &= 2.44\unit{\meter} - 10\unit{\meter} \tan(25\degree)\\
+    t^2 &= \frac{20\unit{\meter}\tan(25\degree) - 4.88\unit{\meter}}{g} \rightarrow 
+    t = \sqrt{\frac{20\unit{\meter}\tan(25\degree) - 4.88\unit{\meter}}{g}}
+\end{align*}
+Plugging this into an above equation, we get the value of $v_0$.
+\begin{equation*}
+    v_0 = \frac{10\unit{\meter}}{\cos(25\degree)t} = \frac{10\unit{\meter}}{\cos(25\degree)\sqrt{\frac{20\unit{\meter}\tan(25\degree) - 4.88\unit{\meter}}{g}}} = \boxed{16.39\unit{\meter/\second}}
+\end{equation*}
+
+\end{document}

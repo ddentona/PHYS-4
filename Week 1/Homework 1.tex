@@ -1,0 +1,152 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{array}
+\usepackage{wrapfig}
+\usepackage{siunitx}
+
+\title{Homework \#1}
+\author{Donald Aingworth IV}
+\date{August 28, 2024}
+
+\begin{document}
+
+\DeclareSIUnit{\mile}{mi}
+\DeclareSIUnit{\gal}{gal}
+\DeclareSIUnit{\foot}{ft}
+
+\maketitle
+
+1. 7.83 $\frac{\unit{\liter}}{100\ \unit{\kilo\meter}}$
+
+\begin{equation*}
+    \frac{30\ \unit{\mile}}{1\ \unit{\gal}} \cdot \frac{1\ \unit{\gal}}{3.79\ \unit{\liter}} \cdot \frac{1\ \unit{\kilo\meter}}{0.62\ \unit{\mile}} \cdot \frac{1}{100} \frac{100\ \unit{\kilo\meter}}{\unit{\kilo\meter}} = \frac{30}{235} \frac{100\ \unit{\kilo\meter}}{\unit{\liter}}
+\end{equation*}
+
+The reciprocal of this is:
+
+\begin{equation*}
+    \frac{235}{30} \frac{\unit{\liter}}{100 \unit{\kilo\meter}} \approx \boxed{ 7.83 \frac{\unit{\liter}}{100 \unit{\kilo\meter}} }
+\end{equation*}
+\\
+\pagebreak
+
+2. a) Dimensions are consistent
+\begin{equation*}
+    x = \frac{v^2}{2a}
+\end{equation*}
+Units:
+\begin{equation*}
+    \unit{\meter} = \frac{\unit{\meter}^2 / \unit{\second}^2}{\unit{\meter} / \unit{\second}^2} = \frac{\unit{\meter}/\unit{\second}^2}{1/\unit{\second}^2} = \unit{\meter}
+\end{equation*}
+
+\hbox{This lines up. The $\frac{1}{2}$ is ignored because it affects magnitude, not units.}
+
+b) Dimensions are not consistent
+\begin{equation*}
+    x = \frac{1}{2} at
+\end{equation*}
+Units:
+\begin{equation*}
+    \unit{\meter} \ne (\unit{\meter}/\unit{\second}^2)*\unit{\second} = \unit{\meter}/\unit{\second}
+\end{equation*}
+
+\hbox{This shows that the units are not consistent.}
+
+c) Dimensions are consistent
+\begin{equation*}
+    t = \sqrt{\frac{2x}{a}}
+\end{equation*}
+Units:
+\begin{equation*}
+    \unit{\second} = \sqrt{\frac{\unit{\meter}}{\unit{\meter}/\unit{\second}^2}} = \sqrt{\frac{\unit{\meter}*\unit{\second}^2}{\unit{\meter}}} = \sqrt{\unit{\second}^2} = \unit{\second}
+\end{equation*}
+
+This lines up. The 2 is ignored because it affects magnitude, not units. \\
+\pagebreak
+
+3. For partial cans, \$56.68. For full cans only, \$73.80\\
+We first convert the units of the dimensions of the room from feet by feet by feet to meter by meter by meter, using a conversion rate of 1 \unit{\foot} = 0.3048 \unit{\meter}.\\
+Next, we create a formula for the sum of the area of all four walls.
+\begin{equation*}
+    A = 2 \cdot ( l\ \unit{\meter} \cdot h\ \unit{\meter} + w\ \unit{\meter} \cdot h\ \unit{\meter} ) = 2h \cdot ( l + w )\ \unit{\meter}^2 \\
+\end{equation*}
+With that, we divide that by the price per square meter, represented by the variable \textit{r} for ratio.
+\begin{equation*}
+    c = A\ \unit{\meter}^2 \cdot r\ \frac{\$}{\unit{\meter}^2} = 2h \cdot ( l + w )\ \unit{\meter}^2 \cdot r\ \frac{\$}{\unit{\meter}^2} = \$\ 2h \cdot ( l + w ) \cdot r
+\end{equation*}
+Substituting in values, we can find the solution.
+\begin{equation*}
+    c = \$\ 2h \cdot ( l + w ) \cdot r = \$\ 2 \cdot (8 \cdot 3.048) \cdot ((13 + 18) \cdot 3.048) \cdot \frac{24.60}{20}
+    = \boxed{\$ 56.68}
+\end{equation*}
+Given that we are evaluating the number of cans, and it would be difficult to buy a fraction of a can, we round this up the the nearest multiple of \$24.60 above our current value. \$56.68 is greater than 2 * \$24.60 = \$49.20 , but less than 3 * \$24.60 = \$73.80. This leaves the realistic solution as \boxed{\$73.80}
+\\
+\pagebreak
+
+4. 4.102 hr $\approx$ 4 hr 6 min \\
+Assuming Car A and Car B have constant velocity, we first calculate the number of laps.
+\begin{equation*}
+    \frac{300 \unit{\kilo\meter}}{5 \unit{\kilo\meter}/\text{lap}} = \frac{\text{Total\ distance}}{\text{Lap\ length}} = 60\ \text{lap}
+\end{equation*}
+Next, we calculate the velocity of each car and related values like a reciprocal that will come into relevance.
+\begin{eqnarray*}
+    v_A = \frac{60\ \text{lap}}{4\ \text{hr}} = 15 \frac{\text{lap}}{\text{hr}} \\
+    v_B = \frac{58.5\ \text{lap}}{4\ \text{hr}} \\
+    \frac{1}{v_B} = \frac{4\ \text{hr}}{58.5\ \text{lap}}
+\end{eqnarray*}
+Then, we calculate the time.
+\begin{align*}
+    t_B &= D \cdot \frac{1}{v_B} \\
+    &= (60\ \text{lap}) \cdot \left( \frac{4}{58.5}\ \frac{\text{hr}}{\text{lap}} \right) \\
+    &= \frac{240}{58.5} \text{hr} \approx \boxed{ \text{4.102\ hr} \approx \text{4\ hr\ 6\ min} }
+\end{align*}
+\\
+5. 58.386 km/h \\
+Converting 3 days, 10 hours, 40 minutes to hours, we get $\frac{247}{3} = 82.\bar{3}$ hours. \\
+Multiplied by 65.5 km/h, we get $\frac{32357}{6}$ km = $5392.8\bar{3}$ km, the total distance of the trip. \\
+The time that the Queen Mary took is $82.\bar{3}$ hours plus 10 hours, 2 minutes, or 10 + $\frac{1}{30}$ hours, or $\frac{301}{30}$ hours, totalling $\frac{2771}{30}$ hours. \\
+Dividing the distance by the time, we get:
+\begin{equation*}
+    \frac{32357}{6} \unit{\kilo\meter}\ \cdot\ \frac{30}{2771} \frac{1}{\unit{\hour}} = \boxed{\frac{161785}{2771} \approx 58.386 \frac{\unit{\kilo\meter}}{\unit{\hour}}}
+\end{equation*}
+
+\break 
+6.
+\begin{align*}
+    a)&\ 5\ \unit{\meter}/\unit{\second} & b)&\ 0\ \unit{\meter}/\unit{\second} & c)&\ -10\ \unit{\meter}/\unit{\second} & d)&\ -5\ \unit{\meter}/\unit{\second} & e)&\ 0\ \unit{\meter}/\unit{\second}
+\end{align*}
+\\
+7. a) -2.547 m/s;  b) 0.526 m/s \\
+\begin{wraptable}{r}{0.35\textwidth}
+    \begin{tabular}{| c | c | c |}
+        \hline
+        t & x & v \\
+        \hline
+        2.25\unit{\second} & 7.00\unit{\meter} & 3.5 \unit{\meter}/\unit{\second} \\
+        \hline
+        7.00\unit{\second} & -5.1\unit{\meter} & 6 \unit{\meter}/\unit{\second} \\
+        \hline
+    \end{tabular}
+    Table of position and velocity at time t
+\end{wraptable}
+The average velocity would be the change in distance over the change in time. 
+\begin{align*}
+    \frac{x_2 - x_1}{t_2 - t_1} =& \frac{-5.1\ \unit{\meter} - 7\ \unit{\meter}}{7\ \unit{\second} - 2.25\ \unit{\second}} \\=& -\frac{12.1\ \unit{\meter}}{4.75\ \unit{\second}} \approx \boxed{-2.547\ \unit{\meter}/\unit{\second}}
+\end{align*}
+The average acceleration would be the change in velocity over the change in time. 
+\begin{equation*}
+    \frac{v_2 - v_1}{t_2 - t_1} = \frac{6\ \unit{\meter}/\unit{\second} - 3.5\ \unit{\meter}}{7\ \unit{\second} - 2.25\ \unit{\second}} = -\frac{2.5\ \unit{\meter}/\unit{\second}}{4.75\ \unit{\second}} \approx \boxed{0.526\ \unit{\meter}/\unit{\second}^2}
+\end{equation*}
+
+8. a) -0.640 \unit{\meter}/\unit{\second}; b) -0.823 \unit{\meter}/\unit{\second}; c) 0.274 \unit{\meter}/\unit{\second} 
+\\ \\
+a/ x(t) = 4.5 * $e^{-0.3t}$ \unit{\meter} \\
+x(2) = 4.5 * $e^{-0.6}$ \unit{\meter} \\
+x(3) = 4.5 * $e^{-0.9}$ \unit{\meter} \\
+$\frac{x(3)\ \unit{\meter}\ -\ x(2)\ \unit{\meter}}{3\ \unit{\second} - 2\ \unit{\second}}$ = $\frac{4.5(e^{-0.9}\ -\ e^{-0.6}) \unit{\meter}}{1\ \unit{\second}}$ $\approx$ \boxed{4.5 * (-0.142)\ \unit{\meter}/\unit{\second} \approx -0.640\ \unit{\meter}/\unit{\second}} \\ \\
+b/ x'(t) = -1.5 * $e^{-0.3t}$ \unit{\meter}/\unit{\second} \\
+x'(2) = -1.5 * $e^{-0.6}$ \unit{\meter}/\unit{\second} $\approx$ -1.5 * 0.549 \unit{\meter}/\unit{\second} $\approx$ \boxed{-0.823\ \unit{\meter}/\unit{\second}}\\ \\
+c/ x''(t) = 0.5 * $e^{-0.3t}$ \unit{\meter}/\unit{\second}$^2$ \\
+x''(2) = 0.5 * $e^{-0.6}$ \unit{\meter}/\unit{\second}$^2$ $\approx$ 0.5 * 0.549 \unit{\meter}/\unit{\second}$^2$ $\approx$ \boxed{0.274\ \unit{\meter}/\unit{\second}^2}\\ \\
+
+\end{document}

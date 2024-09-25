@@ -1,0 +1,173 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{array}
+% \usepackage{gensymb}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{pgfplots}
+\usepackage{siunitx}
+\usepackage{wrapfig}
+
+\title{Homework \#5}
+\author{Donald Aingworth IV}
+\date{September 25, 2024}
+
+\pgfplotsset{width=8cm,compat=1.9}
+\usepgfplotslibrary{external}
+% \tikzexternalize
+
+\begin{document}
+
+\DeclareSIUnit{\mile}{mi}
+\DeclareSIUnit{\gal}{gal}
+\DeclareSIUnit{\foot}{ft}
+\DeclareSIUnit{\h}{h}
+
+\maketitle
+
+\section*{Problem 1}
+A ball thrown at 20.0 m/s at angle $\theta$ below the horizontal from a cliff of height $H$ lands 69.0 m from the base 4.00 s later. Find $\theta$ and $H$.
+
+\subsection*{Solution}
+We begin with $\theta$. First, we remark about the range that $R = x - x_0$. Next, we take the formula for time from range and manipulate it to find the value of $\theta$. Since it is the angle below the horizontal, we find the negative angle.
+\begin{eqnarray}
+    t = \frac{R}{v_0 \cos(\theta)}\\
+    \cos(\theta) = \frac{R}{t*v_0}\\
+    \theta = -\arccos\left(\frac{R}{t*v_0}\right) = -\arccos\left(\frac{x - x_0}{t*v_0}\right)
+\end{eqnarray}
+
+Next, we can use this and the equation for change in position on the vertical position.
+\begin{eqnarray}
+    \Delta y = v_{0y}t + \frac{1}{2} gt^2 = v_0 \sin\left(\theta \right) t + \frac{1}{2} gt^2 \\
+    H = v_0 \sin\left( -\arccos\left(\frac{x - x_0}{t*v_0} \right) \right) t + \frac{1}{2} gt^2
+\end{eqnarray}
+
+We can plug in known values into this equation.
+\begin{align}
+    \theta &= -\arccos\left(\frac{x - x_0}{t*v_0}\right) 
+            = -\arccos\left(\frac{69.0\unit{\meter}}{4.00\unit{\second} * 20.0\unit{\meter/\second}}\right) \\
+           &= -\arccos\left(\frac{69.0\unit{\meter}}{80.0\unit{\meter}}\right) 
+            \approx \boxed{-30.4\unit{\degree}}\\
+    H &= v_0 \sin\left( -\arccos\left(\frac{x - x_0}{t*v_0} \right) \right) t + \frac{1}{2} gt^2\\
+      &= 20.0\unit{\meter/\second} * \sin\left( -30.4\unit{\degree} \right) 4.00\unit{\second} - \frac{1}{2} * 9.81\unit{\meter/\second} * (4.00\unit{\second})^2 \approx -119 \unit{\meter}
+\end{align}
+
+Since H has to be positive, we take the absolute value of this to get $\boxed{ H = 119\unit{\meter} }$
+
+\pagebreak
+\section*{Problem 2}
+A ball is thrown at 14.0 m/s at 45\unit{\degree} above the horizontal. Someone located 30.0 m away along the line of the path starts to run just as the ball is thrown. How fast, and in which direction, must the person run to catch the ball at the level from which it was thrown?
+
+\subsection*{Solution}
+For the ball to be caught at the same level at which it is thrown, then $\Delta$y must be equal to zero. We can substitute that into the equation for change in position with respect to time and solve for time.
+\begin{align}
+    \Delta y &= v_{0y}t + \frac{1}{2}gt^2\\
+    0 &= v_0\sin(45\unit{\degree}) + \frac{1}{2}gt\\
+    t &= \frac{2v_0 \sin(45\unit{\degree})}{-g} = \frac{v_0 \sqrt{2}}{-g}
+\end{align}
+
+We can find the distance that the ball travels horizonatally.
+\begin{align}
+    x &= v_0 \cos(45\unit{\degree})*t = \frac{v_0 \sqrt{2}}{2} * \frac{v_0 \sqrt{2}}{-g} = \frac{v_0^2}{-g}
+\end{align}
+
+By substituting this into the formula for position with respect to time, we can find the required velocity for the other guy to run at to catch up to the ball. 
+\begin{align}
+    x &= x_0 + v_2 * t\\
+    v_2 &= \frac{x - x_0}{t} = \frac{\frac{v_0^2}{-g} - 30\unit{\meter}}{\frac{v_0 \sqrt{2}}{-g}}
+        = \frac{v_0^2 + g*30\unit{\meter}}{v_0\sqrt{2}}\\
+        &= \frac{(14.0)^2 \unit{\meter} + g*30\unit{\meter}}{14.0\sqrt{2}\ \unit{\second}} = \frac{(196.0 + g*30)\sqrt{2}}{28} \unit{\m/\s}\\
+        &= \frac{196.0 + (-9.81)*30\sqrt{2}}{14} \unit{\m/\s} \approx \boxed{-4.96 \unit{\m/\s}}
+\end{align}
+
+This means that the runner would have to run at 4.96\unit{\meter/\second} \underline{towards the pitcher}. Realistically, this would only be the average speed, since the runner would not be running from time zero.
+
+\pagebreak
+\section*{Problem 3}
+If a baseball player can throw a ball at 45\unit{\degree} to a point 100 m away horizontally to the initial
+vertical level, how high could he throw it vertically upward?
+
+\subsection*{Solution}
+We start by finding a formula for the time spent to reach the location it is when it reaches the same vertical level.
+\begin{align}
+    \Delta y &= v_{0y}t + \frac{1}{2}at^2\\
+    0 &= v_0\sin(\theta)t + \frac{1}{2}gt^2
+      = v_0\sin(\theta) + \frac{1}{2}gt\\
+    t &= \frac{2v_0\sin(\theta)}{-g}
+\end{align}
+
+Next, we can find the formula for initial velocity (squared) by using the distance covered by substituting in the formula (21) for time.
+\begin{align}
+    x &= x_0 + v_{0x}t + \frac{1}{2}at^2\\
+    \Delta x &= v_0\cos(\theta)t = v_0\cos(\theta)*\frac{2v_0\sin(\theta)}{-g} 
+        = \frac{2v_0^2\cos(\theta)\sin(\theta)}{-g} 
+        = \frac{v_0^2\sin(2\theta)}{-g}\\
+    v_0^2 &= \frac{\Delta x * (-g)}{\sin(2\theta)}
+\end{align}
+
+Next, we use the formula for final velocity from initial velocity without time. We know that at the apex, the velocity is zero. We then solve for $\Delta$y. Then, we substitute in values.
+\begin{align}
+    v^2 &= v_0^2 + 2 a \Delta y\\
+    0 &= \frac{\Delta x * (-g)}{\sin(2\theta)} + 2 g \Delta y\\
+    \Delta y &= \frac{\Delta x}{2\sin(2\theta)} = \frac{100\unit{\meter}}{2\sin(2*45\unit{\degree})} = \boxed{50 \unit{\meter}}
+\end{align}
+
+\pagebreak
+\section*{Problem 4}
+A motorcyclist plans to jump across a gorge width 32.0 m. He takes off on an 18.0\unit{\degree} ramp.
+What minimum speed does he require if he lands at the initial level?
+
+\subsection*{Solution}
+The motorcyclist (let's call him a creative and fun name like Evil Knievil) can be plugged into the formula for range and solve for $v_0$.
+\begin{align}
+    R &= \frac{v_0^2 \sin(2\theta)}{a}\\
+    v_0^2 &= \frac{a*R}{\sin(2\theta)} 
+        = \frac{9.81\unit{\meter/\second^2} * 32.0\unit{\meter}}{\sin(2*18.0\unit{\degree})}
+        = \frac{313.92}{\sin(36.0\unit{\degree})}\unit{\meter^2/\second^2}\\
+    v_0 &= \sqrt{\frac{313.92}{\sin(36.0\unit{\degree})}} \unit{\frac{\meter}{\second}} 
+        = \sqrt{534.07} \unit{\meter/\second} 
+        = \boxed{ 23.1 \unit{\meter/\second} }
+\end{align}
+So, Evil would have to rev his motorbike up to 23.1 m/s in order to get across the gorge.
+
+
+\pagebreak
+\section*{Problem 5}
+A projectile fired from the ground has a velocity $\vec{v}$ = 24.0 $\hat{i}$ - 8.00 $\hat{j}$ m/s at a height of 9.10 m. Find: (a) the initial velocity; (b) the maximum height.
+
+\subsection*{Solution}
+
+
+% \pagebreak
+% \section*{Problem 6}
+% The figure below shows a conical pendulum. It consists of a bob is suspended at the end of a
+% string and describes a horizontal circle at a constant speed of 1.28 m/s. If the length of the
+% string is 1.20 m and it makes an angle of 200 with the vertical, find the acceleration of the bob.
+
+% \begin{center}
+%     \includegraphics*[width=10cm]{graph_6.png}
+% \end{center}
+
+% \subsection*{Solution}
+
+
+% \pagebreak
+% \section*{Problem 7}
+% A stone moves in a circle of radius 60.0 cm and has a centripetal acceleration of 90 m/s2. How
+% long does it take to make 8 revolutions?
+
+% \subsection*{Solution}
+
+
+% \pagebreak
+% \section*{Problem 8}
+% Compute the acceleration for the following in terms of g's where g = 9.81 m/s2 : (a) a car
+% moving at 100. km/h round a curve of radius 50.0 m; (b) a jet flying at 1.50×103 km/h and
+% making a turn of radius 5.00 km; (c) a stone being twirled every 0.500 s at the end of a rope of
+% length 1.50 m; (d) a speck of dust at the rim of an LP with a radius of 6.00 in. turning at 33.1
+% rpm; (e) a molecule in a centrifuge rotating at 30,000 rpm at a radius of 15.0 cm.
+
+% \subsection*{Solution}
+
+
+\end{document}
