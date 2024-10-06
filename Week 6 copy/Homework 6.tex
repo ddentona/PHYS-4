@@ -1,0 +1,237 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{array}
+% \usepackage{gensymb}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{pgfplots}
+\usepackage{siunitx}
+\usepackage{wrapfig}
+
+\title{Homework \#6}
+\author{Donald Aingworth IV}
+\date{October 2, 2024}
+
+\pgfplotsset{width=8cm,compat=1.9}
+\usepgfplotslibrary{external}
+% \tikzexternalize
+
+\begin{document}
+
+\DeclareSIUnit{\mile}{mi}
+\DeclareSIUnit{\gal}{gal}
+\DeclareSIUnit{\foot}{ft}
+\DeclareSIUnit{\h}{h}
+
+\maketitle
+
+% \section*{Problem 1}
+% Two forces $\vec{F_1} = 1.00 \hat{i} + 2.00 \hat{j}\ \unit{\newton}$ and $\vec{F_2}$ which is 4.00 N directed at 37$\unit{\degree}$, measured from the positive x-axis, act on a 200-g particle. What is its acceleration?
+
+% \subsection*{Solution}
+% \[ \vec{F_1} = 1.00 \hat{i} + 2.00 \hat{j}\ \unit{\newton} \]
+% \begin{align*}
+%     \vec{F_2} &= (4.00\unit{\newton})*(\cos(37\unit{\degree})\hat{i} + \sin(37\unit{\degree}))\hat{j} \\
+%             &= (4.00\unit{\newton})*(\cos(37\unit{\degree}))\hat{i} + (4.00\unit{\newton})*(\sin(37\unit{\degree}))\hat{j}\\
+%             &= (4.00\unit{\newton})*0.7986\hat{i} + (4.00\unit{\newton})*0.6018\hat{j}\\
+%             &= 3.1945\hat{i} + 2.4073\hat{j}\ \unit{\newton}
+% \end{align*}
+% \[ 
+%     \vec{F_{net}} = \vec{F_1} + \vec{F_2} 
+%                 = (1.00 \hat{i} + 2.00 \hat{j}\ \unit{\newton}) + (3.1945\hat{i} + 2.4073\hat{j}\ \unit{\newton}) 
+%                 = 4.1945\hat{i} + 4.4073\hat{j}\ \unit{\newton} 
+% \]
+% \[ 
+%     \vec{a} = \frac{\vec{F_{net}}}{m} 
+%         = \frac{4.1945\hat{i} + 4.4073\hat{j}\ \unit{\newton}}{0.2 \unit{\kilo\gram}} 
+%         = \boxed{ 20.973\hat{i} + 22.0363\hat{j}\ \unit{\meter/\second^2} } 
+% \]
+
+% \pagebreak
+% \section*{Problem 2}
+% A Saturn V rocket has a mass of $2.70 \times 10^6$ kg and a thrust of $3.30 \times 10^7$ N. What is its initial vertical
+% acceleration?
+
+% \subsection*{Solution}
+% All this assuming that initially all thrust is directed vertically.
+% \[
+%     \vec{a} = \frac{\vec{F_{net}}}{m} 
+%         = \frac{3.30 \times 10^7}{2.70 \times 10^6} \unit{\meter/\second^2}
+%         = \boxed{12.22 \unit{\meter/\second^2}}
+% \]
+
+
+% \pagebreak
+\section*{Problem 3}
+What is the reading on the spring scale for each of the situations depicted in the figure below? Each of the blocks has a mass of 5.00 kg.
+
+\begin{center}
+    \includegraphics*[width=10cm]{graph_3.png}
+\end{center}
+
+\subsection*{Solution}
+\subsubsection*{Situation (a)}
+There is only one force acting on the block, a downward force of gravity. As such, we can use the formula for the gravitational force here.
+\[ 
+    F_g = m*g 
+        = 5.00 \unit{\kilo\gram} * 9.81\unit{\meter/\second^2}
+        = \boxed{ 49.05 \unit{\newton} }
+\]
+
+\subsubsection*{Situation (b)}
+We can use the formula for gravtational force again.
+\[ 
+    F_g = m*g
+        = 5.00 \unit{\kilo\gram} * 9.81\unit{\meter/\second^2}
+        = \boxed{ 49.05 \unit{\newton} }
+\]
+
+\subsubsection*{Situation (c)}
+There is only one force acting on the block, a downward force of gravity, which pulls the spring scale from one side. As such, we can use the formula for the gravitational force here.
+\[ 
+    F_g = m*g 
+        = 5.00 \unit{\kilo\gram} * 9.81\unit{\meter/\second^2}
+        = \boxed{ 49.05 \unit{\newton} }
+\]
+
+\pagebreak
+% \section*{Problem 4}
+% A 7.00-kg block is suspended with two ropes, as shown in the figure. Find the tension in each rope.
+
+% \begin{center}
+%     \includegraphics*[width=5cm]{graph_4.png}
+% \end{center}
+
+% \subsection*{Solution}
+% Since the block in unmoving, the net force on it would have to be zero ($\Sigma F = 0$). We can break up ths sum into the gravitational force and the tension force, taking the downward direction as positive. We can then turn these formulas into their own expanded versions.
+% \[ F_g - \Sigma F_T = 0 \rightarrow m*g = F_g = \Sigma F_{Ty} = T_{1y} + T_{2y} \]
+
+% We can find the value of the gravitational force.
+% \[ 
+%     F_g = m*g 
+%         = 7\unit{\kilo\gram} * 9.81\unit{\meter/\second^2} 
+%         = 68.61\unit{\newton} 
+% \]
+
+% Since the force is divided in two vertically, their vertical tenstion forces should be equal as well. 
+% \[ T_{1y} = T_{2y} \rightarrow T_1\sin(40\unit{\degree}) = T_2\sin(60\unit{\degree}) \]
+
+% With this, we can find a formula that uses only one unknown tension force ($T_2$).
+% \begin{align*}
+%     \Sigma F_T &= T_{1y} + T_{2y}
+%             = T_1\sin(40\unit{\degree}) + T_2\sin(60\unit{\degree})\\
+%             &= 2 * T_2\sin(60\unit{\degree})
+%             = T_2 \sqrt{3}
+% \end{align*}
+
+% We can now substitute this back into an above equation and solve for $T_2$.
+% \begin{align*}
+%     F_g &= \Sigma F_T\\
+%     68.61\unit{\newton} &= 2*T_2 \sin(60\unit{\degree})\\
+%     68.61\unit{\newton} &= T_2 \sqrt{3}\\
+%     T_2 &= 22.87\sqrt{3} \unit{\newton}\\
+%     T_2 &\approx \boxed{ 39.61\unit{\newton} }
+% \end{align*}
+
+% We can repeat the last two steps for $T_1$.
+% \begin{align*}
+%     \Sigma F_T &= T_{1y} + T_{2y}
+%             = T_1\sin(40\unit{\degree}) + T_2\sin(60\unit{\degree})\\
+%             &= 2 * T_1\sin(40\unit{\degree})\\
+%     F_g &= \Sigma F_T\\
+%     68.61\unit{\newton} &= 2*T_1 \sin(40\unit{\degree})\\
+%     T_1 &= \frac{68.61\unit{\newton}}{2*\sin(40\unit{\degree})}\\
+%     T_1 &\approx \boxed{ 53.37\unit{\newton} }
+% \end{align*}
+
+% Finally, we have our answer: $\boxed{ T_1 = 53.37\unit{\newton} \text{ and } T_2 = 39.61\unit{\newton} }$
+
+% \pagebreak
+\section*{Problem 5}
+A painter of mass M = 75.0 kg stands on a platform of mass m = 15.0 kg. He pulls on a rope that passes around a pulley, as shown in the figure. Find the tension in the rope given that (a) he is at rest, or (b) he accelerates upward at 0.400 \unit{\meter/\second^2}. (c) If the maximum tension the rope can withstand is 700 N, what happens when he ties the rope to a hook on the wall?
+
+\begin{center}
+    \includegraphics*[height=5cm]{graph_5.png}
+\end{center}
+
+\subsection*{Solution}
+\subsubsection*{Section (a)}
+If the platform is at rest, the acceleration is zero so the net force is zero. As such, the only forces acting on it are the gravity and the tension, which is applied twice because there are two forces pulling it up.
+\begin{align*}
+    0 &= F_{net} = 2T - mg - Mg\\
+    T &= \frac{mg + Mg}{2} = \frac{90*9.81}{2}\unit{\newton} = \boxed{441.45 \unit{\newton}}
+\end{align*}
+
+\subsubsection*{Section (b)}
+We can repeat the same, but substituting in the total mass and acceleration.
+\begin{align*}
+    F_{net} &= \Sigma m * a = 90 * 0.400 \unit{\newton} = 36 \unit{\newton}\\
+    36 \unit{\newton} &= 2T - mg - Mg\\
+    T &= 18 + \frac{90*9.81}{2} \unit{\newton} 
+        = 18 + 441.45 \unit{\newton} 
+        = \boxed{459.45 \unit{\newton}}
+\end{align*}
+
+% \pagebreak
+% \section*{Problem 6}
+
+
+% \begin{center}
+%     \includegraphics*[width=10cm]{graph_6.png}
+% \end{center}
+
+% \subsection*{Solution}
+
+
+% \pagebreak
+% \section*{Problem 7}
+
+
+% \begin{center}
+%     \includegraphics*[width=10cm]{graph_7.png}
+% \end{center}
+
+% \subsection*{Solution}
+
+
+\pagebreak
+\section*{Problem 8}
+Two blocks of masses $m_1$ = 4.85 kg and $m_2$ = 5.75 kg are on either side of the wedge as shown in the figure below. Find their acceleration and the tension in the rope. Ignore friction and the pulley.
+
+\begin{center}
+    \includegraphics*[width=10cm]{graph_8.png}
+\end{center}
+
+\subsection*{Solution}
+We first find the downhill force for both objects. We use trigonometry and the formula for the force of gravity.
+\begin{align*}
+    F_{gd1} &= m_1 g * \sin(30\unit{\degree})\\
+    F_{gd2} &= m_2 g * \sin(60\unit{\degree})
+\end{align*}
+
+We then use Newton's second law for the net force on it, including the tension force. We then add the two together, and tension will cancel out.
+\begin{align*}
+    F_{d1} = m_1 a &= T - m_1 g * \sin(30\unit{\degree})\\
+    F_{d2} = m_2 a &= m_2 g * \sin(60\unit{\degree}) - T\\
+    (m_1 + m_2)a &= m_2 g * \sin(60\unit{\degree}) - m_1 g * \sin(30\unit{\degree})\\
+    a &= \frac{m_2 g * \sin(60\unit{\degree}) - m_1 g * \sin(30\unit{\degree})}{m_1 + m_2}
+\end{align*}
+
+We can then substitute this in to find the tension. I will substitute it in for $F_{d1}$
+\begin{align*}
+    m_1 a &= T - m_1 g * \sin(30\unit{\degree})\\
+    T &= m_1 a + m_1 g * \sin(30\unit{\degree})\\
+        &= m_1 \frac{m_2 g * \sin(60\unit{\degree}) - m_1 g * \sin(30\unit{\degree})}{m_1 + m_2} + m_1 g * \sin(30\unit{\degree})
+\end{align*}
+
+\pagebreak
+Now that we have the formulas, we can substitute in to find the answers.
+\begin{align*}
+    a &= \frac{m_2 g * \sin(60\unit{\degree}) - m_1 g * \sin(30\unit{\degree})}{m_1 + m_2} 
+        = 9.81 * \frac{5.75 * \sin(60\unit{\degree}) - 4.85 * \sin(30\unit{\degree})}{5.75 + 4.85}\\
+        &= \boxed{2.36 \unit{\meter/\second^2}}\\
+    T &= m_1 \frac{m_2 g * \sin(60\unit{\degree}) - m_1 g * \sin(30\unit{\degree})}{m_1 + m_2} + m_1 g * \sin(30\unit{\degree})\\
+        &= 9.81 * 4.85 \frac{5.75 * \sin(60\unit{\degree}) - 4.85 * \sin(30\unit{\degree})}{5.75 + 4.85} + 9.81 * 4.85 * \sin(30\unit{\degree})\\
+        &= \boxed{35.3 \unit{\newton}}
+\end{align*}
+\end{document}

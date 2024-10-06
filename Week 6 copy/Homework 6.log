@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.25)  25 SEP 2024 19:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.25)  2 OCT 2024 18:26
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"/Users/dentonaingworth/Library/CloudStorage/OneDrive-Personal/Documents/CCSF/PHYS-4A/Week 5/Homework 5.tex"
-(/Users/dentonaingworth/Library/CloudStorage/OneDrive-Personal/Documents/CCSF/PHYS-4A/Week 5/Homework 5.tex
+**"/Users/dentonaingworth/Library/CloudStorage/OneDrive-Personal/Documents/CCSF/PHYS-4A/Week 6 copy/Homework 6.tex"
+(/Users/dentonaingworth/Library/CloudStorage/OneDrive-Personal/Documents/CCSF/PHYS-4A/Week 6 copy/Homework 6.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
 (/usr/local/texlive/2024/texmf-dist/tex/latex/base/article.cls
@@ -431,8 +431,8 @@ Package translations Info: No language package found. I am going to use `english
 File: l3backend-pdftex.def 2024-02-20 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count321
 \l__pdf_internal_box=\box76
-) (./Homework 5.aux)
-\openout1 = `"Homework 5.aux"'.
+) (./Homework 6.aux)
+\openout1 = `"Homework 6.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
 LaTeX Font Info:    ... okay on input line 19.
@@ -508,33 +508,44 @@ Package pgfplots notification 'compat/show suggested version=true': you might be
 File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 19.
+<graph_3.png, id=4, 762.85pt x 271.0125pt>
+File: graph_3.png Graphic file (type png)
+<use graph_3.png>
+Package pdftex.def Info: graph_3.png  used on input line 69.
+(pdftex.def)             Requested size: 284.52756pt x 101.07944pt.
  [1
 
-{/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3] [4] [5] [6]
-<graph_6.png, id=34, 231.86626pt x 271.0125pt>
-File: graph_6.png Graphic file (type png)
-<use graph_6.png>
-Package pdftex.def Info: graph_6.png  used on input line 170.
-(pdftex.def)             Requested size: 142.26378pt x 166.28503pt.
- [7 <./graph_6.png>] [8] [9] [10] (./Homework 5.aux)
+{/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./graph_3.png>] [2]
+<graph_5.png, id=24, 168.63pt x 385.44pt>
+File: graph_5.png Graphic file (type png)
+<use graph_5.png>
+Package pdftex.def Info: graph_5.png  used on input line 154.
+(pdftex.def)             Requested size: 62.2403pt x 142.26378pt.
+ [3 <./graph_5.png>]
+<graph_8.png, id=31, 593.21625pt x 304.13625pt>
+File: graph_8.png Graphic file (type png)
+<use graph_8.png>
+Package pdftex.def Info: graph_8.png  used on input line 202.
+(pdftex.def)             Requested size: 284.52756pt x 145.877pt.
+ [4 <./graph_8.png>] [5] (./Homework 6.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 27747 strings out of 474116
- 743779 string characters out of 5743682
- 1938187 words of memory out of 5000000
- 49718 multiletter control sequences out of 15000+600000
+ 27759 strings out of 474116
+ 743986 string characters out of 5743682
+ 1935187 words of memory out of 5000000
+ 49730 multiletter control sequences out of 15000+600000
  564362 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,13n,107p,820b,680s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on "Homework 5.pdf" (10 pages, 151287 bytes).
+ 99i,13n,107p,825b,673s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on "Homework 6.pdf" (5 pages, 294500 bytes).
 PDF statistics:
- 95 PDF objects out of 1000 (max. 8388607)
- 59 compressed objects within 1 object stream
+ 76 PDF objects out of 1000 (max. 8388607)
+ 43 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 24 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 46 words of extra memory for PDF output out of 10000 (max. 10000000)
 
