@@ -8,9 +8,9 @@
 \usepackage{siunitx}
 \usepackage{wrapfig}
 
-\title{Homework \#6}
+\title{Homework \#7}
 \author{Donald Aingworth IV}
-\date{October 2, 2024}
+\date{October 9, 2024}
 
 \pgfplotsset{width=8cm,compat=1.9}
 \usepgfplotslibrary{external}
@@ -24,6 +24,7 @@
 \DeclareSIUnit{\h}{h}
 
 \maketitle
+\pagebreak
 
 \section*{Problem 1}
 A 3.15-kg block is acted on by a 24.0-N force that acts at 37.0\unit{\degree} below the horizontal, as shown in the figure. Take $\mu_k$ = 0.200 and $\mu_s$ = 0.500. (a) Does the block move if it is initially at rest? (b) If it is initially moving to the right, what is the blocks acceleration?
@@ -33,41 +34,114 @@ A 3.15-kg block is acted on by a 24.0-N force that acts at 37.0\unit{\degree} be
 \end{center}
 
 \subsection*{Solution}
+\subsubsection*{Section (a)}
+For the block to move, it must be that $F_x > f_s$.
+\begin{align*}
+    F_x &= F_{app,x} = F_{app}*\cos(\theta) = 24\unit{\newton}*\cos(37\unit{\degree}) = 19.167 \unit{\newton}\\
+    f_s &= \mu_s * F_N = \mu_s * (F_g + F_{app,y}) 
+        = \mu_s * (m*g + F_{app}*\sin(\theta))\\
+        &= 0.50 * (3.15\unit{\kilo\gram}*9.81\unit{\meter/\second^2} + 24\unit{\newton}*\sin(37\unit{\degree})) = 22.672\unit{\newton}
+\end{align*}
+Since $22.672\unit{\newton} > 19.167 \unit{\newton}$, $F_x < f_s$, so \underline{it does not move}.
+
+\subsubsection*{Section (b)}
+\begin{align*}
+    F_{net} &= m*a = F_{x} - f_k = F_{app}\cos(\theta) - \mu_k F_N\\
+    a &= \frac{F_{app}*\cos(\theta) - \mu_k * (m*g + F_{app}*\sin(\theta))}{m}\\
+        &= \frac{19.167 \unit{\newton} - 0.20 * (3.15\unit{\kilo\gram}*9.81\unit{\meter/\second^2} + 24\unit{\newton}*\sin(37\unit{\degree})))}{3.15\unit{\kilo\gram}}\\
+        &= \boxed{3.206\unit{\meter/\second^2}}
+\end{align*}
 
 \pagebreak
 \section*{Problem 2}
 A block is released at the top of a 25\unit{\degree} incline. Determine the coefficient of kinetic friction given that it slides 2.30 m in 3.15 s.
 
 \subsection*{Solution}
-
+Here we merely use the formulae for the force in different directions and solve for $\mu_k$.
+\begin{align*}
+    F_N &= F_{gy} = F_g \cos(\theta)\\
+    \Sigma F_x &= ma = F_g \sin(\theta) - F_N \mu_k\\
+    a   &= \frac{F_g \sin(\theta) - F_N \mu_k}{m}\\
+    \Delta x &= \frac{1}{2}at^2 &= \frac{t^2(mg \sin(\theta) - mg \mu_k)}{2m}\\
+    \frac{2\Delta r}{t^2} &= g\cos(\theta) - g\sin(\theta)\mu_k\\
+    g\sin(\theta)\mu_k &= \frac{g\cos(\theta)t^2 - 2\Delta x}{t^2}\\
+    \mu_k &= \frac{g\cos(\theta)t^2 - 2\Delta x}{g\sin(\theta)t^2} = \boxed{0.414}
+\end{align*}
 
 \pagebreak
 \section*{Problem 3}
 A circular off ramp has a radius of 57.0 m and a posted speed limit of 50.0 km/h. If the road is horizontal, what is the minimum coefficient of friction required?
 
 \subsection*{Solution}
-
+The maximum coefficient would require the centripital force to be equal to the static frictional force. 
+\begin{align*}
+    F_c &= f_k\\
+    \frac{mv^2}{r} &= \mu_s F_N\\
+    \mu_s   &= \frac{mv^2}{mgr} = \frac{v^2}{gr} = \frac{\frac{125}{9}^2}{57*9.81} 
+            = \boxed{0.345}
+\end{align*}
 
 \pagebreak
 \section*{Problem 4}
-A car travels at speed v around a frictionless curve of radius r that is banked at an angle $\theta$ to the horizontal. Show that the proper angle of banking is given by $tan(\theta) = \frac{v^2}{rg}$. (Hint, this is easier if you don't rotate the coordinate system like most other incline problems, and treat the x-axis as the horizontal direction, and the y-axis as the vertical direction. This is because the centripetal force is horizontal.)
+A car travels at speed v around a frictionless curve of radius r that is banked at an angle $\theta$ to the horizontal. Show that the proper angle of banking is given by $\tan(\theta) = \frac{v^2}{rg}$. (Hint, this is easier if you don't rotate the coordinate system like most other incline problems, and treat the x-axis as the horizontal direction, and the y-axis as the vertical direction. This is because the centripetal force is horizontal.)
 
 \subsection*{Solution}
-
+We start by noticing that the horizontal component of the normal force is equal to $F_N\sin(\theta)$ and the centripital force. We also note that the vertical force from the normal force is equal to $F_N\sin(\theta)$ and the gravitational force.
+\begin{eqnarray*}
+    F_c = F_N\sin(\theta)\\
+    mg = F_N\cos(\theta)\\
+    F_N = \frac{mg}{\cos(\theta)}\\
+    F_c = \frac{mv^2}{r} = F_N\sin(\theta)\\
+    \frac{mv^2}{r} = mg\frac{\sin(\theta)}{\cos(\theta)}\\
+    \boxed{\tan(\theta) = \frac{v^2}{gr}}
+\end{eqnarray*}
 
 \pagebreak
 \section*{Problem 5}
 A button is at the rim of a turntable of radius 15.0 cm rotating at 45.0 rpm. What is the minimum coefficient of friction needed for it to stay on?
 
 \subsection*{Solution}
+We start by converting to full SI units. 15 cm $\rightarrow$ 0.15 m. 45 rpm $\rightarrow$ 0.75 rps. We then find the centripital velocity in meters per second and then find the acceleration. 
+\begin{align*}
+    v   &= \text{circumference} * \text{rate} 
+        = 2\pi r * \text{rate} 
+        = 0.30\pi * 0.75 \unit{\meter/\second}\\
+        &= \pi 0.225 \unit{\meter/\second} 
+        = 0.7068 \unit{\meter/\second}\\
+    a   &= \frac{v^2}{r} 
+        = \frac{0.7068^2}{0.15} 
+        = 3.33099\unit{\meter/\second^2}
+\end{align*}
 
+We can then apply the static frictional force and Newton's second law to this.
+\begin{align*}
+    f_s     &= \mu_s F_N 
+            = \mu_s mg\\
+    F_{net} &= ma\\
+    \mu_s mg &= ma\\
+    \mu_s   &= \frac{a}{g} 
+            = \frac{3.33099\unit{\meter/\second^2}}{9.81\unit{\meter/\second^2}}
+            = \boxed{0.340}
+\end{align*}
 
 \pagebreak
 \section*{Problem 6}
 A box is dropped onto a conveyor belt moving at 3.40 m/s. If the coefficient of friction between the box and the belt is 0.270, how long will it take before the box moves without slipping?
 
 \subsection*{Solution}
+We begin wth the fully expanded formula for the maximum force of static friction and the application to Newton's second law.
+\begin{align*}
+    F_N &= \mu_s mg\\
+    ma &= \mu_s mg\\
+    a &= \mu_s g
+\end{align*}
 
+We can next apply the kinematic equation to solve for time and substitute in values.
+\begin{align*}
+    v = v_0 + at &\rightarrow t = \frac{v - v_0}{a} = \frac{v - v_0}{\mu_s g} 
+                                = \frac{3.40 - 0}{0.270*9.81} \unit{\second}
+                                = \boxed{1.28 \unit{\second}}
+\end{align*}
 
 \pagebreak
 \section*{Problem 7}
@@ -78,6 +152,11 @@ Two blocks are stacked as shown below, and rest on a frictionless surface. There
 \end{center}
 
 \subsection*{Solution}
-
+\begin{align*}
+    f_s &= F_{app,x}\\
+    F_N \mu_s &= F_{app}\cos(\theta)\\
+    F_{app}\cos(\theta) &= \mu_s * mg + F_{app}\sin(\theta)\mu_s\\
+    F_{app} &= \boxed{\frac{\mu_s mg}{\cos(\theta) - \sin(\theta)\mu_s}}
+\end{align*}
 
 \end{document}

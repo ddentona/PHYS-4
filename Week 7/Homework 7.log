@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.8.23)  3 OCT 2024 20:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.8.23)  9 OCT 2024 21:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -508,37 +508,38 @@ Package pgfplots notification 'compat/show suggested version=true': you might be
 File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 19.
-<graph_1.png, id=4, 317.185pt x 132.495pt>
-File: graph_1.png Graphic file (type png)
-<use graph_1.png>
-Package pdftex.def Info: graph_1.png  used on input line 32.
-(pdftex.def)             Requested size: 284.52756pt x 118.86227pt.
  [1
 
-{C:/Users/ddent/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./graph_1.png>] [2] [3] [4] [5] [6]
-<graph_7.png, id=35, 362.35374pt x 286.06876pt>
+{C:/Users/ddent/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
+<graph_1.png, id=10, 317.185pt x 132.495pt>
+File: graph_1.png Graphic file (type png)
+<use graph_1.png>
+Package pdftex.def Info: graph_1.png  used on input line 33.
+(pdftex.def)             Requested size: 284.52756pt x 118.86227pt.
+ [2 <./graph_1.png>] [3] [4] [5] [6] [7]
+<graph_7.png, id=41, 362.35374pt x 286.06876pt>
 File: graph_7.png Graphic file (type png)
 <use graph_7.png>
-Package pdftex.def Info: graph_7.png  used on input line 77.
+Package pdftex.def Info: graph_7.png  used on input line 151.
 (pdftex.def)             Requested size: 284.52756pt x 224.62994pt.
- [7 <./graph_7.png>] (Homework 7.aux)
+ [8 <./graph_7.png>] (Homework 7.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 27774 strings out of 474486
- 747893 string characters out of 5743755
- 1927542 words of memory out of 5000000
- 49667 multiletter control sequences out of 15000+600000
- 564055 words of font info for 57 fonts, out of 8000000 for 9000
+ 27779 strings out of 474486
+ 748026 string characters out of 5743755
+ 1933542 words of memory out of 5000000
+ 49672 multiletter control sequences out of 15000+600000
+ 564362 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,6n,107p,782b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on "Homework 7.pdf" (7 pages, 115301 bytes).
+ 99i,13n,107p,782b,674s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on "Homework 7.pdf" (8 pages, 145480 bytes).
 PDF statistics:
- 73 PDF objects out of 1000 (max. 8388607)
+ 86 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  35 words of extra memory for PDF output out of 10000 (max. 10000000)
 
