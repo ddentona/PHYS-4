@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1728580708.19971 "c:/Users/ddent/OneDrive/Documents/CCSF/PHYS-4A/Week 8/Homework 8.tex" "Homework 8.pdf" "Homework 8" 1728580710.80338 0
+["pdflatex"] 1728948260.17394 "c:/Users/ddent/OneDrive/Documents/CCSF/PHYS-4A/Week 8/Homework 8.tex" "Homework 8.pdf" "Homework 8" 1728948261.96315 0
   "C:/Users/ddent/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1726015575 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/ddent/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1724473854 24225046 9a86b7f1ef10f5afb0aa895fddb2583f ""
   "C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233951848 1004 54797486969f23fa377b128694d548df ""
@@ -17,7 +17,9 @@
   "C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmsy6.tfm" 1136765053 1116 933a60c408fc0a863a92debe84b2d294 ""
   "C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmsy8.tfm" 1136765053 1120 8b7d695260f3cff42e636090a8002094 ""
   "C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1247596666 32080 340ef9bf63678554ee606688e7b5339d ""
+  "C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb" 1247596667 30251 6afa5cb1d0204815a708a080681d4674 ""
   "C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb" 1247596667 36741 0ee9e374ec3e30da87cdfb0ea3575226 ""
+  "C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb" 1247596666 35469 dcf3a5f2fc1862f5952e3ee5eb1d98c4 ""
   "C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1247596667 32722 d7379af29a190c3f453aba36302ff5a9 ""
   "C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb" 1247596666 32362 bc3f3eec7ab7d65fe700963d4017d32c ""
   "C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb" 1247596667 32726 39f0f9e62e84beb801509898a605dbd5 ""
@@ -166,9 +168,10 @@
   "C:/Users/ddent/AppData/Local/Programs/MiKTeX/tex/latex/translations/translations.sty" 1644048522 44247 2188b95d0ee74e31eca4d316263c58a7 ""
   "C:/Users/ddent/AppData/Local/Programs/MiKTeX/tex/latex/wrapfig/wrapfig.sty" 1044403200 26220 3701aebf80ccdef248c0c20dd062fea9 ""
   "C:/Users/ddent/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1700127522 55487 80a65caedd3722f4c20a14a69e785d8f ""
-  "Homework 8.aux" 1728580710 32 044b7f8fc9779af7531264e0c5c84b6d "pdflatex"
-  "Homework 8.tex" 1728580703 3603 919838a31d6a505cce5e90d101009f4b ""
-  "c:/Users/ddent/OneDrive/Documents/CCSF/PHYS-4A/Week 8/Homework 8.tex" 1728580703 3603 919838a31d6a505cce5e90d101009f4b ""
+  "Homework 8.aux" 1728948261 32 4d1825978335c8847f72f7c473f9edc8 "pdflatex"
+  "Homework 8.tex" 1728948259 10582 1c5279811c324478fe425b1c6285e3ee ""
+  "c:/Users/ddent/OneDrive/Documents/CCSF/PHYS-4A/Week 8/Homework 8.tex" 1728948259 10582 1c5279811c324478fe425b1c6285e3ee ""
+  "graph_4.png" 1728578640 37366 7fb92419e705b8d85a6c5c16210e6379 ""
   (generated)
   "Homework 8.aux"
   "Homework 8.log"
