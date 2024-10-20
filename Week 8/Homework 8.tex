@@ -57,6 +57,7 @@ In every case, we start with the formula of the work-kinetic energy thorem. We t
 
 \subsubsection*{Section (a)}
 \begin{align*}
+    K   &= \frac{1}{2}mv^2 = \frac{1}{2} 0.15 * 40^2 = \boxed{120 \unit{\joule}}\\
     d   &= \frac{-\frac{1}{2}0.15*40^2 \unit{\joule}}{-800 \unit{\newton}}
         = \frac{0.15 * 800}{800} \unit{\meter} 
         = \boxed{0.15 \unit{\meter}}
@@ -64,6 +65,7 @@ In every case, we start with the formula of the work-kinetic energy thorem. We t
 
 \subsubsection*{Section (b)}
 \begin{align*}
+    K   &= \frac{1}{2}mv^2 = \frac{1}{2} 0.013 * 635^2 = \boxed{2621 \unit{\joule}}\\
     d   &= \frac{-\frac{1}{2}0.013*635^2 \unit{\joule}}{-800 \unit{\newton}}
         = \frac{0.013 * 403225}{1600} \unit{\meter} 
         = \boxed{3.28 \unit{\meter}}
@@ -72,6 +74,7 @@ In every case, we start with the formula of the work-kinetic energy thorem. We t
 \subsubsection*{Section (c)}
 \begin{align*}
     v_i &= 250 \unit{\kilo\meter/\hour} * \frac{1000 \unit{\meter}}{1 \unit{\kilo\meter}} * \frac{1 \unit{\hour}}{3600 \unit{\second}} = \frac{625}{9} \unit{\meter/\second}\\
+    K   &= \frac{1}{2}mv^2 = \frac{1}{2} 1500 * \frac{625}{9}^2 = \boxed{3616898 \unit{\joule}}\\
     d   &= \frac{-\frac{1}{2}1500*\frac{625}{9}^2 \unit{\joule}}{-800 \unit{\newton}}
         = \frac{1500*\frac{390625}{81}}{1600} \unit{\meter} 
         = \boxed{\frac{1953125}{432} \unit{\meter} = 4521 \unit{\meter}}
@@ -80,6 +83,7 @@ In every case, we start with the formula of the work-kinetic energy thorem. We t
 \subsubsection*{Section (d)}
 \begin{align*}
     v_i &= 2240 \unit{\kilo\meter/\hour} * \frac{1000 \unit{\meter}}{1 \unit{\kilo\meter}} * \frac{1 \unit{\hour}}{3600 \unit{\second}} = \frac{5600}{9} \unit{\meter/\second}\\
+    K   &= \frac{1}{2}mv^2 = \frac{1}{2} 1.8*10^5 * \frac{5600}{9}^2 = \boxed{3.484 \times 10^{10} \unit{\joule}}\\
     d   &= \frac{-\frac{1}{2}1.8*10^5*\frac{5600}{9}^2 \unit{\joule}}{-800 \unit{\newton}}
         = \frac{1.8*10^9*\frac{3136}{81}}{1600} \unit{\meter} 
         = \boxed{\frac{39200000000}{9} \unit{\meter} = 4.36 \times 10^9 \unit{\meter}}
@@ -180,40 +184,78 @@ For each section, we use the formula of gravitational work, which is \( W_g = m 
 
 
 \pagebreak
-% \section*{Problem 5}
-% What is the work needed to lift 14.7 kg of water from a well 11.0 m deep. Assume the water has a constant upward acceleration of 0.700 m/s$^2$.
+\section*{Problem 5}
+What is the work needed to lift 14.7 kg of water from a well 11.0 m deep. Assume the water has a constant upward acceleration of 0.700 m/s$^2$.
 
-% \subsection*{Solution}
+\subsection*{Solution}
+Here, the net force is equal to the gravitational force plus the applied force. We can then use the work formulae.
+\begin{align*}
+    F_{net} = 
+    ma  &=  F_{app} + F_g = F_{app} - m*9.81\unit{\meter/\second^2}\\
+    F_{app} &= m(a + 9.81\unit{\meter/\second^2}) - 14.7(0.7 + 9.81)\unit{\newton}
+            = 154.497 \unit{\meter/\second^2}\\
+    W   &=  154.497 * 11 = \boxed{1699.497\unit{\joule}}
+\end{align*}
 
+\pagebreak
+\section*{Problem 6}
 
-% \pagebreak
-% \section*{Problem 6}
+\begin{wrapfigure}{r}{0.25\textwidth}
+    \vspace{-50pt}
+    \includegraphics[width=0.25\textwidth]{graph_6.png} 
+    % \label{fig:wrapfig}
+\end{wrapfigure}
+The variation of a force with position is shown in the figure below. Find the work from (a) x = 0 to x = -A (b) x = +A to x = 0
 
-% \begin{wrapfigure}{r}{0.25\textwidth}
-%     \vspace{-50pt}
-%     \includegraphics[width=0.25\textwidth]{graph_6.png} 
-%     % \label{fig:wrapfig}
-% \end{wrapfigure}
-% The variation of a force with position is shown in the figure below. Find the work from (a) x = 0 to x = -A (b) x = +A to x = 0
+\subsection*{Solution}
+a) $\frac{1}{2}F_0 A$\\
+We here use the integral for work along a curve.
+\begin{align*}
+    F(x)    &=  \frac{F_0}{A} x\\
+    W_1 &= \int_{x_i}^{x_f} F(x) dx 
+        = \int_0^{-A} \frac{F_0}{A}x\ dx 
+        = \left(\frac{F_0}{2A}x^2\right)_0^{-A} 
+        = \frac{F_0 (-A)^2}{2A} = \boxed{\frac{F_0 A}{2}}
+\end{align*}
 
-% \subsection*{Solution}
+b)$-\frac{F_0 A}{2}$\\
+We use the same thng here.
+\begin{align*}
+    W_2 &= \int_{x_i}^{x_f} F(x) dx 
+        = \int_A^0 \frac{F_0}{A}x\ dx 
+        = \left(\frac{F_0}{2A}x^2\right)_A^0 
+        = -\frac{F_0 (-A)^2}{2A} = \boxed{-\frac{F_0 A}{2}}
+\end{align*}
 
+\pagebreak
+\section*{Problem 7}
 
-% \pagebreak
-% \section*{Problem 7}
+Consider a particle on which several forces act, one of which is known to be constant in time: $\vec{F}_1$ = 3.00 $\hat{i}$ + 4.00 $\hat{j}$ N. As a result, the particle moves along a straight path from a Cartesian coordinate of (0.00 m, 0.00 m) to (5.00 m, 6.00 m). What is the work done by $\vec{F}_1$?
 
-% Consider a particle on which several forces act, one of which is known to be constant in time: $\vec{F}_1$ = 3.00 $\hat{i}$ + 4.00 $\hat{j}$ N. As a result, the particle moves along a straight path from a Cartesian coordinate of (0.00 m, 0.00 m) to (5.00 m, 6.00 m). What is the work done by $\vec{F}_1$?
+\subsection*{Solution}
+We here use the dot product.
+\begin{align*}
+    W   &=  \vec{F} \cdot \vec{d}
+        =   \begin{pmatrix} 3 \unit{\newton} \\ 4 \unit{\newton} \end{pmatrix} \cdot \begin{pmatrix} 5 \unit{\meter} \\ 6 \unit{\meter} \end{pmatrix}
+        =   3 * 5 + 4 * 6 \ \unit{\joule}
+        =   15 + 24 \ \unit{\joule} = \boxed{39 \unit{\joule}}
+\end{align*}
 
-% \subsection*{Solution}
+\pagebreak
+\section*{Problem 8}
+A bungee cord exerts a nonlinear elastic force of magnitude $F(x) = k_1x + k_2 x^3$, where $x$ is the distance the cord is stretched, $k_1 = 204 \unit{\N/\m}$ and $k_2 = -0.233 \unit{\N/\m^3}$. How much work must be done on the cord to stretch
+it 16.7 m?
 
-
-% \pagebreak
-% \section*{Problem 8}
-% A bungee cord exerts a nonlinear elastic force of magnitude $F(x) = k_1x + k_2 x^3$, where $x$ is the distance the cord is stretched, $k_1 = 204 \unit{\N/\m}$ and $k_2 = -0.233 \unit{\N/\m^3}$. How much work must be done on the cord to stretch
-% it 16.7 m?
-
-% \subsection*{Solution}
-
+\subsection*{Solution}
+We here use the integral for work doen by a spring.
+\begin{align*}
+    W_s &=  \int_{x_i}^{x_f} F_x\ dx
+        =   \int_{0}^{16.7} k_1 x + k^2 x^3\ dx
+        =   \int_{0}^{16.7} 204x - 0.233x^3\ dx\\
+        &=  \left(\frac{204x^2}{2} - \frac{0.233x^4}{4}\right)_0^{16.7}
+        =   \left(102 16.7^2 - \frac{0.233*16.7^4}{4}\right) \unit{\joule}\\
+        &=  \boxed{23916.116 \unit{\joule}}
+\end{align*}
 
 
 \end{document}
