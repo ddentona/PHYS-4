@@ -264,6 +264,7 @@ INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cme
 INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
 OUTPUT Homework 9.pdf
 INPUT C:\Users\ddent\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
+INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
 INPUT .\graph_4.png
 INPUT .\graph_4.png
 INPUT .\graph_4.png

@@ -52,7 +52,28 @@ Since the spring on the block is unmoving at the start, then $v_i = 0$, so $K_i 
 (a) The United States, with a population of $2.2 \times 10^8$ people, consumes $5 \times 10^{19}$ J per year. What is the per capita consumption in watts? (b) The sun's radiation provides the earth with 1000 \unit{\watt/\meter^2}. Assuming solar energy can be converted to electrical energy with a 20\% efficiency, how much area is needed to serve the energy needs of each U.S. citizen?
 
 \subsection*{Solution}
+\subsubsection*{Section (a)}
+The power is determined by the work ($W$) divided by the time, with a watt being a joule divided by a second. The per capita value is determined by division by the number of humans ($c$). Assuming a year of 365 days, we can calculate the number of seconds per year ($t$) first.
+\begin{align*}
+    t   &=  1 \text{ years} * \frac{365\text{ days}}{1\text{ years}} 
+                            * \frac{24\text{ hours}}{1\text{ days}}
+                            * \frac{3600\unit{\second}}{1\text{ hours}}
+        =   31536 \times 10^3 \unit{\second}\\
+    P   &=  \frac{W}{t}
+        =   \frac{5 \times 10^{19} \unit{\joule}}{(31536 \times 10^3 \unit{\second})}
+        =   \frac{5 \times 10^{16}}{31536} \unit{\watt}\\
+        &=  1.58549 \times 10^{12}\ \unit{\watt}\\
+    P_{per\ captia}  &=  \frac{1.58549 \times 10^{12}}{2.2 \times 10^8} \unit{\watt}\\
+        &=  \boxed{ 7206.77 \unit{\watt} }
+\end{align*}
 
+\subsubsection*{Section (b)}
+Since there is only a 20\% efficiency, the usable numbers of watts per square meter would be $ Wa = 1000\ \unit{\watt/\meter^2}*\frac{20}{100} = 200\ \unit{\watt/\meter^2} $. We can divide the total power necessary per citizen (which we calculated in part (a)) to get the area necessary.
+\begin{align*}
+    A   &= \frac{P}{Wa}
+        = \frac{ 7206.77 \unit{\watt} }{ 200\ \unit{\watt/\meter^2} }
+        = \boxed{36.03 \unit{\meter^2}}
+\end{align*}
 
 \pagebreak
 \section*{Problem 3}
