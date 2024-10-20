@@ -165,7 +165,39 @@ We know that the velocity will be zero when the position is at the maximum. As s
 The figure below shows a conical pendulum. It consists of a bob is suspended at the end of a
 string and describes a horizontal circle at a constant speed of 1.28 m/s. If the length of the
 string is 1.20 m and it makes an angle of 200 with the vertical, find the acceleration of the bob.
+a) $ \vec{v_0} = 24\hat{i} + 15.574 \hat{j} \unit{\meter/\second} $
 
+We know the initial horizontal velocity, since it is equal to the horizontal velocity at any time, so $ v_{x0} = v_x = 24.0 \unit{m/s} $. Now we can find the initial vertical velocity given what we already have, in addition to the position.
+\begin{align}
+    v_y^2 &= v_{0y}^2 + 2a\Delta x\\
+    v_{0y}^2 &= v_y^2 - 2*g*y_1\\
+            &= (-8\unit{\meter/\second})^2 + 2*9.81*9.10 \unit{\meter^2/\second^2}\\
+            &= 64 + 178.542 \unit{\meter^2/\second^2}\\
+            &= 242.542 \unit{\meter^2/\second^2}\\
+    v_{0y} &= 15.574 \unit{\meter/\second}
+\end{align}
+
+Since we want the initial velocity, the initial velocity is $ \boxed{ \vec{v_0} = 24\hat{i} + 15.574 \hat{j} \unit{\meter/\second} } $. The magnitude is $ v_0 = \sqrt{576 + 242.542} = 28.61 \unit{\meter/\second} $.
+
+b) 12.36 m
+
+We know that the velocity will be zero when the position is at the maximum. As such, we can solve for the position in that instance.
+\begin{align}
+    v_y^2 &= v_{0y}^2 + 2a\Delta x\\
+    0 &= v_y^2 - 2*g*y_1 + 2*g*y\\
+    y &= \frac{2*g*y_1 - v_y^2}{2*g}\\
+        &= \frac{242.542 \unit{\meter^2/\second^2}}{2*9.81 \unit{\meter/\second^2}} = \boxed{ 12.36 \unit{\meter} }
+\end{align}
+
+\pagebreak
+\section*{Problem 6}
+The figure below shows a conical pendulum. It consists of a bob is suspended at the end of a
+string and describes a horizontal circle at a constant speed of 1.28 m/s. If the length of the
+string is 1.20 m and it makes an angle of 200 with the vertical, find the acceleration of the bob.
+
+\begin{center}
+    \includegraphics*[width=5cm]{graph_6.png}
+\end{center}
 \begin{center}
     \includegraphics*[width=5cm]{graph_6.png}
 \end{center}
@@ -187,7 +219,41 @@ Call the distance down that the bob is h and the radius of the circle the bob is
 \section*{Problem 7}
 A stone moves in a circle of radius 60.0 cm and has a centripetal acceleration of 90 m/s$^2$. How
 long does it take to make 8 revolutions?
+\subsection*{Solution}
+Call the distance down that the bob is h and the radius of the circle the bob is making r.
 
+\begin{align}
+    h &= L*\cos(\theta_1)\\
+    r &= L*\sin(\theta_1)\\
+    v &= 1.28 \unit{\meter/\second}\\
+    \theta_1 &= 20 \unit{\degree}\\
+    L &= 1.20 \unit{\meter}\\
+    a &= \frac{v^2}{r} = \frac{v^2}{L*\sin(\theta_1)} = \frac{(1.28 \unit{\meter/\second})^2}{1.20 * \sin(20\unit{\degree})} = \boxed{3.99 \unit{\meter/\second^2}}
+\end{align}
+
+
+\pagebreak
+\section*{Problem 7}
+A stone moves in a circle of radius 60.0 cm and has a centripetal acceleration of 90 m/s$^2$. How
+long does it take to make 8 revolutions?
+
+\subsection*{Solution}
+First we find the centripital velocity.
+\[ a = \frac{v^2}{r} \rightarrow v = \sqrt{a*r} \]
+Next, we use that to find the period.
+\[ T = \frac{2*\pi*r}{v} = \frac{2*\pi*r}{\sqrt{a*r}} = \frac{2*\pi*r*\sqrt{a*r}}{a*r} = \frac{2*\pi*\sqrt{a*r}}{a} \]
+With the period, we can multiply that by the number of rotations to get the time taken.
+\[ t = 8*T = 8*\frac{2*\pi*\sqrt{a*r}}{a} = \frac{16*\pi*\sqrt{a*r}}{a} \]
+Plugging in values, we get:
+\[ t = \frac{16*\pi*\sqrt{90*0.6}}{90} = \frac{8*\pi*\sqrt{6}}{15} = \boxed{1.306\pi\ \unit{\second} = 4.104 \unit{\second}} \]
+
+\pagebreak
+\section*{Problem 8}
+Compute the acceleration for the following in terms of g's where g = 9.81 m/s2 : (a) a car
+moving at 100. km/h round a curve of radius 50.0 m; (b) a jet flying at 1.$50\times10^3$ km/h and
+making a turn of radius 5.00 km; (c) a stone being twirled every 0.500 s at the end of a rope of
+length 1.50 m; (d) a speck of dust at the rim of an LP with a radius of 6.00 in. turning at 33.1
+rpm; (e) a molecule in a centrifuge rotating at 30,000 rpm at a radius of 15.0 cm.
 \subsection*{Solution}
 First we find the centripital velocity.
 \[ a = \frac{v^2}{r} \rightarrow v = \sqrt{a*r} \]
@@ -230,7 +296,6 @@ rpm; (e) a molecule in a centrifuge rotating at 30,000 rpm at a radius of 15.0 c
 
 \subsubsection*{Part E}
 \[ T = \frac{2*\pi*r}{v} \rightarrow v = \frac{2*\pi*r}{T} = \frac{2*\pi*0.15}{\frac{60}{30000}} = 150\pi \unit{\meter/\second}\]
-\[ a = \frac{v^2}{r} = \frac{150^2\pi^2}{0.15} = 150000*\pi^2 \unit{\meter/\second^2} = 1480440.66 \unit{\meter/\second^2} \]
-\[ a*\frac{g}{g} = \frac{1480440.66\pi g}{9.81} \unit{\meter/\second^2} = \boxed{150911.38\ \unit{\meter/\second^2}}\]
+\[ a = \frac{v^2}{r} = \frac{150^2\pi^2}{0.15} = 150000*\pi^2 \unit{\meter/\second^2} = \boxed{1480440.66 \unit{\meter/\second^2}} \]
 
 \end{document}

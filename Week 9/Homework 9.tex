@@ -8,7 +8,7 @@
 \usepackage{siunitx}
 \usepackage{wrapfig}
 
-\title{Homework \#8}
+\title{Homework \#9}
 \author{Donald Aingworth IV}
 \date{October 16, 2024}
 
@@ -80,7 +80,26 @@ Since there is only a 20\% efficiency, the usable numbers of watts per square me
 A 0.595-kg object is released from a height of 3.60 m and lands on the ground. Find: (a) the work done by gravity; (b) the change in kinetic energy of the ball; (c) the speed just before it lands using energy methods. Ignore air resistance.
 
 \subsection*{Solution}
+\subsubsection*{Section (a)}
+The object is released directly downward, so the angle with the vertical would be $ \phi = 90 \unit{\degree} = \frac{\pi}{2} $, so $\cos(\phi) = \cos(\frac{\pi}{2}) = 1$. This simplifies the formula from $W_g = mgd\cos(\phi)$ to $W_g = mgd$.
+\begin{align*}
+    W_g &=  mgd
+        =   0.595\unit{\kilo\gram} * 9.81\unit{\meter/\second^2} * 3.60 \unit{\meter} 
+        =   \boxed{21.01302\unit{\joule}}
+\end{align*}
 
+\subsubsection*{Section (b)}
+The change in kinetic energy is equal to the work done by it. Since the object is in freefall, the only work done on it is the gravitational work.
+\[ \Delta K = W_g = \boxed{21.01302\unit{\joule}} \]
+
+\subsubsection*{Section (c)}
+We can here use the formula for kinetic energy given the change in kinetic energy. The initial kinetic energy, since it starts from no velocity, is zero.
+\[ \Delta K = K_f - K_i = K_f - 0 = K_f \]
+\begin{align*}
+    \Delta K    = K_f   &= \frac{1}{2}mv_f^2\\
+    v_f^2   &=  \frac{2K_f}{m} = \frac{2*21.01302\unit{\joule}}{0.595\unit{\kilo\gram}} = 70.632 \unit{\meter^2/\second^2}\\
+    v_f     &=  \sqrt{70.632 \unit{\meter^2/\second^2}} = \boxed{8.4043 \unit{\meter/\second}}
+\end{align*}
 
 \pagebreak
 \section*{Problem 4}
@@ -89,10 +108,20 @@ A 0.595-kg object is released from a height of 3.60 m and lands on the ground. F
     \includegraphics[width=0.35\textwidth]{graph_4.png} 
     % \label{fig:wrapfig}
 \end{wrapfigure}
-Two horses pull a barge along a canal at a steady 5.00 km/h, as shown in the figure. The tension in each rope is 420 N and each is at 300 to the direction of motion. What is the horsepower provided by the horses?
+Two horses pull a barge along a canal at a steady 5.00 km/h, as shown in the figure. The tension in each rope is 420 N and each is at 30\unit{\degree} to the direction of motion. What is the horsepower provided by the horses?
 
 \subsection*{Solution}
+First, we convert units from km/h to m/s. 
+\[ 5.00 \unit{\kilo\meter/\hour} * \frac{1000 \unit{\hour*\meter}}{3600 \unit{\kilo\meter*\second}} = \frac{25}{18} \unit{\meter/\second} \]
 
+Now, we calculate from the tension the horizontal force exerted by each horse.
+\[ F_x = T\cos(\phi) = 420\unit{\newton} * \cos(30\unit{\degree}) = 210*\sqrt{3}\unit{\newton} \]
+
+Next, we multiply this force by the velocity of the horses to find the power of each individual horse, then multiply that by two to find the total horse power.
+\begin{eqnarray*}
+    P = F_x*v = (210*\sqrt{3}\unit{\newton}) * (\frac{25}{18} \unit{\meter/\second}) = \frac{875\sqrt{3}}{3} \unit{\watt}\\
+    2*P = 2*\frac{875\sqrt{3}}{3} \unit{\watt} = \frac{1750\sqrt{3}}{3} \unit{\watt} = \boxed{1010.36 \unit{\watt}}
+\end{eqnarray*}
 
 \pagebreak
 
