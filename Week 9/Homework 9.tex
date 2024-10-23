@@ -123,38 +123,94 @@ Next, we multiply this force by the velocity of the horses to find the power of 
     2*P = 2*\frac{875\sqrt{3}}{3} \unit{\watt} = \frac{1750\sqrt{3}}{3} \unit{\watt} = \boxed{1010.36 \unit{\watt}}
 \end{eqnarray*}
 
-% \pagebreak
-% \section*{Problem 5}
-% \begin{wrapfigure}{r}{0.35\textwidth}
-%     \vspace{-30pt}
-%     \includegraphics[width=0.35\textwidth]{graph_5.png} 
-%     % \label{fig:wrapfig}
-% \end{wrapfigure}
+\pagebreak
+\section*{Problem 5}
+\begin{wrapfigure}{r}{0.35\textwidth}
+    \vspace{-30pt}
+    \includegraphics[width=0.35\textwidth]{graph_5.png} 
+    % \label{fig:wrapfig}
+\end{wrapfigure}
+A pendulum bob of mass 0.710 kg is suspended by a string of length 1.50 m. The bob is released from rest
+when the string is at 30\unit{\degree} to the vertical. The swing is interrupted by a peg 1.00 m vertically below the support
+as shown below. What is the maximum angle to the vertical made by the string after it hits the peg?
 
+\subsection*{Solution}
+In this instance, the work done by gravity on the way down would have to be equal to the work loston the way up. The distance that the bob would fall down would be equal to the maximum distance down minus the length of the string the cosine of the angle the string makes with the vertical. The same applies for the distance the bob would go back up after the interruption.
+\begin{align*}
+    W_{down} &= W_{up}\\
+    mgh_1 &= mgh_2\\
+    h_1 &= h_2\\
+    L_1 - L_1\cos(\theta) &= L_2 - L_2\cos(\phi)\\
+    \frac{L_1}{L_2}(1-\cos(\theta)) &= 1 - \cos(\phi)\\
+    \cos(\phi) &= 1 - \frac{L_1\cos(\theta)}{L_2}\\
+    \phi &= \arccos\left(1 - \frac{1.5\unit{\meter}*(1 - \cos(30\unit{\degree}))}{0.5\unit{\meter}}\right)\\
+    \phi    &=  \boxed{53.26\unit{\degree}}
+\end{align*}
 
-% \subsection*{Solution}
+\pagebreak
+\section*{Problem 6}
+\begin{wrapfigure}{r}{0.35\textwidth}
+    \vspace{-30pt}
+    \includegraphics[width=0.35\textwidth]{graph_6.png} 
+    % \label{fig:wrapfig}
+\end{wrapfigure}
+A 2.00-kg block slides on a frictionless horizontal surface and is connected on one side to a spring with a spring constant of 45.0 N/m, as shown the figure. The other side is connected to a 4.00-kg block that hangs vertically. The system starts from rest with the spring unextended. (a) What is the maximum extension of the spring? (b) What is the speed of the 4.00-kg block when the extension is 50 cm?
 
-% \pagebreak
-% \section*{Problem 6}
-% \begin{wrapfigure}{r}{0.35\textwidth}
-%     \vspace{-30pt}
-%     \includegraphics[width=0.35\textwidth]{graph_6.png} 
-%     % \label{fig:wrapfig}
-% \end{wrapfigure}
+\subsection*{Solution}
+\subsubsection*{Section (a)}
+Assuming the direction away from the wall to be positive, we do this. The mass here used will be the mass of the 4.00-kg block. 
+\begin{align*}
+    F_s &= -kx\\
+    F_{net\ 2} = 0 &= mg - T\\
+    F_{net\ 1} = 0 &= T - kx\\
+    0   &=  mg - kx\\
+    kx  &=  mg\\
+    x   &=  \frac{mg}{k} = \frac{4\unit{\kilo\gram}*9.81\unit{\meter/\second^2}}{45\unit{\newton/\meter}} = \boxed{0.872\unit{\meter}}
+\end{align*}
 
+\subsubsection*{Section (b)}
+We here use the formula for the spring work at 50-cm and then use that to calculate the kinetic energy and velocity at that point. We also use the total mass of the two blocks together, which is 2.00-kg + 4.00-kg = 6.00-kg.
+\begin{align*}
+    W_s &=  \frac{1}{2} kx^2 = \frac{45*(0.5\unit{\meter})^2}{2} = \frac{45}{8}\\
+    K   &=  \frac{1}{2}mv^2 = 3\unit{\kilo\gram}*v^2 = \frac{45}{8}\\
+    v^2 &=  \frac{15}{8}\rightarrow
+    v   &=  \sqrt{\frac{15}{8}} = \boxed{\frac{3*\sqrt{10}}{4} \unit{\meter/\second} = 2.37 \unit{\meter/\second}}
+\end{align*}
 
-% \subsection*{Solution}
+\pagebreak
+\section*{Problem 7}
+\begin{wrapfigure}{r}{0.35\textwidth}
+    \vspace{-30pt}
+    \includegraphics[width=0.35\textwidth]{graph_7.png} 
+    % \label{fig:wrapfig}
+\end{wrapfigure}
+A cart with a mass of 3.20 kg, an initial speed of 5.15 m/s and an initial height of 4.00 m is moving towards a hill of height 5.00 m, as shown in the figure. On the other side of the hill is a spring with a spring constant of 125 N/m and a height of 2.00 m. (a) Does the trolley reach the spring? (b) If so, what is the maximum compression? Ignore frictional losses and the rotational energy of the wheels.
 
-% \pagebreak
-% \section*{Problem 7}
-% \begin{wrapfigure}{r}{0.35\textwidth}
-%     \vspace{-30pt}
-%     \includegraphics[width=0.35\textwidth]{graph_7.png} 
-%     % \label{fig:wrapfig}
-% \end{wrapfigure}
+\subsection*{Solution}
+\subsubsection*{Section (a)}
+For the trolley to make it up the hill, the gravitational work would have to be less than the starting kinetic energy. Ths means that this must be the case: 
+\begin{align*}
+    K &> W_g \\ 
+    \frac{1}{2}mv^2 &> mgh \\ 
+    (5.15\unit{\meter/\second})^2 &> 2*9.81\unit{\meter/\second^2}*1\unit{\meter} \\
+    26.5225\unit{\meter^2/\second^2} &> 19.72\unit{\meter^2/\second^2}
+\end{align*}
+Since it's all downhill from the top of the hill, the trolley \textbf{does reach the spring}.
 
+\subsubsection*{Section (b)}
+First we find the kinetic energy after it lowers by a net total of 2-m. 
+\begin{align*}
+    \Delta K = W_g &= K_f - K_i\\
+    K_f &=  K_i + W_g
+        =   \frac{1}{2}mv_i^2 + mg(\Delta h)\\
+        &=  3.20\unit{\kilo\gram}(26.5225 + 9.81*2.00)\unit{\meter^2/\second^2} = 147.656\unit{\joule}
+\end{align*}
 
-% \subsection*{Solution}
+For us to find the compression of the spring, we would know that the work done by the spring would be equal to the kinetic energy going in.
+\begin{align*}
+    W_s = \frac{1}{2}kx^2 &= 147.656\unit{\joule} = K_f\\
+    x^2 &= \frac{295.312\unit{\joule}}{125\unit{\newton/\meter}} = 2.362\unit{\meter^2} \Rightarrow x = \boxed{1.537\unit{\meter}}
+\end{align*}
 
 % \pagebreak
 % \section*{Problem 8}

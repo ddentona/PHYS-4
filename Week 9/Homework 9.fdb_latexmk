@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1729473703.12363 "c:/Users/ddent/OneDrive/Documents/CCSF/PHYS-4A/Week 9/Homework 9.tex" "Homework 9.pdf" "Homework 9" 1729473711.52505 0
+["pdflatex"] 1729659355.96417 "c:/Users/ddent/OneDrive/Documents/CCSF/PHYS-4A/Week 9/Homework 9.tex" "Homework 9.pdf" "Homework 9" 1729659357.92028 0
   "C:/Users/ddent/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1726015575 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/ddent/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1724473854 24225046 9a86b7f1ef10f5afb0aa895fddb2583f ""
   "C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233951848 1004 54797486969f23fa377b128694d548df ""
@@ -168,10 +168,13 @@
   "C:/Users/ddent/AppData/Local/Programs/MiKTeX/tex/latex/translations/translations.sty" 1644048522 44247 2188b95d0ee74e31eca4d316263c58a7 ""
   "C:/Users/ddent/AppData/Local/Programs/MiKTeX/tex/latex/wrapfig/wrapfig.sty" 1044403200 26220 3701aebf80ccdef248c0c20dd062fea9 ""
   "C:/Users/ddent/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1700127522 55487 80a65caedd3722f4c20a14a69e785d8f ""
-  "Homework 9.aux" 1729473710 32 c81c40425fbb5e93b90fba65da0b5e61 "pdflatex"
-  "Homework 9.tex" 1729450861 7039 52c070226573b8bc0c3309e826b248c8 ""
-  "c:/Users/ddent/OneDrive/Documents/CCSF/PHYS-4A/Week 9/Homework 9.tex" 1729450861 7039 52c070226573b8bc0c3309e826b248c8 ""
+  "Homework 9.aux" 1729659357 32 4d1825978335c8847f72f7c473f9edc8 "pdflatex"
+  "Homework 9.tex" 1729659355 11196 739769b0d6359ebf6296bdee47a4d864 ""
+  "c:/Users/ddent/OneDrive/Documents/CCSF/PHYS-4A/Week 9/Homework 9.tex" 1729659355 11196 739769b0d6359ebf6296bdee47a4d864 ""
   "graph_4.png" 1729382069 153295 22d176e577eb0089f8dadf7491c9635a ""
+  "graph_5.png" 1729651472 37933 49fda6dd375f17edbcc81893269ee77c ""
+  "graph_6.png" 1729651509 41043 406ce367d4020b1aae7ca67ae938e085 ""
+  "graph_7.png" 1729651536 63279 80576cea5f0a316fef3acb843223f7cd ""
   (generated)
   "Homework 9.aux"
   "Homework 9.log"

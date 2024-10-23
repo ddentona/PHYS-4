@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.8.23)  20 OCT 2024 18:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.8.23)  22 OCT 2024 21:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -516,24 +516,42 @@ File: graph_4.png Graphic file (type png)
 <use graph_4.png>
 Package pdftex.def Info: graph_4.png  used on input line 108.
 (pdftex.def)             Requested size: 150.50424pt x 90.947pt.
- [4 <./graph_4.png>] (Homework 9.aux)
+ [4 <./graph_4.png>]
+<graph_5.png, id=28, 302.12875pt x 296.10625pt>
+File: graph_5.png Graphic file (type png)
+<use graph_5.png>
+Package pdftex.def Info: graph_5.png  used on input line 130.
+(pdftex.def)             Requested size: 150.50424pt x 147.50153pt.
+ [5 <./graph_5.png>]
+<graph_6.png, id=33, 427.5975pt x 244.915pt>
+File: graph_6.png Graphic file (type png)
+<use graph_6.png>
+Package pdftex.def Info: graph_6.png  used on input line 154.
+(pdftex.def)             Requested size: 150.50424pt x 86.20361pt.
+ [6 <./graph_6.png>]
+<graph_7.png, id=38, 526.96875pt x 205.76875pt>
+File: graph_7.png Graphic file (type png)
+<use graph_7.png>
+Package pdftex.def Info: graph_7.png  used on input line 184.
+(pdftex.def)             Requested size: 150.50424pt x 58.76715pt.
+ [7 <./graph_7.png>] (Homework 9.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 27767 strings out of 474486
- 747831 string characters out of 5743755
- 1934542 words of memory out of 5000000
- 49660 multiletter control sequences out of 15000+600000
+ 27788 strings out of 474486
+ 748206 string characters out of 5743755
+ 1936542 words of memory out of 5000000
+ 49681 multiletter control sequences out of 15000+600000
  562997 words of font info for 53 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,13n,107p,782b,674s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on "Homework 9.pdf" (4 pages, 238028 bytes).
+Output written on "Homework 9.pdf" (7 pages, 368075 bytes).
 PDF statistics:
- 61 PDF objects out of 1000 (max. 8388607)
+ 78 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 18 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 33 words of extra memory for PDF output out of 10000 (max. 10000000)
 
