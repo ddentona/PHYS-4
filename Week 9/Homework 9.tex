@@ -23,9 +23,9 @@
 \DeclareSIUnit{\foot}{ft}
 \DeclareSIUnit{\h}{h}
 
-% \maketitle
+\maketitle
 
-% \pagebreak
+\pagebreak
 \section*{Problem 1}
 A spring gun with k = 90.0 N/m is compressed by 5 cm. What is the exit speed of a 2.10-g projectile?
 
@@ -33,7 +33,7 @@ A spring gun with k = 90.0 N/m is compressed by 5 cm. What is the exit speed of 
 
 \begin{align*}
     W   &= \int_{min}^{max} F(x)\ dx = \int_{-0.05}^{0} -kx\ dx = \left(-\frac{1}{2}kx^2\right)\vert_{-0.05}^{0} \\
-        &= \frac{1}{2}k*0.05^2 = 45\unit{\newton/\meter} * 0.0025\unit{\meter^2} = 0.1 \unit{\joule}\\
+        &= \frac{1}{2}k*0.05^2 = 45\unit{\newton/\meter} * 0.0025\unit{\meter^2} = 0.1125 \unit{\joule}\\
     W   &=  \Delta K = K_f - K_i
 \end{align*}
 Since the spring on the block is unmoving at the start, then $v_i = 0$, so $K_i = \frac{1}{2}mv_i^2$ is also equal to zero. From there, we can determine the final kinetic energy and determine the velocity at the end.
@@ -42,9 +42,9 @@ Since the spring on the block is unmoving at the start, then $v_i = 0$, so $K_i 
     K_f &= W = 0.1\unit{\joule} = \frac{1}{2}mv_f^2\\
     \frac{2K_f}{m} &= v_f^2\\
     v_f &= \sqrt{\frac{2K_f}{m}} 
-        = \sqrt{\frac{2*0.1\unit{\joule}}{0.0021\unit{\kilo\gram}}}
-        = \sqrt{\frac{2*1000}{21}}\\
-        &= \boxed{\frac{20\sqrt{105}}{21} \unit{\meter/\second} \approx 9.759 \unit{\meter/\second}}
+        = \sqrt{\frac{2*0.1125\unit{\joule}}{0.0021\unit{\kilo\gram}}}
+        = \sqrt{\frac{225*10}{21}}\\
+        &= \boxed{\frac{5\sqrt{210}}{7} \unit{\meter/\second} \approx 10.351 \unit{\meter/\second}}
 \end{align*}
 
 \pagebreak
@@ -174,7 +174,7 @@ We here use the formula for the spring work at 50-cm and then use that to calcul
     W_s &=  \frac{1}{2} kx^2 = \frac{45*(0.5\unit{\meter})^2}{2} = \frac{45}{8}\\
     K   &=  \frac{1}{2}mv^2 = 3\unit{\kilo\gram}*v^2 = \frac{45}{8}\\
     v^2 &=  \frac{15}{8}\rightarrow
-    v   &=  \sqrt{\frac{15}{8}} = \boxed{\frac{3*\sqrt{10}}{4} \unit{\meter/\second} = 2.37 \unit{\meter/\second}}
+    v   =  \sqrt{\frac{15}{8}} = \boxed{\frac{3*\sqrt{10}}{4} \unit{\meter/\second} = 2.37 \unit{\meter/\second}}
 \end{align*}
 
 \pagebreak
@@ -212,11 +212,32 @@ For us to find the compression of the spring, we would know that the work done b
     x^2 &= \frac{295.312\unit{\joule}}{125\unit{\newton/\meter}} = 2.362\unit{\meter^2} \Rightarrow x = \boxed{1.537\unit{\meter}}
 \end{align*}
 
-% \pagebreak
-% \section*{Problem 8}
+\pagebreak
+\section*{Problem 8}
+A projectile is fired at 27.0 m/s in a direction 65\unit{\degree} above the horizonal from a rooftop of height 40.0 m. Use energy considerations to find: (a) the speed with which it lands on the ground; (b) the height at which its speed is 15.0 m/s.
 
+\subsection*{Solution}
+\subsubsection*{Section (a)}
+We first take the kinetic energy and calculate the work done by gravity.
+\begin{align*}
+    W   &= \Delta K\\
+    K_f &= W + K_i\\
+        &=  mg \Delta h + \frac{1}{2}mv_i^2\\
+    \frac{1}{2}mv_f^2   &= m(g \Delta h + \frac{1}{2}v_i^2)\\
+    v_f^2   &=  2gh + v_i^2\\
+    v_f &=  \sqrt{  2*(-9.81\unit{\meter/\second^2})*(-40\unit{\meter}) + 27.0^2\ \unit{\meter^2/\second^2} } = \boxed{38.9076\unit{\meter/\second}}
+\end{align*}
 
-% \subsection*{Solution}
-
+\subsubsection*{Section (b)}
+We here use the same formulas, but we know that the final velocity is 15\unit{\meter/\second}.
+\begin{align*}
+    K_f &= W + K_i\\
+    \frac{1}{2}mv_f^2   &=  mg \Delta h + \frac{1}{2}mv_i^2\\
+    v_f^2   &=  2g \Delta h + v_i^2\\
+    \Delta h    &=  \frac{v_f^2 - v_i^2}{2g} 
+        =   \frac{15^2 - 27^2}{2*(-9.81)} \unit{\meter} 
+        =  25.688\unit{\meter}\\
+    h   &=  40\unit{\meter} + 25.688\unit{\meter} = \boxed{65.688\unit{\meter}}
+\end{align*}
 
 \end{document}

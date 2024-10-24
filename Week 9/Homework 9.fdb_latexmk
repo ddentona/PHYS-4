@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1729697120.78028 "/Users/dentonaingworth/Library/CloudStorage/OneDrive-Personal/Documents/CCSF/PHYS-4A/Week 9/Homework 9.tex" "Homework 9.pdf" "Homework 9" 1729697121.61424 0
-  "/Users/dentonaingworth/Library/CloudStorage/OneDrive-Personal/Documents/CCSF/PHYS-4A/Week 9/Homework 9.tex" 1729697120.58439 11196 5fa429cb13ede1d38275c4cd81c1c84d ""
+["pdflatex"] 1729715943.43517 "/Users/dentonaingworth/Library/CloudStorage/OneDrive-Personal/Documents/CCSF/PHYS-4A/Week 9/Homework 9.tex" "Homework 9.pdf" "Homework 9" 1729715944.22851 0
+  "/Users/dentonaingworth/Library/CloudStorage/OneDrive-Personal/Documents/CCSF/PHYS-4A/Week 9/Homework 9.tex" 1729715943.23757 12409 84a5f922f5df72e5daaadac5ad3e91ee ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -21,6 +21,7 @@
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb" 1248133631 36741 fa121aac0049305630cf160b86157ee4 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb" 1248133631 35469 70d41d2b9ea31d5d813066df7c99281c ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1248133631 32722 d7379af29a190c3f453aba36302ff5a9 ""
+  "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb" 1248133631 32362 179c33bbf43f19adbb3825bb4e36e57a ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb" 1248133631 32726 0a1aea6fcd6468ee2cf64d891f5c43c8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1248133631 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb" 1248133631 32626 4f5c1b83753b1dd3a97d1b399a005b4b ""
@@ -171,8 +172,8 @@
   "/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1727305248.69286 5467645 128b85b7cde5f5edc5cb7f1dd7ff8736 ""
   "/usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1727305230 8221424 9bdbcc07e109911bb30a75dc8990d89e ""
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
-  "Homework 9.aux" 1729697121.53278 32 4d1825978335c8847f72f7c473f9edc8 "pdflatex"
-  "Homework 9.tex" 1729697120.58439 11196 5fa429cb13ede1d38275c4cd81c1c84d ""
+  "Homework 9.aux" 1729715944.17871 32 1b174032087fb90900fa6203d3bb0a7e "pdflatex"
+  "Homework 9.tex" 1729715943.23757 12409 84a5f922f5df72e5daaadac5ad3e91ee ""
   "graph_4.png" 1729382069 153295 ff77e04109c0e28992f3bddff4283930 ""
   "graph_5.png" 1729697037.16648 37933 ba0e3e7bb8bc916226a45818f259bd4f ""
   "graph_6.png" 1729697037.16682 41043 7eebf3f886c8c108de95537f355cecb4 ""
