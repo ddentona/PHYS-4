@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.8.23)  23 OCT 2024 21:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.8.23)  23 OCT 2024 21:41
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"c:/Users/ddent/OneDrive/Documents/CCSF/PHYS-4A/Week 9/Homework 9.tex"
-(c:/Users/ddent/OneDrive/Documents/CCSF/PHYS-4A/Week 9/Homework 9.tex
+**"c:/Users/ddent/OneDrive/Documents/CCSF/PHYS-4A/Week 10/Homework 10.tex"
+(c:/Users/ddent/OneDrive/Documents/CCSF/PHYS-4A/Week 10/Homework 10.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
 (C:\Users\ddent\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
@@ -431,8 +431,8 @@ Package translations Info: No language package found. I am going to use `english
 File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count320
 \l__pdf_internal_box=\box76
-) (Homework 9.aux)
-\openout1 = `"Homework 9.aux"'.
+) (Homework 10.aux)
+\openout1 = `"Homework 10.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
 LaTeX Font Info:    ... okay on input line 19.
@@ -510,48 +510,30 @@ File: translations-basic-dictionary-english.trsl (english translation file `tran
 Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 19.
  [1
 
-{C:/Users/ddent/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2] [3] [4]
-<graph_4.png, id=26, 514.92375pt x 311.1625pt>
-File: graph_4.png Graphic file (type png)
-<use graph_4.png>
-Package pdftex.def Info: graph_4.png  used on input line 108.
-(pdftex.def)             Requested size: 150.50424pt x 90.947pt.
- [5 <./graph_4.png>]
-<graph_5.png, id=32, 302.12875pt x 296.10625pt>
-File: graph_5.png Graphic file (type png)
-<use graph_5.png>
-Package pdftex.def Info: graph_5.png  used on input line 130.
-(pdftex.def)             Requested size: 150.50424pt x 147.50153pt.
- [6 <./graph_5.png>]
-<graph_6.png, id=37, 427.5975pt x 244.915pt>
-File: graph_6.png Graphic file (type png)
-<use graph_6.png>
-Package pdftex.def Info: graph_6.png  used on input line 154.
-(pdftex.def)             Requested size: 150.50424pt x 86.20361pt.
- [7 <./graph_6.png>] [8]
-<graph_7.png, id=46, 526.96875pt x 205.76875pt>
-File: graph_7.png Graphic file (type png)
-<use graph_7.png>
-Package pdftex.def Info: graph_7.png  used on input line 185.
-(pdftex.def)             Requested size: 150.50424pt x 58.76715pt.
- [9 <./graph_7.png>] [10] (Homework 9.aux)
+{C:/Users/ddent/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2]
+<graph_2.png, id=14, 609.27625pt x 457.71pt>
+File: graph_2.png Graphic file (type png)
+<use graph_2.png>
+Package pdftex.def Info: graph_2.png  used on input line 37.
+(pdftex.def)             Requested size: 150.50424pt x 113.06532pt.
+ [3 <./graph_2.png>] (Homework 10.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 27797 strings out of 474486
- 748402 string characters out of 5743755
- 1934542 words of memory out of 5000000
- 49690 multiletter control sequences out of 15000+600000
- 564362 words of font info for 58 fonts, out of 8000000 for 9000
+ 27751 strings out of 474486
+ 747665 string characters out of 5743755
+ 1925542 words of memory out of 5000000
+ 49651 multiletter control sequences out of 15000+600000
+ 560943 words of font info for 46 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,13n,107p,782b,674s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on "Homework 9.pdf" (10 pages, 383274 bytes).
+ 99i,6n,107p,784b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb>
+Output written on "Homework 10.pdf" (3 pages, 93814 bytes).
 PDF statistics:
- 92 PDF objects out of 1000 (max. 8388607)
+ 33 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 33 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 18 words of extra memory for PDF output out of 10000 (max. 10000000)
 

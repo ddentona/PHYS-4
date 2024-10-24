@@ -160,21 +160,22 @@ A 2.00-kg block slides on a frictionless horizontal surface and is connected on 
 \subsubsection*{Section (a)}
 Assuming the direction away from the wall to be positive, we do this. The mass here used will be the mass of the 4.00-kg block. 
 \begin{align*}
-    F_s &= -kx\\
-    F_{net\ 2} = 0 &= mg - T\\
-    F_{net\ 1} = 0 &= T - kx\\
-    0   &=  mg - kx\\
-    kx  &=  mg\\
-    x   &=  \frac{mg}{k} = \frac{4\unit{\kilo\gram}*9.81\unit{\meter/\second^2}}{45\unit{\newton/\meter}} = \boxed{0.872\unit{\meter}}
+    W_s &=  \frac{1}{2}kx^2\\
+    W_g &=  mgx\\
+    \frac{1}{2}kx^2 &=  mgx\\
+    \frac{1}{2}kx   &=  mg\\
+    x   &=  \frac{2mg}{k} = \frac{2*4\unit{\kilo\gram}*9.81\unit{\meter/\second^2}}{45\unit{\newton/\meter}} = \boxed{1.744\unit{\meter}}
 \end{align*}
 
+\pagebreak
 \subsubsection*{Section (b)}
 We here use the formula for the spring work at 50-cm and then use that to calculate the kinetic energy and velocity at that point. We also use the total mass of the two blocks together, which is 2.00-kg + 4.00-kg = 6.00-kg.
 \begin{align*}
-    W_s &=  \frac{1}{2} kx^2 = \frac{45*(0.5\unit{\meter})^2}{2} = \frac{45}{8}\\
-    K   &=  \frac{1}{2}mv^2 = 3\unit{\kilo\gram}*v^2 = \frac{45}{8}\\
-    v^2 &=  \frac{15}{8}\rightarrow
-    v   =  \sqrt{\frac{15}{8}} = \boxed{\frac{3*\sqrt{10}}{4} \unit{\meter/\second} = 2.37 \unit{\meter/\second}}
+    W_s &=  -\frac{1}{2} kx^2 = \frac{45*(0.5\unit{\meter})^2}{2} = -\frac{45}{8}\\
+    K + W_g &=  \frac{1}{2}m_\Sigma v^2 + m_2g \Delta x 
+            = 3\unit{\kilo\gram}*v^2 + (0.5*4*9.81)\unit{\joule} = -\frac{45}{8}\\
+    v^2 &=  -\frac{15}{8}\unit{\meter^2/\second^2} + \frac{19.62}{3}\unit{\meter^2/\second^2} = \frac{933}{200}\\
+    v   &=  \sqrt{\frac{933}{200}} = \boxed{\frac{\sqrt{1866}}{20} \unit{\meter/\second} = 2.160 \unit{\meter/\second}}
 \end{align*}
 
 \pagebreak
@@ -203,13 +204,13 @@ First we find the kinetic energy after it lowers by a net total of 2-m.
     \Delta K = W_g &= K_f - K_i\\
     K_f &=  K_i + W_g
         =   \frac{1}{2}mv_i^2 + mg(\Delta h)\\
-        &=  3.20\unit{\kilo\gram}(26.5225 + 9.81*2.00)\unit{\meter^2/\second^2} = 147.656\unit{\joule}
+        &=  3.20\unit{\kilo\gram}(\frac{26.5225}{2} + 9.81*2.00)\unit{\meter^2/\second^2} = 105.22\unit{\joule}
 \end{align*}
 
 For us to find the compression of the spring, we would know that the work done by the spring would be equal to the kinetic energy going in.
 \begin{align*}
-    W_s = \frac{1}{2}kx^2 &= 147.656\unit{\joule} = K_f\\
-    x^2 &= \frac{295.312\unit{\joule}}{125\unit{\newton/\meter}} = 2.362\unit{\meter^2} \Rightarrow x = \boxed{1.537\unit{\meter}}
+    W_s = \frac{1}{2}kx^2 &= 105.22\unit{\joule} = K_f\\
+    x^2 &= \frac{210.44\unit{\joule}}{125\unit{\newton/\meter}} = 1.6835\unit{\meter^2} \Rightarrow x = \boxed{1.298\unit{\meter}}
 \end{align*}
 
 \pagebreak
