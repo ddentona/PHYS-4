@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.8.23)  24 OCT 2024 10:34
+=======
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.25)  25 OCT 2024 09:33
+>>>>>>> c6aa21d (Move File Testing Init Commit)
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -514,7 +518,7 @@ Package translations Info: loading dictionary `translations-basic-dictionary' fo
 <graph_2.png, id=17, 609.27625pt x 457.71pt>
 File: graph_2.png Graphic file (type png)
 <use graph_2.png>
-Package pdftex.def Info: graph_2.png  used on input line 40.
+Package pdftex.def Info: graph_2.png  used on input line 38.
 (pdftex.def)             Requested size: 150.50424pt x 113.06532pt.
  [3 <./graph_2.png>] (Homework 10.aux)
  ***********
