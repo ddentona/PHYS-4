@@ -275,6 +275,11 @@ INPUT ./graph_3.png
 INPUT ./graph_3.png
 INPUT ./graph_3.png
 INPUT ./graph_3.png
+INPUT ./graph_5.png
+INPUT ./graph_5.png
+INPUT ./graph_5.png
+INPUT ./graph_5.png
+INPUT ./graph_5.png
 INPUT Homework 10.aux
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb

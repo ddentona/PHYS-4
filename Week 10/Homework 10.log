@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.25)  27 OCT 2024 16:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.25)  27 OCT 2024 17:51
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -516,25 +516,31 @@ File: graph_3.png Graphic file (type png)
 <use graph_3.png>
 Package pdftex.def Info: graph_3.png  used on input line 107.
 (pdftex.def)             Requested size: 150.50424pt x 70.99564pt.
- [5 <./graph_3.png>] [6] [7] [8] [9] (./Homework 10.aux)
+ [5 <./graph_3.png>] [6] [7]
+<graph_5.png, id=41, 183.68625pt x 93.34875pt>
+File: graph_5.png Graphic file (type png)
+<use graph_5.png>
+Package pdftex.def Info: graph_5.png  used on input line 189.
+(pdftex.def)             Requested size: 150.50424pt x 76.4909pt.
+ [8 <./graph_5.png>] [9] [10] [11] (./Homework 10.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 27753 strings out of 474116
- 743866 string characters out of 5743682
+ 27760 strings out of 474116
+ 743991 string characters out of 5743682
  1939187 words of memory out of 5000000
- 49724 multiletter control sequences out of 15000+600000
+ 49731 multiletter control sequences out of 15000+600000
  564362 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,16n,107p,783b,700s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on "Homework 10.pdf" (9 pages, 134915 bytes).
+Output written on "Homework 10.pdf" (11 pages, 150325 bytes).
 PDF statistics:
- 90 PDF objects out of 1000 (max. 8388607)
- 56 compressed objects within 1 object stream
+ 98 PDF objects out of 1000 (max. 8388607)
+ 60 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 18 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 23 words of extra memory for PDF output out of 10000 (max. 10000000)
 

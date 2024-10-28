@@ -183,6 +183,49 @@ This leads us to that $ -U'(r) = -0 = 0 $ at $ r = r_0 $, so $ F(r) = -U'(r) = 0
 
 
 \pagebreak
+\section*{Problem 5}
+\begin{wrapfigure}{r}{0.35\textwidth}
+    \vspace{-30pt}
+    \includegraphics[width=0.35\textwidth]{graph_5.png} 
+    % \label{fig:wrapfig}
+\end{wrapfigure}
+In the figure below, a 3.50 kg block is accelerated from rest by a compressed spring of spring constant 640 N/m. The block leaves the spring at the spring's relaxed length and then travels over a horizontal floor with a coefficient of kinetic friction $\mu_k$ = 0.25. The frictional force stops the block in distance D = 7.80 m. What are (a) the increase in the thermal energy of the block-floor system, (b) the maximum kinetic energy of the block, and (c) the original compression distance of the spring?
+
+\subsection*{Solution}
+\subsubsection*{Section (a)}
+We observe that the sole thermal energy would be frictional. We can apply the formula for that.
+\begin{align*}
+    \Delta E_{th}   &=  f_k d
+        =   F_N \mu_k d
+        =   mg\mu_k d
+        =   3.50*9.81*0.25*7.80 \unit{\joule}
+        = \boxed{66.95325\unit{\joule}}
+\end{align*}
+
+\subsubsection*{Section (b)}
+The fastest it would go would be at the intersection of the frictional and the frictionless surfaces. Since all the lost energy on the frictional surface is termal, we can use our answer in part (a) to answer this. The final kinetic energy is zero because it ends at a halt.
+\begin{align*}
+    \Delta K    &=  -\Delta E_{th}\rightarrow
+    K_i - K_f   =  mg\mu_k d\\
+    \frac{1}{2}mv_i^2   &=  mg\mu_k d\rightarrow
+    v_i^2   =  2gd \mu_k\\
+    v_i &=  \sqrt{2gd \mu_k}
+        =   \sqrt{2*9.81*7.80*0.25}
+        =   \boxed{6.1854\unit{\meter/\second}}
+\end{align*}
+
+\subsubsection*{Section (c)}
+The compression distance can be computed using the kinetic energy and the conservation of energy.
+\begin{align*}
+    U   &=  K\rightarrow
+    \frac{1}{2}kx^2 =  \frac{1}{2}mv^2\\
+    x^2 &=  \frac{v^2}{k} 
+        =   \frac{2gd \mu_k}{k}\\
+    x   &=  \sqrt{\frac{2gd \mu_k}{k}}
+        =   \boxed{0.2445\unit{\meter}}
+\end{align*}
+
+\pagebreak
 \section*{Problem 6}
 The masses and positions of three particles in the xy plane are as follows: 2.05 kg at (-2.00, 3.00) m; 3.00 kg at (-3.00, 4.00) m, and; and 5.00 kg at (3.00, -1.00) m. What is the position of the CM?
 
