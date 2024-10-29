@@ -270,32 +270,36 @@ We divide the total momentum by the total mass.
         =   \boxed{ \begin{pmatrix}-1.00\\0.75\\0.25\end{pmatrix} \unit{\kilogram\cdot\meter/\second} }
 \end{align*}
 
-% \pagebreak
-% \section*{Problem 8}
-% \begin{wrapfigure}{r}{0.35\textwidth}
-%     \vspace{-30pt}
-%     \includegraphics[width=0.35\textwidth]{graph_8.png} 
-%     % \label{fig:wrapfig}
-% \end{wrapfigure}
-% Use integration to locate the CM of the triangular plate of base b and height h shown in the figure below.
-% The plate has a uniform areal mass density $\sigma$ (mass per unit area).
+\pagebreak
+\section*{Problem 8}
+\begin{wrapfigure}{r}{0.35\textwidth}
+    \vspace{-30pt}
+    \includegraphics[width=0.35\textwidth]{graph_8.png} 
+    % \label{fig:wrapfig}
+\end{wrapfigure}
+Use integration to locate the CM of the triangular plate of base b and height h shown in the figure below.
+The plate has a uniform areal mass density $\sigma$ (mass per unit area).
 
-% \subsection*{Solution}
-% We know our equations for center of mass on the x and y axes. First, however, we calculate the formula for center of mass using area and mass density.
-% \begin{align*}
-%     \sigma  &=  \frac{M}{A} = \frac{dm}{dA}\\
-%     dm      &=  \frac{M}{A}dA\\
-%     dA      &=  \frac{A}{M}dm\\
-%     x_{com} &=  \frac{1}{M}\int x\ dm
-%             =   \frac{1}{A}\int x\ dA
-% \end{align*}
-% \begin{align*}
-%     m(x) &= \sigma*x*\frac{h}{b}\\
-%     x_{com} &= \frac{}{}\int_{0}^{b} \sigma*x*\frac{h}{b}\ dx 
-%         = \sigma*\frac{h}{b}*\int_{0}^{b} x\ dx\\
-%         &=  \sigma*\frac{h}{b}*\left[\frac{x^2}{2}\right]_0^b 
-%         = \sigma*\frac{h}{b}*\frac{b^2}{2}
-%         = \frac{\sigma*h*b}{2}
-% \end{align*}
+\subsection*{Solution}
+We know our equations for center of mass on the x and y axes. First, however, we calculate the formula for center of mass using area and mass density.
+\begin{align*}
+    \frac{dm}{dx}   &=  x*\frac{h}{b}*\sigma\\
+    dm  &=  x*\frac{h}{b}*\sigma\ dx\\
+    x_{com} &=  \frac{1}{M}\int x\ dm
+        =   \frac{1}{\sigma*\frac{1}{2}bh}\int_{0}^{b} x^2*\frac{h}{b}*\sigma\ dx\\
+        &=  \frac{2}{b^2}\int_{0}^{b} x^2\ dx
+        =   \frac{2}{b^2}\left[\frac{x^3}{3}\right]_{0}^{b}
+        =   \frac{2*b^3}{3*b^2} = \frac{2}{3}b\\
+    \
+    \frac{dm}{dy}   &=  \left(b - y*\frac{b}{h}\right)*\sigma\\
+    dm  &=  \left(b - y*\frac{b}{h}\right)*\sigma\ dy\\
+    y_{com} &=  \frac{1}{M}\int y\ dm
+        =   \frac{1}{\sigma*\frac{1}{2}bh}\int_{0}^{h} y*b*\left(1-y*\frac{1}{h}\right)*\sigma\ dy\\
+        &=  \frac{2}{h}\int_{0}^{h} y - \frac{y^2}{h}\ dx
+        =   \frac{2}{h}\left[\frac{y^2}{2} - \frac{y^3}{3h}\right]_{0}^{h}\\
+        &=  \frac{2}{h}\left(\frac{h^2}{2}-\frac{h^2}{3}\right)
+        =   \frac{h}{3} 
+\end{align*}
 
+This concludes that, relative to the bottom left corner at (0,0), the point of the center of mass is \boxed{\left(\frac{2b}{3},\frac{h}{3}\right)}.
 \end{document}
