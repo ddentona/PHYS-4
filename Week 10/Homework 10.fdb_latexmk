@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1730180200.43689 "c:/Users/ddent/OneDrive/Documents/CCSF/PHYS-4A/Week 10/Homework 10.tex" "Homework 10.pdf" "Homework 10" 1730180202.26398 0
+["pdflatex"] 1730255546.99576 "c:/Users/ddent/OneDrive/Documents/CCSF/PHYS-4A/Week 10/Homework 10.tex" "Homework 10.pdf" "Homework 10" 1730255548.91119 0
   "C:/Users/ddent/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1726015575 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/ddent/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1724473854 24225046 9a86b7f1ef10f5afb0aa895fddb2583f ""
   "C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233951848 1004 54797486969f23fa377b128694d548df ""
@@ -170,10 +170,13 @@
   "C:/Users/ddent/AppData/Local/Programs/MiKTeX/tex/latex/translations/translations.sty" 1644048522 44247 2188b95d0ee74e31eca4d316263c58a7 ""
   "C:/Users/ddent/AppData/Local/Programs/MiKTeX/tex/latex/wrapfig/wrapfig.sty" 1044403200 26220 3701aebf80ccdef248c0c20dd062fea9 ""
   "C:/Users/ddent/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1700127522 55487 80a65caedd3722f4c20a14a69e785d8f ""
-  "Homework 10.aux" 1730180202 33 e6d77a6cc1977d88a849501f83258f9d "pdflatex"
-  "Homework 10.tex" 1730180199 15645 29536fc4de63e20ca478b1eb11219238 ""
-  "c:/Users/ddent/OneDrive/Documents/CCSF/PHYS-4A/Week 10/Homework 10.tex" 1730180199 15645 29536fc4de63e20ca478b1eb11219238 ""
+  "Homework 10.aux" 1730255548 33 e6d77a6cc1977d88a849501f83258f9d "pdflatex"
+  "Homework 10.tex" 1730255546 16094 53c50d3b1abdbac7fa859ec1f77522cd ""
+  "c:/Users/ddent/OneDrive/Documents/CCSF/PHYS-4A/Week 10/Homework 10.tex" 1730255546 16094 53c50d3b1abdbac7fa859ec1f77522cd ""
+  "graph_2.png" 1729782257 75270 6ccace0a47374328c759570cc868959c ""
+  "graph_2s.JPG" 1730252763 28956 e9c334ad967c19f423de3dd682fe19a1 ""
   "graph_3.png" 1730087749 11682 738d228287c4202da35810419ff5ef94 ""
+  "graph_4s.JPG" 1730252804 24121 dba0ccaa13ebe2350b651ce6b3c91e24 ""
   "graph_5.png" 1730087749 13207 a96991e0a89abaa6108a872090c3b277 ""
   "graph_8.png" 1730087749 14809 3a9d05abab8c679132428387c94531e1 ""
   (generated)

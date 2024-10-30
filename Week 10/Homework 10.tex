@@ -35,8 +35,8 @@ Work is defined by $ W = \vec{F}\cdot\vec{d} $. In this instance, we can use the
     W_k &=  \vec{f_k}\cdot\vec{d}
         =   f_k*d*\cos(180\unit{\degree})
         =   -f_k*d\\
-        &=  -\mu_k*F_N*d
-        =   -\mu_k*m*g*d
+        &=  -\mu_k*F_N*d*\cos(\theta)
+        =   -\mu_k*m*g*d*\cos(\theta)
 \end{align*}
 We next can calculate the work done by gravity.
 \begin{align*}
@@ -54,17 +54,17 @@ We combine these three to get a formula for the distance here. We should place s
 \begin{align*}
     K_f &=  K_i + W_\Sigma
         =   K_i + W_g - W_k\\
-    \frac{1}{2}mv_f^2 &= \frac{1}{2}mv_i^2 + m*g*d*\sin(\theta) - \mu_k*m*g*d\\
-    \frac{1}{2}(v_f^2 - v_i^2)  &=  d*g*(\sin(\theta)-\mu_k)\\
-    d   &=  \frac{v_f^2 - v_i^2}{2*g*(\sin(\theta)-\mu_k)}
+    \frac{1}{2}mv_f^2 &= \frac{1}{2}mv_i^2 + m*g*d*\sin(\theta) - \mu_k*m*g*d*\cos(\theta)\\
+    \frac{1}{2}(v_f^2 - v_i^2)  &=  d*g*(\sin(\theta)-\mu_k*\cos(\theta))\\
+    d   &=  \frac{v_f^2 - v_i^2}{2*g*(\sin(\theta)-\mu_k*\cos(\theta))}
 \end{align*}
 We will call this last formula  "Formula 1", not named after the racecar competition.
 \pagebreak
 \subsubsection*{Section (a)}
 We apply Formula 1.
 \begin{align*}
-    d   &=  \frac{v_f^2 - v_i^2}{2*g*(\sin(\theta)-\mu_k)}
-        =   \frac{(0\unit{\meter/\second})^2 - (4\unit{\meter/\second})^2}{2*(9.81\unit{\meter/\second^2})*(\sin(0\unit{\degree})-0.600)}\\
+    d   &=  \frac{v_f^2 - v_i^2}{2*g*(\sin(\theta)-\mu_k*\cos(\theta))}
+        =   \frac{(0\unit{\meter/\second})^2 - (4\unit{\meter/\second})^2}{2*(9.81\unit{\meter/\second^2})*(\sin(0\unit{\degree})-0.600*\cos(0\unit{\degree}))}\\
         &=  \frac{ - 16\unit{\meter^2/\second^2}}{19.62\unit{\meter/\second^2}*(-0.600)}
         =   \frac{16\unit{\meter^2/\second^2}}{11.772\unit{\meter/\second^2}}
         =   \boxed{1.359\unit{\meter}}\\
@@ -73,32 +73,34 @@ We apply Formula 1.
 \subsubsection*{Section (b)}
 We apply Formula 1.
 \begin{align*}
-    d   &=  \frac{v_f^2 - v_i^2}{2*g*(\sin(\theta)-\mu_k)}
-        =   \frac{(0\unit{\meter/\second})^2 - (4\unit{\meter/\second})^2}{2*(9.81\unit{\meter/\second^2})*(\sin(30\unit{\degree})-0.600)}\\
-        &=  \frac{ - 16\unit{\meter^2/\second^2}}{19.62\unit{\meter/\second^2}*(0.500-0.600)}
-        =   \frac{16\unit{\meter^2/\second^2}}{1.962\unit{\meter/\second^2}}
-        =   \boxed{8.155\unit{\meter}}\\
+    d   &=  \frac{v_f^2 - v_i^2}{2*g*(\sin(\theta)-\mu_k*\cos(\theta))}\\
+        &=   \frac{(0\unit{\meter/\second})^2 - (4\unit{\meter/\second})^2}{2*(9.81\unit{\meter/\second^2})*(\sin(-30\unit{\degree})-0.600*\cos(-30\unit{\degree}))}\\
+        &=  \frac{ - 16\unit{\meter^2/\second^2}}{19.62\unit{\meter/\second^2}*(-0.500-0.300*\sqrt{3})}
+        =   \frac{16\unit{\meter^2/\second^2}}{2\unit{\meter/\second^2}}
+        =   \boxed{0.800\unit{\meter}}\\
 \end{align*}
 
 \subsubsection*{Section (c)}
 We apply Formula 1.
 \begin{align*}
-    d   &=  \frac{v_f^2 - v_i^2}{2*g*(\sin(\theta)-\mu_k)}
-        =   \frac{(0\unit{\meter/\second})^2 - (4\unit{\meter/\second})^2}{2*(9.81\unit{\meter/\second^2})*(\sin(-30\unit{\degree})-0.600)}\\
-        &=  \frac{ - 16\unit{\meter^2/\second^2}}{19.62\unit{\meter/\second^2}*(-0.500-0.600)}
-        =   \frac{16\unit{\meter^2/\second^2}}{21.582\unit{\meter/\second^2}}
-        =   \boxed{0.741\unit{\meter}}\\
+    d   &=  \frac{v_f^2 - v_i^2}{2*g*(\sin(\theta)-\mu_k*\cos(\theta))}
+        =   \frac{(0\unit{\meter/\second})^2 - (4\unit{\meter/\second})^2}{2*(9.81\unit{\meter/\second^2})*(\sin(30\unit{\degree})-0.600*\cos(30\unit{\degree}))}\\
+        &=  \frac{ - 16\unit{\meter^2/\second^2}}{19.62\unit{\meter/\second^2}*(0.500-0.300\sqrt{3})}
+        =   \frac{16\unit{\meter^2/\second^2}}{0.384\unit{\meter/\second^2}}
+        =   \boxed{41.575\unit{\meter}}\\
 \end{align*}
 
 \pagebreak
+\begin{wrapfigure}{l}{0.35\textwidth}
+    \vspace{-40pt}
+    \includegraphics[width=0.35\textwidth]{graph_2.png} 
+    % \label{fig:wrapfig}
+\end{wrapfigure}
 \section*{Problem 2}
-% \begin{wrapfigure}{r}{0.35\textwidth}
-%     \vspace{-30pt}
-%     \includegraphics[width=0.35\textwidth]{graph_2.png} 
-%     % \label{fig:wrapfig}
-% \end{wrapfigure}
+Use the potential energy function U(x) shown in figure below to sketch the corresponding $F_x$ versus $x$ graph.
 
-% \subsection*{Solution}
+\subsection*{Solution}
+\includegraphics[scale=0.5]{graph_2s.JPG}
 
 \pagebreak
 \section*{Problem 3}
@@ -180,6 +182,9 @@ This concludes that \boxed{\text{it is the minimum}}.
 The formula for force is $ F(r) = -\frac{dU(r)}{dr} $. \\
 We previously calculated that $ \frac{dU(r)}{dr} = 12 * U_0 \left( r_0^{6}r^{-7} - r_0^{12} r^{-13} \right) $ and that $ U'(r) = 0 $ at $ r = r_0 $. \\
 This leads us to that $ -U'(r) = -0 = 0 $ at $ r = r_0 $, so $ F(r) = -U'(r) = 0 $ at $ r = r_0 $.
+
+\subsubsection*{Section (d)}
+\begin{center} \includegraphics[height=0.4\textheight]{graph_4s.JPG} \end{center}
 
 
 \pagebreak
