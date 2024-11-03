@@ -58,6 +58,25 @@ Now we can use the angles and momentum to calculate the sum of the two and then 
 A 60.0-g tennis ball strikes the ground at 25.0 m/s at 40\unit{\degree} to the horizontal. It bounces off at 20.0 m/s at 30\unit{\degree} to the horizontal. (a) Find the impulse exerted on the ball. (b) If the collision lasted 5.00 ms, find the average force exerted on the ball by the court.
 
 \subsection*{Solution}
+\subsubsection*{Section (a)}
+We use the formula for impulse, with the use of momentum.
+\begin{align*}
+    \vec{J} &=  \vec{p}_f - \vec{p}_i
+        =   m*(\vec{v}_f - \vec{v}_i)
+        =   0.06*\left( 25.0*\left(\begin{smallmatrix} \cos(40\unit{\degree}) \\ \sin(40\unit{\degree}) \end{smallmatrix}\right) - 20.0*\left(\begin{smallmatrix} \cos(30\unit{\degree}) \\ \sin(30\unit{\degree}) \end{smallmatrix}\right) \right) \unit{\kilo\gram\frac{\meter}{\second}}\\
+        &=  0.06*\left( \begin{pmatrix} 19.15 \\ 16.07 \end{pmatrix} - \begin{pmatrix} 17.32 \\ 10 \end{pmatrix} \right) \unit{\kilo\gram\frac{\meter}{\second}}
+        =   0.06*\begin{pmatrix} 1.8306 \\ 6.0697 \end{pmatrix} \unit{\kilo\gram\frac{\meter}{\second}}
+        =   \boxed{ \begin{pmatrix} 0.1098 \\ 0.3642 \end{pmatrix} \unit{\kilo\gram\frac{\meter}{\second}} }
+\end{align*}
+
+\subsubsection*{Section (b)}
+Next, we use the formula for impulse from average force $\vec{J} = \vec{F}_{avg}\Delta t$.
+\begin{align*}
+    \vec{J} &=  \vec{F}_{avg}\Delta t\\
+    \vec{F}_{avg}   &=  \frac{\vec{J}}{\Delta t}
+        =   \frac{\begin{pmatrix} 0.1098 \\ 0.3642 \end{pmatrix} \unit{\kilo\gram\frac{\meter}{\second}}}{0.005 \unit{\second}}
+        =   \boxed{ \begin{pmatrix} 21.967 \\ 72.836 \end{pmatrix} \unit{\newton} }
+\end{align*}
 
 
 \pagebreak
@@ -65,6 +84,36 @@ A 60.0-g tennis ball strikes the ground at 25.0 m/s at 40\unit{\degree} to the h
 A 1000-kg Subaru at rest at a stoplight is struck from the rear by a 1400-kg Pontiac. They couple together and leave skid marks 4.25 m long. The coefficient of kinetic friction is 0.6. (a) What was their common speed just after the collision? (b) What was the speed of the Pontiac just prior to the collision?
 
 \subsection*{Solution}
+We assume they travel the distance equivalent to the length of their skid marks. Together, the mass of the two-object system is 1000kg + 1400kg = 2400kg. 
+\subsubsection*{Section (a)}
+We can here start with the work done on an object and associated formulae.
+\[ W = \Delta E_{mech} + \Delta E_{th} = \Delta K + \Delta U + \Delta E_{th} \]
+Since this is no work added to the system after the collision, we have $W = 0$. We can use the conservation of energy to use further formulae. The potential energy also does not change because all the kinetic energy lost will be converted into friction, thermal energy.
+\[ 0 = K_f - K_i + E_{th;f} - E_{th;i} = m*\left( \frac{1}{2}v_f^2 - \frac{1}{2}v_i^2 + g*d_f - g*d_i \right) \]
+It starts at an initial position of zero and a final velocity of zero.
+\begin{align*}
+    0   &=  g*d_f - \frac{1}{2}v_i^2\\
+    \frac{1}{2}v_i^2    &=  g*d_f\\
+    v_i &=  \sqrt{2*g*d_f}
+        =   \sqrt{2*9.81\unit{\meter/\second^2}*4.25\unit{\meter}}
+        =   \sqrt{8.50*9.81} \unit{\meter/\second}\\
+        &=  \sqrt{83.385}\unit{\meter/\second}
+        =   \boxed{9.132\unit{\meter/\second}}
+\end{align*}
+\pagebreak
+\subsubsection*{Section (b)}
+We can use the conservation of momentum, keeping in mind that since $\vec{v}_{1;i} = 0$, then \(\vec{p}_{1;i} = 0\). We also keep in mind that after collision, the two cars travel at the same velocity.
+\begin{align*}
+    p_{1;i} + p_{2;i} &= p_{1;f} + p_{2;f}\\
+    m_1*v_{1;i} &=  m_\Sigma * v_f\\
+    v_{1;i} &=  \frac{m_\Sigma * v_f}{m_1}
+\end{align*}
+From this, we can plug in numbers to find the velocity before collision.
+\begin{align*}
+    v_{1;i} &=  \frac{m_\Sigma * v_f}{m_1}
+        =   \frac{2400\unit{\kilo\gram} * 9.132\unit{\meter/\second}}{1400\unit{\kilo\gram}}
+        =   \boxed{\frac{12*\sqrt{83.385}}{7}\unit{\meter/\second} = 15.654\unit{\meter/\second}}
+\end{align*}
 
 
 \pagebreak
@@ -104,6 +153,37 @@ Since this is a negative change, that means the kinetic energy is lost. In other
 A projectile of mass 0.25 kg moving at 24.0 m/s collides with and sticks to a 1.75-kg block that is connected to a spring for which k = 40.0 N/m, as in the figure below. The block is initially on a frictionless part of a horizontal surface but starts to slide on a rough section immediately after the collision. If the maximum compression of the spring is 0.5 m, what is the force of friction on the block?
 
 \subsection*{Solution}
+First, we find the post-collision velocity \(v_c\) using the post-collision momentum \(p_c\).
+\begin{align*}
+    M   &=  m_1 + m_2
+        =   0.25\unit{\kilo\gram} + 1.75\unit{\kilo\gram}
+        =   2.00\unit{\kilo\gram}\\
+    p_c &=  p_{1;i} + p_{2;i}\\
+    Mv_c    &=   m_1 v_{1;i} + m_2 v_{2;i}\\
+    v_c &=  \frac{m_1 v_{1;i}}{M}
+\end{align*}
+
+Next, we calculate the initial kinetic energy from that. 
+\begin{equation*}
+    K_i =   \frac{1}{2}Mv_f^2
+        =   \frac{m_1^2 v_{1;i}^2}{2M}
+\end{equation*}
+
+With that, we can apply the conservation of energy, knowing that no work is applied on the system between the collision and when the block stops. Then we apply zeroes where necessary for formulae containing zeroes.
+\begin{align*}
+    K_f + U_f   + E_{th;f}    &=  K_i + U_i + E_{th;i}\\
+    0   + \frac{1}{2}kx^2   +   f_k x   &=  \frac{1}{2}Mv_c^2 + 0 + 0
+\end{align*}
+
+Now, we can solve for $f_k$, which is what we're looking for.
+\begin{align*}
+    \frac{1}{2}kx^2   +   f_k x   &=  \frac{1}{2}Mv_c^2\\
+    f_k &=  \frac{Mv_c^2 - kx^2}{x}
+        =   \frac{m_1^2 v_{1;i}^2}{2Mx} - \frac{1}{2}kx
+\end{align*}
+
+From this, we substitute in values.
+\[ f_k = \frac{m_1^2 v_{1;i}^2}{2Mx} - \frac{1}{2}kx = \frac{0.25^2 24.0^2}{2*2*0.5}\unit{\newton} - \frac{1}{2}40*0.5 \unit{\newton} = \boxed{8\unit{\newton}} \]
 
 
 \pagebreak
@@ -140,6 +220,36 @@ We know that \( J = F_{avg}\Delta t \), which we can manipulate to find the aver
 A nucleus of radioactive radium ($^{226}$Ra), initially at rest, decays into a radon nucleus ($^{222}$Rn) and an $\alpha$-particle (a $^{4}$He nucleus). If the kinetic energy of the $\alpha$-particle is $6.72 \times 10^{-13}$ J, what is (a) the recoil speed of the radon nucleus, and (b) its kinetic energy? The superscripts indicate, roughly, the mass of each nucleus in unified mass units (u), where 1 u = $1.66 \times 10^{-27}$ kg.
 
 \subsection*{Solution}
+I'm not a chemist, to be honest. Still, I'll try to do this with Physics only. To find the mass of each object, we have to convert the atomic mass into mass.
+\begin{align*}
+    \text{Radium: }&    226 * 1.66\times 10^{-27}\unit{\kilo\gram} = 3.7516\times 10^{-25}\unit{\kilo\gram}\\
+    \text{Radon: }&    222 * 1.66\times 10^{-27}\unit{\kilo\gram} = 3.6852\times 10^{-25}\unit{\kilo\gram}\\
+    \alpha\text{-particle: }&    4 * 1.66\times 10^{-27}\unit{\kilo\gram} = 6.64\times 10^{-27}\unit{\kilo\gram}
+\end{align*}
+
+\subsubsection*{Section (a)}
+To get the velocity of the $\alpha$-particles from the kinetic energy, we use this.
+\begin{equation*}
+    K   =   \frac{1}{2}mv^2\rightarrow
+    v   =   \sqrt{\frac{2K}{m}} 
+        =   \sqrt{\frac{1.344 \times 10^{-12}\unit{\joule}}{6.64\times 10^{-27}\unit{\kilo\gram}}}
+        =   1.4227\times10^7 \unit{\meter/\second}
+\end{equation*}
+Since the velocity (and momentum) starts at zero, and the objects go in opposite directions, we can write \(m_1v_1 = m_2v_2\).
+\begin{align*}
+    m_1v_1  &= m_2v_2\\
+    v_1 &=  \frac{m_2v_2}{m_1}
+        =   \frac{6.64\times 10^{-27}\unit{\kilo\gram} * 1.4227\times10^7 \unit{\meter/\second}}{3.6852\times 10^{-25}\unit{\kilo\gram}}
+        =   \boxed{2.563\times10^5 \unit{\meter/\second}}
+\end{align*}
+
+\subsubsection*{Section (b)}
+Here, we use the formula for kinetic energy.
+\begin{align*}
+    K   &=  \frac{1}{2}mv^2
+        =   \frac{1}{2}(3.6852\times 10^{-25}\unit{\kilo\gram})(2.563\times10^5 \unit{\meter/\second})^2
+        =   \boxed{1.2108\times10^{-14} \unit{\joule}}
+\end{align*}
 
 
 \pagebreak
