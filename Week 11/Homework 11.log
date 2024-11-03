@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.25)  2 NOV 2024 20:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.25)  2 NOV 2024 21:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -520,19 +520,19 @@ Package pdftex.def Info: graph_2.png  used on input line 55.
 <graph_5.png, id=33, 260.975pt x 82.3075pt>
 File: graph_5.png Graphic file (type png)
 <use graph_5.png>
-Package pdftex.def Info: graph_5.png  used on input line 82.
+Package pdftex.def Info: graph_5.png  used on input line 101.
 (pdftex.def)             Requested size: 150.50424pt x 47.46709pt.
  [6 <./graph_5.png>]
 <graph_6.png, id=38, 313.17pt x 178.6675pt>
 File: graph_6.png Graphic file (type png)
 <use graph_6.png>
-Package pdftex.def Info: graph_6.png  used on input line 94.
+Package pdftex.def Info: graph_6.png  used on input line 113.
 (pdftex.def)             Requested size: 150.50424pt x 85.86574pt.
  [7 <./graph_6.png>] [8]
 <graph_8.png, id=47, 179.67125pt x 113.42375pt>
 File: graph_8.png Graphic file (type png)
 <use graph_8.png>
-Package pdftex.def Info: graph_8.png  used on input line 113.
+Package pdftex.def Info: graph_8.png  used on input line 149.
 (pdftex.def)             Requested size: 150.50424pt x 95.01741pt.
  [9 <./graph_8.png>] [10] (./Homework 11.aux)
  ***********
@@ -549,7 +549,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  99i,16n,107p,783b,736s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on "Homework 11.pdf" (10 pages, 160018 bytes).
+Output written on "Homework 11.pdf" (10 pages, 165778 bytes).
 PDF statistics:
  94 PDF objects out of 1000 (max. 8388607)
  55 compressed objects within 1 object stream

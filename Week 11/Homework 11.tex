@@ -73,7 +73,26 @@ Two particles with masses $m_1$ and $m_2$ travel toward each other with velociti
 \[ \frac{m_1 m_2 \left(v_{1,i} - v_{2,i}\right)^2}{2(m_1 + m_2)} \]
 
 \subsection*{Solution}
+We first can calculate the velocity after collision by using the conservation of momentum. We also keep in mind that they stick together afterwards and the fact that particle 2 has negative velocity in this instance.
+\begin{align*}
+    p_{1,i} + p_{2,i} &=  p_{1,f} + p_{2,f}\\
+    m_1 v_{1,i} - m_2 v_{2,i} &=  (m_1 + m_2) v_f\\
+    v_f &=  \frac{m_1 v_{1,i} - m_2 v_{2,i}}{m_1 + m_2}
+\end{align*}
 
+We then use the formulae \( \Delta K = K_f - K_i \) and \( K = \frac{1}{2}mv^2 \).
+\begin{align*}
+    \Delta K &= K_f - K_i
+        =   K_f - (K_{1,i} + K_{2,i})
+        =   \frac{1}{2}m_\Sigma v_f^2 - \left(\frac{1}{2}m_1v_{1,i}^2 + \frac{1}{2}m_2v_{2,i}^2\right)\\
+        &=  \frac{1}{2}\left( (m_1 + m_2) \left(\frac{m_1 v_{1,i} - m_2 v_{2,i}}{m_1 + m_2}\right)^2 - m_1v_{1,i}^2 - m_2v_{2,i}^2 \right)\\
+        &=  \frac{(m_1 v_{1,i} - m_2 v_{2,i})^2}{2(m_1 + m_2)} - \frac{m_1v_{1,i}^2 + m_2v_{2,i}^2}{2}\\
+        &=  \frac{m_1^2 v_{1,i}^2 - 2m_1m_2v_{1,i}v_{2,i} + m_2^2 v_{2,i}^2}{2(m_1 + m_2)} - \frac{m_1^2v_{1,i}^2 + m_1m_2v_{1,i}^2 + m_1m_2v_{2,i}^2 + m_2^2v_{2,i}^2}{2(m_1 + m_2)}\\
+        &=  -\frac{m_1m_2v_{1,i}^2 + 2m_1m_2v_{1,i}v_{2,i} + m_1m_2v_{2,i}^2}{2(m_1 + m_2)}\\
+        &=  -\frac{m_1m_2(v_{1,i}^2 + 2v_{1,i}v_{2,i} + v_{2,i}^2)}{2(m_1 + m_2)}
+        =   -\frac{m_1m_2(v_{1,i} + v_{2,i})^2}{2(m_1 + m_2)}
+\end{align*}
+Since this is a negative change, that means the kinetic energy is lost. In other words, the amount of kinetic energy lost is \boxed{\frac{m_1m_2(v_{1,i} + v_{2,i})^2}{2(m_1 + m_2)}}.
 
 \pagebreak
 \section*{Problem 5}
@@ -97,7 +116,24 @@ A projectile of mass 0.25 kg moving at 24.0 m/s collides with and sticks to a 1.
 From the F versus t curve shown to the right, find: (a) the impulse; (b) the average force.
 
 \subsection*{Solution}
+\subsubsection*{Section (a)}
+Impulse (J) is equal to the integral of the force with respect to time. This is equivalent to the area under the curve. We also convert milliseconds to seconds.
+\begin{align*}
+    J   &=  \int_{0}^{0.005} F(t)\ dt
+        =   \int_{0}^{0.002} F(t)\ dt + \int_{0.002}^{0.004} F(t)\ dt + \int_{0.004}^{0.005} F(t)\ dt\\
+        &=  \frac{1}{2}*100*0.002 \unit{\kilo\gram*\meter/\second} + 100*0.002 \unit{\kilo\gram*\meter/\second} + \frac{1}{2}100*0.001 \unit{\kilo\gram*\meter/\second}\\
+        &=  0.1 \unit{\kilo\gram*\meter/\second} + 0.2 \unit{\kilo\gram*\meter/\second} + 0.05 \unit{\kilo\gram*\meter/\second}
+        =   \boxed{0.35 \unit{\kilo\gram*\meter/\second}}
+\end{align*}
 
+\subsubsection*{Section (b)}
+We know that \( J = F_{avg}\Delta t \), which we can manipulate to find the average force. We already know the impulse from above.
+\begin{align*}
+    F_{avg} &=  \frac{J}{\Delta t}
+        =   \frac{0.35 \unit{\kilo\gram*\meter/\second}}{0.005 \unit{\second}}
+        =   \frac{350}{5}\unit{\newton}
+        =   \boxed{ 70\unit{\newton} }
+\end{align*}
 
 \pagebreak
 \section*{Problem 7}
