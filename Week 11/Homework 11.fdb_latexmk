@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1730402830.35709 "/Users/dentonaingworth/Documents/CCSF/PHYS-4A/Week 11/Homework 11.tex" "Homework 11.pdf" "Homework 11" 1730402831.00171 0
-  "/Users/dentonaingworth/Documents/CCSF/PHYS-4A/Week 11/Homework 11.tex" 1730402830.1551 3976 1b69068ad4488f3e4dbb8959fc51c95c ""
+["pdflatex"] 1730603835.05756 "/Users/dentonaingworth/Documents/CCSF/PHYS-4A/Week 11/Homework 11.tex" "Homework 11.pdf" "Homework 11" 1730603835.72041 0
+  "/Users/dentonaingworth/Documents/CCSF/PHYS-4A/Week 11/Homework 11.tex" 1730603834.84298 7618 0bbf29f7cfbff69d0e06cc220cbadcd7 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -17,6 +17,7 @@
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm" 1136768653 1116 933a60c408fc0a863a92debe84b2d294 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm" 1136768653 1120 8b7d695260f3cff42e636090a8002094 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1248133631 32080 340ef9bf63678554ee606688e7b5339d ""
+  "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb" 1248133631 30251 6afa5cb1d0204815a708a080681d4674 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb" 1248133631 36741 fa121aac0049305630cf160b86157ee4 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb" 1248133631 35469 70d41d2b9ea31d5d813066df7c99281c ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1248133631 32722 d7379af29a190c3f453aba36302ff5a9 ""
@@ -171,8 +172,8 @@
   "/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1727305248.69286 5467645 128b85b7cde5f5edc5cb7f1dd7ff8736 ""
   "/usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1727305230 8221424 9bdbcc07e109911bb30a75dc8990d89e ""
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
-  "Homework 11.aux" 1730402830.95406 32 1b174032087fb90900fa6203d3bb0a7e "pdflatex"
-  "Homework 11.tex" 1730402830.1551 3976 1b69068ad4488f3e4dbb8959fc51c95c ""
+  "Homework 11.aux" 1730603835.6718 33 06c322e1d88c4778ac780ba5e7d05c77 "pdflatex"
+  "Homework 11.tex" 1730603834.84298 7618 0bbf29f7cfbff69d0e06cc220cbadcd7 ""
   "graph_2.png" 1730393237.10947 17063 39ea157d4bc3968dd30f841c00ff6b45 ""
   "graph_5.png" 1730402174.13175 14159 8b0819313f3ab53d6444397edfe09024 ""
   "graph_6.png" 1730402201.95021 23307 199b25a3c5be2e147644107e28e8d76c ""

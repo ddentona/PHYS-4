@@ -30,7 +30,23 @@
 A neutron at rest decays into a proton, an electron, and a neutrino. If the proton's momentum is $3.00\times10^{-24}$ kg m/s in the direction 37\unit{\degree} N of E and the electron's momentum is $4.00\times10^{-24}$ kg m/s in the direction 53\unit{\degree} S of W, what is the momentum of the neutrino?
 
 \subsection*{Solution}
+We can first convert the angles. 
+\[ 37\unit{\degree} \text{N of E} \rightarrow \theta_1 = 37\unit{\degree} \]
+\[ 53\unit{\degree} \text{S of W} \rightarrow \theta_2 = 53\unit{\degree} + 180\unit{\degree} = 233\unit{\degree} \]
 
+Now we can use the angles and momentum to calculate the sum of the two and then the resultant.
+\begin{align*}
+    p_+ &=  3.00\times10^{-24} \unit{\kilo\gram*\meter/\second} \begin{pmatrix} \cos(37\unit{\degree}) \\ \sin(37\unit{\degree}) \end{pmatrix}
+        =   \begin{pmatrix} 3.00\times10^{-24}\cos(37\unit{\degree}) \\ 3.00\times10^{-24}\sin(37\unit{\degree}) \end{pmatrix} \unit{\kilo\gram*\meter/\second} \\
+        &=  \begin{pmatrix} (3.00\times10^{-24}) * (7.986\times10^{-1}) \\ (3.00\times10^{-24}) * (6.018\times10^{-1}) \end{pmatrix} \unit{\kilo\gram*\meter/\second}
+        =  \begin{pmatrix} 2.40\times10^{-24} \\ 1.81\times10^{-24} \end{pmatrix} \unit{\kilo\gram*\meter/\second}\\
+    p_- &=  4.00\times10^{-24} \unit{\kilo\gram*\meter/\second} \begin{pmatrix} \cos(233\unit{\degree}) \\ \sin(233\unit{\degree}) \end{pmatrix}
+        =   \begin{pmatrix} 3.00\times10^{-24}\cos(233\unit{\degree}) \\ 3.00\times10^{-24}\sin(233\unit{\degree}) \end{pmatrix} \unit{\kilo\gram*\meter/\second} \\
+        &=  \begin{pmatrix} -2.41\times10^{-24} \\ -3.19\times10^{-24} \end{pmatrix} \unit{\kilo\gram*\meter/\second}\\
+    p_\Sigma    &=  \begin{pmatrix} 2.40\times10^{-24} \\ 1.81\times10^{-24} \end{pmatrix} \unit{\kilo\gram*\meter/\second} + \begin{pmatrix} -2.41\times10^{-24} \\ -3.19\times10^{-24} \end{pmatrix} \unit{\kilo\gram*\meter/\second}\\
+        &=  \begin{pmatrix} -1.14\times10^{-26} \\ -1.39\times10^{-24} \end{pmatrix} \unit{\kilo\gram*\meter/\second}\\
+    &p_{neutrino}   =   \boxed{\begin{pmatrix} 1.14\times10^{-26} \\ 1.39\times10^{-24} \end{pmatrix} \unit{\kilo\gram*\meter/\second}}
+\end{align*}
 
 \pagebreak
 \section*{Problem 2}
@@ -100,5 +116,40 @@ A nucleus of radioactive radium ($^{226}$Ra), initially at rest, decays into a r
 A projectile of mass $m$ = 200 g strikes a stationary block of mass $M$ = 1.30 kg from below with speed $u$ = 30.0 m/s as shown in the figure below. The projectile embeds in the block. (a) To what height does the block rise? (b) What is the loss in kinetic energy due to the collision?
 
 \subsection*{Solution}
+\subsubsection*{Section (a)}
+We start by recalling the conservation of linear momentum.
+\[ \vec{p}_{1i} + \vec{p}_{2i} = \vec{p}_{1f} + \vec{p}_{2f} \]
+\[ m_1\vec{v}_{1i} + m_2\vec{v}_{2i} = m_1\vec{v}_{1f} + m_2\vec{v}_{2f} \]
+
+Keeping in mind that the initial velocity will be zero for the block ($m_2$) and the post-collision velocity will be zero, we apply the above formula to get the post-collision velocity for the whole system.
+\begin{align*}
+    m_1\vec{v}_{1i} &=  (m_1 + m_2)\vec{v}_{f}\\
+    \vec{v}_{f} &=  \frac{m_1\vec{v}_{1i}}{m_1 + m_2} = \frac{m*u}{m+M}
+\end{align*}
+
+Next, we can use this to find the post-collision initial kinetic energy, then use the conservation of mechanical energy to determine the potential energy once the kinetic energy (and the velocity) is zero.
+\begin{align*}
+    K_i &=  \frac{1}{2}mv^2
+        =   \frac{1}{2}m\left(\frac{m*u}{m+M}\right)^2
+        =   \frac{m^3*u^2}{2(m+M)^2}\\
+    U_g &=  K_i\rightarrow
+    m*g*\Delta y    =  \frac{m^3*u^2}{2(m+M)^2}\\
+    \Delta y    &=  \frac{m^2*u^2}{2g(m+M)^2}
+        =   \frac{0.20^2*30.0^2}{2*9.81(0.20+1.30)^2}\unit{\meter}
+        =   \frac{36}{19.62*2.25}\unit{\meter}
+        =   \boxed{0.815\unit{\meter}}
+\end{align*}
+
+\pagebreak
+\subsubsection*{Section (b)}
+Here the formula is \( \Delta K = K_f - K_i \). We can calculate the initial kinetic energy and from that thechange in kinetic energy.
+\begin{align*}
+    \Delta K    &=  K_f - K_i
+        =   \frac{m^3*u^2}{2(m+M)^2} - \frac{1}{2}mu^2
+        =   \frac{1}{2}mu^2\left(\frac{m^2}{(m+M)^2} - 1\right)\\
+        &=  0.10*30^2\left(\frac{0.20^2}{(0.20+1.50)^2} - 1\right) \unit{\joule}
+        =   90\left(\frac{4.00}{225.00}\right) \unit{\joule}
+        =   \boxed{\frac{8}{5} \unit{\joule} = 1.60 \unit{\joule}}
+\end{align*}
 
 \end{document}
