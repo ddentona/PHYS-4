@@ -63,10 +63,10 @@ We use the formula for impulse, with the use of momentum.
 \begin{align*}
     \vec{J} &=  \vec{p}_f - \vec{p}_i
         =   m*(\vec{v}_f - \vec{v}_i)
-        =   0.06*\left( 25.0*\left(\begin{smallmatrix} \cos(40\unit{\degree}) \\ \sin(40\unit{\degree}) \end{smallmatrix}\right) - 20.0*\left(\begin{smallmatrix} \cos(30\unit{\degree}) \\ \sin(30\unit{\degree}) \end{smallmatrix}\right) \right) \unit{\kilo\gram\frac{\meter}{\second}}\\
-        &=  0.06*\left( \begin{pmatrix} 19.15 \\ 16.07 \end{pmatrix} - \begin{pmatrix} 17.32 \\ 10 \end{pmatrix} \right) \unit{\kilo\gram\frac{\meter}{\second}}
-        =   0.06*\begin{pmatrix} 1.8306 \\ 6.0697 \end{pmatrix} \unit{\kilo\gram\frac{\meter}{\second}}
-        =   \boxed{ \begin{pmatrix} 0.1098 \\ 0.3642 \end{pmatrix} \unit{\kilo\gram\frac{\meter}{\second}} }
+        =   0.06*\left( 25.0*\left(\begin{smallmatrix} \cos(-40\unit{\degree}) \\ \sin(-40\unit{\degree}) \end{smallmatrix}\right) - 20.0*\left(\begin{smallmatrix} \cos(30\unit{\degree}) \\ \sin(30\unit{\degree}) \end{smallmatrix}\right) \right) \unit{\kilo\gram\frac{\meter}{\second}}\\
+        &=  0.06*\left( \begin{pmatrix} 19.15 \\ -16.07 \end{pmatrix} - \begin{pmatrix} 17.32 \\ 10 \end{pmatrix} \right) \unit{\kilo\gram\frac{\meter}{\second}}
+        =   0.06*\begin{pmatrix} 1.8306 \\ 26.0697 \end{pmatrix} \unit{\kilo\gram\frac{\meter}{\second}}
+        =   \boxed{ \begin{pmatrix} 0.1098 \\ 1.5642 \end{pmatrix} \unit{\kilo\gram\frac{\meter}{\second}} }
 \end{align*}
 
 \subsubsection*{Section (b)}
@@ -74,8 +74,8 @@ Next, we use the formula for impulse from average force $\vec{J} = \vec{F}_{avg}
 \begin{align*}
     \vec{J} &=  \vec{F}_{avg}\Delta t\\
     \vec{F}_{avg}   &=  \frac{\vec{J}}{\Delta t}
-        =   \frac{\begin{pmatrix} 0.1098 \\ 0.3642 \end{pmatrix} \unit{\kilo\gram\frac{\meter}{\second}}}{0.005 \unit{\second}}
-        =   \boxed{ \begin{pmatrix} 21.967 \\ 72.836 \end{pmatrix} \unit{\newton} }
+        =   \frac{\begin{pmatrix} 0.1098 \\ 1.5642 \end{pmatrix} \unit{\kilo\gram\frac{\meter}{\second}}}{0.005 \unit{\second}}
+        =   \boxed{ \begin{pmatrix} 21.967 \\ 312.836 \end{pmatrix} \unit{\newton} }
 \end{align*}
 
 
@@ -94,11 +94,11 @@ It starts at an initial position of zero and a final velocity of zero.
 \begin{align*}
     0   &=  g*d_f - \frac{1}{2}v_i^2\\
     \frac{1}{2}v_i^2    &=  g*d_f\\
-    v_i &=  \sqrt{2*g*d_f}
-        =   \sqrt{2*9.81\unit{\meter/\second^2}*4.25\unit{\meter}}
-        =   \sqrt{8.50*9.81} \unit{\meter/\second}\\
-        &=  \sqrt{83.385}\unit{\meter/\second}
-        =   \boxed{9.132\unit{\meter/\second}}
+    v_i &=  \sqrt{2*\mu_k*g*d_f}
+        =   \sqrt{2*0.6*9.81\unit{\meter/\second^2}*4.25\unit{\meter}}\\
+        &=  \sqrt{5.10*9.81} \unit{\meter/\second}
+        =   \sqrt{50.031}\unit{\meter/\second}
+        =   \boxed{7.073\unit{\meter/\second}}
 \end{align*}
 \pagebreak
 \subsubsection*{Section (b)}
@@ -111,8 +111,9 @@ We can use the conservation of momentum, keeping in mind that since $\vec{v}_{1;
 From this, we can plug in numbers to find the velocity before collision.
 \begin{align*}
     v_{1;i} &=  \frac{m_\Sigma * v_f}{m_1}
-        =   \frac{2400\unit{\kilo\gram} * 9.132\unit{\meter/\second}}{1400\unit{\kilo\gram}}
-        =   \boxed{\frac{12*\sqrt{83.385}}{7}\unit{\meter/\second} = 15.654\unit{\meter/\second}}
+        =   \frac{2400\unit{\kilo\gram} * 7.073\unit{\meter/\second}}{1400\unit{\kilo\gram}}
+        =   \boxed{\frac{12*\sqrt{50.031}}{7}\unit{\meter/\second} 
+        =   12.126\unit{\meter/\second}}
 \end{align*}
 
 
@@ -267,7 +268,7 @@ We start by recalling the conservation of linear momentum.
 \[ \vec{p}_{1i} + \vec{p}_{2i} = \vec{p}_{1f} + \vec{p}_{2f} \]
 \[ m_1\vec{v}_{1i} + m_2\vec{v}_{2i} = m_1\vec{v}_{1f} + m_2\vec{v}_{2f} \]
 
-Keeping in mind that the initial velocity will be zero for the block ($m_2$) and the post-collision velocity will be zero, we apply the above formula to get the post-collision velocity for the whole system.
+Keeping in mind that the initial velocity will be zero for the block ($m_2$) and the post-collision velocity will be identical for both blocks, we apply the above formula to get the post-collision velocity for the whole system.
 \begin{align*}
     m_1\vec{v}_{1i} &=  (m_1 + m_2)\vec{v}_{f}\\
     \vec{v}_{f} &=  \frac{m_1\vec{v}_{1i}}{m_1 + m_2} = \frac{m*u}{m+M}
@@ -288,14 +289,14 @@ Next, we can use this to find the post-collision initial kinetic energy, then us
 
 \pagebreak
 \subsubsection*{Section (b)}
-Here the formula is \( \Delta K = K_f - K_i \). We can calculate the initial kinetic energy and from that thechange in kinetic energy.
+Here the formula is \( \Delta K = K_f - K_i \). We can calculate the initial kinetic energy and from that the change in kinetic energy. We can keep in mind that what in part (a) would be called \(K_i\) in this instance is \(K_f\) to rewrite our equation.
 \begin{align*}
     \Delta K    &=  K_f - K_i
         =   \frac{m^3*u^2}{2(m+M)^2} - \frac{1}{2}mu^2
         =   \frac{1}{2}mu^2\left(\frac{m^2}{(m+M)^2} - 1\right)\\
         &=  0.10*30^2\left(\frac{0.20^2}{(0.20+1.50)^2} - 1\right) \unit{\joule}
-        =   90\left(\frac{4.00}{225.00}\right) \unit{\joule}
-        =   \boxed{\frac{8}{5} \unit{\joule} = 1.60 \unit{\joule}}
+        =   90\left(\frac{4.00}{289.00} - 1\right) \unit{\joule}\\
+        &=  \boxed{-\frac{25650}{289} \unit{\joule} = -88.754 \unit{\joule}}
 \end{align*}
 
 \end{document}
