@@ -63,10 +63,10 @@ We use the formula for impulse, with the use of momentum.
 \begin{align*}
     \vec{J} &=  \vec{p}_f - \vec{p}_i
         =   m*(\vec{v}_f - \vec{v}_i)
-        =   0.06*\left( 25.0*\left(\begin{smallmatrix} \cos(-40\unit{\degree}) \\ \sin(-40\unit{\degree}) \end{smallmatrix}\right) - 20.0*\left(\begin{smallmatrix} \cos(30\unit{\degree}) \\ \sin(30\unit{\degree}) \end{smallmatrix}\right) \right) \unit{\kilo\gram\frac{\meter}{\second}}\\
-        &=  0.06*\left( \begin{pmatrix} 19.15 \\ -16.07 \end{pmatrix} - \begin{pmatrix} 17.32 \\ 10 \end{pmatrix} \right) \unit{\kilo\gram\frac{\meter}{\second}}
-        =   0.06*\begin{pmatrix} 1.8306 \\ 26.0697 \end{pmatrix} \unit{\kilo\gram\frac{\meter}{\second}}
-        =   \boxed{ \begin{pmatrix} 0.1098 \\ 1.5642 \end{pmatrix} \unit{\kilo\gram\frac{\meter}{\second}} }
+        =   0.06*\left( 20.0*\left(\begin{smallmatrix} \cos(30\unit{\degree}) \\ \sin(30\unit{\degree}) \end{smallmatrix}\right) - 25.0*\left(\begin{smallmatrix} \cos(-40\unit{\degree}) \\ \sin(-40\unit{\degree}) \end{smallmatrix}\right) \right) \unit{\kilo\gram\frac{\meter}{\second}}\\
+        &=  0.06*\left( \begin{pmatrix} 17.32 \\ 10 \end{pmatrix} - \begin{pmatrix} 19.15 \\ -16.07 \end{pmatrix} \right) \unit{\kilo\gram\frac{\meter}{\second}}
+        =   0.06*\begin{pmatrix} -1.8306 \\ 26.0697 \end{pmatrix} \unit{\kilo\gram\frac{\meter}{\second}}\\
+        &=  \boxed{ \begin{pmatrix} -0.1098 \\ 1.5642 \end{pmatrix} \unit{\kilo\gram\frac{\meter}{\second}} }
 \end{align*}
 
 \subsubsection*{Section (b)}
@@ -74,8 +74,8 @@ Next, we use the formula for impulse from average force $\vec{J} = \vec{F}_{avg}
 \begin{align*}
     \vec{J} &=  \vec{F}_{avg}\Delta t\\
     \vec{F}_{avg}   &=  \frac{\vec{J}}{\Delta t}
-        =   \frac{\begin{pmatrix} 0.1098 \\ 1.5642 \end{pmatrix} \unit{\kilo\gram\frac{\meter}{\second}}}{0.005 \unit{\second}}
-        =   \boxed{ \begin{pmatrix} 21.967 \\ 312.836 \end{pmatrix} \unit{\newton} }
+        =   \frac{\begin{pmatrix} -0.1098 \\ 1.5642 \end{pmatrix} \unit{\kilo\gram\frac{\meter}{\second}}}{0.005 \unit{\second}}
+        =   \boxed{ \begin{pmatrix} -21.967 \\ 312.836 \end{pmatrix} \unit{\newton} }
 \end{align*}
 
 
