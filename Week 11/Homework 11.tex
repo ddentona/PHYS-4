@@ -277,10 +277,10 @@ Keeping in mind that the initial velocity will be zero for the block ($m_2$) and
 Next, we can use this to find the post-collision initial kinetic energy, then use the conservation of mechanical energy to determine the potential energy once the kinetic energy (and the velocity) is zero.
 \begin{align*}
     K_i &=  \frac{1}{2}mv^2
-        =   \frac{1}{2}m\left(\frac{m*u}{m+M}\right)^2
-        =   \frac{m^3*u^2}{2(m+M)^2}\\
+        =   \frac{1}{2}(m+M)\left(\frac{m*u}{m+M}\right)^2
+        =   \frac{m^2*u^2}{2(m+M)}\\
     U_g &=  K_i\rightarrow
-    m*g*\Delta y    =  \frac{m^3*u^2}{2(m+M)^2}\\
+    (m+M)*g*\Delta y    =  \frac{m^2*u^2}{2(m+M)}\\
     \Delta y    &=  \frac{m^2*u^2}{2g(m+M)^2}
         =   \frac{0.20^2*30.0^2}{2*9.81(0.20+1.30)^2}\unit{\meter}
         =   \frac{36}{19.62*2.25}\unit{\meter}
@@ -292,11 +292,16 @@ Next, we can use this to find the post-collision initial kinetic energy, then us
 Here the formula is \( \Delta K = K_f - K_i \). We can calculate the initial kinetic energy and from that the change in kinetic energy. We can keep in mind that what in part (a) would be called \(K_i\) in this instance is \(K_f\) to rewrite our equation.
 \begin{align*}
     \Delta K    &=  K_f - K_i
-        =   \frac{m^3*u^2}{2(m+M)^2} - \frac{1}{2}mu^2
-        =   \frac{1}{2}mu^2\left(\frac{m^2}{(m+M)^2} - 1\right)\\
-        &=  0.10*30^2\left(\frac{0.20^2}{(0.20+1.50)^2} - 1\right) \unit{\joule}
-        =   90\left(\frac{4.00}{289.00} - 1\right) \unit{\joule}\\
-        &=  \boxed{-\frac{25650}{289} \unit{\joule} = -88.754 \unit{\joule}}
+        =   \frac{m^2*u^2}{2(m+M)} - \frac{1}{2}mu^2
+        =   \frac{1}{2}mu^2\left(\frac{m}{m+M} - 1\right)\\
+        &=  0.10*30^2\left(\frac{0.20}{0.20+1.30} - 1\right) \unit{\joule}
+        =   90\left(\frac{2.00}{15.00} - 1\right) \unit{\joule}\\
+        &=  \boxed{-\frac{1170}{15} \unit{\joule} = -78.0 \unit{\joule}}
+        % =   \frac{m^3*u^2}{2(m+M)^2} - \frac{1}{2}mu^2
+        % =   \frac{1}{2}mu^2\left(\frac{m^2}{(m+M)^2} - 1\right)\\
+        % &=  0.10*30^2\left(\frac{0.20^2}{(0.20+1.50)^2} - 1\right) \unit{\joule}
+        % =   90\left(\frac{4.00}{289.00} - 1\right) \unit{\joule}\\
+        % &=  \boxed{-\frac{25650}{289} \unit{\joule} = -88.754 \unit{\joule}}
 \end{align*}
 
 \end{document}
