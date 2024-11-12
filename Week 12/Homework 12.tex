@@ -22,6 +22,7 @@
 \DeclareSIUnit{\gal}{gal}
 \DeclareSIUnit{\foot}{ft}
 \DeclareSIUnit{\h}{h}
+\DeclareSIUnit{\rad}{rad}
 
 \maketitle
 
@@ -69,7 +70,39 @@ block initially at rest on a frictionless surface. The collision is elastic. Fin
 (b) the speed of the block, both just after the collision.
 
 \subsection*{Solution}
+Through the conservation of energy, we can know what the kinetic energy is at the bottom.
+\begin{align*}
+    K_i + U_i &= K_f + U_f\\
+    \Delta U &= K_i - K_f
+\end{align*}
+Since there is no initial velocity, we know that $K_i = 0$. We can now use these to expand the equations and solve for the velocity  of the ball just before the collision.
+\begin{align*}
+    \Delta U &= K_i - K_f\\
+    mg\Delta y  &=  -\frac{1}{2}mv_{1i}^2\\
+    v_{1i}^2 &=  -2g\Delta y\\
+    v_{1i}   &=  \sqrt{-2g\Delta y}
+\end{align*}
+In elastic collisions, the kinetic energy is conserved, so we could use that. We can here instead use the formulae for post-collision velocities. Remember that $v_{2i} = 0$.
 
+\subsubsection*{Section (a)}
+\begin{align*}
+    v_{1f}  &=  \frac{m_1 - m_2}{m_1 + m_2}v_{1i} + \frac{2 m_2}{m_1 + m_2}v_{2i}
+        =   \frac{m_1 - m_2}{m_1 + m_2}\sqrt{-2g\Delta y}\\
+        &=  \frac{0.500 - 2.50}{0.50 + 2.50}\sqrt{2*9.81*0.70}
+        =   -\frac{2.00}{3.00}\sqrt{9.81*1.40}\\
+        &=  -\frac{2.00\sqrt{13.734}}{3.00}
+        =   \boxed{-2.470\unit{\meter/\second}}
+\end{align*}
+
+\subsubsection*{Section (b)}
+\begin{align*}
+    v_{2f}  &=  \frac{2 m_2}{m_1 + m_2}v_{1i} + \frac{m_1 - m_2}{m_1 + m_2}v_{2i}
+        =   \frac{2 m_2}{m_1 + m_2}\sqrt{-2g\Delta y}\\
+        &=  \frac{2*2.50}{0.50 + 2.50}\sqrt{2*9.81*0.70}
+        =   \frac{5.00}{3.00}\sqrt{9.81*1.40}\\
+        &=  \frac{5.00\sqrt{13.734}}{3.00}
+        =   \boxed{6.177\unit{\meter/\second}}
+\end{align*}
 
 \pagebreak
 \section*{Problem 5}
@@ -78,7 +111,20 @@ cm, below the platter and around the shaft of the motor. If the platter rotates 
 motor rotates at 60 rpm, what is the required radius of the shaft?
 
 \subsection*{Solution}
-
+The same distance along the belt would be covered by both discs at the furthest point. This means that we can first convert from rpm to cm/min, with the radius of the shaft being $d$.
+\[
+    60 \text{rpm} = (2*\pi*3.00\ \text{cm/r}) * 33.3 \text{rpm} = 199.8 \pi\ \text{cm/min}
+\]
+\[
+    33.3 \text{rpm} = (2*\pi*d\ \text{cm/r}) * 60 \text{rpm} = 120 \pi * d\ \text{cm/min}
+\]
+\begin{align*}
+    120 \pi * d\ \text{cm/min}  &=  199.8 \pi\ \text{cm/min}\\
+    d   &=  \frac{199.8 \pi}{120 \pi}
+        =   \frac{1998}{1200}
+        =   \frac{333}{200}
+        =   \boxed{1.665 \unit{\centi\meter}}
+\end{align*}
 
 \pagebreak
 \section*{Problem 6}
@@ -88,6 +134,56 @@ reference line turn in the positive direction? What are the (b) first and (c) se
 reference line be at $\theta$ = -10.5 rad? (f) Graph $\theta$ versus t, and indicate your answers.
 
 \subsection*{Solution}
+Whenever possible, I will be omitting the radian unit. 
+\subsubsection*{Section (a)}
+First plug the values into the angular equation for position. Include the fact that at the end the angular velocity will be zero.
+\begin{align*}
+    \omega  &=  \omega_0 + \alpha t\\
+    0   &=  4.70 \unit{\rad/\second} - 0.24 \unit{\rad/\second^2} t\\
+    0.24 \unit{\rad/\second^2} t    &=  4.70 \unit{\rad/\second}\\
+    t   &=  \frac{470}{24}\unit{\second}
+\end{align*}
+
+We can here plug in our values into the angular equation for position, velocity, and acceleration.
+\begin{align*}
+    \theta  &=  \theta_0 + \omega_0 t + \frac{1}{2}\alpha t^2
+        =   0 + 4.70 \unit{\rad/\second} \frac{470}{24}\unit{\second} - 0.12 \unit{\rad/\second^2} \left(\frac{470}{24}\unit{\second}\right)^2\\
+        &=  \frac{2209}{24} - \frac{2209}{48}
+        =   \frac{2209}{48}
+        =   \boxed{46.02}
+\end{align*}
+
+\subsubsection*{Section (b) and (c)}
+As much as I'd like to use energy here, I can't, so I'll use the quadratic formula on the angular equation for position, velocity, and acceleration.
+\begin{align*}
+    \theta  &=  \theta_0 + \omega_0 t + \frac{1}{2}\alpha t^2\\
+    \frac{1}{2}\theta_{max} = \frac{2209}{96}   &=  t*4.70 \unit{\rad/\second} - t^2*0.12 \unit{\rad/\second^2}\\
+    0   &=  t*4.70 \unit{\rad/\second} - t^2*0.12 \unit{\rad/\second^2} - \frac{2209}{96}\\
+    t   &=  \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+        =   \frac{-4.70 \pm \sqrt{4.70^2 - 4(0.12)(\frac{2209}{96})}}{-2*0.12}\\
+        &=  \frac{-4.7 \pm \sqrt{22.09 - \frac{2209}{200}}}{-0.24}
+        =   \frac{4.7 \mp \sqrt{\frac{2209}{200}}}{0.24}\\
+    t_1 &=  \frac{4.7 - \sqrt{\frac{2209}{200}}}{0.24}
+        =   \boxed{5.736\unit{\second}}\\
+    t_2 &=  \frac{4.7 + \sqrt{\frac{2209}{200}}}{0.24}
+    =   \boxed{33.431\unit{\second}}
+\end{align*}
+
+\subsubsection*{Section (d) and (e)}
+We use the same strategy here.
+\begin{align*}
+    \theta  &=  \theta_0 + \omega_0 t + \frac{1}{2}\alpha t^2\\
+    -10.5   &=  t*4.70 \unit{\rad/\second} - t^2*0.12 \unit{\rad/\second^2}\\
+    0   &=  10.5 + t*4.70 \unit{\rad/\second} - t^2*0.12 \unit{\rad/\second^2}\\
+    t   &=  \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+        =   \frac{-4.70 \pm \sqrt{4.70^2 + 4(0.12)(10.5)}}{-2*0.12}\\
+        &=  \frac{-4.7 \pm \sqrt{22.09 + 5.04}}{-0.24}
+        =   \frac{4.7 \mp \sqrt{28.13}}{0.24}\\
+    t_1 &=  \frac{4.7 - \sqrt{28.13}}{0.24}
+        =   \boxed{-2.516\unit{\second}}\\
+    t_2 &=  \frac{4.7 + \sqrt{28.13}}{0.24}
+    =   \boxed{41.682\unit{\second}}
+\end{align*}
 
 
 \pagebreak
@@ -105,6 +201,36 @@ of the beads at t = 5.00 s? (d) What are the tangential accelerations of the bea
 What are the centripetal accelerations of the beads at t = 5.00 s?
 
 \subsection*{Solution}
+\subsubsection*{Section (a)}
+We take the derivative of the angular position, then substitute in the value of time.
+\[ \omega(t) = \frac{d}{dt}\theta(t) = \frac{d}{dt}(20t^2) = 40t \]
+\[ \omega(5\unit{\second}) = (40*5) \unit{\hertz} = \boxed{200 \unit{\hertz}} \]
+
+\subsubsection*{Section (b)}
+We take the derivative of the angular velocity, then substitute in the value of time.
+\[ \alpha(t) = \frac{d}{dt}\omega(t) = \frac{d}{dt}(40t) = 40 \]
+\[ \alpha(5\unit{\second}) = 40 \unit{\hertz} = \boxed{40 \unit{\hertz^2}} \]
+
+\subsubsection*{Section (c)}
+To get this, we multiply the tangential velocities by the radii. 
+\begin{align*}
+    v_1 &=  \omega * r_1 = 200 * 10 = 2000\unit{\centi\meter/\second} = \boxed{20 \unit{\meter/\second}}\\
+    v_2 &=  \omega * r_2 = 200 * 20 = 4000\unit{\centi\meter/\second} = \boxed{40 \unit{\meter/\second}}
+\end{align*}
+
+\subsubsection*{Section (d)}
+To get this, we multiply the tangential accelerations by the radii. 
+\begin{align*}
+    a_1 &=  \omega * r_1 = 40 * 10 = 400\unit{\centi\meter/\second} = \boxed{4 \unit{\meter/\second}}\\
+    a_2 &=  \omega * r_2 = 40 * 20 = 800\unit{\centi\meter/\second} = \boxed{8 \unit{\meter/\second}}
+\end{align*}
+
+\subsubsection*{Section (e)}
+We recall that the formula for the centripital acceleration is $a_c = \frac{v^2}{r}$. 
+\begin{align*}
+    a_{c1}  &=  \frac{v^2}{r} = \frac{4^2}{10}\unit{\meter/\second^2} = \frac{16}{10}\unit{\meter/\second^2} = \boxed{1.6 \unit{\meter/\second^2}}\\
+    a_{c1}  &=  \frac{v^2}{r} = \frac{8^2}{20}\unit{\meter/\second^2} = \frac{32}{10}\unit{\meter/\second^2} = \boxed{3.2 \unit{\meter/\second^2}}
+\end{align*}
 
 
 \pagebreak
