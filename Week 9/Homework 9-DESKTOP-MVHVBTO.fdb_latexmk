@@ -1,9 +1,5 @@
 # Fdb version 4
-<<<<<<< Updated upstream
-["pdflatex"] 1730255546.99576 "c:/Users/ddent/OneDrive/Documents/CCSF/PHYS-4A/Week 10/Homework 10.tex" "Homework 10.pdf" "Homework 10" 1730255548.91119 0
-=======
-["pdflatex"] 1729900263.25584 "c:/Users/ddent/OneDrive/Documents/CCSF/PHYS-4A/Week 10/Homework 10.tex" "Homework 10.pdf" "Homework 10" 1729900272.27695 0
->>>>>>> Stashed changes
+["pdflatex"] 1729744576.01061 "c:/Users/ddent/OneDrive/Documents/CCSF/PHYS-4A/Week 9/Homework 9.tex" "Homework 9.pdf" "Homework 9" 1729744578.24239 0
   "C:/Users/ddent/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1726015575 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/ddent/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1724473854 24225046 9a86b7f1ef10f5afb0aa895fddb2583f ""
   "C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233951848 1004 54797486969f23fa377b128694d548df ""
@@ -21,20 +17,13 @@
   "C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmsy6.tfm" 1136765053 1116 933a60c408fc0a863a92debe84b2d294 ""
   "C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmsy8.tfm" 1136765053 1120 8b7d695260f3cff42e636090a8002094 ""
   "C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1247596666 32080 340ef9bf63678554ee606688e7b5339d ""
-<<<<<<< Updated upstream
   "C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb" 1247596667 30251 6afa5cb1d0204815a708a080681d4674 ""
-=======
->>>>>>> Stashed changes
   "C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb" 1247596667 36741 0ee9e374ec3e30da87cdfb0ea3575226 ""
   "C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb" 1247596666 35469 dcf3a5f2fc1862f5952e3ee5eb1d98c4 ""
   "C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1247596667 32722 d7379af29a190c3f453aba36302ff5a9 ""
   "C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb" 1247596666 32362 bc3f3eec7ab7d65fe700963d4017d32c ""
-<<<<<<< Updated upstream
-  "C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb" 1247596667 32734 69e00a6b65cedb993666e42eedb3d48f ""
   "C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb" 1247596667 32726 39f0f9e62e84beb801509898a605dbd5 ""
   "C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1247596667 32569 5e5ddc8df908dea60932f3c484a54c0d ""
-=======
->>>>>>> Stashed changes
   "C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb" 1247596667 32626 5abc8bb2f28aa647d4c70f8ea38cc0d3 ""
   "C:/Users/ddent/AppData/Local/Programs/MiKTeX/tex/context/base/mkii/supp-pdf.mkii" 1580390158 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "C:/Users/ddent/AppData/Local/Programs/MiKTeX/tex/generic/iftex/iftex.sty" 1643997108 7237 bdd120a32c8fdb4b433cf9ca2e7cd98a ""
@@ -180,24 +169,15 @@
   "C:/Users/ddent/AppData/Local/Programs/MiKTeX/tex/latex/translations/translations.sty" 1644048522 44247 2188b95d0ee74e31eca4d316263c58a7 ""
   "C:/Users/ddent/AppData/Local/Programs/MiKTeX/tex/latex/wrapfig/wrapfig.sty" 1044403200 26220 3701aebf80ccdef248c0c20dd062fea9 ""
   "C:/Users/ddent/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1700127522 55487 80a65caedd3722f4c20a14a69e785d8f ""
-<<<<<<< Updated upstream
-  "Homework 10.aux" 1730255548 33 e6d77a6cc1977d88a849501f83258f9d "pdflatex"
-  "Homework 10.tex" 1730255546 16094 53c50d3b1abdbac7fa859ec1f77522cd ""
-  "c:/Users/ddent/OneDrive/Documents/CCSF/PHYS-4A/Week 10/Homework 10.tex" 1730255546 16094 53c50d3b1abdbac7fa859ec1f77522cd ""
-  "graph_2.png" 1729782257 75270 6ccace0a47374328c759570cc868959c ""
-  "graph_2s.JPG" 1730252763 28956 e9c334ad967c19f423de3dd682fe19a1 ""
-  "graph_3.png" 1730087749 11682 738d228287c4202da35810419ff5ef94 ""
-  "graph_4s.JPG" 1730252804 24121 dba0ccaa13ebe2350b651ce6b3c91e24 ""
-  "graph_5.png" 1730087749 13207 a96991e0a89abaa6108a872090c3b277 ""
-  "graph_8.png" 1730087749 14809 3a9d05abab8c679132428387c94531e1 ""
-=======
-  "Homework 10.aux" 1729900271 32 ab05033ccbb38b00a31b200ccedf8001 "pdflatex"
-  "Homework 10.tex" 1729873990 1071 03757437d61ed9ef25483e9009509e86 ""
-  "c:/Users/ddent/OneDrive/Documents/CCSF/PHYS-4A/Week 10/Homework 10.tex" 1729873990 1071 03757437d61ed9ef25483e9009509e86 ""
-  "graph_2.png" 1729782257 75270 6ccace0a47374328c759570cc868959c ""
->>>>>>> Stashed changes
+  "Homework 9.aux" 1729744577 33 06c322e1d88c4778ac780ba5e7d05c77 "pdflatex"
+  "Homework 9.tex" 1729744575 12577 9f477ba89b55ffcd97c0e59f6a27b0e8 ""
+  "c:/Users/ddent/OneDrive/Documents/CCSF/PHYS-4A/Week 9/Homework 9.tex" 1729744575 12577 9f477ba89b55ffcd97c0e59f6a27b0e8 ""
+  "graph_4.png" 1729382069 153295 ff77e04109c0e28992f3bddff4283930 ""
+  "graph_5.png" 1729651472 37933 49fda6dd375f17edbcc81893269ee77c ""
+  "graph_6.png" 1729651509 41043 406ce367d4020b1aae7ca67ae938e085 ""
+  "graph_7.png" 1729651536 63279 80576cea5f0a316fef3acb843223f7cd ""
   (generated)
-  "Homework 10.aux"
-  "Homework 10.log"
-  "Homework 10.pdf"
+  "Homework 9.aux"
+  "Homework 9.log"
+  "Homework 9.pdf"
   (rewritten before read)

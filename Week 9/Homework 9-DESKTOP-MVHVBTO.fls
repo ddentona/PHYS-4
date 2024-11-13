@@ -1,7 +1,7 @@
-PWD c:\Users\ddent\OneDrive\Documents\CCSF\PHYS-4A\Week 10
+PWD c:\Users\ddent\OneDrive\Documents\CCSF\PHYS-4A\Week 9
 INPUT C:\Users\ddent\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Users\ddent\OneDrive\Documents\CCSF\PHYS-4A\Week 10\Homework 10.tex
-OUTPUT Homework 10.log
+INPUT c:\Users\ddent\OneDrive\Documents\CCSF\PHYS-4A\Week 9\Homework 9.tex
+OUTPUT Homework 9.log
 INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\tex\latex\base\size12.clo
@@ -232,10 +232,10 @@ INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\tex\generic\pgf\frontendlayer
 INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\tex\latex\graphics\color.sty
 INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
 INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
-INPUT .\Homework 10.aux
-INPUT .\Homework 10.aux
-INPUT Homework 10.aux
-OUTPUT Homework 10.aux
+INPUT .\Homework 9.aux
+INPUT .\Homework 9.aux
+INPUT Homework 9.aux
+OUTPUT Homework 9.aux
 INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
@@ -253,9 +253,10 @@ INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi12.tf
 INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy10.tfm
 INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmex10.tfm
 INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
-OUTPUT Homework 10.pdf
+OUTPUT Homework 9.pdf
 INPUT C:\Users\ddent\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
 INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr17.tfm
+INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
 INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
 INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr8.tfm
 INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr6.tfm
@@ -269,39 +270,13 @@ INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmex10.tf
 INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex8.tfm
 INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
 INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
-<<<<<<< Updated upstream
-INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
-=======
->>>>>>> Stashed changes
-INPUT .\graph_2.png
-INPUT .\graph_2.png
-INPUT .\graph_2.png
-INPUT .\graph_2.png
-INPUT .\graph_2.png
-INPUT .\graph_2.png
-INPUT .\graph_2.png
-<<<<<<< Updated upstream
-INPUT .\graph_2s.JPG
-INPUT .\graph_2s.JPG
-INPUT .\graph_2s.JPG
-INPUT .\graph_2s.JPG
-INPUT .\graph_2s.JPG
-INPUT .\graph_2s.JPG
-INPUT .\graph_2s.JPG
-INPUT .\graph_3.png
-INPUT .\graph_3.png
-INPUT .\graph_3.png
-INPUT .\graph_3.png
-INPUT .\graph_3.png
-INPUT .\graph_3.png
-INPUT .\graph_3.png
-INPUT .\graph_4s.JPG
-INPUT .\graph_4s.JPG
-INPUT .\graph_4s.JPG
-INPUT .\graph_4s.JPG
-INPUT .\graph_4s.JPG
-INPUT .\graph_4s.JPG
-INPUT .\graph_4s.JPG
+INPUT .\graph_4.png
+INPUT .\graph_4.png
+INPUT .\graph_4.png
+INPUT .\graph_4.png
+INPUT .\graph_4.png
+INPUT .\graph_4.png
+INPUT .\graph_4.png
 INPUT .\graph_5.png
 INPUT .\graph_5.png
 INPUT .\graph_5.png
@@ -309,23 +284,25 @@ INPUT .\graph_5.png
 INPUT .\graph_5.png
 INPUT .\graph_5.png
 INPUT .\graph_5.png
-INPUT .\graph_8.png
-INPUT .\graph_8.png
-INPUT .\graph_8.png
-INPUT .\graph_8.png
-INPUT .\graph_8.png
-INPUT .\graph_8.png
-INPUT .\graph_8.png
-INPUT Homework 10.aux
+INPUT .\graph_6.png
+INPUT .\graph_6.png
+INPUT .\graph_6.png
+INPUT .\graph_6.png
+INPUT .\graph_6.png
+INPUT .\graph_6.png
+INPUT .\graph_6.png
+INPUT .\graph_7.png
+INPUT .\graph_7.png
+INPUT .\graph_7.png
+INPUT .\graph_7.png
+INPUT .\graph_7.png
+INPUT .\graph_7.png
+INPUT .\graph_7.png
+INPUT Homework 9.aux
 INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
 INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
 INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmex10.pfb
 INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmex10.pfb
-=======
-INPUT Homework 10.aux
-INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
-INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
->>>>>>> Stashed changes
 INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi12.pfb
 INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi12.pfb
 INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi8.pfb
@@ -334,14 +311,9 @@ INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\c
 INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr12.pfb
 INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr17.pfb
 INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr17.pfb
-<<<<<<< Updated upstream
-INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr6.pfb
-INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr6.pfb
 INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr8.pfb
 INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr8.pfb
 INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
 INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
-=======
->>>>>>> Stashed changes
 INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy8.pfb
 INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy8.pfb
