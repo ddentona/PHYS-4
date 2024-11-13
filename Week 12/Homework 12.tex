@@ -39,22 +39,67 @@ about the mass of the neutron?
 
 \pagebreak
 \section*{Problem 2}
-A one-dimensional inelastic collision may be characterized by a coefficient of restitution $e$ that relates the relative velocities before and after the collision: $(v_{1,f} - v_{2,f}) = -e(v_{1,i} i v{2,i})$. Show that the final velocities are:
-\[ v_{1,f} = \frac{(m_1 - em_2)v_{1,i} + m_2(1 + e)v_{2,i}}{m_1 + m_2} \]
-\[ v_{2,f} = \frac{m_1(1 + e)v_{1,i} + (m_2 - em_1)v_{2,i}}{m_1 + m_2} \]
+A one-dimensional inelastic collision may be characterized by a coefficient of restitution $e$ that relates the relative velocities before and after the collision: $(v_{1,f} - v_{2,f}) = -e(v_{1,i} - v_{2,i})$. Show that the final velocities are:
+\begin{equation}
+    v_{1,f} = \frac{(m_1 - em_2)v_{1,i} + m_2(1 + e)v_{2,i}}{m_1 + m_2}
+\end{equation}
+\begin{equation}
+    v_{2,f} = \frac{m_1(1 + e)v_{1,i} + (m_2 - em_1)v_{2,i}}{m_1 + m_2}
+\end{equation}
 
-\textit{(Hint, kinetic energy is not conserved. You will need two equations so solve for the two
-unknowns.)}
+\textit{(Hint, kinetic energy is not conserved. You will need two equations so solve for the two unknowns.)}
 \subsection*{Solution}
+I have manually numbered the above equations for my own convenience.\\
+We know that momentum is conserved in an inelastic collision, which we have an equation for.
+\begin{equation}
+    m_1v_{1,i} + m_2v_{2,i} = m_1v_{1,f} + m_2v_{2,f} 
+\end{equation}
+
+We can also use the other equation given.
+\begin{equation}
+    (v_{1,f} - v_{2,f}) = -e(v_{1,i} - v_{2,i})
+\end{equation}
+
+We can remark that equation (1) does not have $v_{2,f}$, and to get to a point where we can get to this, we can solve equation (4) for $v_{2,f}$ and substitute that in in equation (3), then solve for $v_{1,f}$.
+\begin{gather}
+    v_{2,f} = v_{1,f} + e(v_{1,i} - v_{2,i})\\
+    m_1v_{1,i} + m_2v_{2,i} = m_1v_{1,f} + m_2v_{1,f} + m_2e(v_{1,i} - v_{2,i})\\
+    v_{1,f}(m_1 + m_2) = m_1v_{1,i} + m_2v_{2,i} - m_2e(v_{1,i} - v_{2,i})\\
+    v_{1,f} = \frac{m_1v_{1,i} - m_2ev_{1,i} + m_2v_{2,i} + m_2ev_{2,i}}{m_1 + m_2}\\
+    v_{1,f} = \frac{(m_1 - em_2)v_{1,i} + m_2(1+e)v_{2,i}}{m_1 + m_2}
+\end{gather}
+
+We can do the same for equation (2), except by substituting in $v_{1,f}$ and solvng for $v_{2,f}$.
+\begin{gather}
+    v_{1,f} = v_{2,f} - e(v_{1,i} - v_{2,i})\\
+    m_1v_{1,i} + m_2v_{2,i} = m_1v_{2,f} - m_1e(v_{1,i} - v_{2,i}) + m_2v_{2,f}\\
+    (m_1 + m_2)v_{2,f} = m_1v_{1,i} + m_2v_{2,i} + m_1ev_{1,i} - m_1ev_{2,i}\\
+    v_{2,f} = \frac{m_1v_{,1i} + m_1ev_{1,i} + m_2v_{2,i} - m_1ev_{2,i}}{m_1 + m_2}\\
+    v_{2,f} = \frac{m_1(1 + e)v_{1,i} + (m_2 - em_1)v_{2,i}}{m_1 + m_2}
+\end{gather}
 
 
 \pagebreak
 \section*{Problem 3}
-An alpha particle ($^4$He) undergoes an elastic collision with a stationary uranium nucleus ($^{235}$U). What
-percent of the kinetic energy of the alpha particle is transferred to the uranium nucleus? Assume the
-collision is one dimensional.
+An alpha particle ($^4$He) undergoes an elastic collision with a stationary uranium nucleus ($^{235}$U). What percent of the kinetic energy of the alpha particle is transferred to the uranium nucleus? Assume the collision is one dimensional.
 
 \subsection*{Solution}
+In the conservation of momentum, we know this (knowing that $v_{2i} = 0$).
+\begin{equation}
+    m_1v_{1i} = m_1v_{1f} + m_2v_{2f}
+\end{equation}
+
+From the conservation of kinetic energy from collisions, we know this.
+\begin{equation}
+    \frac{1}{2}m_1v_{1i}^2 = \frac{1}{2}m_1v_{1f}^2 + \frac{1}{2}m_2v_{2f}^2
+\end{equation}
+
+The portion of the kinetic energy can be represented as a fraction.
+\begin{align}
+    \frac{K_{2f}}{K_{1i}}   &=  \frac{m_2v_{2f}^2}{m_1v_{1i}^2}
+        =   \frac{m_1v_{1i}^2 - m_1v_{1f}^2}{m_1v_{1i}^2}
+        =   1 - \frac{m_1v_{1f}^2}{m_1v_{1i}^2}
+\end{align}
 
 
 \pagebreak
