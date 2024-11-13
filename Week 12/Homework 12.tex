@@ -235,10 +235,7 @@ We recall that the formula for the centripital acceleration is $a_c = \frac{v^2}
 
 \pagebreak
 \section*{Problem 8}
-The angular acceleration of a rotating rigid body is given by $\alpha = (A - Bt)$, where A =
-2.00 rad/s$^2$ and B = 3.00 rad. If the body starts rotating from rest at t = 0 , (a) what is the angular
-velocity? (b) Angular position? (c) What angle does it rotate through in 10.0 s? (d) Where does
-the vector perpendicular to the axis of rotation indicating 0\unit{\degree} at t = 0 lie at t = 10.0 s ?
+The angular acceleration of a rotating rigid body is given by $\alpha = (A - Bt)$, where A = 2.00 rad/s$^2$ and B = 3.00 rad. If the body starts rotating from rest at t = 0 , (a) what is the angular velocity? (b) Angular position? (c) What angle does it rotate through in 10.0 s? (d) Where does the vector perpendicular to the axis of rotation indicating 0\unit{\degree} at t = 0 lie at t = 10.0 s?
 
 \subsection*{Solution}
 \subsubsection*{Section (a)}
@@ -264,8 +261,27 @@ We remark that since $\omega = \frac{d\theta}{dt}$, we can manipulate it to know
             =   \boxed{t^2 - \frac{1}{2}t^3}
 \end{align*}
 
-% \pagebreak
+\pagebreak
 \subsubsection*{Section (c)}
+If the question is what angle it travels to, the answer is as follows.
+\begin{align*}
+    \theta(t)   &=  t^2 - \frac{1}{2}t^3\\
+    \theta(10)  &=  10^2 - \frac{1}{2}10^3
+        =   100 - \frac{1}{2}1000
+        =   100 - 500
+        =   \boxed{-400}
+\end{align*}
 
+If we want the angle traveled, we can start by finding points where the angular velocity is zero. 
+\[ \omega = 2.00t - \frac{3}{2}t^2 = t(2.00 - \frac{3}{2}t) = 2.00t(1 - \frac{3}{4}t) \]
+This means that $\omega = 0$ at $t = 0$ and $t = \frac{4}{3}$. 
+
+\subsubsection*{Section (d)}
+We just translate radians to degrees from the previous problem.
+\begin{align*}
+    \theta(10)  &=  -400
+        =   -400 * \frac{180\unit{\degree}}{\pi}
+        =   -\frac{72000}{\pi}
+\end{align*}
 
 \end{document}
