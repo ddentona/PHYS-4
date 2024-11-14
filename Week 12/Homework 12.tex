@@ -23,6 +23,7 @@
 \DeclareSIUnit{\foot}{ft}
 \DeclareSIUnit{\h}{h}
 \DeclareSIUnit{\rad}{rad}
+\DeclareSIUnit{\u}{u}
 
 \maketitle
 
@@ -35,10 +36,54 @@ nitrogen nuclei (of mass 14 u). If the collisions were elastic and head on, what
 about the mass of the neutron?
 
 \subsection*{Solution}
+From the conservation of momentum, we have two equations, knowing that only the neutron is moving initially.
+\begin{equation}
+    m_1v_{1i} = m_1v_{1f1} + m_2v_{2f}
+\end{equation}
+\begin{equation}
+    m_1v_{1i} = m_1v_{1f2} + m_3v_{3f}
+\end{equation}
+
+Subtracting equation (2) from equation (1), we get equation (3).
+\begin{equation}
+    0 = m_1(v_{1f1} - v_{1f2}) + m_2v_{2f} - m_3v_{3f}
+\end{equation}
+
+Solving (3) for $m_1$, we get (5).
+\begin{align}
+    m_1(v_{1f1} - v_{1f2})  &=  m_3v_{3f} - m_2v_{2f}\\
+    m_1 &=  \frac{m_3v_{3f} - m_2v_{2f}}{v_{1f1} - v_{1f2}}
+\end{align}
+
+Following equations we learned in class, we can get equations (7) and (8).
+\begin{gather}
+    v_{1f} + v_{1i} = v_{2f} + v_{2i}\\
+    v_{1f1} + v_{1i} = v_{2f} + v_{2i}\\
+    v_{1f2} + v_{1i} = v_{3f} + v_{3i}
+\end{gather}
+
+\setcounter{equation}{6}
+We can subtract (8) from (7) to get something we can substitute into (5). We can then recall that the other particles are initially at rest.
+\begin{align}
+    v_{1f1} + v_{1i} &= v_{2f} + v_{2i}\\
+    v_{1f2} + v_{1i} &= v_{3f} + v_{3i}\\
+    v_{1f1} - v_{1f2} &= v_{2f} + v_{2i} - v_{3f} - v_{3i} = v_{2f} - v_{3f}\\
+    m_1 &=  \frac{m_3v_{3f} - m_2v_{2f}}{v_{2f} - v_{3f}}
+\end{align}
+
+Knowing the ratios from above, we can substitute values in.
+\begin{align}
+    m_1 &=  \frac{14m_2v_{3f} - m_2*7.5v_{3f}}{7.5*v_{3f} - v_{3f}}\\
+    m_1 &=  \frac{6.5m_2v_{3f}}{6.5*v_{3f}}\\
+    m_1 &=  m_2
+\end{align}
+
+Since $m_1 = m_2$ and $m_2 = 1\unit{\u}$, then by the transistive property, \boxed{m_1 = 1\unit{\u}}.
 
 
 \pagebreak
 \section*{Problem 2}
+\setcounter{equation}{0}
 A one-dimensional inelastic collision may be characterized by a coefficient of restitution $e$ that relates the relative velocities before and after the collision: $(v_{1,f} - v_{2,f}) = -e(v_{1,i} - v_{2,i})$. Show that the final velocities are:
 \begin{equation}
     v_{1,f} = \frac{(m_1 - em_2)v_{1,i} + m_2(1 + e)v_{2,i}}{m_1 + m_2}
@@ -80,6 +125,7 @@ We can do the same for equation (2), except by substituting in $v_{1,f}$ and sol
 
 
 \pagebreak
+\setcounter{equation}{0}
 \section*{Problem 3}
 An alpha particle ($^4$He) undergoes an elastic collision with a stationary uranium nucleus ($^{235}$U). What percent of the kinetic energy of the alpha particle is transferred to the uranium nucleus? Assume the collision is one dimensional.
 
@@ -94,11 +140,19 @@ From the conservation of kinetic energy from collisions, we know this.
     \frac{1}{2}m_1v_{1i}^2 = \frac{1}{2}m_1v_{1f}^2 + \frac{1}{2}m_2v_{2f}^2
 \end{equation}
 
+We also know an in-class equation values of velocities.
+\begin{gather}
+    v_{1f} + v_{1i} = v_{2f} + v_{2i}\\
+    v_{1f} + v_{1i} = v_{2f}
+\end{gather}
+
 The portion of the kinetic energy can be represented as a fraction.
 \begin{align}
     \frac{K_{2f}}{K_{1i}}   &=  \frac{m_2v_{2f}^2}{m_1v_{1i}^2}
         =   \frac{m_1v_{1i}^2 - m_1v_{1f}^2}{m_1v_{1i}^2}
-        =   1 - \frac{m_1v_{1f}^2}{m_1v_{1i}^2}
+        =   \frac{(v_{1i} - v_{1f})(v_{1i} + v_{1f})}{v_{1i}^2}\\
+        &=  \frac{(v_{1i} - v_{1f})v_{2f}}{v_{1i}^2}
+        =   
 \end{align}
 
 
