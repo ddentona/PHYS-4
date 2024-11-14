@@ -146,14 +146,28 @@ We also know an in-class equation values of velocities.
     v_{1f} + v_{1i} = v_{2f}
 \end{gather}
 
+We also have an equation about elactic collisions.
+\begin{equation}
+    v_{2f} = \frac{2m_1}{m_1 + m_2}v_{1i}
+\end{equation}
+
 The portion of the kinetic energy can be represented as a fraction.
 \begin{align}
     \frac{K_{2f}}{K_{1i}}   &=  \frac{m_2v_{2f}^2}{m_1v_{1i}^2}
-        =   \frac{m_1v_{1i}^2 - m_1v_{1f}^2}{m_1v_{1i}^2}
-        =   \frac{(v_{1i} - v_{1f})(v_{1i} + v_{1f})}{v_{1i}^2}\\
-        &=  \frac{(v_{1i} - v_{1f})v_{2f}}{v_{1i}^2}
-        =   
+        =   \frac{m_2\left(\frac{2m_1}{m_1 + m_2}v_{1i}\right)^2}{m_1v_{1i}^2}
+        =   \frac{m_24m_1^2v_{1i}^2}{(m_1+m_2)^2m_1v_{1i}^2}
+        =   \frac{4m_1m_2}{(m_1+m_2)^2}
 \end{align}
+
+Assuming that $^4$He weighs about 4 amu and $^{235}$U weighs about 235 amu, we can plug in numbers to the above equation.
+\begin{align}
+    \frac{K_{2f}}{K_{1i}}   &=  \frac{4m_1m_2}{(m_1+m_2)^2}
+        =   \frac{4*4*235}{(4+235)^2}
+        =   \frac{3760}{57121}
+        =   0.0658
+\end{align}
+
+We can convert this to a percentage to get \boxed{6.58\%}.
 
 
 \pagebreak
@@ -283,6 +297,9 @@ We use the same strategy here.
     t_2 &=  \frac{4.7 + \sqrt{28.13}}{0.24}
     =   \boxed{41.682\unit{\second}}
 \end{align*}
+\subsubsection*{Section (f)}
+\includegraphics[width=\textwidth]{graph_6.jpg} 
+Identified answers as points from left to right: (d), (b), (a), (c), (e).
 
 
 \pagebreak
