@@ -1,0 +1,68 @@
+\documentclass[8pt]{minimal}
+\usepackage{amsmath}
+
+\begin{document}
+\setlength{\parindent}{0pt}
+% \setlength{\voffset}{-50pt}
+\twocolumn
+PHYS 4A Exam 2 Cheat Sheet
+
+\underline{Write Units}
+
+\underline{Kinematic Equations}
+\begin{gather*}
+    v_{avg}=\frac{\Delta x}{\Delta t}; s_{avg}=\frac{distance}{time};v=\frac{dx}{dt}\\
+    a_{avg}=\frac{\Delta v}{\Delta t}; a = \frac{dv}{dt} = \frac{d^2x}{dt^2}; (1)\ v(t) = v_0 + at\\
+    (2)\ x = x_0 + v_0t + \frac{1}{2}at^2; (3)\ v^2 = v_0^2 + 2a\Delta x
+\end{gather*}
+When doing a problem, account for all the variables you know the values of and all those you don't know the value of.\\
+
+\underline{Freefall}
+
+Object is in freefall iff only force acting on it is gravity\\
+Kinematic eq'ns apply to freefall\\
+Unless stated otherwise, gravitational acceleration $g=-9.81m/s^2$\\
+
+\underline{Vectors}
+\begin{gather*}
+    \vec{a} \cdot \vec{b} = ab \cos(\theta); || \vec{a}\times \vec{b} || = ab \sin(\theta)\\
+    \vec{a} \cdot \vec{b} = a_x b_x+a_y b_y\dots; \vec{a}\times \vec{b} = \det \left( \begin{smallmatrix} \hat{i} & \hat{j} &\hat{k} \\ a_x & a_y & a_z \\ b_x & b_y & b_z  \end{smallmatrix} \right)
+\end{gather*}
+Vectors work as their separate parts for kinematic eq'ns
+\\
+
+\underline{Project}
+
+Motion in 2D+ (uses vectors)\\
+Generally, vertical motion is freefall, horizontal motion is constant \\
+x-value = magnitude times cosine of angle\\
+y-value = magnitude times sine of angle\\
+\begin{gather*}
+    R=x-x_0=\frac{v_0^2*\sin(2\theta)}{g};t=\frac{R}{v_0  \cos(\theta)}\\
+    \Delta y =\tan\theta \Delta x - \frac{g*\Delta x^2}{2(v_0  \cos\theta)^2 }
+\end{gather*}
+
+\underline{Uniform Circular Motion}
+\begin{equation*}
+    \vec{x}(t)=x*\cos\theta \hat{i} + x*\sin\theta \hat{j}  ;a=\frac{v^2}{r} ; F_c=\frac{mv^2}{r}
+\end{equation*}
+
+\underline{Force}
+
+Force on an object is always represented on a FBD as starting from that object\\
+Force on an object is calculated from that object's mass and consequent acceleration
+\begin{equation*}
+    F_{net}=ma      |      F_{AB}=-F_{BA}
+\end{equation*}
+There is no technical equation for the tension force. Treat it as an unknown when it is included.
+
+\underline{Friction}
+\begin{equation*}
+    f_s \le \mu_s F_N ; f_k = \mu_k F_N
+\end{equation*}
+
+\underline{Spring force}
+\begin{equation*}
+    \vec{F}_s = -k\vec{d}
+\end{equation*}
+\end{document}
