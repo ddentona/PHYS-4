@@ -1,37 +1,44 @@
-PWD /Users/dentonaingworth/Documents/CCSF/PHYS-4A/Cheat Sheet Exam 2
-INPUT /usr/local/texlive/2024/texmf.cnf
-INPUT /usr/local/texlive/2024/texmf-dist/web2c/texmf.cnf
-INPUT /usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT /Users/dentonaingworth/Documents/CCSF/PHYS-4A/Cheat Sheet Exam 2/Cheat Sheet Exam 2.tex
+PWD c:\Users\ddent\OneDrive\Documents\CCSF\PHYS-4A\Cheat Sheet Exam 2
+INPUT C:\Users\ddent\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
+INPUT c:\Users\ddent\OneDrive\Documents\CCSF\PHYS-4A\Cheat Sheet Exam 2\Cheat Sheet Exam 2.tex
 OUTPUT Cheat Sheet Exam 2.log
-INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/base/minimal.cls
-INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/base/minimal.cls
-INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/amsmath/amsmath.sty
-INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/amsmath/amsmath.sty
-INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/amsmath/amsopn.sty
-INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/amsmath/amstext.sty
-INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/amsmath/amstext.sty
-INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/amsmath/amsgen.sty
-INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/amsmath/amsgen.sty
-INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/amsmath/amsbsy.sty
-INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/amsmath/amsbsy.sty
-INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/amsmath/amsopn.sty
-INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-INPUT ./Cheat Sheet Exam 2.aux
-INPUT ./Cheat Sheet Exam 2.aux
+INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\tex\latex\base\minimal.cls
+INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\tex\latex\base\minimal.cls
+INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amsmath.sty
+INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amsmath.sty
+INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amsopn.sty
+INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amstext.sty
+INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amstext.sty
+INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amsgen.sty
+INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amsgen.sty
+INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amsbsy.sty
+INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amsbsy.sty
+INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amsopn.sty
+INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
+INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
+INPUT .\Cheat Sheet Exam 2.aux
+INPUT .\Cheat Sheet Exam 2.aux
 INPUT Cheat Sheet Exam 2.aux
 OUTPUT Cheat Sheet Exam 2.aux
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
+INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
+INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmti10.tfm
 OUTPUT Cheat Sheet Exam 2.pdf
-INPUT /usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map
+INPUT C:\Users\ddent\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
 INPUT Cheat Sheet Exam 2.aux
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
+INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmex10.pfb
+INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmex10.pfb
+INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi10.pfb
+INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi10.pfb
+INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi5.pfb
+INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi5.pfb
+INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi7.pfb
+INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi7.pfb
+INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr10.pfb
+INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr10.pfb
+INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr7.pfb
+INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr7.pfb
+INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
+INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
+INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmti10.pfb
+INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmti10.pfb
