@@ -30,25 +30,55 @@
 \pagebreak
 
 \section*{Problem 1}
-% \begin{wrapfigure}{r}{0.35\textwidth}
-%     \vspace{-30pt}
-%     \includegraphics[width=0.35\textwidth]{graph_1.png} 
-%     % \label{fig:wrapfig}
-% \end{wrapfigure}
+\begin{wrapfigure}{r}{0.35\textwidth}
+    \vspace{-30pt}
+    \includegraphics[width=0.35\textwidth]{graph_1.png} 
+    % \label{fig:wrapfig}
+\end{wrapfigure}
 Figure 10-35 shows three 0.0100 kg particles that have been glued to a rod of length L = 6.00
 cm and negligible mass. The assembly can rotate around a perpendicular axis through point O at
-the left end. If we remove one particle (that is, 33% of the mass), by what percentage does the
+the left end. If we remove one particle (that is, 33\% of the mass), by what percentage does the
 rotational inertia of the assembly around the rotation axis decrease when that removed particle
 is (a) the innermost one and (b) the outermost one?
 
 \subsection*{Solution}
+\begin{align*}
+    I_{123} &=  \Sigma m_i r_i^2
+        =   10 * (2^2 + 4^2 + 6^2)
+        =   10 * (4 + 16 + 36)
+        =   10 * (56)
+        =   560 \unit{\gram * \centi\meter^2}
+\end{align*}
+
+\textbf{a) 7.2\%}
+\begin{align*}
+    I_{23}  &=  10 * (4^2 + 6^2)
+        =   10 * (16 + 36)
+        =   10 * (52)
+        =   520 \unit{\gram * \centi\meter^2}\\
+    \frac{I_{23}}{I_{123}}  &=  \frac{520}{560}
+        =   0.928
+\end{align*}
+The percentage lost is one minus the fraction, so the answer is $1 - \frac{I_{23}}{I_{123}} = 0.072 = \boxed{7.2\%}$.
+
+
+\textbf{b) 64.3\%}
+\begin{align*}
+    I_{12}  &=  10 * (2^2 + 4^2)
+        =   10 * (4 + 16)
+        =   10 * (20)
+        =   200 \unit{\gram * \centi\meter^2}\\
+    \frac{I_{23}}{I_{123}}  &=  \frac{200}{560}
+        =   0.357
+\end{align*}
+The percentage lost is one minus the fraction, so the answer is $1 - \frac{I_{12}}{I_{123}} = 0.643 = \boxed{64.3\%}$.
 
 
 \pagebreak
 \section*{Problem 2}
-Find the center of mass of a rod of length L whose mass density changes from one end to the other
-quadratically. That is, if the rod is laid out along the x-axis with one end at the origin and the other end
-at $x = L$, the density is given by $\rho(x) = \rho_0 + (\rho_1 - \rho_0) \left(\frac{x}{L}\right)^2$, where $\rho_0$ and $\rho_1$ are constant values.
+Two particles with masses 2.00 and 5.00 kg are connected by a light rod of length 2.00 m.
+Find the moment of inertia of the system about an axis perpendicular to the rod and passing
+through (a) the midpoint and (b) the center of mass.
 
 \subsection*{Solution}
 
@@ -60,44 +90,55 @@ at $x = L$, the density is given by $\rho(x) = \rho_0 + (\rho_1 - \rho_0) \left(
     \includegraphics[width=0.35\textwidth]{graph_3.png} 
     % \label{fig:wrapfig}
 \end{wrapfigure}
-A cube of side a is cut out of another cube of side b as shown in the figure below. Find the location of
-the center of mass of the structure. (Hint: Think of the missing part as a negative mass overlapping a
-positive mass.)
+For each of the forces depicted in the figure find the torque about the pivot (black dot at
+center of rod). Take $F_1$ = 10.0 N, $F_2$ = 15.0 N, $F_3$ = 8.00 N, and $L$ = 9.00 m. The rods length
+is L.
 
 \subsection*{Solution}
 
 
 \pagebreak
 \section*{Problem 4}
-Two skaters, one with mass 65 kg and the other with mass 40 kg, stand on an ice rink holding a pole
-of length 10 m and negligible mass. Starting from the ends of the pole, the skaters pull themselves along
-the pole until they meet. How far does the 40 kg skater move?
+The angular position of a line on a disk of radius r = 6.00 cm is given by
+\[ \theta = 10.0 - 5.00 t + 4 t^2 rad. \]
+Find: (a) the average angular speed between 1.00 and 3.00 s; (b) the linear speed of a point on
+the rim at 2.00 s; (c) the radial and tangential accelerations of a point on the rim at 2.00 s.
 
 \subsection*{Solution}
 
 
 \pagebreak
 \section*{Problem 5}
-What is the average momentum of an avalanche that moves a 40-cm-thick layer of snow over an area
-of 100 m by 500 m over a distance of 1 km down a hill in 5.5 s? Assume a density of 350 kg/m3 for the
-snow.
+\begin{wrapfigure}{r}{0.20\textwidth}
+    \vspace{-30pt}
+    \includegraphics[width=0.20\textwidth]{graph_5.png} 
+    % \label{fig:wrapfig}
+\end{wrapfigure}
+The book in the figure has the same shape as your physics textbook. About which axis is the
+rotational inertia (a) the largest; (b) the smallest? \textit{You must justify your answer.}
 
 \subsection*{Solution}
+The rotational interia of any point is directly related to the mass and directly related to the square of the distance from the axis of rotation. Along any axis, we eliminate one dimension of any point's distance to the axis of rotation. No matter what axis we rotate around, the number of points and their masses will remain the same.\\
+a) For the largest inertia, we should try to maximize the distance to the axis of rotation. Along axis C, we maximize the distance to any point by eliminating the smallest dimension of the object from rotation. This makes \boxed{C} the answer.\\
+b) For the smallest inertia, we should try to minimize the distance to the axis of rotation. Along axis B, we minimize the distance to any point by eliminating the largest dimension of the object from rotation. This makes \boxed{B} the answer.
+
 
 
 \pagebreak
 \section*{Problem 6}
-\begin{wrapfigure}{r}{0.35\textwidth}
+\begin{wrapfigure}{r}{0.30\textwidth}
     \vspace{-30pt}
-    \includegraphics[width=0.35\textwidth]{graph_6.png} 
+    \includegraphics[width=0.30\textwidth]{graph_6.png} 
     % \label{fig:wrapfig}
 \end{wrapfigure}
-A 75.0-kg person is riding in a car moving at 20.0 m/s when the car runs into a bridge abutment
-(see the following figure). a. Calculate the average force on the person if he is stopped by a padded
-dashboard that compresses an average of 1.00 cm. Calculate the average force on the person if he is
-stopped by an air bag that compresses an average of 15.0 cm.
+The wheel shown in the figure below has a central hub of radius 2.00 m and a mass of 2.00
+kg. Each of the four spokes is 4.00 m long and has a mass of 1.00 kg. The outer thin ring has a
+radius of 6.00 m and a mass of 2.00 kg. Find the rotational inertia about an axis through the
+center perpendicular to the plane of the wheel. Treat the hub as a disk. \textit{Hint, you will have to
+use the parallel axis theorem with the spokes.}
 
 \subsection*{Solution}
+We know the rotational inertia formula is \(I = \int r^2 dm\).
 
 
 \pagebreak
@@ -107,10 +148,9 @@ stopped by an air bag that compresses an average of 15.0 cm.
     \includegraphics[width=0.35\textwidth]{graph_7.png} 
     % \label{fig:wrapfig}
 \end{wrapfigure}
-The x-component of a force on a 46-g golf ball by a 7-iron versus time is plotted in the following
-figure. (a). Find the x-component of the impulse during the intervals i. [0, 50 ms], and ii. [50 ms, 100 ms]
-(b) Find the change in the x-component of the momentum during the intervals iii. [0, 50 ms], and iv. [50
-ms, 100 ms]
+Two solid spheres of mass $m$ and radius $R$ are stuck to the ends of a thin rod of mass m and
+length $3R$. Find the rotational inertia of the system about the axis at the midpoint of the rod and
+perpendicular to it, as shown in the figure below.
 
 \subsection*{Solution}
 
@@ -122,9 +162,9 @@ ms, 100 ms]
     \includegraphics[width=0.35\textwidth]{graph_8.png} 
     % \label{fig:wrapfig}
 \end{wrapfigure}
-The instantaneous positions and velocities of three particles are shown in the figure below. Find: (a)
-the position of the CM; (b) the velocity of the CM; (c) the position of the CM 3.00 s later if there is no
-external force acting.
+A light (massless) rod of length L = 1.5 m is freely pivoted at one end. Three forces act as
+shown in the figure below. The force $\vec{F}_3$ acts at the midpoint. What is the torque due to each force?
+Take $F_1$ = 6.90 N, $F_2$ = 4.00 N, $F_3$ = 2.00 N, $\theta = 20\unit{\degree}$, and $\alpha = 30\unit{\degree}$.
 
 \subsection*{Solution}
  
