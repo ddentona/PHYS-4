@@ -30,19 +30,26 @@
 \pagebreak
 
 \section*{Problem 1}
-% \begin{wrapfigure}{r}{0.35\textwidth}
-%     \vspace{-30pt}
-%     \includegraphics[width=0.35\textwidth]{graph_1.png} 
-%     % \label{fig:wrapfig}
-% \end{wrapfigure}
-Figure 10-35 shows three 0.0100 kg particles that have been glued to a rod of length L = 6.00
-cm and negligible mass. The assembly can rotate around a perpendicular axis through point O at
-the left end. If we remove one particle (that is, 33% of the mass), by what percentage does the
-rotational inertia of the assembly around the rotation axis decrease when that removed particle
-is (a) the innermost one and (b) the outermost one?
+\begin{wrapfigure}{r}{0.35\textwidth}
+    \vspace{-30pt}
+    \includegraphics[width=0.35\textwidth]{graph_1.png} 
+    % \label{fig:wrapfig}
+\end{wrapfigure}
+Three point masses are placed at the corners of a triangle as shown in the figure below. Find the
+center of mass of the three-mass system.
 
 \subsection*{Solution}
-
+To do this, we add up the masses times their positions and divide that by the total mass.
+\begin{align}
+    \bar{x} &=  \frac{\sum m_i*x_i}{\sum m_i}
+        =   \frac{100*0 + 75*4 + 150*4}{100 + 75 + 150}
+        =   \frac{900}{325}
+        =   \boxed{2.769 \unit{\centi\meter}}\\
+    \bar{y} &=  \frac{\sum m_i*y_i}{\sum m_i}
+        =   \frac{100*0 + 150*0 + 75*3}{100 + 75 + 150}
+        =   \frac{225}{325}
+        =   \boxed{0.692\unit{\centi\meter}}
+\end{align}
 
 \pagebreak
 \section*{Problem 2}
@@ -127,7 +134,29 @@ the position of the CM; (b) the velocity of the CM; (c) the position of the CM 3
 external force acting.
 
 \subsection*{Solution}
- 
+\subsubsection*{Section (a)}
+The position of the center of mass can be calculated by multiplying the masses by the positions and dividing by the total mass.
+\begin{align}
+    (\bar{x},\bar{y})   &=  \frac{\sum m_i*(x_i,y_i)}{\sum m_i}
+        =   \frac{5*(-1,3) + 2*(2,2) + 3*(2,-3)}{5 + 2 + 3}\\
+        &=  \frac{(-5,15) + (4,4) + (6,-9)}{10} = \frac{(5,10)}{10}
+        =   \boxed{\left(\frac{1}{2}\unit{\meter},1\unit{\meter}\right)}
+\end{align}
+
+\subsubsection*{Section (b)}
+The velocity of the center of mass would here be calculatable by the same process but with velocity rather than postion.
+\begin{align}
+    \vec{u}(\theta) &=  (\cos(\theta),\sin(\theta))\\
+    \vec{v} &=  \frac{\sum m_i*v_i}{\sum m_i}
+            =   \frac{5*2*\vec{u}(240\unit{\degree}) + 2*3*\vec{u}(30\unit{\degree}) + 3*1*\vec{u}(140\unit{\degree})}{5 + 2 + 3}\\
+            &=  \frac{5(-1,-\sqrt{3}) + 3(\sqrt{3},1) + 3(-0.766,0.643)}{10}\\
+            &=  \frac{(-5,-5\sqrt{3}) + (3\sqrt{3},3) + (-2.298, 1.928)}{10}\\
+            &=  \frac{(-2.102,-3.732)}{10}
+            =   \boxed{(-0.2102,-0.3732) \unit{\meter/\second}}
+\end{align}
+
+\subsubsection*{Section (c)}
+We can apply the position-velocity formula now that we know the 
 
 
 \end{document}

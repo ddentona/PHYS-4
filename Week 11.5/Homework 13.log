@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.8.23)  17 NOV 2024 21:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.8.23)  17 NOV 2024 21:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"c:/Users/ddent/OneDrive/Documents/CCSF/PHYS-4A/Week 13/Homework 13.tex"
-(c:/Users/ddent/OneDrive/Documents/CCSF/PHYS-4A/Week 13/Homework 13.tex
+**"c:/Users/ddent/OneDrive/Documents/CCSF/PHYS-4A/Week 11.5/Homework 13.tex"
+(c:/Users/ddent/OneDrive/Documents/CCSF/PHYS-4A/Week 11.5/Homework 13.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
 (C:\Users\ddent\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
@@ -510,94 +510,54 @@ File: translations-basic-dictionary-english.trsl (english translation file `tran
 Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 19.
  [1
 
-{C:/Users/ddent/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2] [3]
-
-LaTeX Warning: File `graph_3.png' not found on input line 60.
-
-
-c:/Users/ddent/OneDrive/Documents/CCSF/PHYS-4A/Week 13/Homework 13.tex:60: Package pdftex.def Error: File `graph_3.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.60 ...raphics[width=0.35\textwidth]{graph_3.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[4] [5] [6]
-
-LaTeX Warning: File `graph_6.png' not found on input line 92.
-
-
-c:/Users/ddent/OneDrive/Documents/CCSF/PHYS-4A/Week 13/Homework 13.tex:92: Package pdftex.def Error: File `graph_6.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.92 ...raphics[width=0.35\textwidth]{graph_6.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[7]
-
-Package wrapfig Warning: Collision between wrapping environments on input line 105.
-
-
-LaTeX Warning: File `graph_7.png' not found on input line 107.
-
-
-c:/Users/ddent/OneDrive/Documents/CCSF/PHYS-4A/Week 13/Homework 13.tex:107: Package pdftex.def Error: File `graph_7.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.107 ...aphics[width=0.35\textwidth]{graph_7.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Package wrapfig Warning: Stationary wrapfigure forced to float on input line 110.
-
-[8]
-
-LaTeX Warning: File `graph_8.png' not found on input line 122.
-
-
-c:/Users/ddent/OneDrive/Documents/CCSF/PHYS-4A/Week 13/Homework 13.tex:122: Package pdftex.def Error: File `graph_8.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.122 ...aphics[width=0.35\textwidth]{graph_8.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[9] (Homework 13.aux)
+{C:/Users/ddent/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
+<graph_1.png, id=10, 164.615pt x 106.3975pt>
+File: graph_1.png Graphic file (type png)
+<use graph_1.png>
+Package pdftex.def Info: graph_1.png  used on input line 35.
+(pdftex.def)             Requested size: 150.50424pt x 97.2797pt.
+ [2 <./graph_1.png>] [3]
+<graph_3.png, id=25, 97.36375pt x 109.40875pt>
+File: graph_3.png Graphic file (type png)
+<use graph_3.png>
+Package pdftex.def Info: graph_3.png  used on input line 67.
+(pdftex.def)             Requested size: 150.50424pt x 169.12935pt.
+ [4 <./graph_3.png>] [5] [6]
+<graph_6.png, id=36, 190.7125pt x 90.3375pt>
+File: graph_6.png Graphic file (type png)
+<use graph_6.png>
+Package pdftex.def Info: graph_6.png  used on input line 99.
+(pdftex.def)             Requested size: 150.50424pt x 71.29414pt.
+ [7 <./graph_6.png>]
+<graph_7.png, id=42, 351.3125pt x 141.52875pt>
+File: graph_7.png Graphic file (type png)
+<use graph_7.png>
+Package pdftex.def Info: graph_7.png  used on input line 114.
+(pdftex.def)             Requested size: 150.50424pt x 60.63373pt.
+ [8 <./graph_7.png>]
+<graph_8.png, id=47, 260.975pt x 207.77625pt>
+File: graph_8.png Graphic file (type png)
+<use graph_8.png>
+Package pdftex.def Info: graph_8.png  used on input line 129.
+(pdftex.def)             Requested size: 150.50424pt x 119.82549pt.
+ [9 <./graph_8.png>] (Homework 13.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 27890 strings out of 474486
- 750397 string characters out of 5743755
- 1926542 words of memory out of 5000000
- 49782 multiletter control sequences out of 15000+600000
- 564224 words of font info for 58 fonts, out of 8000000 for 9000
+ 27805 strings out of 474486
+ 748539 string characters out of 5743755
+ 1937542 words of memory out of 5000000
+ 49698 multiletter control sequences out of 15000+600000
+ 564362 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,6n,107p,784b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on "Homework 13.pdf" (9 pages, 101329 bytes).
+ 99i,13n,107p,786b,639s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on "Homework 13.pdf" (9 pages, 173795 bytes).
 PDF statistics:
- 80 PDF objects out of 1000 (max. 8388607)
+ 91 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 13 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 38 words of extra memory for PDF output out of 10000 (max. 10000000)
 

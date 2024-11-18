@@ -1,6 +1,6 @@
-PWD c:\Users\ddent\OneDrive\Documents\CCSF\PHYS-4A\Week 13
+PWD c:\Users\ddent\OneDrive\Documents\CCSF\PHYS-4A\Week 11.5
 INPUT C:\Users\ddent\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Users\ddent\OneDrive\Documents\CCSF\PHYS-4A\Week 13\Homework 13.tex
+INPUT c:\Users\ddent\OneDrive\Documents\CCSF\PHYS-4A\Week 11.5\Homework 13.tex
 OUTPUT Homework 13.log
 INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
@@ -257,6 +257,13 @@ OUTPUT Homework 13.pdf
 INPUT C:\Users\ddent\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
 INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr17.tfm
 INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
+INPUT .\graph_1.png
+INPUT .\graph_1.png
+INPUT .\graph_1.png
+INPUT .\graph_1.png
+INPUT .\graph_1.png
+INPUT .\graph_1.png
+INPUT .\graph_1.png
 INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
 INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr8.tfm
 INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr6.tfm
@@ -269,7 +276,35 @@ INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy6.tfm
 INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmex10.tfm
 INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex8.tfm
 INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
-INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmtt12.tfm
+INPUT .\graph_3.png
+INPUT .\graph_3.png
+INPUT .\graph_3.png
+INPUT .\graph_3.png
+INPUT .\graph_3.png
+INPUT .\graph_3.png
+INPUT .\graph_3.png
+INPUT .\graph_6.png
+INPUT .\graph_6.png
+INPUT .\graph_6.png
+INPUT .\graph_6.png
+INPUT .\graph_6.png
+INPUT .\graph_6.png
+INPUT .\graph_6.png
+INPUT .\graph_7.png
+INPUT .\graph_7.png
+INPUT .\graph_7.png
+INPUT .\graph_7.png
+INPUT .\graph_7.png
+INPUT .\graph_7.png
+INPUT .\graph_7.png
+INPUT .\graph_8.png
+INPUT .\graph_8.png
+INPUT .\graph_8.png
+INPUT .\graph_8.png
+INPUT .\graph_8.png
+INPUT .\graph_8.png
+INPUT .\graph_8.png
+INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
 INPUT Homework 13.aux
 INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
 INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
@@ -287,5 +322,5 @@ INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\c
 INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr8.pfb
 INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
 INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
-INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmtt12.pfb
-INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmtt12.pfb
+INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy8.pfb
+INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy8.pfb
