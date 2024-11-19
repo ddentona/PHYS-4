@@ -81,7 +81,29 @@ Find the moment of inertia of the system about an axis perpendicular to the rod 
 through (a) the midpoint and (b) the center of mass.
 
 \subsection*{Solution}
+\subsubsection*{Section (a)}
+We know that the midpoint of the rod is at 1 m. Mass constants allow us to calculate the moment of inertia without an integral.
+\begin{align*}
+    I   &=  \Sigma m_i r_i^2
+        =   2 * (-1)^2 + 5 * 1^2
+        =   2 + 5
+        =   \boxed{7 \unit{\kilo\gram*\meter^2}}
+\end{align*}
 
+\subsubsection*{Section (b)}
+We first calculate the center of mass.
+\begin{equation*}
+    x_{com} =   \frac{\Sigma_i m_i*r_i}{\Sigma m_i}
+        =   \frac{2 * 0 + 5 * 2}{5 + 2}
+        =   \frac{10}{7} \unit{\meter}
+\end{equation*}
+This means that the lighter mass will be located (relatively) at $-\frac{10}{7}$m, while the heavier mass will be located at $2 - \frac{10}{7} = \frac{4}{7}$m. We can calculate the moment of intertia from this.
+\begin{equation*}
+    I   =   2 * \left(-\frac{10}{7}\right)^2 + 5 * \left(\frac{4}{7}\right)^2
+        =   2 * \frac{100}{49} + 5 * \frac{16}{49}
+        =   \frac{200 + 80}{49}
+        =   \boxed{\frac{280}{49} \unit{\kilo\gram*\meter^2}}
+\end{equation*}
 
 \pagebreak
 \section*{Problem 3}
@@ -100,7 +122,7 @@ is L.
 \pagebreak
 \section*{Problem 4}
 The angular position of a line on a disk of radius r = 6.00 cm is given by
-\[ \theta = 10.0 - 5.00 t + 4 t^2 rad. \]
+\[ \theta = 10.0 - 5.00 t + 4 t^2\ \unit{\rad} \]
 Find: (a) the average angular speed between 1.00 and 3.00 s; (b) the linear speed of a point on
 the rim at 2.00 s; (c) the radial and tangential accelerations of a point on the rim at 2.00 s.
 
