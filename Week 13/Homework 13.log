@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.8.23)  18 NOV 2024 21:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.8.23)  19 NOV 2024 08:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -526,25 +526,25 @@ Package pdftex.def Info: graph_3.png  used on input line 112.
 <graph_5.png, id=35, 121.45375pt x 98.3675pt>
 File: graph_5.png Graphic file (type png)
 <use graph_5.png>
-Package pdftex.def Info: graph_5.png  used on input line 143.
+Package pdftex.def Info: graph_5.png  used on input line 182.
 (pdftex.def)             Requested size: 85.9996pt x 69.65227pt.
  [6 <./graph_5.png>]
 <graph_6.png, id=41, 88.33pt x 89.33376pt>
 File: graph_6.png Graphic file (type png)
 <use graph_6.png>
-Package pdftex.def Info: graph_6.png  used on input line 160.
+Package pdftex.def Info: graph_6.png  used on input line 199.
 (pdftex.def)             Requested size: 129.00269pt x 130.4698pt.
  [7 <./graph_6.png>]
 <graph_7.png, id=47, 134.5025pt x 72.27pt>
 File: graph_7.png Graphic file (type png)
 <use graph_7.png>
-Package pdftex.def Info: graph_7.png  used on input line 177.
+Package pdftex.def Info: graph_7.png  used on input line 216.
 (pdftex.def)             Requested size: 150.50424pt x 80.86903pt.
  [8 <./graph_7.png>]
 <graph_8.png, id=52, 138.5175pt x 81.30376pt>
 File: graph_8.png Graphic file (type png)
 <use graph_8.png>
-Package pdftex.def Info: graph_8.png  used on input line 191.
+Package pdftex.def Info: graph_8.png  used on input line 230.
 (pdftex.def)             Requested size: 150.50424pt x 88.34018pt.
  [9 <./graph_8.png>] (Homework 13.aux)
  ***********
@@ -555,13 +555,13 @@ L3 programming layer <2024-01-04>
 Here is how much of TeX's memory you used:
  27816 strings out of 474486
  748735 string characters out of 5743755
- 1933542 words of memory out of 5000000
+ 1935542 words of memory out of 5000000
  49708 multiletter control sequences out of 15000+600000
  564709 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,13n,107p,784b,643s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on "Homework 13.pdf" (9 pages, 186557 bytes).
+Output written on "Homework 13.pdf" (9 pages, 189974 bytes).
 PDF statistics:
  103 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
