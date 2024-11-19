@@ -113,10 +113,17 @@ This means that the lighter mass will be located (relatively) at $-\frac{10}{7}$
     % \label{fig:wrapfig}
 \end{wrapfigure}
 For each of the forces depicted in the figure find the torque about the pivot (black dot at
-center of rod). Take $F_1$ = 10.0 N, $F_2$ = 15.0 N, $F_3$ = 8.00 N, and $L$ = 9.00 m. The rods length
-is L.
+center of rod). Take $F_1$ = 10.0 N, $F_2$ = 15.0 N, $F_3$ = 8.00 N, and $L$ = 9.00 m. The 
+rods length is L.
 
 \subsection*{Solution}
+Torque is calculatable with a sum.
+\begin{align*}
+    \tau    &=   \Sigma r_i F_i \sin(\phi)
+        =   \frac{L}{2} F_1 \sin(60\unit{\degree}) + \frac{L}{4} F_2 \sin(-45\unit{\degree}) + \frac{L}{2} F_3\\
+        &=  \frac{9*10\sqrt{3}}{4} - \frac{9*15*\sqrt{2}}{8} + \frac{8*9}{2}
+        =   \boxed{51.106\ \unit{\newton\cdot\meter}}
+\end{align*}
 
 
 \pagebreak
