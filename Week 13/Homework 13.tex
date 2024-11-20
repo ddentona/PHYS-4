@@ -260,7 +260,32 @@ shown in the figure below. The force $\vec{F}_3$ acts at the midpoint. What is t
 Take $F_1$ = 6.90 N, $F_2$ = 4.00 N, $F_3$ = 2.00 N, $\theta = 20\unit{\degree}$, and $\alpha = 30\unit{\degree}$.
 
 \subsection*{Solution}
- 
+\subsubsection{$F_1$}
+\begin{align*}
+    \tau_1  &=  F*r*\sin(\phi)
+        =   F_1 * \frac{2L}{3} * \sin(\alpha)\\
+        &=  6.90 * \frac{1.5*2}{3} * \sin(30\unit{\degree})
+        =   6.90 * 1 * \frac{1}{2}
+        =   \boxed{3.45 \unit{\newton*\meter}}
+\end{align*}
+
+\subsubsection{$F_2$}
+\begin{align*}
+    \tau_2  &=  F*r*sin(\phi)
+        =   F_2 * L * \sin(-\theta)\\
+        &=  4.00 * 1.5 * \sin(-20\unit{\degree})
+        =   6 * (-0.342)
+        =   \boxed{-2.052 \unit{\newton*\meter}}
+\end{align*}
+
+\subsubsection{$F_3$}
+\begin{align*}
+    \tau_3  &=  F * r * \sin(\phi)
+        =   F_3 * \frac{L}{2} * \sin(\theta - 90\unit{\degree})\\
+        &=  2.00 * \frac{1.5}{2} * \sin(-70\unit{\degree})
+        =   1.5 * (-0.940)
+        =   \boxed{-1.410 \unit{\newton*\meter}}
+\end{align*}
 
 
 \end{document}
