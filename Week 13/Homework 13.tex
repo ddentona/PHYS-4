@@ -227,11 +227,25 @@ The axis of the hub and the ring are at the center of mass, but the axis of the 
     \includegraphics[width=0.35\textwidth]{graph_7.png} 
     % \label{fig:wrapfig}
 \end{wrapfigure}
-Two solid spheres of mass $m$ and radius $R$ are stuck to the ends of a thin rod of mass m and
+Two solid spheres of mass $m$ and radius $R$ are stuck to the ends of a thin rod of mass $m$ and
 length $3R$. Find the rotational inertia of the system about the axis at the midpoint of the rod and
 perpendicular to it, as shown in the figure below.
 
 \subsection*{Solution}
+We here use the formula for inertia and the parallel axis theorem. We then use the formula for the moment of inertia of a sphere and a rod to find our ultimate and final answer.
+\begin{align*}
+    I   &=  I_{rod} + 2I_{sphere}\\
+    I_{rod} &=  \frac{1}{12}ML^2
+        =   \frac{1}{12}m*(3R)^2
+        =   \frac{3}{4}mR^2
+        =   \frac{15}{20}mR^2\\
+    I_{sphere}  &=  I_{sphere;com} + Mh^2
+        =   \frac{2}{5}mR^2 + m*\left(\frac{5}{2}R\right)^2\\
+        &=  \frac{8}{20}mR^2 + \frac{25}{4}mR^2
+        =   \frac{133}{20}mR^2\\
+    I   &=  \frac{15}{20}mR^2 + \frac{266}{20}mR^2
+        =   \boxed{\frac{281}{20}mR^2}
+\end{align*}
 
 
 \pagebreak
