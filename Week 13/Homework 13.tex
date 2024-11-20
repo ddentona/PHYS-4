@@ -206,7 +206,18 @@ center perpendicular to the plane of the wheel. Treat the hub as a disk. \textit
 use the parallel axis theorem with the spokes.}
 
 \subsection*{Solution}
-We know the rotational inertia formula is \(I = \int r^2 dm\).
+We know the rotational inertia formula is \(I = \int r^2 dm\). We can assume all the components of the whole object to be of constant density. This means that the total inertia is equialent to the inertia of all the objects added together.
+\[ I = I_{hub} + 4 I_{spoke} + I_{ring} \]
+The axis of the hub and the ring are at the center of mass, but the axis of the spokes is not. For this, we can use the parallel-axis theorem, \(I = I_{com} + Mh^2\). For this, we also need to find the distance between the center of mass and the center of rotation. This would be half the length of the rod plus the radius of the hub, or \(h = \frac{L_{spoke}}{2} + r_{hub}\). This means that we can set up an equation for the total inertia and substitute in formulas for inertias.
+\begin{align*}
+    I   &=  I_{hub} + 4 I_{spoke} + I_{ring}
+        =   I_{hub} + 4 I_{rod} + 4M_{spoke}h^2 + I_{ring}\\
+        &=  \frac{1}{2}M_{hub}r_{hub}^2 + \frac{1}{3}M_{spoke}L_{spoke}^2 + 4M_{spoke}\left(\frac{L_{spoke}}{2} + r_{hub}\right)^2 + M_{ring}R_{ring}^2\\
+        &=  \frac{1}{2}*2*2^2 + \frac{1}{3}*1*4^2 + 4*1\left(\frac{4}{2} + 2\right)^2 + 2*6^2\\
+        &=  4 + \frac{16}{3} + 64 + 72
+        =   140+\frac{16}{3}
+        =   \boxed{\frac{436}{3} \unit{\kilo\gram*\meter^2} \approx 145.\bar{3} \unit{\kilo\gram*\meter^2}}
+\end{align*}
 
 
 \pagebreak
