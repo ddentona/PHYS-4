@@ -21,9 +21,9 @@
 \DeclareSIUnit{\mile}{mi}
 \DeclareSIUnit{\gal}{gal}
 \DeclareSIUnit{\foot}{ft}
-\DeclareSIUnit{\h}{h}
+\DeclareSIUnit{\hour}{h}
 \DeclareSIUnit{\rad}{rad}
-\DeclareSIUnit{\u}{u}
+\DeclareSIUnit{\unit}{u}
 
 \maketitle
 
@@ -170,6 +170,27 @@ A car is traveling at 75.0 km/h has tires of 70.0 cm diameter. (a) What is the a
         =   \frac{125}{6}\unit{\meter/\second}\\
     v   &=  r \omega\\
     \omega  &=  \frac{v}{r}
+        =   \frac{125}{6*0.7}\unit{\second^{-1}}
+        =   \frac{1250}{42}\unit{\second^{-1}}
+        =   \boxed{29.7619\unit{\second^{-1}}}
+\end{align}
+
+\subsubsection{Section (b)}
+\begin{align}
+    \omega^2    &=  \omega_0^2  +   2\alpha \Delta\theta\\
+    \alpha  &=  -\frac{\omega_0^2}{2\Delta\theta}
+        =   -\frac{\left(\frac{1250}{42}\unit{\second^{-1}}\right)^2}{2*60\pi}
+        =   -\frac{1250^2}{42^2*120\pi}
+        =   -6.647 \unit{\second^{-2}}
+\end{align}
+This makes the magnitude \boxed{6.647 \unit{\second^{-2}}}.
+
+\subsubsection{Section (c)}
+Since the car moves only 30 turns, we can just convert from turns to meters.
+\begin{align}
+    x   &=  r*\theta
+        =   0.7\unit{\meter}*2\pi*30
+        =   \boxed{131.9469\unit{\meter}}
 \end{align}
 
 
@@ -180,7 +201,7 @@ A car is traveling at 75.0 km/h has tires of 70.0 cm diameter. (a) What is the a
     \includegraphics[width=0.35\textwidth]{graph_5.png} 
     % \label{fig:wrapfig}
 \end{wrapfigure}
-The graph below shows the speed v versus time t for a 0.500 kg object of radius 6.50 cm that rolls smoothly down a 30\unit{\degree} ramp. The scale on the velocity axis is set by vs = 4.0 m/s. What is the rotational inertia of the object?
+The graph below shows the speed v versus time t for a 0.500 kg object of radius 6.50 cm that rolls smoothly down a 30\unit{\degree} ramp. The scale on the velocity axis is set by $v_s = 4.0$ m/s. What is the rotational inertia of the object?
 
 \subsection{Solution}
 
