@@ -63,7 +63,6 @@ We now can use the formula for torque from angular acceleration to find the solu
 
 
 \pagebreak
-
 \section{Problem 2}
 A block of mass m = 2.00 kg hangs vertically from a frictionless pulley of mass M = 4.00 kg and radius R = 15.0 cm. Find: (a) the acceleration of the block; (b) the tension in the rope; (c) the speed of the block after it has fallen 40.0 cm—assuming it started at rest. Treat the pulley as a solid disk.
 
@@ -81,21 +80,21 @@ We here have two equations for torque, one from inertia \(\tau = I\alpha\), and 
     F_\tau  &=  \frac{MR^2}{2R}\alpha
         =   \frac{1}{2}Ma\\
     F_{net} &=  Ma
-        =   F_\tau - T
 \end{align}
 
 We next can add equation (7) and equation (11) together to get a formula.
 \begin{align}
     Ma + ma &=  \frac{1}{2}Ma - mg\\
     2Ma + 2ma   &=  Ma - 2mg\\
-    (M + 2m)a   &=  2mg\\
-    a   &=  \frac{2mg}{M + 2m}
+    (M + 2m)a   &=  -2mg\\
+    a   &=  -\frac{2mg}{M + 2m}
 \end{align}
 
 \subsubsection{Section (b)}
 We can substitute the acceleration into a formula including tension, in this instance \(ma = T + mg\).
 \begin{align}
     T   &=  ma - mg
+    =   F_\tau - T
         =   \frac{2m^2g}{M + 2m} + mg
 \end{align}
 
@@ -107,7 +106,6 @@ We have the acceleration and the change in position. We can apply this to a kine
 \end{align}
 
 \pagebreak
-
 \section{Problem 3}
 \begin{wrapfigure}{r}{0.35\textwidth}
     \vspace{-30pt}
@@ -121,21 +119,61 @@ A block of mass m = 2.00 kg can slide down a frictionless 53\unit{\degree} incli
 First, there is the set of formulas for the torque, that we can combine. Since the pulley can be treated as a disc, we can use its formula for the moment of inertia \(I = \frac{1}{2}MR^2\).
 \begin{align}
     I\alpha &=  F R\\
-    F   &=  \frac{I\alpha}{R}
+    F_\tau  &=  \frac{I\alpha}{R}
         =   \frac{1}{2}MR\alpha
+\end{align}
+
+This can be applied to two equations, both derived from Newton's second law.
+\begin{align}
+    F_{net} &=  ma\\
+    Ma  &=  F_\tau - T
+        =   \frac{1}{2}MR\alpha - T\\
+    ma  &=  T - F_g
+        =   T - mg\sin(\theta)
+\end{align}
+
+Add equations (20) and (21) together. We can also recal that \(a = \alpha r\).
+\begin{align}
+    Ma + ma &=  \frac{1}{2}MR\alpha - mg\sin(\theta)\\
+    2MR\alpha + 2mR\alpha   &=  MR\alpha - 2mg\sin(\theta)\\
+    \alpha (MR + 2mR)   &=  -2mg\sin(\theta)\\
+    \alpha  &=  -\frac{2mg\sin(\theta)}{MR + 2mR}
+        =   -\frac{2*2*9.81*\sin(53\unit{\degree})}{4*0.5 + 2*2*0.5}\\
+        &=  -\frac{39.24*\sin(53\unit{\degree})}{4}
+        =   -9.81*0.7986 \unit{\second^{-2}}\\
+        &=  \boxed{-7.835 \unit{\second^{-2}}}
+\end{align}
+
+\subsubsection{Section (b)}
+We can use the equation $a = r\alpha$ and the kinematic equation $v^2 = v_0^2 + 2a\Delta x$.
+\begin{align}
+    a   &=  r\alpha 
+        =   0.500 * -7.835
+        =   3.9173 \unit{\meter/\second^2}\\
+    v^2 &=  v_0^2 + 2a\Delta x
+        =   0 + 2 * (-3.9173) * (-1)
+        =   7.8346 \unit{\meter^2/\second^2}\\
+    v   &=  \sqrt{7.8346}
+        =   \boxed{2.799 \unit{\meter/\second}}
 \end{align}
 
 
 \pagebreak
-
 \section{Problem 4}
 A car is traveling at 75.0 km/h has tires of 70.0 cm diameter. (a) What is the angular velocity of the tires about their axles? (b) If the car is brought to a stop uniformly in 30.0 complete turns of the tires (without skidding), what is the magnitude of the angular acceleration of the wheels? (c) How far does the car move during the braking?
 
 \subsection{Solution}
+\subsubsection{Section (a)}
+\begin{align}
+    75\unit{\kilo\meter/\hour}  &=  75 \unit{\kilo\meter/\hour} * \frac{10\unit{\meter/\second}}{36\unit{\kilo\meter/\hour}}
+        =   \frac{375}{18}\unit{\meter/\second}
+        =   \frac{125}{6}\unit{\meter/\second}\\
+    v   &=  r \omega\\
+    \omega  &=  \frac{v}{r}
+\end{align}
 
 
 \pagebreak
-
 \section{Problem 5}
 \begin{wrapfigure}{r}{0.35\textwidth}
     \vspace{-30pt}
@@ -148,7 +186,6 @@ The graph below shows the speed v versus time t for a 0.500 kg object of radius 
 
 
 \pagebreak
-
 \section{Problem 6}
 A hollow sphere of radius 0.15 m, with rotational inertia I = 0.040 kg · m2 about a line through its center of mass, rolls without slipping up a surface inclined at 30° to the horizontal. At a certain initial position, the sphere's total kinetic energy is 20 J. (a) How much of this initial kinetic energy is rotational? (b) What is the speed of the center of mass of the sphere at the initial position? When the sphere has moved 1.0 m up the incline from its initial position, what are (c) its total kinetic energy and (d) the speed of its center of mass?
 
@@ -156,7 +193,6 @@ A hollow sphere of radius 0.15 m, with rotational inertia I = 0.040 kg · m2 abo
 
 
 \pagebreak
-
 \section{Problem 7}
 A yo-yo has a rotational inertia of 900 g · cm2 and a mass of 100 g. Its axle radius is 3.2 mm, and its string is 120 cm long. The yo-yo rolls from rest down to the end of the string. (a) What is the magnitude of its linear acceleration? (b) How long does it take to reach the end of the string? As it reaches the end of the string, what are its (c) linear speed, (d) translational kinetic energy, (e) rotational kinetic energy, and (f) angular speed?
 
@@ -164,7 +200,6 @@ A yo-yo has a rotational inertia of 900 g · cm2 and a mass of 100 g. Its axle r
 
 
 \pagebreak
-
 \section{Problem 8}
 \begin{wrapfigure}{r}{0.35\textwidth}
     \vspace{-30pt}
