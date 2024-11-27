@@ -223,7 +223,7 @@ We also know that since the frictional force acts on an edge of the object, it h
 \begin{align}
     \alpha  &=  \frac{a_{com}}{R}\\
     f_s R   &=  I\alpha
-        =   I\frac{a_com}{R}\\
+        =   I\frac{a_{com}}{R}\\
     I   &=  \frac{f_s R^2}{a_{com}}
         =   \frac{MR^2(g\sin(\theta) - a_{com})}{a_{com}}
 \end{align}
@@ -266,6 +266,63 @@ We can substitute known values into here to find the value of the inertia.
 A hollow sphere of radius 0.15 m, with rotational inertia I = 0.040 \unit{\kilo\gram*\meter^2} about a line through its center of mass, rolls without slipping up a surface inclined at 30\unit{\degree} to the horizontal. At a certain initial position, the sphere's total kinetic energy is 20 J. (a) How much of this initial kinetic energy is rotational? (b) What is the speed of the center of mass of the sphere at the initial position? When the sphere has moved 1.0 m up the incline from its initial position, what are (c) its total kinetic energy and (d) the speed of its center of mass?
 
 \subsection{Solution}
+\subsubsection{Section (a)}
+We have our equation about rotational kinetic energy. We can adjust it to find our ratio that we need to find. 
+\begin{equation}
+    K   =   \frac{1}{2}mv^2 + \frac{1}{2}I\omega^2
+    \rightarrow \frac{I\omega^2}{2K}
+\end{equation}
+
+We next have to find the angular velocity $\omega$. We can translate this into the translational velocity by using \(v = r\omega\). 
+\begin{align}
+    K   &=  \frac{v^2}{2}\left(m + \frac{I}{r^2}\right)
+\end{align}
+
+From the book, the formula for the inertia of a hollow sphere of radius R is \(I = \frac{2}{3}mr^2\), so \(m = \frac{3I}{2r^2}\). We can then translate back for \(\omega =\frac{v}{r}\).
+\begin{equation}
+    K   =   \frac{5}{2}*\frac{1}{2}*\frac{v^2}{r^2}I
+        =   \frac{5}{2}*\frac{1}{2}I\omega^2
+\end{equation}
+
+From here, we know that the rotational kinetic energy is \(K_R = \frac{1}{2}I\omega^2\).
+\begin{align}
+    K   &=  \frac{5}{2}K_R\\
+    \frac{K_R}{K} &= \frac{2}{5} = 0.4
+\end{align}
+This means that \boxed{40\%} of the kinetic energy is rotational. 
+
+\subsubsection{Section (b)}
+We have above an equation for the kinetic energy from only the velocity, radius, and inertia in the form of the first half of (49). We use that here. 
+\begin{align}
+    K   &=  \frac{5}{2}*\frac{1}{2}*\frac{v^2}{r^2}I
+        =   \frac{5I}{4r^2}v^2\\
+    v^2 &=  \frac{4r^2}{5I}K\\
+    v   &=  \sqrt{\frac{4r^2}{5I}K}
+        =   \sqrt{\frac{4*0.15^2}{5*0.04}*20}
+        =   \frac{0.15}{0.2}\sqrt{16}
+        =   \frac{3}{4}*4
+        =   \boxed{3\unit{\meter/\second}}
+\end{align}
+
+\subsubsection{Section (c)}
+If the ball moves up 1 m, the kinetic energy will decrease by change in gravitational potential energy. The change in position is equal to the distance times the sine of the angle of the incline, so \(\Delta y = 1\unit{\meter} * \sin(30\unit{\degree}) = \frac{1}{2}\unit{\meter}\). We can find the ending kinetic energy here.
+\begin{align}
+    K_f &=  K_i - W
+        =   K_i - mg\Delta y\\
+        &=  20\unit{\joule} - \frac{9.81}{2}m
+        =   20\unit{\joule} - \frac{9.81}{2}*\frac{3I}{2r^2}\\
+        &=  20\unit{\joule} - \frac{9.81}{2}*\frac{3*0.04}{2*0.0225}\\
+        &=  (20 - 13.08)\unit{\joule}
+        =   \boxed{6.92\unit{\joule}}
+\end{align}
+
+\subsubsection{Section (4)}
+Here, we use the same strategy as in part (b). 
+\begin{equation}
+    v   =   \sqrt{\frac{4r^2}{5I}K}
+        =   \frac{3}{4}\sqrt{6.92}
+        =   \boxed{1.973\unit{\meter/\second}}
+\end{equation}
 
 
 \pagebreak
