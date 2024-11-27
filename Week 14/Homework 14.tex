@@ -204,28 +204,35 @@ Since the car moves only 30 turns, we can just convert from turns to meters.
 The graph below shows the speed v versus time t for a 0.500 kg object of radius 6.50 cm that rolls smoothly down a 30\unit{\degree} ramp. The scale on the velocity axis is set by $v_s = 4.0$ m/s. What is the rotational inertia of the object?
 
 \subsection{Solution}
-We can see that at 1s, the velocity is $\frac{7}{2}$m/s from rest at t = 0s, so the acceleration is easily to calculate.
-\begin{equation}
-    a = \frac{\Delta v}{\Delta t} = \frac{\frac{7}{2}\unit{\meter/\second}}{1\unit{\second}} = \frac{7}{2}\unit{\meter/\second^2}
-\end{equation}
+% We can see that at 1s, the velocity is around $\frac{7}{2}$m/s from rest at t = 0s, so the acceleration is easily to calculate.
+% \begin{equation}
+%     a = \frac{\Delta v}{\Delta t} = \frac{\frac{7}{2}\unit{\meter/\second}}{1\unit{\second}} = \frac{7}{2}\unit{\meter/\second^2}
+% \end{equation}
 
-This is the acceleration of the center of mass. From these, we can find the angular velocity and acceleration.
-\begin{align}
-    \omega  &=  \frac{v_{com}}{R}
-        =   \frac{7}{2}*\frac{1000}{65}
-        =   \frac{700}{13}\unit{\second^{-1}}\\
-    \alpha  &=  \frac{a_{com}}{R}
-        =   \frac{7}{2}*\frac{1000}{65}
-        =   \frac{700}{13}\unit{\second^{-2}}
-\end{align}
+% This is the acceleration of the center of mass. From these, we can find the angular velocity and acceleration.
+% \begin{align}
+%     \omega  &=  \frac{v_{com}}{R}
+%         =   \frac{7}{2}*\frac{1000}{65}
+%         =   \frac{700}{13}\unit{\second^{-1}}\\
+%     \alpha  &=  \frac{a_{com}}{R}
+%         =   \frac{7}{2}*\frac{1000}{65}
+%         =   \frac{700}{13}\unit{\second^{-2}}
+% \end{align}
 
-We know that the net torque equations, whih we can set equal to each other and apply equation (40), then solve for the inertia.
-\begin{align}
-    I\alpha &=  F*R*\sin(\phi)\\
-    I   &=  \frac{F*R*\sin(\phi)}{\alpha}
-\end{align}
+% We know that the net torque equations, whih we can set equal to each other and apply equation (40), then solve for the inertia.
+% \begin{align}
+%     I\alpha &=  F*R*\sin(\phi)\\
+%     I   &=  \frac{F*R*\sin(\phi)}{\alpha}
+%         =   \frac{F*R^2*\sin(\phi)}{a_{com}}
+% \end{align}
 
-We then should 
+% We then should know that the force in question is the frictional force, which acts on the bottom of the object. It is equal to the force resultant from the acceleration downhill, which we know from the above. We also keep Newton's second law in mind to substitute in for the force and keep in mind that since the force is applied perpendicular to the radius and tangential to the object, \(\sin(\phi) = 1\).
+% \begin{align}
+%     F   &=  Ma\\
+%     I   &=  \frac{M*a_{com}*R^2}{a_{com}}
+%         =   M*R^2
+% \end{align}
+The gravitiational force is directed downwards, which can be divided into the components into the the ramp and down the ramp. The downhill force contributes to the 
 
 
 \pagebreak
