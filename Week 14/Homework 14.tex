@@ -197,17 +197,44 @@ Since the car moves only 30 turns, we can just convert from turns to meters.
 \pagebreak
 \section{Problem 5}
 \begin{wrapfigure}{r}{0.35\textwidth}
-    \vspace{-30pt}
+    \vspace{-50pt}
     \includegraphics[width=0.35\textwidth]{graph_5.png} 
     % \label{fig:wrapfig}
 \end{wrapfigure}
 The graph below shows the speed v versus time t for a 0.500 kg object of radius 6.50 cm that rolls smoothly down a 30\unit{\degree} ramp. The scale on the velocity axis is set by $v_s = 4.0$ m/s. What is the rotational inertia of the object?
 
 \subsection{Solution}
-% We can see that at 1s, the velocity is around $\frac{7}{2}$m/s from rest at t = 0s, so the acceleration is easily to calculate.
-% \begin{equation}
-%     a = \frac{\Delta v}{\Delta t} = \frac{\frac{7}{2}\unit{\meter/\second}}{1\unit{\second}} = \frac{7}{2}\unit{\meter/\second^2}
-% \end{equation}
+We can see that at 1s, the velocity is around $\frac{7}{2}$m/s from rest at t = 0s, so the acceleration is easily to calculate.
+\begin{equation}
+    a_{com} =   \frac{\Delta v}{\Delta t} 
+        = \frac{\frac{7}{2}\unit{\meter/\second}}{1\unit{\second}} 
+        = \frac{7}{2}\unit{\meter/\second^2}
+\end{equation}
+
+The gravitiational force is directed downwards, which can be divided into the components into the the ramp and down the ramp. The downhill force contributes to the net force. Meanwhile, the force into the ramp contributes to the frictional force $f_s$, which we can isolate.
+\begin{align}
+    F_{net} &=  Ma_{com}\\
+    Ma_{com}    &=  F_{g;x} - f_s
+        =   Mg\sin(\theta) - f_s\\
+    f_s &=  M(g\sin(\theta) - a_{com})
+\end{align}
+
+We also know that since the frictional force acts on an edge of the object, it has a torque, which we can use our favorite combination of equations to express. We can then isolate the inertia and replace the rotational acceleration with the translational acceleration.
+\begin{align}
+    \alpha  &=  \frac{a_{com}}{R}\\
+    f_s R   &=  I\alpha
+        =   I\frac{a_com}{R}\\
+    I   &=  \frac{f_s R^2}{a_{com}}
+        =   \frac{MR^2(g\sin(\theta) - a_{com})}{a_{com}}
+\end{align}
+
+We can substitute known values into here to find the value of the inertia.
+\begin{align}
+    I   &=  \frac{MR^2(g\sin(\theta) - a_{com})}{a_{com}}
+        =   0.50*0.065^2*(9.81*\sin(30\unit{\degree}) - \frac{7}{2})*\frac{2}{7}\\
+        &=  \boxed{8.48 \times 10^{-4}\unit{\kilo\gram*\meter^2}}
+\end{align}
+
 
 % This is the acceleration of the center of mass. From these, we can find the angular velocity and acceleration.
 % \begin{align}
@@ -232,7 +259,6 @@ The graph below shows the speed v versus time t for a 0.500 kg object of radius 
 %     I   &=  \frac{M*a_{com}*R^2}{a_{com}}
 %         =   M*R^2
 % \end{align}
-The gravitiational force is directed downwards, which can be divided into the components into the the ramp and down the ramp. The downhill force contributes to the 
 
 
 \pagebreak
