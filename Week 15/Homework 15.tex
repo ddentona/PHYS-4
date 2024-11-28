@@ -1,0 +1,117 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{array}
+% \usepackage{gensymb}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{pgfplots}
+\usepackage{siunitx}
+\usepackage{wrapfig}
+
+\title{Homework \#15}
+\author{Donald Aingworth IV}
+\date{December 4, 2024}
+
+\pgfplotsset{width=8cm,compat=1.9}
+\usepgfplotslibrary{external}
+% \tikzexternalize
+
+\begin{document}
+
+\DeclareSIUnit{\mile}{mi}
+\DeclareSIUnit{\gal}{gal}
+\DeclareSIUnit{\foot}{ft}
+\DeclareSIUnit{\hour}{h}
+\DeclareSIUnit{\rad}{rad}
+\DeclareSIUnit{\unit}{u}
+\DeclareSIUnit{\dyne}{dyn}
+
+\maketitle
+
+\pagebreak
+\section{Problem 1}
+In unit-vector notation, what is the torque about the origin on a particle located at coordinates (0, -4.0 m, 3.0 m) if that torque is due to (a) force $\vec{F}_1$ with components $F_{1x}$ = 2.0 N, $F_{1y}$ = $F_{1z}$ = 0, and (b) force $\vec{F}_2$ with components $F_{2x}$ = 0, $F_{2y}$ = 2.0 N, $F_{2z}$ = 4.0 N?
+
+\subsection{Solution}
+In this instance, we can use the cross product for both parts. 
+\subsubsection{Part (a)}
+\begin{align}
+    \tau    &=  \vec{r}\times\vec{F}
+        =   \left(\begin{matrix} 0 \\ -4.0 \\ 3.0 \end{matrix}\right) \times \left(\begin{matrix} 2.0 \\ 0 \\ 0 \end{matrix}\right)
+        =   \det\left|\begin{matrix}
+            \hat{i}&\hat{j}&\hat{k}\\
+            0   &   -4.0    &   3.0\\
+            2.0 &   0       &   0
+        \end{matrix}\right|\\
+        &=  \begin{vmatrix} -4.0 & 3.0 \\ 0 & 0 \end{vmatrix}\hat{i} - 
+            \begin{vmatrix} 0.0 & 3.0 \\ 2.0 & 0 \end{vmatrix}\hat{j} +
+            \begin{vmatrix} 0.0 & -4.0 \\ 2.0 & 0 \end{vmatrix}\hat{k}\\
+        &=  0\hat{i} + 6.0\hat{j} + 8.0\hat{k}
+        =   \boxed{\begin{pmatrix}0\\6.0\\8.0\end{pmatrix}\unit{\newton*\meter}}
+\end{align}
+
+\subsubsection{Part (b)}
+\begin{align}
+    \tau    &=  \vec{r}\times\vec{F}
+        =   \left(\begin{matrix} 0 \\ -4.0 \\ 3.0 \end{matrix}\right) \times \left(\begin{matrix} 0 \\ 2.0 \\ 4.0 \end{matrix}\right)
+        =   \det\left|\begin{matrix}
+            \hat{i}&\hat{j}&\hat{k}\\
+            0   &   -4.0    &   3.0\\
+            0   &   2.0     &   4.0
+        \end{matrix}\right|\\
+        &=  \begin{vmatrix} -4.0 & 3.0 \\ 2.0 & 4.0 \end{vmatrix}\hat{i} - 
+            \begin{vmatrix} 0.0 & 3.0 \\ 0 & 4.0 \end{vmatrix}\hat{j} +
+            \begin{vmatrix} 0.0 & -4.0 \\ 0 & 2.0 \end{vmatrix}\hat{k}\\
+        &=  -22.0\hat{i} + 0\hat{j} + 0\hat{k}
+        =   \boxed{\begin{pmatrix}-22.0\\0\\0\end{pmatrix}\unit{\newton*\meter}}
+\end{align}
+
+\pagebreak
+\section{Problem 2}
+At one instant, force $\vec{F} = 4.0 \hat{j}$ N acts on a 0.25 kg object that has position vector $r = (2.0\hat{i} - 2.0\hat{k})$ m and velocity vector $v = (-5.0\vec{i} + 5.0\vec{k})$ m/s. About the origin and in unit-vector notation, what are (a) the object's angular momentum and (b) the torque acting on the object?
+
+\subsection{Solution}
+\subsubsection{Section (a)}
+The angular momentum is equivalent to \(\vec{\ell} = \vec{r}\times\vec{p}\).
+\begin{align}
+    \vec{\ell}  &=  \vec{r} \times \vec{p}
+        =   \vec{r} \times m\vec{v}
+        =   \begin{pmatrix}2\\0\\-2\end{pmatrix} \times 0.25\begin{pmatrix}-5\\0\\5\end{pmatrix}
+        =   \begin{pmatrix}2\\0\\-2\end{pmatrix} \times \begin{pmatrix}-\frac{5}{4}\\0\\\frac{5}{4}\end{pmatrix}\\
+    \vec{\ell}  &=  \det\begin{vmatrix}
+                            \hat{i} &\hat{j}&\hat{k}\\
+                            2       &0      &-2     \\
+                            -\frac{5}{4}&0  &\frac{5}{4}
+                        \end{vmatrix}
+        =   \begin{vmatrix}0&-2\\0&\frac{5}{4}\end{vmatrix}\hat{i} -
+            \begin{vmatrix}2&-2\\-\frac{5}{4}&\frac{5}{4}\end{vmatrix}\hat{j} + 
+            \begin{vmatrix}2&0\\-\frac{5}{4}&0\end{vmatrix}\hat{k}\\
+    \vec{\ell}  &=  0\hat{i} + 0\hat{j} + 0\hat{k} 
+        = \boxed{\begin{pmatrix}0\\0\\0\end{pmatrix}\unit{\meter/\second}}
+\end{align}
+This means that the object is not moving around the origin at all, and is instead moving towards the origin. 
+
+\subsubsection{Section (b)}
+We can use the torque-force-moment-arm equation.
+\begin{align}
+    \tau    &=  \vec{F} \times \vec{r}
+        =   \begin{pmatrix} 0 \\ 4.0 \\ 0 \end{pmatrix} \times \begin{pmatrix} 2.0 \\ 0 \\ -2.0 \end{pmatrix}
+        =   \det\begin{vmatrix}
+            \hat{i} &\hat{j}&\hat{k}\\
+            0       &4.0    &0      \\
+            2.0     &0      &-2.0
+        \end{vmatrix}\\
+    \tau    &=  \begin{vmatrix}4.0&0\\0&-2.0\end{vmatrix}\hat{i} - 
+                \begin{vmatrix}0&0\\2.0&-2.0\end{vmatrix}\hat{j} + 
+                \begin{vmatrix}0&4.0\\2.0&0\end{vmatrix}\hat{k}\\
+    \tau    &=  -8.0\hat{i} - 0\hat{j} - 8.0\hat{k}
+        =   \boxed{\begin{pmatrix}-8.0\\0\\-8.0\end{pmatrix}\unit{\newton*\meter}}
+\end{align}
+
+\pagebreak
+\section{Problem 3}
+At the instant the displacement of a 2.00 kg object relative to the origin is \(d = (2.00 m)\hat{i} + (4.00 m)\hat{j} - (3.00 m)\hat{k}\), its velocity is \(v = -(6.00 m/s)\hat{i} + (3.00 m/s)\hat{j} + (3.00 m/s)\hat{k}\) and it is subject to a force \(F = (6.00 N)\hat{i} - (8.00 N)\hat{j} + (4.00 N)\hat{k}\) . Find (a) the acceleration of the object, (b) the angular momentum of the object about the origin, (c) the torque about the origin acting on the object, and (d) the angle between the velocity of the object and the force acting on the object (See HW 3, problem 4).
+
+\subsection{Solution}
+
+\end{document}
