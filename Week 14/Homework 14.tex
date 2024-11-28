@@ -24,6 +24,7 @@
 \DeclareSIUnit{\hour}{h}
 \DeclareSIUnit{\rad}{rad}
 \DeclareSIUnit{\unit}{u}
+\DeclareSIUnit{\dyne}{dyn}
 
 \maketitle
 
@@ -327,9 +328,76 @@ Here, we use the same strategy as in part (b).
 
 \pagebreak
 \section{Problem 7}
-A yo-yo has a rotational inertia of 900 g · cm2 and a mass of 100 g. Its axle radius is 3.2 mm, and its string is 120 cm long. The yo-yo rolls from rest down to the end of the string. (a) What is the magnitude of its linear acceleration? (b) How long does it take to reach the end of the string? As it reaches the end of the string, what are its (c) linear speed, (d) translational kinetic energy, (e) rotational kinetic energy, and (f) angular speed?
+A yo-yo has a rotational inertia of 900 \unit{\gram*\centi\meter^2} and a mass of 100 g. Its axle radius is 3.2 mm, and its string is 120 cm long. The yo-yo rolls from rest down to the end of the string. (a) What is the magnitude of its linear acceleration? (b) How long does it take to reach the end of the string? As it reaches the end of the string, what are its (c) linear speed, (d) translational kinetic energy, (e) rotational kinetic energy, and (f) angular speed?
 
 \subsection{Solution}
+\subsubsection{Section (a)}
+We can first list the forces acting on the yo-yo. There is a force of gravity acting on the center of mass, and a tension force acting on the edge of the cylinder. We can generate a torque formula from this and find an acceleration thereof. The cylinder would be rolling clockwise, so in this instance, \(\alpha = -\frac{a}{r}\). 
+\begin{align}
+    F_{net} = ma
+        &=  T - mg\\
+    I\alpha &=  Fr
+        =   Tr\\
+    T   &=  I\frac{\alpha}{r}
+        =   -I\frac{a}{r^2}\\
+    ma  &=  -I\frac{a}{r^2} - mg\\
+    a\left(m + \frac{I}{r^2}\right) &=  -mg\\
+    a   &=  -\frac{mg}{m + \frac{I}{r^2}}
+        =   -\frac{g}{1 + \frac{I}{m*r^2}}
+        =   -\frac{981\unit{\centi\meter/\second^2}}{1 + \frac{900\unit{\gram*\centi\meter^2}}{100\unit{\gram}*(0.32\unit{\centi\meter})^2}}\\
+        &=  -\frac{981\unit{\centi\meter/\second^2}}{1 + \frac{9\unit{\gram*\centi\meter^2}}{0.1024\unit{\gram*\centi\meter^2}}}
+        =   -\frac{62784}{5689}\unit{\centi\meter/\second^2} \approx -11.04\unit{\centi\meter/\second^2}
+\end{align}
+So, the magnitude is \boxed{11.04\unit{\centi\meter/\second^2}}.
+
+\subsubsection{Section (b)}
+The time it would take would be calculatable if we used the kinematic equation that does not require time to find the final linear velocity, and used that to find the time.
+\begin{align}
+    v_f^2   &=  v_i^2 + 2a\Delta y
+        =   0^2 + 2*-\frac{62784}{5689}\unit{\centi\meter/\second^2}*(-120\unit{\centi\meter})\\
+        &=  \frac{15868160}{5689}\unit{\centi\meter^2/\second^2}
+        =   2648.6\unit{\centi\meter^2/\second^2}\\
+    v_f &=  51.465\unit{\centi\meter/\second}\\
+    v_f &=  v_0 + at\\
+    t   &=  \frac{v_f}{a}
+        =   \frac{51.465\unit{\centi\meter/\second}}{11.04\unit{\centi\meter/\second^2}}
+        =   \boxed{4.6634\unit{\second}}
+\end{align}
+
+\subsubsection{Section (c)}
+The answer comes from part (b). The answer is \boxed{v_f =  51.465\unit{\centi\meter/\second}}.
+
+\subsubsection{Section (d)}
+The translational kinetic energy is going to be \(K_{trans} = \frac{1}{2}mv^2\).
+\begin{align}
+    K_{trans}   &=  \frac{1}{2}mv^2
+        =   \frac{1}{2}100\unit{\gram}*\frac{15868160}{5689}\unit{\centi\meter^2/\second^2}\\
+        &=  \boxed{\frac{753408000}{5689}\unit{\dyne*\centi\meter} \approx 1.1324\times10^5\unit{\dyne*\centi\meter}}
+\end{align}
+
+\subsubsection{Section (e)}
+Since the initial velocity (linear and rotational) is zero, the initial total kinetic energy is zero. This means that we can calculate the final kinetic energy by the work done by gravity.
+\begin{align}
+    W_g &=  mg\Delta y
+        =   100\unit{\gram}*981\unit{\centi\meter/\second^2}*120\unit{\centi\meter}\\
+        &=  1.1772\times10^7\unit{\dyne*\centi\meter}
+\end{align}
+
+We can subtract the linear kinetic energy, which we calculated, to get the remaining (rotational) kinetic energy.
+\begin{align}
+    K_{rot} &=  W_g - K_{trans}
+        =   1.1772\times10^7\unit{\dyne*\centi\meter} - 1.1324\times10^5\unit{\dyne*\centi\meter}\\
+        &=  \boxed{1.164\times10^7\unit{\dyne*\centi\meter}}
+\end{align} 
+
+\subsubsection{Section (f)}
+We can use the formula for rotational kinetic energy \(K = \frac{1}{2}I\omega^2\).
+\begin{align}
+    K   &=  \frac{1}{2}I\omega^2\\
+    \omega^2    &=  \frac{2K}{I} \rightarrow \omega = \sqrt{\frac{2K}{I}}\\
+    \omega  &=  \sqrt{\frac{2*1.164\times10^7\unit{\dyne*\centi\meter}}{900\unit{\gram*\centi\meter^2}}}
+        =   \boxed{160.8\unit{\second^{-1}}}
+\end{align}
 
 
 \pagebreak
@@ -342,6 +410,24 @@ A yo-yo has a rotational inertia of 900 g · cm2 and a mass of 100 g. Its axle r
 A uniform rod is held vertically by two strings of negligible mass, as shown below. (a) Immediately after the string is cut, what is the linear acceleration of the free end of the stick? (b) Of the middle of the stick?
 
 \subsection{Solution}
+\subsubsection{Section (a)}
+The linear acceleration of the free end of the stick can be calculated using the moment of inertia and the gravitational force and the radius.
+\begin{align}
+    Fr  &=  I\alpha\\
+    \alpha  &=  \frac{Fr}{I}
+\end{align}
 
+The moment of inertia can be found by using the parallel axis theorem on the inertia of the rod, where h is half the length of the rod.
+\begin{align}
+    I_{com} &=  \frac{1}{12}ML^2\\
+    I   &=  I_{com} + Mh^2
+        =   I_{com} + \frac{1}{4}ML^2
+        =   I_{com} + 3I_{com}
+        =   4I_{com}\\
+    \alpha  &=  \frac{Fr}{I_{com} + Mh^2}
+        =   \frac{mg*L}{I_{com} + \frac{1}{4}ML^2}
+        =   \frac{mg*L}{4*I_{com}}\\
+    a   &=  \frac{mg*L^2}{4*I_{com}}
+\end{align}
 
 \end{document}
