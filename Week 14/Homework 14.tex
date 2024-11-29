@@ -88,22 +88,26 @@ We next can add equation (7) and equation (11) together to get a formula.
     Ma + ma &=  \frac{1}{2}Ma - mg\\
     2Ma + 2ma   &=  Ma - 2mg\\
     (M + 2m)a   &=  -2mg\\
-    a   &=  -\frac{2mg}{M + 2m}
+    a   &=  -\frac{2mg}{M + 2m} 
+        =   \boxed{4.905\unit{\meter/\second^2}}
 \end{align}
 
 \subsubsection{Section (b)}
 We can substitute the acceleration into a formula including tension, in this instance \(ma = T + mg\).
 \begin{align}
     T   &=  ma - mg
-    =   F_\tau - T
+        =   F_\tau - T
         =   \frac{2m^2g}{M + 2m} + mg
+        =   \boxed{24.525\unit{\kilo\gram*\meter/\second^2}}
 \end{align}
 
 \subsubsection{Section (c)}
 We have the acceleration and the change in position. We can apply this to a kinematic formula to get a final velocity.
 \begin{align}
     v^2 &=  v_0^2 + 2a\Delta y
-        =   \frac{4mg}{M + 2m}\Delta y
+        =   \frac{4mg}{M + 2m}\Delta y\\
+    v   &=  \sqrt{\frac{4mg}{M + 2m}\Delta y}
+        =   \boxed{1.981\unit{\meter/\second^2}}
 \end{align}
 
 \pagebreak
@@ -171,27 +175,27 @@ A car is traveling at 75.0 km/h has tires of 70.0 cm diameter. (a) What is the a
         =   \frac{125}{6}\unit{\meter/\second}\\
     v   &=  r \omega\\
     \omega  &=  \frac{v}{r}
-        =   \frac{125}{6*0.7}\unit{\second^{-1}}
-        =   \frac{1250}{42}\unit{\second^{-1}}
-        =   \boxed{29.7619\unit{\second^{-1}}}
+        =   \frac{125}{6*0.35}\unit{\second^{-1}}
+        =   \frac{1250}{21}\unit{\second^{-1}}
+        =   \boxed{59.524\unit{\second^{-1}}}
 \end{align}
 
 \subsubsection{Section (b)}
 \begin{align}
     \omega^2    &=  \omega_0^2  +   2\alpha \Delta\theta\\
     \alpha  &=  -\frac{\omega_0^2}{2\Delta\theta}
-        =   -\frac{\left(\frac{1250}{42}\unit{\second^{-1}}\right)^2}{2*60\pi}
+        =   -\frac{\left(\frac{1250}{21}\unit{\second^{-1}}\right)^2}{2*60\pi}
         =   -\frac{1250^2}{42^2*120\pi}
-        =   -6.647 \unit{\second^{-2}}
+        =   -9.398 \unit{\second^{-2}}
 \end{align}
-This makes the magnitude \boxed{6.647 \unit{\second^{-2}}}.
+This makes the magnitude \boxed{9.398 \unit{\second^{-2}}}.
 
 \subsubsection{Section (c)}
 Since the car moves only 30 turns, we can just convert from turns to meters.
 \begin{align}
     x   &=  r*\theta
-        =   0.7\unit{\meter}*2\pi*30
-        =   \boxed{131.9469\unit{\meter}}
+        =   0.35\unit{\meter}*2\pi*30
+        =   \boxed{65.9734\unit{\meter}}
 \end{align}
 
 
@@ -318,12 +322,20 @@ If the ball moves up 1 m, the kinetic energy will decrease by change in gravitat
 \end{align}
 
 \subsubsection{Section (4)}
-Here, we use the same strategy as in part (b). 
-\begin{equation}
-    v   =   \sqrt{\frac{4r^2}{5I}K}
-        =   \frac{3}{4}\sqrt{6.92}
-        =   \boxed{1.973\unit{\meter/\second}}
-\end{equation}
+Here, we use the same strategy as in part (b). We also knwo that the formula for the inerita fro a hollow sphere is \(I = \frac{2}{3}mr^2\) 
+\begin{align}
+    K   &=  \frac{1}{2}mv^2 + \frac{1}{2}I\omega^2
+        =   \frac{1}{2}m\omega^2 r^2 + \frac{1}{2}I\omega^2
+        =   \frac{1}{2}*\frac{3}{2}*\frac{2}{3}mr^2*\omega^2 + \frac{1}{2}I\omega^2\\
+        &=  \frac{3}{4}I\omega^2 + \frac{1}{2}I\omega^2
+        =   \frac{5}{4}I\omega^2
+        =   \frac{5}{4}I\frac{v^2}{r^2}\\
+    v^2 &=  \frac{4r^2}{5I^2}K\\
+    v   &=  \sqrt{\frac{4r^2}{5I}K}
+        =   \sqrt{\frac{4*0.15^2}{5*0.04}K}
+        =   \frac{3}{4}\sqrt{\frac{4}{5}*6.92}
+        =   \boxed{1.77\unit{\meter/\second}}
+\end{align}
 
 
 \pagebreak
@@ -343,9 +355,8 @@ We can first list the forces acting on the yo-yo. There is a force of gravity ac
     ma  &=  -I\frac{a}{r^2} - mg\\
     a\left(m + \frac{I}{r^2}\right) &=  -mg\\
     a   &=  -\frac{mg}{m + \frac{I}{r^2}}
-        =   -\frac{g}{1 + \frac{I}{m*r^2}}
-        =   -\frac{981\unit{\centi\meter/\second^2}}{1 + \frac{900\unit{\gram*\centi\meter^2}}{100\unit{\gram}*(0.32\unit{\centi\meter})^2}}\\
-        &=  -\frac{981\unit{\centi\meter/\second^2}}{1 + \frac{9\unit{\gram*\centi\meter^2}}{0.1024\unit{\gram*\centi\meter^2}}}
+        =   -\frac{981\unit{\centi\meter/\second^2}*100\unit{\gram}}{100\unit{\gram} + \frac{900\unit{\gram*\centi\meter^2}}{(0.32\unit{\centi\meter})^2}}\\
+        &=  -\frac{98100\unit{\centi\meter/\second^2}}{100 + \frac{900\unit{\gram*\centi\meter^2}}{0.1024\unit{\gram*\centi\meter^2}}}
         =   -\frac{62784}{5689}\unit{\centi\meter/\second^2} \approx -11.04\unit{\centi\meter/\second^2}
 \end{align}
 So, the magnitude is \boxed{11.04\unit{\centi\meter/\second^2}}.
@@ -411,10 +422,13 @@ A uniform rod is held vertically by two strings of negligible mass, as shown bel
 
 \subsection{Solution}
 \subsubsection{Section (a)}
-The linear acceleration of the free end of the stick can be calculated using the moment of inertia and the gravitational force and the radius.
+The linear acceleration of the free end of the stick can be calculated using the moment of inertia and the gravitational force and the radius. The radial arm is going to be the distance to the center of mass, or $r = \frac{L}{2}$.
 \begin{align}
     Fr  &=  I\alpha\\
     \alpha  &=  \frac{Fr}{I}
+        =   \frac{mgr}{I}
+        =   \frac{mgL}{2I}\\
+    a   &=  \frac{mgL^2}{2I}
 \end{align}
 
 The moment of inertia can be found by using the parallel axis theorem on the inertia of the rod, where h is half the length of the rod.
@@ -423,11 +437,14 @@ The moment of inertia can be found by using the parallel axis theorem on the ine
     I   &=  I_{com} + Mh^2
         =   I_{com} + \frac{1}{4}ML^2
         =   I_{com} + 3I_{com}
-        =   4I_{com}\\
-    \alpha  &=  \frac{Fr}{I_{com} + Mh^2}
-        =   \frac{mg*L}{I_{com} + \frac{1}{4}ML^2}
-        =   \frac{mg*L}{4*I_{com}}\\
-    a   &=  \frac{mg*L^2}{4*I_{com}}
+        =   4I_{com}
+        =   \frac{1}{3}ML^2\\
+    a   &=  \frac{MgL^2}{2I}
+        =   \frac{gML^2}{\frac{2}{3}ML^2}
+        =   \boxed{\frac{3g}{2}}
 \end{align}
+
+\subsubsection{Section (b)}
+The center of mass is half the distance between the start and end of the rod. As such, with Thales's theorem, the acceleration would be half that of the end of the rod. As such, \boxed{a_{center} = \frac{3g}{4}}
 
 \end{document}
