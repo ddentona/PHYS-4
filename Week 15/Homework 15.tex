@@ -87,7 +87,7 @@ The angular momentum is equivalent to \(\vec{\ell} = \vec{r}\times\vec{p}\).
             \begin{vmatrix}2&-2\\-\frac{5}{4}&\frac{5}{4}\end{vmatrix}\hat{j} + 
             \begin{vmatrix}2&0\\-\frac{5}{4}&0\end{vmatrix}\hat{k}\\
     \vec{\ell}  &=  0\hat{i} + 0\hat{j} + 0\hat{k} 
-        = \boxed{\begin{pmatrix}0\\0\\0\end{pmatrix}\unit{\meter/\second}}
+        = \boxed{\begin{pmatrix}0\\0\\0\end{pmatrix}\unit{\kilo\gram*\meter/\second}}
 \end{align}
 This means that the object is not moving around the origin at all, and is instead moving towards the origin. 
 
@@ -110,8 +110,104 @@ We can use the torque-force-moment-arm equation.
 
 \pagebreak
 \section{Problem 3}
-At the instant the displacement of a 2.00 kg object relative to the origin is \(d = (2.00 m)\hat{i} + (4.00 m)\hat{j} - (3.00 m)\hat{k}\), its velocity is \(v = -(6.00 m/s)\hat{i} + (3.00 m/s)\hat{j} + (3.00 m/s)\hat{k}\) and it is subject to a force \(F = (6.00 N)\hat{i} - (8.00 N)\hat{j} + (4.00 N)\hat{k}\) . Find (a) the acceleration of the object, (b) the angular momentum of the object about the origin, (c) the torque about the origin acting on the object, and (d) the angle between the velocity of the object and the force acting on the object (See HW 3, problem 4).
+At the instant the displacement of a 2.00 kg object relative to the origin is \(d = (2.00 \unit{\meter})\hat{i} + (4.00 \unit{\meter})\hat{j} - (3.00 \unit{\meter})\hat{k}\), its velocity is \(v = -(6.00 \unit{\meter/\second})\hat{i} + (3.00 \unit{\meter/\second})\hat{j} + (3.00 \unit{\meter/\second})\hat{k}\) and it is subject to a force \(F = (6.00 \unit{\newton})\hat{i} - (8.00 \unit{\newton})\hat{j} + (4.00 \unit{\newton})\hat{k}\) . Find (a) the acceleration of the object, (b) the angular momentum of the object about the origin, (c) the torque about the origin acting on the object, and (d) the angle between the velocity of the object and the force acting on the object (See HW 3, problem 4).
 
 \subsection{Solution}
+\subsubsection{Section (a)}
+We can use Newton's second law to find this.
+\begin{align}
+    \vec{a}_{com}   &=  \frac{\vec{F}_{com}}{m}
+        =   \frac{(6.00 \unit{\newton})\hat{i} - (8.00 \unit{\newton})\hat{j} + (4.00 \unit{\newton})\hat{k}}{2.00\unit{\kilo\gram}}
+        =   \boxed{\begin{pmatrix}3.00\\-4.00\\2.00\end{pmatrix}\unit{\meter/\second^2}}
+\end{align}
+
+\subsubsection{Section (b)}
+The angular momentum is equivalent to \(\vec{\ell} = \vec{r}\times\vec{p}\).
+\begin{align}
+    \vec{\ell}  &=  \vec{r} \times \vec{p}
+        =   \vec{r} \times m\vec{v}\\
+    \vec{\ell}  &=  \begin{pmatrix}2.00\\4.00\\-3.00\end{pmatrix} \times 2.00\begin{pmatrix}-6.00\\3.00\\3.00\end{pmatrix}
+        =   \begin{pmatrix}2.00\\4.00\\-3.00\end{pmatrix} \times \begin{pmatrix}-12.00\\6.00\\6.00\end{pmatrix}\\
+    \vec{\ell}  &=  \det\begin{vmatrix}
+                            \hat{i} &\hat{j}&\hat{k}\\
+                            2.00    &4.00   &-3.00  \\
+                            -12.00  &6.00   &6.00
+                        \end{vmatrix}\\
+    \vec{\ell}  &=  \begin{vmatrix}4.00&-3.00\\6.00&6.00\end{vmatrix}\hat{i} -
+                    \begin{vmatrix}2.00&-3.00\\-12.00&6.00\end{vmatrix}\hat{j} + 
+                    \begin{vmatrix}2.00&4.00\\-12.00&6.00\end{vmatrix}\hat{k}\\
+    \vec{\ell}  &=  42.00\hat{i} + 24.00\hat{j} + 60.00\hat{k} 
+        = \boxed{\begin{pmatrix}42\\24\\60\end{pmatrix}\unit{\kilo\gram*\meter/\second}}
+\end{align}
+
+\subsubsection{Section (c)}
+We can use the torque-force-moment-arm equation.
+\begin{align}
+    \tau    &=  \vec{r} \times \vec{F}
+        =   \begin{pmatrix}2.00\\4.00\\-3.00\end{pmatrix} \times \begin{pmatrix}6.00\\-8.00\\4.00\end{pmatrix}
+        =   \det\begin{vmatrix}
+            \hat{i} &\hat{j}&\hat{k}\\
+            2.00    &4.00   &-3.00  \\
+            6.00    &-8.00  &4.00
+        \end{vmatrix}\\
+    \tau    &=  \begin{vmatrix}4.00&-3.00\\-8.00&4.00\end{vmatrix}\hat{i} -
+                \begin{vmatrix}2.00&-3.00\\6.00&4.00\end{vmatrix} \hat{j} +
+                \begin{vmatrix}2.00&4.00\\6.00&-8.00\end{vmatrix} \hat{k}\\
+    \tau    &=  -8.00\hat{i} + -26.00\hat{j} + -40.00\hat{k}
+        =   \boxed{\begin{pmatrix}-8.00\\-26.00\\-40.00\end{pmatrix}\unit{\newton*\meter}}
+\end{align}
+
+\subsubsection{Section (d)}
+We have two vector equations that we can use for finding an angle, one for the cross product \(\left|\vec{a}\times\vec{b}\right| = ab\sin(\phi)\), and one for the dot product \(\vec{a}\cdot\vec{b} = ab\cos(\phi)\). Since cosine is a continuous and inversible function between 0 and $\pi$, we will be using the dot product.
+\begin{align}
+    \vec{a}\cdot\vec{b} &=  ab\cos(\phi)\\
+    \cos(\phi)  &=  \frac{\vec{a}\cdot\vec{b}}{ab}
+        =   \frac{\vec{F}\cdot\vec{v}}{Fv}\\
+    F   &=  \left|\vec{F}\right|
+        =   \sqrt{6.0^2 + (-8.0)^2 + 4.0^2}\\
+        &=  \sqrt{36 + 64 + 16}
+        =   \sqrt{116}
+        =   2\sqrt{29}\unit{\newton}\\
+    v   &=  \left|\vec{v}\right|
+        =   \sqrt{(-6.0)^2 + 3.0^2 + 3.0^2}\\
+        &=  \sqrt{36 + 9 + 9}
+        =   \sqrt{54}
+        =   3\sqrt{5}\unit{\meter/\second}\\
+    \vec{F}\cdot\vec{v} &=  6.0*(-6.0) + (-8.0)*3.0 + 4.0*3.0\\
+        &=  - 36 - 24 + 12
+        =   -48\unit{\newton*\meter/\second}\\
+    \cos(\phi)  &=  \frac{\vec{F}\cdot\vec{v}}{Fv}
+        =   -\frac{48\unit{\newton*\meter/\second}}{15\sqrt{29*5}\unit{\newton*\meter/\second}}\\
+    \phi    &=  \arccos\left(-\frac{48}{15\sqrt{29*5}}\right)
+        \approx \boxed{105.4\unit{\degree}}
+\end{align}
+
+\pagebreak
+\section{Problem 4}
+The angular momentum of a flywheel having a rotational inertia of 0.140 \unit{\kilo\gram*\meter^2} about its central axis decreases from 3.00 to 0.800 \unit{\kilo\gram*\meter^2/\second} in 1.50 \unit{\second}. (a) What is the magnitude of the average torque acting on the flywheel about its central axis during this period? (b) Assuming a constant angular acceleration, through what angle does the flywheel turn? (c) How much work is done on the wheel? (d) What is the average power of the flywheel?
+
+\subsection{Solution}
+\subsubsection{Section (a)}
+
+
+% \pagebreak
+% \section{Problem 5}
+% Force $\vec{F} = (-8.00\unit{\newton})\hat{i} + (6.00\unit{\newton})\hat{j}$ acts on a particle with position vector $\vec{r} = (3.00\unit{\meter})\hat{i} + (4.00\unit{\meter})\hat{j}$. What are (a) the torque on the particle about the origin, in unit-vector notation, and (b) the angle between the directions of $\vec{r}$ and $\vec{F}$?
+
+% \subsection{Solution}
+
+
+% \pagebreak
+% \section{Problem 6}
+% At time t, the vector $\vec{r} = 4.0t^2\hat{i} - \left(2.0t + 6.0t^2\right)\hat{j}$ gives the position of a 3.0 kg particle relative to the origin of an xy coordinate system ( $\vec{r}$ is in meters and t is in seconds). (a) Find an expression for the torque acting on the particle relative to the origin. (b) Is the magnitude of the particle's angular momentum relative to the origin increasing, decreasing, or unchanging?
+
+% \subsection{Solution}
+
+
+% \pagebreak
+% \section{Problem 7}
+% A rigid body rotates with constant angular velocity about a fixed axis. Show that its kinetic energy K and angular momentum L are related according to $K = \frac{L^2}{2l}$, where I is the rotational inertia.
+
+% \subsection{Solution}
 
 \end{document}
