@@ -220,25 +220,111 @@ Assuming the listed angular momentum is the total angular momentum of the flywhe
 Note: this is the radial measurement, not the angular measurement.
 
 \subsubsection{Section (c)}
+The work done here is equal to the change in kinetic energy. We have the angular velocity and moment of inertia. 
+\begin{align}
+    W   &=  \Delta K
+        =   K_f - K_i
+        =   \frac{1}{2}I\omega_f^2 - \frac{1}{2}I\omega_i^2
+        =   \frac{I}{2}(\omega_f^2 - \omega_i^2)
+        =   \frac{1}{2I}(L_f - L_i)(L_f + L_i)\\
+        &=  \frac{1}{0.28}(0.80 - 3.0)(0.80 + 3.0)
+        =   \frac{(-2.2)*3.8}{0.28}
+        =   \boxed{-29.857\unit{\joule}}
+\end{align}
 
-% \pagebreak
-% \section{Problem 5}
-% Force $\vec{F} = (-8.00\unit{\newton})\hat{i} + (6.00\unit{\newton})\hat{j}$ acts on a particle with position vector $\vec{r} = (3.00\unit{\meter})\hat{i} + (4.00\unit{\meter})\hat{j}$. What are (a) the torque on the particle about the origin, in unit-vector notation, and (b) the angle between the directions of $\vec{r}$ and $\vec{F}$?
+\subsubsection{Section (d)}
+The average power is equivalent to the change in energy divided by the change in time. 
+\begin{align}
+    \omega_f    &=  \omega_i + \alpha t
+        \rightarrow t   =   \frac{\Delta \omega}{\alpha} = \frac{\Delta L}{I\alpha} = \frac{\Delta L}{\tau_{net}}\\
+    P   &=  \frac{\Delta K}{\Delta t}
+        =   \frac{W\tau_{net}}{\Delta L}
+        =   \frac{\frac{(-2.2)*3.8}{0.28}*\frac{-2.2}{1.5}}{0.80 - 3.0}\\
+        &=  \boxed{-19.905\unit{\joule*\second}}
+\end{align}
 
-% \subsection{Solution}
+\pagebreak
+\section{Problem 5}
+Force $\vec{F} = (-8.00\unit{\newton})\hat{i} + (6.00\unit{\newton})\hat{j}$ acts on a particle with position vector $\vec{r} = (3.00\unit{\meter})\hat{i} + (4.00\unit{\meter})\hat{j}$. What are (a) the torque on the particle about the origin, in unit-vector notation, and (b) the angle between the directions of $\vec{r}$ and $\vec{F}$?
+
+\subsection{Solution}
+\subsubsection{Section (a)}
+\begin{align}
+    \vec{\tau}  &=  \vec{r}\times\vec{F}
+        =   \begin{pmatrix}3.00\\4.00\\0\end{pmatrix} \times \begin{pmatrix}-8.00\\6.00\\0\end{pmatrix}
+        =   \begin{vmatrix}
+                \hat{i}&\hat{j}&\hat{k}\\
+                3.0&4.0&0\\
+                -8.0&6.0&0
+            \end{vmatrix}\\
+        &=  \begin{vmatrix}3.0&4.0\\-8.0&6.0\end{vmatrix}\hat{k}
+        =   (3*6 - (-8)*4)\hat{k}
+        =   (18 + 32)\hat{k}\\
+        &=  \boxed{50\hat{k}\ \unit{\newton*\meter}}
+\end{align}
+
+\subsubsection{Section (b)}
+To save time and space, \(||\vec{F}|| = 10\unit{\newton}\), \(||\vec{r}|| = 5\unit{\newton}\), and \(||\vec{\tau}|| = 50\unit{\newton}\). See 3-4-5 triangles for my reasoning why.
+\begin{align}
+    \left|\vec{a}\times\vec{b}\right| &= ab\sin(\phi)\\
+    \sin(\phi)  &=  \frac{\left|\vec{a}\times\vec{b}\right|}{ab}
+        =   \frac{50}{5*10}
+        =   \frac{50}{50}
+        =   1\\
+    \phi    &= \arcsin(1)
+        =   \boxed{\frac{\pi}{2} = 90\unit{\degree}} 
+\end{align}
+
+\pagebreak
+\section{Problem 6}
+At time t, the vector $\vec{r} = 4.0t^2\hat{i} - \left(2.0t + 6.0t^2\right)\hat{j}$ gives the position of a 3.0 kg particle relative to the origin of an xy coordinate system ($\vec{r}$ is in meters and t is in seconds). (a) Find an expression for the torque acting on the particle relative to the origin. (b) Is the magnitude of the particle's angular momentum relative to the origin increasing, decreasing, or unchanging?
+
+\subsection{Solution}
+\subsubsection{Section (a)}
+First, we take the second derivative of the radius to find the acceleration. Then, we multiply that by the mass to find the force. 
+\begin{align}
+    \vec{r} &=  4.0t^2\hat{i} - \left(2.0t + 6.0t^2\right)\hat{j}\\
+    \vec{r}'    &=  \vec{v}
+        =   8.0t\hat{i} - \left(2 + 12t\right)\hat{j} \unit{\meter/\second}\\
+    \vec{r}''   &=  \vec{a}
+        =   8.0\hat{i} - 12\hat{j} \unit{\meter/\second^2}\\
+    \vec{F} &=  m*\vec{a}
+        =   3.0*(8.0\hat{i} - 12\hat{j})
+        =   24.0\hat{i} - 36.0\hat{j} \unit{\newton}
+\end{align}
+
+Next, we take the cross product of the radus and the force to get the torque.
+\begin{align}
+    \vec{\tau}  &=  \vec{r}\times\vec{F}
+        =   \left(4.0t^2\hat{i} - \left(2.0t + 6.0t^2\right)\hat{j}\right) \times \left(24.0\hat{i} - 36.0\hat{j}\right)\\
+        &=  \begin{vmatrix}
+                \hat{i}&\hat{j}&\hat{k}\\
+                4.0t^2&-2.0t - 6.0t^2&0\\
+                24.0&-36.0&0
+            \end{vmatrix}
+        =   \begin{vmatrix}4.0t^2&-2.0t - 6.0t^2\\24.0&-36.0\end{vmatrix}\hat{k}\\
+        &=  (4.0t^2*(-36.0) - 24.0*(-2.0t - 6.0t^2))\hat{k}\\
+        &=  (-144t^2 + 48t + 144t^2)\hat{k}
+        =   \boxed{(48t)\hat{k}\unit{\newton*\meter}}
+\end{align}
+
+\subsubsection{Section (b)}
+Since the torque is equivalent to the rate of change of the angular momentum, it determines the answer to this. We can see that it is negative for $t<0$ but positive for $t>0$. As such, as long as $t > 0$, the magnitude of the angular momentum increases.
 
 
-% \pagebreak
-% \section{Problem 6}
-% At time t, the vector $\vec{r} = 4.0t^2\hat{i} - \left(2.0t + 6.0t^2\right)\hat{j}$ gives the position of a 3.0 kg particle relative to the origin of an xy coordinate system ( $\vec{r}$ is in meters and t is in seconds). (a) Find an expression for the torque acting on the particle relative to the origin. (b) Is the magnitude of the particle's angular momentum relative to the origin increasing, decreasing, or unchanging?
+\pagebreak
+\section{Problem 7}
+A rigid body rotates with constant angular velocity about a fixed axis. Show that its kinetic energy K and angular momentum L are related according to $K = \frac{L^2}{2I}$, where I is the rotational inertia.
 
-% \subsection{Solution}
-
-
-% \pagebreak
-% \section{Problem 7}
-% A rigid body rotates with constant angular velocity about a fixed axis. Show that its kinetic energy K and angular momentum L are related according to $K = \frac{L^2}{2l}$, where I is the rotational inertia.
-
-% \subsection{Solution}
+\subsection{Solution}
+I bet I can do it in less than seven steps.
+\begin{gather}
+    L   =   I\omega\\
+    \omega  =   \frac{L}{I}\\
+    K   =   \frac{1}{2}I\omega^2\\
+    K   =   \frac{I}{2}*\frac{L^2}{I^2}\\
+    K   =   \frac{IL^2}{2I^2}\\
+    \boxed{K   =   \frac{L^2}{2I}}
+\end{gather}
 
 \end{document}
