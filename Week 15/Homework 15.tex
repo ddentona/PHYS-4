@@ -188,7 +188,38 @@ The angular momentum of a flywheel having a rotational inertia of 0.140 \unit{\k
 
 \subsection{Solution}
 \subsubsection{Section (a)}
+We can find the average torque with the inertia and the average acceleration.
+\begin{align}
+    \tau_{net}  &=  \frac{d\ell}{dt}
+        =   \frac{0.800 - 3.00 \unit{\kilo\gram*\meter^2/\second}}{1.50 \unit{\second}}
+        =   -\frac{2.20}{1.50}\unit{\newton*\meter}
+        =   \boxed{-1.467\unit{\newton*\meter}}
+\end{align}
 
+\subsubsection{Section (b)}
+Assuming the listed angular momentum is the total angular momentum of the flywheel, we have the formula for the angular velocity and a formula for the angular acceleration from the torque. We can then apply those to a kinematic equation.
+\begin{align}
+    &L = I\omega    &\tau_{net} = I\alpha\\
+    &\omega^2 = \omega_0^2 + 2\alpha\Delta \theta
+\end{align}
+\begin{gather}
+    \omega_f    =   \frac{L_f}{I}\ \&\&\ 
+    \omega_i    =   \frac{L_f}{I}\ \&\&\ 
+    \alpha  =   \frac{\tau_{net}}{I}
+\end{gather}
+\begin{align}
+    \Delta\theta    &=  \frac{\omega_f^2 - \omega_i^2}{2\alpha}
+        =   \frac{\frac{L_f}{I}^2 - \frac{L_i}{I}^2}{2\frac{\tau_{net}}{I}}
+        =   \frac{L_f^2 - L_i^2}{2\tau_{net}I}
+        =   \frac{0.800^2 - 3.00^2}{2*(-\frac{22}{15})*0.140}\\
+        &=  \frac{900 - 64}{\frac{22}{15}*28}
+        =   \frac{836*15}{22*28}
+        =   \frac{6270}{308}
+        \approx \boxed{20.357}
+\end{align}
+Note: this is the radial measurement, not the angular measurement.
+
+\subsubsection{Section (c)}
 
 % \pagebreak
 % \section{Problem 5}
