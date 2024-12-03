@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1732772026.24631 "c:/Users/ddent/OneDrive/Documents/CCSF/PHYS-4A/Week 14/Homework 14.tex" "Homework 14.pdf" "Homework 14" 1732772028.61458 0
+["pdflatex"] 1732843269.33081 "c:/Users/ddent/OneDrive/Documents/CCSF/PHYS-4A/Week 14/Homework 14.tex" "Homework 14.pdf" "Homework 14" 1732843271.3659 0
   "C:/Users/ddent/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1726015575 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/ddent/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1724473854 24225046 9a86b7f1ef10f5afb0aa895fddb2583f ""
   "C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233951848 1004 54797486969f23fa377b128694d548df ""
@@ -170,9 +170,9 @@
   "C:/Users/ddent/AppData/Local/Programs/MiKTeX/tex/latex/translations/translations.sty" 1644048522 44247 2188b95d0ee74e31eca4d316263c58a7 ""
   "C:/Users/ddent/AppData/Local/Programs/MiKTeX/tex/latex/wrapfig/wrapfig.sty" 1044403200 26220 3701aebf80ccdef248c0c20dd062fea9 ""
   "C:/Users/ddent/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1700127522 55487 80a65caedd3722f4c20a14a69e785d8f ""
-  "Homework 14.aux" 1732772028 4030 925d3fa9099560daa6e79b3b023caab2 "pdflatex"
-  "Homework 14.tex" 1732772025 20690 a1f4c23e03006fcd65be4d17104dbd63 ""
-  "c:/Users/ddent/OneDrive/Documents/CCSF/PHYS-4A/Week 14/Homework 14.tex" 1732772025 20690 a1f4c23e03006fcd65be4d17104dbd63 ""
+  "Homework 14.aux" 1732843271 4030 925d3fa9099560daa6e79b3b023caab2 "pdflatex"
+  "Homework 14.tex" 1732843260 20690 a1f4c23e03006fcd65be4d17104dbd63 ""
+  "c:/Users/ddent/OneDrive/Documents/CCSF/PHYS-4A/Week 14/Homework 14.tex" 1732843260 20690 a1f4c23e03006fcd65be4d17104dbd63 ""
   "graph_3.png" 1732244148 22585 8d60d81568f18a7893839f17ad0437cc ""
   "graph_5.png" 1732244148 57228 0147f8e92167148f74dbee52edbcf251 ""
   "graph_8.png" 1732244148 20076 c931c087157cc8fccce905b0c4d61bcc ""
