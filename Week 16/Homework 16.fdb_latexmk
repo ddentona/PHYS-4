@@ -1,7 +1,9 @@
 # Fdb version 4
-["pdflatex"] 1733455492.84308 "c:/Users/ddent/OneDrive/Documents/CCSF/PHYS-4A/Week 16/Homework 16.tex" "Homework 16.pdf" "Homework 16" 1733455497.35613 0
+["pdflatex"] 1733456043.67639 "c:/Users/ddent/OneDrive/Documents/CCSF/PHYS-4A/Week 16/Homework 16.tex" "Homework 16.pdf" "Homework 16" 1733456046.704 0
   "C:/Users/ddent/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1726015575 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
+  "C:/Users/ddent/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk" 1724529747 14064 a73e2491cc17373621ceadb450a5a7ef ""
   "C:/Users/ddent/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1724473854 24225046 9a86b7f1ef10f5afb0aa895fddb2583f ""
+  "C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/tcrm1200.tfm" 993062508 1444 95ffe0f19b974d50849790c8225c7ef7 ""
   "C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233951848 1004 54797486969f23fa377b128694d548df ""
   "C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1233951848 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
   "C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmbx12.tfm" 1136765053 1324 c910af8c371558dc20f2d7822f66fe64 ""
@@ -167,9 +169,9 @@
   "C:/Users/ddent/AppData/Local/Programs/MiKTeX/tex/latex/translations/translations.sty" 1644048522 44247 2188b95d0ee74e31eca4d316263c58a7 ""
   "C:/Users/ddent/AppData/Local/Programs/MiKTeX/tex/latex/wrapfig/wrapfig.sty" 1044403200 26220 3701aebf80ccdef248c0c20dd062fea9 ""
   "C:/Users/ddent/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1700127522 55487 80a65caedd3722f4c20a14a69e785d8f ""
-  "Homework 16.aux" 1733455496 557 35b5d4fd10903ba2885b07297bfb8704 "pdflatex"
-  "Homework 16.tex" 1733455490 2231 4007cd1dce2236ffc1e6a29b942c66eb ""
-  "c:/Users/ddent/OneDrive/Documents/CCSF/PHYS-4A/Week 16/Homework 16.tex" 1733455490 2231 4007cd1dce2236ffc1e6a29b942c66eb ""
+  "Homework 16.aux" 1733456046 755 9634077121c170d3992d793baa5bd8e2 "pdflatex"
+  "Homework 16.tex" 1733456042 2628 a2f789fd25a6c81d4102df790b0e476d ""
+  "c:/Users/ddent/OneDrive/Documents/CCSF/PHYS-4A/Week 16/Homework 16.tex" 1733456042 2628 a2f789fd25a6c81d4102df790b0e476d ""
   (generated)
   "Homework 16.aux"
   "Homework 16.log"
