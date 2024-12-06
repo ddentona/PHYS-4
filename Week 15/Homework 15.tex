@@ -94,18 +94,21 @@ This means that the object is not moving around the origin at all, and is instea
 \subsubsection{Section (b)}
 We can use the torque-force-moment-arm equation.
 \begin{align}
-    \tau    &=  \vec{F} \times \vec{r}
-        =   \begin{pmatrix} 0 \\ 4.0 \\ 0 \end{pmatrix} \times \begin{pmatrix} 2.0 \\ 0 \\ -2.0 \end{pmatrix}
-        =   \det\begin{vmatrix}
+    \tau    &=  -\vec{F} \times \vec{r}
+        =   -\begin{pmatrix} 0 \\ 4.0 \\ 0 \end{pmatrix} \times \begin{pmatrix} 2.0 \\ 0 \\ -2.0 \end{pmatrix}
+        =   -\det\begin{vmatrix}
             \hat{i} &\hat{j}&\hat{k}\\
             0       &4.0    &0      \\
             2.0     &0      &-2.0
         \end{vmatrix}\\
-    \tau    &=  \begin{vmatrix}4.0&0\\0&-2.0\end{vmatrix}\hat{i} - 
+    \tau    &=  -\left(
+                \begin{vmatrix}4.0&0\\0&-2.0\end{vmatrix}\hat{i} - 
                 \begin{vmatrix}0&0\\2.0&-2.0\end{vmatrix}\hat{j} + 
-                \begin{vmatrix}0&4.0\\2.0&0\end{vmatrix}\hat{k}\\
-    \tau    &=  -8.0\hat{i} - 0\hat{j} - 8.0\hat{k}
-        =   \boxed{\begin{pmatrix}-8.0\\0\\-8.0\end{pmatrix}\unit{\newton*\meter}}
+                \begin{vmatrix}0&4.0\\2.0&0\end{vmatrix}\hat{k}
+                \right)\\
+    \tau    &=  -(-8.0\hat{i} - 0\hat{j} - 8.0\hat{k})
+        =   -\begin{pmatrix}-8.0\\0\\-8.0\end{pmatrix}
+        =   \boxed{\begin{pmatrix}8.0\\0\\8.0\end{pmatrix}\unit{\newton*\meter}}
 \end{align}
 
 \pagebreak
