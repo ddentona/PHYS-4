@@ -1,0 +1,60 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{array}
+% \usepackage{gensymb}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{pgfplots}
+\usepackage{siunitx}
+\usepackage{wrapfig}
+
+\title{Homework \#16}
+\author{Donald Aingworth IV}
+\date{December 11, 2024}
+
+\pgfplotsset{width=8cm,compat=1.9}
+\usepgfplotslibrary{external}
+% \tikzexternalize
+
+\begin{document}
+
+\DeclareSIUnit{\mile}{mi}
+\DeclareSIUnit{\gal}{gal}
+\DeclareSIUnit{\foot}{ft}
+\DeclareSIUnit{\hour}{h}
+\DeclareSIUnit{\rad}{rad}
+\DeclareSIUnit{\unit}{u}
+\DeclareSIUnit{\dyne}{dyn}
+
+\maketitle
+
+\pagebreak
+\section{Problem 1}
+Two disks are mounted (like a merry-go-round) on low-friction bearings on the same axle and can be brought together so that they couple and rotate as one unit. The first disk, with rotational inertia 3.30 \unit{\kilo\gram*\meter^2} about its central axis, is set spinning counterclockwise at 450 rev/min. The second disk, with rotational inertia 6.60 \unit{\kilo\gram*\meter^2} about its central axis, is set spinning counterclockwise at 900 rev/min. They then couple together. (a) What is their angular speed after coupling? If instead the second disk is set spinning clockwise at 900 rev/min, what are their (b) angular speed and (c) direction of rotation after they couple together?
+
+\subsection{Solution}
+\subsubsection{Section (a)}
+We have a concept called conservation of angular momentum. 
+\begin{align}
+    L_i &=  L_f\\
+    L_f &=  l_1 + l_2
+        =   I_1\omega_1 + I_2\omega_2\\
+    \omega_f    &=  \frac{I_1\omega_1 + I_2\omega_2}{I_1 + I_2}
+        =   \frac{3.3*450 + 6.6*900}{3.3 + 6.6}\\
+        &=  \frac{1485 + 5940}{9.9}
+        =   \boxed{750\text{rev/min}}
+\end{align}
+
+\subsubsection{Section (b)}
+We just need to change a positive to a negative. 
+\begin{align}
+    \omega_f    &=  \frac{I_1\omega_1 + I_2\omega_2}{I_1 + I_2}
+        =   \frac{3.3*450 - 6.6*900}{3.3 + 6.6}\\
+        &=  \frac{1485 - 5940}{9.9}
+        =   \boxed{-450\text{rev/min}}
+\end{align}
+
+\subsubsection{Section (c)}
+Since the magnitude is negative and negative angular velocity corresponds to clockwise motion, the angular motion is \boxed{clockwise}.
+
+\end{document}
