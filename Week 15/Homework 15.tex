@@ -87,7 +87,7 @@ The angular momentum is equivalent to \(\vec{\ell} = \vec{r}\times\vec{p}\).
             \begin{vmatrix}2&-2\\-\frac{5}{4}&\frac{5}{4}\end{vmatrix}\hat{j} + 
             \begin{vmatrix}2&0\\-\frac{5}{4}&0\end{vmatrix}\hat{k}\\
     \vec{\ell}  &=  0\hat{i} + 0\hat{j} + 0\hat{k} 
-        = \boxed{\begin{pmatrix}0\\0\\0\end{pmatrix}\unit{\kilo\gram*\meter/\second}}
+        = \boxed{\begin{pmatrix}0\\0\\0\end{pmatrix}\unit{\kilo\gram*\meter^2/\second}}
 \end{align}
 This means that the object is not moving around the origin at all, and is instead moving towards the origin. 
 
@@ -101,11 +101,17 @@ We can use the torque-force-moment-arm equation.
             0       &4.0    &0      \\
             2.0     &0      &-2.0
         \end{vmatrix}\\
+<<<<<<< HEAD
     \tau    &=  -\left(
                 \begin{vmatrix}4.0&0\\0&-2.0\end{vmatrix}\hat{i} - 
                 \begin{vmatrix}0&0\\2.0&-2.0\end{vmatrix}\hat{j} + 
                 \begin{vmatrix}0&4.0\\2.0&0\end{vmatrix}\hat{k}
                 \right)\\
+=======
+    \tau    &=  -\left(\begin{vmatrix}4.0&0\\0&-2.0\end{vmatrix}\hat{i} - 
+                \begin{vmatrix}0&0\\2.0&-2.0\end{vmatrix}\hat{j} + 
+                \begin{vmatrix}0&4.0\\2.0&0\end{vmatrix}\hat{k}\right)\\
+>>>>>>> 1c4fc0b (Homework 15 Last)
     \tau    &=  -(-8.0\hat{i} - 0\hat{j} - 8.0\hat{k})
         =   -\begin{pmatrix}-8.0\\0\\-8.0\end{pmatrix}
         =   \boxed{\begin{pmatrix}8.0\\0\\8.0\end{pmatrix}\unit{\newton*\meter}}
@@ -140,7 +146,7 @@ The angular momentum is equivalent to \(\vec{\ell} = \vec{r}\times\vec{p}\).
                     \begin{vmatrix}2.00&-3.00\\-12.00&6.00\end{vmatrix}\hat{j} + 
                     \begin{vmatrix}2.00&4.00\\-12.00&6.00\end{vmatrix}\hat{k}\\
     \vec{\ell}  &=  42.00\hat{i} + 24.00\hat{j} + 60.00\hat{k} 
-        = \boxed{\begin{pmatrix}42\\24\\60\end{pmatrix}\unit{\kilo\gram*\meter/\second}}
+        = \boxed{\begin{pmatrix}42\\24\\60\end{pmatrix}\unit{\kilo\gram*\meter^2/\second}}
 \end{align}
 
 \subsubsection{Section (c)}
@@ -175,14 +181,14 @@ We have two vector equations that we can use for finding an angle, one for the c
         =   \sqrt{(-6.0)^2 + 3.0^2 + 3.0^2}\\
         &=  \sqrt{36 + 9 + 9}
         =   \sqrt{54}
-        =   3\sqrt{5}\unit{\meter/\second}\\
+        =   3\sqrt{6}\unit{\meter/\second}\\
     \vec{F}\cdot\vec{v} &=  6.0*(-6.0) + (-8.0)*3.0 + 4.0*3.0\\
         &=  - 36 - 24 + 12
         =   -48\unit{\newton*\meter/\second}\\
     \cos(\phi)  &=  \frac{\vec{F}\cdot\vec{v}}{Fv}
-        =   -\frac{48\unit{\newton*\meter/\second}}{15\sqrt{29*5}\unit{\newton*\meter/\second}}\\
-    \phi    &=  \arccos\left(-\frac{48}{15\sqrt{29*5}}\right)
-        \approx \boxed{105.4\unit{\degree}}
+        =   -\frac{48\unit{\newton*\meter/\second}}{6\sqrt{29*6}\unit{\newton*\meter/\second}}\\
+    \phi    &=  \arccos\left(-\frac{48}{6\sqrt{29*6}}\right)
+        \approx \boxed{127.3\unit{\degree}}
 \end{align}
 
 \pagebreak
@@ -243,7 +249,7 @@ The average power is equivalent to the change in energy divided by the change in
     P   &=  \frac{\Delta K}{\Delta t}
         =   \frac{W\tau_{net}}{\Delta L}
         =   \frac{\frac{(-2.2)*3.8}{0.28}*\frac{-2.2}{1.5}}{0.80 - 3.0}\\
-        &=  \boxed{-19.905\unit{\joule*\second}}
+        &=  \boxed{-19.905\unit{\joule/\second}}
 \end{align}
 
 \pagebreak
