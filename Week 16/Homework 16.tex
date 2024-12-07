@@ -57,8 +57,51 @@ We just need to change a positive to a negative.
 \subsubsection{Section (c)}
 Since the magnitude is negative and negative angular velocity corresponds to clockwise motion, the angular motion is \boxed{clockwise}.
 
+\pagebreak
 \section{Problem 2}
 The Sun's mass is 2.0 \texttimes $10^{30}$ kg, its radius is 7.0 \texttimes $10^5$ km, and it has a rotational period of approximately 28 days. If the Sun should collapse into a white dwarf of radius 3.5 \texttimes $10^3$ km, what would its period be if no mass were ejected and a sphere of uniform density can model the Sun both before and after?
+
+\subsection{Solution}
+% We first find the moment of inertia of the sun, which is a solid sphere rotating about its diameter, so the formula is \( I = \frac{2}{5}MR^2 \). 
+% \begin{align}
+%     I   &=  \frac{2}{5}MR^2
+%         =   \frac{2}{5} * (2.0 \times 10^{30}) * (7.0 \times 10^{5})^2
+%         =   \frac{2}{5} * (2.0 \times 10^{30}) * (49.0 \times 10^{10})\\
+%         &=  \frac{1}{5} * (98.0 \times 10^{40})
+%         =   19.6 \times 10^{40} \unit{\kilo\gram*\meter^2}
+% \end{align}
+
+We can calculate the angular frequency of the sun by using the period formula \(T = \frac{2\pi}{\omega}\).
+\begin{align}
+    T   &=  \frac{2\pi}{\omega}\\
+    \omega  &=  \frac{2\pi}{T}
+\end{align}
+
+Next, we can use the conservation of angular momentum and the formula for the inertia of the dwarf sun to find a formula for the final angular velocity and then final period.
+\begin{align}
+    L_f &=  L_i\\
+    I_f\omega_f &=  I_i\omega_i\\
+    I_f\frac{2\pi}{T_f} &=  I_i\frac{2\pi}{T_i}\\
+    \frac{I_f}{I_i}\cdot\frac{2\pi}{2\pi}   &=  \frac{T_f}{T_i}\\
+    \frac{I_f}{I_i}*T_i &=  T_f\\
+    \frac{\frac{2}{5}MR_f^2}{\frac{2}{5}MR_i^2}*T_i =
+    \frac{R_f^2}{R_i^2}*T_i =
+    \frac{(3.5 \times 10^{3})^2}{(7.0 \times 10^{5})^2}*28\text{days}   &=  T_f\\
+    \frac{12.25 \times 10^{6}}{49.0 \times 10^{10}}*28\text{days}   =
+    \frac{28\text{days}}{4 \times 10^4} =
+    7 \times 10^{-4} \text{days}    &=  T_f
+\end{align}
+
+This means that the period is \boxed{7 \times 10^{-4} \text{ days}}.
+\pagebreak
+\section{Problem 3}
+The displacement from equilibrium of a particle is given by \(x(t) = A \cos\left(\omega t - \frac{\pi}{3}\right)\). Which, if any, of the following are equivalent expressions:
+\begin{align}
+    a)\ x(t)    &=  A\cos\left(\omega t + \frac{\pi}{3}\right)\\
+    b)\ x(t)    &=  A\cos\left(\omega t + \frac{5\pi}{3}\right)\\
+    c)\ x(t)    &=  A\cos\left(\omega t + \frac{\pi}{6}\right)\\
+    d)\ x(t)    &=  A\cos\left(\omega t - \frac{5\pi}{6}\right)
+\end{align}
 
 \subsection{Solution}
 
