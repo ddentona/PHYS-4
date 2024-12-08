@@ -105,4 +105,47 @@ The displacement from equilibrium of a particle is given by \(x(t) = A \cos\left
 
 \subsection{Solution}
 
+\pagebreak
+\section{Problem 4}
+In a block and spring system $m = 0.250 \unit{\kilo\gram}$ and $k = 4.00 \unit{\newton/\meter}$. At $t = 0.150 \unit{\second}$, the velocity is $v = -0.174 \unit{\meter/\second}$ and the acceleration $a = +0.877 \unit{\meter/\second^2}$. Write an expression for the displacement as a function of time, $x(t)$. (Hint, remember that the inverse tan function only returns the principal value, but there is a secondary value as well.)
+
+\subsection{Solution}
+We have some formulas for velocity and acceleration that we can use.
+\begin{align}
+    v(t)    &=  -\omega x_m \sin(\omega t + \phi)\ \ \rightarrow
+    v(0)    =   -0.174 \unit{\meter/\second}
+        =   -\omega x_m \sin(\phi)\\
+    a(t)    &=  -\omega^2 x_m \cos(\omega t + \phi)\rightarrow
+    a(0)    =   \ 0.877 \unit{\meter/\second^2}
+        =   -\omega^2 x_m \cos(\phi)\\
+    \frac{a(0)}{v(0)}   &=  \frac{\omega^2 x_m \cos(\phi)}{\omega x_m \sin(\phi)}
+        =   \omega\frac{\cos(\phi)}{\sin(\phi)}
+        =   \frac{\cos(\phi)}{\sin(\phi)}\sqrt{\frac{k}{m}}\\
+    \tan(\phi)  &=  \frac{\sin(\phi)}{\cos(\phi)}
+        =   \frac{v(0)\sqrt{k}}{a(0)\sqrt{m}}\\
+    \phi    &=  \arctan\left(\frac{v(0)\sqrt{k}}{a(0)\sqrt{m}}\right)
+        =   \arctan\left(\frac{-0.174\sqrt{4.0}}{0.877\sqrt{0.25}}\right)\\
+        &=  \arctan\left(\frac{-0.174*2}{0.877*0.5}\right)
+        =  \arctan\left(-\frac{0.696}{0.877}\right)
+        =   \begin{matrix} 141.6\unit{\degree} \\ 321.6\unit{\degree} \end{matrix}
+\end{align}
+
+One of these is in the second quadrant, the other is in the fourth quadrant. Knowing that $\omega$ is positive and trusting that $x_m$ is positive, since the negative cosine is positive and the negative sine is negative, the cosine is negative and the sine is positive, so $\phi$ is in the second quadrant. This means $\phi = 141.6\unit{\degree}$. Last we just neeed to find the value of $x_m$, which we will find using the value of $a(0)$.
+\begin{align}
+    a(0)    &=  -\omega^2 x_m \cos(\omega*0 + \phi)\\
+    x_m &=  -\frac{a(0)}{\omega^2\cos(\phi)}
+        =   \frac{0.877*0.250}{4*0.7833}
+        =   0.06998\unit{\meter}
+\end{align}
+
+Lastly, we find the value of $\omega$ and use that to finalize the formula for $x(t)$. 
+\begin{align}
+    \omega  &=  \sqrt{\frac{k}{m}}
+        =   \sqrt{\frac{4.0}{0.25}}
+        =   4\unit{\second^{-1}}\\
+    x(t)    &=  0.06998*\cos(4t + 141.6\unit{\degree})
+\end{align}
+\begin{equation}
+    \boxed{x(t) =  0.06998*\cos(4t + 141.6\unit{\degree})}
+\end{equation}
 \end{document}
