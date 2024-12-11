@@ -117,9 +117,125 @@ We can see that the only change here is the part labeled $\phi$ in the format of
 
 \pagebreak
 \section{Problem 4}
-In a block and spring system $m = 0.250 \unit{\kilo\gram}$ and $k = 4.00 \unit{\newton/\meter}$. At $t = 0.150 s$, the velocity is$v = -0.174 \unit{\meter/\second}$ and the acceleration $a = +0.877 \unit{\meter/\second^2}$. Write an expression for the displacement as a function of time, x(t). (Hint, remember that the inverse tan function only returns the principal value, but there is a secondary value as well.)
+In a block and spring system $m = 0.250 \unit{\kilo\gram}$ and $k = 4.00 \unit{\newton/\meter}$. At $t = 0.150 \unit{\second}$, the velocity is $v = -0.174 \unit{\meter/\second}$ and the acceleration $a = +0.877 \unit{\meter/\second^2}$. Write an expression for the displacement as a function of time, $x(t)$. (Hint, remember that the inverse tan function only returns the principal value, but there is a secondary value as well.)
 
 \subsection{Solution}
+We have some formulas for velocity and acceleration that we can use.
+\begin{align}
+    \omega  &=  \sqrt{\frac{k}{m}}
+        =   \sqrt{\frac{4.0}{0.25}} =   \sqrt{4^2}
+        =   4\unit{\second^{-1}}\\
+    v(t)    &=  -\omega x_m \sin(\omega t + \phi)\ \ \rightarrow
+    v(0.15) =   -0.174 \unit{\meter/\second}
+        =   -4 x_m \sin(0.6 + \phi)\\
+    a(t)    &=  -\omega^2 x_m \cos(\omega t + \phi)\rightarrow
+    a(0.15) =   \ 0.877 \unit{\meter/\second^2}
+        =   -16 x_m \cos(0.6 + \phi)\\
+    \frac{a(0.15)}{v(0.15)} &=  \frac{-16 x_m \cos(0.6 + \phi)}{-4 x_m \sin(0.6 + \phi)}
+        =   4*\frac{\cos(0.6 + \phi)}{\sin(0.6 + \phi)}\\
+    \tan(\phi)  &=  \frac{\sin(\phi)}{\cos(\phi)}
+        =   \frac{v(0)\sqrt{k}}{a(0)\sqrt{m}}\\
+    0.6 + \phi  &=  \arctan\left(4*\frac{v(0)}{a(0)}\right)
+        =   \arctan\left(4*\frac{-0.174}{0.877}\right)\\
+        &=  \arctan\left(-\frac{0.696}{0.877}\right)
+        =   \begin{matrix} 3.812 \\ 6.954 \end{matrix}
+\end{align}
+
+One of these is in the second quadrant, the other is in the fourth quadrant. Knowing that $\omega$ is positive and trusting that $x_m$ is positive, since the negative cosine is positive and the negative sine is negative, the cosine is negative and the sine is positive, so $0.6 + \phi$ is in the second quadrant. This means $0.6 + \phi = 3.812$ and $\phi = 3.212$. Last, we just neeed to find the value of $x_m$, which we will find using the value of $a(0)$.
+\begin{align}
+    a(0.15)    &=  -16 x_m \cos(0.6 + 3.212)\\
+    x_m &=  -\frac{a(0)}{16\cos(3.812)}
+        =   \frac{0.877}{0.7833}
+        =   0.06998\unit{\meter}
+\end{align}
+
+Lastly, we find the value of $\omega$ and use that to finalize the formula for $x(t)$. 
+\begin{equation}
+    \boxed{x(t) =  0.06998*\cos(4t + 3.212)}
+\end{equation}
+
+\pagebreak
+\section{Problem 5}
+A 60.0 g block attached to a horizontal spring is held at 8.00 cm from its equilibrium position and released at $t = 0$. Its period is $0.900 \unit{\second}$. Find: (a) the displacement $x$ at $1.20 \unit{\second}$; (b) the velocity when $x = -5.00 \unit{\centi\meter}$; (c) the acceleration when $x = -5.00 \unit{\centi\meter}$; (d) the total energy.
+
+\subsection{Solution}
+\subsubsection{Section (a)}
+To find the position, we can use the simple harmonic motion formula. We can set $x_m = 8.0\unit{\centi\meter}$. Next, we need to find $\omega$. Since it starts from the fullest extension at $t = 0$, $\phi = 0$.
+\begin{align}
+    \omega  &=  \frac{2\pi}{T}\\
+    x(t)    &=  x_m \cos(\omega t + \phi)
+        =   x_m \cos\left( \frac{2\pi}{T}t + \phi \right)\\
+        &=  8.0 * \cos\left( \frac{2\pi}{0.900}t \right)\\
+    x(1.2)  &=  8.0 * \cos\left( \frac{2\pi}{0.900}*1.2 \right)
+        =   8.0 * \cos\left( \frac{24\pi}{9} \right)\\
+        &=  8.0 * \cos\left( \frac{8\pi}{3} \right)
+        =   8.0 * (-0.5)
+        =   -4.0\unit{\centi\meter}
+\end{align}
+This means that the block is \boxed{4 \unit{\centi\meter}} away from the equilibrium.
+
+\subsubsection{Section (b)}
+First, we find the time at whch $x = 5.00\unit{\centi\meter}$.
+\begin{gather}
+    -5\unit{\centi\meter}   =   8.0 * \cos\left( \frac{2\pi}{0.900}t \right)\\
+    \cos\left(\frac{2\pi}{0.900}t\right) =   -\frac{5}{8}
+\end{gather}
+
+By using the pythagorean theorem, we can find a value for $\sin\left(\frac{2\pi}{0.900}t\right)$.
+\begin{gather}
+    \sin^2(\theta)  =   1 - \cos^2(\theta)\\
+    \sin(\theta)    =   \sqrt{1 - \cos^2(\theta)}\\
+    \sin\left(\frac{2\pi}{0.900}t\right)    =   \sqrt{1 - \cos^2\left(\frac{2\pi}{0.900}t\right)}\\
+    \sin\left(\frac{2\pi}{0.900}t\right)    =   \sqrt{1 - \frac{5}{8}^2} = \frac{\sqrt{39}}{8}
+\end{gather}
+
+The SHM velocity is the first derivatve of the SHM position.
+\begin{align}
+    x(t)    &=  8.0 * \cos\left( \frac{2\pi}{0.900}t \right)\\
+    \frac{dx(t)}{dt}    =
+    v(t)    &=  -8.0 * \frac{2\pi}{0.900} * \sin\left( \frac{2\pi}{0.900}t \right)
+        =   -\frac{16\pi}{0.900} * \sin\left( \frac{2\pi}{0.900}t \right)\\
+    v(t_1)  &=  -\frac{16\pi}{0.900}*\frac{\sqrt{39}}{8}
+        =   -\frac{20\pi\sqrt{39}}{9}
+        =   -43.598\unit{\centi\meter/\second}
+\end{align}
+This means that the velocity is \boxed{43.598\unit{\meter/\second}}.
+
+\subsubsection{Section (c)}
+From our in-class differential equations for SHM, we know that \(\frac{d^2 x(t)}{dt^2} = -\omega^2 x(t)\). We can work with this, recalling that $\omega = \frac{2\pi}{T}$.
+\begin{align*}
+    \frac{d^2 x(t)}{dt^2}   &=  a(t)
+        =   -\omega^2 x(t)
+        =   \left(\frac{2\pi}{T}\right)^2 * x(t)\\
+    a   &=  \frac{4\pi^2}{T^2} * x
+        =   \frac{4\pi^2}{0.9^2} * 5
+        =   \boxed{243.694\unit{\centi\meter/\second^2}}
+\end{align*}
+
+\subsubsection{Section (d)}
+We can calculate this using the velocity where there is no potential energy (where x = 0). This can only be true where $cos(\theta) = 0$, since the equivalent of $\theta$ is the only variable without a set value (yet). With the pythagorean theorem, if $cos(\theta) = 0$, $\sin(\theta) = \pm 1$, with either one working, so we will be using $-1$.
+\begin{gather}
+    v   =   -\frac{16\pi}{0.900} * \sin\left( \frac{2\pi}{0.900}t \right)
+        =   -\frac{16\pi}{0.900} * (-1)
+        =   \frac{16\pi}{0.900}\unit{\centi\meter/\second}
+\end{gather}\begin{align}
+    E_{total}   &=  K + U
+        =   \frac{1}{2}mv^2 + \frac{1}{2}kx^2
+        =   \frac{1}{2}*(60.0\unit{\gram})*\left(\frac{16\pi}{0.900}\unit{\centi\meter/\second}\right)^2 + 0\\
+        &=  \boxed{93578\ \unit{\dyne*\centi\meter} = 9.3578\times10^{-3}\unit{\joule}}
+\end{align}
+
+
+\pagebreak
+\section{Problem 6}
+\begin{wrapfigure}{r}{0.15\textwidth}
+    \vspace{-30pt}
+    \includegraphics[width=0.15\textwidth]{graph_6.png} 
+    % \label{fig:wrapfig}
+\end{wrapfigure}
+A wire has a torsional constant $\kappa = 2.00 \unit{\newton*\meter/\rad}$. A solid disk of radius $R = 5.00 \unit{\centi\meter}$ and mass $M = 100 \unit{\gram}$ is suspended at its center as shown in the figure. What is the frequency of torsional oscillations?
+
+\subsection{Soluton}
 
 
 
