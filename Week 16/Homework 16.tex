@@ -253,19 +253,22 @@ What we have here is a physical pendulum, and we want to compare it to a simple 
 To be clear, the first eqution is for a simple equation, while the second is for a physical pendulum.
 
 \begin{align}
-    2\pi\sqrt{\frac{L_s}{g}}    &=  2\pi\sqrt{\frac{ML_p^2}{3Mgh}}\\
-    \sqrt{\frac{L_s}{g}}  &=  \sqrt{\frac{L_p^2}{3gh}}\\
-    \frac{L_s}{g}   &=  \frac{L_p^2}{3gh}\\
-    L_s &=  \frac{L_p^2}{3h}
+    I   =   I_{com} + MR^2
+        &=  \frac{1}{3}ML^2 + \frac{1}{4}ML^2
+        =   \frac{7}{12}ML^2\\
+    2\pi\sqrt{\frac{L_s}{g}}    &=  2\pi\sqrt{\frac{7ML_p^2}{12Mgh}}\\
+    \sqrt{\frac{L_s}{g}}  &=  \sqrt{\frac{7L_p^2}{12gh}}\\
+    \frac{L_s}{g}   &=  \frac{7L_p^2}{12gh}\\
+    L_s &=  \frac{7L_p^2}{12h}
 \end{align}
 
 To conclude this, we can know that the center of mass ($h$) of the uniform rod pendulum is going to be \(h = \frac{L_p}{2}\).
 \begin{equation}
-    L_s =   \frac{L_p^2}{3h}
-        =   \frac{2L_p^2}{3L_p}
-        =   \frac{2}{3}L_p
-        =   \frac{2}{3}*1.20\unit{\meter}
-        =   \boxed{0.8\unit{\meter}}
+    L_s =   \frac{7L_p^2}{12h}
+        =   \frac{14L_p^2}{12h}
+        =   \frac{14}{12}L_p
+        =   \frac{14}{12}*1.20\unit{\meter}
+        =   \boxed{1.4\unit{\meter}}
 \end{equation}
 
 
