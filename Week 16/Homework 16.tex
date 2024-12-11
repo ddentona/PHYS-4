@@ -244,43 +244,29 @@ A wire has a torsional constant $\kappa = 2.00 \unit{\newton*\meter/\rad}$. A so
 A uniform rod of mass $M$ and length $L = 1.20 \unit{\meter}$ oscillates about a horizontal axis at one end. What is the length of the simple pendulum that would have the same period? The rotational inertia is $\frac{ML^2}{3}$.
 
 \subsection{Solution}
+What we have here is a physical pendulum, and we want to compare it to a simple pendulum. We can create an equality. Since we know that the two values are equal, we don't have separate kinds of the variable T. 
+\begin{gather}
+    T   =   2\pi\sqrt{\frac{L_s}{g}}\\
+    T   =   2\pi\sqrt{\frac{I}{mgh}}
+        =   2\pi\sqrt{\frac{ML_p^2}{3Mgh}}
+\end{gather}
+To be clear, the first eqution is for a simple equation, while the second is for a physical pendulum.
 
-\pagebreak
-\section{Problem 4}
-In a block and spring system $m = 0.250 \unit{\kilo\gram}$ and $k = 4.00 \unit{\newton/\meter}$. At $t = 0.150 \unit{\second}$, the velocity is $v = -0.174 \unit{\meter/\second}$ and the acceleration $a = +0.877 \unit{\meter/\second^2}$. Write an expression for the displacement as a function of time, $x(t)$. (Hint, remember that the inverse tan function only returns the principal value, but there is a secondary value as well.)
-
-\subsection{Solution}
-We have some formulas for velocity and acceleration that we can use.
 \begin{align}
-    \omega  &=  \sqrt{\frac{k}{m}}
-        =   \sqrt{\frac{4.0}{0.25}} =   \sqrt{4^2}
-        =   4\unit{\second^{-1}}\\
-    v(t)    &=  -\omega x_m \sin(\omega t + \phi)\ \ \rightarrow
-    v(0.15) =   -0.174 \unit{\meter/\second}
-        =   -4 x_m \sin(0.6 + \phi)\\
-    a(t)    &=  -\omega^2 x_m \cos(\omega t + \phi)\rightarrow
-    a(0.15) =   \ 0.877 \unit{\meter/\second^2}
-        =   -16 x_m \cos(0.6 + \phi)\\
-    \frac{a(0.15)}{v(0.15)} &=  \frac{-16 x_m \cos(0.6 + \phi)}{-4 x_m \sin(0.6 + \phi)}
-        =   4*\frac{\cos(0.6 + \phi)}{\sin(0.6 + \phi)}\\
-    \tan(\phi)  &=  \frac{\sin(\phi)}{\cos(\phi)}
-        =   \frac{v(0)\sqrt{k}}{a(0)\sqrt{m}}\\
-    0.6 + \phi  &=  \arctan\left(4*\frac{v(0)}{a(0)}\right)
-        =   \arctan\left(4*\frac{-0.174}{0.877}\right)\\
-        &=  \arctan\left(-\frac{0.696}{0.877}\right)
-        =   \begin{matrix} 3.812 \\ 6.954 \end{matrix}
+    2\pi\sqrt{\frac{L_s}{g}}    &=  2\pi\sqrt{\frac{ML_p^2}{3Mgh}}\\
+    \sqrt{\frac{L_s}{g}}  &=  \sqrt{\frac{L_p^2}{3gh}}\\
+    \frac{L_s}{g}   &=  \frac{L_p^2}{3gh}\\
+    L_s &=  \frac{L_p^2}{3h}
 \end{align}
 
-One of these is in the second quadrant, the other is in the fourth quadrant. Knowing that $\omega$ is positive and trusting that $x_m$ is positive, since the negative cosine is positive and the negative sine is negative, the cosine is negative and the sine is positive, so $0.6 + \phi$ is in the second quadrant. This means $0.6 + \phi = 3.812$ and $\phi = 3.212$. Last, we just neeed to find the value of $x_m$, which we will find using the value of $a(0)$.
-\begin{align}
-    a(0.15)    &=  -16 x_m \cos(0.6 + 3.212)\\
-    x_m &=  -\frac{a(0)}{16\cos(3.812)}
-        =   \frac{0.877}{0.7833}
-        =   0.06998\unit{\meter}
-\end{align}
-
-Lastly, we find the value of $\omega$ and use that to finalize the formula for $x(t)$. 
+To conclude this, we can know that the center of mass ($h$) of the uniform rod pendulum is going to be \(h = \frac{L_p}{2}\).
 \begin{equation}
-    \boxed{x(t) =  0.06998*\cos(4t + 3.212)}
+    L_s =   \frac{L_p^2}{3h}
+        =   \frac{2L_p^2}{3L_p}
+        =   \frac{2}{3}L_p
+        =   \frac{2}{3}*1.20\unit{\meter}
+        =   \boxed{0.8\unit{\meter}}
 \end{equation}
+
+
 \end{document}
