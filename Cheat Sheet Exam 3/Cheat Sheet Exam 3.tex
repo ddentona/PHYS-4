@@ -1,0 +1,127 @@
+\documentclass[8pt]{minimal}
+\usepackage{amsmath}
+
+\begin{document}
+\setlength{\parindent}{0pt}
+% \setlength{\voffset}{-50pt}
+\setlength{\columnsep}{1cm}
+\twocolumn
+PHYS 4A Exam 2 Cheat Sheet (with \LaTeX)
+
+\underline{Write Units}
+
+\underline{Kinematic Equations}
+\begin{gather*}
+    v_{avg}=\frac{\Delta x}{\Delta t}; s_{avg}=\frac{distance}{time};v=\frac{dx}{dt}\\
+    a_{avg}=\frac{\Delta v}{\Delta t}; a = \frac{dv}{dt} = \frac{d^2x}{dt^2}; (1)\ v(t) = v_0 + at\\
+    (2)\ x = x_0 + v_0t + \frac{1}{2}at^2; (3)\ v^2 = v_0^2 + 2a\Delta x
+\end{gather*}
+When doing a problem, account for all the variables you know the values of and all those you don't know the value of.\\
+
+\underline{Freefall}
+
+Object is in freefall iff only force acting on it is gravity\\
+Kinematic eq'ns apply to freefall\\
+Unless stated otherwise, gravitational acceleration $g=-9.81m/s^2$\\
+
+\underline{Vectors}
+\begin{gather*}
+    \vec{a} \cdot \vec{b} = ab \cos(\theta); || \vec{a}\times \vec{b} || = ab \sin(\theta)\\
+    \vec{a} \cdot \vec{b} = a_x b_x+a_y b_y\dots; \vec{a}\times \vec{b} = \det \left( \begin{smallmatrix} \hat{i} & \hat{j} &\hat{k} \\ a_x & a_y & a_z \\ b_x & b_y & b_z  \end{smallmatrix} \right)
+\end{gather*}
+Vectors work as their separate parts for kinematic eq'ns
+\\
+
+\underline{Project}
+
+Motion in 2D+ (uses vectors)\\
+Generally, vertical motion is freefall, horizontal motion is constant \\
+x-value = magnitude times cosine of angle\\
+y-value = magnitude times sine of angle\\
+\begin{gather*}
+    R=x-x_0=\frac{v_0^2*\sin(2\theta)}{g};t=\frac{R}{v_0  \cos(\theta)}\\
+    \Delta y =\tan\theta \Delta x - \frac{g*\Delta x^2}{2(v_0  \cos\theta)^2 }
+\end{gather*}
+
+\underline{Uniform Circular Motion}
+\begin{equation*}
+    \vec{x}(t)=x*\cos\theta \hat{i} + x*\sin\theta \hat{j}  ;a_c=\frac{v^2}{r} ; F_c=\frac{mv^2}{r}
+\end{equation*}
+
+\pagebreak
+\underline{Force}
+
+Force on an object is always represented on a FBD as starting from that object\\
+Force on an object is calculated from that object's mass and consequent acceleration
+\begin{equation*}
+    F_{net}=ma      |      F_{AB}=-F_{BA}
+\end{equation*}
+There is no technical equation for the tension force. Treat it as an unknown when it is included.
+
+\underline{Work} Mechanical energy transfer to or from a system; $W = \vec{F}\cdot\vec{d} = \int F(x) dx = \int \vec{F}(\vec{r})\cdot d\vec{r}$.
+
+\underline{Kinetic Energy} $K = \frac{1}{2}mv^2$; $W_{net} = \Delta K$
+
+\underline{Friction}
+\begin{equation*}
+    f_s \le \mu_s F_N ; f_k = \mu_k F_N
+\end{equation*}
+At all points, $0 < \mu < 1$. $\mu_s$ is for unmoving, $\mu_k$ is for moving. When unmoving, $f_s = F_{app}$.
+Energy lost from it is thermal and uses $W = \vec{f_k} \cdot \vec{d}$.
+
+\underline{Spring force}
+\begin{equation*}
+    \vec{F}_s = -k\Delta\vec{d}\ ;\ W_s = \frac{1}{2}kx_i^2 - \frac{1}{2}kx_f^2
+\end{equation*}
+
+\underline{Power} Rate at which work is done/energy changes $P = \frac{W}{\Delta t}$
+
+\underline{Potential energy}
+
+Conservative force rules: $W_{ab} = -W_{ba}$; Path does not matter; Net work done on closed path is 0
+
+
+\textit{Gravitational}: $U = mgy$ so $\Delta U = mg\Delta y$\\
+\textit{Spring}: $U = \frac{1}{2}kx^2$ (nonnegative)
+
+\underline{Mechanical Energy}
+
+If only conservative forces are used, \\$E_{mech}= K - U = Constant$
+
+\underline{Center of mass} For any dimension $x$ 
+\begin{equation*}
+    x_{com} = \frac{\int x\ dm}{M} = \frac{\int x\ dV}{V}
+\end{equation*}
+
+\underline{Linear momentum} $\vec{p} = m\vec{v}$
+
+$\frac{d\vec{p}}{dt} = m\frac{d\vec{v}}{dt} = m\vec{a} = \vec{F}_{net}$\\
+Impulse $\vec{J} = \Delta \vec{p} = \int \vec{F}\ dt$\\
+$\vec{p}$ is constant for a closed system w/o external forces
+
+\underline{Collisions}
+
+Momentum and total energy always conserved\\
+Elastic is perfect bounce, KE conserved\\
+Inelastic is imperfect bounce, KE not conserved\\
+Perfectly inelastic move together, KE not conserved
+$m_1v_{1i} + m_2v_{2i} = m_1v_{1f} + m_2v_{2f}$
+
+\pagebreak
+\underline{Elastic Collision Equations}
+\begin{gather*}
+    \frac{1}{2}m_1v_{1i}^2 + \frac{1}{2}m_2v_{2i}^2 = \frac{1}{2}m_1v_{1f}^2 + \frac{1}{2}m_2v_{2f}^2\\
+    v_{1i} + v_{1f} = v_{2i} + v_{2f}\\
+    v_{1f} = \frac{m_1 - m_2}{m_1 + m_2}v_{1i} + \frac{2m_2}{m_1 + m_2}v_{2i}\\
+    v_{1f} = \frac{2m_1}{m_1 + m_2}v_{1i} + \frac{m_2 - m_1}{m_1 + m_2}v_{2i}
+\end{gather*}
+
+\underline{Angular Kinematics}
+(Basically normal kinematics just in circles)
+\begin{gather*}
+    \theta = \frac{S}{r}; \omega = \frac{d\theta}{dt}; \alpha = \frac{d^2\theta}{dt^2}; (1)\ \omega(t) = \omega_0 + \alpha t\\
+    (2)\ \theta = \theta_0 + \omega_0t + \frac{1}{2}\alpha t^2; (3)\ \omega^2 = \omega_0^2 + 2\alpha\Delta\theta\\
+    v_t = \omega r; a_t = \alpha r; a_c = \omega r^2; T = \frac{2 \pi r}{\omega}
+\end{gather*}
+
+\end{document}
