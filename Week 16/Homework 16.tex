@@ -51,11 +51,12 @@ We just need to change a positive to a negative.
     \omega_f    &=  \frac{I_1\omega_1 + I_2\omega_2}{I_1 + I_2}
         =   \frac{3.3*450 - 6.6*900}{3.3 + 6.6}\\
         &=  \frac{1485 - 5940}{9.9}
-        =   \boxed{-450\text{rev/min}}
+        =   -450\text{rev/min}\\
+    |\omega_f|  &=  \boxed{450\text{rev/min}}
 \end{align}
 
 \subsubsection{Section (c)}
-Since the magnitude is negative and negative angular velocity corresponds to clockwise motion, the angular motion is \boxed{clockwise}.
+Since the value is negative and negative angular velocity corresponds to clockwise motion, the angular motion is \boxed{clockwise}.
 
 \pagebreak
 \section{Problem 2}
@@ -138,20 +139,20 @@ We have some formulas for velocity and acceleration that we can use.
     0.6 + \phi  &=  \arctan\left(4*\frac{v(0)}{a(0)}\right)
         =   \arctan\left(4*\frac{-0.174}{0.877}\right)\\
         &=  \arctan\left(-\frac{0.696}{0.877}\right)
-        =   \begin{matrix} 3.812 \\ 6.954 \end{matrix}
+        =   \begin{matrix} 2.471 \\ 5.612 \end{matrix}
 \end{align}
 
-One of these is in the second quadrant, the other is in the fourth quadrant. Knowing that $\omega$ is positive and trusting that $x_m$ is positive, since the negative cosine is positive and the negative sine is negative, the cosine is negative and the sine is positive, so $0.6 + \phi$ is in the second quadrant. This means $0.6 + \phi = 3.812$ and $\phi = 3.212$. Last, we just neeed to find the value of $x_m$, which we will find using the value of $a(0)$.
+One of these is in the second quadrant, the other is in the fourth quadrant. Knowing that $\omega$ is positive and trusting that $x_m$ is positive, since the negative cosine is positive and the negative sine is negative, the cosine is negative and the sine is positive, so $0.6 + \phi$ is in the second quadrant. This means $0.6 + \phi = 2.471$ and $\phi = 1.871$. Last, we just neeed to find the value of $x_m$, which we will find using the value of $a(0)$.
 \begin{align}
-    a(0.15)    &=  -16 x_m \cos(0.6 + 3.212)\\
-    x_m &=  -\frac{a(0)}{16\cos(3.812)}
+    a(0.15)    &=  -16 x_m \cos(0.6 + 1.871)\\
+    x_m &=  -\frac{a(0)}{16\cos(2.471)}
         =   \frac{0.877}{0.7833}
         =   0.06998\unit{\meter}
 \end{align}
 
 Lastly, we find the value of $\omega$ and use that to finalize the formula for $x(t)$. 
 \begin{equation}
-    \boxed{x(t) =  0.06998*\cos(4t + 3.212)}
+    \boxed{x(t) =  0.06998*\cos(4t + 1.871)}
 \end{equation}
 
 \pagebreak
@@ -317,22 +318,20 @@ What we have here is a physical pendulum, and we want to compare it to a simple 
 To be clear, the first eqution is for a simple equation, while the second is for a physical pendulum.
 
 \begin{align}
-    I   =   I_{com} + MR^2
-        &=  \frac{1}{3}ML^2 + \frac{1}{4}ML^2
-        =   \frac{7}{12}ML^2\\
-    2\pi\sqrt{\frac{L_s}{g}}    &=  2\pi\sqrt{\frac{7ML_p^2}{12Mgh}}\\
-    \sqrt{\frac{L_s}{g}}  &=  \sqrt{\frac{7L_p^2}{12gh}}\\
-    \frac{L_s}{g}   &=  \frac{7L_p^2}{12gh}\\
-    L_s &=  \frac{7L_p^2}{12h}
+    I   &=  \frac{1}{3}ML^2\\
+    2\pi\sqrt{\frac{L_s}{g}}    &=  2\pi\sqrt{\frac{ML_p^2}{3Mgh}}\\
+    \sqrt{\frac{L_s}{g}}  &=  \sqrt{\frac{L_p^2}{3gh}}\\
+    \frac{L_s}{g}   &=  \frac{L_p^2}{3gh}\\
+    L_s &=  \frac{L_p^2}{3h}
 \end{align}
 
 To conclude this, we can know that the center of mass ($h$) of the uniform rod pendulum is going to be \(h = \frac{L_p}{2}\).
 \begin{equation}
-    L_s =   \frac{7L_p^2}{12h}
-        =   \frac{14L_p^2}{12h}
-        =   \frac{14}{12}L_p
-        =   \frac{14}{12}*1.20\unit{\meter}
-        =   \boxed{1.4\unit{\meter}}
+    L_s =   \frac{L_p^2}{3h}
+        =   \frac{2L_p^2}{3h}
+        =   \frac{2}{3}L_p
+        =   \frac{2}{3}*1.20\unit{\meter}
+        =   \boxed{0.8\unit{\meter}}
 \end{equation}
 
 
