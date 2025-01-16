@@ -6,7 +6,7 @@
 % \setlength{\voffset}{-50pt}
 \setlength{\columnsep}{1cm}
 \twocolumn
-PHYS 4A Exam 2 Cheat Sheet (with \LaTeX)
+PHYS 4A Exam 3 Cheat Sheet (with \LaTeX)
 
 \underline{Write Units}
 
@@ -121,7 +121,79 @@ $m_1v_{1i} + m_2v_{2i} = m_1v_{1f} + m_2v_{2f}$
 \begin{gather*}
     \theta = \frac{S}{r}; \omega = \frac{d\theta}{dt}; \alpha = \frac{d^2\theta}{dt^2}; (1)\ \omega(t) = \omega_0 + \alpha t\\
     (2)\ \theta = \theta_0 + \omega_0t + \frac{1}{2}\alpha t^2; (3)\ \omega^2 = \omega_0^2 + 2\alpha\Delta\theta\\
-    v_t = \omega r; a_t = \alpha r; a_c = \omega r^2; T = \frac{2 \pi r}{\omega}
+    v_t = \omega r; a_t = \alpha r; a_c = \omega r^2; T = \frac{2 \pi}{\omega}
 \end{gather*}
 
+\underline{Inertia}:
+Resistance to change in motion (like mass).\\
+Rotational inertia represented with $I$. All following $I$ are about center.
+\begin{gather*}
+    K = \frac{1}{2}I\omega^2; I = \sum_{i} m_i r_i^2 = \int r(m)^2 dm\\
+    I_{rod} = \frac{1}{12}ML^2; I_{ring} = MR^2; I_{disc} = \frac{1}{2}MR^2
+\end{gather*}
+Inerita about point $h$ away from midpoint (Parallel Axis Theorem): \(I = I_{com} + Mh^2\)
+
+\underline{Torque ($\tau$)}
+\begin{gather*}
+    \vec{\tau} = \vec{r} \times \vec{F}_T = rF\sin(\phi) = Fr\sin(\phi) = I\vec{\alpha}\\
+    r_t = r\sin(\phi) = \text{moment arm}\\
+    W = \int \tau(\theta) d\theta; P = \vec{\tau} \cdot \vec{\omega}
+\end{gather*}
+
+\underline{Rolling}\\
+Static friction applies, not kinetic friction. Gravity also applies. 
+\begin{gather*}
+    \theta = \frac{s}{r}; \omega = \frac{v}{r}; \alpha = \frac{a}{r}\\
+    a_{com;x} = \frac{mg\sin(\theta)}{m + I_{com}/R^2}
+\end{gather*}
+
+\underline{Angular Momentum}\\
+$\ell$ is angular momentum of single particle\\
+$L$ is angular momentum of group of particles
+\begin{gather*}
+    \vec{\ell} = \vec{r} \times \vec{p} = m(\vec{r} \times \vec{v}) = mvr\sin(\theta)\\
+    \vec{L} = \Sigma \ell_i; \vec{L} = I\vec{\omega}; \vec{p} = m\vec{v}
+\end{gather*}
+
+\underline{Simple Harmonic Motion}\\
+$x_m$ = amplitude; $\phi$ = phase shift\\
+$\omega$ = Angular frequency = $2\pi f$\\
+$f$ = frequency (unit Hz)\\
+$T$ = Period = $\frac{1}{f}$ = $\frac{2\pi}{\omega}$
+\begin{align*}
+    x(t)    &=  x_m \cos(\omega t + \phi)\\
+    v(t)    &=  -\omega x_m \sin(\omega t + \phi)\\
+    a(t)    &=  -\omega^2 x_m \cos(\omega t + \phi)\\
+    v_{max} &=  \omega x_{max}
+\end{align*}
+
+\textbf{Spring}: $\omega^2 = \frac{k}{m}$\\
+\textbf{Torsional pendulum}: $\omega^2 = \frac{\kappa}{I}$.
+$\kappa$ is for torsional pendulums what $k$ is for springs.\\
+\textbf{Simple pendulum}: $\omega^2 = \frac{g}{L}$ for small $\theta$\\
+\textbf{Physical Pendulum}: $\omega^2 = \frac{mgL}{I}$ (don't forget Parallel Axis Theorem)
+
+\underline{Damped SHM}\\
+$b$ = damping constant
+\begin{gather*}
+    F_d = -bv; \omega' = \sqrt{\frac{k}{m}-\frac{b^2}{4m^2}}\\
+    x(t) = e^{-\frac{bt}{2m}}\cos(\omega' t + \phi)
+\end{gather*}
+\begin{center}
+    \begin{tabular}{ |c|c| }
+        $\omega'$   & Dampening\\ \hline
+        $\Re$   &   Underdamped\\
+        0       &   Critically damped\\
+        !$\Re$  &   Overdamped
+    \end{tabular}
+\end{center}
+
+\begin{center}
+    \begin{tabular*}{\linewidth}{|c|c|}
+        $\omega'$   & Behavoir\\ \hline
+        $\Re$   &   Oscillates at decreasing amplitude\\
+        0       &   Goes back to origin as fast as possible\\
+        !$\Re$  &   Goes back to origin without oscillating
+    \end{tabular*}
+\end{center}
 \end{document}
