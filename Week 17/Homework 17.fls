@@ -263,11 +263,6 @@ INPUT ./picture_1.png
 INPUT ./picture_1.png
 INPUT ./picture_1.png
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
-INPUT ./picture_4.png
-INPUT ./picture_4.png
-INPUT ./picture_4.png
-INPUT ./picture_4.png
-INPUT ./picture_4.png
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmr8.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmr6.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
@@ -279,6 +274,21 @@ INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+INPUT ./picture_2.png
+INPUT ./picture_2.png
+INPUT ./picture_2.png
+INPUT ./picture_2.png
+INPUT ./picture_2.png
+INPUT ./picture_3.png
+INPUT ./picture_3.png
+INPUT ./picture_3.png
+INPUT ./picture_3.png
+INPUT ./picture_3.png
+INPUT ./picture_4.png
+INPUT ./picture_4.png
+INPUT ./picture_4.png
+INPUT ./picture_4.png
+INPUT ./picture_4.png
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT ./picture_6.png
 INPUT ./picture_6.png
@@ -287,6 +297,16 @@ INPUT ./picture_6.png
 INPUT ./picture_6.png
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
+INPUT ./picture_7.png
+INPUT ./picture_7.png
+INPUT ./picture_7.png
+INPUT ./picture_7.png
+INPUT ./picture_7.png
+INPUT ./picture_8.png
+INPUT ./picture_8.png
+INPUT ./picture_8.png
+INPUT ./picture_8.png
+INPUT ./picture_8.png
 INPUT Homework 17.aux
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb
@@ -295,4 +315,5 @@ INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pf
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb
