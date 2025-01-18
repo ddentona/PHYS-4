@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1737161847.08891 "/Users/dentonaingworth/Documents/CCSF/PHYS-4A/Week 17/Homework 17.tex" "Homework 17.pdf" "Homework 17" 1737161847.96662 0
-  "/Users/dentonaingworth/Documents/CCSF/PHYS-4A/Week 17/Homework 17.tex" 1737161846.89071 4866 d8d13bc1e46500d239cf3c6b65bf7318 ""
+["pdflatex"] 1737163256.09889 "/Users/dentonaingworth/Documents/CCSF/PHYS-4A/Week 17/Homework 17.tex" "Homework 17.pdf" "Homework 17" 1737163256.966 0
+  "/Users/dentonaingworth/Documents/CCSF/PHYS-4A/Week 17/Homework 17.tex" 1737163255.02925 5461 d37a8cc0394707e7d570b0249a188378 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm" 1136768653 1536 74b7293ec3713bb7fdca8dd1bd1f469c ""
@@ -174,15 +174,15 @@
   "/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1727305248.69286 5467645 128b85b7cde5f5edc5cb7f1dd7ff8736 ""
   "/usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1727305230 8221424 9bdbcc07e109911bb30a75dc8990d89e ""
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
-  "Homework 17.aux" 1737161847.9141 32 1b174032087fb90900fa6203d3bb0a7e "pdflatex"
-  "Homework 17.tex" 1737161846.89071 4866 d8d13bc1e46500d239cf3c6b65bf7318 ""
+  "Homework 17.aux" 1737163256.91497 153 8e9a7fc8fe48ac42b9259e0feb733186 "pdflatex"
+  "Homework 17.tex" 1737163255.02925 5461 d37a8cc0394707e7d570b0249a188378 ""
   "picture_1.png" 1737047663.77388 97112 2507021dd14a9a39790ff086e2e97c44 ""
-  "picture_2.png" 1737160439.29155 174954 017c38b450b8dc43487ec9706b568b62 ""
-  "picture_3.png" 1737161635.73418 206145 c3d8e80c8807b8687c0eef206780140b ""
+  "picture_2.png" 1737162507.91802 174954 017c38b450b8dc43487ec9706b568b62 ""
+  "picture_3.png" 1737162507.91869 206145 c3d8e80c8807b8687c0eef206780140b ""
   "picture_4.png" 1737047663.77424 68476 3774098406cf10f0a8233f97f834d43c ""
   "picture_6.png" 1737047663.77459 60860 daaedf3b4be4d002a4a0e0d9d0de59c5 ""
-  "picture_7.png" 1737161809.9587 53412 cf917a7cfacab4d2a44f5ff430fc5f72 ""
-  "picture_8.png" 1737161827.44525 38677 3a06676889c9b7127b1ecd441776e447 ""
+  "picture_7.png" 1737162507.91913 53412 cf917a7cfacab4d2a44f5ff430fc5f72 ""
+  "picture_8.png" 1737162507.91935 38677 3a06676889c9b7127b1ecd441776e447 ""
   (generated)
   "Homework 17.aux"
   "Homework 17.log"

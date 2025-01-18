@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.25)  17 JAN 2025 16:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.25)  17 JAN 2025 17:20
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -526,31 +526,31 @@ Package pdftex.def Info: picture_2.png  used on input line 47.
 <picture_3.png, id=27, 622.82687pt x 519.9425pt>
 File: picture_3.png Graphic file (type png)
 <use picture_3.png>
-Package pdftex.def Info: picture_3.png  used on input line 57.
+Package pdftex.def Info: picture_3.png  used on input line 60.
 (pdftex.def)             Requested size: 430.00462pt x 358.97493pt.
  [4 <./picture_3.png>]
 <picture_4.png, id=32, 619.31375pt x 634.37pt>
 File: picture_4.png Graphic file (type png)
 <use picture_4.png>
-Package pdftex.def Info: picture_4.png  used on input line 63.
+Package pdftex.def Info: picture_4.png  used on input line 66.
 (pdftex.def)             Requested size: 107.49323pt x 107.493pt.
  [5 <./picture_4.png>] [6]
 <picture_6.png, id=41, 697.60625pt x 510.90875pt>
 File: picture_6.png Graphic file (type png)
 <use picture_6.png>
-Package pdftex.def Info: picture_6.png  used on input line 102.
+Package pdftex.def Info: picture_6.png  used on input line 105.
 (pdftex.def)             Requested size: 107.50114pt x 78.73007pt.
  [7{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc} <./picture_6.png>]
 <picture_7.png, id=48, 628.84938pt x 64.74188pt>
 File: picture_7.png Graphic file (type png)
 <use picture_7.png>
-Package pdftex.def Info: picture_7.png  used on input line 109.
+Package pdftex.def Info: picture_7.png  used on input line 112.
 (pdftex.def)             Requested size: 430.00462pt x 44.26987pt.
  [8 <./picture_7.png>]
 <picture_8.png, id=53, 622.325pt x 48.18pt>
 File: picture_8.png Graphic file (type png)
 <use picture_8.png>
-Package pdftex.def Info: picture_8.png  used on input line 113.
+Package pdftex.def Info: picture_8.png  used on input line 116.
 (pdftex.def)             Requested size: 430.00462pt x 33.29053pt.
  [9 <./picture_8.png>] (./Homework 17.aux)
  ***********
@@ -567,7 +567,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  99i,9n,107p,783b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on "Homework 17.pdf" (9 pages, 631583 bytes).
+Output written on "Homework 17.pdf" (9 pages, 633702 bytes).
 PDF statistics:
  98 PDF objects out of 1000 (max. 8388607)
  54 compressed objects within 1 object stream
