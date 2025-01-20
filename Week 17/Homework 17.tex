@@ -138,33 +138,73 @@ From the previous problem, we have determined the formula for the x-value of the
             &=  \frac{k*|200 \times 10^{-9}||-200 \times 10^{-9}|}{0.05^2} + \frac{k*|200 \times 10^{-9}||-100 \times 10^{-9}|}{2*0.05^2}*\frac{\sqrt{2}}{2}\\
             &=  \frac{k*40000 \times 10^{-18}}{0.0025} + \frac{k*20000 \times 10^{-18}*\sqrt{2}}{0.01}\\
             &=  \frac{k*160000 \times 10^{-18} + k*20000 \times 10^{-18}*\sqrt{2}}{10^{-2}}\\
-            &=  k*1600 \times 10^{-16} + k*200 \times 10^{-16}*\sqrt{2}\ \unit{\coulomb^2/\meter^2}\\
-            &=  k(1600 + 200*\sqrt{2}) \times 10^{-16}\ \unit{\coulomb^2/\meter^2}
-            =   8.99*1882.842 \times 10^{-7}\ \unit{\newton}\\
-            &=  \boxed{1.6927 \times 10^{-3} \unit{\newton}}
+            &=  k*160000 \times 10^{-16} + k*20000 \times 10^{-16}*\sqrt{2}\ \unit{\coulomb^2/\meter^2}\\
+            &=  k(160000 + 20000*\sqrt{2}) \times 10^{-16}\ \unit{\coulomb^2/\meter^2}
+            =   8.99*1882.842 \times 10^{-5}\ \unit{\newton}\\
+            &=  \boxed{1.6927 \times 10^{-1} \unit{\newton}}
 \end{align*}
 
 \subsubsection*{(b) y-force on particle 3}
-I'll be using the vector notation for this, because it makes more sense. 
-The force in the y-direction on particle 3 consists of two electrostatic forces: one from particle 1 and another from particle 2. We start with the force from particle 1. 
+I'll be using the vector notation for this, because it makes more sense to me. 
+\begin{align*}
+    \vec{F}_{net,3}   &=  \vec{F}_{13} + \vec{F}_{23} + \vec{F}_{43}
+        =   F_{13}\left[\begin{smallmatrix}0\\-1\end{smallmatrix}\right] + F_{23}\left[\begin{smallmatrix}-\sqrt{2}/2\\-\sqrt{2}/2\end{smallmatrix}\right] + F_{43}\left[\begin{smallmatrix}-1\\0\end{smallmatrix}\right]\\
+        &=  k\left( \frac{q_1 q_3}{0.05^2}\begin{bmatrix}0\\-1\end{bmatrix} + \frac{q_2 q_3}{(0.05\sqrt{2})^2}\begin{bmatrix}-\sqrt{2}/2\\-\sqrt{2}/2\end{bmatrix} + \frac{q_4 q_3}{0.05^2}\begin{bmatrix}-1\\0\end{bmatrix} \right)\\
+        &=  \frac{k q_3}{0.05^2}\left( q_1\begin{bmatrix}0\\-1\end{bmatrix} + \frac{q_2}{2}\begin{bmatrix}-\sqrt{2}/2\\-\sqrt{2}/2\end{bmatrix} + q_4\begin{bmatrix}-1\\0\end{bmatrix} \right)\\
+        &=  \frac{k q_3}{0.05^2}\left( \begin{bmatrix}0\\-q_1\end{bmatrix} + \begin{bmatrix}-q_2 \sqrt{2}/4\\-q_2 \sqrt{2}/4\end{bmatrix} + \begin{bmatrix}-q_4\\0\end{bmatrix} \right)\\
+        &=  \frac{8.99 \times 10^{9} * 200 \times 10^{-9}}{25 \times 10^{-4}}\begin{bmatrix}- q_4 - q_2 \sqrt{2}/4\\- q_1 - q_2 \sqrt{2}/4\end{bmatrix}\\
+        &=  \frac{8.99 * 2 \times 10^2}{2.5 \times 10^{-3}}\begin{bmatrix} 200 - 25 \sqrt{2} \\ - 100 - 25 \sqrt{2} \end{bmatrix} \times 10^{-9}\\
+        &=  \frac{1.789 \times 10^5 \times 10^{-9}}{2.5}\begin{bmatrix} 200 - 25 \sqrt{2} \\ - 100 - 25 \sqrt{2} \end{bmatrix}\\
+        &=  \begin{bmatrix} 1.6927 \times 10^{-1} \\ -4.649 \times 10^{-2} \end{bmatrix} \unit{\newton}
+\end{align*}
+This means that the answer is \boxed{-4.649 \times 10^{-2} \unit{\newton}}. It also confirms the answer from part (a). 
 
 
-% \pagebreak
-% \section*{Problem 23}
-% \begin{wrapfigure}{r}{0.25\textwidth}
-%     \vspace{-30pt}
-%     \includegraphics[width=0.25\textwidth]{picture_6.png} 
-%     % \label{fig:wrapfig}
-% \end{wrapfigure}
-% Fig. 21-32, particles 1 and 2 of charge 91 = Q2 = +3.20 × 10-19 C are on a y axis at distance d = 17.0 cm from the origin. Particle 3 of charge 93 = +6.40 × 10-19 C is moved gradually along the x axis from x = O to x = +5.0 m. At what values of x will the magnitude of the electrostatic force on the third particle from the other two particles be (a) minimum and (b) maximum? What are the (c) minimum and (d) maximum magnitudes?
+\pagebreak
+\section*{Problem 23}
+\begin{wrapfigure}{r}{0.25\textwidth}
+    \vspace{-30pt}
+    \includegraphics[width=0.25\textwidth]{picture_6.png} 
+    % \label{fig:wrapfig}
+\end{wrapfigure}
+Fig. 21-32, particles 1 and 2 of charge $q_1 = q_2 = +3.20 \times 10^{-19} \unit{\coulomb}$ are on a y axis at distance $d = 17.0 \unit{\centi\meter}$ from the origin. Particle 3 of charge $q_3 = +6.40 \times 10^{-19} \unit{\coulomb}$ is moved gradually along the x-axis from x = 0 to x = +5.0 m. At what values of x will the magnitude of the electrostatic force on the third particle from the other two particles be (a) minimum and (b) maximum? What are the (c) minimum and (d) maximum magnitudes?
 
-% \pagebreak
-% \section*{Problem 31}
-% \includegraphics[width=\textwidth]{picture_7.png} 
+\subsection*{Solution}
+% \subsubsection*{(a) Position for minimum force}
+% The formula for electrostatic force is $F = \frac{k |q_1| |q_2|}{||r||^2}$. This means the formula for the total electrostatic force on particle 3 is negatively dependant to its distance from the other two particles. Since it is always equally distant from the two other particles vertically and they have the same charge, it experiences no net vertical force. As a result, the minimum magnitude is where $r^2$ is maximum, so at \boxed{r = 5\unit{\meter}}.
 
-% \pagebreak
-% \section*{Problem 36}
-% \includegraphics[width=\textwidth]{picture_8.png} 
+% \subsubsection*{(b) Position for maximum force}
+% The formula for electrostatic force is $F = \frac{k |q_1| |q_2|}{||r||^2}$. This means the formula for the total electrostatic force on particle 3 is negatively dependant to its distance from the other two particles. Since it is always equally distant from the two other particles vertically and they have the same charge, it experiences no net vertical force. As a result, the maximum magnitude is where $r^2$ is minimum, so at \boxed{r = 0\unit{\meter}}.
 
+% \subsubsection*{(c) Minimum force}
+% \begin{align*}
+%     F   &=  \frac{k q_1 q_3}{(x^2 + y^2)^{3/2}}\hat{r}_{13} + \frac{k q_2 q_3}{(x^2 + y^2)^{3/2}}\hat{r}_{23}\\
+%         &=  \frac{k(3.20 \times 10^{-19})(6.40 \times 10^{-19})}{(0.17^2 + 5^2)^{3/2}}\left(\begin{bmatrix} 5 \\ -0.17 \end{bmatrix} + \begin{bmatrix} 5 \\ 0.17 \end{bmatrix}\right)\\
+%     F_x &=  \frac{k * 2.048 \times 10^{-37}}{25.0289^{3/2}} * 10
+%         =   \frac{8.99 * 2.048 \times 10^{-27}}{25.0289^{3/2}} * 10
+%         =   \boxed{1.47037 \times 10^{-28} \unit{\newton}}
+% \end{align*}
+
+\pagebreak
+\section*{Problem 31}
+\includegraphics[width=\textwidth]{picture_7.png} 
+
+\subsection*{Solution}
+We assume that the earth has a surface of roughly $5.1 \times 10^{14} \unit{\meter^2}$ and that a proton has a charge of $1.602 \times 10^{-19} \unit{\coulomb}$, we can calculate the total electric current, with the formula $i = \frac{dq}{dt}$. The total current in a square meter per second is the number of protons per second times the charge of a proton.
+\begin{equation*}
+    i_{m^2} = 1.5 \times 10^3 * 1.602 \times 10^{-19} = 2.403 \times 10^{-16} \unit{\frac{\coulomb}{\meter^2 \second}}
+\end{equation*}
+Multiplying this by the surface area of the earth, we get the answer.
+\begin{equation*}
+    i = 5.1 \times 10^{14} * 2.403 \times 10^{-16} = 1.22553 \times 10^1 \times 10^{-2} = \boxed{1.22553 \times 10^{-1} \unit{\coulomb/\second}}
+\end{equation*}
+
+\pagebreak
+\section*{Problem 36}
+\includegraphics[width=\textwidth]{picture_8.png} 
+
+\subsection*{Solution}
+a) Positron. \\
+b) Electron.
 
 \end{document}

@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1737336568.66582 "/Users/dentonaingworth/Documents/CCSF/PHYS-4A/Week 17/Homework 17.tex" "Homework 17.pdf" "Homework 17" 1737336569.54884 0
-  "/Users/dentonaingworth/Documents/CCSF/PHYS-4A/Week 17/Homework 17.tex" 1737336568.45084 8855 b84ba54cae8322f2cc3f76c3cfe8026a ""
+["pdflatex"] 1737414514.66841 "/Users/dentonaingworth/Documents/CCSF/PHYS-4A/Week 17/Homework 17.tex" "Homework 17.pdf" "Homework 17" 1737414515.56994 0
+  "/Users/dentonaingworth/Documents/CCSF/PHYS-4A/Week 17/Homework 17.tex" 1737414514.47802 12765 55ed953b1859e7aad29496e512a186de ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -173,12 +173,15 @@
   "/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1727305248.69286 5467645 128b85b7cde5f5edc5cb7f1dd7ff8736 ""
   "/usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1727305230 8221424 9bdbcc07e109911bb30a75dc8990d89e ""
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
-  "Homework 17.aux" 1737336569.49628 32 4d1825978335c8847f72f7c473f9edc8 "pdflatex"
-  "Homework 17.tex" 1737336568.45084 8855 b84ba54cae8322f2cc3f76c3cfe8026a ""
+  "Homework 17.aux" 1737414515.51858 33 cd8a9e253be16178be412705367a589a "pdflatex"
+  "Homework 17.tex" 1737414514.47802 12765 55ed953b1859e7aad29496e512a186de ""
   "picture_1.png" 1737047663.77388 97112 2507021dd14a9a39790ff086e2e97c44 ""
   "picture_2.png" 1737162507.91802 174954 017c38b450b8dc43487ec9706b568b62 ""
   "picture_3.png" 1737162507.91869 206145 c3d8e80c8807b8687c0eef206780140b ""
   "picture_4.png" 1737047663.77424 68476 3774098406cf10f0a8233f97f834d43c ""
+  "picture_6.png" 1737047663.77459 60860 daaedf3b4be4d002a4a0e0d9d0de59c5 ""
+  "picture_7.png" 1737162507.91913 53412 cf917a7cfacab4d2a44f5ff430fc5f72 ""
+  "picture_8.png" 1737162507.91935 38677 3a06676889c9b7127b1ecd441776e447 ""
   (generated)
   "Homework 17.aux"
   "Homework 17.log"

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.25)  19 JAN 2025 17:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.25)  20 JAN 2025 15:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -539,25 +539,43 @@ File: picture_4.png Graphic file (type png)
 <use picture_4.png>
 Package pdftex.def Info: picture_4.png  used on input line 119.
 (pdftex.def)             Requested size: 107.50114pt x 110.1065pt.
- [7] (./Homework 17.aux)
+ [7] [8]
+<picture_6.png, id=50, 697.60625pt x 510.90875pt>
+File: picture_6.png Graphic file (type png)
+<use picture_6.png>
+Package pdftex.def Info: picture_6.png  used on input line 167.
+(pdftex.def)             Requested size: 107.50114pt x 78.73007pt.
+ [9 <./picture_6.png>]
+<picture_7.png, id=55, 628.84938pt x 64.74188pt>
+File: picture_7.png Graphic file (type png)
+<use picture_7.png>
+Package pdftex.def Info: picture_7.png  used on input line 190.
+(pdftex.def)             Requested size: 430.00462pt x 44.26987pt.
+ [10 <./picture_7.png>]
+<picture_8.png, id=60, 622.325pt x 48.18pt>
+File: picture_8.png Graphic file (type png)
+<use picture_8.png>
+Package pdftex.def Info: picture_8.png  used on input line 204.
+(pdftex.def)             Requested size: 430.00462pt x 33.29053pt.
+ [11 <./picture_8.png>] (./Homework 17.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 27776 strings out of 474116
- 744294 string characters out of 5743682
- 1939187 words of memory out of 5000000
- 49747 multiletter control sequences out of 15000+600000
+ 27801 strings out of 474116
+ 744835 string characters out of 5743682
+ 1946187 words of memory out of 5000000
+ 49772 multiletter control sequences out of 15000+600000
  564362 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,13n,107p,783b,637s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,15n,107p,783b,637s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on "Homework 17.pdf" (7 pages, 549497 bytes).
+Output written on "Homework 17.pdf" (11 pages, 663329 bytes).
 PDF statistics:
- 90 PDF objects out of 1000 (max. 8388607)
- 52 compressed objects within 1 object stream
+ 108 PDF objects out of 1000 (max. 8388607)
+ 60 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 33 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 48 words of extra memory for PDF output out of 10000 (max. 10000000)
 
