@@ -122,13 +122,31 @@ Since $\frac{7k}{2a^2}$ is made up only of constants, this means that we end up 
 In Fig. 21-25, the particles have charges $q_1 = -q_2 = 100 \unit{\nano\coulomb}$ and $q_3 = -q_4 = 200 \unit{\nano\coulomb}$, and distance $a = 5.0\unit{\centi\meter}$. What are the (a) x and (b) y components of the net electrostatic force on particle 3?
 
 \subsection*{Solution}
+The charges of the four points are as follows: 
+\begin{align*}
+    &q_1 = 100\unit{\nano\coulomb}
+    &q_2 = -100\unit{\nano\coulomb} &
+    &q_3 = 200\unit{\nano\coulomb} &
+    &q_4 = -200\unit{\nano\coulomb}
+\end{align*}
+This means that $q_3$ is repelled by $q_1$, but attracted by $q_2$ and $q_4$. 
 \subsubsection*{(a) x-force on particle 3}
 From the previous problem, we have determined the formula for the x-value of the force.
 \begin{align*}
-    F_{net} &=  \frac{k*|q_3||q_4|}{a^2} + \frac{k*|q_3||q_2|}{2a^2}*\hat{r}_{23;x}
-            =   \frac{k*|q_3||q_4|}{a^2} + \frac{k*|q_3||q_2|}{2a^2}*\hat{r}_{23;x}
+    F_{net} &=  \frac{k*|q_3||q_4|}{a^2}*\hat{r}_{34;x} + \frac{k*|q_3||q_2|}{2a^2}*\hat{r}_{32;x}\\
+            &=  \frac{k*|q_3||q_4|}{a^2} + \frac{k*|q_3||q_2|}{2a^2}*\frac{\sqrt{2}}{2}\\
+            &=  \frac{k*|200 \times 10^{-9}||-200 \times 10^{-9}|}{0.05^2} + \frac{k*|200 \times 10^{-9}||-100 \times 10^{-9}|}{2*0.05^2}*\frac{\sqrt{2}}{2}\\
+            &=  \frac{k*40000 \times 10^{-18}}{0.0025} + \frac{k*20000 \times 10^{-18}*\sqrt{2}}{0.01}\\
+            &=  \frac{k*160000 \times 10^{-18} + k*20000 \times 10^{-18}*\sqrt{2}}{10^{-2}}\\
+            &=  k*1600 \times 10^{-16} + k*200 \times 10^{-16}*\sqrt{2}\ \unit{\coulomb^2/\meter^2}\\
+            &=  k(1600 + 200*\sqrt{2}) \times 10^{-16}\ \unit{\coulomb^2/\meter^2}
+            =   8.99*1882.842 \times 10^{-7}\ \unit{\newton}\\
+            &=  \boxed{1.6927 \times 10^{-3} \unit{\newton}}
 \end{align*}
 
+\subsubsection*{(b) y-force on particle 3}
+I'll be using the vector notation for this, because it makes more sense. 
+The force in the y-direction on particle 3 consists of two electrostatic forces: one from particle 1 and another from particle 2. We start with the force from particle 1. 
 
 
 % \pagebreak
