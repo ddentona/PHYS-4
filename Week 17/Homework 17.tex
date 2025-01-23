@@ -8,9 +8,9 @@
 \usepackage{siunitx}
 \usepackage{wrapfig}
 
-\title{Homework \#16}
+\title{Homework \#1, 4B}
 \author{Donald Aingworth IV}
-\date{December 11, 2024}
+\date{January 22, 2025}
 
 \pgfplotsset{width=8cm,compat=1.9}
 \usepgfplotslibrary{external}
@@ -91,7 +91,7 @@ Since the forces must be in opposite directions, the charges must be opposite, s
 
 \pagebreak
 \subsubsection*{(b) For what $q$ is $F_{net} = 0$?}
-We can put aside the situation where \boxed{q = 0}, since that feels like cheating. We have two formulas that must be true, one for the particles of charge $Q$ (1) and one for the particles of charge $q$ (2). 
+We can put aside the situation where \boxed{q = 0}, since that feels like cheating. We have two formulas that must be true, one for the particles of charge $q$ (1) and one for the particles of charge $Q$ (2). 
 \begin{equation}
     0 = \frac{k*|q|*|Q|}{a^2} - \frac{k*|q|*|q|}{(a\sqrt{2})^2}
 \end{equation}
@@ -170,20 +170,49 @@ This means that the answer is \boxed{-4.649 \times 10^{-2} \unit{\newton}}. It a
 Fig. 21-32, particles 1 and 2 of charge $q_1 = q_2 = +3.20 \times 10^{-19} \unit{\coulomb}$ are on a y axis at distance $d = 17.0 \unit{\centi\meter}$ from the origin. Particle 3 of charge $q_3 = +6.40 \times 10^{-19} \unit{\coulomb}$ is moved gradually along the x-axis from x = 0 to x = +5.0 m. At what values of x will the magnitude of the electrostatic force on the third particle from the other two particles be (a) minimum and (b) maximum? What are the (c) minimum and (d) maximum magnitudes?
 
 \subsection*{Solution}
-% \subsubsection*{(a) Position for minimum force}
-% The formula for electrostatic force is $F = \frac{k |q_1| |q_2|}{||r||^2}$. This means the formula for the total electrostatic force on particle 3 is negatively dependant to its distance from the other two particles. Since it is always equally distant from the two other particles vertically and they have the same charge, it experiences no net vertical force. As a result, the minimum magnitude is where $r^2$ is maximum, so at \boxed{r = 5\unit{\meter}}.
+\begin{align*}
+    \vec{F}_{net,3} &=  \frac{k q_1 q_3}{(x^2 + y^2)^{3/2}}\vec{r}_{13} + \frac{k q_2 q_3}{(x^2 + y^2)^{3/2}}\vec{r}_{23}\\
+        &=  \frac{k q_1 q_3}{(x^2 + 0.17^2)^{3/2}}\begin{bmatrix} x \\ -0.17 \end{bmatrix} + \frac{k q_1 q_3}{(x^2 + y^2)^{3/2}}\begin{bmatrix} x \\ 0.17 \end{bmatrix}\\
+        &=  \frac{k q_1 q_3}{(x^2 + 0.17^2)^{3/2}}\begin{bmatrix} 2x \\ 0 \end{bmatrix}\\
+    F_{net,3}   &=  \frac{k q_1 q_3}{(x^2 + 0.17^2)^{3/2}}2x
+\end{align*}
 
-% \subsubsection*{(b) Position for maximum force}
-% The formula for electrostatic force is $F = \frac{k |q_1| |q_2|}{||r||^2}$. This means the formula for the total electrostatic force on particle 3 is negatively dependant to its distance from the other two particles. Since it is always equally distant from the two other particles vertically and they have the same charge, it experiences no net vertical force. As a result, the maximum magnitude is where $r^2$ is minimum, so at \boxed{r = 0\unit{\meter}}.
+\subsubsection*{(a) Position for minimum force}
+The formula for electrostatic force is $F = \frac{k |q_1| |q_2|}{||r||^2}$. However, When x = 0, the vertical force cancel out, and there is no horizontal force (since it is in-line with the other two point charges), this means that at \boxed{x = 0}, the net force is at its minimum of 0.
 
-% \subsubsection*{(c) Minimum force}
-% \begin{align*}
-%     F   &=  \frac{k q_1 q_3}{(x^2 + y^2)^{3/2}}\hat{r}_{13} + \frac{k q_2 q_3}{(x^2 + y^2)^{3/2}}\hat{r}_{23}\\
-%         &=  \frac{k(3.20 \times 10^{-19})(6.40 \times 10^{-19})}{(0.17^2 + 5^2)^{3/2}}\left(\begin{bmatrix} 5 \\ -0.17 \end{bmatrix} + \begin{bmatrix} 5 \\ 0.17 \end{bmatrix}\right)\\
-%     F_x &=  \frac{k * 2.048 \times 10^{-37}}{25.0289^{3/2}} * 10
-%         =   \frac{8.99 * 2.048 \times 10^{-27}}{25.0289^{3/2}} * 10
-%         =   \boxed{1.47037 \times 10^{-28} \unit{\newton}}
-% \end{align*}
+\subsubsection*{(b) Position for maximum force}
+To find the maximum force, we can take the derivative of the formula above with respect to $x$ and find its zeroes.
+\begin{align*}
+    \frac{d}{dx}F_{net,3}   &=  \frac{d}{dx}\left(\frac{k q_1 q_3}{(x^2 + 0.17^2)^{3/2}}2x\right)\\
+        &=  \frac{d}{dx}\left( \frac{k q_1 q_3}{(x^2 + 0.17^2)^{3/2}} \right) * 2x + \frac{k q_1 q_3}{(x^2 + 0.17^2)^{3/2}} * \frac{d}{dx}\left( 2x \right)\\
+        &=  \frac{d}{dx}\left( x^2 + 0.17^2 \right) \frac{-3 k q_1 q_3}{2(x^2 + 0.17^2)^{5/2}} * 2x + \frac{k q_1 q_3}{(x^2 + 0.17^2)^{3/2}} * 2\\
+        &=  2x^2 \frac{-3 k q_1 q_3}{(x^2 + 0.17^2)^{5/2}} + \frac{k q_1 q_3}{(x^2 + 0.17^2)^{3/2}} * 2
+\end{align*}
+
+Here, we solve for when it is 0.
+\begin{gather*}
+    0   =   2x^2 \frac{-3 k q_1 q_3}{(x^2 + 0.17^2)^{5/2}} + \frac{2 k q_1 q_3 (x^2 + 0.17^2)}{(x^2 + 0.17^2)^{5/2}}\\
+    2x^2 \frac{3 k q_1 q_3}{(x^2 + 0.17^2)^{5/2}} = \frac{2 k q_1 q_3 (x^2 + 0.17^2)}{(x^2 + 0.17^2)^{5/2}}\\
+    6x^2 k q_1 q_3 = 2 k q_1 q_3 (x^2 + 0.17^2)\\
+    3x^2 = x^2 + 0.17^2\\
+    2x^2 = 0.17^2\\
+    x^2 = \frac{0.0289}{2}\\
+    x   =   \sqrt{0.01445} = \boxed{0.12 \unit{\meter}}
+\end{gather*}
+
+\subsubsection*{(c) Minimum force}
+See part (a). It's \boxed{0 \unit{\newton}}.
+
+\subsubsection*{(d) Maximum force}
+Let's plug in some numbers.
+\begin{align*}
+    F_{net,3}   &=  \frac{k q_1 q_3}{(x^2 + 0.17^2)^{3/2}}2x\\
+    F_{net,3}(\sqrt{0.01445})   &=  \frac{k q_1 q_3}{(0.01445 + 0.0289)^{3/2}}2\sqrt{0.01445}\\
+        &=  \frac{k q_1 q_3}{(3*0.01445)\sqrt{3*0.01445}}2\sqrt{0.01445}\\
+        &=  \frac{2\sqrt{3} k q_1 q_3}{9*0.01445}\\
+        &=  \frac{2\sqrt{3}*8.99 \times 10^9 * 3.20 \times 10^{-19} * 6.40 \times 10^{-19}}{9*0.01445}\\
+        &=  \boxed{4.904 \times 10^{-26}}
+\end{align*}
 
 \pagebreak
 \section*{Problem 31}
