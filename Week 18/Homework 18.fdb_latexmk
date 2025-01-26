@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1737863735.96515 "/Users/dentonaingworth/Documents/CCSF/PHYS-4A/Week 18/Homework 18.tex" "Homework 18.pdf" "Homework 18" 1737863737.0994 0
-  "/Users/dentonaingworth/Documents/CCSF/PHYS-4A/Week 18/Homework 18.tex" 1737863734.62853 7688 04c0b17978c5939779a123336fb3f1cc ""
+["pdflatex"] 1737919346.21039 "/Users/dentonaingworth/Documents/CCSF/PHYS-4A/Week 18/Homework 18.tex" "Homework 18.pdf" "Homework 18" 1737919347.33113 0
+  "/Users/dentonaingworth/Documents/CCSF/PHYS-4A/Week 18/Homework 18.tex" 1737919345.99689 8873 643f11ecafc923e50a2d129a9b5122bd ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -172,8 +172,8 @@
   "/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1727305248.69286 5467645 128b85b7cde5f5edc5cb7f1dd7ff8736 ""
   "/usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1727305230 8221424 9bdbcc07e109911bb30a75dc8990d89e ""
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
-  "Homework 18.aux" 1737863737.04772 33 06c322e1d88c4778ac780ba5e7d05c77 "pdflatex"
-  "Homework 18.tex" 1737863734.62853 7688 04c0b17978c5939779a123336fb3f1cc ""
+  "Homework 18.aux" 1737919347.28229 33 06c322e1d88c4778ac780ba5e7d05c77 "pdflatex"
+  "Homework 18.tex" 1737919345.99689 8873 643f11ecafc923e50a2d129a9b5122bd ""
   "picture_1.png" 1737741202.36719 70000 a4a441b86698972842a2641472efab63 ""
   "picture_2.png" 1737741202.3675 48971 d35f6c98c3f03f77761dd77168d8eb57 ""
   "picture_3.png" 1737741202.36874 415465 6ff475e89018440f98f950a9ceca6d63 ""

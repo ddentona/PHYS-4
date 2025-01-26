@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.25)  25 JAN 2025 19:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.25)  26 JAN 2025 11:22
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -523,34 +523,34 @@ File: picture_2.png Graphic file (type png)
 Package pdftex.def Info: picture_2.png  used on input line 38.
 (pdftex.def)             Requested size: 430.00462pt x 36.57803pt.
  [3 <./picture_2.png>]
-<picture_3.png, id=23, 738.76pt x 614.79688pt>
+<picture_3.png, id=29, 738.76pt x 614.79688pt>
 File: picture_3.png Graphic file (type png)
 <use picture_3.png>
-Package pdftex.def Info: picture_3.png  used on input line 43.
+Package pdftex.def Info: picture_3.png  used on input line 66.
 (pdftex.def)             Requested size: 430.00462pt x 357.84886pt.
  [4 <./picture_3.png>] [5]
-<picture_4.png, id=32, 730.22812pt x 179.67125pt>
+<picture_4.png, id=37, 730.22812pt x 179.67125pt>
 File: picture_4.png Graphic file (type png)
 <use picture_4.png>
-Package pdftex.def Info: picture_4.png  used on input line 55.
+Package pdftex.def Info: picture_4.png  used on input line 78.
 (pdftex.def)             Requested size: 430.00462pt x 105.80223pt.
  [6 <./picture_4.png>]
-<picture_5.png, id=40, 722.19812pt x 475.27562pt>
+<picture_5.png, id=42, 722.19812pt x 475.27562pt>
 File: picture_5.png Graphic file (type png)
 <use picture_5.png>
-Package pdftex.def Info: picture_5.png  used on input line 73.
+Package pdftex.def Info: picture_5.png  used on input line 96.
 (pdftex.def)             Requested size: 430.00462pt x 282.98468pt.
  [7 <./picture_5.png>]
 <picture_6.png, id=48, 734.745pt x 468.24937pt>
 File: picture_6.png Graphic file (type png)
 <use picture_6.png>
-Package pdftex.def Info: picture_6.png  used on input line 87.
+Package pdftex.def Info: picture_6.png  used on input line 110.
 (pdftex.def)             Requested size: 430.00462pt x 274.04266pt.
  [8 <./picture_6.png>] [9]
 <picture_7.png, id=56, 716.6775pt x 45.16875pt>
 File: picture_7.png Graphic file (type png)
 <use picture_7.png>
-Package pdftex.def Info: picture_7.png  used on input line 135.
+Package pdftex.def Info: picture_7.png  used on input line 158.
 (pdftex.def)             Requested size: 430.00462pt x 27.10144pt.
  [10 <./picture_7.png>] (./Homework 18.aux)
  ***********
@@ -559,15 +559,15 @@ L3 programming layer <2024-02-20>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 27795 strings out of 474116
- 744645 string characters out of 5743682
+ 27797 strings out of 474116
+ 744703 string characters out of 5743682
  1938187 words of memory out of 5000000
- 49766 multiletter control sequences out of 15000+600000
+ 49768 multiletter control sequences out of 15000+600000
  564362 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,16n,107p,783b,708s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on "Homework 18.pdf" (10 pages, 1130699 bytes).
+Output written on "Homework 18.pdf" (10 pages, 1133408 bytes).
 PDF statistics:
  100 PDF objects out of 1000 (max. 8388607)
  55 compressed objects within 1 object stream

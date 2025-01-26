@@ -267,11 +267,6 @@ INPUT ./picture_2.png
 INPUT ./picture_2.png
 INPUT ./picture_2.png
 INPUT ./picture_2.png
-INPUT ./picture_3.png
-INPUT ./picture_3.png
-INPUT ./picture_3.png
-INPUT ./picture_3.png
-INPUT ./picture_3.png
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmr8.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmr6.tfm
@@ -284,6 +279,11 @@ INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+INPUT ./picture_3.png
+INPUT ./picture_3.png
+INPUT ./picture_3.png
+INPUT ./picture_3.png
+INPUT ./picture_3.png
 INPUT ./picture_4.png
 INPUT ./picture_4.png
 INPUT ./picture_4.png
