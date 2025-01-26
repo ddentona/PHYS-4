@@ -42,20 +42,92 @@
 \section*{Chapter 22, Question 4}
 \includegraphics[width=\textwidth]{picture_3.png}
 
+\subsection*{Solution}
+We will rank them by magnitude, which is always positive. I will rank the charges in terms of "agreeing" with the direction of the majority of electric fields and "disagreeing" with the majority of electric fields.\\
+Number 1 has the same charges the same distances on each side, so the magnitude is zero. This means that it will be the least.\\
+Number 2 has opposite charges on each side, so the magnitude is very big. $(2) > (1)$\\
+Number 3 has three agreeing charges and one disagreeing charges. This means that its net electric field is greater than zero, but not as big as (2) where they all agree. $(2) > (3) > (1)$\\
+Number 4 has one disagreeing charge like number 3, but it is closer than number 3's field. This means that its field on the point has a greater impact on it because distance is inversely proportional to field strength. As such, the magnitude is less than the magnitude of (3). \boxed{(2) > (3) > (4) > (1)}
+
 
 \pagebreak
 \section*{Chapter 22, Question 5}
 \includegraphics[width=\textwidth]{picture_4.png}
 
+\subsection*{Solution Part (a)}
+If the point charge is to the right, the closer charge being a greater charge will make the electric field always non-zero. In between the two charges, the $+q$ will push the electric field in the same direction as the $-3q$ charge will. To the left, the $-3q$ pushes it with an increasingly lower magnitude at a faster rate to which the $+q$ pushes it, so if there is a 0 point, it is \boxed{\text{to the left}}.
+\begin{equation*}
+    E_1 = -E_2\\
+    \frac{3kq}{r^2} = \frac{kq}{(r - 1)^2}\\
+    3r^2 - 6r + 3 = r^2\\
+    2r^2 - 6r + 3 = 0\\
+    r = \frac{3 \pm \sqrt{3}}{2}
+\end{equation*}
+This means that it would be $\frac{3 \pm \sqrt{3}}{2}$ times the distance between the particles to the left of the $-3q$ particle.
+
+\subsection*{Solution Part (b)}
+Yes, anywhere the distances cancel each other out where the above equation works when using the vector notation.
 
 \pagebreak
 \section*{Chapter 22, Problem 8}
 \includegraphics[width=\textwidth]{picture_5.png}
 
+\subsection*{Solution}
+First thing's first, since they're of equal charge and equaal but opposite distance on the same axis going through the point, the particles $q_1$ and $q_2$ cancel each other out, so we only need to consider particles $q_3$ and $q_4$.
+\begin{align*}
+    \vec{E}_P   &=  k\left(\frac{3e}{(5\times 10^{-6})^2} - \frac{12e}{(2*5\times 10^{-6})^2}\right)\\
+        &=  k\left(\frac{3e}{(5\times 10^{-6})^2} - \frac{3e}{(5\times 10^{-6})^2}\right)\\
+        &=  \frac{k*3e}{(5\times 10^{-6})^2}\left(1 - 1\right)\\
+        &=  \boxed{0\unit{\newton/\coulomb}}
+\end{align*}
+I suppose that the other two particles cancel each other out as well. I will be honest, that was pretty anticlimactic. 
 
 \pagebreak
 \section*{Chapter 22, Problem 12}
 \includegraphics[width=\textwidth]{picture_6.png}
+
+\subsection*{Solution}
+We have the superposition principle and six charges, which I will number in reverst clockwise order. I will be using vector notation. We will keep the charge of a proton as $e = 1.60217663 \times 10^{-19} \unit{\coulomb}$ and the charge of an electron as $-e = -1.60217663 \times 10^{-19} \unit{\coulomb}$.
+\begin{align*}
+    \vec{E}_{net}   =&  \vec{E}_1 + \vec{E}_2 + \vec{E}_3 + \vec{E}_4 + \vec{E}_5 + \vec{E}_6
+        =   \frac{k}{r^2}\sum_{i=1}^{6} - q_i \hat{r_i}\\
+        =&  \frac{k}{2^2}\left(-\frac{-e}{2}\begin{pmatrix}\cos(0\unit{\degree})\\ \sin(0\unit{\degree})\end{pmatrix}
+            - \frac{e}{2}\begin{pmatrix}\cos(30\unit{\degree})\\ \sin(30\unit{\degree})\end{pmatrix}
+            - \frac{e}{2}\begin{pmatrix}\cos(50\unit{\degree})\\ \sin(50\unit{\degree})\end{pmatrix}\right. \\
+            & \left. - \frac{-e}{2}\begin{pmatrix}\cos(150\unit{\degree})\\ \sin(150\unit{\degree})\end{pmatrix}
+            - \frac{e}{2}\begin{pmatrix}\cos(160\unit{\degree})\\ \sin(160\unit{\degree})\end{pmatrix}\right)
+\end{align*}
+
+\begin{align*}
+    \vec{E}_{net}   =&  \frac{ke}{2^3}\left(\begin{pmatrix}\cos(0\unit{\degree})\\ \sin(0\unit{\degree})\end{pmatrix}
+        - \begin{pmatrix}\cos(30\unit{\degree})\\ \sin(30\unit{\degree})\end{pmatrix}
+        - \begin{pmatrix}\cos(50\unit{\degree})\\ \sin(50\unit{\degree})\end{pmatrix}
+        + \begin{pmatrix}\cos(150\unit{\degree})\\ \sin(150\unit{\degree})\end{pmatrix}
+        - \begin{pmatrix}\cos(160\unit{\degree})\\ \sin(160\unit{\degree})\end{pmatrix}\right)\\
+        =&  \frac{ke}{2^3} \begin{pmatrix}
+            1   - \frac{\sqrt{3}}{2}    - 0.6427876 - \frac{\sqrt{3}}{2}    + 0.9396926\\
+            0   - \frac{1}{2}           - 0.7660444 + \frac{1}{2}           - 0.3420201
+        \end{pmatrix}
+        =   \frac{ke}{2^3} \begin{pmatrix}
+            -0.4351458\\
+            -1.1080646
+        \end{pmatrix}\\
+        =&  \frac{(8.99 \times 10^{9})(1.60217663 \times 10^{-19})}{8}\begin{pmatrix} -0.4351458\\ -1.1080646 \end{pmatrix}\\
+        =&  \begin{pmatrix} -7.834565 \times 10^{-11} \\ -1.9950104 \times 10^{-10} \end{pmatrix} \unit{\newton/\coulomb}
+\end{align*}
+
+\subsubsection*{(a) Magnitude}
+For the magnitude, we use the Pythagorean theorem.
+\begin{align*}
+    \sqrt{(-7.834565 \times 10^{-11}) + (-1.9950104 \times 10^{-10})} = \boxed{2.1433 \times 10^{-10} \unit{\newton/\coulomb}}
+\end{align*}
+
+\subsubsection*{(b) Direction}
+For the direction, we use an arctangent, keeping in mind that the vector would be in the third quadrant. 
+\begin{equation*}
+    \theta = \arctan\left(\frac{-1.9950104 \times 10^{-10}}{(-7.834565 \times 10^{-11}}\right)
+        =   68.5597 \unit{\degree}  =   \boxed{248.5597 \unit{\degree}}
+\end{equation*}
 
 
 \pagebreak
