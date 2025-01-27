@@ -32,6 +32,17 @@
 \section*{Chapter 21, Problem 52}
 \includegraphics[width=\textwidth]{picture_1.png}
 
+\subsection*{Solution}
+Since it's rotating about a point, the electrostatic force ($F_E = \frac{kq_1 q_2}{r^2}$)must be (equal to) the centripital force, the equation for which is $F_c = \frac{mv^2}{r}$.
+\begin{gather*}
+    F_E = F_c\\
+    \frac{kqQ}{r^2} = \frac{mv^2}{r}
+\end{gather*}
+\begin{align*}
+    Q   &=  \frac{mv^2r}{kq}
+        =   \frac{(8.00 \times 10^{-4} \unit{\kilo\gram})(50.0\unit{\meter/\second})^2(0.2\unit{\meter})}{(8.99 \times 10^{9})(4.00 \times 10^{-6})}
+        =   \boxed{1.112 \times 10^{-5} \unit{\coulomb}}
+\end{align*}
 
 \pagebreak
 \section*{Chapter 21, Problem 66}
@@ -114,42 +125,42 @@ We have the superposition principle and six charges, which I will number in reve
 \begin{align*}
     \vec{E}_{net}   =&  \vec{E}_1 + \vec{E}_2 + \vec{E}_3 + \vec{E}_4 + \vec{E}_5 + \vec{E}_6
         =   \frac{k}{r^2}\sum_{i=1}^{6} - q_i \hat{r_i}\\
-        =&  \frac{k}{2^2}\left(-\frac{-e}{2}\begin{pmatrix}\cos(0\unit{\degree})\\ \sin(0\unit{\degree})\end{pmatrix}
-            - \frac{e}{2}\begin{pmatrix}\cos(30\unit{\degree})\\ \sin(30\unit{\degree})\end{pmatrix}
-            - \frac{e}{2}\begin{pmatrix}\cos(50\unit{\degree})\\ \sin(50\unit{\degree})\end{pmatrix}\right. \\
-            & \left. - \frac{-e}{2}\begin{pmatrix}\cos(150\unit{\degree})\\ \sin(150\unit{\degree})\end{pmatrix}
-            - \frac{e}{2}\begin{pmatrix}\cos(160\unit{\degree})\\ \sin(160\unit{\degree})\end{pmatrix}\right)
+        =&  \frac{k}{2^2}\left(-\frac{-e}{1}\begin{pmatrix}\cos(0\unit{\degree})\\ \sin(0\unit{\degree})\end{pmatrix}
+            - \frac{e}{1}\begin{pmatrix}\cos(30\unit{\degree})\\ \sin(30\unit{\degree})\end{pmatrix}
+            - \frac{e}{1}\begin{pmatrix}\cos(80\unit{\degree})\\ \sin(80\unit{\degree})\end{pmatrix}\right. \\
+            & \left. - \frac{-e}{1}\begin{pmatrix}\cos(130\unit{\degree})\\ \sin(130\unit{\degree})\end{pmatrix}
+            - \frac{e}{1}\begin{pmatrix}\cos(160\unit{\degree})\\ \sin(160\unit{\degree})\end{pmatrix}\right)
 \end{align*}
 
 \begin{align*}
     \vec{E}_{net}   =&  \frac{ke}{2^3}\left(\begin{pmatrix}\cos(0\unit{\degree})\\ \sin(0\unit{\degree})\end{pmatrix}
         - \begin{pmatrix}\cos(30\unit{\degree})\\ \sin(30\unit{\degree})\end{pmatrix}
-        - \begin{pmatrix}\cos(50\unit{\degree})\\ \sin(50\unit{\degree})\end{pmatrix}
-        + \begin{pmatrix}\cos(150\unit{\degree})\\ \sin(150\unit{\degree})\end{pmatrix}
+        - \begin{pmatrix}\cos(80\unit{\degree})\\ \sin(80\unit{\degree})\end{pmatrix}
+        + \begin{pmatrix}\cos(130\unit{\degree})\\ \sin(130\unit{\degree})\end{pmatrix}
         - \begin{pmatrix}\cos(160\unit{\degree})\\ \sin(160\unit{\degree})\end{pmatrix}\right)\\
-        =&  \frac{ke}{2^3} \begin{pmatrix}
-            1   - \frac{\sqrt{3}}{2}    - 0.6427876 - \frac{\sqrt{3}}{2}    + 0.9396926\\
-            0   - \frac{1}{2}           - 0.7660444 + \frac{1}{2}           - 0.3420201
+        =&  \frac{ke}{2^2} \begin{pmatrix}
+            1   - \frac{\sqrt{3}}{1}    - 0.1736482 - 0.6427876    + 0.9396926\\
+            0   - \frac{1}{1}           - 0.9848078 + 0.7660444    - 0.3420201
         \end{pmatrix}
-        =   \frac{ke}{2^3} \begin{pmatrix}
-            -0.4351458\\
-            -1.1080646
+        =   \frac{ke}{2^2} \begin{pmatrix}
+            0.2572314\\
+            -1.0607835
         \end{pmatrix}\\
-        =&  \frac{(8.99 \times 10^{9})(1.60217663 \times 10^{-19})}{8}\begin{pmatrix} -0.4351458\\ -1.1080646 \end{pmatrix}\\
-        =&  \begin{pmatrix} -7.834565 \times 10^{-11} \\ -1.9950104 \times 10^{-10} \end{pmatrix} \unit{\newton/\coulomb}
+        =&  \frac{(8.99 \times 10^{9})(1.60217663 \times 10^{-19})}{4}\begin{pmatrix} 0.2572314 \\ -1.0607835\end{pmatrix}\\
+        =&  \begin{pmatrix} 9.2626259 \times 10^{-11} \\ -3.8197666 \times 10^{-10} \end{pmatrix} \unit{\newton/\coulomb}
 \end{align*}
 
 \subsubsection*{(a) Magnitude}
 For the magnitude, we use the Pythagorean theorem.
 \begin{align*}
-    \sqrt{(-7.834565 \times 10^{-11}) + (-1.9950104 \times 10^{-10})} = \boxed{2.1433 \times 10^{-10} \unit{\newton/\coulomb}}
+    \sqrt{(9.2626259 \times 10^{-11}) + (-3.8197666 \times 10^{-10})} = \boxed{3.9304681 \times 10^{-10} \unit{\newton/\coulomb}}
 \end{align*}
 
 \subsubsection*{(b) Direction}
-For the direction, we use an arctangent, keeping in mind that the vector would be in the third quadrant. 
+For the direction, we use an arccosine, keeping in mind that the vector would be in the fourth quadrant. 
 \begin{equation*}
-    \theta = \arctan\left(\frac{-1.9950104 \times 10^{-10}}{(-7.834565 \times 10^{-11}}\right)
-        =   68.5597 \unit{\degree}  =   \boxed{248.5597 \unit{\degree}}
+    \theta = \arctan\left(\frac{9.2626259 \times 10^{-11}}{3.9304681 \times 10^{-10}}\right)
+        =   \boxed{283.6307 \unit{\degree}}
 \end{equation*}
 
 
