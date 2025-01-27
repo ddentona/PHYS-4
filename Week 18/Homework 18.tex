@@ -33,7 +33,7 @@
 \includegraphics[width=\textwidth]{picture_1.png}
 
 \subsection*{Solution}
-Since it's rotating about a point, the electrostatic force ($F_E = \frac{kq_1 q_2}{r^2}$)must be (equal to) the centripital force, the equation for which is $F_c = \frac{mv^2}{r}$.
+Since it's rotating about a point, the electrostatic force ($F_E = \frac{kq_1 q_2}{r^2}$)must be (equal to) the centripital force, the equation for which is $F_c = \frac{mv^2}{r}$. 
 \begin{gather*}
     F_E = F_c\\
     \frac{kqQ}{r^2} = \frac{mv^2}{r}
@@ -81,7 +81,7 @@ We will rank them by magnitude, which is always positive. I will rank the charge
 Number 1 has the same charges the same distances on each side, so the magnitude is zero. This means that it will be the least.\\
 Number 2 has opposite charges on each side, so the magnitude is very big. $(2) > (1)$\\
 Number 3 has three agreeing charges and one disagreeing charges. This means that its net electric field is greater than zero, but not as big as (2) where they all agree. $(2) > (3) > (1)$\\
-Number 4 has one disagreeing charge like number 3, but it is closer than number 3's field. This means that its field on the point has a greater impact on it because distance is inversely proportional to field strength. As such, the magnitude is less than the magnitude of (3). \boxed{(2) > (3) > (4) > (1)}
+Number 4 has one disagreeing charge like number 3, but it is farther than number 3's field. This means that its field on the point has a lesser impact on it because distance is inversely proportional to field strength. As such, the magnitude is more than the magnitude of (3). \boxed{(2) > (4) > (3) > (1)}
 
 
 \pagebreak
@@ -90,13 +90,13 @@ Number 4 has one disagreeing charge like number 3, but it is closer than number 
 
 \subsection*{Solution Part (a)}
 If the point charge is to the right, the closer charge being a greater charge will make the electric field always non-zero. In between the two charges, the $+q$ will push the electric field in the same direction as the $-3q$ charge will. To the left, the $-3q$ pushes it with an increasingly lower magnitude at a faster rate to which the $+q$ pushes it, so if there is a 0 point, it is \boxed{\text{to the left}}.
-\begin{equation*}
+\begin{gather*}
     E_1 = -E_2\\
     \frac{3kq}{r^2} = \frac{kq}{(r - 1)^2}\\
     3r^2 - 6r + 3 = r^2\\
     2r^2 - 6r + 3 = 0\\
     r = \frac{3 \pm \sqrt{3}}{2}
-\end{equation*}
+\end{gather*}
 This means that it would be $\frac{3 \pm \sqrt{3}}{2}$ times the distance between the particles to the left of the $-3q$ particle.
 
 \subsection*{Solution Part (b)}
@@ -125,7 +125,7 @@ We have the superposition principle and six charges, which I will number in reve
 \begin{align*}
     \vec{E}_{net}   =&  \vec{E}_1 + \vec{E}_2 + \vec{E}_3 + \vec{E}_4 + \vec{E}_5 + \vec{E}_6
         =   \frac{k}{r^2}\sum_{i=1}^{6} - q_i \hat{r_i}\\
-        =&  \frac{k}{2^2}\left(-\frac{-e}{1}\begin{pmatrix}\cos(0\unit{\degree})\\ \sin(0\unit{\degree})\end{pmatrix}
+        =&  \frac{k}{0.02^2}\left(-\frac{-e}{1}\begin{pmatrix}\cos(0\unit{\degree})\\ \sin(0\unit{\degree})\end{pmatrix}
             - \frac{e}{1}\begin{pmatrix}\cos(30\unit{\degree})\\ \sin(30\unit{\degree})\end{pmatrix}
             - \frac{e}{1}\begin{pmatrix}\cos(80\unit{\degree})\\ \sin(80\unit{\degree})\end{pmatrix}\right. \\
             & \left. - \frac{-e}{1}\begin{pmatrix}\cos(130\unit{\degree})\\ \sin(130\unit{\degree})\end{pmatrix}
@@ -133,12 +133,12 @@ We have the superposition principle and six charges, which I will number in reve
 \end{align*}
 
 \begin{align*}
-    \vec{E}_{net}   =&  \frac{ke}{2^3}\left(\begin{pmatrix}\cos(0\unit{\degree})\\ \sin(0\unit{\degree})\end{pmatrix}
+    \vec{E}_{net}   =&  \frac{ke}{0.02^2}\left(\begin{pmatrix}\cos(0\unit{\degree})\\ \sin(0\unit{\degree})\end{pmatrix}
         - \begin{pmatrix}\cos(30\unit{\degree})\\ \sin(30\unit{\degree})\end{pmatrix}
         - \begin{pmatrix}\cos(80\unit{\degree})\\ \sin(80\unit{\degree})\end{pmatrix}
         + \begin{pmatrix}\cos(130\unit{\degree})\\ \sin(130\unit{\degree})\end{pmatrix}
         - \begin{pmatrix}\cos(160\unit{\degree})\\ \sin(160\unit{\degree})\end{pmatrix}\right)\\
-        =&  \frac{ke}{2^2} \begin{pmatrix}
+        =&  \frac{ke}{0.02^2} \begin{pmatrix}
             1   - \frac{\sqrt{3}}{1}    - 0.1736482 - 0.6427876    + 0.9396926\\
             0   - \frac{1}{1}           - 0.9848078 + 0.7660444    - 0.3420201
         \end{pmatrix}
@@ -146,20 +146,20 @@ We have the superposition principle and six charges, which I will number in reve
             0.2572314\\
             -1.0607835
         \end{pmatrix}\\
-        =&  \frac{(8.99 \times 10^{9})(1.60217663 \times 10^{-19})}{4}\begin{pmatrix} 0.2572314 \\ -1.0607835\end{pmatrix}\\
-        =&  \begin{pmatrix} 9.2626259 \times 10^{-11} \\ -3.8197666 \times 10^{-10} \end{pmatrix} \unit{\newton/\coulomb}
+        =&  \frac{(8.99 \times 10^{9})(1.60217663 \times 10^{-19})}{4 \times 10^{-4}}\begin{pmatrix} 0.2572314 \\ -1.0607835\end{pmatrix}\\
+        =&  \begin{pmatrix} 9.2626259 \times 10^{-7} \\ -3.8197666 \times 10^{-6} \end{pmatrix} \unit{\newton/\coulomb}
 \end{align*}
 
 \subsubsection*{(a) Magnitude}
 For the magnitude, we use the Pythagorean theorem.
 \begin{align*}
-    \sqrt{(9.2626259 \times 10^{-11}) + (-3.8197666 \times 10^{-10})} = \boxed{3.9304681 \times 10^{-10} \unit{\newton/\coulomb}}
+    \sqrt{(9.2626259 \times 10^{-7}) + (-3.8197666 \times 10^{-6})} = \boxed{3.9304681 \times 10^{-6} \unit{\newton/\coulomb}}
 \end{align*}
 
 \subsubsection*{(b) Direction}
 For the direction, we use an arccosine, keeping in mind that the vector would be in the fourth quadrant. 
 \begin{equation*}
-    \theta = \arctan\left(\frac{9.2626259 \times 10^{-11}}{3.9304681 \times 10^{-10}}\right)
+    \theta = \arctan\left(\frac{9.2626259 \times 10^{-7}}{3.9304681 \times 10^{-6}}\right)
         =   \boxed{283.6307 \unit{\degree}}
 \end{equation*}
 
