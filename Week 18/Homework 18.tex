@@ -40,7 +40,7 @@ Since it's rotating about a point, the electrostatic force ($F_E = \frac{kq_1 q_
 \end{gather*}
 \begin{align*}
     Q   &=  \frac{mv^2r}{kq}
-        =   \frac{(8.00 \times 10^{-4} \unit{\kilo\gram})(50.0\unit{\meter/\second})^2(0.2\unit{\meter})}{(8.99 \times 10^{9})(4.00 \times 10^{-6})}
+        =   \frac{(8.00 \times 10^{-4} \unit{\kilo\gram})(50.0\unit{\meter/\second})^2(0.2\unit{\meter})}{(8.99 \times 10^{9})(4.00 \times 10^{-6} \unit{\coulomb})}
         =   \boxed{1.112 \times 10^{-5} \unit{\coulomb}}
 \end{align*}
 
@@ -98,9 +98,29 @@ If the point charge is to the right, the closer charge being a greater charge wi
     r = \frac{3 \pm \sqrt{3}}{2}
 \end{gather*}
 This means that it would be $\frac{3 \pm \sqrt{3}}{2}$ times the distance between the particles to the left of the $-3q$ particle.
-
+\pagebreak
 \subsection*{Solution Part (b)}
-Yes, anywhere the distances cancel each other out where the above equation works when using the vector notation.
+Anywhere the electric fields cancel each other out where the above equation works when using the vector notation. We could try to calculate whether this is possible.\\
+We start with the y-vectors.
+\begin{gather*}
+    \frac{kq}{r_1^3} + \frac{k*(-3q)}{r_2^3} = 0\\
+    \frac{1}{r_1^3} = \frac{3}{r_2^3}\\
+    3r_1^3 = r_2^3\\
+    r_2 = r_1 \sqrt[3]{3}
+\end{gather*}
+
+We can then do what we can with the x-vectors, assuming that the charges are $s$ apart.
+\begin{gather*}
+    E_1 = -E_2\\
+    \frac{3kq(x - s)}{r_2^3} = \frac{kqx}{r_1^3}\\
+    3(x - s)r_1^3 = x r_2^3\\
+    3(x - s)r_1^3 = x (r_1 \sqrt[3]{3})^3\\
+    3x r_1^3 - 3s r_1^3 = 3x r_1^3\\
+    x - s = x\\
+    s = 0
+\end{gather*}
+
+Since the solution we got was $s = 0$, which would have to superimpose partcles and which is on the axis, there is \boxed{\text{no point}}.
 
 \pagebreak
 \section*{Chapter 22, Problem 8}
@@ -153,7 +173,7 @@ We have the superposition principle and six charges, which I will number in reve
 \subsubsection*{(a) Magnitude}
 For the magnitude, we use the Pythagorean theorem.
 \begin{align*}
-    \sqrt{(9.2626259 \times 10^{-7}) + (-3.8197666 \times 10^{-6})} = \boxed{3.9304681 \times 10^{-6} \unit{\newton/\coulomb}}
+    \sqrt{(9.2626259 \times 10^{-7})^2 + (-3.8197666 \times 10^{-6})^2} = \boxed{3.9304681 \times 10^{-6} \unit{\newton/\coulomb}}
 \end{align*}
 
 \subsubsection*{(b) Direction}
