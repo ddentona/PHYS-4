@@ -1,6 +1,7 @@
 \documentclass[12pt]{article}
 \usepackage{amsmath}
 \usepackage{array}
+\usepackage[thinc]{esdiff}
 % \usepackage{gensymb}
 \usepackage{geometry}
 \usepackage{graphicx}
@@ -34,7 +35,9 @@ Figure 22-22 shows three arrangements of electric field lines. In each arrangeme
 \includegraphics[width=\textwidth]{picture_1.png}
 
 \subsection*{Solution}
-
+Case (a) has the particle in a constant high-magnitude electric field.\\
+Case (b) has the particle in an electric field whose magnitude starts high but decreases, resulting in lower linear momentum from lower total force applied. $(a) > (b)$.\\
+Case (c) has the particle in a constant-magnitude electric field with a lower electric field to (a) and equivalent to the end of (b). \boxed{(a) > (b) > (c)}. 
 
 \pagebreak
 \section{Question 6}
@@ -45,8 +48,23 @@ Figure 22-22 shows three arrangements of electric field lines. In each arrangeme
 \end{wrapfigure}
 In Fig. 22-27, two identical circular nonconducting rings are centered on the same line with their planes perpendicular to the line. Each ring has charge that is uniformly distributed along its circumference. The rings each produce electric fields at points along the line. For three situations, the charges on rings $A$ and $B$ are, respectively, (1) $q_0$ and $q_0$, (2) $-q_0$ and $-q_0$, and (3) $-q_0$ and $q_0$. Rank the situations according to the magnitude of the net electric field at (a) point $P_1$ midway between the rings, (b) point $P_2$ at the center of ring B, and (c) point $P_3$ to the right of ring B, greatest first.
 
-\subsection*{Solution}
+\subsection{Solution for $q_0$ and $q_0$}
+\boxed{P_3 > P_2 > P_1}\\
+$P_1$: A pushes right, B pushes left. Net of 0.\\
+$P_2$: A pushes right, B pushes not. Net of weak right.\\
+$P_3$: A pushes right, B pushes right. Net of strong right.
 
+\subsection{Solution for $-q_0$ and $-q_0$}
+\boxed{P_3 > P_2 > P_1}\\
+$P_1$: A pushes left, B pushes right. Net of 0.\\
+$P_2$: A pushes left, B pushes not. Net of weak left.\\
+$P_3$: A pushes left, B pushes left. Net of strong left.
+
+\subsection{Solution for $-q_0$ and $q_0$}
+\boxed{P_1 > P_3 > P_2}\\
+$P_1$: A pushes left, B pushes left. Net of strong left.\\
+$P_2$: A pushes left, B pushes not. Net of weak left.\\
+$P_3$: A pushes weak left, B pushes right. Net of mid right.
 
 \pagebreak
 \section{Question 9}
@@ -79,16 +97,65 @@ Figure 22-32 shows three rods, each with the same charge Q spread uniformly alon
     \includegraphics[width=0.35\textwidth]{picture_5.png} 
     % \label{fig:wrapfig}
 \end{wrapfigure}
-A thin nonconducting rod with a uniform distribution of positive charge Q is bent into a complete circle of radius R (Fig. 22-48). The central perpendicular axis through the ring is a z axis, with the origin at the center of the ring. What is the magnitude of the electric field due to the rod at (a) z = 0 and (b) z = $\inf$? (c) In terms of R, at what positive value of z is that magnitude maximum? (d) If R = 2.00 cm and Q = 4.00 C, what is the maximum magnitude?
+A thin nonconducting rod with a uniform distribution of positive charge Q is bent into a complete circle of radius R (Fig. 22-48). The central perpendicular axis through the ring is a z axis, with the origin at the center of the ring. What is the magnitude of the electric field due to the rod at (a) z = 0 and (b) z = $\infty$? (c) In terms of R, at what positive value of z is that magnitude maximum? (d) If R = 2.00 cm and Q = 4.00 C, what is the maximum magnitude?
 
 \subsection*{Solution}
+\subsubsection*{(a) z = 0}
+In the chapter, we established a formula for the electric field from a ring.
+\begin{equation*}
+    E_{ring}(z) =   \frac{kqz}{(z^2 + R^2)^{3/2}}
+\end{equation*}
 
+As such, we can set a value of z.
+\begin{equation*}
+    E_{ring}(0) =   \frac{kq*0}{(0^2 + R^2)^{3/2}}
+        =   \boxed{0}
+\end{equation*}
+
+\subsubsection*{(b) z = $\infty$}
+We have the equation, established in part (a). Both top and bottom have $\lim_{z\rightarrow\infty}$ equal to $\infty$, so we can use l'Hopital's rule to find the limit.
+\begin{align*}
+    E_{ring}(z) &=  \frac{\diff{}{z}(kqz)}{\diff{}{z}\left((z^2 + R^2)^{3/2}\right)}
+        =   \frac{kq}{2z * \frac{3}{2}(z^2 + R^2)^{1/2}}\\
+    E_{ring}(\infty)    &=  \lim_{z\rightarrow\infty} \frac{kq}{3z (z^2 + R^2)^{1/2}}
+        =   \boxed{0}
+\end{align*}
+
+\pagebreak
+\subsubsection*{(c) z for maximum magnitude in terms of R}
+We can find this by taking the derivatve of the magnitude of the electric field, then find the values for which the derivative is 0.
+\begin{align*}
+    \diff{E_{ring}(z)}{z}   &=  \diff{}{z}\frac{kqz}{(z^2 + R^2)^{3/2}}
+        =   \frac{kq(z^2 + R^2)^{3/2} - 3kqz^2 (z^2 + R^2)^{1/2}}{(z^2 + R^2)^{3}}\\
+        &=  \frac{kq(z^2 + R^2) - 3kqz^2}{(z^2 + R^2)^{5/2}}
+        =   \frac{kqR^2 - 2kqz^2}{(z^2 + R^2)^{5/2}}
+        =   \frac{kq(R^2 - 2z^2)}{(z^2 + R^2)^{5/2}}
+\end{align*}
+
+If it is 0, then \(R^2 - 2z^2 = 0\).
+\begin{gather*}
+    R^2 - 2z^2 = 0\\
+    R^2 =   2z^2\\
+    z^2 =   \frac{R^2}{2}\\
+    \boxed{z   =   \frac{R}{\sqrt{2}}}
+\end{gather*}
+
+\subsubsection*{(d) Maximum value at R = 2.00 cm and Q = 4.00 C}
+We know from the previous problem that the maximum value of $E$ comes from $z = \frac{R}{\sqrt{2}}$. We can plug this in with the other known values for the maximum value of the electric field.
+\begin{align*}
+    E_{ring}(z) &=  \frac{(8.99 \times 10^9)*4*\frac{2 \times 10^{-2}}{\sqrt{2}}}{((\frac{2 \times 10^{-2}}{\sqrt{2}})^2 + (2 \times 10^{-2})^2)^{3/2}}
+        =   \frac{(8.99 \times 10^9)*(4\sqrt{2} \times 10^{-2})}{((2 \times 10^{-4} + 4 \times 10^{-4})^{3/2}}\\
+        &=  \frac{35.96\sqrt{2} \times 10^{7}}{(6 \times 10^{-4})^{3/2}}
+        =   \frac{35.96\sqrt{2} \times 10^7}{6\sqrt{6} \times 10^{-6}}
+        =   5.99\bar{3}\frac{\sqrt{3}}{3} \times 10^{13}\\
+        &=  \boxed{1.99\bar{7} \sqrt{3} \times 10^{13} \unit{\newton/\coulomb}}
+\end{align*}
 
 \pagebreak
 \section{Problem 26}
-\begin{wrapfigure}{r}{0.5\textwidth}
+\begin{wrapfigure}{r}{0.2\textwidth}
     \vspace{-30pt}
-    \includegraphics[width=0.5\textwidth]{picture_3.png} 
+    \includegraphics[width=0.2\textwidth]{picture_6.png} 
     % \label{fig:wrapfig}
 \end{wrapfigure}
 Fig. 22-50, a thin glass rod forms a semicircle of radius $r = 5.00 \unit{\centi\meter}$. Charge is uniformly distributed along the rod, with $+q = 4.50 \unit{\pico\coulomb}$ in the upper half and $-q = -4.50 \unit{\pico\coulomb}$ in the lower half. What are the (a) magnitude and (b) direction (relative to the positive direction of the x axis) of the electric field E at P, the center of the semicircle?
