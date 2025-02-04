@@ -76,7 +76,9 @@ $P_3$: A pushes weak left, B pushes right. Net of mid right.
 Figure 22-28 shows two disks and a flat ring, each with the same uniform charge Q. Rank the objects according to the magnitude of the electric field they create at points $P$ (which are at the same vertical heights), greatest first.
 
 \subsection*{Solution}
-
+(a) The charge is distributed about a small radius.\\
+(b) The charge is distributed about a large radius, giving a weaker electric field. $(a) > (b)$\\
+(c) The charge is distributed about a large radius but not a small inner radius, giving an even weaker electric fielddue to greater distance. \boxed{(a) > (b) > (c)}
 
 \pagebreak
 \section{Question 13}
@@ -88,6 +90,9 @@ Figure 22-28 shows two disks and a flat ring, each with the same uniform charge 
 Figure 22-32 shows three rods, each with the same charge Q spread uniformly along its length. Rods $a$ (of length $L$) and $b$ (of length $\frac{L}{2}$) are straight, and points $P$ are aligned with their midpoints. Rod c (of length $\frac{L}{2}$) forms a complete circle about point $P$. Rank the rods according to the magnitude of the electric field they create at points $P$, greatest first.
 
 \subsection*{Solution}
+(a) The charge is distributed below the point along a large distance, giving a small electric field.\\
+(b) The same charge is distributed below the point along a smaller distance, giving a more condensed and consequently a larger electric field. $(b) > (a)$\\
+(c) The same charge is applied from all directions. It consequently cancels out in every direction. \boxed{(b) > (a) > (c)}
 
 
 \pagebreak
@@ -97,7 +102,7 @@ Figure 22-32 shows three rods, each with the same charge Q spread uniformly alon
     \includegraphics[width=0.35\textwidth]{picture_5.png} 
     % \label{fig:wrapfig}
 \end{wrapfigure}
-A thin nonconducting rod with a uniform distribution of positive charge Q is bent into a complete circle of radius R (Fig. 22-48). The central perpendicular axis through the ring is a z axis, with the origin at the center of the ring. What is the magnitude of the electric field due to the rod at (a) z = 0 and (b) z = $\infty$? (c) In terms of R, at what positive value of z is that magnitude maximum? (d) If R = 2.00 cm and Q = 4.00 C, what is the maximum magnitude?
+A thin nonconducting rod with a uniform distribution of positive charge Q is bent into a complete circle of radius R (Fig. 22-48). The central perpendicular axis through the ring is a z axis, with the origin at the center of the ring. What is the magnitude of the electric field due to the rod at (a) z = 0 and (b) z = $\infty$? (c) In terms of R, at what positive value of z is that magnitude maximum? (d) If R = 2.00 cm and Q = 4.00 \unit{\micro\coulomb}, what is the maximum magnitude?
 
 \subsection*{Solution}
 \subsubsection*{(a) z = 0}
@@ -143,12 +148,13 @@ If it is 0, then \(R^2 - 2z^2 = 0\).
 \subsubsection*{(d) Maximum value at R = 2.00 cm and Q = 4.00 C}
 We know from the previous problem that the maximum value of $E$ comes from $z = \frac{R}{\sqrt{2}}$. We can plug this in with the other known values for the maximum value of the electric field.
 \begin{align*}
-    E_{ring}(z) &=  \frac{(8.99 \times 10^9)*4*\frac{2 \times 10^{-2}}{\sqrt{2}}}{((\frac{2 \times 10^{-2}}{\sqrt{2}})^2 + (2 \times 10^{-2})^2)^{3/2}}
-        =   \frac{(8.99 \times 10^9)*(4\sqrt{2} \times 10^{-2})}{((2 \times 10^{-4} + 4 \times 10^{-4})^{3/2}}\\
-        &=  \frac{35.96\sqrt{2} \times 10^{7}}{(6 \times 10^{-4})^{3/2}}
-        =   \frac{35.96\sqrt{2} \times 10^7}{6\sqrt{6} \times 10^{-6}}
-        =   5.99\bar{3}\frac{\sqrt{3}}{3} \times 10^{13}\\
-        &=  \boxed{1.99\bar{7} \sqrt{3} \times 10^{13} \unit{\newton/\coulomb}}
+    E_{ring}(z) &=  \frac{(8.99 \times 10^9)*(4 \times 10^{-6})*\frac{2 \times 10^{-2}}{\sqrt{2}}}{((\frac{2 \times 10^{-2}}{\sqrt{2}})^2 + (2 \times 10^{-2})^2)^{3/2}}
+        =   \frac{(8.99 \times 10^9)*(4\sqrt{2} \times 10^{-8})}{((2 \times 10^{-4} + 4 \times 10^{-4})^{3/2}}\\
+        &=  \frac{35.96\sqrt{2} \times 10^{1}}{(6 \times 10^{-4})^{3/2}}
+        =   \frac{35.96\sqrt{2} \times 10^1}{6\sqrt{6} \times 10^{-6}}
+        =   5.99\bar{3}\frac{\sqrt{3}}{3} \times 10^{7}\\
+        &=  1.99\bar{7} \sqrt{3} \times 10^{7} \unit{\newton/\coulomb}
+        =   \boxed{3.460 \times 10^{7} \unit{\newton/\coulomb}}
 \end{align*}
 
 \pagebreak
@@ -161,6 +167,38 @@ We know from the previous problem that the maximum value of $E$ comes from $z = 
 Fig. 22-50, a thin glass rod forms a semicircle of radius $r = 5.00 \unit{\centi\meter}$. Charge is uniformly distributed along the rod, with $+q = 4.50 \unit{\pico\coulomb}$ in the upper half and $-q = -4.50 \unit{\pico\coulomb}$ in the lower half. What are the (a) magnitude and (b) direction (relative to the positive direction of the x axis) of the electric field E at P, the center of the semicircle?
 
 \subsection*{Solution}
+\subsubsection*{(a) Magnitude}
+We begin with our basic equation for the electric field, which we can then separate into the two halfs of the half-circle.
+\begin{equation*}
+    \vec{E}_{net}   =   \int_{\frac{\pi}{2}}^{\frac{3\pi}{2}} d\vec{E}
+        =   \int_{\frac{\pi}{2}}^{\pi} d\vec{E} + \int_{\pi}^{\frac{3\pi}{2}} d\vec{E}
+\end{equation*}
 
+We then have equations for the different $d\vec{E}$.
+\[ \vec{E} = \frac{kq}{r^2}\hat{r} \rightarrow d\vec{E} = \frac{kq}{r^2}\begin{pmatrix} -\cos(\theta)\\ -\sin(\theta) \end{pmatrix} d\theta \]
+\begin{equation*}
+    \vec{E}_{net}   =   \int_{\frac{\pi}{2}}^{\pi} \frac{kq}{r^2}\begin{pmatrix} -\cos(\theta)\\ -\sin(\theta) \end{pmatrix} d\theta + \int_{\pi}^{\frac{3\pi}{2}} \frac{k(-q)}{r^2}\begin{pmatrix} -\cos(\theta)\\ -\sin(\theta) \end{pmatrix} d\theta
+\end{equation*}
+
+We can now finish by integrating.
+\begin{align*}
+    \vec{E}_{net}   &=  \frac{kq}{r^2} \int_{\frac{\pi}{2}}^{\pi} \begin{pmatrix} -\cos(\theta)\\ -\sin(\theta) \end{pmatrix} d\theta + \frac{kq}{r^2} \int_{\pi}^{\frac{3\pi}{2}} \begin{pmatrix} \cos(\theta)\\ \sin(\theta) \end{pmatrix} d\theta\\
+        &=  \frac{kq}{r^2}\left[ \begin{pmatrix} -\sin(\theta)\\ \cos(\theta) \end{pmatrix}_{\frac{\pi}{2}}^{\pi} + \begin{pmatrix} \sin(\theta)\\ -\cos(\theta) \end{pmatrix}_{\pi}^{\frac{3\pi}{2}} \right]\\
+        &=  \frac{kq}{r^2}\left[ \begin{pmatrix} 1\\ -1 \end{pmatrix} + \begin{pmatrix} -1 \\ -1 \end{pmatrix} \right]
+        =   \frac{kq}{r^2}\begin{pmatrix} 0\\-2 \end{pmatrix}
+\end{align*}
+
+Lastly, we can simply plug in values.
+\begin{align*}
+    \vec{E}_{net}   &=  \frac{kq}{r^2}\begin{pmatrix} 0\\-2 \end{pmatrix}
+        =   \frac{(8.99 \times 10^{9})*(4.50 \times 10^{-12})}{(5 \times 10^{-2})^2}\begin{pmatrix} 0\\-2 \end{pmatrix}\\
+        &=  \frac{40.455 \times 10^{-3}}{25 \times 10^{-4}}\begin{pmatrix} 0\\-2 \end{pmatrix}
+        =   16.182 * \begin{pmatrix} 0\\-2 \end{pmatrix} = \begin{pmatrix} 0\\-32.364 \end{pmatrix}
+\end{align*}
+
+This means that the magnitude is \boxed{32.364 \unit{\newton/\coulomb}}.
+
+\subsubsection*{Direction}
+Relative to the positive direction of the x-axis, the direction is \boxed{\frac{3\pi}{2}}
 
 \end{document}
