@@ -17,6 +17,8 @@
 \usepgfplotslibrary{external}
 % \tikzexternalize
 
+\renewcommand\thesubsection{\alph{subsection}}
+
 \begin{document}
 
 \DeclareSIUnit{\mile}{mi}
@@ -29,7 +31,7 @@
 
 \maketitle
 
-\pagebreak
+
 \section{Problem 33}
 \begin{wrapfigure}{r}{0.5\textwidth}
     \vspace{-30pt}
@@ -39,33 +41,51 @@
 Fig. 22-56, a "semi-infinite" nonconducting rod (that is, infinite in one direction only) has uniform linear charge density $\lambda$. Show that the electric field $E_p$ at point $P$ makes an angle of 45\unit{\degree} with the rod and that this result is independent of the distance $R$. (Hint: separately find the component of $E_p$ parallel to the rod and the component perpendicular to the rod.)
 
 \subsection{Solution}
-We will be using vector formatting. We can use the formula for electric field at a point. We also find the formula for the density.
+We will be using vector formatting. We can use the formula for electric field at a point. We also find the formula for the charge density.
 \begin{align*}
     \lambda &=  \frac{Q}{x}\\
     dq  &=  \lambda dx\\
-    \vec{E} &=  \int_{0}^{\infty} d\vec{E}
-        =   \int_{0}^{\infty} \frac{k dq}{r^2} \hat{r}
-        =   \int_{0}^{\infty} \frac{k \lambda}{r^2} \hat{r} dx
-        =   \int_{0}^{\infty} \frac{k \lambda}{r^3} \vec{r} dx
-        =   \int_{0}^{\infty} \frac{k \lambda}{(x^2 + y^2)^{3/2}} \begin{pmatrix}x\\-y\end{pmatrix} dx\\
-        &=  \int_{0}^{\infty} \frac{k \lambda}{(x^2 + y^2)^{3/2}} \begin{pmatrix}x\\-y\end{pmatrix} dx
-        =   k \lambda \int_{0}^{\infty} \frac{1}{(x^2 + y^2)^{3/2}} \begin{pmatrix}x\\-y\end{pmatrix} dx\\
-        &=  k \lambda \int_{0}^{\infty} \frac{x}{(x^2 + y^2)^{3/2}} \begin{pmatrix}1\\0\end{pmatrix} - \frac{y}{(x^2 + y^2)^{3/2}} \begin{pmatrix}0\\1\end{pmatrix} dx\\
-        &=  k \lambda \left[-\frac{1}{\sqrt{x^2 + y^2}} \begin{pmatrix}1\\0\end{pmatrix} - \frac{xy}{y^2\sqrt{x^2 + y^2}} \begin{pmatrix}0\\1\end{pmatrix}\right]_{x=0}^{\infty}\\
-        &=  -k \lambda \lim_{n \rightarrow \infty}\left(\left[\frac{1}{\sqrt{x^2 + y^2}} \begin{pmatrix}1\\0\end{pmatrix} + \frac{x}{y\sqrt{x^2 + y^2}} \begin{pmatrix}0\\1\end{pmatrix}\right]_{x=0}^{n}\right)\\
-        &=  -k \lambda \lim_{n \rightarrow \infty}\left(\left[\frac{1}{\sqrt{n^2 + y^2}} - \frac{1}{\sqrt{0^2 + y^2}}\right] \begin{pmatrix}1\\0\end{pmatrix} + \left[\frac{n}{y\sqrt{n^2 + y^2}} - \frac{0}{y\sqrt{0^2 + y^2}}\right] \begin{pmatrix}0\\1\end{pmatrix}\right)
+    \vec{E} &=  \int_{0}^{R} d\vec{E}
+        =   \int_{0}^{R} \frac{k dq}{r^2} \hat{r}
+        =   \int_{0}^{R} \frac{k \lambda}{r^2} \hat{r} dx
+        =   \int_{0}^{R} \frac{k \lambda}{r^3} \vec{r} dx
+        =   \int_{0}^{R} \frac{k \lambda}{(x^2 + y^2)^{3/2}} \begin{pmatrix}x\\-y\end{pmatrix} dx\\
+        &=  \int_{0}^{R} \frac{k \lambda}{(x^2 + y^2)^{3/2}} \begin{pmatrix}x\\-y\end{pmatrix} dx
+        =   k \lambda \int_{0}^{R} \frac{1}{(x^2 + y^2)^{3/2}} \begin{pmatrix}x\\-y\end{pmatrix} dx\\
+        &=  k \lambda \int_{0}^{R} \frac{x}{(x^2 + y^2)^{3/2}} \begin{pmatrix}1\\0\end{pmatrix} - \frac{y}{(x^2 + y^2)^{3/2}} \begin{pmatrix}0\\1\end{pmatrix} dx\\
+        &=  k \lambda \left[-\frac{1}{\sqrt{x^2 + y^2}} \begin{pmatrix}1\\0\end{pmatrix} - \frac{xy}{y^2\sqrt{x^2 + y^2}} \begin{pmatrix}0\\1\end{pmatrix}\right]_{x=0}^{R}\\
+        &=  -k\lambda \left[\left(\frac{1}{\sqrt{R^2 + y^2}} - \frac{1}{\sqrt{0^2 + y^2}}\right) \begin{pmatrix}1\\0\end{pmatrix} + \left(\frac{R}{y\sqrt{R^2 + y^2}} - \frac{0}{y\sqrt{0^2 + y^2}}\right) \begin{pmatrix}0\\1\end{pmatrix}\right]\\
+        &=  -k\lambda \left[\left(\frac{1}{\sqrt{R^2 + y^2}} - \frac{1}{y}\right) \begin{pmatrix}1\\0\end{pmatrix} + \frac{R}{y\sqrt{R^2 + y^2}} \begin{pmatrix}0\\1\end{pmatrix}\right]\\
+        &=  -k\lambda \left[\frac{y - \sqrt{R^2 + y^2}}{y\sqrt{R^2 + y^2}} \begin{pmatrix}1\\0\end{pmatrix} + \frac{R}{y\sqrt{R^2 + y^2}} \begin{pmatrix}0\\1\end{pmatrix}\right]\\
+        &=  -k\lambda \left[\frac{y^2 - R^2 - y^2}{y\sqrt{R^2 + y^2}(y + \sqrt{R^2 + y^2})} \begin{pmatrix}1\\0\end{pmatrix} + \frac{R}{y\sqrt{R^2 + y^2}} \begin{pmatrix}0\\1\end{pmatrix}\right]\\
+        &=  -k\lambda \left[\frac{-R^2}{y^2\sqrt{R^2 + y^2} + y(R^2 + y^2)} \begin{pmatrix}1\\0\end{pmatrix} + \frac{R}{y\sqrt{R^2 + y^2}} \begin{pmatrix}0\\1\end{pmatrix}\right]
 \end{align*}
-\\ \\
-We next turn the limits that extend and values that extend to zero to zeroes. For infinities, we also apply l'Hopital's rule. 
+
+From here on out, we can focus only on the x-component.
 \begin{align*}
-    \vec{E} &=
-        -k \lambda \lim_{n \rightarrow \infty}\left(-\frac{1}{y}\begin{pmatrix}1\\0\end{pmatrix} + \frac{\sqrt{n^2 + y^2}}{ny^2} \begin{pmatrix}0\\1\end{pmatrix}\right)
+    E_x &=  -k\lambda \frac{-R^2}{y^2\sqrt{R^2 + y^2} + y(R^2 + y^2)}
+        =   \frac{k\lambda R^2}{y} \cdot \frac{1}{y\sqrt{R^2 + y^2} + R^2 + y^2}
 \end{align*}
 
 \pagebreak
 \section{Problem 50}
-At some instant the velocity components of an electron moving between two charged parallel plates are $U_x = 1.5 \times 10^5 \unit{\meter/\second}$ and $v_y = 3.0 \times 10^3 \unit{\meter/\second}$. Suppose the electric field between the plates is uniform and given by $\vec{E} = (120 \unit{\newton/\coulomb})\hat{j}$. In unit-vector notation, what are (a) the electron's acceleration in that field and (b) the electron's velocity when its x coordinate has changed by 2.0 cm?
+At some instant the velocity components of an electron moving between two charged parallel plates are $v_x = 1.5 \times 10^5 \unit{\meter/\second}$ and $v_y = 3.0 \times 10^3 \unit{\meter/\second}$. Suppose the electric field between the plates is uniform and given by $\vec{E} = (120 \unit{\newton/\coulomb})\hat{j}$. In unit-vector notation, what are (a) the electron's acceleration in that field and (b) the electron's velocity when its x coordinate has changed by 2.0 cm?
 
+\subsection{Solution: Acceleration in the field}
+The acceleration can be found with the formula from Newton's second law \(\vec{a} = \frac{\vec{F}}{m}\).
+With the relationship between the force and the electric field \(\vec{F} = q\vec{E}\), we can get the updated formula \(\vec{a} = \frac{q\vec{E}}{m}\). 
+We can plug values into that relationship to find the solution, keeping in mind that the mass of an electron is $9.109 \times 10^{-31} \unit{\kilo\gram}$ and the charge of an electron is $-1.602 \times 10^{-19} \unit{\coulomb}$.
+\begin{align*}
+    \vec{a} &=  \frac{q\vec{E}}{m} = \frac{(-1.602 \times 10^{-19} \unit{\coulomb})(120 \unit{\newton/\coulomb})\hat{j}}{9.109 \times 10^{-31}\ \unit{\kilo\gram}}\\
+        &=  -\frac{1.602 * 1.20}{9.109} \times 10^{14}\hat{j}\ \unit{\meter/\second^2}\\
+        &=  -\frac{1.9224}{9.109} \times 10^{14}\hat{j}\ \unit{\meter/\second^2}
+        =   \boxed{-2.110 \times 10^{13} \hat{j}\ \unit{\meter/\second^2}}
+\end{align*}
+
+\subsection{Solution: Velocity after going 2.0 cm}
+We first calculate the time that the electrin would take to travel 2.0 cm (or 0.02 m).
+
+\pagebreak
 \section{Problem 55}
 A uniform electric field exists in a region between two oppositely charged plates. An electron is released from rest at the surface of the negatively charged plate and strikes the surface of the opposite plate, 2.0 cm away, in a time $1.5 \times 10^{-8} \unit{\second}$. (a) What is the speed of the electron as it strikes the second plate? (b) What is the magnitude of the electric field $\vec{E}$?
 
