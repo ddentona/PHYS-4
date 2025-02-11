@@ -45,20 +45,17 @@ We will be using vector formatting. We can use the formula for electric field at
 \begin{align*}
     \lambda &=  \frac{Q}{x} \rightarrow
     dq  =   \lambda dx\\
-    \vec{E} &=  \int_{0}^{R} d\vec{E}
-        =   \int_{0}^{R} \frac{k dq}{r^2} \hat{r}
-        =   \int_{0}^{R} \frac{k \lambda}{r^2} \hat{r} dx
-        =   \int_{0}^{R} \frac{k \lambda}{r^3} \vec{r} dx
-        =   \int_{0}^{R} \frac{k \lambda}{(x^2 + y^2)^{3/2}} \begin{pmatrix}x\\-y\end{pmatrix} dx\\
-        &=  \int_{0}^{R} \frac{k \lambda}{(x^2 + y^2)^{3/2}} \begin{pmatrix}x\\-y\end{pmatrix} dx
-        =   k \lambda \int_{0}^{R} \frac{1}{(x^2 + y^2)^{3/2}} \begin{pmatrix}x\\-y\end{pmatrix} dx\\
-        &=  k \lambda \int_{0}^{R} \frac{x}{(x^2 + y^2)^{3/2}} \begin{pmatrix}1\\0\end{pmatrix} - \frac{y}{(x^2 + y^2)^{3/2}} \begin{pmatrix}0\\1\end{pmatrix} dx\\
-        &=  k \lambda \left[-\frac{1}{\sqrt{x^2 + y^2}} \begin{pmatrix}1\\0\end{pmatrix} - \frac{xy}{y^2\sqrt{x^2 + y^2}} \begin{pmatrix}0\\1\end{pmatrix}\right]_{x=0}^{R}\\
-        &=  -k\lambda \left[\left(\frac{1}{\sqrt{R^2 + y^2}} - \frac{1}{\sqrt{0^2 + y^2}}\right) \begin{pmatrix}1\\0\end{pmatrix} + \left(\frac{R}{y\sqrt{R^2 + y^2}} - \frac{0}{y\sqrt{0^2 + y^2}}\right) \begin{pmatrix}0\\1\end{pmatrix}\right]\\
-        &=  -k\lambda \left[\left(\frac{1}{\sqrt{R^2 + y^2}} - \frac{1}{y}\right) \begin{pmatrix}1\\0\end{pmatrix} + \frac{R}{y\sqrt{R^2 + y^2}} \begin{pmatrix}0\\1\end{pmatrix}\right]\\
-        &=  -k\lambda \left[\frac{y - \sqrt{R^2 + y^2}}{y\sqrt{R^2 + y^2}} \begin{pmatrix}1\\0\end{pmatrix} + \frac{R}{y\sqrt{R^2 + y^2}} \begin{pmatrix}0\\1\end{pmatrix}\right]\\
-        &=  -k\lambda \left[\frac{y^2 - R^2 - y^2}{y\sqrt{R^2 + y^2}(y + \sqrt{R^2 + y^2})} \begin{pmatrix}1\\0\end{pmatrix} + \frac{R}{y\sqrt{R^2 + y^2}} \begin{pmatrix}0\\1\end{pmatrix}\right]\\
-        &=  -k\lambda \left[\frac{-R^2}{y^2\sqrt{R^2 + y^2} + y(R^2 + y^2)} \begin{pmatrix}1\\0\end{pmatrix} + \frac{R}{y\sqrt{R^2 + y^2}} \begin{pmatrix}0\\1\end{pmatrix}\right]
+    \vec{E} &=  \int_{0}^{\infty} d\vec{E}
+        =   \int_{0}^{\infty} \frac{k dq}{r^2} \hat{r}
+        =   \int_{0}^{\infty} \frac{k \lambda}{r^2} \hat{r} dx
+        =   \int_{0}^{\infty} \frac{k \lambda}{r^3} \vec{r} dx
+        =   \int_{0}^{\infty} \frac{k \lambda}{(x^2 + R^2)^{3/2}} \begin{pmatrix}x\\-R\end{pmatrix} dx\\
+        &=  \int_{0}^{\infty} \frac{k \lambda}{(x^2 + R^2)^{3/2}} \begin{pmatrix}x\\-R\end{pmatrix} dx
+        =   k \lambda \int_{0}^{\infty} \frac{1}{(x^2 + R^2)^{3/2}} \begin{pmatrix}x\\-R\end{pmatrix} dx\\
+        &=  k \lambda \int_{0}^{\infty} \frac{x}{(x^2 + R^2)^{3/2}} \begin{pmatrix}1\\0\end{pmatrix} - \frac{R}{(x^2 + R^2)^{3/2}} \begin{pmatrix}0\\1\end{pmatrix} dx\\
+        &=  k \lambda \left[-\frac{1}{\sqrt{x^2 + R^2}} \begin{pmatrix}1\\0\end{pmatrix} - \frac{xR}{R^2\sqrt{x^2 + R^2}} \begin{pmatrix}0\\1\end{pmatrix}\right]_{x=0}^{\infty}\\
+        &=  -k\lambda \left[\left(\frac{1}{\sqrt{\infty^2 + R^2}} - \frac{1}{\sqrt{0^2 + R^2}}\right) \begin{pmatrix}1\\0\end{pmatrix} + \left(\frac{\infty}{R\sqrt{\infty^2 + R^2}} - \frac{0}{R\sqrt{0^2 + R^2}}\right) \begin{pmatrix}0\\1\end{pmatrix}\right]\\
+        &=  -k\lambda \left[-\frac{1}{R} \begin{pmatrix}1\\0\end{pmatrix} + \right]
 \end{align*}
 
 From here on out, we can focus only on the x-component.
