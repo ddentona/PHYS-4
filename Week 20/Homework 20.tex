@@ -47,22 +47,35 @@ We will be using vector formatting. We can use the formula for electric field at
     dq  =   \lambda dx\\
     \vec{E} &=  \int_{0}^{\infty} d\vec{E}
         =   \int_{0}^{\infty} \frac{k dq}{r^2} \hat{r}
-        =   \int_{0}^{\infty} \frac{k \lambda}{r^2} \hat{r} dx
-        =   \int_{0}^{\infty} \frac{k \lambda}{r^3} \vec{r} dx
-        =   \int_{0}^{\infty} \frac{k \lambda}{(x^2 + R^2)^{3/2}} \begin{pmatrix}x\\-R\end{pmatrix} dx\\
-        &=  \int_{0}^{\infty} \frac{k \lambda}{(x^2 + R^2)^{3/2}} \begin{pmatrix}x\\-R\end{pmatrix} dx
-        =   k \lambda \int_{0}^{\infty} \frac{1}{(x^2 + R^2)^{3/2}} \begin{pmatrix}x\\-R\end{pmatrix} dx\\
-        &=  k \lambda \int_{0}^{\infty} \frac{x}{(x^2 + R^2)^{3/2}} \begin{pmatrix}1\\0\end{pmatrix} - \frac{R}{(x^2 + R^2)^{3/2}} \begin{pmatrix}0\\1\end{pmatrix} dx\\
-        &=  k \lambda \left[-\frac{1}{\sqrt{x^2 + R^2}} \begin{pmatrix}1\\0\end{pmatrix} - \frac{xR}{R^2\sqrt{x^2 + R^2}} \begin{pmatrix}0\\1\end{pmatrix}\right]_{x=0}^{\infty}\\
-        &=  -k\lambda \left[\left(\frac{1}{\sqrt{\infty^2 + R^2}} - \frac{1}{\sqrt{0^2 + R^2}}\right) \begin{pmatrix}1\\0\end{pmatrix} + \left(\frac{\infty}{R\sqrt{\infty^2 + R^2}} - \frac{0}{R\sqrt{0^2 + R^2}}\right) \begin{pmatrix}0\\1\end{pmatrix}\right]\\
-        &=  -k\lambda \left[-\frac{1}{R} \begin{pmatrix}1\\0\end{pmatrix} + \right]
+        =   \int_{0}^{\infty} \frac{k \lambda}{r^2} \hat{r} dx\\
+        &=   \int_{0}^{\infty} \frac{k \lambda}{r^3} \vec{r} dx
+        =   \int_{0}^{\infty} \frac{k \lambda}{(x^2 + R^2)^{3/2}} \begin{pmatrix}-x\\-R\end{pmatrix} dx\\
+        &=  \int_{0}^{\infty} \frac{k \lambda}{(x^2 + R^2)^{3/2}} \begin{pmatrix}-x\\-R\end{pmatrix} dx
+        =   k \lambda \int_{0}^{\infty} \frac{1}{(x^2 + R^2)^{3/2}} \begin{pmatrix}-x\\-R\end{pmatrix} dx\\
+        &=  k \lambda \int_{0}^{\infty} -\frac{x}{(x^2 + R^2)^{3/2}} \begin{pmatrix}1\\0\end{pmatrix} - \frac{R}{(x^2 + R^2)^{3/2}} \begin{pmatrix}0\\1\end{pmatrix} dx\\
+        &=  k \lambda \left[\frac{1}{\sqrt{x^2 + R^2}} \begin{pmatrix}1\\0\end{pmatrix} - \frac{xR}{R^2\sqrt{x^2 + R^2}} \begin{pmatrix}0\\1\end{pmatrix}\right]_{x=0}^{\infty}\\
+        &=  -k\lambda \left[\left(\frac{1}{\sqrt{\infty^2 + R^2}} - \frac{1}{\sqrt{0^2 + R^2}}\right) \begin{pmatrix}1\\0\end{pmatrix} - \left(\frac{\infty}{R\sqrt{\infty^2 + R^2}} - \frac{0}{R\sqrt{0^2 + R^2}}\right) \begin{pmatrix}0\\1\end{pmatrix}\right]\\
+        &=  -k\lambda \left[\frac{1}{R} \begin{pmatrix}1\\0\end{pmatrix} - \lim_{n \rightarrow \infty}\left(\frac{n}{R\sqrt{n^2 + R^2}}\right) \begin{pmatrix}0\\1\end{pmatrix}\right]
 \end{align*}
 
-From here on out, we can focus only on the x-component.
+From here on out, we can focus only on the y-component. We will make use of l'Hopital's rule.
 \begin{align*}
-    E_x &=  -k\lambda \frac{-R^2}{y^2\sqrt{R^2 + y^2} + y(R^2 + y^2)}
-        =   \frac{k\lambda R^2}{y} \cdot \frac{1}{y\sqrt{R^2 + y^2} + R^2 + y^2}
+    E_y &=  -k\lambda \lim_{n \rightarrow \infty}\left(\frac{n}{R\sqrt{n^2 + R^2}}\right)
+        =   -k\lambda \lim_{n \rightarrow \infty}\left(\frac{1}{-Rn(n^2 + R^2)^{-1/2}}\right)\\
+        &=  \frac{k\lambda}{R} \lim_{n \rightarrow \infty}\left(\frac{\sqrt{n^2 + R^2}}{n}\right)
+        =   \frac{k\lambda}{R} \lim_{n \rightarrow \infty}\left(\sqrt{1 + \left(\frac{R}{n}\right)^2}\right)\\
+        &=  \frac{k\lambda}{R} \sqrt{1 + \left(\frac{R}{\infty}\right)^2}
+        =   \frac{k\lambda}{R} \sqrt{1}
+        =   \frac{k\lambda}{R}
 \end{align*}
+
+As a whole, we get the following:
+\begin{equation*}
+    \vec{E} =   -k\lambda \left[\frac{1}{R} \begin{pmatrix}1\\0\end{pmatrix} + \frac{1}{R} \begin{pmatrix}0\\1\end{pmatrix}\right]
+        =   -\frac{k\lambda}{R}\begin{pmatrix} 1\\1 \end{pmatrix}
+\end{equation*}
+
+This means that it goes in a constant dorection of 45\unit{\degree} downward to the left.
 
 \pagebreak
 \section{Problem 50}
@@ -172,7 +185,7 @@ We can then use it for the aforementianed magnitude-based formula.
     \includegraphics[width=0.15\textwidth]{picture_6.png} 
     % \label{fig:wrapfig}
 \end{wrapfigure}
-In Fig. 22-67, an electric dipole swings from an initial orientation $i (\theta_i = 20.0\unit{\degree})$ to a final orientation $f (\theta_f= 20.0\unit{\degree})$ in a uniform external electric field E. The electric dipole moment is $1.60 \times 10^{-37} \unit{\coulomb\cdot\meter}$; the field magnitude is $3.00 \times 10^6 \unit{\newton/\coulomb}$. What is the change in the dipole's potential energy?
+In Fig. 22-67, an electric dipole swings from an initial orientation $i (\theta_i = 20.0\unit{\degree})$ to a final orientation $f (\theta_f= 20.0\unit{\degree})$ in a uniform external electric field E. The electric dipole moment is $1.60 \times 10^{-27} \unit{\coulomb\cdot\meter}$; the field magnitude is $3.00 \times 10^6 \unit{\newton/\coulomb}$. What is the change in the dipole's potential energy?
 
 \subsection*{Solution}
 The initial orientation makes an angle of 90\unit{\degree} + 20\unit{\degree} = 110\unit{\degree} with the electric field.
@@ -184,8 +197,8 @@ We can then use the formula for the change in the dipole's potential energy to f
         =   (-Ep\cos(\theta_i)) - (-Ep\cos(\theta_f))\\
         &=  Ep\cos(\theta_f) - Ep\cos(\theta_i)
         =   Ep(\cos(\theta_f) - \cos(\theta_i))\\
-        &=  (3.0 \times 10^6)(1.60 \times 10^{-37})(\cos(110\unit{\degree}) - \cos(70\unit{\degree}))\\
-        &=  \left(4.8 \times 10^{-31}\right)\left(-2\sin\left(\frac{\pi}{9}\right)\right)
-        =   \boxed{-3.283 \times 10^{-31} \unit{\joule}}
+        &=  (3.0 \times 10^6)(1.60 \times 10^{-27})(\cos(110\unit{\degree}) - \cos(70\unit{\degree}))\\
+        &=  \left(4.8 \times 10^{-21}\right)\left(-2\sin\left(\frac{\pi}{9}\right)\right)
+        =   \boxed{-3.283 \times 10^{-21} \unit{\joule}}
 \end{align*}
 \end{document}
