@@ -1,0 +1,71 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{array}
+\usepackage[thinc]{esdiff}
+% \usepackage{gensymb}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{pgfplots}
+\usepackage{siunitx}
+\usepackage{wrapfig}
+\usepackage{xcolor}
+
+\title{Homework \#4, 4B}
+\author{Donald Aingworth IV}
+\date{February 12, 2025}
+
+\pgfplotsset{width=8cm,compat=1.9}
+\usepgfplotslibrary{external}
+% \tikzexternalize
+
+\renewcommand\thesubsection{\alph{subsection}}
+
+\begin{document}
+
+\DeclareSIUnit{\mile}{mi}
+\DeclareSIUnit{\gal}{gal}
+\DeclareSIUnit{\foot}{ft}
+\DeclareSIUnit{\hour}{h}
+\DeclareSIUnit{\rad}{rad}
+\DeclareSIUnit{\unit}{u}
+\DeclareSIUnit{\dyne}{dyn}
+
+\maketitle
+
+\section{Question 1}
+A surface that has the area vector $\vec{A} = \left(2\hat{i} + 3\hat{j}\right) \unit{\meter^2}$. What is the flux of a uniform electrc field that is (a) $\vec{E} = 4\hat{i} \unit{\newton/\coulomb}$ and (b) $\vec{E} = 4\hat{k} \unit{\newton/\coulomb}$?
+
+\section{Question 3}
+
+\pagebreak
+\section{Problem 6}
+Three infinite nonconducting sheets, with uniform positive surface charge densities $\sigma$, $2\sigma$, and $3\sigma$, are arranged to be parallel like the two sheets in \text{\color{blue} Fig. 23-19a}. What is their order, from left to right, if the electric field $\vec{E}$ produced by the arrangement has magnitude $E = 0$ in one region and $E = 2\sigma/\epsilon_0$ in another region?
+
+\subsection*{Solution}
+For an infinite nonconducting sheet of densty $\sigma$, the electric field from it is equal to $E = \sigma/2\epsilon_0$. We can use this to provide a system of equations for electric field strengths $(a, b, c)$, which have unique magnitudes in the set $(\sigma/2\epsilon_0, 2\sigma/2\epsilon_0, 3\sigma/2\epsilon_0)$ or alternatively $(E, 2E, 3E)$. 
+\begin{align*}
+    a - b - c &= 0\\
+    a + b - c &= 2\sigma/\epsilon_0 = 4E\\
+    0a + 2b + 0c &= 4E\\
+    b &= 2E = 2\sigma/2\epsilon_0\\
+    a - 2E - c &= 0 \rightarrow a - c = 2E
+\end{align*}
+
+There is only one combination of the remaining two that this works for: $a = 3E$ and $c = E$. Thus, the order is \boxed{\langle 3\sigma, 2\sigma, \sigma \rangle}.
+
+\pagebreak
+\section{Problem 8}
+
+\section{Problem 10}
+
+\section{Problem 12}
+
+\section{Problem 18}
+
+\section{Problem 22}
+
+\section{Problem 28}
+
+\section{Problem 34}
+
+\end{document}
