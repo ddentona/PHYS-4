@@ -134,9 +134,9 @@ The electric field outside a solid sphere (of radius $R$) will be relevant for s
 We have two equations, one for the electric field inside a uniformly charged sphere and other for the electric field outside the same. 
 The value of P is the same for all four.
 Since $\rho_c > \rho_d$, we can conclude that $E_c > E_d$.
-Since $R_a < R_b$, we can conclude that $E_a < E_b$.
+Since $R_a < R_b$ but that is conceled out by $\rho_a > \rho_b$, we can conclude that $E_a = E_b$.
 Additionally, since the electric field outside the sphere is a result of more charge than the electric field inside the sphere, $E_a > E_c$. 
-As such, \boxed{E_b > E_a > E_c > E_d}.
+As such, \boxed{E_b = E_a > E_c > E_d}.
 
 
 \pagebreak
@@ -207,13 +207,24 @@ We begin with the electric field of the electron at that point. We know the form
         =   \boxed{2.0355 \times 10^{-12} \unit{\coulomb/\meter^2}}
 \end{align*}
 
+\pagebreak
 \section{Problem 22}
 An electron is released $9.0 \unit{\centi\meter}$ from a very long nonconducting rod with a uniform $6.0 \unit{\micro\coulomb/\meter}$. What is the magnitude of the electron's initial acceleration?
 
 \subsection*{Solution}
 We begin with the electric field of the electron at that point. We know the formula for the electric field along an infinite line of charge.
 \begin{align*}
-    E   &=  
+    E   &=  \frac{\lambda}{2\pi\varepsilon_0 r}\\
+    F   &=  qE
+        =   \frac{q\lambda}{2\pi\varepsilon_0 r}\\
+    a   &=  \frac{F}{m}
+        =   \frac{q\lambda}{2m\pi\varepsilon_0 r}
+\end{align*}
+
+We can plug values into this.
+\begin{align*}
+    a   &=  \frac{q\lambda}{2m\pi\varepsilon_0 r}
+        =   \frac{(-1.602 \times 10^{-19} \unit{\coulomb})(6.0 \times 10^{-6}\unit{\coulomb/\meter})}{2*(9.109 \times 10^{-31} \unit{\kilo\gram}) * \pi\varepsilon_0 * (9 \times 10^{-2} \unit{\meter})}
 \end{align*}
 
 \pagebreak
