@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1740630100.95058 "c:/Users/ddent/OneDrive/Documents/CCSF/PHYS-4A/Week 22/Homework 22.tex" "Homework 22.pdf" "Homework 22" 1740630103.67995 0
+["pdflatex"] 1740629969.21414 "c:/Users/ddent/OneDrive/Documents/CCSF/PHYS-4A/Week 22/Homework 22.tex" "Homework 22.pdf" "Homework 22" 1740629976.67998 0
   "C:/Users/ddent/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1740458612 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/ddent/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk" 1724529747 14064 a73e2491cc17373621ceadb450a5a7ef ""
   "C:/Users/ddent/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1724473854 24225046 9a86b7f1ef10f5afb0aa895fddb2583f ""
@@ -177,9 +177,9 @@
   "C:/Users/ddent/AppData/Local/Programs/MiKTeX/tex/latex/translations/translations.sty" 1644048522 44247 2188b95d0ee74e31eca4d316263c58a7 ""
   "C:/Users/ddent/AppData/Local/Programs/MiKTeX/tex/latex/wrapfig/wrapfig.sty" 1044403200 26220 3701aebf80ccdef248c0c20dd062fea9 ""
   "C:/Users/ddent/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1700127522 55487 80a65caedd3722f4c20a14a69e785d8f ""
-  "Homework 22.aux" 1740630103 1809 3086766a36589b3119dcd2b623d7b831 "pdflatex"
-  "Homework 22.tex" 1740630100 16187 6a730c3dfe108baa8c1b570f89821202 ""
-  "c:/Users/ddent/OneDrive/Documents/CCSF/PHYS-4A/Week 22/Homework 22.tex" 1740630100 16187 6a730c3dfe108baa8c1b570f89821202 ""
+  "Homework 22.aux" 1740629976 1407 19bea413765c6a8a51126d1a47b4313b "pdflatex"
+  "Homework 22.tex" 1740629965 10550 6149ca8d5e886d50390a935240f1243c ""
+  "c:/Users/ddent/OneDrive/Documents/CCSF/PHYS-4A/Week 22/Homework 22.tex" 1740629965 10550 6149ca8d5e886d50390a935240f1243c ""
   "picture_10.png" 1740454745 527479 1426484963cc00261d8f86f58f2b91d5 ""
   "picture_2.png" 1740454745 886118 4d024a8583783cc15ea123cf927b1b3e ""
   "picture_4.png" 1740454745 687141 628492d7519cc1bbf6986d053456a408 ""
