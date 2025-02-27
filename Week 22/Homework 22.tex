@@ -40,16 +40,49 @@ A surface that has the area vector $\vec{A} = \left(2\hat{i} + 3\hat{j}\right) \
 \begin{gather*}
     \Phi = \oint \vec{E} \cdot d\vec{A}
         =   \left(4\hat{i} \unit{\newton/\coulomb}\right) \cdot \left(2\hat{i} + 3\hat{j}\right) \unit{\meter^2}
-        =   8 \unit{\newton\meter^2/\coulomb}
+        =   \boxed{8 \unit{\newton\meter^2/\coulomb}}
 \end{gather*}
 
+\subsection{Solution}
+\begin{gather*}
+    \Phi = \oint \vec{E} \cdot d\vec{A}
+        =   \left(4\hat{k} \unit{\newton/\coulomb}\right) \cdot \left(2\hat{i} + 3\hat{j}\right) \unit{\meter^2}
+        =   \boxed{0 \unit{\newton\meter^2/\coulomb}}
+\end{gather*}
+
+\pagebreak
 \section{Question 3}
-\begin{wrapfigure}{r}{0.5\textwidth}
+\begin{wrapfigure}{r}{0.25\textwidth}
     \vspace{-30pt}
-    \includegraphics[width=0.5\textwidth]{picture_2.png} 
+    \includegraphics[width=0.25\textwidth]{picture_2.png} 
     % \label{fig:wrapfig}
 \end{wrapfigure}
 Figure 23-23 shows, in cross section, a central metal ball, two spherical metal shells, and three spherical Gaussian surfaces of radii R, 2R, and 3R, all with the same center. The uniform charges on the three objects are: ball, Q; smaller shell, 3Q; larger shell, 5Q. Rank the Gaussian surfaces according to the magnitude of the electric field at any point on the surface, greatest first.
+
+\subsection*{Solution: E$_1$ = E$_2$ = E$_3$}
+In all three cases, the area is the same formula and the electric field is the same at every point on the individual Gaussian surface. As such, we can develop a generalized formula for the electric field.
+\begin{equation*}
+    \oint \vec{E} \cdot \,d\vec{A} = \frac{q_{enc}}{\varepsilon_0} \rightarrow
+    E = \frac{q_{enc}}{4\pi R^2 \varepsilon_0}
+\end{equation*}
+
+For the smallest shell:
+\begin{equation*}
+    E_1 = \frac{q_{enc}}{4\pi r^2 \varepsilon_0} = \frac{Q}{4\pi R^2 \varepsilon_0}
+\end{equation*}
+
+For the middle shell:
+\begin{equation*}
+    E_2 = \frac{q_{enc}}{4\pi r^2 \varepsilon_0} = \frac{Q + 3Q}{4\pi (2R)^2 \varepsilon_0}
+        =   \frac{4Q}{4\pi 4R \varepsilon_0} = \frac{Q}{4\pi R^2 \varepsilon_0} \rightarrow E_1 = E_2
+\end{equation*}
+
+For the largest shell:
+\begin{equation*}
+    E_3 = \frac{q_{enc}}{4\pi r^2 \varepsilon_0} = \frac{Q + 3Q + 5Q}{4\pi (3R)^2 \varepsilon_0}
+        =   \frac{9Q}{4\pi 9R \varepsilon_0} = \frac{Q}{4\pi R^2 \varepsilon_0} \rightarrow \boxed{E_1 = E_2 = E_3}
+\end{equation*}
+
 
 \pagebreak
 \section{Problem 6}
@@ -108,21 +141,71 @@ As such, \boxed{E_b > E_a > E_c > E_d}.
 
 \pagebreak
 \section{Problem 10}
-Figure 23-34 shows a closed Gaussian surface in the shape of a cube of edge length 2.00 m. It lies in a
-region where the nonuniform electric field is given by E = (3.00x + 4.00)[ + 6.00f + 7.00K N/C with x in
-meters. What is the net charge contained by the cube?
+\begin{wrapfigure}{r}{0.25\textwidth}
+    \vspace{-50pt}
+    \includegraphics[width=0.25\textwidth]{picture_5.png} 
+    % \label{fig:wrapfig}
+\end{wrapfigure}
+Figure 23-34 shows a closed Gaussian surface in the shape of a cube of edge length 2.00 m. It lies in a region where the nonuniform electric field is given by $\vec{E} = (3.00x + 4.00)\hat{i} + 6.00\hat{j} + 7.00\hat{k} \unit{\newton/\coulomb}$ with x in meters. What is the net charge contained by the cube?
 
+\subsection{Solution}
+We have a formula given from Gauss' Law. We can apply these six for each of the six faces, then add them all up at the end.
+\begin{align*}
+    \oint \vec{E} \cdot \,d\vec{A}  &=  \frac{q_{enc}}{\varepsilon_0}
+\end{align*}
+
+\begin{tabular*}{\textwidth}{c | c}
+    Face    &   Flux\\
+    \hline
+    x = 0   &   $\oint(3x + 4) \,dA = (3x + 4)\oint dA \rightarrow (3*0 + 4)*(-4) = -16$\\
+    x = 2   &   $\oint(3x + 4) \,dA = (3x + 4)\oint dA \rightarrow (3*2 + 4)*(4) = 40$\\
+    y = 0   &   $\oint 6 \,dA = 6 \oint dA \rightarrow 6*(-4) = -24$\\
+    y = 2   &   $\oint 6 \,dA = 6 \oint dA \rightarrow 6*4 = 24$\\
+    z = 0   &   $\oint 7 \,dA = 7 \oint dA \rightarrow 7*(-4) = -28$\\
+    z = 2   &   $\oint 7 \,dA = 7 \oint dA \rightarrow 7*4 = 28$\\
+    Sum     &   $40 - 16 + 24 - 24 + 28 - 28 = 24$
+\end{tabular*}
+
+Lastly, we have to multiply it by the permativity of free space to get our actual answer.
+\begin{equation*}
+    24\varepsilon_0 = \boxed{2.124 \times 10^{-10} \unit{\coulomb}}
+\end{equation*}
+
+\pagebreak
 \section{Problem 12}
-\begin{wrapfigure}{r}{0.5\textwidth}
+\begin{wrapfigure}{r}{0.25\textwidth}
     \vspace{-30pt}
-    \includegraphics[width=0.5\textwidth]{picture_6.png} 
+    \includegraphics[width=0.25\textwidth]{picture_6.png} 
     % \label{fig:wrapfig}
 \end{wrapfigure}
 Figure 23-36 shows two nonconducting spherical shells fixed in place. Shell 1 has uniform surface
 charge density $+6.0 \unit{\micro\coulomb/\meter}$ on its outer surface and radius $3.0 \unit{\centi\meter}$; shell 2 has uniform surface charge density $+4.0 \unit{\micro\coulomb/\meter}$ on its outer surface and radius $2.0 \unit{\centi\meter}$; the shell centers are separated by $L = 10 \unit{\centi\meter}$. In unit-vector notation, what is the net electric field at $x = 2.0 \unit{\centi\meter}$?
 
+\subsection*{Solution}
+The field inside a uniform shell of charge (where we are measuring from) due to the shell is exactly zero. Thus, we need not concern ourself with Shell 1 and only have to focus on Shell 2. Outside the shell, the formula for the electric field can be calculated, which gives us our answer with respect to Shell 2.
+\begin{align*}
+    \vec{E} &=  \frac{1}{4\pi\varepsilon_0}\ \frac{q}{r^2} \hat{r}
+        =   \frac{1}{4\pi\varepsilon_0}\ \frac{\sigma*4\pi R^2}{r^2} \begin{pmatrix} -1 \\ 0 \end{pmatrix}
+        =   \frac{\sigma R^2}{\varepsilon_0 r^2} \begin{pmatrix} -1 \\ 0 \end{pmatrix}\\
+        &=  \frac{-4 \times 10^{-6} * (2 \times 10^{-2})^2}{8.85 \times 10^{-12} * (8 \times 10^{-2})^2}\hat{i} \unit{\newton/\coulomb}
+        =   \frac{-16}{8.85 * 64} \times \frac{10^{-10}}{10^{-16}}\hat{i} \unit{\newton/\coulomb}\\
+        &=  \frac{-1}{35.4} \times 10^{6}\hat{i} \unit{\newton/\coulomb}
+        =   -(2.825 \times 10^{-2}) \times 10^{6}\hat{i} \unit{\newton/\coulomb}
+        =   \boxed{-2.825 \times 10^4 \hat{i} \unit{\newton/\coulomb}}
+\end{align*}
+
+\pagebreak
 \section{Problem 18}
 The electric field just above the surface of the charged conducting drum of a photocopying machine has a magnitude $E$ of $2.3 \times 10^5 \unit{\newton/\coulomb}$. What is the surface charge density on the drum?
+
+\subsection*{Solution}
+We begin with the electric field of the electron at that point. We know the formula for the electric field along an infinite line of charge.
+\begin{align*}
+    E   &=  \frac{\sigma}{\varepsilon_0}\\
+    \sigma  &=  E\varepsilon_0
+        =   (2.3 \times 10^5 \unit{\newton/\coulomb})*(8.85 \times 10^{-12})
+        =   \boxed{2.0355 \times 10^{-12} \unit{\coulomb/\meter^2}}
+\end{align*}
 
 \section{Problem 22}
 An electron is released $9.0 \unit{\centi\meter}$ from a very long nonconducting rod with a uniform $6.0 \unit{\micro\coulomb/\meter}$. What is the magnitude of the electron's initial acceleration?
@@ -133,11 +216,38 @@ We begin with the electric field of the electron at that point. We know the form
     E   &=  
 \end{align*}
 
+\pagebreak
 \section{Problem 28}
 A charge of uniform linear density $2.0 \unit{\nano\coulomb/\meter}$ is distributed along a long, thin, nonconducting rod. The rod is coaxial with a long conducting cylindrical shell (inner radius = $5.0 \unit{\centi\meter}$, outer radius = $10 \unit{\centi\meter}$). The net charge on the shell is zero. (a) What is the magnitude of the electric field $15 \unit{\centi\meter}$ from the axis of the shell? What is the surface charge density on the (b) inner and (c) outer surface of the shell?
 
 \subsection{Solution}
-Electric field is not affected by things of zero charge, but it is affected by conducting things. Right outside the outer radius, the 
+Electric field is not affected by things of zero charge, but it is affected by conducting things. However, we can use Gauss's law here.
+\begin{align*}
+    \frac{Q_{enc}}{\varepsilon_0}   &=  \oint \vec{E} \cdot \,d\vec{A}
+\end{align*}
+
+Since the enclosed charge would remain the same, it would be reasonably assumed that the electric field would also remain the same.
+\begin{gather*}
+    E   =   \frac{\lambda}{2\pi\varepsilon_0 r}
+        =   \frac{2.0 \times 10^{-9} \unit{\coulomb/\meter}}{2*\pi*\varepsilon_0*(15 \times 10^{-2} \unit{\meter})}
+        =   \boxed{239.781 \unit{\newton/\coulomb}}
+\end{gather*}
+
+\subsection{Solution}
+The surface charge at any given circle of the inner wall of the cylinder would be equal to the charge of the rod. We know the linear charge density. We can divide this by the circumference ($C$) of the inner circles to get the surface charge density. We also multiply this by negative one because of the opposition to the charge in rod.
+\begin{gather*}
+    \sigma  =   -\frac{\lambda}{C}
+        =   -\frac{2.0 \times 10^{-9}\unit{\coulomb/\meter}}{2\times \pi \times 5 \times 10^{-2} \unit{\meter}}
+        =   \boxed{-6.366 \times 10^{-9} \unit{\coulomb/\meter^2}}
+\end{gather*}
+
+\subsection{Solution}
+We do the same thing, but for a larger radius and without multiplying by negative one. 
+\begin{gather*}
+    \sigma  =   \frac{\lambda}{C}
+        =   \frac{2.0 \times 10^{-9}\unit{\coulomb/\meter}}{2\times \pi \times 10 \times 10^{-2} \unit{\meter}}
+        =   \boxed{3.183 \times 10^{-9} \unit{\coulomb/\meter^2}}
+\end{gather*}
 
 \pagebreak
 \section{Problem 34}

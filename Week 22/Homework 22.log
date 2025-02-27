@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.25)  25 FEB 2025 18:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.25)  26 FEB 2025 19:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -512,65 +512,72 @@ Package pgfplots notification 'compat/show suggested version=true': you might be
 File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 24.
-<picture_2.png, id=4, 492.84125pt x 489.83pt>
-File: picture_2.png Graphic file (type png)
-<use picture_2.png>
-Package pdftex.def Info: picture_2.png  used on input line 49.
-(pdftex.def)             Requested size: 215.0023pt x 213.68721pt.
  [1
 
-{/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./picture_2.png>]
-Underfull \hbox (badness 2961) in paragraph at lines 56--57
-\OT1/cmr/m/n/12 Three in-fi-nite non-con-duct-ing sheets,
- []
-
-
-Underfull \hbox (badness 1248) in paragraph at lines 56--57
-\OT1/cmr/m/n/12 with uni-form pos-i-tive sur-face charge
- []
-
-[2]
-<picture_4.png, id=22, 826.08624pt x 359.3425pt>
+{/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+<picture_2.png, id=16, 492.84125pt x 489.83pt>
+File: picture_2.png Graphic file (type png)
+<use picture_2.png>
+Package pdftex.def Info: picture_2.png  used on input line 57.
+(pdftex.def)             Requested size: 107.50114pt x 106.8436pt.
+ [2 <./picture_2.png>] [3]
+<picture_4.png, id=27, 826.08624pt x 359.3425pt>
 File: picture_4.png Graphic file (type png)
 <use picture_4.png>
-Package pdftex.def Info: picture_4.png  used on input line 74.
+Package pdftex.def Info: picture_4.png  used on input line 107.
 (pdftex.def)             Requested size: 215.0023pt x 93.52005pt.
 
-Underfull \hbox (badness 2818) in paragraph at lines 78--79
+Underfull \hbox (badness 2818) in paragraph at lines 111--112
 \OT1/cmr/m/n/12 each with charge $\OML/cmm/m/it/12 Q$ \OT1/cmr/m/n/12 uni-formly dis-
  []
 
-[3 <./picture_4.png>] [4]
-<picture_6.png, id=31, 488.82625pt x 398.48875pt>
+[4 <./picture_4.png>] [5]
+<picture_5.png, id=35, 360.34625pt x 343.2825pt>
+File: picture_5.png Graphic file (type png)
+<use picture_5.png>
+Package pdftex.def Info: picture_5.png  used on input line 146.
+(pdftex.def)             Requested size: 107.50114pt x 102.40935pt.
+
+Underfull \hbox (badness 10000) in alignment at lines 157--167
+[][] 
+ []
+
+
+Overfull \hbox (17.62482pt too wide) in paragraph at lines 157--168
+[][] 
+ []
+
+[6 <./picture_5.png>]
+<picture_6.png, id=41, 488.82625pt x 398.48875pt>
 File: picture_6.png Graphic file (type png)
 <use picture_6.png>
-Package pdftex.def Info: picture_6.png  used on input line 118.
-(pdftex.def)             Requested size: 215.0023pt x 175.2687pt.
- [5{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc} <./picture_6.png>] [6]
-<picture_10.png, id=40, 827.09pt x 384.43625pt>
+Package pdftex.def Info: picture_6.png  used on input line 178.
+(pdftex.def)             Requested size: 107.50114pt x 87.6313pt.
+ [7{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc} <./picture_6.png>] [8] [9]
+<picture_10.png, id=54, 827.09pt x 384.43625pt>
 File: picture_10.png Graphic file (type png)
 <use picture_10.png>
-Package pdftex.def Info: picture_10.png  used on input line 146.
+Package pdftex.def Info: picture_10.png  used on input line 256.
 (pdftex.def)             Requested size: 215.0023pt x 99.93346pt.
- [7 <./picture_10.png>] (./Homework 22.aux)
+ [10 <./picture_10.png>] (./Homework 22.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 27876 strings out of 474116
- 745964 string characters out of 5743682
+ 27889 strings out of 474116
+ 746283 string characters out of 5743682
  1938187 words of memory out of 5000000
- 49835 multiletter control sequences out of 15000+600000
+ 49848 multiletter control sequences out of 15000+600000
  565069 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,18n,107p,783b,639s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/latxfont/line10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on "Homework 22.pdf" (7 pages, 2175470 bytes).
+ 99i,18n,107p,783b,680s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/latxfont/line10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on "Homework 22.pdf" (10 pages, 2288551 bytes).
 PDF statistics:
- 96 PDF objects out of 1000 (max. 8388607)
- 56 compressed objects within 1 object stream
+ 112 PDF objects out of 1000 (max. 8388607)
+ 65 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 33 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 38 words of extra memory for PDF output out of 10000 (max. 10000000)
 
