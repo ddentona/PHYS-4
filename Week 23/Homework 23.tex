@@ -62,6 +62,29 @@ The aforementioned ratio will start with the ratio either too large or too small
 This leaves it with \underline{none}.
 
 % \subsection{Solution (c): }
+
+\section{Problem 6}
+
+\subsection{Solution: 2.46V}
+We know the formula for work done on an object and how that relates to the electrical potential difference.
+We can use what we know to get what we need.
+\begin{align*}
+    W_{app} &=  q\ \Delta V\\
+    \Delta V    &=  \frac{W_{app}}{q}
+        =   \frac{3.94 \times 10^{-19} \unit{\joule}}{1.602 \times 10^{-19} \unit{\coulomb}}
+        =   \frac{3.94}{1.602} \unit{\joule/\coulomb}
+        =   \boxed{2.46 \unit{\volt}}
+\end{align*}
+
+\subsection{Solution: 2.46V}
+Due to path independence, it would be equal to going across the equipotential line to point B from point C (along which $\Delta V = 0$), then following the same path as before to get to point A.
+It would have the same value as that between points B and A.
+
+\subsection{Solution: 0}
+The two points lie along the same equipotential line. 
+Along equipotential lines, the electric potential remains constant.
+As such, between the two points, the difference is \boxed{zero}.
+
 \section{Problem 8}
 \subsection{Solution: 30V}
 We can define the function. 
@@ -161,6 +184,23 @@ We can use a like formula for the two.
         &=  \frac{(143.84 \times 10^9) * (6.0 \times 10^{-12})}{39 \times 10^{-2}}\\
         &=  \frac{863.04 \times 10^{-3}}{39 \times 10^{-2}}
         =   \boxed{2.214 \unit{\joule/\coulomb}}
+\end{align*}
+
+\section{Problem 30}
+\subsection*{Solution: 0V}
+Electric potential has no vectorial direction. 
+For this problem, in order to make things easier, I will start by 
+% proving 
+saying that the electrical potential from a line charge where all points on it are the same distance from the point is the same as the electric potential if the whole charge were concentrated in one place the same distance from the point.
+We can apply that to both the thin rods, calculating the voltage for both.
+Additionally, for the dipole, the charge is equal and opposite for both particles, as is the distance between the two, making the two cancel out each other since electric potential has no vectorial direction.
+\begin{align*}
+    V_{net} &=  V_1 + V_2
+        =   \frac{kq_1}{r_1} + \frac{kq_2}{r_2}
+        =   k\left(\frac{-3 \times 10^{-6}}{6 \times 10^{-2}} + \frac{2 \times 10^{-6}}{4 \times 10^{-2}}\right)\\
+        &=  k\left( -\frac{1}{2} + \frac{1}{2} \right) \times 10^{-4}
+        =   k * 0 \times 10^{-4} \unit{\joule/\coulomb}
+        =   \boxed{0 \unit{\volt}}
 \end{align*}
 
 \end{document}
