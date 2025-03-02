@@ -1,0 +1,90 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{array}
+\usepackage{cancel}
+\usepackage[thinc]{esdiff}
+% \usepackage{gensymb}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{pgfplots}
+\usepackage{siunitx}
+\usepackage{wrapfig}
+\usepackage{xcolor}
+
+\title{Homework \#4, 4B}
+\author{Donald Aingworth IV}
+\date{February 12, 2025}
+
+\pgfplotsset{width=8cm,compat=1.9}
+\usepgfplotslibrary{external}
+% \tikzexternalize
+
+\renewcommand\thesubsection{\alph{subsection}}
+
+\begin{document}
+
+\DeclareSIUnit{\mile}{mi}
+\DeclareSIUnit{\gal}{gal}
+\DeclareSIUnit{\foot}{ft}
+\DeclareSIUnit{\hour}{h}
+\DeclareSIUnit{\rad}{rad}
+\DeclareSIUnit{\unit}{u}
+\DeclareSIUnit{\dyne}{dyn}
+
+% \maketitle
+\section{Question 2}
+Figure 24-25 shows three sets of cross sections of equipotential surfaces in uniform electric fields; all three cover the same size region of space. The electric potential is indicated for each equipotential surface. (a) Rank the arrangements according to the magnitude of the electric field present in the region, greatest first. (b) In which is the electric field directed down the
+page?
+
+\section{Question 3}
+Figure 24-26 shows four pairs of charged particles. For each pair, let $V = 0$ at infinity and consider $V_{net}$ at points on the x axis. For which pairs is there a point at which $V_{net} = 0$ (a) between the particles and (b) to the right of the particles? (c) At such a point is $E_{net}$ due to the particles equal to zero? (d) For each pair, are there off-axis points (other than at infinity) where $V_{net} = 0$?
+
+\subsection{Solution (a): 1 and 2}
+For voltage, the formula is $V = \frac{kq}{r}$, and it has no direction. 
+Thus, for each of the cases, since V has the same sign as q, we can know that there can only be a point at which the net voltage is zero when there is both a positive and a negative charge to influence the voltage.
+The ratio of the magnitudes of the distances (radii) must also be the same as the ratio of the charges in order to make the sum equal to zero. 
+\begin{gather*}
+    0 = V_1 + V_2 = \frac{k\left|q_1\right|}{r_1} - \frac{k\left|q_2\right|}{r_2}\\
+    \frac{k\left|q_1\right|}{r_1} = \frac{k\left|q_2\right|}{r_2}\\
+    \frac{\left|q_1\right|}{\left|q_2\right|} = \frac{r_1}{r_2}
+\end{gather*}
+Between the two points, there must be a point at which the ratio holds true. 
+This means that it holds true for \boxed{1 \text{ and } 2}
+
+\subsection{Solution (b): None}
+Since there is no point at which V = 0 on either (3) or (4), explained in part (a), we can rule them out. 
+On both (1) and (2), the charge on the right is the stronger charge.
+The aforementioned ratio will start with the ratio either too large or too small, and will keep heading away from an equal ratio ad infinitum as it heads further to the right. 
+This leaves it with \underline{none}.
+
+% \subsection{Solution (c): }
+
+
+\section{Problem 16}
+\subsection*{Solution: 2.214 \unit{\joule/\coulomb}}
+Let's start with the corners.
+Suppose the distance between the corners and the center is a distance $r_1$. Each of them is multiplied by $q_1$.
+We can form a formula for the electric potential due to the four corners.
+\begin{align*}
+    V_{corners} &=  V_{11} + V_{12} + V_{21} + V_{22}\\
+        &=  \frac{k*2q_1}{r_1} + \frac{k*(-3q_1)}{r_1} + \frac{k*(-q_1)}{r_1} + \frac{k*2q_1}{r_1}\\
+        &=  \frac{kq_1}{r_1}(2 - 3 - 1 + 2)
+        =   \frac{kq_1}{r_1}(4 - 4)
+        =   \frac{kq_1}{r_1} * 0
+        =   0
+\end{align*}
+
+Thus, we only need concern ourselves with the charges on the sides, each of which are only $\frac{a}{2}$ away from the center.
+We can use a like formula for the two.
+\begin{align*}
+    V_{sides}   &=  V_{top} + V_{bottom}
+        =   \frac{k*4q_2}{\frac{a}{2}} + \frac{k*4q_2}{\frac{a}{2}}\\
+        &=  \frac{2*k*4q_2}{a} + \frac{2*k*4q_2}{a}
+        =   \frac{16kq_2}{a}\\
+        &=  \frac{16 * (8.99 \times 10^9) * (6.0 \times 10^{-12})}{39 \times 10^{-2}}\\
+        &=  \frac{(143.84 \times 10^9) * (6.0 \times 10^{-12})}{39 \times 10^{-2}}\\
+        &=  \frac{863.04 \times 10^{-3}}{39 \times 10^{-2}}
+        =   \boxed{2.214 \unit{\joule/\coulomb}}
+\end{align*}
+
+\end{document}
