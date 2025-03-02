@@ -31,6 +31,10 @@
 \DeclareSIUnit{\unit}{u}
 \DeclareSIUnit{\dyne}{dyn}
 
+\begin{center}
+    ``Doubt is not a pleasant condition, but certainty is absurd.'' \\-Voltaire (Not a physicist...somehow)
+\end{center}
+
 % \maketitle
 \section{Question 2}
 Figure 24-25 shows three sets of cross sections of equipotential surfaces in uniform electric fields; all three cover the same size region of space. The electric potential is indicated for each equipotential surface. (a) Rank the arrangements according to the magnitude of the electric field present in the region, greatest first. (b) In which is the electric field directed down the
@@ -58,7 +62,79 @@ The aforementioned ratio will start with the ratio either too large or too small
 This leaves it with \underline{none}.
 
 % \subsection{Solution (c): }
+\section{Problem 8}
+\subsection{Solution: 30V}
+We can define the function. 
+\(E(x) = \left\{ \begin{matrix}
+    0 \le x < 2| \\
+    2 \le x < 4| \\
+    4 \le x < 6| 
+\end{matrix}
+\begin{matrix}
+    \frac{-20}{2}x\\
+    \frac{40}{2} - 60\\
+    20
+\end{matrix} \right\}\)
+We will only be working with one dimension.
+\begin{align*}
+    \Delta V &= -\int_{0}^{2} E(x)\,dx
+        =   \int_0^2 10x\,dx
+        =   \left. 5x^2 \right|_0^2
+        =   20 + 0
+        =   20 \unit{\volt}\\
+    V_f &=  V_i + \Delta V
+        =   10 \unit{\volt} + 20 \unit{\volt}
+        =   \boxed{30 \unit{\volt}}
+\end{align*}
 
+\subsection{Solution: 40V}
+Since the electric field is the negative derivative of the electric potential difference, the point at which the electric potential difference would be maximum would be where the electric field would be zero crossing from negative into positive. 
+Aside from the origin, the only spot where this is the case is at x = 3.
+\begin{align*}
+    \Delta V &= -\int_{0}^{3} E(x)\,dx\\
+        &=  -\int_{0}^{2} E(x)\,dx - \int_{2}^{3} E(x)\,dx\\
+        &=  \int_{0}^{2} 10x\,dx - \int_{2}^{3} 20x - 60\,dx\\
+        &=  \left. 5x^2 \right|_0^2 - \left[ 10x^2 - 60x \right]_2^3\\
+        &=  20 \unit{\volt} - (90 - 40 - 60) \unit{\volt}\\
+        &=  20 + 10 \unit{\volt}
+        =   30 \unit{\volt}\\
+        V_f &=  V_i + \Delta V
+        =   10 \unit{\volt} + 30 \unit{\volt}
+        =   \boxed{40 \unit{\volt}}
+\end{align*}
+
+\subsection{Solution: x=5.5m}
+From x=0 to x=2, the electric potential increases until $V = 30\unit\volt$. 
+Between x=2 and x=4, the voltage increases, then decreases, canceling itself out. 
+Due to properties of integration, we can find the value of x for whch $20(x - 4) = 30$. 
+The value for which that is the case, or the solution is x=5.5.
+Adding units, we get \boxed{x = 5.5\unit{\meter}}.  
+
+\section{Problem 10}
+\subsection*{Solution}
+By Gauss' Law, we know that the electric field from an infinite nonconucting plate is equal to $E = \frac{\sigma}{2\varepsilon_0}$.
+The electric potential is equal to the integral $\Delta V = \int_{i}^{f} \vec{E}\cdot d\vec{s}$.
+We can separate that integral into two halves, one between the orgin and the top plate, and the other between the top plate and x = 80cm.
+From that, we can compute the electric fields and subsequently the voltage.
+We can label the plate at x = 50cm to be plate 1 and the plate at x = -50cm to be plate 2.
+The vectors of the electric field and the motion are in the same direction, so we can just replace the dot product with multiplication.
+Check it out.
+\begin{align*}
+    \Delta V    &=  \int_{0\unit{\meter}}^{0.8\unit{\meter}} \vec{E} \cdot d\vec{s}
+        =   \int_{0.5\unit{\meter}}^{0.8\unit{\meter}} \vec{E} \cdot d\vec{s} + \int_{0\unit{\meter}}^{0.5\unit{\meter}} \vec{E} \cdot d\vec{s}\\
+        &=  \int_{0.5\unit{\meter}}^{0.8\unit{\meter}} E \,ds + \int_{0\unit{\meter}}^{0.5\unit{\meter}} E \,ds\\
+        &=  (E_1 + E_2) \int_{0.5\unit{\meter}}^{0.8\unit{\meter}} \,ds + (E_1 - E_2) \int_{0\unit{\meter}}^{0.5\unit{\meter}} \,ds\\
+        &=  (E_1 + E_2)*0.3 + (E_1 - E_2)*0.5\\
+        &=  \left(\frac{\sigma_1}{2\varepsilon_0} + \frac{\sigma_2}{2\varepsilon_0}\right)*0.3 + \left(\frac{\sigma_1}{2\varepsilon_0} - \frac{\sigma_2}{2\varepsilon_0}\right)*0.5\\
+        &=  0.8*\frac{\sigma_1}{2\varepsilon_0} - 0.2*\frac{\sigma_2}{2\varepsilon_0}
+        =   \frac{0.4*\sigma_1 - 0.1*\sigma_2}{2\varepsilon_0}\\
+        &=  \frac{0.4*(-50 \times 10^{-9}) - 0.1*(25 \times 10^{-9})}{2*(8.85 \times 10^{-12})}\\
+        &=  \frac{-20 - 2.5}{17.7} \times \frac{10^{-9}}{10^{-12}}
+        =   -\frac{17.5}{17.7} \times 10^3
+        =   -998.7 \unit{\joule/\coulomb}\\
+    \left|\Delta V\right|   &=  \left|-998.7 \unit{\joule/\coulomb}\right|
+        =   \boxed{998.7 \unit{\joule/\coulomb}}
+\end{align*}
 
 \section{Problem 16}
 \subsection*{Solution: 2.214 \unit{\joule/\coulomb}}
