@@ -11,9 +11,9 @@
 \usepackage{wrapfig}
 \usepackage{xcolor}
 
-\title{Homework \#4, 4B}
+\title{Homework \#7, 4B}
 \author{Donald Aingworth IV}
-\date{February 12, 2025}
+\date{March 5, 2025}
 
 \pgfplotsset{width=8cm,compat=1.9}
 \usepgfplotslibrary{external}
@@ -31,17 +31,39 @@
 \DeclareSIUnit{\unit}{u}
 \DeclareSIUnit{\dyne}{dyn}
 
+\maketitle
+
+\vfill
+
 \begin{center}
     ``Doubt is not a pleasant condition, but certainty is absurd.'' \\-Voltaire (Not a physicist...somehow)
 \end{center}
+\pagebreak
 
-% \maketitle
 \section{Question 2}
 Figure 24-25 shows three sets of cross sections of equipotential surfaces in uniform electric fields; all three cover the same size region of space. The electric potential is indicated for each equipotential surface. (a) Rank the arrangements according to the magnitude of the electric field present in the region, greatest first. (b) In which is the electric field directed down the
-page?
+page?\\
+\includegraphics[width=\textwidth]{picture_1.png}
+
+\subsection{Solution: (1) $>$ (2) = (3)}
+We know that the formula for electric potential difference is proportional to the negative of th electric field, from the formula $\Delta V = -\int_i^f \vec{E}\cdot\,d\vec{s}$.
+The inclusion of magnitude from the question means that direction does not matter, so we just have to rank $\Delta V$ from highest to lowest.
+\begin{gather*}
+    \left|\Delta V_1\right| = \left| 20 - 100 \right| = 80 \unit{\volt}\\
+    \left|\Delta V_2\right| = \left| -140 - (-100) \right| = 40 \unit{\volt}\\
+    \left|\Delta V_3\right| = \left| -10 - (-50) \right| = 40 \unit{\volt}
+\end{gather*}
+Thus, \boxed{V_1 > V_2 = V_3}.
+
+\subsection{Solution: (3)}
+Electric field lines point in the direction of lower electric potential.
+The only case where electric potential is lower at the bottom than at the top is case (3).
+As such, that is the only case where it is the case.
+\pagebreak
 
 \section{Question 3}
 Figure 24-26 shows four pairs of charged particles. For each pair, let $V = 0$ at infinity and consider $V_{net}$ at points on the x axis. For which pairs is there a point at which $V_{net} = 0$ (a) between the particles and (b) to the right of the particles? (c) At such a point is $E_{net}$ due to the particles equal to zero? (d) For each pair, are there off-axis points (other than at infinity) where $V_{net} = 0$?
+\includegraphics[width=\textwidth]{picture_2.png}
 
 \subsection{Solution (a): 1 and 2}
 For voltage, the formula is $V = \frac{kq}{r}$, and it has no direction. 
@@ -61,16 +83,44 @@ On both (1) and (2), the charge on the right is the stronger charge.
 The aforementioned ratio will start with the ratio either too large or too small, and will keep heading away from an equal ratio ad infinitum as it heads further to the right. 
 This leaves it with \underline{none}.
 
-% \subsection{Solution (c): }
+\subsection{Solution (c): No}
+In these circumstances, there are no points to the right where V = 0 and only (1) and (2) have V = 0 between the two points. 
+In the case of (1) and (2), between the two particles, the positive charge will be pushing the electric field away from itself, while the negative charge will assist this by frawing the electric field towards itself, increasing the magnitude of the electric field rather than decreasing it.
+Having no points where the case is true, the answer is \underline{no}.
+
+\subsection{Solution (d): Yes, so long as the charges have opposite sign.}
+This is false for the electric field. 
+However, because the electric potential is not a vector but a scalar, there will be a net zero electric potential anywhere that the formula from part (a) is true and the charges have opposite sign.
+\pagebreak
+
+\section{Question 9}
+\includegraphics[width=\textwidth]{picture_3.png}
+
+\subsection{Solution: (3) $>$ (1) $>$ (2) $>$ (4)}
+We rank these by total charge in the system. 
+(1) has total $4q$, (2) has total $-q$, (3) has total $13q$, and (4) has total $-8q$.
+
+\subsection{Solution}
+1) Decrease\\
+2) Increase\\
+3) Decrease\\
+4) Increase
+\pagebreak
 
 \section{Question 11}
-\subsection*{Solution: (a) $>$ (c) $>$ (b)}
+\includegraphics[width=\textwidth]{picture_4.png}
+
+\subsection*{Solution: (a) $>$ (b) $>$ (c)}
 There are an equal range through which electric potential is experienced for each point, but the distances have a different range.
 I will be going through the points in my chosen order.\\
-a) The range of distances ranges between the pythagorean of $d$ and $L/2$, going through it twice over.\\
-c) The range of distances is between $d$ and $d + L$. This being a larger range with a greater maximum value, the maximum value would be 
+a) The range of distances ranges between $d$ and the pythagorean of $d$ and $L/2$, going through it twice over.\\
+b) The range of distances is between $d$ and the pythagorean of $d$ and $L$. This being a larger range with a greater maximum value and the same minimum value, the total electrical potential would also be less. $(a) > (b)$.\\
+c) The range of distances is between $d$ and $d + L$.  The triangle inequality tells us that the pythagorean between two sides of a triangle is less than the length of the two sides added together. As such, the distances will always be greater than in (b) for all points along the line charge. \boxed{(a) > (b) > (c)}.
+\pagebreak
 
 \section{Question 12}
+\includegraphics[width=\textwidth]{picture_5.png}
+
 \subsection{Solution: B}
 Electric field lines point in the direction of lower voltage (electric potential).
 Negative charges go in the opposite direction as the electric field lines point.
@@ -96,8 +146,10 @@ Proton = Electron.\\
 \underline{Alpha particle}: The alpha particle has positive charge equal to twice that of a proton ($2e$), but the change in voltage, as previously established, will be negative.
 As such, the electric potential difference will be a negative multiplied by a negative, so positive, with a value of $200*e$.
 \boxed{\text{Alpha particle $>$ Proton = Electron}}
+\pagebreak
 
 \section{Problem 6}
+\includegraphics[width=\textwidth]{picture_6.png}
 
 \subsection{Solution: 2.46V}
 We know the formula for work done on an object and how that relates to the electrical potential difference.
@@ -118,8 +170,11 @@ It would have the same value as that between points B and A.
 The two points lie along the same equipotential line. 
 Along equipotential lines, the electric potential remains constant.
 As such, between the two points, the difference is \boxed{zero}.
+\pagebreak
 
 \section{Problem 8}
+\includegraphics[width=\textwidth]{picture_7.png}
+
 \subsection{Solution: 30V}
 We can define the function. 
 \(E(x) = \left\{ \begin{matrix}
@@ -166,8 +221,11 @@ Between x=2 and x=4, the voltage increases, then decreases, canceling itself out
 Due to properties of integration, we can find the value of x for whch $20(x - 4) = 30$. 
 The value for which that is the case, or the solution is x=5.5.
 Adding units, we get \boxed{x = 5.5\unit{\meter}}.  
+\pagebreak
 
 \section{Problem 10}
+\includegraphics[width=\textwidth]{picture_8.png}
+
 \subsection*{Solution}
 By Gauss' Law, we know that the electric field from an infinite nonconucting plate is equal to $E = \frac{\sigma}{2\varepsilon_0}$.
 The electric potential is equal to the integral $\Delta V = \int_{i}^{f} \vec{E}\cdot d\vec{s}$.
@@ -192,8 +250,11 @@ Check it out.
     \left|\Delta V\right|   &=  \left|-998.7 \unit{\joule/\coulomb}\right|
         =   \boxed{998.7 \unit{\joule/\coulomb}}
 \end{align*}
+\pagebreak
 
 \section{Problem 16}
+\includegraphics[width=\textwidth]{picture_9.png}
+
 \subsection*{Solution: 2.214 \unit{\joule/\coulomb}}
 Let's start with the corners.
 Suppose the distance between the corners and the center is a distance $r_1$. Each of them is multiplied by $q_1$.
@@ -219,8 +280,11 @@ We can use a like formula for the two.
         &=  \frac{863.04 \times 10^{-3}}{39 \times 10^{-2}}
         =   \boxed{2.214 \unit{\joule/\coulomb}}
 \end{align*}
+\pagebreak
 
 \section{Problem 30}
+\includegraphics[width=\textwidth]{picture_10.png}
+
 \subsection*{Solution: 0V}
 Electric potential has no vectorial direction. 
 For this problem, in order to make things easier, I will start by 
