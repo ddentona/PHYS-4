@@ -83,7 +83,140 @@ Two vectors are given by $\vec{a} = 3.0\hat{i} + 5.0\hat{j}$ and $\vec{b} = 2.0\
 
 \pagebreak
 \section{Chapter 21, Problem 21}
-A nonconducting spherical shell, with an inner radius of 4.0 cm and an outer radius of 6.0 cm, has charge spread nonuniformly through its volume between its inner and outer surfaces. The volume charge density $\rho$ is the charge per unit volume, with the unit coulomb per cubic meter. For this shell $\rho = b/r$, where $r$ is the distance in meters from the center of the shell
-and $b = 3.0 \unit{\micro\coulomb/\meter^2}$. What is the net charge in the shell?
+A nonconducting spherical shell, with an inner radius of 4.0 cm and an outer radius of 6.0 cm, has charge spread nonuniformly through its volume between its inner and outer surfaces. The volume charge density $\rho$ is the charge per unit volume, with the unit coulomb per cubic meter. For this shell $\rho = b/r$, where $r$ is the distance in meters from the center of the shell and $b = 3.0 \unit{\micro\coulomb/\meter^2}$. What is the net charge in the shell?
+
+\subsection*{Solution: 3.77\texttimes 10$^{-8}$ C}
+I had an explanation, but it was wrong, so here are my calculations. 
+\begin{align*}
+    Q   &=  \rho*V
+        =   \int \rho * 4 \pi r^2\,dr
+        =   \int_{0.04}^{0.06} b * 4 \pi r\,dr\\
+        &=  4\pi * b \int_{0.04}^{0.06} r\,dr
+        =   4\pi * b \left[\frac{r^2}{2}\right]_{0.04}^{0.06}\\
+        &=  4\pi * b \left(\frac{0.06^2}{2} - \frac{0.04^2}{2}\right)
+        =   4\pi * b \left(\frac{36}{2} - \frac{16}{2}\right) \times 10^{-4}\\
+        &=  4\pi * b * \frac{20}{2} \times 10^{-4}
+        =   4\pi * b * 10 \times 10^{-4}\\
+        &=  4\pi * 3.0 \times 10^{-6} \times 10^{-3}
+        =   12\pi \times 10^{-9} \unit{\coulomb}\\
+        &=  \boxed{37.7 \times 10^{-9} \unit{\coulomb}  = 3.77 \times 10^{-8} \unit{\coulomb}}
+\end{align*}
+
+\pagebreak
+\section{Chapter 22, Problem 30}
+\begin{wrapfigure}{r}{0.25\textwidth}
+    \vspace{-30pt}
+    \includegraphics[width=0.25\textwidth]{picture_3.png} 
+    % \label{fig:wrapfig}
+\end{wrapfigure}
+Figure 22-53 shows two concentric rings, of radii $R$ and $R' = 3.00R$, that lie on the same plane. Point $P$ lies on the central z axis, at distance $D = 2.00R$ from the center of the rings. The smaller ring has uniformly distributed charge $+Q$. In terms of $Q$, what is the uniformly distributed charge on the larger ring if the net electric field at $P$ is zero?
+
+\subsection*{Solution: -9Q}
+We begin with the fact that the net electric field is zero, and we expand on that.
+We will call the charge on the outer ring $Q'$.
+\begin{align*}
+    E   &=  0
+        =   E_R + E_{R'}
+        =   \frac{kQ}{R^2} + \frac{kQ'}{R'^2}
+        =   \frac{kQ}{R^2} + \frac{kQ'}{(3R)^2}
+        =   \frac{kQ}{R^2} + \frac{kQ'}{9R^2}
+\end{align*}
+
+From here, we can solve for $Q'$.
+\begin{gather*}
+    0   =   \frac{kQ}{R^2} + \frac{kQ'}{9R^2}\\
+    \frac{kQ}{R^2}  =   -\frac{kQ'}{9R^2}\\
+    \frac{Q}{R^2}  =   -\frac{Q'}{9R^2}\\
+    -Q  =   \frac{Q'}{9}\\
+    Q'  =   \boxed{-9Q}
+\end{gather*}
+
+\pagebreak
+\section{Chapter 23, Problem 42}
+Two large metal plates of area $1.0 \unit{\meter^2}$ face each other, $5.0 \unit{\centi\meter}$ apart, with equal charge magnitudes $|q|$ but opposite signs. The field magnitude $E$ between them (neglect fringing) is $55 \unit{\newton/\coulomb}$. Find $|q|$.
+
+\subsection*{Solution: 4.8675 \texttimes\ 10$^{-10}$ F}
+We will treat the metal plates as a capacitor.
+There exists a formula for the charge separated by a capacitor.
+\[
+    q   =   CV
+\]
+
+There are two variables in this that we need to find: the capacitance and the voltage.
+\begin{gather*}
+    C   =   \frac{\varepsilon_0 A}{d} = \frac{\varepsilon_0 * 1}{0.05} \unit{\farad}
+        =   20\varepsilon_0\\
+    \Delta V    =   -E \Delta x
+        =   -55 * 0.05 \unit{\volt}
+\end{gather*}
+
+We can combine these into out above equation to get the answer.
+\begin{gather*}
+    q   =   CV
+        =   (\frac{\varepsilon_0}{0.05}) * (-55 * 0.05)
+        =   -55 * \varepsilon_0
+        =   -4.8675 \times 10^{-10}\\
+    |q| =   \boxed{4.8675 \times 10^{-10} \unit{\coulomb}}
+\end{gather*}
+
+\pagebreak
+\section{Chapter 24, Problem 64}
+A hollow metal sphere has a potential of +400 V with respect to ground (defined to be at V = 0) and a charge of $5.0 \times 10^{-9} \unit{\coulomb}$. Find the electric potential at the center of the sphere.
+
+\section{Chapter 24, Problem 67}
+A metal sphere of radius 15 cm has a net charge of $3.0 \times 10^{-8} \unit{\coulomb}$. (a) What is the electric field at the sphere's surface? (b) If V = 0 at infinity, what is the electric potential at the sphere's
+surface? (c) At what distance from the sphere's surface has the electric potential decreased by 500 V?
+
+\section{Chapter 24, Problem 37}
+What is the magnitude of the electric field at the point $(3.00\hat{i} - 2.00\hat{j} + 4.00\hat{k}) \unit{\meter}$ if the electric potential in the region is given by $V = 2.00xyz^2$, where V is in volts and coordinates $x$, $y$, and $z$ are in meters?
+
+\subsection*{Solution: 125.0 N/C}
+This problem is solvable using gradients and vectors.
+\begin{align*}
+    \vec{E} &=  \nabla V
+        =   \left(\begin{smallmatrix} \diffp{V}{x}\\ \\ \diffp{V}{y}\\ \\ \diffp{V}{z} \end{smallmatrix}\right)
+        =   \begin{pmatrix} 2yz^2\\ 2xz^2\\ 4xyz \end{pmatrix}\\
+    \vec{E}(3, -2, 4)   &=  \begin{pmatrix} 2*(-2)*4^2\\ 2*3*4^2\\ 4*3*(-2)*4 \end{pmatrix}
+        =   \begin{pmatrix} -64 \\ 96 \\ -48 \end{pmatrix} \unit{\meter}
+\end{align*}
+
+Knowing the vector value, we take the magnitude.
+\begin{align*}
+    \left|\vec{E}(3, -2, 4)\right|  &=  \sqrt{64^2 + 96^2 - 48^2}
+        =   \sqrt{4096 + 9216 + 2304}\\
+        &=  \sqrt{15616}
+        =   \boxed{16 \sqrt{61} \unit{\newton/\coulomb} \approx 125.0 \unit{\newton/\coulomb}}
+\end{align*}
+
+\pagebreak
+\section{Chapter 25, Problem 1}
+\begin{wrapfigure}{r}{0.25\textwidth}
+    \vspace{-30pt}
+    \includegraphics[width=0.25\textwidth]{picture_8.png} 
+    % \label{fig:wrapfig}
+\end{wrapfigure}
+The two metal objects in Fig. 25-24 have net charges of $+70 \unit{\pico\coulomb}$ and $-70 \unit{\pico\coulomb}$, which result in a 20 V potential difference between them. (a) What is the capacitance of the system? (b) If the
+charges are changed to $+200 \unit{\pico\coulomb}$ and $-200 \unit{\pico\coulomb}$, what does the capacitance become? (c) What does the potential difference become?
+
+\subsection{Solution: 3.5 \texttimes\ 10$^{-12}$ F}
+We have a friendly equation involving capacitance that we can use.
+\begin{align*}
+    q   &=  CV\\
+    C   &=  \frac{q}{V}
+        =   \frac{70 \times 10^{-12} \unit{\coulomb}}{20 \unit{\volt}}
+        =   \boxed{3.5 \times 10^{-12} \unit{\farad}}
+\end{align*}
+
+\subsection{Solution: 3.5 \texttimes\ 10$^{-12}$ F}
+While capactance is calculatable from the charge, it is not dependant on it. 
+Thus, the capacitance stays the same at \boxed{3.5 \times 10^{-12} \unit{\farad}}.
+
+\subsection{Solution: 57.143 V}
+In order for the above equation ($q = CV$) to remain accurate, the potential difference must increase by the same multiplicative factor.
+From 70 to 200, there is a multiplication factor of $\frac{20}{7}$. 
+We should multiply the electrical potential difference by that same factor.
+\begin{equation*}
+    20 \unit{\volt} * \frac{20}{7} = \boxed{\frac{400}{7} \unit{\volt} \approx 57.143 \unit{\volt}}
+\end{equation*}
 
 \end{document}
