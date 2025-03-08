@@ -1,0 +1,89 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{array}
+\usepackage{cancel}
+\usepackage[thinc]{esdiff}
+% \usepackage{gensymb}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{pgfplots}
+\usepackage{siunitx}
+\usepackage{wrapfig}
+\usepackage{xcolor}
+
+\title{Homework \#8, 4B}
+\author{Donald Aingworth IV}
+\date{March 12, 2025}
+
+\pgfplotsset{width=8cm,compat=1.9}
+\usepgfplotslibrary{external}
+% \tikzexternalize
+
+\renewcommand\thesubsection{\alph{subsection}}
+\newcommand{\proj}{\text{proj}}
+
+\begin{document}
+
+\DeclareSIUnit{\mile}{mi}
+\DeclareSIUnit{\gal}{gal}
+\DeclareSIUnit{\foot}{ft}
+\DeclareSIUnit{\hour}{h}
+\DeclareSIUnit{\rad}{rad}
+\DeclareSIUnit{\unit}{u}
+\DeclareSIUnit{\dyne}{dyn}
+
+\maketitle
+
+\pagebreak
+\section{Vectors chapter, Problem 73}
+Two vectors are given by $\vec{a} = 3.0\hat{i} + 5.0\hat{j}$ and $\vec{b} = 2.0\hat{i} + 4.0\hat{j}$. Find (a) $\vec{a} \times \vec{b}$, (b) $\vec{a} \cdot \vec{b}$, (c) $\left(\vec{a} + \vec{b}\right) \cdot \vec{b}$, and (d) the component of $\vec{a}$ along the direction of $\vec{b}$.
+
+\subsection{Solution (a)}
+\begin{align*}
+    \vec{a} &=  \begin{pmatrix} 3.0 \\ 5.0 \end{pmatrix};
+    \vec{b} =   \begin{pmatrix} 2.0 \\ 4.0 \end{pmatrix}\\
+    \vec{a} \times \vec{b}  &=  \begin{pmatrix} 3.0 \\ 5.0 \end{pmatrix} \times \begin{pmatrix} 2.0 \\ 4.0 \end{pmatrix}
+        =   \begin{pmatrix} 3.0 \\ 5.0 \\ 0 \end{pmatrix} \times \begin{pmatrix} 2.0 \\ 4.0 \\ 0 \end{pmatrix}
+        =   \det \begin{bmatrix}
+            \vec{i}     &\vec{j}    &\vec{k}\\
+            3.0         &5.0        &0      \\
+            2.0         &4.0        &0
+        \end{bmatrix}\\
+        &=  \left|\begin{matrix} 5.0 &0 \\ 4.0 &0 \end{matrix}\right| \hat{i}
+            -   \left|\begin{matrix} 3.0 &0 \\ 2.0 &0 \end{matrix}\right| \hat{j}
+            +   \left|\begin{matrix} 3.0 &5.0 \\ 2.0 &4.0 \end{matrix}\right| \hat{k}\\
+        &=  0\hat{i} + 0\hat{j} + (3*4 - 5*2)\hat{k}
+        =   \boxed{\begin{pmatrix} 0\\0\\2 \end{pmatrix}}
+\end{align*}
+
+\subsection{Solution (b)}
+\begin{align*}
+    \vec{a} \cdot \vec{b}  &=  \begin{pmatrix} 3.0 \\ 5.0 \end{pmatrix} \cdot \begin{pmatrix} 2.0 \\ 4.0 \end{pmatrix}
+        =   3*2 + 5*4
+        =   6 + 20
+        =   \boxed {26}
+\end{align*}
+
+\subsection{Solution (c)}
+\begin{align*}
+    \left(\vec{a} + \vec{b}\right) \cdot \vec{b}    &=  \left(\begin{pmatrix} 3.0 \\ 5.0 \end{pmatrix} + \begin{pmatrix} 2.0 \\ 4.0 \end{pmatrix}\right) \cdot \begin{pmatrix} 2.0 \\ 4.0 \end{pmatrix}
+        =   \begin{pmatrix} 5.0 \\ 9.0 \end{pmatrix} \cdot \begin{pmatrix} 2.0 \\ 4.0 \end{pmatrix}\\
+        &=  5 * 2 + 9 * 4
+        =   10 + 36
+        =   \boxed{46}
+\end{align*}
+
+\subsection{Solution (d)}
+\begin{align*}
+    \proj_{\vec{a}} \vec{b} &=  \left(\frac{\vec{b} \cdot \vec{a}}{\vec{a} \cdot \vec{a}}\right)\vec{a}
+        =   \frac{26}{34} \begin{pmatrix} 3\\5 \end{pmatrix}
+        =   \frac{13}{17} \begin{pmatrix} 3\\5 \end{pmatrix}
+        =   \boxed{\frac{39}{17}\hat{i} + \frac{65}{17}\hat{j}}
+\end{align*}
+
+\pagebreak
+\section{Chapter 21, Problem 21}
+A nonconducting spherical shell, with an inner radius of 4.0 cm and an outer radius of 6.0 cm, has charge spread nonuniformly through its volume between its inner and outer surfaces. The volume charge density $\rho$ is the charge per unit volume, with the unit coulomb per cubic meter. For this shell $\rho = b/r$, where $r$ is the distance in meters from the center of the shell
+and $b = 3.0 \unit{\micro\coulomb/\meter^2}$. What is the net charge in the shell?
+
+\end{document}
