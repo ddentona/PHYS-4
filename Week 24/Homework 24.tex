@@ -185,9 +185,53 @@ Let's use Gauss' Law for starters.
         =   \boxed{11.987 \times 10^4 \unit{\newton/\coulomb}}
 \end{gather*}
 
-\subsection{Solution: }
+\subsection{Solution: 1789 V}
+We prevoiusly established the formula for the electric field outside the shell.
+\begin{equation*}
+    E = \frac{kq_{enc}}{r^2}
+\end{equation*}
 
+We have a formula for the potential difference from the electric field.
+\begin{align*}
+    V   &=  -\int \vec{E}\cdot d\vec{s}
+\end{align*}
 
+Our limits would be from infinitely far away. 
+Additionally, we would be travelling from there along the same line as the electric field, making $\cos(\theta) = 1$, so we can simplify the formula. 
+\begin{align*}
+    V   &=  -\int \frac{kq_{enc}}{r^2} \,dr
+        =   -\left(-\frac{kq_{enc}}{r}\right) + c
+        =   \frac{kq_{enc}}{r} + c
+\end{align*}
+
+Since $V = 0$ at infinity, and \(\lim_{r \to \inf}\left(\frac{kq_{enc}}{r}\right) = 0\), the constant c would be equal to the same (0).
+This simplifies our equation immensely, and we can then just calculate the electric potential from the given information.
+\begin{align*}
+    V   &=  \frac{kq_{enc}}{r}
+        =   \frac{(8.99 \times 10^9)*(3.0 \times 10^{-8})}{15 \times 10^{-1}}
+        =   \frac{26.97 \times 10}{1.5 \times 10^{-1}}
+        =   17.98 \times 10^2 
+        =   \boxed{1798 \unit{\volt}}
+\end{align*}
+
+\subsection{Solution: 5.778cm}
+When the electric potential has decreased by 500V, the electric potential will be $1798$V $-\ 500$V $= 1298$V. 
+From this, we just have to find the value of $r$ where our formula applies.
+\begin{align*}
+    1298 \unit{\volt}   &=  \frac{kq_{enc}}{r}\\
+    r   &=  \frac{(8.99 \times 10^9)*(3.0 \times 10^{-8})}{1298}\\
+        &=  \frac{2697 \times 10}{1298}
+        =   207.78 \times 10^{-3} \unit{\meter}\\
+        &=  0.20778 \unit{\meter}
+\end{align*}
+
+This is the distance from the center for which the electric potential decreases by 500V.
+Lastly, we just have to subtract the initial value.
+\begin{equation*}
+    0.20778 - 0.15 = \boxed{0.05778 \unit{\meter}}
+\end{equation*}
+
+\pagebreak
 \section{Chapter 24, Problem 37}
 What is the magnitude of the electric field at the point $(3.00\hat{i} - 2.00\hat{j} + 4.00\hat{k}) \unit{\meter}$ if the electric potential in the region is given by $V = 2.00xyz^2$, where V is in volts and coordinates $x$, $y$, and $z$ are in meters?
 
