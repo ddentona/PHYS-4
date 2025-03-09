@@ -111,26 +111,25 @@ I had an explanation, but it was wrong, so here are my calculations.
 \end{wrapfigure}
 Figure 22-53 shows two concentric rings, of radii $R$ and $R' = 3.00R$, that lie on the same plane. Point $P$ lies on the central z axis, at distance $D = 2.00R$ from the center of the rings. The smaller ring has uniformly distributed charge $+Q$. In terms of $Q$, what is the uniformly distributed charge on the larger ring if the net electric field at $P$ is zero?
 
-\subsection*{Solution: -9Q}
+\subsection*{Solution: -13Q/5}
 We begin with the fact that the net electric field is zero, and we expand on that.
 We will call the charge on the outer ring $Q'$.
 \begin{align*}
     E   &=  0
         =   E_R + E_{R'}
-        =   \frac{kQ}{R^2} + \frac{kQ'}{R'^2}
-        =   \frac{kQ}{R^2} + \frac{kQ'}{(3R)^2}
-        =   \frac{kQ}{R^2} + \frac{kQ'}{9R^2}
+        =   \frac{kQ}{D^2 + R^2} + \frac{kQ'}{D^2 + R'^2}\\
+        &=  \frac{kQ}{(2R)^2 + R^2} + \frac{kQ'}{(2R)^2 + (3R)^2}\\
+        &=  \frac{kQ}{4R^2 + R^2} + \frac{kQ'}{4R^2 + 9R^2}
 \end{align*}
 
 From here, we can solve for $Q'$.
 \begin{gather*}
-    0   =   \frac{kQ}{R^2} + \frac{kQ'}{9R^2}\\
-    \frac{kQ}{R^2}  =   -\frac{kQ'}{9R^2}\\
-    \frac{Q}{R^2}  =   -\frac{Q'}{9R^2}\\
-    -Q  =   \frac{Q'}{9}\\
-    Q'  =   \boxed{-9Q}
+    0   =   \frac{kQ}{5R^2} + \frac{kQ'}{13R^2}\\
+    \frac{kQ}{5R^2}  =   -\frac{kQ'}{13R^2}\\
+    \frac{Q}{5R^2}  =   -\frac{Q'}{13R^2}\\
+    -\frac{Q}{5}  =   \frac{Q'}{13}\\
+    Q'  =   \boxed{-\frac{13}{5}Q}
 \end{gather*}
-
 \pagebreak
 \section{Chapter 23, Problem 42}
 Two large metal plates of area $1.0 \unit{\meter^2}$ face each other, $5.0 \unit{\centi\meter}$ apart, with equal charge magnitudes $|q|$ but opposite signs. The field magnitude $E$ between them (neglect fringing) is $55 \unit{\newton/\coulomb}$. Find $|q|$.
@@ -163,9 +162,31 @@ We can combine these into out above equation to get the answer.
 \section{Chapter 24, Problem 64}
 A hollow metal sphere has a potential of +400 V with respect to ground (defined to be at V = 0) and a charge of $5.0 \times 10^{-9} \unit{\coulomb}$. Find the electric potential at the center of the sphere.
 
+\subsection*{Solution: +400V}
+The electric potential at the edge of the sphere is going to be $+400 \unit{\volt}$.
+We know that the electric field inside a nonconducting sphere at any point is zero. 
+Since the electric potential difference is the integral of the electric field, the change in electric potential is the area under the curve of the electric field.
+Since the electric field is zero inside the shell at all points, the area under the curve would be just that: zero.
+As such, we need but add the initial electric potential to this, leaving us with a final result of \boxed{+400 \unit{\volt}}
+
+\pagebreak
 \section{Chapter 24, Problem 67}
-A metal sphere of radius 15 cm has a net charge of $3.0 \times 10^{-8} \unit{\coulomb}$. (a) What is the electric field at the sphere's surface? (b) If V = 0 at infinity, what is the electric potential at the sphere's
-surface? (c) At what distance from the sphere's surface has the electric potential decreased by 500 V?
+A metal sphere of radius 15 cm has a net charge of $3.0 \times 10^{-8} \unit{\coulomb}$. (a) What is the electric field at the sphere's surface? (b) If V = 0 at infinity, what is the electric potential at the sphere's surface? (c) At what distance from the sphere's surface has the electric potential decreased by 500 V?
+
+\subsection{Solution: 11.987 \texttimes 10$^4$ N/C}
+Let's use Gauss' Law for starters. 
+\begin{gather*}
+    \frac{q_{enc}}{\varepsilon_0} = \oint \vec{E} \cdot\,d\vec{A}\\
+    \frac{q_{enc}}{\varepsilon_0} = E * 4\pi r^2\\
+    E   =   \frac{kq_{enc}}{r^2}
+        =   \frac{k*3.0 \times 10^{-8}}{0.15^2}
+        =   \frac{(8.99 \times 10^9) * (3.0 \times 10^{-8})}{225 \times 10^{-4}}\\
+    E   =   \frac{26.97 \times 10^{5}}{225}
+        =   \boxed{11.987 \times 10^4 \unit{\newton/\coulomb}}
+\end{gather*}
+
+\subsection{Solution: }
+
 
 \section{Chapter 24, Problem 37}
 What is the magnitude of the electric field at the point $(3.00\hat{i} - 2.00\hat{j} + 4.00\hat{k}) \unit{\meter}$ if the electric potential in the region is given by $V = 2.00xyz^2$, where V is in volts and coordinates $x$, $y$, and $z$ are in meters?
