@@ -75,10 +75,14 @@ Two vectors are given by $\vec{a} = 3.0\hat{i} + 5.0\hat{j}$ and $\vec{b} = 2.0\
 
 \subsection{Solution (d)}
 \begin{align*}
-    \proj_{\vec{a}} \vec{b} &=  \left(\frac{\vec{b} \cdot \vec{a}}{\vec{a} \cdot \vec{a}}\right)\vec{a}
-        =   \frac{26}{34} \begin{pmatrix} 3\\5 \end{pmatrix}
-        =   \frac{13}{17} \begin{pmatrix} 3\\5 \end{pmatrix}
-        =   \boxed{\frac{39}{17}\hat{i} + \frac{65}{17}\hat{j}}
+    \proj_{\vec{b}} \vec{a} &=  \left(\frac{\vec{a} \cdot \vec{b}}{\vec{b} \cdot \vec{b}}\right)\vec{b}
+        =   \frac{26}{20} \begin{pmatrix} 2\\4 \end{pmatrix}
+        =   \frac{13}{10} \begin{pmatrix} 2\\4 \end{pmatrix}
+        =   2.6\hat{i} + 5.2\hat{j}\\
+    \left|\proj_{\vec(b)} \vec{a}\right| &= \sqrt{2.6^2 + 5.2^2}
+        =   \sqrt{6.76 + 27.04}
+        =   \sqrt{33.8}
+        =   \boxed{5.81}
 \end{align*}
 
 \pagebreak
@@ -117,18 +121,18 @@ We will call the charge on the outer ring $Q'$.
 \begin{align*}
     E   &=  0
         =   E_R + E_{R'}
-        =   \frac{kQ}{D^2 + R^2} + \frac{kQ'}{D^2 + R'^2}\\
-        &=  \frac{kQ}{(2R)^2 + R^2} + \frac{kQ'}{(2R)^2 + (3R)^2}\\
-        &=  \frac{kQ}{4R^2 + R^2} + \frac{kQ'}{4R^2 + 9R^2}
+        =   \frac{kQD}{(D^2 + R^2)^{3/2}} + \frac{kQ'D}{(D^2 + R'^2)^{3/2}}\\
+        &=  \frac{kQ*2R}{((2R)^2 + R^2)^{3/2}} + \frac{kQ'*2R}{((2R)^2 + (3R)^2)^{3/2}}\\
+        &=  \frac{kQ*2R}{(4R^2 + R^2)^{3/2}} + \frac{kQ'*2R}{(4R^2 + 9R^2)^{3/2}}
 \end{align*}
 
 From here, we can solve for $Q'$.
 \begin{gather*}
-    0   =   \frac{kQ}{5R^2} + \frac{kQ'}{13R^2}\\
-    \frac{kQ}{5R^2}  =   -\frac{kQ'}{13R^2}\\
-    \frac{Q}{5R^2}  =   -\frac{Q'}{13R^2}\\
-    -\frac{Q}{5}  =   \frac{Q'}{13}\\
-    Q'  =   \boxed{-\frac{13}{5}Q}
+    0   =   \frac{kQ*2R}{(5R^2)^{3/2}} + \frac{kQ'*2R}{(13R^2)^{3/2}}\\
+    \frac{kQ*2R}{(5R^2)^{3/2}}  =   -\frac{kQ'*2R}{(13R^2)^{3/2}}\\
+    \frac{Q}{R^3 5^{3/2}}  =   -\frac{Q'}{R^3 13^{3/2}}\\
+    -\frac{Q}{5^{3/2}}  =   \frac{Q'}{13^{3/2}}\\
+    Q'  =   \boxed{-\frac{13^{3/2}}{5^{3/2}}Q \approx -4.19 Q}
 \end{gather*}
 \pagebreak
 \section{Chapter 23, Problem 42}
@@ -173,7 +177,7 @@ As such, we need but add the initial electric potential to this, leaving us with
 \section{Chapter 24, Problem 67}
 A metal sphere of radius 15 cm has a net charge of $3.0 \times 10^{-8} \unit{\coulomb}$. (a) What is the electric field at the sphere's surface? (b) If V = 0 at infinity, what is the electric potential at the sphere's surface? (c) At what distance from the sphere's surface has the electric potential decreased by 500 V?
 
-\subsection{Solution: 11.987 \texttimes 10$^4$ N/C}
+\subsection{Solution: 1.1987 \texttimes 10$^4$ N/C}
 Let's use Gauss' Law for starters. 
 \begin{gather*}
     \frac{q_{enc}}{\varepsilon_0} = \oint \vec{E} \cdot\,d\vec{A}\\
@@ -182,10 +186,10 @@ Let's use Gauss' Law for starters.
         =   \frac{k*3.0 \times 10^{-8}}{0.15^2}
         =   \frac{(8.99 \times 10^9) * (3.0 \times 10^{-8})}{225 \times 10^{-4}}\\
     E   =   \frac{26.97 \times 10^{5}}{225}
-        =   \boxed{11.987 \times 10^4 \unit{\newton/\coulomb}}
+        =   \boxed{1.1987 \times 10^4 \unit{\newton/\coulomb}}
 \end{gather*}
 
-\subsection{Solution: 1789 V}
+\subsection{Solution: 1798 V}
 We prevoiusly established the formula for the electric field outside the shell.
 \begin{equation*}
     E = \frac{kq_{enc}}{r^2}
@@ -242,15 +246,15 @@ This problem is solvable using gradients and vectors.
         =   \left(\begin{smallmatrix} \diffp{V}{x}\\ \\ \diffp{V}{y}\\ \\ \diffp{V}{z} \end{smallmatrix}\right)
         =   \begin{pmatrix} 2yz^2\\ 2xz^2\\ 4xyz \end{pmatrix}\\
     \vec{E}(3, -2, 4)   &=  \begin{pmatrix} 2*(-2)*4^2\\ 2*3*4^2\\ 4*3*(-2)*4 \end{pmatrix}
-        =   \begin{pmatrix} -64 \\ 96 \\ -48 \end{pmatrix} \unit{\meter}
+        =   \begin{pmatrix} -64 \\ 96 \\ -96 \end{pmatrix} \unit{\meter}
 \end{align*}
 
 Knowing the vector value, we take the magnitude.
 \begin{align*}
-    \left|\vec{E}(3, -2, 4)\right|  &=  \sqrt{64^2 + 96^2 - 48^2}
-        =   \sqrt{4096 + 9216 + 2304}\\
-        &=  \sqrt{15616}
-        =   \boxed{16 \sqrt{61} \unit{\newton/\coulomb} \approx 125.0 \unit{\newton/\coulomb}}
+    \left|\vec{E}(3, -2, 4)\right|  &=  \sqrt{64^2 + 96^2 + 96^2}
+        =   \sqrt{4096 + 9216 + 9216}\\
+        &=  \sqrt{22528}
+        =   \boxed{32 \sqrt{22} \unit{\newton/\coulomb} \approx 150.1 \unit{\newton/\coulomb}}
 \end{align*}
 
 \pagebreak
