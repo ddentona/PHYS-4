@@ -1,0 +1,92 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{array}
+\usepackage{cancel}
+\usepackage[thinc]{esdiff}
+% \usepackage{gensymb}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{pgfplots}
+\usepackage{siunitx}
+\usepackage{wrapfig}
+\usepackage{xcolor}
+
+\begin{document}
+\section*{Problem 1}
+In lecture we determined the capacitance of the parallel plate and coaxial cylinder conductor configurations. 
+We alluded to a set of steps that leads to determining the capacitance. 
+Determine the capacitance of two concentric spherical conductors. 
+The inner conductor has outer radius $a$, and the outer conductor has inner radius $b$. 
+Of course, $b > a$. 
+Show that the capacitance is $C = 4\pi\varepsilon_0\frac{ab}{b - a}$.
+
+\subsection*{Solution}
+Suppose that the outer sphere has the positive charge and that the charge separated is $Q$. 
+The electric field would be inward, and the charge on the inner sphere would be $-Q$.
+We can now compute the electric field, using our friend Gauss' Law, given an abstract radius $r$ such that $a < r < b$.
+\begin{gather*}
+    \frac{q_{enc}}{\varepsilon_0} = \Phi = \oint \vec{E} \cdot d\vec{A}\\
+    \frac{q_{enc}}{\varepsilon_0} = E \oint d\vec{A} = E * 4\pi r^2\\
+    E   =   \frac{q_{enc}}{4\pi r^2 \varepsilon_0}
+        =   \frac{Q}{4\pi r^2 \varepsilon_0}
+\end{gather*}
+
+Now, we can use our known formula for the electric potential difference.
+\begin{align*}
+    \Delta V    &=  -\int_{i}^{f} \vec{E} \cdot \,d\vec{s}
+        =   \int_{i}^{f} E\,ds
+        =   \int_{a}^{b} \frac{Q}{4\pi r^2 \varepsilon_0}\,dr\\
+        &=  \frac{Q}{4\pi \varepsilon_0} \left( -\frac{1}{r} \right)_a^b
+        =   \frac{Q}{4\pi \varepsilon_0} \left( \frac{1}{a} - \frac{1}{b} \right)\\
+        &=  \frac{Q}{4\pi \varepsilon_0} * \frac{b - a}{ab}
+\end{align*}
+
+Lastly, we use the simple formula for the capacitance.
+\begin{align*}
+    C   &=  \frac{Q}{\Delta V}
+        =   Q * (\Delta V)^{-1}
+        =   Q * \frac{4\pi \varepsilon_0}{Q} * \frac{ab}{b - a}
+        =   \boxed{4\pi \varepsilon_0 \frac{ab}{b - a}}
+\end{align*}
+
+\pagebreak
+\section*{Problem 2}
+One way to clean the air in long highway tunnels is to use a capacitor. 
+Soot from car exhaust is attracted to the charge on the capacitor plates. 
+One of these filters is constructed out of two flat square sheets of metal with side length 26.0 cm. They are spaced apart by 0.90 cm. This charge separation is 540 nC. 
+(a) What is the electric field in this capacitor? 
+(b) What is the potential energy stored in this capacitor?
+
+\subsection*{Solution (a)}
+This is a problem with a parallel plate capacitor.
+We can use formulas and concepts for parallel plate capacitors.
+The plates will be said to have side length $s$.
+\begin{gather*}
+    \frac{q_{enc}}{\varepsilon_0} = \oint \vec{E} \cdot d\vec{s}\\
+    \frac{q_{enc}}{\varepsilon_0} = E \oint dA = E * s^2
+\end{gather*}
+
+We can here solve for the electric field and get the answer.
+\begin{align*}
+    E   &=  \frac{q_{enc}}{\varepsilon_0 s^2} 
+        =   \frac{540 \times 10^{-9}}{(8.85 \times 10^{-12})*0.26^2}\\
+        &=  \frac{540 \times 10^3}{8.85 * 0.0676}
+        =   \frac{540 \times 10^3}{0.59826}\\
+        &=  \boxed{9.026 \times 10^5 \unit{\newton/\coulomb}}
+\end{align*}
+
+\subsection*{Solution (b)}
+We could use the formulas from the textbook for the capacitance of a capacitor and the potential energy from that.
+\begin{align*}
+    C   &=  \frac{\varepsilon_0 A}{d}
+        =   \frac{\varepsilon_0 s^2}{d}
+        =   \frac{5.9826 \times 10^{-13}}{9 \times 10^{-3}}
+        =   6.7473 \times 10^{-11} \unit{\farad}\\
+    U   &=  \frac{q^2}{2C}
+        =   \frac{(540 \times 10^{-9})^2}{2 * 6.7473 \times 10^{-11}}
+        =   \frac{2.916 \times 10^{-13}}{1.329 \times 10^{-10}}\\
+        &=  \boxed{2.19 \times 10^{-3} \unit{\joule}}
+\end{align*}
+
+
+\end{document}
