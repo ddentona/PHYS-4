@@ -1,4 +1,5 @@
 \documentclass[12pt]{article}
+\usepackage{amsthm}
 \usepackage{amsmath}
 \usepackage{array}
 \usepackage{cancel}
@@ -21,6 +22,7 @@
 
 \renewcommand\thesubsection{\alph{subsection}}
 \newcommand{\proj}{\text{proj}}
+\newtheorem{theorem}{Theorem}
 
 \begin{document}
 
@@ -200,6 +202,36 @@ Since potential difference will be constant when we achieve equilibrium, we can 
 This fits well with an idea that charge is given proportionally to the capacitance compared to the total capacitance, but that's a story for another day.
 
 \pagebreak
+\section*{Charge Proportionality Theorem}
+That day is today. Let's define and prove a proportionality theorem for the charge that passes through parallel capacitors.
+We'll call it the Parallel Capacitor Equivalent Charge Proportionality Theorem, or PCECPT for short.
+\begin{theorem}[PCECPT]
+    Let $C$ be a capacitor or equivalent to a capacitor unique in its parallel line through part of a circuit.
+    The charge from the power source that will go to $C$ compared to the total charge traveling through all the parallel wires is equivalent to the capacitance of $C$ compared to the total capacitance of all capacitors in parallel.
+\end{theorem}
+\begin{proof}
+    Let C have a capacitance $C_1$.
+    Suppose that there are a nonzero number $n$ of capacitors in parallel. 
+    We can express the equivalent capacitance of all capacitors in parallel as $C_{eq}$ and do the same for a generic equivalent capacitor in parallel $C_i$.
+    We can replace this with values of charge, with $Q_{eq}$ being the combined charge of all capacitors and $Q_i$ being the charge passing through one equivalent parallel capacitor.
+    \begin{gather*}
+        Q_{eq} = \frac{C_{eq}}{V}   \Leftrightarrow V = \frac{C_{eq}}{Q_{eq}}\\
+        Q_i =   \frac{C_i}{V}       \Leftrightarrow V = \frac{C_i}{Q_i}
+    \end{gather*}
+
+    Since the electric potential difference is always the same in parallel capacitors, we can use the reflexive property and then substitute in values.
+    From that, we can get the ratio we're looking for.
+    \begin{gather*}
+        V   =   V\\
+        \frac{C_{eq}}{Q_{eq}}   =   \frac{C_i}{Q_i}\\
+        \frac{Q_{eq}}{C_{eq}}   =   \frac{Q_i}{C_i}\\
+        \frac{Q_i}{C_i}         =   \frac{Q_{eq}}{C_{eq}}\\
+        Q_i =   \frac{C_i}{C_{eq}}Q_{eq}
+    \end{gather*}
+    This gives us what we're looking for. QED.
+\end{proof}
+
+\pagebreak
 \section{Problem 23}
 \begin{wrapfigure}{r}{0.4\textwidth}
     \vspace{-30pt}
@@ -211,29 +243,203 @@ The capacitances are $C_1 = 4.0 \unit{\micro\farad}$, $C_2 = 8.0 \unit{\micro\fa
 When switch S is closed, how many electrons travel through (a) point a, (b) point b, (c) point c, and (d) point d? 
 In the figure, do the electrons travel up or down through (e) point b and (f) point c?
 
+\subsection{Solution: 72\textmu C}
+Let's make an equivalent capacitor. 
+\begin{align*}
+    C_{12}  &=  C_1 + C_2 = 4 + 8 = 12 \unit{\micro\farad}\\
+    C_{123} &=  \left( \frac{1}{C_{12}} + \frac{1}{C_3} \right)^{-1}
+        =   \left( \frac{1}{12} + \frac{1}{12} \right)^{-1}
+        =   \left( \frac{2}{12} \right)^{-1}
+        =   \frac{12}{2}
+        =   6\unit{\micro\farad}
+\end{align*}
+
+We can apply our favorite equation to this.
+\begin{align*}
+    q   &=  CV
+        =   6 \times 10^{-6} * 12
+        =   \boxed{72 \times 10^{-6} \unit{\coulomb}}
+\end{align*}
+
+\subsection{Solution: 24\textmu C}
+The charge that goes through each parallel line on the circuit will be proportional to the total capacitance of each individual line's equivalent capacitor.
+In this instance, the capacitance of point $b$'s line is $4\unit{\micro\farad}$ compared to the total $12\unit{\micro\farad}$. 
+We can apply this fraction to the charge. 
+\[\frac{4}{12}*72 = \boxed{24\unit{\micro\coulomb}}\]
+
+\subsection{Solution: 48\textmu C}
+We know that 24\textmu C of the 72\textmu C went to the line with point (b).
+The remaining 48\textmu C has to go somewhere, and its only space it can go to is the line with point (c).
+As such, the answer is \boxed{48 \unit{\micro\coulomb}}.
+
+\subsection{Solution: 72\textmu C}
+In series, the charge passing through any given point is the same. 
+As such our answer would be the same as in part (a), or \boxed{72 \times 10^{-6} \unit{\coulomb}}.
+
+\subsection{Solution: up}
+Electrons travel from the negative plate to the positive plate. 
+Looking at the closest capacitor ($C_1$), the negative plate is the one closer to the negative part of the battery, so that would be the bottom one.
+As such, it would travel from the bottom to the top, otherwise known as \underline{up}.
+
+\subsection{Solution: up}
+Electrons travel from the negative plate to the positive plate. 
+Looking at the closest capacitor ($C_2$) and moving it slightly towards the negative side of the battery without changing the core structure of the circuit, the negative plate is the one closer to the negative part of the battery, so that would be the bottom one.
+As such, it would travel from the bottom to the top, otherwise known as \underline{up}.
+
 \pagebreak
 \section{Problem 31}
 A $2.0 \unit{\micro\farad}$ capacitor and a $4.0 \unit{\micro\farad}$ capacitor are connected in parallel across a 300 V potential difference.
 Calculate the total energy stored in the capacitors.
+
+\subsection*{Solution: 0.27J}
+These capacitors have a collective capacitance of 6\unit{\micro\farad}. 
+We have a formula for total energy stored in a capacitor, which can be applied to the equivalent to find the energy equivalent to the total energy contained in these two capacitors collectively.
+\begin{align*}
+    U   &=  \frac{1}{2}CV^2
+        =   \frac{1}{2}*(6 \times 10^{-6})*300^2
+        =   3 * 9 \times 10^{-2}
+        =   \boxed{0.27 \unit{\joule}}
+\end{align*}
 
 \pagebreak
 \section{Problem 32}
 A parallel-plate air-filled capacitor having area $40\unit{\centi\meter^2}$ and plate spacing $1.0 \unit{\milli\meter}$ is charged to a potential difference of $600 \unit{\volt}$. 
 Find (a) the capacitance, (b) the magnitude of the charge on each plate, (c) the stored energy, (d) the electric field between the plates, and (e) the energy density between the plates.
 
+\subsection{Solution: 3.5419pC}
+The dielectric constant of air is $\kappa = 1.00054$.
+This is a parallel plate capacitor, so we have a simple formula for the capacitance. 
+\begin{align*}
+    C   &=  \frac{\kappa\varepsilon_0 A}{d}
+        =   \frac{1.00054*(8.85 \times 10^{-12})*(40 \times 10^{-4})}{10^{-3}}\\
+        &=  1.00054 * 8.85 * 40 \times 10^{-13}
+        =   \boxed{35.419 \unit{\pico\coulomb}}
+\end{align*}
+
+\subsection{Solution: 21.251nC}
+We'll use the formula for the charge stored. 
+\begin{align*}
+    q   &=  CV
+        =   35.419 \times 10^{-12} * 600
+        =   21.251 \times 10^{-9} \unit{\coulomb}
+        =   \boxed{21.251 \unit{\nano\coulomb}}
+\end{align*}
+
+\subsection{Solution: 6.375\textmu J}
+\begin{align*}
+    U   &=  \frac{q^2}{2C}
+        =   \frac{(21.251 \times 10^{-9})^2}{2*35.419 \times 10^{-12}}
+        =   \frac{4.516 \times 10^{-16}}{70.838 \times 10^{-12}}
+        =   \boxed{6.375 \times 10^{-6} \unit{\joule}}
+\end{align*}
+
+\subsection{Solution: 6\texttimes 10$^5$N/C}
+\begin{align*}
+    V   &=  Ed \rightarrow
+    E   =   \frac{V}{d}
+        =   \frac{600}{10^{-3}}
+        =   \boxed{6 \times 10^5 \unit{\newton/\coulomb}}
+\end{align*}
+
+\subsection{Solution: 1.5938 J/m$^3$}
+\begin{align*}
+    u   &=  \frac{1}{2}\kappa\varepsilon_0 E^2
+        =   \frac{1}{2}1.00054*(8.85 \times 10^{-12})*(6 \times 10^5)^2
+        =   8.85 * 18 \times 10^{-2}\\
+        &=  159.38 \times 10^{-2}
+        =   \boxed{1.5938 \unit{\joule/\meter^3}}
+\end{align*}
+
 \pagebreak
 \section{Problem 35}
 Assume that a stationary electron is a point of charge. 
-What is the energy density $u$ of its electric field at radial distances (a) r = 1.00 mm, (b) r = 1.00 um, (c) r = 1.00 nm, and (d) r = 1.00 pm? 
-(e) What is $u$ in the limit as r → 0?
+What is the energy density $u$ of its electric field at radial distances (a) $r = 1.00 \unit{\milli\meter}$, (b) $r = 1.00 \unit{\micro\meter}$, (c) $r = 1.00 \unit{\nano\meter}$, and (d) $r = 1.00 \unit{\pico\meter}$? 
+(e) What is $u$ in the limit as $r \rightarrow 0$?
+
+\subsection{Solution: 9.1782\texttimes 10$^{-18}$ J/m$^3$}
+We have a formula for the energy density.
+\begin{gather*}
+    u = \frac{1}{2}\varepsilon_0E^2\\
+    E   =   \frac{kq}{r^2}
+\end{gather*}\begin{align*}
+    u   &=  \frac{\varepsilon_0}{2}*\frac{k^2q^2}{r^4}
+        =   \frac{8.85 \times 10^{-12}}{2}*\frac{(8.99 \times 10^9)^2*(-1.602 \times 10^{-19})^2}{(10^{-3})^4}\\
+        &=  \frac{8.85 * 8.99^2 * 1.602^2}{2} \times \frac{10^{-12} * 10^{18} * 10^{-38}}{10^{-12}}\\
+        &=  \frac{8.85*80.8201*2.566404}{2} \times 10^{-20}
+        =   917.82 \times 10^{-20}\\
+        &=  \boxed{9.1782 \times 10^{-18} \unit{\joule/\meter^3}}
+\end{align*}
+
+\subsection{Solution: 9.1782\texttimes 10$^{-6}$ J/m$^3$}
+Let's imagine the formula we has as a fraction, composed on $r^4$ on the bottom and some constant $c$ on the top. 
+We know that since only the radius changes, all other components stay the same, so $c$ is constant.
+We can acknowledge that $u_a$ (our answer to part (a)) is equal to $\frac{c}{r_a^4}$.
+Comparing radii, we can know that $r_b = r_a \times 10^{-3}$.
+\begin{align*}
+    u_b &=  \frac{c}{r_b^4}
+        =   \frac{c}{(r_a \times 10^{-3})^4}
+        =   \frac{c}{r_a} \times 10^{12}\\
+        &=  9.1782 \times 10^{-18} \times 10^{12}\\
+        &=  \boxed{9.1782 \times 10^{-6} \unit{\joule/\meter^3}}
+\end{align*}
+
+\subsection{Solution: 9.1782\texttimes 10$^{6}$ J/m$^3$}
+We'll just do the same thing. 
+Comparing radii, we can know that $r_c = r_a \times 10^{-6}$.
+\begin{align*}
+    u_c &=  \frac{c}{r_c^4}
+        =   \frac{c}{(r_a \times 10^{-6})^4}
+        =   \frac{c}{r_a} \times 10^{24}\\
+        &=  9.1782 \times 10^{-18} \times 10^{24}\\
+        &=  \boxed{9.1782 \times 10^{6} \unit{\joule/\meter^3}}
+\end{align*}
+
+\subsection{Solution: 9.1782\texttimes 10$^{18}$ J/m$^3$}
+We'll just do the same thing. 
+Comparing radii, we can know that $r_c = r_a \times 10^{-9}$.
+\begin{align*}
+    u_d &=  \frac{c}{r_d^4}
+        =   \frac{c}{(r_a \times 10^{-9})^4}
+        =   \frac{c}{r_a} \times 10^{36}\\
+        &=  9.1782 \times 10^{-18} \times 10^{36}\\
+        &=  \boxed{9.1782 \times 10^{18} \unit{\joule/\meter^3}}
+\end{align*}
+
+\subsection{Solution: $\infty$}
+We can take a limit.
+\begin{align*}
+    u   &=  \underset{r\to 0}{\lim}\left( \frac{\varepsilon_0}{2}*\frac{k^2q^2}{r^4} \right)
+        =   \frac{\varepsilon_0k^2q^2}{2}*\underset{r\to 0}{\lim}\left( \frac{1}{r^4} \right)\\
+        &=  \frac{\varepsilon_0k^2q^2}{2}*\infty
+        =   \boxed{\infty}
+\end{align*}
 
 \pagebreak
 \section{Problem 47}
 A certain substance has a dielectric constant of $2.8$ and a dielectric strength of $18 \unit{\mega\volt/\meter}$. 
 If it is used as the dielectric material in a parallel-plate capacitor, what minimum area should the plates of the capacitor have to obtain a capacitance of $7.0 \times 10^{-2} \unit{\micro\farad}$ and to ensure that the capacitor will be able to withstand a potential difference of $4.0 \unit{\kilo\volt}$?
 
-\subsection*{Solution}
+\subsection*{Solution: 6277 cm$^2$}
 The potential difference has to be $V = 4.0 \unit{\kilo\volt}$ and the capacitance has to be $C = 70 \unit{\nano\farad}$. 
+We have a couple formulas for use in this. 
+We have the formula for Gauss' Law with a dialectric ($\varepsilon_0 \oint\kappa\vec{E}\cdot\,dA = q$), the formula for capacitance and charge ($q = CV$), and the formula for the capacitance of a parallel plate capacitor ($C = \frac{\varepsilon_0 A}{d}$). 
+Since the electric potential difference will be constant throughout the capacitor, the potential difference of the capacitor can be written as $\Delta V = E \Delta x$, which can be turned into, for the instance of the capacitor, $V = Ed$.
+We can use three of these formulas as a basis to get a formula with exclusively known values.
+\begin{gather*}
+    V = Ed \Leftrightarrow C = \frac{\varepsilon_0 A}{d}\\
+    d   =   \frac{V}{E}\\
+    C   =   \frac{\varepsilon_0 A E}{V}
+\end{gather*}
 
-
+We should not forget to turn use dielectric constant with the permativity of free space.
+Then, we can solve for the area.
+\begin{align*}
+    &C  =   \frac{\kappa\varepsilon_0 AE}{V}\\
+    A   &=  \frac{CV}{\kappa\varepsilon_0 E}
+        =   \frac{(70 \unit{\nano\farad})*(4.0 \unit{\kilo\volt})}{(2.8)(8.85 \times 10^{-12})(18 \unit{\mega\volt})}\\
+        &=  \frac{70*4}{2.8*8.85*18} * \frac{10^{-9}*10^3}{10^{-12}*10^6}\unit{\meter^2}\\
+        &=  \frac{280}{446.04} \unit{\meter^2}
+        =   0.6277 \unit{\meter^2}
+        =   \boxed{6277\unit{\centi\meter^2}}
+\end{align*}
 \end{document}
