@@ -206,7 +206,7 @@ This fits well with an idea that charge is given proportionally to the capacitan
 That day is today. Let's define and prove a proportionality theorem for the charge that passes through parallel capacitors.
 We'll call it the Parallel Capacitor Equivalent Charge Proportionality Theorem, or PCECPT for short.
 \begin{theorem}[PCECPT]
-    Let $C$ be a capacitor or equivalent to a capacitor unique in its parallel line through part of a circuit.
+    Let $C$ be a perfect capacitor or equivalent to a perfect capacitor unique in its parallel line through part of a circuit made up on only perfect wires.
     The charge from the power source that will go to $C$ compared to the total charge traveling through all the parallel wires is equivalent to the capacitance of $C$ compared to the total capacitance of all capacitors in parallel.
 \end{theorem}
 \begin{proof}
@@ -243,7 +243,7 @@ The capacitances are $C_1 = 4.0 \unit{\micro\farad}$, $C_2 = 8.0 \unit{\micro\fa
 When switch S is closed, how many electrons travel through (a) point a, (b) point b, (c) point c, and (d) point d? 
 In the figure, do the electrons travel up or down through (e) point b and (f) point c?
 
-\subsection{Solution: 72\textmu C}
+\subsection{Solution: 4.49\texttimes 10$^{14}$}
 Let's make an equivalent capacitor. 
 \begin{align*}
     C_{12}  &=  C_1 + C_2 = 4 + 8 = 12 \unit{\micro\farad}\\
@@ -258,23 +258,29 @@ We can apply our favorite equation to this.
 \begin{align*}
     q   &=  CV
         =   6 \times 10^{-6} * 12
-        =   \boxed{72 \times 10^{-6} \unit{\coulomb}}
+        =   72 \times 10^{-6} \unit{\coulomb}
 \end{align*}
 
-\subsection{Solution: 24\textmu C}
+Dividing this by the charge of an electron would give us the number of electrons crossing. 
+\begin{equation}
+    \frac{q}{e} = \frac{72 \times 10^{-6}}{1.602 \times 10^{-19}}
+        =   \boxed{4.49 \times 10^{14}}
+\end{equation}
+
+\subsection{Solution: 1.50\texttimes 10$^{14}$}
 The charge that goes through each parallel line on the circuit will be proportional to the total capacitance of each individual line's equivalent capacitor.
 In this instance, the capacitance of point $b$'s line is $4\unit{\micro\farad}$ compared to the total $12\unit{\micro\farad}$. 
 We can apply this fraction to the charge. 
-\[\frac{4}{12}*72 = \boxed{24\unit{\micro\coulomb}}\]
+\[\frac{4}{12}*72 = \boxed{1.50 \times 10^{14}}\]
 
-\subsection{Solution: 48\textmu C}
+\subsection{Solution: 3.00\texttimes 10$^{14}$}
 We know that 24\textmu C of the 72\textmu C went to the line with point (b).
 The remaining 48\textmu C has to go somewhere, and its only space it can go to is the line with point (c).
-As such, the answer is \boxed{48 \unit{\micro\coulomb}}.
+As such, the answer is the 48\textmu C divided by the charge of an electron, so \boxed{3.00 \times 10^{14}}.
 
-\subsection{Solution: 72\textmu C}
+\subsection{Solution: 4.49\texttimes 10$^{14}$}
 In series, the charge passing through any given point is the same. 
-As such our answer would be the same as in part (a), or \boxed{72 \times 10^{-6} \unit{\coulomb}}.
+As such our answer would be the same as in part (a), or \boxed{4.49 \times 10^{14}}.
 
 \subsection{Solution: up}
 Electrons travel from the negative plate to the positive plate. 
