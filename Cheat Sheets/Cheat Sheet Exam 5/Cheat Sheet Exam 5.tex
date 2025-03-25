@@ -1,12 +1,17 @@
 \documentclass[8pt]{minimal}
 \usepackage{amsmath}
 \usepackage{array}
+\usepackage{layout}
 \usepackage{siunitx}
 
-\begin{document}
-\setlength{\parindent}{0pt}
-% \setlength{\voffset}{-50pt}
+\setlength{\parindent}{-5pt}
+\setlength{\voffset}{-50pt}
+\setlength{\textheight}{724pt}
+\setlength{\hoffset}{-25pt}
+\setlength{\textwidth}{526pt}
 \setlength{\columnsep}{1cm}
+
+\begin{document}
 \twocolumn
 PHYS 4 Exam 5 Cheat Sheet (with \LaTeX)
 
@@ -30,14 +35,26 @@ In a diagram, the direction of an electric field is represented by the direction
 \[E = \int dE = \int \frac{k\ dq}{r^3}\vec{r} = \int \frac{k \lambda}{r^3}\vec{r}dr\]
 \[ \vec{E}_{ring}(z) = \frac{kqz}{(z^2 + R^2)^{3/2}}\hat{k} \]
 For a rod of length L, measured at a distance d from the close end from the rod of charge Q.
-\[ \vec{E}_{rod;axis}(d) = -\frac{kQ}{d(d-L)}\hat{i} \]
+\[ \vec{E}_{axis} = -\frac{kQ}{d(d-L)}\hat{i} \]
 
 For a rod of length L, measured perpendicular to the rod at a distance d from the close end from the rod of charge Q.
-\[\vec{E} = k\lambda \left[ \frac{1}{z} - \frac{1}{L^2 + z^2} \right]\hat{i} + \frac{k\lambda L}{z\sqrt{L^2 + z^2}} \hat{j}\]
+\begin{gather*}
+    \vec{E} = k\lambda \left[ \frac{1}{z} - \frac{1}{L^2 + z^2} \right]\hat{i} + \frac{k\lambda L}{z\sqrt{L^2 + z^2}} \hat{j}\\
+    V = k\lambda\ln\left(\frac{L + \sqrt{L^2 + d^2}}{d}\right)
+\end{gather*}
 \begin{gather*}
     \vec{E}_{arc} = \frac{k\lambda}{r} \begin{pmatrix}2\sin(\frac{\theta}{2})\\0\end{pmatrix}\\
     \vec{E}_{disc} = \frac{\sigma}{2\epsilon_0} \left(1 - \frac{z}{\sqrt{z^2 + R^2}}\right)
 \end{gather*}
+
+For a spherical shell of radius R.
+\begin{gather*}
+    \vec{E} = \left\{ \begin{matrix}
+        0 \text{ if } r < R\\
+        \frac{R^2 \sigma}{\varepsilon_0 r^2}\hat{r} \text{ otherwise}
+    \end{matrix} \right.
+\end{gather*}
+If $r < R$, $\Delta V = 0$. If $r \to \infty$, $V = 0$.
 
 \underline{Gauss' Law}
 \begin{gather*}
@@ -58,12 +75,65 @@ Path independent. For $\vec{E}(x,y,z)$:
 \end{gather*}
 
 Electric field lines go from more positive to more negative voltage.\\
-Equipotential surface (ES): Surface with same $V$.
+Equipotential surface (ES): Surface with same $V$.\\
+Conductors have equipotential volumes and $\vec{E} = 0$
 \begin{gather*}
-    V = \frac{kq}{r}
+    V = \frac{kq}{r} = \int \frac{k\,dQ}{r};
+    \vec{E} = -\nabla V
 \end{gather*}
 
 
+\underline{Capacitance (C)}\\
+Relationship between charged separated and potential difference. $Q = C*\Delta V$
+To find capacitance:\\
+1. Draw a picture\\
+2. Determine direction of $\vec{E}$\\
+3. Determine $\vec{E}$ (Gauss' and determined distributions help), then $\Delta V = -\int \vec{E}\cdot d\vec{s}$\\
+4. Calculate $C$ with $C = \frac{Q}{\Delta V}$
+
+For parallel plates, $C = \frac{A \varepsilon_0}{d}$.\\
+For cylindrical capacitor length $L$, $C = \frac{2\pi L\varepsilon_0}{\ln(b/a)}$.\\
+Concentric spheres of radii $a$ and $b$, $C = 4\pi\varepsilon_0\frac{ab}{b - a}$.\\
+Isolated sphere of radius $R$, $C = 4\pi\varepsilon_0 R$.
+
+Since $W = q\Delta V$, $\Delta U = \frac{1}{2}C*\Delta V^2 = \frac{q^2}{2C}$ (Electric Potential Energy)\\
+$u = \frac{1}{2}\varepsilon_0 E^2 = \frac{U}{Vol}$
+
+A dielectric/material is in an electric field has a dielectric onstant $\kappa$.
+In it, $\varepsilon_0$ is replaced with $\kappa\varepsilon_0$.
+$\kappa$ of metals is considered $\infty$. $\kappa(vaccum) = 1$\\
+If you put a dielectric in a capacitor, treat it like a network of capacitors in a creative alignment.
+
+Add a dielectric to charged capacitor: \\\(Q_\kappa = Q_0; V_\kappa < V_0; C_\kappa > C_0; U_\kappa < U_0\)
+
+Add a dielectric to battery-connected capacitor: \\\(V_\kappa = V_0; Q_\kappa > Q_0; C_\kappa > C_0; U_\kappa > U_0\)
+
+
+\underline{Current}
+\[ I = \frac{dq}{dt} \]
+
+Ohm's Law: $V = IR$
+
+Junction rule: For any point on a circuit, $I_{in} = I_{out}$
+
+Stored charge at junction slows down $I_{in}$ \& speeds up $I_{out}$
+
+\underline{Current Density}\\
+For a cross-section $\vec{A}, dI = \vec{J} \cdot d\vec{A}$
+\[\vec{J} = e*\vec{v}_d*n = \frac{\vec{E}}{\rho}\]
+
+
+\underline{Circuits}\\
+Batteries keep $\Delta V$ constant\\
+Long end of battery diagram is + side\\
+\begin{tabular}[width=\textwidth]{| c | c | c |}
+                &Series                             &Parallel\\
+    Capacitor   &$\frac{1}{C} = \sum \frac{1}{C_i}$ &$C = \sum C_i$\\
+    Resistor    &$R = \sum R_i$                     &$\frac{1}{R} = \sum \frac{1}{R_i}$
+\end{tabular}
+
+
+\pagebreak
 \underline{Electric Dipoles}
 
 \begin{align*}
@@ -74,17 +144,12 @@ Equipotential surface (ES): Surface with same $V$.
         &=  \frac{2kQd}{z^3\left(1 - \frac{d^2}{4z^2}\right)^2}\hat{d}
 \end{align*}
 
+ESs are $\perp$ to $\vec{p}$.
 In an electric field:
 \begin{gather*}
     \vec{p} = Q\vec{d}\\
     \vec{\tau} = \vec{p} \times \vec{E}\\
     U = -\vec{p} \cdot \vec{E}
 \end{gather*}
-
-ESs are $\perp$ to $\vec{p}$.
-
-
-\underline{Current}
-\[ I = \frac{dq}{dt} \]
 
 \end{document}

@@ -18,6 +18,8 @@ INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/amsmath/amsbsy.sty
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/amsmath/amsopn.sty
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/tools/array.sty
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/tools/array.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/tools/layout.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/tools/layout.sty
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/siunitx/siunitx.sty
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/siunitx/siunitx.sty
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/translations/translations.sty
@@ -63,6 +65,7 @@ INPUT /usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 INPUT Cheat Sheet Exam 5.aux
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb
