@@ -51,10 +51,19 @@ For a spherical shell of radius R.
 \begin{gather*}
     \vec{E} = \left\{ \begin{matrix}
         0 \text{ if } r < R\\
-        \frac{R^2 \sigma}{\varepsilon_0 r^2}\hat{r} \text{ otherwise}
+        \frac{kq}{r^2}\hat{r} \text{ otherwise}
     \end{matrix} \right.
 \end{gather*}
 If $r < R$, $\Delta V = 0$. If $r \to \infty$, $V = 0$.
+
+Solid sphere of radius R.
+\begin{gather*}
+    \vec{E} = \left\{ \begin{matrix}
+        \frac{kqr}{R^3} \text{ if } r < R\\
+        \frac{kq}{r^2}\hat{r} \text{ otherwise}
+    \end{matrix} \right.
+\end{gather*}
+
 
 \underline{Gauss' Law}
 \begin{gather*}
@@ -149,7 +158,8 @@ In an electric field:
 \begin{gather*}
     \vec{p} = Q\vec{d}\\
     \vec{\tau} = \vec{p} \times \vec{E}\\
-    U = -\vec{p} \cdot \vec{E}
+    U = -\vec{p} \cdot \vec{E}\\
+    W_{net} = \Delta K = -\Delta U
 \end{gather*}
 
 \end{document}
