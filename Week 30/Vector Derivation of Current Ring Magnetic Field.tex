@@ -1,0 +1,137 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\begin{document}
+    \begin{center}
+        \textbf{A Document Detailing the Vector Calculus Derivation of Magnetic Field Perpendicular to a Ring of Current}\\
+        Author: Think the Duck
+    \end{center}
+    This is a document meant for the sole purpose of deriving the formula for the total magnetic field a distance from the center of and on the axis perpendicular to a ring of current.
+    We will be doing this in cartesian coordinates.
+
+    By the Biot-Savart law, we have an equation for the magnetic field from a level of current.
+    \begin{equation}
+        d\vec{B} = \frac{\mu_0 I}{4\pi} \cdot \frac{d\vec{s} \times \hat{r}}{r^2}
+    \end{equation}
+
+    Suppose our ring had a radius $R$, that our ring lay on the $xy$-plane, and that our point $P$ were located at cartesian coordinates $(0,0,z)$.
+    This is a very idealized situation, but this is Physics, where we can afford to be idealized.
+    
+    $d\vec{s}$ is an infinitesimally small arc length of the circle. It owuld roughly line on the vector tangent to the circle at each given, which would be the line of velocity of a point traveling around the circle.
+    \begin{equation}
+        d\vec{s} = \frac{d}{d\theta} \begin{pmatrix}
+            R*\cos(\theta)\\
+            R*\sin(\theta)\\
+            0
+        \end{pmatrix} d\theta
+            =   \begin{pmatrix}
+                R\sin(\theta) d\theta\\
+                -R\cos(\theta) d\theta\\
+                0
+            \end{pmatrix}
+    \end{equation}
+
+    We know that $\hat{r} = \frac{\vec{r}}{\left|r\right|}$, and we can assemble formulae for each of these.
+    We should bear in mind that $\vec{r}$ must be the vector from $d\vec{s}$ to the point $P$. 
+    \begin{gather}
+        \vec{r} = \begin{pmatrix}
+            -R\cos(\theta)\\
+            -R\sin(\theta)\\
+            r
+        \end{pmatrix}\\
+        \left|r\right| = \sqrt{(R\cos(\theta))^2 + (R\sin(\theta))^2 + z^2}
+            =   \sqrt{R^2 + z^2}\\
+        \hat{r} = \frac{1}{\sqrt{R^2 + z^2}} \begin{pmatrix}
+            -R\cos(\theta)\\
+            -R\sin(\theta)\\
+            r
+        \end{pmatrix}
+    \end{gather}
+
+    \null\hfill Continued on next page...
+
+    \pagebreak
+    Since we can draw out $\frac{1}{\sqrt{R^2 + z^2}}$, we can calculate $d\vec{s} \times \vec{r}$ and apply $\frac{1}{\sqrt{R^2 + z^2}}$ afterwards.
+    \begin{align}
+        d\vec{s} \times \vec{r} &=  \begin{pmatrix}
+                                        R\sin(\theta) d\theta\\
+                                        -R\cos(\theta) d\theta\\
+                                        0
+                                    \end{pmatrix}
+                                    \times
+                                    \begin{pmatrix}
+                                        -R\cos(\theta)\\
+                                        -R\sin(\theta)\\
+                                        r
+                                    \end{pmatrix}\\
+            &=  \det\begin{bmatrix}
+                        \hat{i}                 &   \hat{j}                 &   \hat{k}\\
+                        R\sin(\theta) d\theta   &   -R\cos(\theta) d\theta  &   0\\
+                        -R\cos(\theta)          &   -R\sin(\theta)          &   r
+                    \end{bmatrix}\\
+            &=  \left| \begin{smallmatrix}
+                    -R\cos(\theta) d\theta  &   0\\
+                    -R\sin(\theta)          &   r
+                \end{smallmatrix} \right|\hat{i} + 
+                \left| \begin{smallmatrix}
+                    0   &   R\sin(\theta) d\theta\\
+                    r   &   -R\cos(\theta)
+                \end{smallmatrix} \right|\hat{j} + 
+                \left| \begin{smallmatrix}
+                    R\sin(\theta) d\theta   &   -R\cos(\theta) d\theta\\
+                    -R\cos(\theta)          &   -R\sin(\theta)
+                \end{smallmatrix} \right|\hat{k}\\
+            &=  \begin{pmatrix}
+                    Rz\cos(\theta)d\theta\\
+                    Rz\sin(\theta)d\theta\\
+                    R^2\sin^2(\theta) d\theta + R^2\cos^2(\theta) d\theta
+                \end{pmatrix}
+            =   \begin{pmatrix}
+                    Rz\cos(\theta)\\
+                    Rz\sin(\theta)\\
+                    R^2
+                \end{pmatrix} d\theta
+    \end{align}
+
+    This is something we can plug nto the Biot-Savart law to find our answer.
+    \begin{align}
+        \vec{B} &=  \int d\vec{B}
+            =   \int_{0}^{2\pi} \frac{\mu_0 I}{4\pi} \cdot \frac{d\vec{s} \times \hat{r}}{r^2}
+            =   \frac{\mu_0 I}{4\pi} \int_{0}^{2\pi} \frac{d\vec{s} \times \hat{r}}{r^2}\\
+            &=  \frac{\mu_0 I}{4\pi} \int_{0}^{2\pi} \frac{1}{\left(R^2 + z^2\right)^{3/2}} \begin{pmatrix}
+                Rz\cos(\theta)\\
+                Rz\sin(\theta)\\
+                R^2
+            \end{pmatrix} d\theta\\
+            &=   \frac{\mu_0 I}{4\pi\left(R^2 + z^2\right)^{3/2}} \int_{0}^{2\pi} \begin{pmatrix}
+                Rz\cos(\theta)\\
+                Rz\sin(\theta)\\
+                R^2
+            \end{pmatrix} d\theta\\
+            &=  \frac{\mu_0 I}{4\pi\left(R^2 + z^2\right)^{3/2}} \begin{pmatrix}
+                Rz\sin(\theta)\\
+                -Rz\cos(\theta)\\
+                R^2\theta
+            \end{pmatrix}_{0}^{2\pi}\\
+            &=  \frac{\mu_0 I}{4\pi\left(R^2 + z^2\right)^{3/2}} \begin{pmatrix}
+                Rz(\sin(2\pi) - \sin(0))\\
+                -Rz(\cos(2\pi) - \cos(0))\\
+                R^2*2\pi
+            \end{pmatrix}\\
+            &=  \frac{\mu_0 I}{4\pi\left(R^2 + z^2\right)^{3/2}} \begin{pmatrix}
+                0\\
+                0\\
+                R^2*2\pi
+            \end{pmatrix}
+    \end{align}
+
+    \null\hfill Continued on next page...
+
+    \pagebreak
+    We can complete this in unit-vector notation rather than matrix vector notation, since we are only dealing with one dimension and unit vector.
+    \begin{align}
+        \vec{B} &=  \frac{\mu_0 I R^2*2\pi \hat{k}}{4\pi\left(R^2 + z^2\right)^{3/2}}
+            =   \frac{\mu_0 I R^2}{2\left(R^2 + z^2\right)^{3/2}} \hat{k}
+    \end{align}
+
+    This is indeed the answer we were looking for. This document has fulfilled its sole purpose.
+\end{document}
