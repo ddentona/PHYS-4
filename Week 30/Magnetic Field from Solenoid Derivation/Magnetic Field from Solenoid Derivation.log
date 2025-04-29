@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.8.23)  22 APR 2025 22:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.8.23)  25 APR 2025 10:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"c:/Users/ddent/OneDrive/Documents/CCSF/PHYS-4A/Week 30/Vector Derivation of Current Ring Magnetic Field.tex"
-(c:/Users/ddent/OneDrive/Documents/CCSF/PHYS-4A/Week 30/Vector Derivation of Current Ring Magnetic Field.tex
+**"c:/Users/ddent/OneDrive/Documents/CCSF/PHYS-4A/Week 30/Magnetic Field from Solenoid Derivation/Magnetic Field from Solenoid Derivation.tex"
+(c:/Users/ddent/OneDrive/Documents/CCSF/PHYS-4A/Week 30/Magnetic Field from Solenoid Derivation/Magnetic Field from Solenoid Derivation.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
 (C:\Users\ddent\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
@@ -91,8 +91,8 @@ LaTeX Info: Redefining \] on input line 2954.
 File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count273
 \l__pdf_internal_box=\box53
-) (Vector Derivation of Current Ring Magnetic Field.aux)
-\openout1 = `"Vector Derivation of Current Ring Magnetic Field.aux"'.
+) (Magnetic Field from Solenoid Derivation.aux)
+\openout1 = `"Magnetic Field from Solenoid Derivation.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
 LaTeX Font Info:    ... okay on input line 3.
@@ -110,24 +110,24 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 3.
 LaTeX Font Info:    ... okay on input line 3.
  [1
 
-{C:/Users/ddent/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2] [3] (Vector Derivation of Current Ring Magnetic Field.aux)
+{C:/Users/ddent/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] (Magnetic Field from Solenoid Derivation.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 1175 strings out of 474486
- 18996 string characters out of 5743755
- 1947542 words of memory out of 5000000
- 23513 multiletter control sequences out of 15000+600000
- 561786 words of font info for 49 fonts, out of 8000000 for 9000
+ 1143 strings out of 474486
+ 18599 string characters out of 5743755
+ 1926542 words of memory out of 5000000
+ 23490 multiletter control sequences out of 15000+600000
+ 558674 words of font info for 38 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 56i,15n,65p,348b,196s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on "Vector Derivation of Current Ring Magnetic Field.pdf" (3 pages, 111825 bytes).
+ 56i,5n,65p,388b,126s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb>
+Output written on "Magnetic Field from Solenoid Derivation.pdf" (1 page, 29020 bytes).
 PDF statistics:
- 57 PDF objects out of 1000 (max. 8388607)
+ 16 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
