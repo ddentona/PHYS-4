@@ -2,12 +2,147 @@
 \usepackage{amsmath}
 \begin{document}
     \begin{center}
-        \textbf{A Document Detailing the Derivation of Magnetic Field from a Solenoid}\\
+        \textbf{A Document Detailing the Derivation of Magnetic Field from a Solenoid along its Axis}\\
         Author: Think the Duck
     \end{center}
     This is a document meant for the sole purpose of deriving the formula for the total magnetic field from the circular center of and on the axis perpendicular to a solenoid at a distance relative to one edge of the solenoid.
     We will be doing this in cartesian coordinates and by only using one axis.
     The derivation of the magnetic field from a ring of current can be found on a different document.
 
+    For the sake of this, we will be using Biot-Savart's Law.
+    \begin{equation}
+        d\vec{B} = \frac{\mu_0 I}{4\pi} \cdot \frac{d\vec{s} \times \hat{r}}{r^2}
+    \end{equation}
+
+    Biot-Savart's law indicates a requirement of existence of a vector $d\vec{s}$ to travel along the solenoid.
+    We can assume that the solenoid encircles (part of) the $z$-axis, and we can assume that one end of it is on the $xy$-plane. 
+    The sollenoid would have a radius of $R$ and would travel in circles.
+    We will be assuming that the sollenoid's position of each point rotates clockwise as the $z$-position increases.
+    This can give us values for the $x$ and $y$ components of $\vec{s}$.
+    \begin{gather}
+        s_x = R \cdot \cos(t)\\
+        s_y = R \cdot \sin(t)
+    \end{gather}
+
+    The solenoid of length $L$ would be composed of $N$ loops of equal length.
+    This would mean that each loop would be of length $\frac{L}{N}$.
+    Since we would be traveling away from the point we are measusing at, the cange in position along each loop would be $-\frac{L}{N}$.
+    We are already traversing the solenoid using $t$, in units of radians (which technically are unitless, to be fair).
+    Since one loop travels a distance of $-\frac{L}{N}$ whenever it completes one loop of $2\pi$ radians, we can combine these for $s_z$.
+    This can give us a complete version of $\vec{s}$.
+    \begin{gather}
+        s_z = -\frac{L \cdot t}{N \cdot 2\pi}\\
+        \vec{s} =   \begin{pmatrix}
+            R \cdot \cos(t)\\
+            R \cdot \sin(t)\\
+            -\frac{L \cdot t}{N \cdot 2\pi}
+        \end{pmatrix}
+    \end{gather}
+
+    We can then calculate $d\vec{s}$.
+    \begin{gather}
+        d\vec{s}    =   \begin{pmatrix}
+                -R \cdot \sin(t) dt\\
+                R \cdot \cos(t) dt\\
+                -\frac{L}{N \cdot 2\pi} dt
+            \end{pmatrix}
+            =   \begin{pmatrix}
+                -R \cdot \sin(t)\\
+                R \cdot \cos(t)\\
+                -\frac{L}{N \cdot 2\pi}
+            \end{pmatrix} dt
+    \end{gather}
+
+    The value of $\vec{r}$ can be calculated by taking the negative of $\vec{s}$ and adding the distance from the origin to the position we are aiming for the magnetic field at.
+    We can call the position at which we will be calculating the magnetic field $\vec{P}$ and assuming it to be a distance $z$ from the origin on the $z$-axis.
+    \begin{equation}
+        \vec{r} =   -\vec{s} + \vec{P} 
+            =   \begin{pmatrix}
+                -R \cdot \cos(t)\\
+                -R \cdot \sin(t)\\
+                \frac{L \cdot t}{N \cdot 2\pi}
+            \end{pmatrix} + 
+            \begin{pmatrix} 0\\ 0\\ z \end{pmatrix}
+            =   \begin{pmatrix}
+                -R \cdot \cos(t)\\
+                -R \cdot \sin(t)\\
+                \frac{L \cdot t}{N \cdot 2\pi} + z
+            \end{pmatrix}
+    \end{equation}
+
+    From this, we can calculate $d\vec{s} \times \vec{r}$.
+    \begin{align}
+        d\vec{s} \times \vec{r} &=  \begin{pmatrix}
+                -R \cdot \sin(t)\\
+                R \cdot \cos(t)\\
+                -\frac{L}{N \cdot 2\pi}
+            \end{pmatrix} dt \times \begin{pmatrix}
+                -R \cdot \cos(t)\\
+                -R \cdot \sin(t)\\
+                \frac{L \cdot t}{N \cdot 2\pi} + z
+            \end{pmatrix}\\
+            &=  \det \begin{bmatrix}
+                \hat{i} &   \hat{j} &   \hat{k}\\
+                -R \cdot \sin(t)    &   R \cdot \cos(t) &   -\frac{L}{N \cdot 2\pi}\\
+                -R \cdot \cos(t)    &   -R \cdot \sin(t)&   \frac{L \cdot t}{N \cdot 2\pi} + z
+            \end{bmatrix} dt\\
+            &=  \begin{pmatrix}
+                    R\cos(t)\left(\frac{L*t}{N*2\pi} + z\right) - R\sin(t)\frac{L}{N*2\pi}\\
+                    \cos(t)\frac{L*R}{N*2\pi} + R\sin(t)\left(\frac{L*t}{N*2\pi} + z\right)\\
+                    R^2
+                \end{pmatrix}\\
+            &=  \begin{pmatrix}
+                    \frac{RL}{2\pi N} \left(t * \cos(t) - \sin(t)\right) + Rz\cos(t)\\
+                    \frac{RL}{2\pi N} \left(t * \sin(t) + \cos(t)\right) + Rz\sin(t)\\
+                    R^2
+                \end{pmatrix}
+    \end{align}
+    
+    The $z$-axis is easiest and the one that cancels itself out the least, so we can compute that.
+    \begin{equation}
+        B_z =   \frac{\mu_0 I}{4\pi}\int_{0}^{N*2\pi} \frac{R^2}{\left(R^2 + \left(\frac{L*t}{N*2\pi} + z\right)^2\right)^{3/2}}dt
+    \end{equation}
+
+    Using substitution, we can have a set of three usable values to insert into this.
+    \begin{gather}
+        a = \frac{L*t}{N*2\pi} + z\\
+        \frac{da}{dt} = \frac{L}{N*2\pi}\\
+        dt  =   \frac{N*2\pi}{L} da
+    \end{gather}
+
+    As a reminder (I needed this myself), integration substitution is covered in the following way.
+    It derives from the formula of substitution in derivatives.
+    \begin{equation}
+        \int_{u(a)}^{u(b)} f'(x) dx  =   \int_{a}^{b} f'(u(y)) \cdot u'(y) dy
+    \end{equation}
+
+    We can apply that to this.
+    \begin{align}
+        B_z &=  \frac{\mu_0 I}{4\pi} \int_{z}^{L + z} \frac{R^2}{\left(R^2 + a^2\right)^{3/2}} \frac{N * 2\pi}{L} da\\
+            &=  \frac{\mu_0 I}{2} \frac{N}{L} \int_{z}^{L + z} \frac{R^2}{\left(R^2 + a^2\right)^{3/2}} da
+    \end{align}
+
+    We can then in turn apply trigonometric substitution here, for a triangle of legs of length $R$ and $a$. 
+    For some context, our angle we would be observing would be between the $xy$-plane at the $z$-position we are testing and the vector from $\vec{P}$ to $d\vec{s}$.
+    We can give our starting and ending angles values of $\theta_1$ and $\theta_2$, respectively. 
+    There are three trigonometric values we will consider.
+    \begin{gather}
+        \cos(\theta) = \frac{R}{\sqrt{R^2 + a^2}}\\
+        a = R*\tan(\theta)\\
+        da = R*\sec^2(\theta) dt
+    \end{gather}
+
+    This in turn gives an equation for the magnetic field along the z-axis.
+    \begin{align}
+        B_z &=  \frac{\mu_0 I N}{2 L} \int_{\theta_1}^{\theta_2} \frac{\cos^3(\theta)}{R} R * \sec^2(\theta) d\theta\\
+            &=  \frac{\mu_0 I N}{2 L} \int_{\theta_1}^{\theta_2} \frac{R*\cos^3(\theta)}{R*\cos^2(\theta)} d\theta\\
+            &=  \frac{\mu_0 I N}{2 L} \int_{\theta_1}^{\theta_2} \cos(\theta) d\theta\\
+            &=  \frac{\mu_0 I N}{2 L} \left[\sin(\theta)\right]_{\theta_1}^{\theta_2}\\
+            &=  \frac{\mu_0 I N}{2 L} \left( \sin(\theta_2) - \sin(\theta_1) \right)
+    \end{align}
+
+    This gives us our z-value and is indeed the answer we were looking for.
+    The other two axes have every term involve heavy amounts of sines and cosines and a range that reaches around the circle. 
+    We can assume them to cancel themselves out.
     This document has fulfilled its sole purpose.
 \end{document}
