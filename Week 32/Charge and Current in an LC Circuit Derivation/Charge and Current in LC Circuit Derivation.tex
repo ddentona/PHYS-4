@@ -1,0 +1,114 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{esdiff}
+\begin{document}
+    \begin{center}
+        \textbf{A Document Detailing the Derivation of the Charge and Current in an LC Circuit}\\
+        Author: Think the Duck
+    \end{center}
+    \textit{For Prof Cauthen}
+
+    This is a document meant for the sole purpose of deriving the formula for the charge and current in an LC Circuit.
+
+    An LC Crcuit is derived as having an inductor of inductance $L$ and a capacitor of capacitance $C$ separating a charge of $Q_0$. 
+    We will begin with the formula for the potential energy of the circuit.
+    The potential energy of the circuit is equal to the potential energy of its components (the capacitor and the inductor).
+    \begin{equation}
+        U = U_C + U_L
+    \end{equation}
+    
+    We have formulas for the potential energy in a capacitor ($U_C = \frac{Q(t)^2}{2C}$) and an inductor ($U_L = \frac{LI^2}{2}$).
+    \begin{equation}
+        U = \frac{Q(t)^2}{2C} + \frac{LI(t)^2}{2}
+    \end{equation}
+
+    We can take the derivative of both sides with respect to time. 
+    \begin{gather}
+        \diff{U}{t} = \frac{Q(t)}{C} \cdot \diff{Q}{t} + LI(t)\diff{I(t)}{t}
+    \end{gather}
+
+    Since the current $I$ is equal to the derivative of charge with respect to time, we can substitute this in.
+    Furthermore, due to the conservation of energy, the derivative of potential energy with respect to time would be zero.
+    \begin{gather}
+        \diff{U}{t} = 0 = \frac{1}{C} \cdot Q(t) \diff{Q(t)}{t} + L \cdot \diff{Q(t)}{t} \cdot \diff[2]{Q(t)}{t}
+    \end{gather}
+
+    This is an ordinary differential equation.
+    As such, we will rewrite the differential equation for an easier-to-read format.
+    \begin{gather}
+        0 = \frac{1}{C} \cdot Q(t) Q'(t) + L \cdot Q'(t) \cdot Q''(t)
+    \end{gather}
+
+    The entire equation can be divided by $Q'(t)$.
+    For the purpose of solving a differential equation, we can also divide it all by $L$.
+    \begin{gather}
+        0 = \frac{1}{LC} \cdot Q(t) + Q''(t)
+    \end{gather}
+
+    We can say that at time 0, $Q(0) = Q_0$.
+    Furthermore, at time 0, the current ($Q'(t)$) is equal to zero.
+    This sets us up with an initial value problem.
+    \begin{equation}
+        0 = \frac{1}{LC} \cdot Q(t) + Q''(t) \text{ IVP } \begin{cases}
+            Q(0) = Q_0\\
+            Q'(0) = 0
+        \end{cases}
+    \end{equation}
+
+    Using Laplace transforms, we can find a formula we can solve.
+    For context, Laplace transforms allow us to turn a differential equation we can't solve yet into a separate equation that we can solve, then turn it back into the original format.
+    In this context, the Laplace transforms that are relevant are three.
+    \begin{gather}
+        \mathcal{L} (Q(t)) = \int_{0^-}^{\infty} Q(t) e^{-st} dt = Q^{(-1)}(s)\\
+        \mathcal{L} (Q''(t)) = s^2 Q^{(-1)}(s) - s Q(0^-) - Q'(0^-)\\
+        \mathcal{L} (cos(\omega t)) = \frac{s}{s^2 + \omega^2}
+    \end{gather}
+
+    We can apply these to the equation we have.
+    \begin{align}
+        0   &=  \frac{1}{LC} \cdot Q(t) + Q''(t)\\
+        \mathcal{L} (0) &=  \mathcal{L} (\frac{1}{LC} \cdot Q(t) + Q''(t))\\
+        0   &=  \frac{1}{LC} \mathcal{L} (Q(t)) + \mathcal{L} (Q''(t))\\
+        0   &=  s^2 Q^{(-1)}(s) - s Q(0^-) - Q'(0^-) + \frac{1}{LC}Q^{(-1)}(s)
+    \end{align}
+
+    Now, we can substitute in our known values and solve for $Q^{(-1)}(s)$.
+    \begin{align}
+        0   &=  s^2 Q^{(-1)}(s) - s Q(0^-) - Q'(0^-) + \frac{1}{LC}Q^{(-1)}(s)\\
+            &=  (s^2 + \frac{1}{LC}) Q^{(-1)}(s) - s \cdot Q_0\\
+        s \cdot Q_0 &=  (s^2 + \frac{1}{LC}) Q^{(-1)}(s)\\
+        Q^{(-1)}(s) &=  Q_0 \frac{s}{s^2 + \frac{1}{LC}}
+            =   Q_0 \frac{s}{s^2 + (\frac{1}{\sqrt{LC}})^2}
+    \end{align}
+
+    This can be acted upon by an inverse Laplace transform.
+    \begin{gather}
+        \mathcal{L}^{-1} (Q^{(-1)}(s))  =   Q(t)\\
+        \mathcal{L}^{-1} (Q_0 \frac{s}{s^2 + (\frac{1}{\sqrt{LC}})^2})
+            =   Q_0 \cos\left( \frac{1}{\sqrt{LC}}t \right)\\
+        Q(t)    =   Q_0 \cos\left( \frac{1}{\sqrt{LC}}t \right)
+    \end{gather}
+
+    This brings us to a point where we ahve a solution to the nitial value problem.
+    Note that this applies rather exclusively for the case that the current starts with no current.
+    To allow it to function with a different initial value, we can add a phase change constant $\phi$ to the interior of the cosine.
+    This is par for the course in terms of wave functions with sines and cosines like this one.
+    \begin{equation}
+        Q(t)    =   Q_0 \cos\left( \frac{1}{\sqrt{LC}}t + \phi \right)
+    \end{equation}
+
+    We can take the derivative of this with respect to time to find the current.
+    \begin{equation}
+        \diff{Q(t)}{t}  =   I(t)    =   -\frac{Q_0}{\sqrt{LC}} \sin\left( \frac{1}{\sqrt{LC}}t + \phi \right)
+    \end{equation}
+
+    This gives us our final equations for charge and current with respect to time in an LC circuit.
+    \begin{gather}
+        \boxed{ \begin{matrix}
+            Q(t)    =   Q_0 \cos\left( \frac{1}{\sqrt{LC}}t + \phi \right)\\
+            I(t)    =   - Q_0 \frac{1}{\sqrt{LC}} \sin\left( \frac{1}{\sqrt{LC}}t + \phi \right)
+        \end{matrix}}
+    \end{gather}
+
+    This document has fulfilled its sole purpose.
+\end{document}

@@ -1,0 +1,36 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\begin{document}
+    \begin{center}
+        \textbf{A Document Detailing the Derivation of Magnetic Field from a Toroid along its Central Rotating Axis}\\
+        Author: Think the Duck
+    \end{center}
+    \textit{For Prof Cauthen}
+
+    This is a document meant for the sole purpose of deriving the formula for the total magnetic field on the polar axis of the toroid at its center.
+
+    We will be using Ampere's Law.
+    We will aim to find the value of $B$.
+    \begin{gather}
+        \oint \vec{B} \cdot d\vec\ell = \mu_0 I_{enc}\\
+        \oint B * \cos(\theta)\ d\ell = \mu_0 I_{enc}
+    \end{gather}
+
+    The area we will use will be the circle formed through the center of all rotations of the toroid.
+    We can assume that each of the points lies at a radius $r$ from the center of the entire object.
+    The formula for the line traversed by its boundary is $2\pi r$.
+    $\cos(\theta) = 1$ will always be the case in this instance, since the magnetic field will always go around the toroid in the same direction.
+    \begin{gather}
+        B \oint d\ell = \mu_0 I_{enc}\\
+        B * 2\pi r = \mu_0 I_{enc}\\
+        B = \frac{\mu_0 I_{enc}}{2\pi r}
+    \end{gather}
+
+    The enclosed current is the sum of the current in each point along the $N$ rotations of the toroid that intersect with the area previously described.
+    Since the current is a constant (suppose it to be $I$), we can say that $I_{enc} = NI$.
+    \begin{equation}
+        B = \frac{\mu_0 NI}{2\pi r}
+    \end{equation}
+
+    This document has fulfilled its sole purpose.
+\end{document}
