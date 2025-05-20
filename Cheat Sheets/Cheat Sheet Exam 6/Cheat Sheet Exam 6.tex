@@ -1,0 +1,241 @@
+\documentclass[8pt]{minimal}
+\usepackage{amsmath}
+\usepackage{array}
+\usepackage{layout}
+\usepackage{siunitx}
+
+\setlength{\parindent}{-5pt}
+\setlength{\voffset}{-50pt}
+\setlength{\textheight}{724pt}
+\setlength{\hoffset}{-25pt}
+\setlength{\textwidth}{526pt}
+\setlength{\columnsep}{1cm}
+
+\begin{document}
+\twocolumn
+PHYS 4 Exam 6 Cheat Sheet (with \LaTeX)
+
+\underline{Angular Kinematics}
+\begin{gather*}
+    \theta = \frac{S}{r}; \omega = \frac{d\theta}{dt}; \alpha = \frac{d^2\theta}{dt^2}; (1)\ \omega(t) = \omega_0 + \alpha t\\
+    (2)\ \theta = \theta_0 + \omega_0t + \frac{1}{2}\alpha t^2; (3)\ \omega^2 = \omega_0^2 + 2\alpha\Delta\theta\\
+    v_t = \omega r; a_t = \alpha r; a_c = \omega r^2; T = \frac{2 \pi}{\omega} = \frac{1}{f}
+\end{gather*}
+
+\underline{Electric Fields and Forces}
+\begin{gather*}
+    e = 1.602 \times 10^{-19} \unit{\coulomb}; \varepsilon_0 = 8.85 \times 10^{-12} \unit{\frac{\coulomb^2}{\newton\meter^2}}\\
+    k = 8.99 \times 10^9 \unit{\frac{\newton\meter^2}{\coulomb^2}}= \frac{1}{4\pi\epsilon_0}\\
+    \vec{F} = \frac{kq_1q_2}{r^2}\hat{r} = \frac{kq_1q_2}{r^3}\vec{r};
+    \vec{E} = \frac{kq}{r^2}\hat{r} = \frac{kq}{r^3}\vec{r}; F = qE
+\end{gather*}
+
+In a diagram, the direction of an electric field is represented by the direction of its arrows, while the strength of the field is represented by the proxmity of the lines.
+\[\lambda = \frac{Q}{r} ; \sigma = \frac{Q}{A} ; \rho = \frac{Q}{V}\]
+\[E = \int dE = \int \frac{k\ dq}{r^3}\vec{r} = \int \frac{k \lambda}{r^3}\vec{r}dr\]
+\[ \vec{E}_{ring}(z) = \frac{kqz}{(z^2 + R^2)^{3/2}}\hat{k} \]
+For a rod of length L, measured at a distance d from the close end from the rod of charge Q.
+\[ \vec{E}_{axis} = -\frac{kQ}{d(d-L)}\hat{i} \]
+
+For a rod of length L, measured perpendicular to the rod at a distance d from the close end from the rod of charge Q.
+\begin{gather*}
+    \vec{E} = k\lambda \left[ \frac{1}{z} - \frac{1}{L^2 + z^2} \right]\hat{i} + \frac{k\lambda L}{z\sqrt{L^2 + z^2}} \hat{j}\\
+    V = k\lambda\ln\left(\frac{L + \sqrt{L^2 + d^2}}{d}\right)
+\end{gather*}
+\begin{gather*}
+    \vec{E}_{arc} = \frac{k\lambda}{r} \begin{pmatrix}2\sin(\frac{\theta}{2})\\0\end{pmatrix}\\
+    \vec{E}_{disc} = \frac{\sigma}{2\epsilon_0} \left(1 - \frac{z}{\sqrt{z^2 + R^2}}\right)
+\end{gather*}
+
+For a spherical shell of radius R.
+\begin{gather*}
+    \vec{E} = \left\{ \begin{matrix}
+        0 \text{ if } r < R\\
+        \frac{kq}{r^2}\hat{r} \text{ otherwise}
+    \end{matrix} \right.
+\end{gather*}
+If $r < R$, $\Delta V = 0$. If $r \to \infty$, $V = 0$.
+
+Solid sphere of radius R.
+\begin{gather*}
+    \vec{E} = \left\{ \begin{matrix}
+        \frac{kqr}{R^3} \text{ if } r < R\\
+        \frac{kq}{r^2}\hat{r} \text{ otherwise}
+    \end{matrix} \right.
+\end{gather*}
+
+
+\underline{Gauss' Law}
+\begin{gather*}
+    \Phi = \frac{q_{enc}}{\varepsilon_0};
+    \Phi = \oint \vec{E} \cdot d\vec{A}
+\end{gather*}
+$A$ must be a Gaussian surface. 
+If $\vec{E}$ is constant on the surface, it can be simplified to $\Phi = E*A$.
+Conductors in an electric field have $\vec{E} = 0$ inside. 
+Electrons move to ensure this. 
+Inside, $\Phi = 0$.
+
+
+\underline{Electrical Potential Difference}\\
+Path independent. For $\vec{E}(x,y,z)$:
+\begin{gather*}
+    \Delta V = \frac{\Delta U}{q} = -\int_{i}^{f} \vec{E}\cdot d\vec{x} = \int_{i}^{f}\,dV
+\end{gather*}
+
+Electric field lines go from more positive to more negative voltage.\\
+Equipotential surface (ES): Surface with same $V$.\\
+Conductors have equipotential volumes and $\vec{E} = 0$
+\begin{gather*}
+    V = \frac{kq}{r} = \int \frac{k\,dQ}{r};
+    \vec{E} = -\nabla V
+\end{gather*}
+
+
+\underline{Capacitance (C)}\\
+Relationship between charged separated and potential difference. $Q = C*\Delta V$
+To find capacitance:\\
+1. Draw a picture\\
+2. Determine direction of $\vec{E}$\\
+3. Determine $\vec{E}$ (Gauss' and determined distributions help), then $\Delta V = -\int \vec{E}\cdot d\vec{s}$\\
+4. Calculate $C$ with $C = \frac{Q}{\Delta V}$
+
+For parallel plates, $C = \frac{A \varepsilon_0}{d}$.\\
+For cylindrical capacitor length $L$, $C = \frac{2\pi L\varepsilon_0}{\ln(b/a)}$.\\
+Concentric spheres of radii $a$ and $b$, $C = 4\pi\varepsilon_0\frac{ab}{b - a}$.\\
+Isolated sphere of radius $R$, $C = 4\pi\varepsilon_0 R$.
+
+Since $W = q\Delta V$, $\Delta U = \frac{1}{2}C*\Delta V^2 = \frac{q^2}{2C}$ (Electric Potential Energy)\\
+$u = \frac{1}{2}\varepsilon_0 E^2 = \frac{U}{Vol}$
+
+A dielectric/material is in an electric field has a dielectric onstant $\kappa$.
+In it, $\varepsilon_0$ is replaced with $\kappa\varepsilon_0$.
+$\kappa$ of metals is considered $\infty$. $\kappa(vaccum) = 1$\\
+If you put a dielectric in a capacitor, treat it like a network of capacitors in a creative alignment.
+
+Add a dielectric to charged capacitor: \\\(Q_\kappa = Q_0; V_\kappa < V_0; C_\kappa > C_0; U_\kappa < U_0\)
+
+Add a dielectric to battery-connected capacitor: \\\(V_\kappa = V_0; Q_\kappa > Q_0; C_\kappa > C_0; U_\kappa > U_0\)
+
+
+\underline{Current}
+\[ I = \frac{dq}{dt} \]
+
+Ohm's Law: $V = IR$
+
+Junction rule: For any point on a circuit, $I_{in} = I_{out}$
+
+Stored charge at junction slows down $I_{in}$ \& speeds up $I_{out}$
+
+\underline{Resistors}\\
+For a resistor of resistance $R$, length $L$, cross section $A$, resistivity $\rho$.
+\[ R = \frac{V}{I} = \rho\frac{L}{A}; P = IV = I^2 R = \frac{V^2}{R}; V = \frac{dW}{dq} \]
+
+\underline{Current Density}\\
+For a cross-section $\vec{A}, dI = \vec{J} \cdot d\vec{A}$
+\[\vec{J} = e*\vec{v}_d*n = \frac{\vec{E}}{\rho}\]
+
+
+\underline{Circuits}\\
+Batteries keep $\Delta V$ constant\\
+Long end of battery diagram is + side\\
+\begin{tabular}[width=\textwidth]{| c | c | c |}
+                &Series                             &Parallel\\
+    Capacitor   &$\frac{1}{C} = \sum \frac{1}{C_i}$ &$C = \sum C_i$\\
+    Resistor    &$R = \sum R_i$                     &$\frac{1}{R} = \sum \frac{1}{R_i}$
+\end{tabular}
+
+RL circuit, current approaches equilibrium $\frac{\mathcal{E}}{R}$ (growth \& decay resp).
+\[ I = \frac{\mathcal{E}}{R}(1 - e^{-t/\tau}); \tau = \frac{L}{R}; I = I_0 e^{-t/\tau} \]
+
+Charge of charging capacitor (growth \& decay):
+\begin{gather*}
+    q = C\mathcal{E}(1 - e^{-t/\tau}); q = q_0 e^{-t/RC}
+\end{gather*}
+
+Kirchoff's Loop Rule: The total voltage throughout a circuit must sum to zero.
+Ex: $\mathcal{E} = L\frac{dI}{dt} + IR$.
+
+For an inductor, energy stored $U_B = \frac{1}{2}LI^2$.
+
+\underline{Magnetism}
+\[ \vec{F} = q(\vec{v} \times \vec{B}) \]
+\[ \vec{F} = I\vec{L} \times \vec{B} \]
+
+$\uparrow$ For electric field $B$, charged wire of length $L$. $\uparrow$
+
+Hall effect: electrons traveling through a strip (length $l$) of conductor in a magnetic field $B$ generate an internal capacitor.
+Charge $Q$, current $I$.
+\[ Q = \frac{BI}{Vl} \]
+
+For conductor moving at $v$ through $B$, area $A$, electron drift $v_d$.
+\[ V = vBd; v_d = \frac{I}{neA} \]
+
+Free charge moving in magnetic field centers source at radius $r$.
+\[ qvB = \frac{mv^2}{r}; f = \frac{qB}{2\pi m} \]
+
+Energy density in a magnetic field $u_B = \frac{B^2}{2\mu_0}$.
+
+Current generates a magnetic field.
+Current rounding area $A$ $N$ times makes a magnetic dipole.
+\[ \tau = NI \vec{A} \times \vec{B} = \vec{\mu} \times \vec{B} \]
+\[ U(\theta) = -\vec{\mu} \cdot \vec{B} \]
+
+A distance $R$ from a straight wire, $B = \frac{\mu_0 I}{2\pi R}$.
+Along wire $b$ from wire $a$: $B - \frac{\mu_0 I_a}{2\pi d}$.
+
+At center of arc of angle $\phi$ of radius $R$, $B = \frac{\mu_0 I \phi}{4\pi R}$.
+
+\underline{Ampere's Law}
+\[ \oint \vec{B} \cdot d\vec{s} = \mu_0 I_{enc} \]
+
+Inside an ideal (infinite) sollenoid, $B = \mu_0 In = \mu_0 I\frac{N}{L}$.
+
+Inside an ideal torroid, $B = \frac{\mu_0 IN}{2\pi R}$.
+
+Along coil axis (coils create magnetic dipoles), $B = \frac{\mu_0 \vec{\mu}}{2\pi z^3}$.
+
+\underline{Farraday's Law}\\
+In a conductor of area $A$, mag. field $B$.
+\[ \Phi_B = \int_S \vec{B} \cdot d\vec{A}; \mathcal{E} = \frac{d \Phi_B}{d t} \]
+
+In a sollenoid, inductance $L = \frac{N\Phi_B}{I}$. 
+
+For length $l$, $\frac{L}{l} = \mu_0 n^2 A$.
+
+Creates self-opposing emf of magnitude $\mathcal{E} = -L \frac{dI}{dt}$.
+
+\underline{Electric Dipoles}
+
+\begin{align*}
+    \vec{E} &= \left\{ \begin{matrix}
+        < 0 \text{ if } -\frac{d}{2} < z < \frac{d}{2}\\
+        > 0 \text{ otherwise}
+    \end{matrix} \right.\\
+        &=  \frac{2kQd}{z^3\left(1 - \frac{d^2}{4z^2}\right)^2}\hat{d}
+\end{align*}
+
+ESs are $\perp$ to $\vec{p}$.
+In an electric field:
+\begin{gather*}
+    \vec{p} = Q\vec{d}\\
+    \vec{\tau} = \vec{p} \times \vec{E}\\
+    U = -\vec{p} \cdot \vec{E}\\
+    W_{net} = \Delta K = -\Delta U
+\end{gather*}
+
+
+\underline{Maxwell's Equations}
+\begin{center}
+    \begin{tabular}[width=\textwidth]{ |c|c| }
+        \textbf{Gradient}   &\textbf{Integral}\\
+        $\nabla \cdot \vec{E} = \frac{\rho}{\varepsilon_0}$  &$\oint \vec{E} \cdot d\vec{A} = \frac{Q_{enc}}{\varepsilon_0}$\\
+        $\nabla \times \vec{E} = -\frac{\partial \vec{B}}{\partial t}$  &$\oint \vec{E} \cdot d\vec{l} = -\int \frac{\partial \vec{B}}{\partial t} \cdot d\vec{A}$\\
+        $\nabla \cdot \vec{B} = 0$  &$\oint \vec{E} \cdot d\vec{A} = 0$\\
+        $\nabla \times \vec{B} = \mu_0 \vec{J} + \mu_0 \varepsilon_0 \frac{\partial \vec{E}}{\partial t}$  &$\oint \vec{E} \cdot d\vec{l} = \mu_0 I_{enc} + \mu_0 \varepsilon_0 \frac{\partial \vec{E}}{\partial t}$
+    \end{tabular}
+\end{center}
+
+% Real Analysis in Evans Building
+% Studying at Moffitt
+\end{document}
