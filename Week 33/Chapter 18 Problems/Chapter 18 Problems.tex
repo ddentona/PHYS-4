@@ -5,7 +5,14 @@
 \usepackage{siunitx}
 \usepackage{wrapfig}
 
+
+
 \begin{document}
+    \DeclareSIUnit{\cal}{cal}
+    \DeclareSIUnit{\Cal}{Cal}
+    \DeclareSIUnit{\calorie}{cal}
+    \DeclareSIUnit{\Calorie}{Cal}
+
     \section{Question 4}
         \begin{wrapfigure}{r}{0.5\textwidth}
             \vspace{-30pt}
@@ -220,9 +227,31 @@
     \section{Problem 23}
         A small electric immersion heater is used to heat 100 g of water for a cup of instant coffee. 
         The heater is labeled “200 watts” (it converts electrical energy to thermal energy at this rate). 
-        Calculate the time required to bring all this water from 23.0°C to 100°C, ignoring any heat losses.
+        Calculate the time required to bring all this water from 23.0\unit{\celsius} to 100\unit{\celsius}, ignoring any heat losses.
 
         \subsection{Solution}
+            We have a formula for the heat transfered from the temperature.
+            \begin{align}
+                Q   &=  cm \Delta T
+            \end{align}
+
+            This has thermal energy in units of joules (\unit{\joule}).
+            We can divide both by time to get the power (in units of watts (\unit{\joule/\second})) on the left side.
+            \begin{align}
+                \frac{Q}{t} &=  \frac{cm \Delta T}{t}\\
+                P   &=  \frac{cm \Delta T}{t}
+            \end{align}
+
+            We can solve for the time.
+            Recall the known mass and change in temperature, as well as the specific heat of water in \unit{\frac{\joule}{\kilo\gram\cdot\kelvin}}.
+            \begin{align}
+                t   &=  \frac{cm \Delta T}{P}\\
+                    &=  \frac{\left( 4187\unit{\frac{\joule}{\kilo\gram\cdot\kelvin}} \right) \left( 0.1 \unit{\kilo\gram} \right) \left( 77 \unit{\kelvin} \right)}{200 \unit{\watt}}\\
+                    &=  \frac{32239.9 \unit{\joule}}{200 \unit{\watt}}
+                    =   \boxed{161.1995 \unit{\second} \approx 162 \unit{\second}}
+            \end{align}
+
+            Slight differences can be chocked up to sigfigs. 
 
     \pagebreak
     \section{Problem 25}
@@ -230,9 +259,30 @@
         His theory is that the body must burn off enough fat to raise the temperature of the water from 0.00°C to the body temperature of 37.0°C. 
         How many liters of ice water would have to be consumed to burn off 454 g (about 1 lb) of fat, assuming that burning this much fat requires 3500 Cal be transferred to the ice water? 
         Why is it not advisable to follow this diet? (One liter = $10^3 \unit{\centi\meter^3}$. 
-        The density of water is $1.00 \unit{g/\centi\meter}$.)
+        The density of water is $1.00 \unit{g/\centi\meter^3}$.)
 
         \subsection{Solution}
+            We have a formula for this. 
+            \begin{align}
+                Q   &=  cm \Delta T
+            \end{align}
+
+            If we can find the mass of water required, we can find the volume given our known unit conversions, so we can isolate for that.
+            \begin{gather}
+                m   =   \frac{Q}{c \Delta T}
+            \end{gather}
+
+            The specific heat in this instance will be the specific heat of water ($c = 1 \unit{\frac{\calorie}{\gram\cdot\kelvin}} = 10^{-3} \unit{\frac{\Calorie}{\gram\cdot\kelvin}}$). 
+            The change in temperature is 37.0\unit{\celsius}, which has identical magntude in Kelvin (\unit{K}). 
+            \begin{align}
+                m   &=  \frac{Q}{c \Delta T}
+                    =   \frac{3500\unit{\Calorie}}{\left( 10^{-3} \unit{\frac{\Calorie}{\gram\cdot\kelvin}} \right) \left( 37.0 \unit{\kelvin} \right)}\\
+                    &=  94594.6 \unit{\gram} * 1 \unit{\frac{\centi\meter^3}{\gram}} * 10^{-3} \unit{\frac{\liter}{\centi\meter^3}}\\
+                    &=  \boxed{94.6 \unit{\liter}}
+            \end{align}
+
+            This requires drinking a \textit{lot} of ice water, about 47 and a half bottles of water. 
+            I would not recommend it because it would take so long and would be so inefficient. 
 
     \pagebreak
     \section{Problem 27}
