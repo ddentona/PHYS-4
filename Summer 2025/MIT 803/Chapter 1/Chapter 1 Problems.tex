@@ -148,7 +148,58 @@ d. Use the result of (c) to ﬁnd the square roots of $2i$ and $2 + 2i\sqrt{3}$.
 %     % \label{fig:wrapfig}
 % \end{wrapfigure}
 
-\subsection*{Solution}
+\subsection{Solution (a)}
+We can make this equivalent to a sine and cosine.
+\begin{align}
+    \sqrt{3} + i    &=  R*(\cos(\theta) + i * \sin(\theta))\\
+    R*\cos(\theta)  &=  \sqrt{3}\\
+    R*\sin(\theta)  &=  1\\
+    \frac{R*\sin(\theta)}{R*\cos(\theta)}   =   \tan(\theta)    &=  \frac{1}{\sqrt{3}}
+\end{align}
+
+There is only one value of $\theta$ that works for all of this, being $\theta = \frac{\pi}{6}$. 
+This in turn generates values of $\sin(\theta)$ and $\cos(\theta)$.
+\begin{equation}
+    (\cos(\frac{\pi}{6}), \sin(\frac{\pi}{6}))  =   (\frac{\sqrt{3}}{2}, \frac{1}{2})
+\end{equation}
+
+This gets us an answer that is half of our expected value, giving our value of $R = 2$.
+This gives us a final answer.
+\begin{equation}
+    i + \sqrt{3}    =   \boxed{2e^{i\frac{\pi}{6}}}
+\end{equation}
+
+
+\subsection{Solution (b)}
+\begin{equation}
+    i - \sqrt{3}    =   \boxed{2e^{i\frac{5\pi}{6}}}
+\end{equation}
+
+
+\subsection{Solution (c)}
+We have to find the square root of $Re^{i\theta}$. 
+We can directly try to get the square root of the value.
+\begin{align}
+    (Re^{i\theta})^{\frac{1}{2}} = \sqrt{R}e^{i\theta/2}
+\end{align}
+
+Square roots are also both positive and negative. 
+\begin{equation}
+    (Re^{i\theta})^{\frac{1}{2}} = \boxed{\pm\sqrt{R}e^{i\theta/2}}
+\end{equation}
+
+
+\subsection{Solution (d)}
+\begin{align}
+    2i  &=  2e^{i\pi/2}\\
+    \sqrt{2i}   &=  \pm \sqrt{2} e^{i\pi/4}
+        =   \pm \sqrt{2} \left(\frac{\sqrt{2}}{2} + i\frac{\sqrt{2}}{2}\right)\\
+        &=  \boxed{1 + i \text{ or } -1 - i}\\
+    2 + 2i\sqrt{3}  &=  4e^{i\pi/3}\\
+    \sqrt{2 + 2i\sqrt{3}}   &=  \pm \sqrt{4} e^{i\pi/6}
+        =   \pm 2 \left(\frac{\sqrt{3}}{2} + i\frac{1}{2}\right)\\
+        &=  \boxed{\sqrt{3} + i \text{ or } -\sqrt{3} - 1}
+\end{align}
 
 
 \pagebreak
