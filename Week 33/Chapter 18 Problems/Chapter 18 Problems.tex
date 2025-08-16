@@ -2,16 +2,18 @@
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{graphicx}
+\usepackage{physics}
 \usepackage{siunitx}
 \usepackage{wrapfig}
 
-
+\AtBeginDocument{\RenewCommandCopy\qty\SI}
 
 \begin{document}
     \DeclareSIUnit{\cal}{cal}
     \DeclareSIUnit{\Cal}{Cal}
     \DeclareSIUnit{\calorie}{cal}
     \DeclareSIUnit{\Calorie}{Cal}
+    
 
     \section{Question 4}
         \begin{wrapfigure}{r}{0.5\textwidth}
@@ -281,7 +283,7 @@
                     &=  \boxed{94.6 \unit{\liter}}
             \end{align}
 
-            This requires drinking a \textit{lot} of ice water, about 47 and a half bottles of water. 
+            This requires drinking a \textit{lot} of ice water, about 47 and a half bottles of ice water per day. 
             I would not recommend it because it would take so long and would be so inefficient. 
 
     \pagebreak
@@ -289,20 +291,127 @@
         Calculate the minimum amount of energy, in joules, required to completely melt 130 g of silver initially at 15.0\unit{\celsius}.
 
         \subsection{Solution}
+        The amount of energy required for $130 \unit{\gram}$ of silver (melting point 1235 \unit{\kelvin}; $L_F = 105 \unit{\kilo\joule/\kilo\gram}$) can be separated into two parts: the energy necessary to heat it to melting temperature and the energy necessary to melt it at said temperature.
+        \begin{align}
+            E_\Sigma    &=  Q_{heat} + Q_{melt}
+                =   cm\Delta T + Lm
+        \end{align}
+
+        Given these equations, we can calculate the total energy required.
+        The specific heat of elemental solid silver is $236 \unit{\frac{\joule}{\kilo\gram\cdot\kelvin}}$.
+        \begin{align}
+            \Delta T    &=  1235 \unit{\kelvin} - 15.0 \unit{\celsius}
+                =   1235 \unit{\kelvin} - 288.15 \unit{\kelvin}
+                =   946.85 \unit{\kelvin}\\
+            E_\Sigma    &=  \left( 236 \unit{\frac{\joule}{\kilo\gram\cdot\kelvin}} \right) (0.130 \unit{\kilo\gram}) (946.85 \unit{\kelvin}) + \left( 105 \unit{\frac{\joule}{\gram}} \right) \left( 130 \unit{\gram} \right)\\
+                &=  29049.358 \unit{\joule} + 13650 \unit{joule}
+                =   \boxed{42699.358 \unit{\joule} \approx 42700 \unit{\joule}}
+        \end{align}
 
     \pagebreak
     \section{Problem 31}
         What mass of steam at 100\unit{\celsius} must be mixed with 150\unit{\gram} of ice at its melting point, in a thermally insulated container, to produce liquid water at 50\unit{\celsius}?
 
         \subsection{Solution}
+        We can first calculate the amount of energy necessary for the ice to melt and heat to 50\unit{\celsius}. 
+        \begin{align}
+            Q   &=  cm \Delta T + Lm\\
+                &=  \left( 4187 \unit{\frac{\joule}{\kilo\gram\cdot\kelvin}} \right) (0.15 \unit{\kilo\gram}) (50 \unit{\kelvin}) + (333 \unit{\joule/\gram}) (150 \unit{\gram})\\
+                &=  31402.5 \unit{\joule} + 49950 \unit{\joule}
+                =   81352.5 \unit{\joule}
+        \end{align}
+
+        This would be equal to the required energy from the steam to turn into liquid water at 50\unit{\celsius}.
+        We can set up the same formula as above for the steam.
+        \begin{gather}
+            81352.5 \unit{\joule}   =   cm\Delta T + Lm = m(c\Delta T + L)\\
+            \begin{align}
+                m   &=  \frac{81352.5 \unit{\joule}}{c\Delta T + L}
+                    =   \frac{81352.5 \unit{\joule}}{\left( 4187 \unit{\frac{\joule}{\kilo\gram\cdot\kelvin}} \right)(50\unit{\kelvin}) + 2256 \times 10^{3} \unit{\frac{\joule}{\kilo\gram}} }\\
+                    &=  \frac{81352.5 \unit{\joule}}{ 209350 \unit{\frac{\joule}{\kilo\gram}} + 2256 \times 10^{3} \unit{\frac{\joule}{\kilo\gram}} }\\
+                    &=  \frac{81352.5}{2465350} \unit{\kilo\gram}
+            \end{align}\\
+            m   =   \boxed{0.033 \unit{\kilo\gram} = 33 \unit{\gram}}
+        \end{gather}
 
     \pagebreak
     \section{Problem 37}
         A person makes a quantity of iced tea by mixing 500\unit{\gram} of hot tea (essentially water) with an equal mass of ice at its melting point. 
         Assume the mixture has negligible energy exchanges with its environment. 
-        If the tea's initial temperature is $T_i = 90\unit{\celsius}$, when thermal equilibrium is reached what are (a) the mixture's temperature $T_f$ and (b) the remaining mass m f of ice? If T i = 70°C, when thermal equilibrium is reached what are (c) $T_f$ and (d) $m_f$?
+        If the tea's initial temperature is $T_i = 90\unit{\celsius}$, when thermal equilibrium is reached what are (a) the mixture's temperature $T_f$ and (b) the remaining mass $m_f$ of ice? If $T_i$ = 70°C, when thermal equilibrium is reached what are (c) $T_f$ and (d) $m_f$?
 
-        \subsection{Solution}
+        \subsection{Solution (a)}
+            First, we can calculate the energy that the tea have to would release to reduce its temperature to 0\unit{\celsius}, at which point it would start freezing if it released any more energy. 
+            \begin{align}
+                \Delta T    &=  0 \unit{\celsius} - 90 \unit{\celsius} = -90 \unit{\celsius}\\
+                Q   &=  cm\Delta T\\
+                    &=  \left( 4187 \unit{\frac{\joule}{\kilo\gram\cdot\kelvin}} \right) (0.5 \unit{\kilo\gram}) (-90 \unit{\celsius})\\
+                    &=  -188415 \unit{\joule}
+            \end{align}
+
+            Next, we can calculate the amount of energy that would be absorbed by the ice completely melting.
+            \begin{align}
+                Q   &=  m L_F
+                    =   \left( 333 \times 10^3 \unit{\joule/\kilo\gram} \right) \left( 0.5 \unit{\kilo\gram} \right)\\
+                    &=  166500 \unit{\joule}
+            \end{align}
+
+            The magnitude of released energy is greater than the magnitude of absorbed energy, so all the ice will melt.
+            To achieve thermal equilibrium, the energy absorbed by the ice would have to be equal to the energy released by the tea.
+            We can find this by taking the average of the two quantities of energy found.
+            From that, we can find the change in temperature of the water until it reaches thermal equilibrium.
+            \begin{align}
+                \frac{188415 + 166500}{2}   &=  177457.5\unit{\joule}   =   Q\\
+                \Delta T    &=  \frac{Q}{cm}
+                    =   \frac{-177457.5\unit{\joule}}{\left( 4187 \unit{\frac{\joule}{\kilo\gram\cdot\kelvin}} \right) (0.5 \unit{\kilo\gram})}
+                    =   -84.766 \unit{\celsius}
+            \end{align}
+
+            This we can add to the initial temperature to find the final temperature.
+            \begin{gather}
+                T_f = T_i + \Delta T = 90 \unit{\celsius} - 84.766 \unit{\celsius} = \boxed{5.2 \unit{\celsius}}
+            \end{gather}
+
+        \subsection{Solution (b)}
+            As established, all the ice melts, so $m_f = \boxed{0\unit{\gram}}$. 
+
+        \subsection{Solution (c)}
+            The ice would take the same amount of energy to melt, so $Q_{ice} = 166500 \unit{\joule}$.
+            Knowing this, we should calculate the amount of energy to reduce all the tea to $0\unit{\celsius}$. 
+            \begin{align}
+                \Delta T    &=  0 \unit{\celsius} - 70 \unit{\celsius} = -70 \unit{\celsius}\\
+                Q   &=  cm\Delta T\\
+                    &=  \left( 4187 \unit{\frac{\joule}{\kilo\gram\cdot\kelvin}} \right) (0.5 \unit{\kilo\gram}) (-70 \unit{\celsius})\\
+                    &=  -146545 \unit{\joule}
+            \end{align}
+
+            The magnitude of absorbed energy is greater than the magnitude of released energy, so less than all the ice will melt but all the water will reach \boxed{0\unit{\celsius}}.
+
+        \subsection{Solution (d)}
+            To achieve thermal equilibrium, the energy absorbed by the ice would have to be equal to the energy released by the tea.
+            We can find this by taking the average of the two quantities of energy found.
+            From that, we can find the lost mass of the ice when it reaches thermal equilibrium.
+            \begin{align}
+                \frac{146545 + 166500}{2}   &=  156522.5\unit{\joule}   =   Q\\
+                Q   &=  m L_F\\
+                m   &=  \frac{Q}{L_F}
+                    =   \frac{156522.5\unit{\joule}}{333 \times 10^3 \unit{\joule/\kilo\gram}}\\
+                    &=  0.47 \unit{\kilo\gram}
+            \end{align}
+
+            Subtract this from the total mass of the ice to find the final mass of ice not melted.
+            \begin{equation}
+                m_f =   0.5 \unit{\kilo\gram} - 0.47 \unit{\kilo\gram}  =   \boxed{0.03 \unit{\kilo\gram}}
+            \end{equation}
+
+        \subsection{Differential Equations Remark}
+            This could be done with some differential equations.
+            Presumably, the ice that is unfrozen would automatically start warming up and the full energy transfer would not be instantaneous, so we could set up a time variable and set up a function of the mass over time. 
+            \begin{gather}
+                Q   =   mL_F\\
+                \dv{Q}{t} = \dv{m}{t} L_F
+            \end{gather}
+
 
     \pagebreak
     \section{Problem 41}
