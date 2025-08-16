@@ -419,7 +419,92 @@
         If the water is initially at 25\unit{\celsius}, and the ice comes directly from a freezer at -15\unit{\celsius}, what is the final temperature at thermal equilibrium? 
         (b) What is the final temperature if only one ice cube is used?
     
-        \subsection{Solution}
+        \subsection{Solution (a)}
+            First find the total necessary energy for the ice to warm all the way up to $25\unit{\celsius}$ water and the water to cold all the way down to $-15\unit{\celsius}$.
+            First the heating of the ice.
+            { \small
+            \begin{align}
+                Q_{\Sigma i}    &=  c_i m_i \Delta T_i + L_F m_i + c_w m_i \Delta T_w\\
+                    &=  (0.1 \unit{\kilo\gram}) \left( \left( 2220 \unit{\frac{\joule}{\kilo\gram\cdot\kelvin}} \right) \left( 15 \unit{\kelvin} \right) + 333 \times 10^3 \unit{\frac{\joule}{\kilo\gram}} + \left( 4187 \unit{\frac{\joule}{\kilo\gram\cdot\kelvin}} \right) \left( 25 \unit{\kelvin} \right) \right)\\
+                    &=  \left( 0.1 \unit{\kilo\gram} \right) \left( 33300 \unit{\frac{\joule}{\kilo\gram}} + 333000 \unit{\frac{\joule}{\kilo\gram}} + 104675 \unit{\frac{\joule}{\kilo\gram}} \right)\\
+                    &=  (0.1 \unit{\kilo\gram}) \left( 470975 \unit{\frac{\joule}{\kilo\gram}} \right)
+                    =   47097.5 \unit{\joule}
+            \end{align}}
+
+            Then, the cooling of the water.
+            \begin{align}
+                Q_{\Sigma w}    &=  c_i m_w \Delta T_i + L_F m_w + c_w m_w \Delta T_w\\
+                    &=  (0.2 \unit{\kilo\gram}) \left( 470975 \unit{\frac{\joule}{\kilo\gram}} \right)
+                    =   94195 \unit{\joule}
+            \end{align}
+
+            Take the average of these two to find the total energy used. 
+            \begin{gather}
+                \frac{47097.5 \unit{\joule} + 94195 \unit{\joule}}{2}   =   70646.25 \unit{\joule}
+            \end{gather}
+
+            The last thing we can do is go through the processes until there is no energy left, going from the baseline of the 200\unit{\gram} of water.
+            We start with the cooling to 0\unit{\celsius}. 
+            \begin{align}
+                70646.25 \unit{\joule} - c_w m_i \Delta T_w
+                    &=  70646.25 \unit{\joule} - \left( 4187 \unit{\frac{\joule}{\kilo\gram\cdot\kelvin}} \right) (0.2 \unit{\kilo\gram}) \left( 25 \unit{\kelvin} \right)\\
+                    &=  70646.25 \unit{\joule} - 20935 \unit{\joule}
+                    =   49711.25 \unit{\joule}
+            \end{align}
+
+            Next is the freezing.
+            \begin{align}
+                49711.25 \unit{\joule} - m_w L_F
+                    &=  49711.25 \unit{\joule} - (0.2 \unit{\kilo\gram}) \left( 333000 \unit{\frac{\joule}{\kilo\gram}} \right)\\
+                    &=  49711.25 \unit{\joule} - 66600 \unit{\joule}
+                    =   -16888.75 \unit{\joule}
+            \end{align}
+
+            Since this is new negative, the alotted energy has run out and thermal equlbrium has been reached at \boxed{0\unit{\celsius}}. 
+
+        \subsection{Solution (b)}
+        Take the energy to freeze all the water.
+        \begin{align}
+            Q_w &=  cm \Delta T
+                =   4187 * 0.2 * 25
+                =   20935 \unit{\joule}
+        \end{align}
+        
+        Then, take the energy to melt all the ice.
+        \begin{align}
+            Q_i &=  cm \Delta T + m L_F
+                =   2220 * 0.05 * 15 + 333000 * 0.05\\
+                &=  1665 + 16650
+                =   18315 \unit{\joule}
+        \end{align}
+
+        Average these two. 
+        \begin{align}
+            \frac{20935 \unit{\joule} + 18315 \unit{\joule}}{2} = 19625 \unit{\joule}
+        \end{align}
+
+        Apply that and find the value of $\Delta T$ for the water after removing the energy ncessary to warm and melt the ice, then from that, find $T_f$ of the water. 
+        \begin{align}
+            Q   &=  cm \Delta T\\
+            \Delta T    &=  \frac{Q}{cm}
+                =   \frac{18315}{4187 * 0.2}
+                =   \frac{18315}{837.4}
+                =   21.87 \unit{\kelvin}\\
+            T_f &=  25 \unit{\celsius} - 21.87 \unit{\kelvin}
+                =   3.13 \unit{\kelvin}
+        \end{align}
+
+        Now we use our known quantities to find the final $T_f$.
+        \begin{align}
+            0   &=  (cm \Delta T)_1 + (cm \Delta T)_2\\
+                &=  4187 \left( 0.05 (T_f - 0) + 0.2 (T_f - 3.13) \right)\\
+                &=  4187 \left( 0.25 T_f - 0.2 * 3.13 \right)\\
+            0   &=  0.25 T_f - 0.2 * 3.13
+                =   T_f - 0.8 * 3.13\\
+            T_f &=  0.8 * 3.13
+                =   \boxed{2.5 \unit{\celsius}}
+        \end{align}
+        
 
     \pagebreak
     \section{Problem 43}
@@ -429,9 +514,10 @@
             % \label{fig:wrapfig}
         \end{wrapfigure}
         In Fig. 18-37, a gas sample expands from $V_0$ to $4.0 V_0$ while its pressure decreases from $p_0$ to $p_0/4.0$. 
-        If $V_0 = 1.0 m^3$ and $p_0 = 40 \unit{\pascal}$, how much work is done by the gas if its pressure changes with volume via (a) path A, (b) path B, and (c) path C?
+        If $V_0 = 1.0 \unit{\meter^3}$ and $p_0 = 40 \unit{\pascal}$, how much work is done by the gas if its pressure changes with volume via (a) path A, (b) path B, and (c) path C?
 
         \subsection{Solution}
+        
 
     \pagebreak
     \section{Problem 45}
