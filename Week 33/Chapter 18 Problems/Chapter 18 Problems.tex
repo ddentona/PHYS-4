@@ -9,10 +9,11 @@
 \AtBeginDocument{\RenewCommandCopy\qty\SI}
 
 \begin{document}
-    \DeclareSIUnit{\cal}{cal}
-    \DeclareSIUnit{\Cal}{Cal}
-    \DeclareSIUnit{\calorie}{cal}
-    \DeclareSIUnit{\Calorie}{Cal}
+    \DeclareSIUnit{\cal}{\ cal}
+    \DeclareSIUnit{\Cal}{\ Cal}
+    \DeclareSIUnit{\calorie}{\ cal}
+    \DeclareSIUnit{\Calorie}{\ Cal}
+    \DeclareSIUnit{\fahrenheit}{^\circ F}
     
 
     \section{Question 4}
@@ -516,71 +517,418 @@
         In Fig. 18-37, a gas sample expands from $V_0$ to $4.0 V_0$ while its pressure decreases from $p_0$ to $p_0/4.0$. 
         If $V_0 = 1.0 \unit{\meter^3}$ and $p_0 = 40 \unit{\pascal}$, how much work is done by the gas if its pressure changes with volume via (a) path A, (b) path B, and (c) path C?
 
-        \subsection{Solution}
+        \subsection{Solution (a)}
+            We have a formula for the work done by a gas from its pressure and volume.
+            \begin{equation}
+                W = \int\, dW = \int_{V_i}^{V_f} p \,dV 
+            \end{equation}
+
+            Following from this, we can create a formula for the pressure from the volume.
+            \begin{equation}
+                p(V) = \begin{cases}
+                    p_0     &\text{if } V_0 < V < 4 V_0\\
+                    p_0/4   &\text{if } V = 4 V_0
+                \end{cases}
+            \end{equation}
+
+            Knowing this, we can develop the integral above and solve it.
+            \begin{align}
+                W   &=  \int_{V_i}^{V_f} p(V) \,dV 
+                    =   \int_{V_0}^{4V_0} p_0 \,dV
+                    =   \left[ p_0*V \right]_{V_0}^{4V_0}\\
+                    &=  4 V_0 p_0 - V_0 p_0
+                    =   3 V_0 p_0
+                    =   3 * 1 \unit{\meter^3} * 40 \unit{\pascal}\\
+                    &=  \boxed{120 \unit{\joule}}
+            \end{align}
+
+        \subsection{Solution (b)}
+            Here is the formula for the pressure from the volume.
+            \begin{equation}
+                p(V)    = \frac{p_f - p_i}{V_f - V_i}V + b    = \frac{10 - 40}{4 - 1} V + 50  = -\frac{30}{3} V + 50  = 50 - 10V 
+            \end{equation}
+
+            We next apply that to the integral from part (a) and perform the integral.
+            \begin{align}
+                W   &=  \int_{V_i}^{V_f} p(V) \,dV 
+                    =   \int_{V_0}^{4V_0} 50 - 10V \,dV
+                    =   \left[ 50V - 5 V^2 \right]_{V_0}^{4V_0}\\
+                    &=  \left( 50 * 4V_0 - 5*(4 V_0)^2 \right) - \left( 50 V_0 - 5 (V_0)^2 \right)\\
+                    &=  200 V_0 - 80 V_0^2 - 50 V_0 + 5 V_0^2
+                    =   150 V_0 - 75 V_0^2\\
+                    &=  150 - 75 \unit{\joule}
+                    =   \boxed{75 \unit{\joule}}
+            \end{align}
+
+        \subsection{Solution (c)}
+            Here is the new formula for the pressure from the volume.
+            \begin{equation}
+                p(V) = \begin{cases}
+                    p_0/4   &\text{if } V_0 < V < 4 V_0\\
+                    p_0.    &\text{if } V = 4 V_0
+                \end{cases}
+            \end{equation}
+
+            Then, we apply the integral. 
+            \begin{align}
+                W   &=  \int_{V_i}^{V_f} p(V) \,dV 
+                    =   \int_{V_0}^{4V_0} \frac{p_0}{4} \,dV
+                    =   \left[ \frac{p_0}{4}*V \right]_{V_0}^{4V_0}\\
+                    &=  \frac{4}{4} V_0 p_0 - \frac{1}{4} V_0 p_0
+                    =   \frac{3}{4} V_0 p_0
+                    =   \frac{3}{4} * 1 \unit{\meter^3} * 40 \unit{\pascal}\\
+                    &=  \boxed{30 \unit{\joule}}
+            \end{align}
         
 
     \pagebreak
     \section{Problem 45}
+        \begin{wrapfigure}{r}{0.25\textwidth}
+            \vspace{-30pt}
+            \includegraphics[width=0.25\textwidth]{picture_18-39.png} 
+            % \label{fig:wrapfig}
+        \end{wrapfigure}
+        A gas within a closed chamber undergoes the cycle shown in the $p-V$ diagram of Fig. 18-39. 
+        The horizontal scale is set by $V_s = 4.0 \unit{\meter^3}$. 
+        Calculate the net energy added to the system as heat during one complete cycle.
 
-    \subsection{Solution}
+        \subsection{Solution}
+        We can set up a triad of integrals for the three parts of this path.
+        Before that, we can put together a formula for $p(V)$ from A to B.
+        \begin{gather}
+            p(V)    =   \frac{\Delta p}{\Delta V}V + b  =   \frac{30 - 10}{V_s - \frac{1}{4}V_s}V + b   =   \frac{20}{4 - 1}V + b   =   \frac{20}{3}V + b\\
+            b   =   p(1) - \frac{20}{3} * 1 =   10 - \frac{20}{3}   =   \frac{10}{3}\\
+            W_{AB}  =   \int_{\frac{V_s}{4}}^{V_s} p_{AB}(V) \,dV   =   \int_{1\unit{\meter^3}}^{4\unit{\meter^3}} \frac{20}{3}V + \frac{10}{3} \,dV\\
+            W_{BC}  =   \int_{V_s}^{\frac{V_s}{4}} p_{BC}(V) \,dV   =   \int_{4\unit{\meter^3}}^{1\unit{\meter^3}} 30 \,dV\\
+            W_{CA}  =   \int_{V_s/4}^{V_s/4} p_{CA}(V) \,dV =   0
+        \end{gather}
+
+        That last one is automatically set to zero because the start and end points are equal.
+        We can find the answer by adding these three together.
+        \begin{align}
+            W_{ABC} &=  W_{AB} + W_{BC} + W_{CA}\\
+                &=  \int_{1\unit{\meter^3}}^{4\unit{\meter^3}} \frac{20}{3}V + \frac{10}{3} \,dV + \int_{4\unit{\meter^3}}^{1\unit{\meter^3}} 30 \,dV + 0\\
+                &=  \left[ \frac{10}{3}V^2 + \frac{10}{3}V \right]_{1\unit{\meter^3}}^{4\unit{\meter^3}} + \left[ 30V \right]_{4\unit{\meter^3}}^{1\unit{\meter^3}}\\
+                &=  \frac{10}{3}(16 - 1) + \frac{10}{3}(4 - 1) + 30(1 - 4)\\
+                &=  50 \unit{\joule} + 10 \unit{\joule} - 90 \unit{\joule}
+                =   -30 \unit{\joule}
+        \end{align}
+
+        As such, a total of \boxed{-30 \unit{\joule}} of energy is added as heat during one cycle.
 
     \pagebreak
     \section{Problem 47}
+        \begin{wrapfigure}{r}{0.25\textwidth}
+            \vspace{-30pt}
+            \includegraphics[width=0.25\textwidth]{picture_18-40.png} 
+            % \label{fig:wrapfig}
+        \end{wrapfigure}
+        When a system is taken from state $i$ to state $f$ along path $iaf$ in Fig. 18-40, $Q = 50 \unit{\calorie}$ and $W = 20 \unit{\calorie}$. 
+        Along path $ibf$, $Q = 36 \unit{\calorie}$. 
+        (a) What is $W$ along path $ibf$? 
+        (b) If $W = -13 \unit{\calorie}$ for the return path $fi$, what is $Q$ for this path? 
+        (c) If $E_{int,i} = 10 \unit{\calorie}$, what is $E_{int,f}$? 
+        If $E_{int,b} = 22 \unit{\calorie}$, what is $Q$ for (d) path $ib$ and (e) path $bf$?
 
-    \subsection{Solution}
+        \subsection{Solution (a)}
+            While $Q$ and $W$ are path dependant, $\Delta E_{int}$ is not.
+            Since $\Delta E_{int} = Q - W$, we can write and solve an equation for both $iaf$ and $ibf$. 
+            \begin{gather}
+                Q_{iaf} - W_{iaf} = Q_{iaf} - W_{ibf}\\
+                50 \unit{\calorie} - 20 \unit{\calorie} = 36 \unit{\calorie} - W_{ibf}\\
+                W_{ibf} = 36 \unit{\calorie} - 30 \unit{\calorie} = \boxed{6 \unit{\calorie}}
+            \end{gather}
+
+        \subsection{Solution (b)}
+            The answer can be found similarly, bearing in mind that since the start and end points are opposite, $\Delta E_{iaf} = -\Delta E_{fi}$. 
+            We can give a formula.
+            \begin{gather}
+                \Delta E_{iaf} = -\Delta E_{fi}\\
+                Q{iaf} - W_{iaf} = 30 \unit{\cal} = W_{fi} - Q_{fi} = -13\unit{\calorie} - Q_{fi}\\
+                Q_{fi} = -13 \unit{\calorie} - 30 \unit{\calorie} = \boxed{-43 \unit{\calorie}}
+            \end{gather}
+
+        \subsection{Solution (c)}
+            Add the change in energy to the initial energy to get the final energy.
+            \begin{align}
+                E_{int,f}   &=  E_{int,i} + \Delta E_{int}
+                    =   10 \unit{\calorie} + 30 \unit{\calorie}
+                    =   \boxed{40 \unit{\calorie}}
+            \end{align}
+
+        \subsection{Solution (d)}
+            I assume that the value of $E_{int,i}$ remains the same.
+            Since the volume changes but the pressure does not, $W \neq 0$. 
+            However, the volume does not change along the path of $bf$, so $W_{ib} = W_{ibf} = 6 \unit{\calorie}$. 
+            We also have an equation of path independence of change in energy, so we can use that. 
+            \begin{gather}
+                \Delta E_{int} = E_{int,b} - E_{int,i} = Q_{ib} - W_{ib}\\
+                Q_{ib} = E_{int,b} - E_{int,i} + W_{ib} = 22 - 10 + 6 = \boxed{18 \unit{\calorie}}
+            \end{gather}
+
+        \subsection{Solution (e)}
+            We know that $W = 0$ and $E_{int,f} = 40 \unit{\calorie}$.
+            As such, we can find $\Delta E_{int,bf}$ and from that $Q$.
+            \begin{gather}
+                \Delta E_{int,bf} = E_{int,f} - E_{int,b} = 40 - 22 = 18 \unit{\calorie}\\
+                \Delta E_{int,bf} = Q - W = Q - 0 = Q = \boxed{18 \unit{\calorie}}
+            \end{gather}
+
 
     \pagebreak
     \section{Problem 49}
+        \begin{wrapfigure}{r}{0.25\textwidth}
+            \vspace{-30pt}
+            \includegraphics[width=0.25\textwidth]{picture_18-42.png} 
+            % \label{fig:wrapfig}
+        \end{wrapfigure}
+        Figure 18-42 represents a closed cycle for a gas (the figure is not drawn to scale). 
+        The change in the internal energy of the gas as it moves from $a$ to $c$ along the path $abc$ is $-200 \unit{\joule}$.
+        As it moves from $c$ to $d$, $180 \unit{\joule}$ must be transferred to it as heat. 
+        An additional transfer of $80 \unit{\joule}$ to it as heat is needed as it moves from $d$ to $a$. 
+        How much work is done on the gas as it moves from $c$ to $d$?
 
-    \subsection{Solution}
+        \subsection{Solution}
+            This requires a system of equations.
+            \begin{align}
+                -200\unit{\joule}   &=  Q_{ab} - W_{ab} + Q_{bc} - W_{bc} = \Delta E_{int,ac} = -\Delta E_{int,ca}\\
+                180 \unit{\joule}   &=  Q_{cd}\\
+                80 \unit{\joule}    &=  Q_{da}
+            \end{align}
+
+            Along vertical pathways, $W = 0$, so we can apply that knowledge to this system of equations.
+            We can also add the formula for $\Delta E_{int,cda}$. 
+            \begin{align}
+                -200\unit{\joule}   &=  Q_{ab} - W_{ab} + Q_{bc}\\
+                180 \unit{\joule}   &=  Q_{cd}\\
+                80 \unit{\joule}    &=  Q_{da} - W_{da} = \Delta E_{int,da}\\
+                \Delta E_{int,cda}  &=  Q_{cd} - W_{cd} + Q_{da} - W_{da} = 200 \unit{\joule}
+            \end{align}
+
+            We can substitute known values into our last equation, including the fact that on vertical lines, $W = 0$.
+            \begin{align}
+                200 \unit{\joule}   &=  180 \unit{\joule} - W_{cd} + 80 \unit{\joule}\\
+                W_{cd}  &=  180 \unit{\joule} + 80 \unit{\joule} - 200 \unit{\joule} = \boxed{60 \unit{\joule}}
+            \end{align}
+
+            This was a fun problem. 
+            My compliments to the chef. 
 
     \pagebreak
     \section{Problem 51}
+        A sphere of radius $0.500\unit{\meter}$, temperature $27.0\unit{\celsius}$, and emissivity 0.850 is located in an environment of temperature $77.0\unit{\celsius}$.
+        At what rate does the sphere (a) emit and (b) absorb thermal radiation? 
+        (c) What is the sphere's net rate of energy exchange?
 
-    \subsection{Solution}
+        \subsection{Solution (a)}
+            We have a formula for radiation emitted. 
+            \begin{equation}
+                P_{rad} =   \sigma \varepsilon A T^4
+            \end{equation}
+
+            Since A is the area of the sphere, we should first calculate that. 
+            \begin{align}
+                A   &=  4\pi r^2
+                    =   4\pi 0.5^2
+                    =   \pi \unit{\meter^2}
+            \end{align}
+
+            We can then convert the temperature from Celsius to Kelvin and use that to find the answer.
+            \begin{align}
+                T_{\unit{\kelvin}}  &=  T_{\unit{\celsius}} + 273.15 \unit{\degree}
+                    =   27.0 \unit{\celsius} + 273.15 \unit{\degree}
+                    =   300.15\unit{\kelvin}\\
+                P_{rad} &=  (5.6704 \times 10^{-8} \unit{\watt/\meter^2\cdot\kelvin^4}) (0.850) (\pi \unit{\meter^2}) (300.15 \unit{\kelvin})^4\\
+                    &=  \boxed{1228.868 \unit{\watt}}
+            \end{align}
+
+        \subsection{Solution (b)}
+            We have a formula for environmental radiation absorbed.
+            \begin{equation}
+                P_{abs} =   \sigma \varepsilon A T_{env}^4
+            \end{equation}
+
+            The area of the sphere remains the same, so we can then convert the temperature from Celsius to Kelvin and use that to find the answer.
+            \begin{align}
+                T_{\unit{\kelvin}}  &=  T_{\unit{\celsius}} + 273.15 \unit{\degree}
+                    =   77.0 \unit{\celsius} + 273.15 \unit{\degree}
+                    =   350.15\unit{\kelvin}\\
+                P_{abs} &=  (5.6704 \times 10^{-8} \unit{\watt/\meter^2\cdot\kelvin^4}) (0.850) (\pi \unit{\meter^2}) (350.15 \unit{\kelvin})^4\\
+                    &=  \boxed{2275.980 \unit{\watt}}
+            \end{align}
+
+            These two equations seem to be practically the same, as if it is merely about a change in temperature abruptly over a specific area.
+
+        \subsection{Solution (c)}
+            The net radiation is the radiation emitted minus the radiation absorbed.
+            \begin{equation}
+                P_\Sigma    =   P_{rad} - P_{abs}
+                    =   1228.868 \unit{\watt} - 2275.980 \unit{\watt}
+                    =   -1047.112 \unit{\watt}
+            \end{equation}
+
+            This means that on net, it absorbs \boxed{1047.112 \unit{\watt}}. 
+
 
     \pagebreak
     \section{Problem 53}
+        \begin{wrapfigure}{r}{0.25\textwidth}
+            \vspace{-30pt}
+            \includegraphics[width=0.25\textwidth]{picture_18-18.png} 
+            % \label{fig:wrapfig}
+        \end{wrapfigure}
+        Consider the slab shown in Fig. 18-18. 
+        Suppose that $L = 25.0 \unit{\centi\meter}$, $A = 90.0 \unit{\centi\meter^2}$, and the material is copper. 
+        If $T_H = 125\unit{\celsius}$, $T_C = 10.0\unit{\celsius}$, and a steady state is reached, find the conduction rate through the slab.
 
-    \subsection{Solution}
+        \subsection{Solution}
+            The conduction rate is established in an equation.
+            \begin{equation}
+                P_{cond} = \frac{Q}{t} = kA \frac{T_H - T_C}{L}
+            \end{equation}
+
+            The second half of this would be the source of our interest.
+            The thermal conductivity of copper is $401 \unit{\watt/\meter\cdot\kelvin}$.
+            \begin{align}
+                P_{cond}    &=  (401 \unit{\watt/\meter\cdot\kelvin}) (90 \times 10^{-4} \unit{\meter}) \frac{125 \unit{\celsius} - 10 \unit{\celsius}}{0.25 \unit{\meter}}\\
+                    &=  (3.609 \unit{\watt\cdot\meter/\kelvin})\frac{115\unit{\kelvin}}{0.25\unit{\meter}}
+                    =   \boxed{1660.14 \unit{\watt}}
+            \end{align}
+            
+
 
     \pagebreak
     \section{Problem 57}
+        (a) What is the rate of energy loss in watts per square meter through a glass window 3.0 mm thick if the outside temperature is $-20\unit{\fahrenheit}$ and the inside temperature is +72°F? 
+        (b) A storm window having the same thickness of glass is installed parallel to the first window, with an air gap of 7.5 cm between the two windows. 
+        What now is the rate of energy loss if conduction is the only important energy-loss mechanism?
 
-    \subsection{Solution}
+        \subsection{Solution (a)}
+            We use the equation for the conductivity of a volume.
+            % Suppose that the area A is 1 \unit{\meter^2}.
+            The thermal conductivity of window glass is $1.0 \unit{\watt/\meter\cdot\kelvin}$. 
+            Note that we should first convert $\Delta T$ from Fahrenheit/Rankine to Celsius/Kelvin.
+            \begin{align}
+                \Delta T_{\unit{\fahrenheit}}   &=  72 \unit{\fahrenheit} + 20 \unit{\fahrenheit}
+                    =   92 \unit{\fahrenheit}\\
+                \Delta T_{\unit{\kelvin}}  &=  \frac{9}{5} \Delta T_{\unit{\kelvin}}
+                    =   \frac{5 \unit{\kelvin}}{9 \unit{\fahrenheit}} * 92 \unit{\fahrenheit}
+                    =   \frac{460}{9} \unit{\kelvin}\\
+                P_{cond}    &=  kA\frac{T_H - T_C}{L}\\
+                \frac{P_{cond}}{A}  &=  k\frac{T_H - T_C}{L}
+                    =   (1.0 \unit{\watt/\meter\cdot\kelvin}) \frac{460/9 \unit{\kelvin}}{3 \times 10^{-3} \unit{\meter}}\\
+                    &=  \boxed{17.04 \times 10^3 \unit{\watt/\meter^2}}
+            \end{align}
+
+        \subsection{Solution (b)}
+            There exists a previously established equation for the conduction of any number of materials, which we can use here.
+            We can assume the air to be dry air, with a relatively low thermal conductivity 0.026 \unit{\watt/\meter\cdot\kelvin}.
+            We also assume the two windows are of the same material.
+            \begin{align}
+                P_{cond}    &=  \frac{A\Delta T}{\sum(L/k)}\\
+                \frac{P_{cond}}{A}  &=  \frac{\Delta T}{\sum(L/k)}
+                    =   \frac{460/9 \unit{\kelvin}}{\frac{0.003}{1} + \frac{0.075}{0.026} + \frac{0.003}{1}}\\
+                    &=  \frac{460/9}{0.003 + 2.8846 + 0.003}
+                    =   \frac{460/9}{2.891}\\
+                    &=  \boxed{17.7 \unit{\watt/\meter^2}}
+            \end{align}
 
     \pagebreak
     \section{Problem 59}
+        \begin{wrapfigure}{r}{0.25\textwidth}
+            \vspace{-30pt}
+            \includegraphics[width=0.25\textwidth]{picture_18-45.png} 
+            % \label{fig:wrapfig}
+        \end{wrapfigure}
+        In Fig. 18-45$a$, two identical rectangular rods of metal are welded end to end, with a temperature of $T_1 = 0\unit{\celsius}$ on the left side and a temperature of $T_2 = 100\unit{\celsius}$ on the right side. 
+        In 2.0 min, $10 \unit{\joule}$ is conducted at a constant rate from the right side to the left side.
+        How much time would be required to conduct $10 \unit{\joule}$ if the rods were welded side to side as in Fig. 18-45$b$?
 
-    \subsection{Solution}
+        \subsection{Solution}
+            In this case, the change in temperature comes first.
+            \begin{equation}
+                \Delta T    =   T_2 - T_1
+                    =   100 \unit{\celsius} - 0 \unit{\celsius}
+                    =   100 \unit{\kelvin}
+            \end{equation}
+
+            We have a formula for the conduction, which relates to the energy conducted.
+            \begin{gather}
+                P_{cond;a}    =   \frac{Q}{t}
+                    =   \frac{10 \unit{\joule}}{120 \unit{\second}}
+                    =   kA\frac{\Delta T}{L}
+            \end{gather}
+
+            Case (b) has twice the surface area and half the length.
+            \begin{gather}
+                P_{cond;b}  =   \frac{10 \unit{\joule}}{t}
+                    =   k*2A\frac{\Delta T}{L/2}
+            \end{gather}
+
+            We can isolate the values shared values, then apply the tramsistive property.
+            \begin{gather}
+                \frac{1}{120 \unit{\second}}    =   kA\frac{\Delta T}{L * 10 \unit{\joule}}\\
+                \frac{1}{4t}    =   kA\frac{\Delta T}{L * 10 \unit{\joule}}\\
+                \frac{1}{4t}    =   \frac{1}{120 \unit{\second}}\\
+                t   =   \boxed{30 \unit{\second}}
+            \end{gather}
+
 
     \pagebreak
     \section{Problem 63}
+        \begin{wrapfigure}{r}{0.25\textwidth}
+            \vspace{-30pt}
+            \includegraphics[width=0.25\textwidth]{picture_18-49.png} 
+            % \label{fig:wrapfig}
+        \end{wrapfigure}
+        Figure 18-49 shows (in cross section) a wall consisting of four layers, with thermal conductivities k1 = 0.060 W/m · K, k3 = 0.040 W/m · K, and k4 = 0.12 W/m · K (k2 is not known). 
+        The layer thicknesses are L1 = 1.5 cm, L3 = 2.8 cm, and L4 = 3.5 cm (L2 is not known). The known temperatures are T1 = 30°C, T12 = 25°C, and $T_4 = -10\unit{\celsius}$. 
+        Energy transfer through the wall is steady. 
+        What is interface temperature $T_{34}$?
 
     \subsection{Solution}
 
     \pagebreak
     \section{Problem 85}
+        A 2.50 kg lump of aluminum is heated to 92.0°C and then dropped into 8.00 kg of water at 5.00°C. 
+        Assuming that the lump-water system is thermally isolated, what is the system's equilibrium temperature?
 
     \subsection{Solution}
 
     \pagebreak
     \section{Problem 89}
+        An athlete needs to lose weight and decides to do it by “pumping iron.” 
+        (a) How many times must an 80.0 kg weight be lifted a distance of 1.00 m in order to burn off 1.00 lb of fat, assuming that that much fat is equivalent to 3500 Cal? 
+        (b) If the weight is lifted once every 2.00 s, how long does the task take?
 
     \subsection{Solution}
 
     \pagebreak
     \section{Problem 93}
+        Suppose that you intercept $5.0 \times 10^{-3}$ of the energy radiated by a hot sphere that has a radius of 0.020 m, an emissivity of 0.80, and a surface temperature of 500 K. 
+        How much energy do you intercept in 2.0 min?
 
     \subsection{Solution}
 
     \pagebreak
     \section{Problem 103}
+        \begin{wrapfigure}{r}{0.25\textwidth}
+            \vspace{-30pt}
+            \includegraphics[width=0.25\textwidth]{picture_18-61.png} 
+            % \label{fig:wrapfig}
+        \end{wrapfigure}
+        The area A of a rectangular plate is ab = 1.4 m 2 . 
+        Its coefficient of linear expansion is $\alpha = 32 \times 10^{-6} /\unit{\celsius}$. 
+        After a temperature rise $\Delta T = 89\unit{\celsius}$, side $a$ is longer by $\Delta a$ and side $b$ is longer by $\Delta b$ (Fig. 18-61). 
+        Neglecting the small quantity $(\Delta a \Delta b)/ab$, find $\Delta A$. 
 
     \subsection{Solution}
 
     \pagebreak
     \section{Problem 105}
+        A pendulum clock with a pendulum made of brass is designed to keep accurate time at 23°C. 
+        Assume it is a simple pendulum consisting of a bob at one end of a brass rod of negligible mass that is pivoted about the other end. 
+        If the clock operates at 0.0°C, (a) does it run too fast or too slow, and (b) what is the magnitude of its error in seconds per hour?
 
     \subsection{Solution}
 
