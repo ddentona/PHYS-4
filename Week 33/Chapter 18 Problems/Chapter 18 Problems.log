@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.25)  16 AUG 2025 21:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.25)  17 AUG 2025 18:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -307,36 +307,36 @@ Package pdftex.def Info: picture_18-45.png  used on input line 840.
 File: picture_18-49.png Graphic file (type png)
 <use picture_18-49.png>
 Package pdftex.def Info: picture_18-49.png  used on input line 881.
-(pdftex.def)             Requested size: 97.5pt x 40.20946pt.
+(pdftex.def)             Requested size: 195.0pt x 80.42238pt.
  [31 <./picture_18-49.png>] [32] [33] [34]
 <picture_18-61.png, id=145, 193.72375pt x 173.64874pt>
 File: picture_18-61.png Graphic file (type png)
 <use picture_18-61.png>
-Package pdftex.def Info: picture_18-61.png  used on input line 917.
+Package pdftex.def Info: picture_18-61.png  used on input line 1000.
 (pdftex.def)             Requested size: 97.5pt x 87.39648pt.
- [35 <./picture_18-61.png>] [36] (./Chapter 18 Problems.toc [37] [38])
+ [35 <./picture_18-61.png>] [36] [37] (./Chapter 18 Problems.toc [38] [39])
 \tf@toc=\write3
 \openout3 = `"Chapter 18 Problems.toc"'.
 
- [39] (./Chapter 18 Problems.aux)
+ [40] (./Chapter 18 Problems.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 7856 strings out of 474116
- 177011 string characters out of 5743682
+ 7865 strings out of 474116
+ 177128 string characters out of 5743682
  1939187 words of memory out of 5000000
- 30154 multiletter control sequences out of 15000+600000
- 567109 words of font info for 70 fonts, out of 8000000 for 9000
+ 30163 multiletter control sequences out of 15000+600000
+ 569410 words of font info for 80 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 79i,19n,93p,665b,741s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 79i,20n,93p,665b,744s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on "Chapter 18 Problems.pdf" (39 pages, 364204 bytes).
+Output written on "Chapter 18 Problems.pdf" (40 pages, 370855 bytes).
 PDF statistics:
- 234 PDF objects out of 1000 (max. 8388607)
- 139 compressed objects within 2 object streams
+ 237 PDF objects out of 1000 (max. 8388607)
+ 141 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  51 words of extra memory for PDF output out of 10000 (max. 10000000)
 

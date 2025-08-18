@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1755405704.68552 "/Users/dentonaingworth/Documents/CCSF/PHYS-4A/Week 33/Chapter 18 Problems/Chapter 18 Problems.tex" "Chapter 18 Problems.pdf" "Chapter 18 Problems" 1755405705.56274 0
-  "/Users/dentonaingworth/Documents/CCSF/PHYS-4A/Week 33/Chapter 18 Problems/Chapter 18 Problems.tex" 1755405704.48682 51117 face9ef84112c2dcbff035b4e860a976 ""
+["pdflatex"] 1755479241.95115 "/Users/dentonaingworth/Documents/CCSF/PHYS-4A/Week 33/Chapter 18 Problems/Chapter 18 Problems.tex" "Chapter 18 Problems.pdf" "Chapter 18 Problems" 1755479242.92243 0
+  "/Users/dentonaingworth/Documents/CCSF/PHYS-4A/Week 33/Chapter 18 Problems/Chapter 18 Problems.tex" 1755479241.74596 61856 a1ef52dba98c14b6112b2e828f95c393 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm" 1136768653 1536 74b7293ec3713bb7fdca8dd1bd1f469c ""
@@ -84,9 +84,9 @@
   "/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1727305248.69286 5467645 128b85b7cde5f5edc5cb7f1dd7ff8736 ""
   "/usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1727305230 8221424 9bdbcc07e109911bb30a75dc8990d89e ""
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
-  "Chapter 18 Problems.aux" 1755405705.51436 7533 ff9216c9fb200341417aaa0d01af7364 "pdflatex"
-  "Chapter 18 Problems.tex" 1755405704.48682 51117 face9ef84112c2dcbff035b4e860a976 ""
-  "Chapter 18 Problems.toc" 1755405705.51523 4507 40ff54bcbe03a759d02ddc72c9cdfe71 "pdflatex"
+  "Chapter 18 Problems.aux" 1755479242.87198 7882 53cf619b45f615d2cb7d5a67314304c0 "pdflatex"
+  "Chapter 18 Problems.tex" 1755479241.74596 61856 a1ef52dba98c14b6112b2e828f95c393 ""
+  "Chapter 18 Problems.toc" 1755479242.8729 4733 9473c33bf7bfab9df90ed962823dac3d "pdflatex"
   "picture_18-18.png" 1755399820.79512 62193 3398ad5c1689a3a83db723f95bc55b89 ""
   "picture_18-25.png" 1755221424.06643 30881 0abd9e654c48b723b0d15f5fb5558e2d ""
   "picture_18-32.png" 1755196851.28464 13865 6fa21257569cba8610e558c25fde539f ""

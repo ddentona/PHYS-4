@@ -876,24 +876,69 @@
 
     \pagebreak
     \section{Problem 63}
-        \begin{wrapfigure}{r}{0.25\textwidth}
+        \begin{wrapfigure}{r}{0.5\textwidth}
             \vspace{-30pt}
-            \includegraphics[width=0.25\textwidth]{picture_18-49.png} 
+            \includegraphics[width=0.5\textwidth]{picture_18-49.png} 
             % \label{fig:wrapfig}
         \end{wrapfigure}
-        Figure 18-49 shows (in cross section) a wall consisting of four layers, with thermal conductivities k1 = 0.060 W/m · K, k3 = 0.040 W/m · K, and k4 = 0.12 W/m · K (k2 is not known). 
-        The layer thicknesses are L1 = 1.5 cm, L3 = 2.8 cm, and L4 = 3.5 cm (L2 is not known). The known temperatures are T1 = 30°C, T12 = 25°C, and $T_4 = -10\unit{\celsius}$. 
+        Figure 18-49 shows (in cross section) a wall consisting of four layers, with thermal conductivities $k_1 = 0.060 \unit{\watt/\meter\cdot\kelvin}$, $k_3 = 0.040 \unit{\watt/\meter\cdot\kelvin}$, and $k_4 = 0.12 \unit{\watt/\meter\cdot\kelvin}$ ($k_2$ is not known). 
+        The layer thicknesses are $L_1 = 1.5 \unit{\centi\meter}$, $L_3 = 2.8 \unit{\centi\meter}$, and $L_4 = 3.5 \unit{\centi\meter}$ ($L_2$ is not known). 
+        The known temperatures are $T_1 = 30 \unit{\celsius}$, $T_{12} = 25 \unit{\celsius}$, and $T_4 = -10\unit{\celsius}$. 
         Energy transfer through the wall is steady. 
         What is interface temperature $T_{34}$?
 
-    \subsection{Solution}
+        \subsection{Solution}
+            We have some formulas usable for this.
+            First among these would be the formula for the conductivity. 
+            \begin{equation}
+                P_{cond}    =   kA\frac{\left| \Delta T \right|}{L}
+            \end{equation}
+
+            Since the energy transfer is steady, we can say that $P_1 = P_2 = P_3 = P_4$. 
+            We have formulas for this.
+            \begin{gather}
+                P_1 =   P_2 =   P_3 =   P_4\\
+                k_1A\frac{T_1 - T_{12}}{L_1}    =   k_2A\frac{T_{12} - T_{23}}{L_2} =   k_3A\frac{\left| T_{23} - T_{34} \right|}{L_3}  =   k_4A\frac{\left| T_{34} - T_4 \right|}{L_4}
+            \end{gather}
+
+            We can focus on the first and last of these, the ones which we have likely the most information about.
+            We also assume that $T_{34} > T_4$ and as such that $\left| T_{34} - T_4 \right| = T_{34} - T_4$. 
+            \begin{gather}
+                k_1A\frac{T_1 - T_{12}}{L_1}    =   k_4A\frac{\left| T_{34} - T_4 \right|}{L_4}\\
+                (0.060 \unit{\watt/\meter\cdot\kelvin}) \frac{30 \unit{\celsius} - 25 \unit{\celsius}}{15 \times 10^{-3} \unit{\meter}}
+                    =   (0.12 \unit{\watt/\meter\cdot\kelvin}) \frac{T_{34} + 10 \unit{\celsius}}{35 \times 10^{-3} \unit{\meter}}\\
+                (5 \unit{\kelvin})\frac{35 \times 10^{-3} \unit{\meter}}{15 \times 10^{-3} \unit{\meter}} \cdot \frac{0.060 \unit{\watt/\meter\cdot\kelvin}}{0.12 \unit{\watt/\meter\cdot\kelvin}}
+                    =   T_{34} + 10 \unit{\celsius}\\
+                T_{34}  =   5 \unit{\kelvin} * \frac{7}{3} * \frac{1}{2} + (-10 \unit{\celsius})
+                    =   \frac{35}{6} \unit{\kelvin} + (-10 \unit{\kelvin})
+                    =   \boxed{-\frac{25}{6} \unit{\celsius} = -4.1\bar{6} \unit{\celsius}}
+            \end{gather} 
 
     \pagebreak
     \section{Problem 85}
         A 2.50 kg lump of aluminum is heated to 92.0°C and then dropped into 8.00 kg of water at 5.00°C. 
         Assuming that the lump-water system is thermally isolated, what is the system's equilibrium temperature?
 
-    \subsection{Solution}
+        \subsection{Solution}
+            We have known that the net energy will be equal to zero.
+            Since the system is thermally isolated, the only things exchangeing energy will be the aluminum ($c_a = 900 \unit{\joule/\kilo\gram\cdot\kelvin}$) and the water ($c_w = 4187 \unit{\joule/\kilo\gram\cdot\kelvin}$).
+            The temperatures given should be converted to Kelvin.
+            We can use that to solve for the final temperature.
+            \begin{gather}
+                T_{a;i} =   92.0 \unit{\celsius} + 273.15 \unit{\kelvin}    =   365.15 \unit{\kelvin}\\
+                T_{w;i} =   5.00 \unit{\celsius} + 273.15 \unit{\kelvin}    =   278.15 \unit{\kelvin}\\
+                Q_{a}   =   Q_{w}\\
+                c_a m_a (T_f - T_{a;i}) =   - c_w m_w (T_f - T_{w;i})\\
+                T_f (c_a m_a + c_w m_w) =   c_w m_w T_{w;i} + c_a m_a T_{a;i}\\
+                \begin{align} 
+                    T_f &=  \frac{c_a m_a T_{a;i} + c_w m_w T_{w;i}}{c_a m_a + c_w m_w}\\
+                        &=  \frac{(900 \unit{\joule/\kilo\gram\cdot\kelvin}) (2.5 \unit{\kilo\gram}) (365.15 \unit{\kelvin}) + (4187 \unit{\joule/\kilo\gram\cdot\kelvin}) (8.0 \unit{\kilo\gram}) (278.15 \unit{\kelvin})}{(900 \unit{\joule/\kilo\gram\cdot\kelvin}) (2.5 \unit{\kilo\gram}) + (4187 \unit{\joule/\kilo\gram\cdot\kelvin}) (8.0 \unit{\kilo\gram})}\\
+                        &=  \frac{821587.5 + 9316912.4}{2250 + 33496}
+                        =   \frac{10138499.9}{35746}
+                        =   283.63 \unit{\kelvin}
+                        =   \boxed{10.48 \unit{\celsius}}
+                \end{align}
+            \end{gather}
 
     \pagebreak
     \section{Problem 89}
@@ -901,14 +946,52 @@
         (a) How many times must an 80.0 kg weight be lifted a distance of 1.00 m in order to burn off 1.00 lb of fat, assuming that that much fat is equivalent to 3500 Cal? 
         (b) If the weight is lifted once every 2.00 s, how long does the task take?
 
-    \subsection{Solution}
+        \subsection{Solution (a)}
+            We can start by calculating the amount of work necessary to lift the weight, then convert that to calories.
+            \begin{align}
+                W   &=  mg \Delta y
+                    =   (80 \unit{\kilo\gram}) (9.81 \unit{\meter/\second^2}) (1.0 \unit{\meter})\\
+                    &=  784.8 \unit{\joule} \cdot \frac{1 \unit{\calorie}}{4.1868 \unit{\joule}}
+                    =   187.446 \unit{\calorie}\\
+                3.5 \times 10^6 \unit{\calorie} &=  n * 187.446 \unit{\calorie}\\
+                n   &=  \frac{3.5 \times 10^6}{187.446}
+                    =   \boxed{18672 \text{ lifts}}
+            \end{align}
+
+            You'll probably gain a pound of muscle before you burn that pound of fat. 
+
+        \subsection{Solution (b)}
+            We multiply the time each lift takes by the number of lifts.
+            \begin{align}
+                t   &=  n * time_per_rep
+                    =   (18672 \text{ lifts}) (2.0 \unit{\second})\\
+                    &=  \boxed{37344 \unit{\second}
+                    =   622.4 \unit{\minute}
+                    =   10.37 \unit{\hour}}
+            \end{align}
 
     \pagebreak
     \section{Problem 93}
         Suppose that you intercept $5.0 \times 10^{-3}$ of the energy radiated by a hot sphere that has a radius of 0.020 m, an emissivity of 0.80, and a surface temperature of 500 K. 
         How much energy do you intercept in 2.0 min?
 
-    \subsection{Solution}
+        \subsection{Solution}
+            2 minutes is 120 seconds.
+            The sphere has a radius of $0.02\unit{\meter}$.
+            \begin{align}
+                A   &=  4\pi r^2
+                    =   4\pi (0.02\unit{\meter})^2
+                    =   1.6\pi \times 10^{-3} \unit{\meter^2}
+            \end{align}
+
+            Insert that into the formula for the radiation.
+            \begin{align}
+                P_{rad} &=  \frac{Q}{t} =   \sigma\varepsilon A T^4\\
+                Q   &=  t\sigma\varepsilon A T^4\\
+                E   &=  t\sigma\varepsilon A T^4 (5.0 \times 10^{-3})\\
+                    &=  (120) (5.6704 \times 10^{-8}) (0.8) (1.6 \pi \times 10^{-3}) (500)^4  (5.0 \times 10^{-3})\\
+                    &=  \boxed{8.551 \unit{\joule}}
+            \end{align}
 
     \pagebreak
     \section{Problem 103}
@@ -917,12 +1000,52 @@
             \includegraphics[width=0.25\textwidth]{picture_18-61.png} 
             % \label{fig:wrapfig}
         \end{wrapfigure}
-        The area A of a rectangular plate is ab = 1.4 m 2 . 
+        The area $A$ of a rectangular plate is $ab = 1.4 \unit{\meter^2}$. 
         Its coefficient of linear expansion is $\alpha = 32 \times 10^{-6} /\unit{\celsius}$. 
         After a temperature rise $\Delta T = 89\unit{\celsius}$, side $a$ is longer by $\Delta a$ and side $b$ is longer by $\Delta b$ (Fig. 18-61). 
         Neglecting the small quantity $(\Delta a \Delta b)/ab$, find $\Delta A$. 
 
-    \subsection{Solution}
+        \subsection{Solution}
+            We have a known equation of the change in length.
+            \begin{equation}
+                \Delta L    =   L \alpha \Delta T
+            \end{equation}
+
+            We can apply this to both $\Delta a$ and $\Delta b$.
+            \begin{align}
+                \Delta a    &=  a (32 \times 10^{-6} /\unit{\celsius}) (89 \unit{\celsius})\\
+                \Delta b    &=  b (32 \times 10^{-6} /\unit{\celsius}) (89 \unit{\celsius})
+            \end{align}
+
+            Multiply $\Delta a$ by the width $b$ and $\Delta b$ by the height $a$. 
+            We know following this the value of $ab$.
+            \begin{align}
+                b \Delta a  &=  ab (32 \times 10^{-6} /\unit{\celsius}) (89 \unit{\celsius})
+                    =   (1.4 \unit{\meter^2}) (32 \times 10^{-6} /\unit{\celsius}) (89 \unit{\celsius})\\
+                a \Delta b  &=  ab (32 \times 10^{-6} /\unit{\celsius}) (89 \unit{\celsius})
+                    =   (1.4 \unit{\meter^2}) (32 \times 10^{-6} /\unit{\celsius}) (89 \unit{\celsius})
+            \end{align}
+
+            We can add these together to find $\Delta A$.
+            \begin{align}
+                \Delta A    &=  b \Delta a + a \Delta b
+                    =   2 * (1.4 \unit{\meter^2}) (32 \times 10^{-6} /\unit{\celsius}) (89 \unit{\celsius})
+                    =   \boxed{7.97 \times 10^{-3} \unit{\meter^2}}
+            \end{align}
+        
+        \subsection{Remark on the $\Delta V$ Formula}
+            It is notable that in this case, we can look at the equation out initial equation turned roughly into.
+            \begin{gather}
+                \Delta A    =   A (2\alpha) \Delta T
+            \end{gather}
+
+            We can recall from the textbook that the change in volume has a similar formula.
+            \begin{gather}
+                \Delta V    =   V (3\alpha) \Delta T
+            \end{gather}
+
+            This does beg the question of whether latter is ignoring some part of the volume, the same way we are considering $(\Delta a \Delta b)/ab$ negligible. 
+            
 
     \pagebreak
     \section{Problem 105}
@@ -930,7 +1053,66 @@
         Assume it is a simple pendulum consisting of a bob at one end of a brass rod of negligible mass that is pivoted about the other end. 
         If the clock operates at 0.0°C, (a) does it run too fast or too slow, and (b) what is the magnitude of its error in seconds per hour?
 
-    \subsection{Solution}
+        \subsection{Solution (a)}
+            There is no explanation of the operation of the clock relative to the pendulum.
+            There are a small handful of values relevant to brass that could be of use.
+            Brass has specific heat $c = 380 \unit{\frac{\joule}{\kilo\gram\cdot\kelvin}}$. 
+            The material's thermal conductivity $k = 109 \unit{\watt/\meter\cdot\kelvin}$. 
+
+            Suppose that the brass bob has mass $m$ and that its maximum height is $h$. 
+            If the object has changed with its environment's temperature, it would thusly lower in its energy.
+            \begin{align}
+                Q   &=  cm (T_f - T_i)
+            \end{align}
+
+            Assuming all else to be equal, this would be the only change in energy.
+            \begin{align}
+                \Delta E    &=  Q
+                    =   cm (T_f - T_i)
+            \end{align}
+
+            Since $\Delta T = T_f - T_i = -22 \unit{\kelvin}$ is negative, $c$ is positive, and $m$ cannot be negative (so far), $\Delta E$ must be negative.
+            This means the maximum potential and kinetic energy of the clock is lower, and as such the maximum height and velocity are both lower.
+            This means that the frequency of the bob will be greater.
+            The clock will run \boxed{too\ fast}. 
+
+        \subsection{Solution (b)}
+            We should also note that the length of the pendulum will be shorter due to the temperature change. 
+            The period of a simple pendulum is a simple formula.
+            \begin{equation}
+                T   =   2\pi f = 2\pi \sqrt{\frac{L}{g}}
+            \end{equation}
+
+            The only changing value is $L$.
+            We can include this in the ratio between the time to the change in time.
+            We can also take the derivative of $L$ to get $dL$ and its formula.
+            \begin{gather}
+                L(T)    =   L_0 (1 + \alpha T(t))\\
+                \dv{L}{T}   =   L_0 \alpha\\
+                \dv{L}{T} \cdot \Delta T    =   L_0 \alpha \Delta T \approx dL
+            \end{gather}
+
+            This can in turn be used for the fraction involving $\Delta T$ we are looking for.
+            \begin{gather}
+                T   =   2\pi \sqrt{\frac{L}{g}}\\
+                \dv{T}{L}   =   \pi \frac{1}{\sqrt{gL}}\\
+                dT  =   \pi \frac{1}{\sqrt{gL}}\,dL \approx \Delta T\\
+                \begin{align}
+                    \frac{\Delta T}{T}  &\approx    \frac{dT}{T}
+                        =   \frac{\pi \frac{1}{\sqrt{gL}}}{2\pi \sqrt{\frac{L}{g}}}\,dL
+                        =   \frac{1}{2L}\,dL
+                \end{align}
+            \end{gather}
+
+            We can operate on this.
+            \begin{align}
+                \frac{\Delta T}{T}  &\approx    \frac{1}{2L}\,dL
+                    \approx \frac{L_0 \alpha \Delta T}{2L}
+                    \approx \frac{1}{2} \alpha \Delta T\\
+                    &\approx    \frac{1}{2} (19 \times 10^{-6}) (23)
+                    =   2.185 \times 10^{-4} * 3600 \unit{\second/\hour}\\
+                    &=  \boxed{0.7866 \unit{\second/\hour}}
+            \end{align}
 
     \pagebreak
 

@@ -64,10 +64,13 @@
 \contentsline {section}{\numberline {25}Problem 85}{32}{}%
 \contentsline {subsection}{\numberline {25.1}Solution}{32}{}%
 \contentsline {section}{\numberline {26}Problem 89}{33}{}%
-\contentsline {subsection}{\numberline {26.1}Solution}{33}{}%
+\contentsline {subsection}{\numberline {26.1}Solution (a)}{33}{}%
+\contentsline {subsection}{\numberline {26.2}Solution (b)}{33}{}%
 \contentsline {section}{\numberline {27}Problem 93}{34}{}%
 \contentsline {subsection}{\numberline {27.1}Solution}{34}{}%
 \contentsline {section}{\numberline {28}Problem 103}{35}{}%
 \contentsline {subsection}{\numberline {28.1}Solution}{35}{}%
+\contentsline {subsection}{\numberline {28.2}Remark on the $\Delta V$ Formula}{35}{}%
 \contentsline {section}{\numberline {29}Problem 105}{36}{}%
-\contentsline {subsection}{\numberline {29.1}Solution}{36}{}%
+\contentsline {subsection}{\numberline {29.1}Solution (a)}{36}{}%
+\contentsline {subsection}{\numberline {29.2}Solution (b)}{36}{}%
