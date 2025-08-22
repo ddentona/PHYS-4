@@ -124,47 +124,191 @@
         Assume atmospheric pressure is $1.01 \times 10^5 \unit{\pascal}$.
 
         \subsection{Solution}
+            We can here use the ideal gas law.
+            \begin{gather}
+                pV = nRT\\
+                \frac{p_1 V_1}{T_1} =   \frac{p_2 V_2}{T_2}
+            \end{gather}
+
+            With our equation, we solve for $p_f$. 
+            \begin{gather}
+                p_f =   p_i \frac{V_i T_f}{V_f T_i}
+            \end{gather}
+
+            This can be ``plugged-and-chugged'' to find our final answer.
+            We should also bear in mind that the gauge pressure should be added to the atmospheric pressure to find the overall pressure.
+            Do not forget to convert to Kelvin.
+            \begin{align}
+                T_{iK}  &=  0 \unit{\celsius} + 273 \unit{\kelvin}
+                    =   273 \unit{\kelvin}\\
+                T_{fK}  &=  27 \unit{\celsius} + 273 \unit{\kelvin}
+                    =   300 \unit{\kelvin}\\
+                p_i &=  p_{gauge} + p_{atm}
+                    =   165 \times 10^3 \unit{\pascal} + 1.01 \times 10^5 \unit{\pascal}
+                    =   266 \times 10^3 \unit{\pascal}\\
+                p_f &=  p_i \frac{V_i T_f}{V_f T_i}
+                    =   266 \times 10^3 \unit{\pascal} * \frac{(1.64 \times 10^{-2} \unit{\meter^3}) (300 \unit{\kelvin})}{(1.67 \times 10^{-2} \unit{\meter^3}) (273 \unit{\kelvin})}\\
+                    &=  266 \times 10^3 \unit{\pascal} * \frac{492}{455.91}
+                    =   287 \times 10^3 \unit{\pascal}
+            \end{align}
+
+            This can in turn be turned into the gauge pressure (our final answer) by subtracting the atmospheric pressure.
+            \begin{equation}
+                p_{gauge;f} =   287 \times 10^{3} \unit{\pascal} - 1.01 \times 10^5 \unit{\pascal}
+                    =   \boxed{1.86 \times 10^5 \unit{\pascal}}
+            \end{equation}
 
     \pagebreak
     \section{Problem 11}
-        Air that initially occupies 0.140 m3 at a
-gauge pressure of 103.0 kPa is expanded isothermally to a pressure
-of 101.3 kPa and then cooled at constant pressure until it reaches
-its initial volume. Compute the work done by the air. (Gauge pres-
-sure is the difference between the actual pressure and atmospheric
-pressure.)
+        Air that initially occupies $0.140 \unit{\meter^3}$ at a gauge pressure of $103.0 \unit{\kilo\pascal}$ is expanded isothermally to a pressure of $101.3 \unit{\kilo\pascal}$ and then cooled at constant pressure until it reaches its initial volume. 
+        Compute the work done by the air. 
+        Gauge pressure is the difference between the actual pressure and atmospheric pressure.
 
         \subsection{Solution}
+            Isothermal expansion means that there is no net change in energy, so $Q_{in} = W_{out}$ (a.k.a. $Q_{in} = -W_{in}$) as volume increases. 
+            There is a formula for work we can use.
+            \begin{equation}
+                W = \int_{V_i}^{V_f} p(V)\,dV
+            \end{equation}
+
+            The problem outright states that it is separated into two parts: the isothermal expansion at changing pressure and the cooling at constant pressure.
+            We can separate our equation into these two parts and find useful equations for each.
+            The integrals will be separated at a point of $V = V_{max}$ since that is the point where the volume reachest its highest.
+            We can call the final pressure value of $101.3 \unit{\kilo\pascal}$ the value $p_r$, with no meaning to its name.
+            \begin{align}
+                W   &=  \int_{V_i}^{V_f} p(V)\,dV
+                    =   \int_{V_i}^{V_{max}} p_1(V)\,dV + \int_{V_{max}}^{V_f} p_2(V)\,dV\\
+                    &=  \int_{V_i}^{V_{max}} \frac{nRT_i}{V} \,dV + \int_{V_{max}}^{V_f} p_r\,dV\\
+                    &=  nRT_i \ln\left( \frac{V_{max}}{V_i} \right) + \int_{V_{max}}^{V_f} p_r\,dV\\
+                    &=  p_i V_i \ln\left( \frac{V_{max}}{V_i} \right) + p_r (V_f - V_{max})
+            \end{align}
+            
+            This requires the initial and maximum magnitudes of the volume, of which we only have one. 
+            We can use the ideal gas law to find that which we need.
+            First solve for the final volume, given $n$, $R$, and $T$ are constant.
+            Do not forget to convert gauge pressure to overall pressure by adding the atmospheric pressure ($1.01 \times 10^5 \unit{\pascal}$).
+            We can assume that the final pressure is not gauge pressure.
+            \begin{gather}
+                \begin{align}
+                    p_i &=  p_1 + p_{atm}
+                        =   103.0 \times 10^3 + 1.01 \times 10^5 \unit{\pascal}
+                        =   2.04 \times 10^5 \unit{\pascal}\\
+                    p_f &=  p_2 % + p_{atm}
+                        =   101.3 \times 10^3 \unit{\pascal} % + 1.01 \times 10^5 \unit{\pascal}
+                        % =   2.023 \times 10^5 \unit{\pascal}
+                \end{align}\\
+                pV  =   nRT\\
+                p_i V_i =   p_f V_f =   p_f V_{max}\\
+                \begin{align}
+                    V_{max} &=  V_i * \frac{p_i}{p_f}
+                        =   0.140 \unit{\meter^3} * \frac{2.04 \times 10^5 \unit{\pascal}}{1.013 \times 10^5 \unit{\pascal}}
+                        =   0.281935 \unit{\meter^3}
+                \end{align}
+            \end{gather}
+
+            This can in turn be applied to our above equation for the work done by the gas.
+            {\footnotesize
+            \begin{align}
+                W   &=  p_i V_i \ln\left( \frac{V_{max}}{V_i} \right) + \int_{V_{max}}^{V_f} p_r\,dV\\
+                    &=  0.140 \unit{\meter^3} * 2.04 \times 10^5 \unit{\pascal} * \ln\left( \frac{0.281935 \unit{\meter^3}}{0.140 \unit{\meter^3}} \right)
+                            + \int_{0.281935 \unit{\meter^3}}^{0.140 \unit{\meter^3}} 1.013 \times 10^5 \unit{\pascal} \,dV\\
+                    &=  28560 * 0.7000 + 101300 * (-0.1419)
+                    =   19992.96 \unit{\joule} - 14378 \unit{\joule}\\
+                    &=  \boxed{5614.95 \unit{\joule}}
+            \end{align}}
+
 
     \pagebreak
     \section{Problem 13}
-        A sample of an ideal gas is
-taken through the cyclic process abca
-shown in Fig. 19-20. The scale of the
-vertical axis is set by pb = 7.5 kPa and
-p ac = 2.5 kPa. At point a, T = 200 K.
-(a) How many moles of gas are in
-the sample? What are (b) the tem-
-perature of the gas at point b, (c) the
-temperature of the gas at point c, and
-(d) the net energy added to the gas as
-heat during the cycle?
+        \begin{wrapfigure}{r}{0.25\textwidth}
+            \vspace{-30pt}
+            \includegraphics[width=0.25\textwidth]{picture_19-20.png} 
+            % \label{fig:wrapfig}
+        \end{wrapfigure}
+        A sample of an ideal gas is taken through the cyclic process $abca$ shown in Fig. 19-20. 
+        The scale of the vertical axis is set by $p_b = 7.5\,\unit{\kilo\pascal}$ and $p_{\rm ac} = 2.5\,\unit{\kilo\pascal}$. 
+        At point $a$, $T = 200\,\unit{\kelvin}$.
+        (a) How many moles of gas are in the sample? 
+        What are (b) the temperature of the gas at point $b$, (c) the temperature of the gas at point $c$, and (d) the net energy added to the gas as heat during the cycle?
 
-        \subsection{Solution}
+        \subsection{Solution (a)}
+            We can use the ideal gas law.
+            We need to solve for $n$ at point $a$. 
+            \begin{gather}
+                pV  =   nRT \to n   =   \frac{pV}{RT}
+            \end{gather}
+
+            From here, we plug in values to find $n$.
+            \begin{align}
+                n   &=  \frac{(2.5\,\unit{\kilo\pascal}) * (1.0\,\unit{\meter^3})}{R (200\,\unit{\kelvin})}
+                    =   \frac{2.5 \times 10^3\,\unit{\joule}}{1662\,\unit{\joule/\mole}}
+                    =   \boxed{1.504\,\unit{\mole}}
+            \end{align}
+
+        \subsection{Solution (b)}
+            We can use the ideal gas law again, this time comparing two situations and finding the final temperature.
+            \begin{gather}
+                \frac{p_i V_i}{T_i} =   \frac{p_f V_f}{T_f} \to
+                    T_f =   T_i * \frac{p_f V_f}{p_i V_i}
+            \end{gather}
+
+            From here, we plug in values to find the final temperature.
+            \begin{align}
+                T_f &=  T_i * \frac{p_f V_f}{p_i V_i}
+                    =   200\,\unit{\kelvin} * \frac{7.5\,\unit{\kilo\pascal} * 3.0\,\unit{\meter^3}}{2.5\,\unit{\kilo\pascal} * 1.0\,\unit{\meter^3}}\\
+                    &=  200\,\unit{\kelvin} * 9
+                    =   \boxed{1800\,\unit{\kelvin}}
+            \end{align}
+
+        \subsection{Solution (c)}
+            Use the ideal gas law again.
+            This time, the pressure does not change.
+            \begin{gather}
+                \frac{V_i}{T_i} =   \frac{V_f}{T_f} \to
+                    T_f =   T_i * \frac{V_f}{V_i}
+            \end{gather}
+
+            Now, we plug in to find $T_f$.
+            \begin{align}
+                T_f &=  T_i * \frac{V_f}{V_i}
+                    =   1800\,\unit{\kelvin} * \frac{1.0\,\unit{\meter^3}}{3.0\,\unit{\meter^3}}
+                    =   \boxed{600\,\unit{\kelvin}}
+            \end{align}
+
+        \subsection{Solution (d)}
+            Let's start by calculating the total work done by the gas.
+            We can separate it based on the phases.
+            The phase between points b and c has no change in volume, so no work is done.
+            \begin{align}
+                W   &=  \int p(V)\,dV\\
+                    &=  \int_{1.0 \unit{\meter^3}}^{3.0 \unit{\meter^3}} V * 2500\,\unit{\pascal/\meter^3}\,dV
+                        +   \int_{3.0 \unit{\meter^3}}^{3.0 \unit{\meter^3}} p_{\rm bc}\,dV
+                        +   \int_{3.0 \unit{\meter^3}}^{1.0 \unit{\meter^3}} 2500 \unit{\pascal}\,dV\\
+                    &=  (1250\,\unit{\pascal/\meter^3}) \left( \frac{(3.0 \unit{\meter^3})^2 - (1.0 \unit{\meter^3})^2}{2} \right)
+                        +   2500 \unit{\pascal} * (-2.0 \unit{\meter^3})\\
+                    &=  4 * 2500\,\unit{\joule} - 2 * 2500 \unit{\joule}
+                    =   10000 - 5000\,\unit{\joule}
+                    =   5000\,\unit{\joule}
+            \end{align}
+
+            Since the this is a cyclical process, we can apply the firat law of thermodynamics.
+            \begin{gather}
+                \Delta E_{\rm int}  =   0   =   Q_{\rm in} - W_{\rm out}\\
+                Q_{\rm in}  =   W_{\rm out} =   \boxed{5000\,\unit{\joule}}
+            \end{gather}
 
     \pagebreak
     \section{Problem 17}
-        Container A in Fig. 19-22
-holds an ideal gas at a pressure of
-$5.0 \times 10 5 Pa$ and a temperature of
-300 K. It is connected by a thin tube
-(and a closed valve) to container B,
-with four times the volume of A.
-Container B holds the same ideal
-gas at a pressure of $1.0 \times 10 5 Pa$ and
-a temperature of 400 K. The valve is
-opened to allow the pressures to equalize, but the temperature of
-each container is maintained. What then is the pressure?
+        \begin{wrapfigure}{r}{0.25\textwidth}
+            \vspace{-30pt}
+            \includegraphics[width=0.25\textwidth]{picture_19-22.png} 
+            % \label{fig:wrapfig}
+        \end{wrapfigure}
+        Container A in Fig. 19-22 holds an ideal gas at a pressure of $5.0 \times 10^5\,\unit{\pascal}$ and a temperature of 300 K. 
+        It is connected by a thin tube (and a closed valve) to container B, with four times the volume of A. 
+        Container B holds the same ideal gas at a pressure of $1.0 \times 10^5 \unit{\pascal}$ and a temperature of 400 K. 
+        The valve is opened to allow the pressures to equalize, but the temperature of each container is maintained. 
+        What then is the pressure?
 
         \subsection{Solution}
 
