@@ -93,7 +93,29 @@
         Suppose 1.80 mol of an ideal gas is taken from a volume of 3.00 \unit{\meter^3} to a volume of 1.50 \unit{\meter^3} via an isothermal compression at 30\unit{\celsius}. 
         (a) How much energy is transferred as heat during the compression, and (b) is the transfer to or from the gas?
 
-        \subsection{Solution}
+        \subsection{Solution (a)}
+            Energy transfered can be thought of as work. 
+            We have a formula for work done by an ideal gas.
+            \begin{equation}
+                W   =   nRT \ln\left( \frac{V_f}{V_i} \right)
+            \end{equation}
+
+            We can plug and chug into this.
+            \begin{align}
+                T_K &=  T_C + 273.15 \unit{\kelvin}
+                    =   30 \unit{\celsius} + 273.15 \unit{\kelvin}
+                    =   303.15 \unit{\kelvin}\\
+                W   &=  (1.80 \unit{\mole}) (8.31 \unit{\joule/\mole}) (303.15 \unit{\kelvin}) \ln\left( \frac{1.5 \unit{\meter^3}}{3.0 \unit{\meter^3}} \right)\\
+                    &=  4534.5177 \unit{\joule} * (-0.693147)
+                    =   -3143.088 \unit{\joule}
+            \end{align}
+
+            The energy transfered is the absolute value of this, which would be \boxed{3143.088 \unit{\joule}}. 
+
+        \subsection{Solution (b)}
+            This is a volume compression process.
+            The total energy in the system would remain constant, so $Q = W$ by the first law of thermodynamics.
+            This means $Q < 0$, so the energy is transfered \boxed{from} the gas as heat.
 
     \pagebreak
     \section{Problem 9}
