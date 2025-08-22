@@ -36,7 +36,36 @@
         Oxygen gas having a volume of $1000 \unit{\centi\meter^3}$ at $40.0\unit{\celsius}$ and $1.01 \times 10^5 \unit{\pascal}$ expands until its volume is $1500 \unit{\centi\meter^3}$ and its pressure is $1.06 \times 10^5 \unit{\pascal}$. 
         Find (a) the number of moles of oxygen present and (b) the final temperature of the sample.
 
-        \subsection{Solution}
+        \subsection{Solution (a)}
+            We can use the ideal gas law for this.
+            We apply it to the first case, converting the 40.0\unit{\celsius} to Kelvin.
+            \begin{align}
+                40\unit{\celsius}   &=  313.15 \unit{\kelvin}\\
+                1000 \unit{\centi\meter^3}  &=  1000 \times 10^{-6} \unit{\meter^3} = 1 \times 10^{-3} \unit{\meter^3}\\
+                pV  &=  nRT\\
+                n   &=  \frac{pV}{RT}
+                    =   \frac{1.01 \times 10^5 \unit{\pascal} * 10^{-3} \unit{\centi\meter^3}}{8.31 \unit{\joule/\mole\cdot\kelvin} * 313.15 \unit{\kelvin}}\\
+                    &=  \frac{1.01 \times 10^2 \unit{\newton \cdot \meter}}{2602.2765 \unit{\joule/\mole}}
+                    =   \boxed{0.038812 \unit{\mole}}
+            \end{align}
+
+        \subsection{Solution (b)}
+            The ideal gas law (or an equivalent) will be used here.
+            The number of moles does not change here, neither does the gas constant $R$. 
+            We can use ths to solve for the final value of the temperature.
+            \begin{gather}
+                \frac{p_1 V_1}{n_1 T_1} =   \frac{p_2 V_2}{n_2 T_2}\\
+                \frac{p_1 V_1}{T_1} =   \frac{p_2 V_2}{T_2}\\
+                T_2 =   T_1 * \frac{p_2 V_2}{p_1 V_1}
+            \end{gather}
+
+            We can substitute in values now.
+            \begin{align}
+                T_2 &=  T_1 * \frac{p_2 V_2}{p_1 V_1}
+                    =   313.15 * \frac{1.06 \times 10^5 * 1500}{1.01 \times 10^5 * 1000}\\
+                    &=  313.15 * \frac{1.06 * 1.5}{1.01}
+                    =   \boxed{492.97 \unit{\kelvin} \approx 220 \unit{\celsius}}
+            \end{align}
 
     \pagebreak
     \section{Problem 5}
@@ -44,29 +73,76 @@
         How many gas molecules are there per cubic centimeter in such a vacuum at 293 K?
 
         \subsection{Solution}
+            Use the ideal gas law, the version with Boltzmann's constant.
+            We can solve for $\frac{N}{V}$.
+            \begin{gather}
+                pV  =   NkT\\
+                \frac{N}{V} =   \frac{p}{kT}
+            \end{gather}
+
+            From here, we can just plug and chug, so to speak.
+            \begin{align}
+                \frac{N}{V} &=  \frac{1.01 \times 10^{-13} \unit{\newton/\meter^2}}{1.38 \times 10^{-23} \unit{\newton\cdot\meter/\kelvin} * 293 \unit{\kelvin}}
+                    =   \frac{1.01 \times 10^{10}}{404.34} \unit{\meter^{-3}}\\
+                    &=  24978978.09 \times \unit{\meter^{-3}}
+                    =   \boxed{24.979 \unit{\centi\meter^{-3}}}
+            \end{align}
 
     \pagebreak
     \section{Problem 7}
+        Suppose 1.80 mol of an ideal gas is taken from a volume of 3.00 \unit{\meter^3} to a volume of 1.50 \unit{\meter^3} via an isothermal compression at 30\unit{\celsius}. 
+        (a) How much energy is transferred as heat during the compression, and (b) is the transfer to or from the gas?
 
         \subsection{Solution}
 
     \pagebreak
     \section{Problem 9}
+        An automobile tire has a volume of $1.64 \times 10^{-2} \unit{\meter^3}$ and contains air at a gauge pressure (pressure above atmospheric pressure) of 165 kPa when the temperature is 0.00\unit{\celsius}. 
+        What is the gauge pressure of the air in the tires when its temperature rises to 27.0\unit{\celsius} and its volume increases to $1.67 \times 10^{-2} \unit{\meter^3}$? 
+        Assume atmospheric pressure is $1.01 \times 10^5 \unit{\pascal}$.
 
         \subsection{Solution}
 
     \pagebreak
     \section{Problem 11}
+        Air that initially occupies 0.140 m3 at a
+gauge pressure of 103.0 kPa is expanded isothermally to a pressure
+of 101.3 kPa and then cooled at constant pressure until it reaches
+its initial volume. Compute the work done by the air. (Gauge pres-
+sure is the difference between the actual pressure and atmospheric
+pressure.)
 
         \subsection{Solution}
 
     \pagebreak
     \section{Problem 13}
+        A sample of an ideal gas is
+taken through the cyclic process abca
+shown in Fig. 19-20. The scale of the
+vertical axis is set by pb = 7.5 kPa and
+p ac = 2.5 kPa. At point a, T = 200 K.
+(a) How many moles of gas are in
+the sample? What are (b) the tem-
+perature of the gas at point b, (c) the
+temperature of the gas at point c, and
+(d) the net energy added to the gas as
+heat during the cycle?
 
         \subsection{Solution}
 
     \pagebreak
     \section{Problem 17}
+        Container A in Fig. 19-22
+holds an ideal gas at a pressure of
+$5.0 \times 10 5 Pa$ and a temperature of
+300 K. It is connected by a thin tube
+(and a closed valve) to container B,
+with four times the volume of A.
+Container B holds the same ideal
+gas at a pressure of $1.0 \times 10 5 Pa$ and
+a temperature of 400 K. The valve is
+opened to allow the pressures to equalize, but the temperature of
+each container is maintained. What then is the pressure?
 
         \subsection{Solution}
 
@@ -85,7 +161,7 @@
 
     \pagebreak
     \section{Problem 25}
-        Determine the average value of the translational kinetic energy of the molecules of an ideal gas at temperatures (a) 0.00\unit{\celsius} and (b) 100\unit{\celsius}.
+        Determine the average value of the translational kinetic energy of the gas's molecules of an ideal gas at temperatures (a) 0.00\unit{\celsius} and (b) 100\unit{\celsius}.
         What is the translational kinetic energy per mole of an ideal gas at (c) 0.00\unit{\celsius} and (d) 100\unit{\celsius}?
 
         \subsection{Solution}
