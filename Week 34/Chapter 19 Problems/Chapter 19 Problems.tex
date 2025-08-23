@@ -363,7 +363,37 @@
         The molar mass of nitrogen molecules ($N_2$) is given in Table 19-1.
         At what temperatures will the rms speed be (b) half that value and (c) twice that value?
 
-        \subsection{Solution}
+        \subsection{Solution (a)}
+            As stated in table 19-1, the molar mass of Nitrogen gas ($N_2$) molecules is $28.0 \times 10^{-3}\,\unit{\kilo\gram/\mole}$. 
+            We can use that to find the molecule's rms (root-mean-square) speed.
+            \begin{align}
+                T_{K}   &=  T_{\unit{\celsius}} + 273 \unit{\kelvin}
+                    =   293\,\unit{\kelvin}\\
+                v_{\rm rms} &=  \sqrt{\frac{3RT}{M}}
+                    =   \sqrt{\frac{3 * 8.31\,\unit{\joule/\mole\cdot\kelvin} * 293\,\unit{\kelvin}}{28.0 \times 10^{-3}\,\unit{\kilo\gram/\mole}}}\\
+                    &=  \sqrt{\frac{7304.49}{28.0} \times 10^{3}\,\unit{\meter^2/\second^2}}
+                    =   \boxed{510.8\,\unit{\meter/\second}}
+            \end{align}
+        
+        \subsection{Solution (b)}
+            We can use the same equation, this time solving for the temperature.
+            \begin{gather}
+                \frac{v_{\rm rms}}{2}   =   \sqrt{\frac{3 * 8.31\,\unit{\joule/\mole\cdot\kelvin} * T}{28.0 \times 10^{-3}\,\unit{\kilo\gram/\mole}}}\\
+                \frac{3 * 8.31\,\unit{\joule/\mole\cdot\kelvin} * 293\,\unit{\kelvin}}{28.0 \times 10^{-3}\,\unit{\kilo\gram/\mole}} * \frac{1}{4} =   \frac{3 * 8.31\,\unit{\joule/\mole\cdot\kelvin} * T}{28.0 \times 10^{-3}\,\unit{\kilo\gram/\mole}}\\
+                T   =   \frac{293\,\unit{\kelvin}}{4}
+                    =   73.25\,\unit{\kelvin}
+                    =   \boxed{-199.75\,\unit{\celsius}}
+            \end{gather}
+        
+        \subsection{Solution (c)}
+            The same equation can be used.
+            \begin{gather}
+                2 v_{\rm rms}   =   \sqrt{\frac{3 * 8.31\,\unit{\joule/\mole\cdot\kelvin} * T}{28.0 \times 10^{-3}\,\unit{\kilo\gram/\mole}}}\\
+                \frac{3 * 8.31\,\unit{\joule/\mole\cdot\kelvin} * 293\,\unit{\kelvin}}{28.0 \times 10^{-3}\,\unit{\kilo\gram/\mole}} * 4 =   \frac{3 * 8.31\,\unit{\joule/\mole\cdot\kelvin} * T}{28.0 \times 10^{-3}\,\unit{\kilo\gram/\mole}}\\
+                T   =   4 * 293\,\unit{\kelvin} 
+                    =   1172\,\unit{\kelvin}
+                    =   \boxed{899\,\unit{\celsius}}
+            \end{gather}
 
     \pagebreak
     \section{Problem 23}
