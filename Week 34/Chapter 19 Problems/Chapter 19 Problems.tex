@@ -397,8 +397,49 @@
 
     \pagebreak
     \section{Problem 23}
+        A beam of hydrogen molecules ($H_2$) is directed toward a wall, at an angle of $55\unit{\degree}$ with the normal to the wall. 
+        Each molecule in the beam has a speed of $1.0\,\unit{\kilo\meter/\second}$ and a mass of $3.3 \times 10^{-24} \unit{\gram}$. 
+        The beam strikes the wall over an area of $2.0 \unit{\centi\meter^2}$, at the rate of $10^{23}$ molecules per second. 
+        What is the beam's pressure on the wall?
 
         \subsection{Solution}
+            This solution may be difficult to understand because $p$ represents both pressure and momentum.
+            We need more letters.
+            Maybe we could look at some language with a lot of different letters/characters.
+            My Chinese teacher says their language has about 1500.
+            We have a formula for pressure exerted by an ideal gas.
+            \begin{equation}
+                p   =   \frac{nMv_{\rm rms}^2}{3V}  =   \frac{F}{A}
+            \end{equation}
+
+            We assume that any collision of a molecule with a wall is fully elastic, so we can find a formula for the change in the vertical momentum.
+            This would only be for a single particle and we will only be considering the horizontal velocity.
+            \begin{align}
+                v_i &=  v_{\rm rms} * \sin(55\unit{\degree})\\
+                v_f &=  -v_i\\
+                \Delta p    &=  p_f - p_i
+                    =   mv_f - mv_i\\
+                    &=  2mv_f
+                    =   -2m * v_{\rm rms} * \cos(55\unit{\degree})
+            \end{align}
+
+            This can be multiplied by the rate at which the molecules hit the wall to find the total force, which is itself constant.
+            \begin{align}
+                F   &=  p * \dv{N}{t}
+                    =   -2m * v_{\rm rms} * \cos(55\unit{\degree}) * 10^{23}\,\unit{\second^{-1}}
+            \end{align}
+
+            We can apply this to our equation for the pressure.
+            That would be the final equation that we can plug values into.
+            \begin{align}
+                p   &=  \frac{F}{A}
+                    =   -\frac{2m * v_{\rm rms} * \cos(55\unit{\degree}) * 10^{23} \unit{\second^{-1}}}{A}\\
+                    &=  -\frac{2 * 3.3 \times 10^{-27}\,\unit{\kilo\gram} * 1000\,\unit{\meter/\second} * \cos(55\unit{\degree}) * 10^{23}\,\unit{\second^{-1}}}{2.0 \times 10^{-4}\,\unit{\meter^2}}\\
+                    &=  -1893 \unit{\pascal}
+            \end{align}
+
+            Since pressure is always positive, we can finalize this by taking the absolute value to get our final answer.
+            Said answer would be \boxed{1893\,\unit{\pascal}}. 
 
     \pagebreak
     \section{Problem 25}
@@ -409,6 +450,10 @@
 
     \pagebreak
     \section{Problem 27}
+        Water standing in the open at $32.0\unit{\celsius}$ evaporates because of the escape of some of the surface molecules. 
+        The heat of vaporization (539 cal/g) is approximately equal to $\epsilon$n, where $\epsilon$ is the average energy of the escaping molecules and n is the number of molecules per gram. 
+        (a) Find $\epsilon$. 
+        (b) What is the ratio of $\epsilon$ to the average kinetic energy of $H_2O$ molecules, assuming the latter is related to temperature in the same way as it is for gases?
 
         \subsection{Solution}
 
