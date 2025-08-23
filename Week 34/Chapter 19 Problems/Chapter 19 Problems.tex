@@ -318,8 +318,43 @@
                     =   \frac{5.0 \times 10^5\,\unit{\pascal} * V_A}{R * 300\,\unit{\kelvin}}
                     =   \frac{5 \times 10^3}{3} * \frac{V_A}{R}\\
                 n_B &=  \frac{p_B V_B}{R T_B}
-                    =   \frac{1.0 \times 10^5\,\unit{\pascal} * 4 * V_A}{R * 400\,\unit{\kelvin}}
+                    =   \frac{1.0 \times 10^5\,\unit{\pascal} * 4 V_A}{R * 400\,\unit{\kelvin}}
                     =   1 \times 10^3 * \frac{V_A}{R}
+            \end{align}
+
+            We can combine these to find the total number of moles.
+            \begin{align}
+                n_{\Sigma}  &=  n_A + n_B
+                    =   \left( \frac{5}{3} + 1 \right) \times 10^3 * \frac{V_A}{R}
+                    =   \frac{8}{3} \times 10^3 * \frac{V_A}{R}
+            \end{align}
+
+            We also know the total volume that there is.
+            \begin{gather}
+                V_{\Sigma}  =   \sum V_i
+                    =   V_A + V_B
+                    =   V_A + 4V_A
+                    =   5V_A
+            \end{gather}
+
+            We can also calculate the average temperature of the cobined system, weighted by the volumes.
+            \begin{align}
+                T_{\rm avg} &=  \frac{\sum V_i * T_i}{\sum V_i}
+                    =   \frac{V_A * T_A + V_B * T_B}{5V_A}\\
+                    &=  \frac{V_A * 300\,\unit{\kelvin} + 4 V_A * 400\,\unit{\kelvin}}{5V_A}\\
+                    &=  \frac{300\,\unit{\kelvin} + 1600\,\unit{\kelvin}}{5}
+                    =   \frac{1900\,\unit{\kelvin}}{5}
+                    =   380\,\unit{\kelvin}
+            \end{align}
+
+            We have our final values for the number of moles, volume, and temperature, not to mention that $R$ is a constant.
+            We can put these into the ideal gas law to find the pressure at this point, assuming the pressure to be even.
+            \begin{align}
+                pV  &=  nRT\\
+                p   &=  \frac{nRT}{V}
+                    =   \frac{\frac{8}{3} \times 10^3 * \frac{V_A}{R} * R * 380\,\unit{\kelvin}}{5V_A}\\
+                    &=  \left( \frac{8}{15} \times 10^3 * 380 \right)\,\unit{\pascal}
+                    =   \boxed{2.03 \times 10^5 \unit{\pascal}}
             \end{align}
 
     \pagebreak
