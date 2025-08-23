@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1755905545.24142 "/Users/dentonaingworth/Documents/CCSF/PHYS-4A/Week 34/Chapter 19 Problems/Chapter 19 Problems.tex" "Chapter 19 Problems.pdf" "Chapter 19 Problems" 1755905545.79396 0
-  "/Users/dentonaingworth/Documents/CCSF/PHYS-4A/Week 34/Chapter 19 Problems/Chapter 19 Problems.tex" 1755905545.03517 20035 8220095b3d33b0855723afbd20d8f869 ""
+["pdflatex"] 1755910681.99273 "/Users/dentonaingworth/Documents/CCSF/PHYS-4A/Week 34/Chapter 19 Problems/Chapter 19 Problems.tex" "Chapter 19 Problems.pdf" "Chapter 19 Problems" 1755910682.53058 0
+  "/Users/dentonaingworth/Documents/CCSF/PHYS-4A/Week 34/Chapter 19 Problems/Chapter 19 Problems.tex" 1755910681.7949 20654 3fc14f89db22586ce7ef7fce383a8fa6 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm" 1136768653 1536 74b7293ec3713bb7fdca8dd1bd1f469c ""
@@ -82,9 +82,9 @@
   "/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1727305248.69286 5467645 128b85b7cde5f5edc5cb7f1dd7ff8736 ""
   "/usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1727305230 8221424 9bdbcc07e109911bb30a75dc8990d89e ""
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
-  "Chapter 19 Problems.aux" 1755905545.74637 6014 bd342253eca044627c53b15cfa8ab8ef "pdflatex"
-  "Chapter 19 Problems.tex" 1755905545.03517 20035 8220095b3d33b0855723afbd20d8f869 ""
-  "Chapter 19 Problems.toc" 1755905545.74698 3562 094385b255da2092685d3638789236b4 "pdflatex"
+  "Chapter 19 Problems.aux" 1755910682.48503 6014 bd342253eca044627c53b15cfa8ab8ef "pdflatex"
+  "Chapter 19 Problems.tex" 1755910681.7949 20654 3fc14f89db22586ce7ef7fce383a8fa6 ""
+  "Chapter 19 Problems.toc" 1755910682.4858 3562 094385b255da2092685d3638789236b4 "pdflatex"
   "picture_19-20.png" 1755902792.39341 23507 954f01998cba67d838f1610c9aeafbe5 ""
   "picture_19-22.png" 1755905472.21734 16353 23646f6f2985de1aefa20f588d6100cd ""
   (generated)

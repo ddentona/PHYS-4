@@ -306,11 +306,21 @@
         \end{wrapfigure}
         Container A in Fig. 19-22 holds an ideal gas at a pressure of $5.0 \times 10^5\,\unit{\pascal}$ and a temperature of 300 K. 
         It is connected by a thin tube (and a closed valve) to container B, with four times the volume of A. 
-        Container B holds the same ideal gas at a pressure of $1.0 \times 10^5 \unit{\pascal}$ and a temperature of 400 K. 
+        Container B holds the same ideal gas at a pressure of $1.0 \times 10^5\,\unit{\pascal}$ and a temperature of 400 K. 
         The valve is opened to allow the pressures to equalize, but the temperature of each container is maintained. 
         What then is the pressure?
 
         \subsection{Solution}
+            Let's put together a formulas for the number of moles of the ideal gas in each container (A and B). 
+            We can use the Ideal Gas Law for this.
+            \begin{align}
+                n_A &=  \frac{p_A V_A}{R T_A}
+                    =   \frac{5.0 \times 10^5\,\unit{\pascal} * V_A}{R * 300\,\unit{\kelvin}}
+                    =   \frac{5 \times 10^3}{3} * \frac{V_A}{R}\\
+                n_B &=  \frac{p_B V_B}{R T_B}
+                    =   \frac{1.0 \times 10^5\,\unit{\pascal} * 4 * V_A}{R * 400\,\unit{\kelvin}}
+                    =   1 \times 10^3 * \frac{V_A}{R}
+            \end{align}
 
     \pagebreak
     \section{Problem 19}
