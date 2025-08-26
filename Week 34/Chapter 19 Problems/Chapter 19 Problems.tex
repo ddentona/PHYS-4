@@ -7,6 +7,7 @@
 \usepackage{wrapfig}
 
 \AtBeginDocument{\RenewCommandCopy\qty\SI}
+\newcommand{\E}[1]{\times 10^{#1}}
 
 \begin{document}
     \DeclareSIUnit{\atm}{atm}
@@ -446,14 +447,28 @@
         Determine the average value of the translational kinetic energy of the gas's molecules of an ideal gas at temperatures (a) 0.00\unit{\celsius} and (b) 100\unit{\celsius}.
         What is the translational kinetic energy per mole of an ideal gas at (c) 0.00\unit{\celsius} and (d) 100\unit{\celsius}?
 
-        \subsection{Solution}
+        \subsection{Solution (a)}
+            The average translational kinetic energy is determined by a simple formula, which we can use here.
+            \begin{equation}
+                K   =   \frac{3}{2} kT
+                    =   \frac{3}{2} * 1.38\E{-23}\,\unit{\joule/\kelvin} * 273\,\unit{\kelvin}
+                    =   \boxed{565.11\,\unit{\joule}}
+            \end{equation}
+
+        \subsection{Solution (b)}
+            Same strategy.
+            \begin{equation}
+                K   =   \frac{3}{2} kT
+                    =   \frac{3}{2} * 1.38\E{-23}\,\unit{\joule/\kelvin} * 373\,\unit{\kelvin}
+                    =   \boxed{772.11\,\unit{\joule}}
+            \end{equation}
 
     \pagebreak
     \section{Problem 27}
         Water standing in the open at $32.0\unit{\celsius}$ evaporates because of the escape of some of the surface molecules. 
         The heat of vaporization (539 cal/g) is approximately equal to $\epsilon$n, where $\epsilon$ is the average energy of the escaping molecules and n is the number of molecules per gram. 
         (a) Find $\epsilon$. 
-        (b) What is the ratio of $\epsilon$ to the average kinetic energy of $H_2O$ molecules, assuming the latter is related to temperature in the same way as it is for gases?
+        (b) What is the ratio of $\epsilon$ to the average kinetic energy of $\rm H_2O$ molecules, assuming the latter is related to temperature in the same way as it is for gases?
 
         \subsection{Solution}
 
