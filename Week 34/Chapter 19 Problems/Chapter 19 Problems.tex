@@ -15,6 +15,7 @@
     \DeclareSIUnit{\Cal}{\ Cal}
     \DeclareSIUnit{\calorie}{\ cal}
     \DeclareSIUnit{\Calorie}{\ Cal}
+    \DeclareSIUnit{\celsiusdegree}{C^\circ}
     \DeclareSIUnit{\fahrenheit}{^\circ F}
     \DeclareSIUnit{\torr}{\ torr}
 
@@ -452,7 +453,7 @@
             \begin{equation}
                 K   =   \frac{3}{2} kT
                     =   \frac{3}{2} * 1.38\E{-23}\,\unit{\joule/\kelvin} * 273\,\unit{\kelvin}
-                    =   \boxed{565.11\,\unit{\joule}}
+                    =   \boxed{565.11\E{-23}\,\unit{\joule}}
             \end{equation}
 
         \subsection{Solution (b)}
@@ -460,25 +461,101 @@
             \begin{equation}
                 K   =   \frac{3}{2} kT
                     =   \frac{3}{2} * 1.38\E{-23}\,\unit{\joule/\kelvin} * 373\,\unit{\kelvin}
-                    =   \boxed{772.11\,\unit{\joule}}
+                    =   \boxed{772.11\E{-23}\,\unit{\joule}}
             \end{equation}
+
+        \subsection{Solution (c)}
+            The kinetic energy of a system (in this case a mole of atoms) would be the sum of the kinetic energy of its parts.
+            Each mole contains Avogadro's number ($N_A$) atoms, each with a kinetic energy of its own, and the average translational kinetic energy of each atom s defined by the formula $K = \frac{3}{2}kT$.
+            To get the total kinetic energy in one mole of an ideal gas, we can multiply the kinetic energy in each molecule by the number of molecules in a mole.
+            \begin{align}
+                K_{\rm per\,mole}    &=  \frac{3}{2}kT \times N_A
+            \end{align}
+
+            Since $k = \frac{R}{N_A}$, we also know that $R = k * N_A$, which we can use.
+            \begin{align}
+                K_{\rm per\,mole}    &=  \frac{3}{2}RT
+                    =   \frac{3}{2} * 8.31\,\unit{\joule/\mole\cdot\kelvin} * 273\,\unit{\kelvin}\\
+                    &=  3402.945\,\unit{\joule/\mole}
+                    =   \boxed{3403\,\unit{\joule/\mole}}
+            \end{align}
+
+        \subsection{Solution (d)}
+            Same strategy.
+            \begin{align}
+                K_{\rm per\,mole}    &=  \frac{3}{2}RT
+                    =   \frac{3}{2} * 8.31\,\unit{\joule/\mole\cdot\kelvin} * 373\,\unit{\kelvin}\\
+                    &=  4649.445\,\unit{\joule/\mole}
+                    =   \boxed{4649\,\unit{\joule/\mole}}
+            \end{align}
 
     \pagebreak
     \section{Problem 27}
         Water standing in the open at $32.0\unit{\celsius}$ evaporates because of the escape of some of the surface molecules. 
-        The heat of vaporization (539 cal/g) is approximately equal to $\epsilon$n, where $\epsilon$ is the average energy of the escaping molecules and n is the number of molecules per gram. 
-        (a) Find $\epsilon$. 
-        (b) What is the ratio of $\epsilon$ to the average kinetic energy of $\rm H_2O$ molecules, assuming the latter is related to temperature in the same way as it is for gases?
+        The heat of vaporization (539 cal/g) is approximately equal to $\varepsilon n$, where $\varepsilon$ is the average energy of the escaping molecules and $n$ is the number of molecules per gram. 
+        (a) Find $\varepsilon$. 
+        (b) What is the ratio of $\varepsilon$ to the average kinetic energy of $\rm H_2O$ molecules, assuming the latter is related to temperature in the same way as it is for gases?
 
-        \subsection{Solution}
+        \subsection{Solution (a)}
+            We can assume that $\varepsilon n = 539\,\unit{\calorie/\gram}$.
+            The number of molecules per gram can be calculated by usng the molar mass of the water vapor (${\rm MM} = 18.0\E{-3}\,\unit{\kilo\gram/\mole}$).
+            \begin{equation}
+                n   =   \frac{1}{\rm MM} \times N_A
+                    =   \frac{1\,\unit{\mole}}{18.0\,\unit{\gram}} * 6.022\E{23}
+                    =   3.3456\E{22}\,\unit{\gram^{-1}}
+            \end{equation}
+
+            Using this, we can find the value of $\varepsilon$.
+            \begin{gather}
+                \varepsilon n = 539\,\unit{\calorie/\gram}\\
+                \varepsilon =   \frac{539\,\unit{\calorie/\gram}}{3.3456\E{22}\,\unit{\gram^{-1}}}
+                    =   \boxed{1.611\E{-20}\unit{\calorie/\text{molecule}}}
+            \end{gather}
+
+        \subsection{Solution (b)}
+            The average kinetic energy is calculatable by a formula.
+            \begin{equation}
+                K   =   \frac{3}{2} kT
+            \end{equation}
+
+            This can be used in a ratio, bearing in mnd that $32.0\,\unit{\celsius} = 32.0\,\unit{\celsius} + 273\,\unit{\kelvin} = 305\,\unit{\kelvin}$.
+            \begin{align}
+                \frac{\varepsilon}{K}   &=  \frac{\varepsilon}{\frac{3}{2} kT}
+                    =   \frac{1.611\E{-20}\unit{\calorie/\text{molecule}}}{\frac{3}{2} * 1.38\E{-23}\,\unit{\joule/\kelvin} * 305\,\unit{\kelvin}}\\
+                    &=  \frac{6.740\E{-20}\unit{\joule/\text{molecule}}}{\frac{3}{2} * 1.38\E{-23}\,\unit{\joule/\kelvin} * 305\,\unit{\kelvin}}\\
+                    &=  \boxed{10.67}
+            \end{align}
 
     \pagebreak
     \section{Problem 31}
-        In a certain particle accelerator, protons travel around a circular path of diameter 23.0 m in an evacuated chamber, whose residual gas is at 295 K and $1.00 \times 10^{-6} \unit{\torr}$ pressure. (a) Calculate the number of gas molecules per cubic centimeter at this pressure.
-(b) What is the mean free path of the gas molecules if the molecu-
-lar diameter is $2.00 \times 10^{-8} \unit{\centi\meter}$?
+        In a certain particle accelerator, protons travel around a circular path of diameter 23.0 m in an evacuated chamber, whose residual gas is at 295 K and $1.00 \times 10^{-6} \unit{\torr}$ pressure. 
+        (a) Calculate the number of gas molecules per cubic centimeter at this pressure.
+        (b) What is the mean free path of the gas molecules if the molecular diameter is $2.00 \times 10^{-8} \unit{\centi\meter}$?
 
-        \subsection{Solution}
+        \subsection{Solution (a)}
+            The ideal gas law would be our friend, and we will assume this to be an ideal gas, where we seek to find the number of molecules per volume, better experssed as $\frac{N}{V}$.
+            Also don't forget to convert pressure from torr to pascals.
+            \begin{align}
+                p   &=  1.00\E{-6}\,\unit{\torr}
+                    =   1.00\E{-6}\,\unit{\milli\meter}\,{\rm Hg}\\
+                    &=  0.100\E{-6}\,\unit{\centi\meter}\,{\rm Hg}
+                    =   133.30\E{-6}\,\unit{\pascal}\\
+                pV  &=  NkT\\
+                \frac{N}{V} &=  \frac{p}{kT}
+                    =   \frac{133.30\E{-6}\,\unit{\pascal}}{1.38\E{-23}\unit{\joule/\kelvin} * 295\,\unit{\kelvin}}\\
+                    &=  3.274\E{16}\,\unit{molecule/\meter^3} \times \frac{10\E{-6}\,\unit{\meter^3}}{1\,\unit{\centi\meter^3}}\\
+                    &=  \boxed{3.274\E{10}\,\unit{molecule/\centi\meter^3}}
+            \end{align}
+        
+        \subsection{Solution (b)}
+            There's an equation for this.
+            It's kind of ugly to be completely honest, but it's usable.
+            \begin{align}
+                \lambda &=  \frac{1}{\sqrt{2}\pi d^2 N/V}
+                    =   \frac{1}{\sqrt{2}\pi (2.00 \times 10^{-8} \unit{\centi\meter})^2 * 3.274\E{10}\,\unit{\centi\meter^{-3}}}\\
+                    &=  17187\unit{\centi\meter}
+                    =   \boxed{171.87\unit{\meter}}
+            \end{align}
 
     \pagebreak
     \section{Problem 35}
@@ -486,7 +563,57 @@ lar diameter is $2.00 \times 10^{-8} \unit{\centi\meter}$?
         Calculate their (a) average and (b) rms speeds. 
         (c) Is $v_{rms} > v_{avg}$?
 
-        \subsection{Solution}
+        \subsection{Solution (a)}
+            We'll just do a simple average.
+            \begin{align}
+                v_{\rm avg} &=  \frac{\sum_{i = 1}^n v_i}{n}
+                    =   \frac{4 * 200 + 2 * 500 + 4 * 600}{10}\\
+                    &=  4 * 20 + 2 * 50 + 4 * 60\\
+                    &=  80 + 100 + 240
+                    =   \boxed{420\unit{\meter/\second}}
+            \end{align}
+
+        \subsection{Solution (b)}
+            \subsubsection{Attempt 1 (Incorrect)}
+                There's a formula for $v_{\rm rms}$.
+                \begin{gather}
+                    v_{\rm rms} =   \sqrt{\frac{3RT}{M}}\\
+                    v_{\rm rms}^2   =  \frac{3RT}{M}
+                \end{gather}
+
+                I don't know about you, but it reminds me of a formula for the average velocity.
+                \begin{gather}
+                    v_{\rm avg} =   \sqrt{\frac{8RT}{\pi M}}\\
+                    v_{\rm avg}^2   =   \frac{8RT}{\pi M}
+                        =   \frac{8}{3 \pi} \cdot \frac{3RT}{M}\\
+                    \frac{3RT}{M}   =   \frac{3 \pi}{8} v_{\rm avg}^2
+                \end{gather}
+
+                We could use the transistive property on this.
+                \begin{align}
+                    v_{\rm rms}^2   &=  \frac{3 \pi}{8} v_{\rm avg}^2
+                        =   \frac{3 \pi}{8} * (420\,\unit{\meter/\second})^2
+                        =   22050 * 3\pi
+                        =   66150\pi\,\unit{\meter^2/\second^2}\\
+                    v_{\rm rms} &=  \sqrt{66150\pi\,\unit{\meter^2/\second^2}}
+                        =   455.9\,\unit{\meter/\second}
+                \end{align}
+
+                The error made here was assuming the gas to be an ideal gas, which is requred fro some of our equations.
+
+            \subsubsection{Attempt 2}
+                Just brute force it.
+                \begin{align}
+                    v_{\rm rms}^2   &=  \frac{4 * 200^2 + 2 * 500^2 + 4 * 600^2}{10}\\
+                        &=  \frac{4 * 40000 + 2 * 250000 + 4 * 360000}{10}\\
+                        &=  \frac{160000 + 500000 + 1440000}{10}\\
+                        &=  \frac{2100000\,\unit{\meter^2/\second^2}}{10}
+                        =   210000\,\unit{\meter^2/\second^2}\\
+                    v_{\rm rms} &=  \boxed{458\,\unit{\meter/\second}}
+                \end{align}
+
+        \subsection{Solution (c)}
+            It's just by a difference of 38 \unit{\meter/\second}, but \boxed{yes}.
 
     \pagebreak
     \section{Problem 37}
