@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.8.23)  26 AUG 2025 17:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.8.23)  26 AUG 2025 19:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -267,28 +267,34 @@ File: picture_19-22.png Graphic file (type png)
 <use picture_19-22.png>
 Package pdftex.def Info: picture_19-22.png  used on input line 306.
 (pdftex.def)             Requested size: 97.5pt x 74.84102pt.
- [10 <./picture_19-22.png>] [11] [12] [13] [14] [15] [16] [17] [18] [19] [20] [21] [22] [23] [24] [25] [26] [27] [28] [29] [30] [31] [32] [33] [34] (Chapter 19 Problems.toc [35] [36])
+ [10 <./picture_19-22.png>] [11] [12] [13] [14] [15] [16] [17] [18] [19] [20] [21]
+<picture_19-23.png, id=90, 151.3153pt x 90.3375pt>
+File: picture_19-23.png Graphic file (type png)
+<use picture_19-23.png>
+Package pdftex.def Info: picture_19-23.png  used on input line 622.
+(pdftex.def)             Requested size: 97.5pt x 58.20865pt.
+ [22 <./picture_19-23.png>] [23] [24] [25] [26] [27] [28] [29] [30] [31] [32] [33] [34] [35] (Chapter 19 Problems.toc [36] [37])
 \tf@toc=\write3
 \openout3 = `"Chapter 19 Problems.toc"'.
 
- [37] (Chapter 19 Problems.aux)
+ [38] (Chapter 19 Problems.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 7822 strings out of 474486
- 177541 string characters out of 5743755
- 1939542 words of memory out of 5000000
- 30046 multiletter control sequences out of 15000+600000
+ 7829 strings out of 474486
+ 177708 string characters out of 5743755
+ 1942542 words of memory out of 5000000
+ 30053 multiletter control sequences out of 15000+600000
  566268 words of font info for 68 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  79i,17n,93p,422b,736s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\ddent\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on "Chapter 19 Problems.pdf" (37 pages, 273623 bytes).
+Output written on "Chapter 19 Problems.pdf" (38 pages, 290528 bytes).
 PDF statistics:
- 218 PDF objects out of 1000 (max. 8388607)
+ 223 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 

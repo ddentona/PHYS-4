@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1756253692.88117 "c:/Users/ddent/OneDrive/Documents/CCSF/PHYS-4A/Week 34/Chapter 19 Problems/Chapter 19 Problems.tex" "Chapter 19 Problems.pdf" "Chapter 19 Problems" 1756253694.4366 0
+["pdflatex"] 1756260432.2593 "c:/Users/ddent/OneDrive/Documents/CCSF/PHYS-4A/Week 34/Chapter 19 Problems/Chapter 19 Problems.tex" "Chapter 19 Problems.pdf" "Chapter 19 Problems" 1756260433.85964 0
   "C:/Users/ddent/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1755353727 151629 65cd6e1296beda1feb8e616e59f2da55 ""
   "C:/Users/ddent/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk" 1724529747 14064 a73e2491cc17373621ceadb450a5a7ef ""
   "C:/Users/ddent/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1724473854 24225046 9a86b7f1ef10f5afb0aa895fddb2583f ""
@@ -78,12 +78,13 @@
   "C:/Users/ddent/AppData/Local/Programs/MiKTeX/tex/latex/translations/dicts/translations-basic-dictionary-english.trsl" 1644048522 5588 0c1628daf15f4411ff1f463114c634a3 ""
   "C:/Users/ddent/AppData/Local/Programs/MiKTeX/tex/latex/translations/translations.sty" 1644048522 44247 2188b95d0ee74e31eca4d316263c58a7 ""
   "C:/Users/ddent/AppData/Local/Programs/MiKTeX/tex/latex/wrapfig/wrapfig.sty" 1044403200 26220 3701aebf80ccdef248c0c20dd062fea9 ""
-  "Chapter 19 Problems.aux" 1756253694 7225 93a278f7b738c5976d09df3c1e9a3f05 "pdflatex"
-  "Chapter 19 Problems.tex" 1756253692 36122 8b9b0b9ca2591ec7ee675ce3b5823361 ""
-  "Chapter 19 Problems.toc" 1756253694 4322 0345f174cb9ee3609bcb7bddcee598ea "pdflatex"
-  "c:/Users/ddent/OneDrive/Documents/CCSF/PHYS-4A/Week 34/Chapter 19 Problems/Chapter 19 Problems.tex" 1756253692 36122 8b9b0b9ca2591ec7ee675ce3b5823361 ""
+  "Chapter 19 Problems.aux" 1756260433 7550 f0d12500d66d587fc6158e6db02a7f10 "pdflatex"
+  "Chapter 19 Problems.tex" 1756260429 41335 6288c703943456bd9d523e8980bc63b2 ""
+  "Chapter 19 Problems.toc" 1756260433 4524 5bee75bb0c58c4e02053e9d3a00245df "pdflatex"
+  "c:/Users/ddent/OneDrive/Documents/CCSF/PHYS-4A/Week 34/Chapter 19 Problems/Chapter 19 Problems.tex" 1756260429 41335 6288c703943456bd9d523e8980bc63b2 ""
   "picture_19-20.png" 1756225327 23507 0f38d8f4b4218ae5d5722aab3f32de66 ""
   "picture_19-22.png" 1756225327 16353 72ce8d6644fb623347ffb106ada0a2ac ""
+  "picture_19-23.png" 1756253951 10008 223ec69ca46f1e9cf835bec9dc184f65 ""
   (generated)
   "Chapter 19 Problems.aux"
   "Chapter 19 Problems.log"
