@@ -778,9 +778,12 @@
         \subsection{Solution (a)}
             We have an equation for the energy transfered to the gas as heat.
             \begin{align}
-                Q   &=  nC_V \Delta T
-                    =   3.00\,\unit{\mole} * 20.8\,\unit{\joule/\mole\cdot\kelvin} * 40\,\unit{\kelvin}\\
-                    =   \boxed{2496\,\unit{\joule}}
+                C_P &=  C_V + R
+                    =   20.8\,\unit{\joule/\mole\cdot\kelvin} + 8.31\,\unit{\joule/\mole\cdot\kelvin}
+                    =   29.11\,\unit{\joule/\mole\cdot\kelvin}\\
+                Q   &=  nC_P \Delta T
+                    =   3.00\,\unit{\mole} * 29.11\,\unit{\joule/\mole\cdot\kelvin} * 40\,\unit{\kelvin}\\
+                    =   \boxed{3493.2,\unit{\joule}}
             \end{align}
 
         \subsection{Solution (b)}
@@ -794,11 +797,25 @@
             The first law of thermodynamics can guide us from here.
             \begin{align}
                 \Delta E_{int}  &=  Q_{\rm in} + W_{\rm in}
-                    =   2496\,\unit{\joule} - 997.2\,\unit{\joule}\\
-                    &=  \boxed{1498.8\,\unit{\joule}}
+                    =   3493.2\,\unit{\joule} - 997.2\,\unit{\joule}\\
+                    &=  \boxed{2496\,\unit{\joule}}
             \end{align}
         
         \subsection{Solution (c)}
+            The work done by the gas is the aforementioned \boxed{997.2\,\unit{\joule}}
+
+        \subsection{Solution (d)}
+            The rotational kinetic energy is the kinetic energy added that would not be translational.
+            There is a formula for the translational kinetic energy, and we already know the change in the total energy.
+            \begin{align}
+                \Delta E_{int}  &=  \Delta K_{\rm rot} + \Delta K_{\rm tra}\\
+                \Delta K_{\rm rot}  &=  \Delta E_{int} - \Delta K_{\rm tra}
+                    =   2496\,\unit{\joule} - \frac{3}{2}Nk*40\,\unit{\celsiusdegree}\\
+                    &=  2496\,\unit{\joule} - \frac{3}{2}(n*N_A)k*40\,\unit{\celsiusdegree}\\
+                    &=  2496\,\unit{\joule} - \frac{3}{2} * 1.38\E{-23} * 3.0 * 6.022\E{23} * 40\,\unit{\kelvin}\\
+                    &=  2496\,\unit{\joule} - 1496\,\unit{\joule}
+                    =   \boxed{1000\,\unit{\joule}}
+            \end{align}
             
 
     \pagebreak
