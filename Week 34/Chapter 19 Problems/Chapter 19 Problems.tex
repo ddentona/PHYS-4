@@ -897,9 +897,9 @@
             This settles us with a value for the molar specific heat.
             \begin{align}
                 C_V &=  \left( \frac{f}{2} \right)R 
-                    =   \frac{3}{2}R\\
-                C_P &=  \frac{3}{2}R + R
-                    =   \frac{5}{2}R
+                    =   \frac{5}{2}R\\
+                C_P &=  \frac{5}{2}R + R
+                    =   \frac{7}{2}R
             \end{align}
 
             We have an indeterminate value for the initial volume and a related one for the final volume.
@@ -912,8 +912,8 @@
             There's also an equation for the heat added.
             \begin{align}
                 Q   &=  nC_P \Delta T
-                    =   n * \frac{5}{2}R\,\frac{pV_0}{nR}
-                    =   \frac{5}{2} pV_0
+                    =   n * \frac{7}{2}R\,\frac{pV_0}{nR}
+                    =   \frac{7}{2} pV_0
             \end{align}
 
             The ideal gas law has an equation for the (initial) pressure times the volume. 
@@ -926,43 +926,110 @@
 
             This can be substituted into our equation for the heat to be added to get the answer.
             \begin{align}
-                Q   &=  \frac{5}{2} pV_0
-                    =   \frac{5}{2} * 2268.63\,\unit{\joule}\\
-                    &=  \boxed{5671.575\,\unit{\joule}}
+                Q   &=  \frac{7}{2} pV_0
+                    =   \frac{7}{2} * 2268.63\,\unit{\joule}\\
+                    &=  \boxed{7940.205\,\unit{\joule}}
             \end{align}
 
     \pagebreak
     \section{Problem 55}
+        A certain gas occupies a volume of 4.3 L at a pressure of 1.2 atm and a temperature of 310 K. 
+        It is compressed adiabatically to a volume of 0.76 L. 
+        Determine (a) the final pressure and (b) the final temperature, assuming the gas to be an ideal gas for which $\gamma = 1.4$.
 
-        \subsection{Solution}
+        \subsection{Solution (a)}
+            There's an equation for this.
+            \begin{align}
+                p_1 V_1^{\gamma}    &=  p_2 V_2^{\gamma}\\
+                p_2 &=  p_1 \frac{V_1^{\gamma}}{V_2^{\gamma}}
+                    =   1.2\,\unit{\atm} * \left( \frac{4.3\,\unit{\liter}}{0.76\,\unit{\liter}} \right)^{1.4}\\
+                    &=  1.2\,\unit{\atm} * 11.32
+                    =   \boxed{13.58\,\unit{\atm}}
+            \end{align}
+
+        \subsection{Solution (b)}
+            This is an ideal gas, so the ideal gas law governs it.
+            \begin{gather}
+                p_1 V_1 =   nR T_1\\
+                p_2 V_2 =   nR T_2\\
+                \frac{p_1 V_1}{p_2 V_2} =   \frac{nR T_1}{nR T_2}   =   \frac{T_1}{T_2}
+            \end{gather}
+
+            From here, we can solve for the final temperature ($T_2$).
+            \begin{align}
+                T_2 &=  T_1 \frac{p_2 V_2}{p_1 V_1}
+                    =   310\,\unit{\kelvin} * \frac{13.58 * 0.76}{1.2 * 4.3}\\
+                    &=  \boxed{620\,\unit{\kelvin}}
+            \end{align}
 
     \pagebreak
     \section{Problem 57}
+        The volume of an ideal gas is adiabatically reduced from 200 L to 74.3 L. 
+        The initial pressure and temperature are 1.00 atm and 300 K. 
+        The final pressure is 4.00 atm. 
+        (a) Is the gas monatomic, diatomic, or polyatomic? 
+        (b) What is the final temperature? 
+        (c) How many moles are in the gas?
 
         \subsection{Solution}
 
     \pagebreak
     \section{Problem 59}
+        \begin{wrapfigure}{r}{0.25\textwidth}
+            \vspace{-30pt}
+            \includegraphics[width=0.25\textwidth]{picture_19-26.png} 
+            % \label{fig:wrapfig}
+        \end{wrapfigure}
+        Figure 19-26 shows two paths that may be taken by a gas from an initial point i to a final point f. 
+        Path 1 consists of an isothermal expansion (work is 50 J in magnitude), an adiabatic expansion (work is 40 J in magnitude), an isothermal compression (work is 30 J in magnitude), and then an adiabatic compression (work is 25 J in magnitude). 
+        What is the change in the internal energy of the gas if the gas goes from point i to point f along path 2?
 
         \subsection{Solution}
 
     \pagebreak
     \section{Problem 63}
+        \begin{wrapfigure}{r}{0.25\textwidth}
+            \vspace{-30pt}
+            \includegraphics[width=0.25\textwidth]{picture_19-27.png} 
+            % \label{fig:wrapfig}
+        \end{wrapfigure}
+        Figure 19-27 shows a cycle undergone by 1.00 mol of an ideal monatomic gas. 
+        The temperatures are $T_1$ = 300 K, $T_2$ = 600 K, and $T_3$ = 455 K. 
+        For $1 \to 2$, what are (a) heat Q, (b) the change in internal energy $\Delta E_{\rm int}$, and (c) the work done W? 
+        For $2 \to 3$, what are (d) Q, (e) $\Delta E_{\rm int}$, and (f) W? 
+        For $3 \to 1$, what are (g) Q, (h) $\Delta E_{\rm int}$, and (i) W? 
+        For the full cycle, what are (j) Q, (k) $\Delta E_{\rm int}$, and (l) W? 
+        The initial pressure at point 1 is 1.00 atm (= 1.013$\E{5}$ Pa). 
+        What are the (m) volume and (n) pressure at point 2 and the (o) volume and (p) pressure at point 3?
 
         \subsection{Solution}
 
     \pagebreak
     \section{Problem 69}
+        The envelope and basket of a hot-air balloon have a combined weight of 2.45 kN, and the envelope has a capacity (volume) of $2.18\E{3}\,\unit{\meter^3}$. 
+        When it is fully inflated, what should be the temperature of the enclosed air to give the balloon a \textit{lifting capacity} (force) of 2.67 kN (in addition to the balloon's weight)?
+        Assume that the surrounding air, at 20.0°C, has a weight per unit volume of 11.9 N/m 3 and a molecular mass of 0.028 kg/mol, and is at a pressure of 1.0 atm.
 
         \subsection{Solution}
 
     \pagebreak
     \section{Problem 75}
+        The temperature of 3.00 mol of a gas with $C_V = 6.00 \unit{\cal/\mole\cdot\kelvin}$ is to be raised 50.0 K. 
+        If the process is at constant volume, what are (a) the energy transferred as heat Q, (b) the work W done by the gas, (c) the change $\Delta E_{\rm int}$ in internal energy of the gas, and (d) the change $\Delta K$ in the total translational kinetic energy? 
+        If the process is at constant pressure, what are (e) Q, (f) W, (g) $\Delta E_{\rm int}$, and (h) $\Delta K$? 
+        If the process is adiabatic, what are (i) Q, (j) W, (k) $\Delta E_{\rm int}$, and (l) $\Delta K$?
 
         \subsection{Solution}
 
     \pagebreak
     \section{Problem 77}
+        \begin{wrapfigure}{r}{0.25\textwidth}
+            \vspace{-30pt}
+            \includegraphics[width=0.25\textwidth]{picture_19-28.png} 
+            % \label{fig:wrapfig}
+        \end{wrapfigure}
+        Figure 19-28 shows a hypothetical speed distribution for particles of a certain gas: $P(v) = Cv^2$ for $0 < v \leq v_0$ and $P(v) = 0$ for $v > v_0$.
+        Find (a) an expression for $C$ in terms of $v_0$, (b) the average speed of the particles, and (c) their rms speed.
 
         \subsection{Solution}
 

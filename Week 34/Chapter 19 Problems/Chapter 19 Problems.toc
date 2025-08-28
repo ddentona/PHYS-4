@@ -71,7 +71,8 @@
 \contentsline {section}{\numberline {20}Problem 51}{32}{}%
 \contentsline {subsection}{\numberline {20.1}Solution}{32}{}%
 \contentsline {section}{\numberline {21}Problem 55}{33}{}%
-\contentsline {subsection}{\numberline {21.1}Solution}{33}{}%
+\contentsline {subsection}{\numberline {21.1}Solution (a)}{33}{}%
+\contentsline {subsection}{\numberline {21.2}Solution (b)}{33}{}%
 \contentsline {section}{\numberline {22}Problem 57}{34}{}%
 \contentsline {subsection}{\numberline {22.1}Solution}{34}{}%
 \contentsline {section}{\numberline {23}Problem 59}{35}{}%
