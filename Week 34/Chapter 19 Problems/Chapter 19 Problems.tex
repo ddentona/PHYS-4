@@ -741,20 +741,65 @@
             \end{align}
 
         \subsection{Solution (e)}
-            
+            Calculate the expected rms velocity at 1000 \unit{\kelvin}.
+            \begin{align}
+                v_{rms} &=  \sqrt{\frac{3RT}{M}}
+                    =   \sqrt{\frac{3 * 8.31 * 1000}{2.02\E{-3}}}\\
+                    &=  \sqrt{\frac{24.93\E{6}}{2.02}}
+                    =   \sqrt{12.34\E{6}}\\
+                    &=  3.51\E{3} \unit{\meter/\second}
+            \end{align}
+
+            There should be some hydrogen up there, but a lot of it would have likely escaped since 3.51 is not excessively smaller than 11.2. 
+            The answer is \boxed{no}.
 
         \subsection{Solution (f)}
+            Calculate the expected rms velocity at 1000 \unit{\kelvin}.
+            \begin{align}
+                v_{rms} &=  \sqrt{\frac{3RT}{M}}
+                    =   \sqrt{\frac{3 * 8.31 * 1000}{32.00\E{-3}}}\\
+                    &=  \sqrt{\frac{24.93\E{6}}{32.00}}
+                    =   \sqrt{0.779\E{6}}\\
+                    &=  0.88\E{3} \unit{\meter/\second}
+            \end{align}
+
+            There should be a fair amount of hydrogen up there, even if a little of it would have escaped since 0.88 is much smaller than 11.2. 
+            The answer is \boxed{yes}.
 
     \pagebreak
     \section{Problem 43}
-        The temperature of 3.00 mol of an ideal diatomic gas is increased by 40.0 C° without the pressure of the gas changing.
+        The temperature of 3.00 mol of an ideal diatomic gas is increased by 40.0 \unit{\celsiusdegree} without the pressure of the gas changing.
         The molecules in the gas rotate but do not oscillate. 
         (a) How much energy is transferred to the gas as heat? 
         (b) What is the change in the internal energy of the gas? 
         (c) How much work is done by the gas? 
         (d) By how much does the rotational kinetic energy of the gas increase?
 
-        \subsection{Solution}
+        \subsection{Solution (a)}
+            We have an equation for the energy transfered to the gas as heat.
+            \begin{align}
+                Q   &=  nC_V \Delta T
+                    =   3.00\,\unit{\mole} * 20.8\,\unit{\joule/\mole\cdot\kelvin} * 40\,\unit{\kelvin}\\
+                    =   \boxed{2496\,\unit{\joule}}
+            \end{align}
+
+        \subsection{Solution (b)}
+            We have an equation for the work done on the gas.
+            \begin{align}
+                W   &=  -nR\Delta T
+                    =   -3.00\unit{\mole} * 8.31\unit{\joule/\mole\cdot\kelvin} * 40.0\unit{\kelvin}\\
+                    &=  -997.2\,\unit{\joule}
+            \end{align}
+
+            The first law of thermodynamics can guide us from here.
+            \begin{align}
+                \Delta E_{int}  &=  Q_{\rm in} + W_{\rm in}
+                    =   2496\,\unit{\joule} - 997.2\,\unit{\joule}\\
+                    &=  \boxed{1498.8\,\unit{\joule}}
+            \end{align}
+        
+        \subsection{Solution (c)}
+            
 
     \pagebreak
     \section{Problem 45}
