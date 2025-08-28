@@ -892,6 +892,44 @@
         The molecules rotate but do not oscillate.
 
         \subsection{Solution}
+            Since the molecules rotate but do not oscillate, they do not have any translational degrees of freedom.
+            This limits them to 2 degrees of freedom.
+            This settles us with a value for the molar specific heat.
+            \begin{align}
+                C_V &=  \left( \frac{f}{2} \right)R 
+                    =   \frac{3}{2}R\\
+                C_P &=  \frac{3}{2}R + R
+                    =   \frac{5}{2}R
+            \end{align}
+
+            We have an indeterminate value for the initial volume and a related one for the final volume.
+            We can use these to find an equation for the change in temperature by using the work.
+            \begin{gather}
+                W   =   p\Delta V = nR\Delta T = pV_0\\
+                \Delta T    =   \frac{pV_0}{nR}
+            \end{gather}
+
+            There's also an equation for the heat added.
+            \begin{align}
+                Q   &=  nC_P \Delta T
+                    =   n * \frac{5}{2}R\,\frac{pV_0}{nR}
+                    =   \frac{5}{2} pV_0
+            \end{align}
+
+            The ideal gas law has an equation for the (initial) pressure times the volume. 
+            We can use that.
+            \begin{align}
+                pV_0    &=  nRT_0
+                    =   1\,\unit{\mole} * 8.31\,\unit{\joule/\mole\cdot\kelvin} * 273\,\unit{\kelvin}\\
+                    &=  2268.63\,\unit{\joule}
+            \end{align}
+
+            This can be substituted into our equation for the heat to be added to get the answer.
+            \begin{align}
+                Q   &=  \frac{5}{2} pV_0
+                    =   \frac{5}{2} * 2268.63\,\unit{\joule}\\
+                    &=  \boxed{5671.575\,\unit{\joule}}
+            \end{align}
 
     \pagebreak
     \section{Problem 55}
