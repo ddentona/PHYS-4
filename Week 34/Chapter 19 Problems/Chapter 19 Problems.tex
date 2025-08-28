@@ -823,14 +823,48 @@
         The mass of a gas molecule can be computed from its specific heat at constant volume $c_V$ (note that this is not $C_V$). 
         Take $c_V = 0.075 \unit{\calorie/\gram\cdot\celsiusdegree}$ for argon and calculate (a) the mass of an argon atom and (b) the molar mass of argon.
 
-        \subsection{Solution}
+        \subsection{Solution (a)}
+            There is a formula we know involving specific heat ($c_V$).
+            \begin{equation}
+                Q = c_V m \Delta T
+            \end{equation}
+
+            There also exists a fromula for the molar specific heat.
+            \begin{equation}
+                C_V = \frac{Q}{n\Delta T}
+            \end{equation}
+
+            We can assume that the argon is a monoatomic gas, so $C_V = \frac{3}{2}R = 12.5\unit{\joule/\mole\cdot\kelvin}$.
+            Our equation for thermal energy can be substituted into our equation for the molar specific heat.
+            We can also convert the specific heat to \unit{\joule/\gram\cdot\celsiusdegree}
+            \begin{gather}
+                C_V =   \frac{c_V m \Delta T}{n \Delta T} \to
+                m   =   \frac{n C_V}{c_V}\\
+                c_v =   0.075\,\unit{\calorie/\gram\cdot\celsiusdegree} * 4.184\,\unit{\frac{\joule}{\calorie}}
+                    =   0.3138\,\unit{\joule/\gram\cdot\celsiusdegree}
+            \end{gather}
+
+            We can insert values into this and assume only one mole of argon.
+            In the processof going from here to the mass of one atom, we will find the molar mass of argon.
+            \begin{align}
+                m   &=  \frac{12.5\unit{\joule/\mole\cdot\kelvin}}{0.3138\,\unit{\joule/\gram\cdot\celsiusdegree}} * 1\,\unit{\mole}
+                    =   39.83\unit{\gram/\mole} * \frac{1\,\unit{\mole}}{6.022\E{23}\,\text{molecule}}\\
+                    &=  \boxed{6.615\E{-23}\,\unit{\gram}}
+            \end{align}
+
+        \subsection{Solution (b)}
+            As established in part (a), the molar mass of argon is \boxed{39.83\unit{\gram/\mole}}.
+
+        \subsection{Note on the problem}
+            This problem dd a good job at integrating previous chapters. 
+            It has a good premise and a decent pathway to the solution, but I probably would have put it under ``Additional Problems''.
 
     \pagebreak
     \section{Problem 47}
         The temperature of $2.00 \unit{\mole}$ of an ideal monatomic gas is raised 15.0 K at constant volume. 
         What are (a) the work W done by the gas, (b) the energy transferred as heat Q, (c) the change $\Delta E_{\rm int}$ in the internal energy of the gas, and (d) the change $\Delta K$ in the average kinetic energy per atom?
 
-        \subsection{Solution}
+        \subsection{Solution (a)}
 
     \pagebreak
     \section{Problem 51}
