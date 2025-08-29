@@ -74,14 +74,23 @@
 \contentsline {subsection}{\numberline {21.1}Solution (a)}{33}{}%
 \contentsline {subsection}{\numberline {21.2}Solution (b)}{33}{}%
 \contentsline {section}{\numberline {22}Problem 57}{34}{}%
-\contentsline {subsection}{\numberline {22.1}Solution}{34}{}%
-\contentsline {section}{\numberline {23}Problem 59}{35}{}%
-\contentsline {subsection}{\numberline {23.1}Solution}{35}{}%
-\contentsline {section}{\numberline {24}Problem 63}{36}{}%
-\contentsline {subsection}{\numberline {24.1}Solution}{36}{}%
-\contentsline {section}{\numberline {25}Problem 69}{37}{}%
-\contentsline {subsection}{\numberline {25.1}Solution}{37}{}%
-\contentsline {section}{\numberline {26}Problem 75}{38}{}%
-\contentsline {subsection}{\numberline {26.1}Solution}{38}{}%
-\contentsline {section}{\numberline {27}Problem 77}{39}{}%
-\contentsline {subsection}{\numberline {27.1}Solution}{39}{}%
+\contentsline {subsection}{\numberline {22.1}Solution (a)}{34}{}%
+\contentsline {subsection}{\numberline {22.2}Solution (b)}{35}{}%
+\contentsline {subsection}{\numberline {22.3}Solution (c)}{35}{}%
+\contentsline {section}{\numberline {23}Problem 59}{36}{}%
+\contentsline {subsection}{\numberline {23.1}Solution}{36}{}%
+\contentsline {section}{\numberline {24}Problem 63}{37}{}%
+\contentsline {subsection}{\numberline {24.1}Solution (a), (b), (c)}{37}{}%
+\contentsline {subsection}{\numberline {24.2}Solution (d), (e), (f)}{37}{}%
+\contentsline {subsection}{\numberline {24.3}Solution (g), (h), (i)}{38}{}%
+\contentsline {subsection}{\numberline {24.4}Solution (j), (k), (l)}{38}{}%
+\contentsline {subsection}{\numberline {24.5}Solution (m)}{39}{}%
+\contentsline {subsection}{\numberline {24.6}Solution (n)}{39}{}%
+\contentsline {subsection}{\numberline {24.7}Solution (o)}{39}{}%
+\contentsline {subsection}{\numberline {24.8}Solution (p)}{39}{}%
+\contentsline {section}{\numberline {25}Problem 69}{40}{}%
+\contentsline {subsection}{\numberline {25.1}Solution}{40}{}%
+\contentsline {section}{\numberline {26}Problem 75}{41}{}%
+\contentsline {subsection}{\numberline {26.1}Solution}{41}{}%
+\contentsline {section}{\numberline {27}Problem 77}{42}{}%
+\contentsline {subsection}{\numberline {27.1}Solution}{42}{}%

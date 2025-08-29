@@ -971,20 +971,113 @@
         (b) What is the final temperature? 
         (c) How many moles are in the gas?
 
-        \subsection{Solution}
+        \subsection{Solution (a)}
+            We can find this by finding the value of $\gamma$.
+            By its nature, $\gamma = C_P / C_V$.
+            There are three possibilities of final values.
+
+            Monatomic: 
+            \begin{equation}
+                \gamma  =   \frac{\frac{5}{2}R}{\frac{3}{2}R}
+                    =   \frac{5}{3}
+            \end{equation}
+
+            Diatomic:
+            \begin{equation}
+                \gamma  =   \frac{\frac{7}{2}R}{\frac{5}{2}R}
+                    =   \frac{7}{5}
+                    =   1.4
+            \end{equation}
+
+            Polyatomic: 
+            \begin{equation}
+                \gamma  =   \frac{4R}{3R} = \frac{4}{3}
+            \end{equation}
+
+            From here, we can use our equation for ideal gas under adiabatic volume change.
+            \begin{gather}
+                p_i V_i^\gamma  =   p_f V_f^\gamma\\
+                \frac{p_i}{p_f} =   \left( \frac{V_f}{V_i} \right)^\gamma\\
+                \frac{1}{4}     =   \left( \frac{74.3}{200} \right)\\
+                \gamma  =   \log_{0.3715} (0.25)
+                    \approx 1.4
+            \end{gather}
+
+            This solidifies that the gas is \boxed{diatomic}.
+
+        \subsection{Solution (b)}
+            We can use our friend the ideal gas law.
+            \begin{gather}
+                p_i V_i =   nR T_i\\
+                p_f V_f =   nR T_f\\
+                \frac{p_i V_i}{p_f V_f} =   \frac{nR T_i}{nR T_f}   =   \frac{T_i}{T_f}
+            \end{gather}
+
+            From here, we can solve for the final temperature.
+            \begin{align}
+                T_f &=  T_i \frac{p_f V_f}{p_i V_i}
+                    =   300\,\unit{\kelvin} * \frac{4 * 74.3}{1 * 200}
+                    =   300\,\unit{\kelvin} * \frac{297.2}{200}\\
+                    &=  300\,\unit{\kelvin} * 1.486
+                    =   \boxed{445.8\,\unit{\kelvin}}
+            \end{align}
+
+        \subsection{Solution (c)}
+            The right move here is to convert atmospheres to pascals and liters to cubic meters.
+            We then use the ideal gas law.
+            I will do this by using the initial conditions.
+            \begin{align}
+                p   &=  1.00\,\unit{\atm} \times \frac{101325\,\unit{\pascal}}{1\,\unit{\atm}}
+                    =   101325\,\unit{\pascal}\\
+                V   &=  200\,\unit{\liter} \times \frac{0.001\,\unit{\meter^3}}{1\unit{\liter}}
+                    =   0.2\,\unit{\meter^3}\\
+                &pV =   nRT\\
+                n   &=  \frac{pV}{RT}
+                    =   \frac{101325\,\unit{\pascal} * 0.2\,\unit{\meter^3}}{8.31\,\unit{\joule/\mole\cdot\kelvin} * 300\,\unit{\kelvin}}\\
+                    &=  \frac{20265}{2493}\,\unit{\mole}
+                    =   \boxed{8.13\,\unit{\mole}}
+            \end{align}
 
     \pagebreak
     \section{Problem 59}
-        \begin{wrapfigure}{r}{0.25\textwidth}
+        \begin{wrapfigure}{r}{0.35\textwidth}
             \vspace{-30pt}
-            \includegraphics[width=0.25\textwidth]{picture_19-26.png} 
+            \includegraphics[width=0.35\textwidth]{picture_19-26.png} 
             % \label{fig:wrapfig}
         \end{wrapfigure}
-        Figure 19-26 shows two paths that may be taken by a gas from an initial point i to a final point f. 
+        Figure 19-26 shows two paths that may be taken by a gas from an initial point $i$ to a final point $f$. 
         Path 1 consists of an isothermal expansion (work is 50 J in magnitude), an adiabatic expansion (work is 40 J in magnitude), an isothermal compression (work is 30 J in magnitude), and then an adiabatic compression (work is 25 J in magnitude). 
-        What is the change in the internal energy of the gas if the gas goes from point i to point f along path 2?
+        What is the change in the internal energy of the gas if the gas goes from point $i$ to point $f$ along path 2?
 
         \subsection{Solution}
+            We can assign letters to the four processes from a to d based on their ordering between $i$ and $f$.
+            Along the pressure-volume scale, the change in internal energy is path independent, so the energy change from $i$ to $f$ would be the same along either path.
+            There are two types of expansions/compressions along the path: adiabatic (no change in thermal energy; $Q = 0$) and isothermal (constant temperature; $\Delta T = 0$).
+            For the adiabatic processes, there is a formula for their change in internal energy.
+            \begin{align}
+                \Delta E_{\rm int; b}  &=  W_{\rm in}
+                    =   -40\,\unit{\joule}\\
+                \Delta E_{\rm int; d}  &=  W_{\rm in}
+                    =   25\,\unit{\joule}
+            \end{align}
+
+            For isothermal processes, the work in is equal to the negative of the heat drawn in.
+            We can use ths to find the change in energy for paths (a) and (c).
+            \begin{align}
+                \Delta E_{\rm int; a}  &=  Q_{\rm in} + W_{\rm in}
+                    =   Q_{\rm in} - Q_{\rm in}
+                    =   0\\
+                \Delta E_{\rm int; c}  &=  Q_{\rm in} + W_{\rm in}
+                    =   Q_{\rm in} - Q_{\rm in}
+                    =   0
+            \end{align}
+
+            Adding up all of these, we can get the total change in internal energy.
+            \begin{align}
+                \Delta E_{\rm int}  &=  \Delta E_{\rm int; a} + \Delta E_{\rm int; b} + \Delta E_{\rm int; c} + \Delta E_{\rm int; d}\\
+                    &=  0 - 40\,\unit{\joule} + 0 + 25\,\unit{\joule}
+                    =   \boxed{-15\,\unit{\joule}}
+            \end{align}
 
     \pagebreak
     \section{Problem 63}
@@ -1002,7 +1095,131 @@
         The initial pressure at point 1 is 1.00 atm (= 1.013$\E{5}$ Pa). 
         What are the (m) volume and (n) pressure at point 2 and the (o) volume and (p) pressure at point 3?
 
-        \subsection{Solution}
+        \subsection{Solution (a), (b), (c)}
+            The process here is isochoric because there is no change in volume \textit{at all}.
+            This means that there is no net work.
+            Meanwhile, the heat is equivalent to the change in all internal energy, which has a formula to it.
+            \begin{align}
+                \Delta E_{\rm int}  &=  Q
+                    =   n C_V \Delta T
+                    =   1\,\unit{\mole} * \frac{3}{2}R * 300\,\unit{\kelvin}\\
+                    &=  3739.5\,\unit{\joule}
+            \end{align}
+
+            \begin{center}
+                \begin{tabular}{c | c | c}
+                    (a) &   (b) &   (c)\\
+                    \hline
+                    Q   &   $\Delta E_{\rm int}$  &   W\\
+                    \boxed{3739.5 \unit{\joule}} &   \boxed{3739.5 \unit{\joule}} &   \boxed{0 \unit{\joule}}
+                \end{tabular}
+            \end{center}
+        
+        \subsection{Solution (d), (e), (f)}
+            The process being adiabatic, the change in thermal energy (heat) is zero.
+            This in turn would mean that $\Delta E_{\rm int} = W$.
+            The change in energy is defined by its own formula.
+            \begin{align}
+                \Delta E_{\rm int; 23}  &=  n C_V \Delta T
+                    =   1\,\unit{\mole} * \frac{3}{2}R * (-145\,\unit{\joule})\\
+                    &=  -1807.425\,\unit{\joule}
+            \end{align}
+
+            \begin{center}
+                \begin{tabular}{c | c | c}
+                    (d) &   (e) &   (f)\\
+                    \hline
+                    Q   &   $\Delta E_{\rm int}$  &   W\\
+                    \boxed{0 \unit{\joule}} &   \boxed{-1807.425\,\unit{\joule}}    &   \boxed{-1807.425\,\unit{\joule}}
+                \end{tabular}
+            \end{center}
+
+        \subsection{Solution (g), (h), (i)}
+            The process here is isoboric.
+            The heat and work both come with formulas in this case.
+            \begin{align}
+                Q   &=  n C_P \Delta T
+                    =   1\,\unit{\mole} * \frac{5}{2}R * (-155\,\unit{\kelvin})\\
+                    &=  -3220.125\,\unit{\joule}\\
+                W   &=  -p\Delta V
+                    =   -nR \Delta T
+                    =   -1\,\unit{\mole} * R * (-155\,\unit{\kelvin})\\
+                    &=  1288.05\,\unit{\joule}\\
+                \Delta E_{\rm int; 31}  &=  Q + W
+                    =   -3220.125\,\unit{\joule} + 1288.05\,\unit{\joule}\\
+                    &=  -1932.075\,\unit{\joule}
+            \end{align}
+
+            \begin{center}
+                \begin{tabular}{c | c | c}
+                    (g) &   (h) &   (i)\\
+                    \hline
+                    Q   &   $\Delta E_{\rm int}$  &   W\\
+                    \boxed{-3220.125\,\unit{\joule}} &   \boxed{-1932.075\,\unit{\joule}}    &   \boxed{1288.05\,\unit{\joule}}
+                \end{tabular}
+            \end{center}
+        
+        \subsection{Solution (j), (k), (l)}
+            The way to go about his is by adding up values.
+            \begin{align}
+                Q   &=  Q_{12} + Q_{23} + Q_{31}
+                    =   3739.5 + 0 - 3220.125
+                    =   519.375\,\unit{\joule}\\
+                \Delta E_{\rm int}  &=  \Delta E_{12} + \Delta E_{23} + \Delta E_{31}
+                    =   3739.5 - 1807.425 - 1932.075
+                    =   0\,\unit{\joule}\\
+                W   &=  W_{12} + W_{23} + W_{31}
+                    =   0 - 1807.425 + 1288.05
+                    =   -519.375\,\unit{\joule}
+            \end{align}
+
+            The fact that $\Delta E_{\rm int} = 0$ makes sense. 
+            Looking at the overall graph, the whole process is cyclical, which would naturally have a net zero internal energy change.
+            Ths leads well into the fact that Q = -W.
+
+            \begin{center}
+                \begin{tabular}{c | c | c}
+                    (g) &   (h) &   (i)\\
+                    \hline
+                    Q   &   $\Delta E_{\rm int}$  &   W\\
+                    \boxed{519.375\,\unit{\joule}} &   \boxed{0\,\unit{\joule}}    &   \boxed{-519.375\,\unit{\joule}}
+                \end{tabular}
+            \end{center}
+
+        \subsection{Solution (m)}
+            The volume at point 1 would be the same as at point 2.
+            We can use the ideal gas law here.
+            \begin{align}
+                pV  &=  nRT\\
+                V   &=  \frac{nRT}{p}
+                    =   \frac{1\,\unit{\mole} * 8.31\,\unit{\joule/\mole\cdot\kelvin} * 300\,\unit{\kelvin}}{1.013\E{5}}\\
+                    &=  \boxed{0.0246\,\unit{\meter^3}}
+            \end{align}
+
+        \subsection{Solution (n)}
+            This creates an equivalence from the ideal gas law.
+            \begin{align}
+                pV  &=  nRT \to
+                \frac{p}{T} =   \frac{nR}{V} \to
+                \frac{p_1}{T_1} =   \frac{p_2}{T_2}\\
+                p_2 &=  p_1 \frac{T_2}{T_1}
+                    =   1.013\E{5}\,\unit{\pascal} * \frac{600\,\unit{\kelvin}}{300\,\unit{\kelvin}}\\
+                    &=  \boxed{2.026\E{5}\,\unit{\pascal}}
+            \end{align}
+
+        \subsection{Solution (o)}
+            We can use the same ideal gas law, this time with changing volume and constant pressure.
+            \begin{align}
+                pV  &=  nRT \to
+                \frac{V}{T} =   \frac{nR}{p} \to
+                \frac{V_1}{T_1} =   \frac{V_2}{T_2}\\
+                V_2 &=  V_1 \frac{T_2}{T_1}
+                    =   0.226\,\unit{\meter^3} * \frac{455\,\unit{\kelvin}}{300\,\unit{\kelvin}}\\
+                    &=  \boxed{0.343\,\unit{\meter^3}}
+            \end{align}
+
+        \subsection{Solution (p)}
+            The pressure at point 3 is the same as that at point 1, so it would be \boxed{1.013\E{5}\,\unit{\pascal}}.
 
     \pagebreak
     \section{Problem 69}

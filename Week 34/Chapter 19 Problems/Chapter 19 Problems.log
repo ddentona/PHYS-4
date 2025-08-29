@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.8.23)  28 AUG 2025 14:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.8.23)  28 AUG 2025 19:48
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -273,46 +273,46 @@ File: picture_19-23.png Graphic file (type png)
 <use picture_19-23.png>
 Package pdftex.def Info: picture_19-23.png  used on input line 622.
 (pdftex.def)             Requested size: 97.5pt x 58.20865pt.
- [22 <./picture_19-23.png>] [23] [24] [25] [26] [27] [28] [29] [30] [31] [32] [33] [34]
-<picture_19-26.png, id=134, 293.59688pt x 180.675pt>
+ [22 <./picture_19-23.png>] [23] [24] [25] [26] [27] [28] [29] [30] [31] [32] [33] [34] [35]
+<picture_19-26.png, id=137, 293.59688pt x 180.675pt>
 File: picture_19-26.png Graphic file (type png)
 <use picture_19-26.png>
-Package pdftex.def Info: picture_19-26.png  used on input line 980.
-(pdftex.def)             Requested size: 97.5pt x 59.99786pt.
- [35 <./picture_19-26.png>]
-<picture_19-27.png, id=139, 158.09062pt x 172.39406pt>
+Package pdftex.def Info: picture_19-26.png  used on input line 1045.
+(pdftex.def)             Requested size: 136.50238pt x 84.00197pt.
+ [36 <./picture_19-26.png>]
+<picture_19-27.png, id=142, 158.09062pt x 172.39406pt>
 File: picture_19-27.png Graphic file (type png)
 <use picture_19-27.png>
-Package pdftex.def Info: picture_19-27.png  used on input line 993.
+Package pdftex.def Info: picture_19-27.png  used on input line 1086.
 (pdftex.def)             Requested size: 97.5pt x 106.3229pt.
- [36 <./picture_19-27.png>] [37] [38]
-<picture_19-28.png, id=152, 162.6075pt x 118.94438pt>
+ [37 <./picture_19-27.png>] [38] [39] [40] [41]
+<picture_19-28.png, id=161, 162.6075pt x 118.94438pt>
 File: picture_19-28.png Graphic file (type png)
 <use picture_19-28.png>
-Package pdftex.def Info: picture_19-28.png  used on input line 1028.
+Package pdftex.def Info: picture_19-28.png  used on input line 1245.
 (pdftex.def)             Requested size: 97.5pt x 71.3218pt.
- [39 <./picture_19-28.png>] (Chapter 19 Problems.toc [40] [41])
+ [42 <./picture_19-28.png>] (Chapter 19 Problems.toc [43] [44] [45])
 \tf@toc=\write3
 \openout3 = `"Chapter 19 Problems.toc"'.
 
- [42] (Chapter 19 Problems.aux)
+ [46] (Chapter 19 Problems.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 7852 strings out of 474486
- 178230 string characters out of 5743755
+ 7856 strings out of 474486
+ 178344 string characters out of 5743755
  1942542 words of memory out of 5000000
- 30075 multiletter control sequences out of 15000+600000
+ 30079 multiletter control sequences out of 15000+600000
  566615 words of font info for 69 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  79i,17n,93p,422b,736s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\ddent\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on "Chapter 19 Problems.pdf" (42 pages, 356723 bytes).
+Output written on "Chapter 19 Problems.pdf" (46 pages, 369652 bytes).
 PDF statistics:
- 246 PDF objects out of 1000 (max. 8388607)
+ 259 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  31 words of extra memory for PDF output out of 10000 (max. 10000000)
 
