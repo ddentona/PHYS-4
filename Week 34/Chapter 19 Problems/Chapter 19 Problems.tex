@@ -1306,7 +1306,131 @@
         If the process is at constant pressure, what are (e) Q, (f) W, (g) $\Delta E_{\rm int}$, and (h) $\Delta K$? 
         If the process is adiabatic, what are (i) Q, (j) W, (k) $\Delta E_{\rm int}$, and (l) $\Delta K$?
 
-        \subsection{Solution}
+        \subsection{Solution (a), (b), (c), (d)}
+            For starters, there is no change in volume, so there is no work done on the gas.
+            The total change in internal energy and the inserted heat would thus be equal.
+            There exists a formula for this.
+            \begin{align}
+                Q   &=  \Delta E_{\rm int}
+                    =   n C_V \Delta T\\
+                    &=  3 * 6 * 50
+                    =   900\,\unit{\calorie}
+            \end{align}
+
+            The total change in the kinetic energy would be the change in the average kinetic energy multiplied by the number of molecules.
+            \begin{align}
+                \Delta K    &=  n * N_A * \frac{3}{2}k \Delta T
+                    =   n * \frac{3}{2}R \Delta T\\
+                    &=  3 * \frac{3}{2} * 8.31 * 50
+                    =   1869.75\,\unit{\joule}
+            \end{align}
+
+            This can be converted to calories.
+            \begin{align}
+                \Delta K    &=  1869.75\,\unit{\joule} \times \frac{1\,\unit{\calorie}}{4.1868\,\unit{\joule}}
+                    =   446.6\,\unit{\calorie}
+            \end{align}
+
+            \begin{center}
+                \begin{tabular}{c | c | c | c}
+                    Q   &   W   &   $\Delta E_{\rm int}$    &   $\Delta K$\\
+                    \hline
+                    900 cal   &   0 cal &   900 cal   &   446.6 cal
+                \end{tabular}
+            \end{center}
+
+        \subsection{Solution (e), (f), (g), (h)}
+            This process has constant pressure, so the process would be isobaric.
+            We can use this to find a fromula for the change in volume by using the ideal gas law.
+            \begin{gather}
+                pV  =   nRT\\
+                p\Delta V   =   nR \Delta T\\
+                \Delta V    =   \frac{nR \Delta T}{p}
+            \end{gather}
+
+            This in turn can be used to find the net work done on the gas.
+            \begin{align}
+                W   &=  -p \Delta V
+                    =   -p * \frac{nR \Delta T}{p}
+                    =   -nR \Delta T\\
+                    &=  -3 * 8.31 * 50
+                    =   -1246.5\,\unit{\joule}
+            \end{align}
+
+            The net heat put into the gas is also calculated with an equation.
+            It involves $C_P$, which we can get from the value of $C_V$.
+            \begin{align}
+                C_V &=  6.00\,\unit{\frac{\calorie}{\mole\cdot\kelvin}} \times \frac{4.1868\,\unit{\joule}}{1\,\unit{\calorie}}
+                    =   25.1208\,\unit{\frac{\joule}{\mole\cdot\kelvin}}\\
+                C_P &=  C_V + R
+                    =   25.1208\,\unit{\frac{\joule}{\mole\cdot\kelvin}} + 8.51\,\unit{\frac{\joule}{\mole\cdot\kelvin}}\\
+                    &=  33.9308\,\unit{\frac{\joule}{\mole\cdot\kelvin}}
+            \end{align}
+
+            This allows us to calculate the heat inserted.
+            \begin{align}
+                Q   &=  n C_P \Delta T
+                    =   3 * 33.9308 * 50
+                    =   5089.62\,\unit{\joule}
+            \end{align}
+
+            The first law of thermodynamics allows us to find the change in internal energy.
+            \begin{align}
+                \Delta E_{\rm int}  &=  Q + W
+                    =   5089.62 - 1246.5
+                    =   3843.12\,\unit{\joule}
+            \end{align}
+
+            Lastly, the change in kinetic energy is calculatable using the same formula as before.
+            The known values remain unchanged, so we inevitably get the same answer.
+            \begin{align}
+                \Delta K    &=  n * N_A * \frac{3}{2}k \Delta T
+                    =   n * \frac{3}{2}R \Delta T\\
+                    &=  3 * \frac{3}{2} * 8.31 * 50
+                    =   1869.75\,\unit{\joule}
+            \end{align}
+
+            Those are all four necessary-to-know values.
+
+            \begin{center}
+                \begin{tabular}{c | c | c | c}
+                    Q   &   W   &   $\Delta E_{\rm int}$    &   $\Delta K$\\
+                    \hline
+                    5089.62 \unit{\joule} & -1246.5 \unit{\joule} & 3843.12 \unit{\joule} & 1869.75 \unit{\joule}
+                \end{tabular}
+            \end{center}
+
+        \subsection{Solution (i), (j), (k), (l)}
+            This process is adiabatic, so the heat inserted ($Q$) is zero.
+            This in turn means that the change in internal energy is equal to the work inserted.
+            \begin{align}
+                W   &=  \Delta E_{\rm int}
+                    =   nC_V \Delta T\\
+                    &=  3 * 6.00 * 50
+                    =   900\,\unit{\calorie}
+            \end{align}
+
+            The katastasy (basically situation in Greek but it sounds better) withe the kinetic energy remains unchanged so we can calculate it the same.
+            \begin{align}
+                \Delta K    &=  n * N_A * \frac{3}{2}k \Delta T
+                    =   n * \frac{3}{2}R \Delta T\\
+                    &=  3 * \frac{3}{2} * 8.31 * 50
+                    =   1869.75\,\unit{\joule}
+            \end{align}
+
+            This can be converted to calories.
+            \begin{align}
+                \Delta K    &=  1869.75\,\unit{\joule} \times \frac{1\,\unit{\calorie}}{4.1868\,\unit{\joule}}
+                    =   446.6\,\unit{\calorie}
+            \end{align}
+
+            \begin{center}
+                \begin{tabular}{c | c | c | c}
+                    Q   &   W   &   $\Delta E_{\rm int}$    &   $\Delta K$\\
+                    \hline
+                    0 cal   &   900 cal &   900 cal   &   446.6 cal
+                \end{tabular}
+            \end{center}
 
     \pagebreak
     \section{Problem 77}

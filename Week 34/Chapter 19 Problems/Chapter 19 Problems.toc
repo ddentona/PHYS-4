@@ -91,6 +91,8 @@
 \contentsline {section}{\numberline {25}Problem 69}{40}{}%
 \contentsline {subsection}{\numberline {25.1}Solution}{40}{}%
 \contentsline {section}{\numberline {26}Problem 75}{42}{}%
-\contentsline {subsection}{\numberline {26.1}Solution}{42}{}%
-\contentsline {section}{\numberline {27}Problem 77}{43}{}%
-\contentsline {subsection}{\numberline {27.1}Solution}{43}{}%
+\contentsline {subsection}{\numberline {26.1}Solution (a), (b), (c), (d)}{42}{}%
+\contentsline {subsection}{\numberline {26.2}Solution (e), (f), (g), (h)}{42}{}%
+\contentsline {subsection}{\numberline {26.3}Solution (i), (j), (k), (l)}{44}{}%
+\contentsline {section}{\numberline {27}Problem 77}{45}{}%
+\contentsline {subsection}{\numberline {27.1}Solution}{45}{}%
