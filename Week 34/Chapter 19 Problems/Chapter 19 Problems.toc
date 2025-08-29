@@ -90,7 +90,7 @@
 \contentsline {subsection}{\numberline {24.8}Solution (p)}{39}{}%
 \contentsline {section}{\numberline {25}Problem 69}{40}{}%
 \contentsline {subsection}{\numberline {25.1}Solution}{40}{}%
-\contentsline {section}{\numberline {26}Problem 75}{41}{}%
-\contentsline {subsection}{\numberline {26.1}Solution}{41}{}%
-\contentsline {section}{\numberline {27}Problem 77}{42}{}%
-\contentsline {subsection}{\numberline {27.1}Solution}{42}{}%
+\contentsline {section}{\numberline {26}Problem 75}{42}{}%
+\contentsline {subsection}{\numberline {26.1}Solution}{42}{}%
+\contentsline {section}{\numberline {27}Problem 77}{43}{}%
+\contentsline {subsection}{\numberline {27.1}Solution}{43}{}%

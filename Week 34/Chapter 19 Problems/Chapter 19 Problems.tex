@@ -1236,6 +1236,68 @@
             \end{equation}
 
             This would be the necessary net force, which would be the net force from the internal gas upwards and the outer gas downwards.
+            We can assume that the air outside has the same (immutable) properties as that on the inside.
+            We can find the buoyant force, being the force of or on the air opposing the gravitational force.
+            \begin{align}
+                F_b &=  \rho g V
+                    =   11.9\,\unit{\newton/\meter^3} * 2.18\E{3} \unit{\meter^3}\\
+                    &=  25942\,\unit{\newton}
+            \end{align}
+
+            The buoyant force is one of the two forces that would act on the balloon. 
+            The other force in question would be the weight of the hot air.
+            This weight could be calculated by the ideal gas law.
+            \begin{gather}
+                F_{\rm total}   =   F_b - F_{\rm weight}\\
+                pV  =   nRT\\
+                n   =   \frac{PV}{RT}\\
+                m   =   MM * n = \frac{PV * MM}{RT}\\
+                \begin{align}
+                    F_{\rm weight}  &=  g * m
+                        =   g * \frac{PV * MM}{RT}
+                \end{align}
+            \end{gather}
+
+            Our unknown here is the temperature ($T$), which we can find using our equation.
+            The air pressure outside would be 1 \unit{\atm}, which is equivalent to $1.013\E{5}\,\unit{\pascal}$.
+            \begin{gather}
+                F_{\rm total}   =   F_b - F_{\rm weight}\\
+                F_b - F_{\rm total} =   g * \frac{PV * MM}{RT}\\
+                \frac{R\left( F_b - F_{\rm total} \right)}{g * P * V * MM}  =   \frac{1}{T}\\
+                \begin{align}
+                    T   &=  \frac{g * P * V * MM}{R\left( F_b - F_{\rm total} \right)}
+                        =   \frac{9.81 * 1.013\E{5} * 2.18\E{3} * 0.028}{R(25942 - 5.12\E{3})}\\
+                        &=  \frac{0.60659\E{8}}{8.31 * 20822}
+                        =   \boxed{350.566\,\unit{\kelvin}}
+                \end{align}
+            \end{gather}
+
+
+            % We can from this find the mass of the air inside the baloon.
+            % We start by finding the weight of all the air inside the baloon by using the volume contained and the weight per unit volume (weight density, $\rho g$).
+            % \begin{align}
+            %     \rho g  &=  11.9\,\unit{\newton/\meter^3}\\
+            %     F_g &=  \rho g * V
+            %         =   11.9\,\unit{\newton/\meter^3} * 2.18\E{3} \unit{\meter^3}\\
+            %         &=  25942\,\unit{\newton}
+            % \end{align}
+
+            % To get the mass, we divide this by the gravitational force (9.81 \unit{\meter/\second^2}).
+            % \begin{align}
+            %     m   &=  \frac{25942\,\unit{\newton}}{9.81\,\unit{\meter/\second^2}}
+            %         =   2644\,\unit{\kilo\gram}
+            % \end{align}
+
+            % This can be divided by the molecular mass to find the number of moles (n).
+            % \begin{align}
+            %     n   &=  \frac{m}{MM}
+            %         =   \frac{2644\,\unit{\kilo\gram}}{0.028\,\unit{\kilo\gram/\mole}}
+            %         =   9.4444\E{4}\,\unit{\mole}
+            % \end{align}
+
+            % This could be multiplied by a single meter to get the amount of work necessary to lift the hot-air baloon one meter.
+
+            % The total 
 
     \pagebreak
     \section{Problem 75}
