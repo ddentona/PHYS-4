@@ -57,9 +57,33 @@
                     =   175 * (-10)
                     =   -1750\,\unit{\watt}
             \end{align}
-    
+
+    \pagebreak
     \section{Problem 2}
-        2. (2 points) A particular system executes a cyclical process whose P-V graph is a clockwise-directed ellipse centered at (V0, P0) and radii $\delta V$ and $\delta P$, respectively. Calculate the net work
-done and the net heat ﬂow into / out of this system during one cycle.
+        2. (2 points) A particular system executes a cyclical process whose P-V graph is a clockwise-directed ellipse centered at ($V_0$, $P_0$) and radii $\delta V$ and $\delta P$, respectively. 
+        Calculate the net work done and the net heat ﬂow into/out of this system during one cycle.
+        \begin{center}
+            \includegraphics{picture_2.png}
+        \end{center}
+
+        \subsection{Solution}
+            We know that the process is cyclical, so the net change in internal energy will be zero. 
+            This, due to the first law of thermodynamics, means that the heat inserted is equal to the negative of the work done on the system, so we only have to calculate one of the two.
+            To do this, we can set up an equation for the work done on the system.
+            \begin{align}
+                W   &=  -\int_{t_i}^{t_f} P(t)\,\dv{V(t)}{t}\,dt
+            \end{align}
+
+            There is an equation for the ellipse.
+            \begin{gather}
+                \frac{\left( V(t) - V_0 \right)^2}{\delta V^2} + \frac{\left( P(t) - P_0 \right)^2}{\delta P^2} = 1
+            \end{gather}
+
+            We can use ths to solve for $V(t)$.
+            \begin{gather}
+                \frac{\left( V(t) - V_0 \right)^2}{\delta V^2} + \frac{\left( P(t) - P_0 \right)^2}{\delta P^2} = 1\\
+                \frac{\left( V(t) - V_0 \right)^2}{\delta V^2} = 1 - \frac{\left( P(t) - P_0 \right)^2}{\delta P^2}\\
+                \left( V(t) - V_0 \right)^2 = \delta V^2 \left( 1 - \frac{\left( P(t) - P_0 \right)^2}{\delta P^2} \right)
+            \end{gather}
 
 \end{document}

@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1756527849.89509 "c:/Users/ddent/OneDrive/Documents/CCSF/PHYS-4A/Week 34/Chapter 19 Problems/Chapter 19 Problems.tex" "Chapter 19 Problems.pdf" "Chapter 19 Problems" 1756527852.03492 0
+["pdflatex"] 1756528392.10409 "c:/Users/ddent/OneDrive/Documents/CCSF/PHYS-4A/Week 34/Chapter 19 Problems/Chapter 19 Problems.tex" "Chapter 19 Problems.pdf" "Chapter 19 Problems" 1756528394.30403 0
   "C:/Users/ddent/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1755353727 151629 65cd6e1296beda1feb8e616e59f2da55 ""
   "C:/Users/ddent/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk" 1724529747 14064 a73e2491cc17373621ceadb450a5a7ef ""
   "C:/Users/ddent/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1724473854 24225046 9a86b7f1ef10f5afb0aa895fddb2583f ""
@@ -17,6 +17,7 @@
   "C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmmi12.tfm" 1136765053 1524 4414a8315f39513458b80dfc63bff03a ""
   "C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmmi6.tfm" 1136765053 1512 f21f83efb36853c0b70002322c1ab3ad ""
   "C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmmi8.tfm" 1136765053 1520 eccf95517727cb11801f4f1aee3a21b4 ""
+  "C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmr10.tfm" 1136765053 1296 45809c5a464d5f32c8f98ba97c1bb47f ""
   "C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmr12.tfm" 1136765053 1288 655e228510b4c2a1abe905c368440826 ""
   "C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmr17.tfm" 1136765053 1292 296a67155bdbfc32aa9c636f21e91433 ""
   "C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmr6.tfm" 1136765053 1300 b62933e007d01cfd073f79b963c01526 ""
@@ -35,6 +36,7 @@
   "C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb" 1247596666 35469 dcf3a5f2fc1862f5952e3ee5eb1d98c4 ""
   "C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1247596667 35752 024fb6c41858982481f6968b5fc26508 ""
   "C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1247596667 32722 d7379af29a190c3f453aba36302ff5a9 ""
+  "C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb" 1247596666 32362 bc3f3eec7ab7d65fe700963d4017d32c ""
   "C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb" 1247596667 31809 8670ca339bf94e56da1fc21c80635e2a ""
   "C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb" 1247596667 32734 69e00a6b65cedb993666e42eedb3d48f ""
   "C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1247596667 32762 7fee39e011c23b3589931effd97b9702 ""
@@ -80,10 +82,10 @@
   "C:/Users/ddent/AppData/Local/Programs/MiKTeX/tex/latex/translations/dicts/translations-basic-dictionary-english.trsl" 1644048522 5588 0c1628daf15f4411ff1f463114c634a3 ""
   "C:/Users/ddent/AppData/Local/Programs/MiKTeX/tex/latex/translations/translations.sty" 1644048522 44247 2188b95d0ee74e31eca4d316263c58a7 ""
   "C:/Users/ddent/AppData/Local/Programs/MiKTeX/tex/latex/wrapfig/wrapfig.sty" 1044403200 26220 3701aebf80ccdef248c0c20dd062fea9 ""
-  "Chapter 19 Problems.aux" 1756527851 10567 441f53b9c390bdca68e6f2d6fdbe63cb "pdflatex"
-  "Chapter 19 Problems.tex" 1756527848 80470 03f2bcc27d78923aaf81f9733c261bc1 ""
-  "Chapter 19 Problems.toc" 1756527851 6434 af69b815cd0ba2aaacfa853ed554d32c "pdflatex"
-  "c:/Users/ddent/OneDrive/Documents/CCSF/PHYS-4A/Week 34/Chapter 19 Problems/Chapter 19 Problems.tex" 1756527848 80470 03f2bcc27d78923aaf81f9733c261bc1 ""
+  "Chapter 19 Problems.aux" 1756528394 10569 63f02263935d33c4e34541f0d725e040 "pdflatex"
+  "Chapter 19 Problems.tex" 1756528391 80689 f70757f4f50ecae4cd89b46ec54351c0 ""
+  "Chapter 19 Problems.toc" 1756528394 6436 02b7caa3e33e978af5c99c3f3a064e78 "pdflatex"
+  "c:/Users/ddent/OneDrive/Documents/CCSF/PHYS-4A/Week 34/Chapter 19 Problems/Chapter 19 Problems.tex" 1756528391 80689 f70757f4f50ecae4cd89b46ec54351c0 ""
   "picture_19-20.png" 1756225327 23507 0f38d8f4b4218ae5d5722aab3f32de66 ""
   "picture_19-22.png" 1756225327 16353 72ce8d6644fb623347ffb106ada0a2ac ""
   "picture_19-23.png" 1756253951 10008 223ec69ca46f1e9cf835bec9dc184f65 ""
