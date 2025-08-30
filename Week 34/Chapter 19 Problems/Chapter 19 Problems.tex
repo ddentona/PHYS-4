@@ -1442,7 +1442,57 @@
         Figure 19-28 shows a hypothetical speed distribution for particles of a certain gas: $P(v) = Cv^2$ for $0 < v \leq v_0$ and $P(v) = 0$ for $v > v_0$.
         Find (a) an expression for $C$ in terms of $v_0$, (b) the average speed of the particles, and (c) their rms speed.
 
-        \subsection{Solution}
+        \subsection{Solution (a)}
+            We can integrate the speed distribution along the velocity line.
+            \begin{align}
+                \int_{0}^{\infty} P(v)\,dv  &=  \int_{0}^{v_0} P(v)\,dv + \int_{v_0}^{\infty} P(v)\,dv\\
+                    &=  \int_{0}^{v_0} Cv^2\,dv + \int_{v_0}^{\infty} 0\,dv\\
+                    &=  \left[ \frac{Cv^3}{3} \right]_0^\infty
+                    =   \frac{Cv_0^3}{3} - \frac{C*0^3}{3}
+                    =   \frac{Cv_0^3}{3}\\
+                    &=  1
+            \end{align}
+
+            This can in turn be solved for $C$.
+            \begin{gather}
+                \frac{Cv_0^3}{3}    =   1\\
+                \boxed{C = \frac{3}{v_0^3}}
+            \end{gather}
+
+        \subsection{Solution (b)}
+            The average speed can be found similarly by integrating the distribution times the velocity.
+            \begin{align}
+                \int_{0}^{\infty} v\,P(v)\,dv   &=  \int_{0}^{v_0} Cv^3\,dv + \int_{v_0}^{\infty} v * 0\,dv\\
+                    &=  \left[ \frac{Cv^4}{4} \right]_0^{v_0} + \left[ 0 \right]_{v_0}^\infty\\
+                    &=  \frac{Cv_0^4}{4}
+                    =   v_{\rm avg}
+            \end{align}
+
+            Since we know the value of $C$, we can substitute in here.
+            \begin{align}
+                v_{\rm avg} &=  \frac{Cv_0^4}{4}
+                    =   \frac{3}{v_0^3} \times \frac{v_0^4}{4}
+                    =   \boxed{\frac{3}{4}v_0}
+            \end{align}
+
+        \subsection{Solution (c)}
+            Here, we integrate the distribution times the velocity squared.
+            \begin{align}
+                \int_{0}^{\infty} v^2\,P(v)\,dv &=  \int_{0}^{v_0} Cv^4\,dv + \int_{v_0}^{\infty} v^2 * 0\,dv\\
+                    &=  \left[ \frac{Cv^5}{5} \right]_0^{v_0} + \left[ 0 \right]_{v_0}^\infty\\
+                    &=  \frac{Cv_0^5}{5}
+                    =   v_{\rm rms}^2
+            \end{align}
+
+            We can take the square root to find the answer.
+            Knowing the value of C also allows us to limit the variables.
+            \begin{align}
+                v_{\rm rms}^2   &=  \frac{Cv_0^5}{5}\\
+                v_{\rm rms}     &=  \sqrt{\frac{Cv_0^5}{5}}
+                    =   \sqrt{\frac{3}{v_0^3} \times \frac{v_0^5}{5}}\\
+                    &=  \sqrt{\frac{3}{5} v_0^2}
+                    =   \boxed{v_0 \sqrt{\frac{3}{5}}}
+            \end{align}
 
     \pagebreak
     
