@@ -1,0 +1,285 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+% \usepackage{physics}
+\usepackage{siunitx}
+\usepackage{wrapfig}
+
+% \AtBeginDocument{\RenewCommandCopy\qty\SI}
+
+\newcommand{\E}[1]{\times 10^{#1}}
+
+\title{
+    Chapter 20 End-of-Chapter Problems
+    \\ \small
+    Halliday \& Resnick, 10th Edition
+}
+
+\author{Doanld Aingworth IV}
+
+\date{\small Hit me where it Matters}
+
+\begin{document}
+    \DeclareSIUnit{\atm}{atm}
+    \DeclareSIUnit{\cal}{\ cal}
+    \DeclareSIUnit{\Cal}{\ Cal}
+    \DeclareSIUnit{\calorie}{\ cal}
+    \DeclareSIUnit{\Calorie}{\ Cal}
+    \DeclareSIUnit{\celsiusdegree}{C^\circ}
+    \DeclareSIUnit{\fahrenheit}{^\circ F}
+    \DeclareSIUnit{\torr}{\ torr}
+
+    \maketitle
+
+    \pagebreak
+    \section{Problem 1}
+        Suppose 4.00 mol of an ideal gas undergoes a reversible isothermal expansion from volume $V_1$ to volume $V_2 = 2.00\,V_1$ at temperature $T = 400\,\unit{\kelvin}$. 
+        Find (a) the work done by the gas and (b) the entropy change of the gas. 
+        (c) If the expansion is reversible and adiabatic instead of isothermal, what is the entropy change of the gas?
+
+        \subsection{Solution (a)}
+            The work done by a system is defined as an integral.
+            \begin{equation}
+                W   =   \int_{i}^{f} p\,dV
+            \end{equation}
+
+            We do not know the value of the pressure, but the ideal gas law can be used here.
+            \begin{equation}
+                pV = nRT \to p = \frac{nRT}{V}
+            \end{equation}
+
+            This in turn can be put into the above equation.
+            Bear in mind thet the number of moles and the temperture remain constant.
+            \begin{align}
+                W_{\rm in}  &=  -\int_{V_i}^{V_f} \frac{nRT}{V}\,dV
+                    =   -nRT\,\int_{V_i}^{2V_i} \frac{1}{V}\,dV\\
+                    &=  -nRT\,\left[ \ln(V) \right]_{V_i}^{2V_i}
+                    =   -nRT\ln\left( \frac{2V_i}{V_i} \right)\\
+                    &=  -nRT\ln\left( 2 \right)
+                    =   -4*8.31*400*\ln(2)\\
+                    &=  -13296*\ln(2)
+                    =   \boxed{-9216.1\,\unit{\joule}}
+            \end{align}
+
+        \subsection{Solution (b)}
+            The entropy change of a system is also defined by an equation.
+            \begin{equation}
+                \Delta S    =   \int_{i}^{f} \frac{1}{T}\,dQ
+            \end{equation}
+
+            This is an isothermal process, so the temperature remains constant. 
+            Due to that, we can simplify our equation for the change in entropy.
+            \begin{align}
+                \Delta S    &=  \int_{i}^{f} \frac{1}{T}\,dQ
+                    =   \frac{1}{T}\int_{i}^{f} \,dQ
+                    =   \frac{Q}{T}
+            \end{align}
+
+            We know the work done on the gas.
+            The change in internal energy is correlated with the change in temperature ($\Delta E_{\rm int} = nC_V \Delta T$).
+            Since there is no change in temperature, there would be no change in internal energy ($\Delta E_{\rm int} = 0$).
+            This can be used with the first law of thermodynamics to find the heat inserted.
+            \begin{eqnarray}
+                \Delta E_{\rm int}  =   Q_{\rm in} + W_{\rm in}\\
+                0   =   Q_{\rm in}  -   9216.1\,\unit{\joule}\\
+                Q_{\rm in}  =   9216.1\,\unit{\joule}
+            \end{eqnarray}
+
+            This can be used ot find the change in entropy.
+            \begin{align}
+                \Delta S    &=  \frac{Q}{T}
+                    =   \frac{9216.1\,\unit{\joule}}{400\unit{\kelvin}}
+                    =   \boxed{23.04\,\unit{\joule/\kelvin}}
+            \end{align}
+
+        \subsection{Solution (c)}
+            If the process is adiabatic, there is no net heat inserted in at all.
+            This means that $Q = 0$. 
+            Since the temperature is also constant, the net formula would be solvable.
+            \begin{align}
+                \Delta S    &=  \frac{1}{T} \int_{i}^{f}\,dQ
+                    =   \frac{Q_{\rm in}}{T}
+                    =   \frac{0}{T}
+                    =   \boxed{0\,\unit{\joule}}
+            \end{align}
+
+    \pagebreak
+    \section{Problem 3}
+        A 2.50 mol sample of an ideal gas expands reversibly and isothermally at 360 K until its volume is doubled. 
+        What is the increase in entropy of the gas?
+
+        \subsection{Solution}
+            The process is isothermal, so $T$ is constant, $\Delta T = 0$, and $\Delta E_{\rm int} = 0$.
+            We can use this to find the work done on the gas.
+            Since we are looking to double the volume, the formula for the final volume would be $V_f = 2V_i$.
+            We can also use the ideal gas law here.
+            \begin{gather}
+                pV  =   nRT \to p = \frac{nRT}{V}\\
+                \begin{align}
+                    W   &=  -\int_{V_i}^{V_f} p\,dV
+                        =   -\int_{V_i}^{2V_i} \frac{nRT}{V}\,dV
+                        =   -nRT\int_{V_i}^{2V_i} \frac{1}{V}\,dV\\
+                        &=  -nRT\left[ \ln(V) \right]_{V_i}^{2V_i}
+                        =   -nRT\ln\left( \frac{2V_i}{V_i} \right)
+                        =   -nRT\ln(2)
+                \end{align}
+            \end{gather}
+
+            The work inserted is directly related to heat inserted, itself directly related to enchange in entropy, so we can use that.
+            Bear in mind this is an isothermal process.
+            \begin{gather}
+                \Delta E_{\rm int}  =   0
+                    =   Q + W\\
+                Q   =   -W
+                    =   nRT\ln(2)\\
+                \begin{align}
+                    \Delta S    &=  \frac{Q}{T}
+                        =   \frac{nRT\ln(2)}{T}
+                        =   nR\ln(2)\\
+                        &=  2.50 * 8.31 * \ln(2)
+                        =   \boxed{14.4\,\unit{\joule}}
+                \end{align}
+            \end{gather}
+
+    \pagebreak
+    \section{Problem 5}
+        Find (a) the energy absorbed as heat and (b) the change in entropy of a 2.00 kg block of copper whose temperature is increased reversibly from 25.0\unit{\celsius} to 100\unit{\celsius}. 
+        The specific heat of copper is 386 \unit{\joule/\kilo\gram\cdot\kelvin}.
+
+        \subsection{Solution (a)}
+            First we can calculate the change in temperature.
+            \begin{equation}
+                \Delta T    =   100\unit{\celsius} - 25\unit{\celsius}
+                    =   75\unit{\celsiusdegree}
+                    =   75\unit{\kelvin}
+            \end{equation}
+
+            Heat absorbed is calculatable from there from the change in temperature.
+            \begin{equation}
+                Q   =   cm\Delta T
+                    =   386\,\unit{\frac{\joule}{\kilo\gram\cdot\kelvin}} * 2\,\unit{\kilo\gram} * 75\unit{\kelvin}
+                    =   \boxed{57900\,\unit{\joule}}
+            \end{equation}
+
+        \subsection{Solution (b)}
+        The change in entropy is calculatable by an integral.
+        \begin{align}
+            \Delta S    &=  \int_{i}^{f}\frac{1}{T}\,dQ
+        \end{align}
+
+        We have our known equation of the heat, which we can adapt for use differentially.
+        \begin{gather}
+            Q   =   cm\Delta T\\
+            dQ  =   cm\,dT
+        \end{gather}
+
+        This can be put into the integral above.
+        \begin{align}
+            \Delta S    &=  \int_{25\unit{\kelvin}}^{75\unit{\kelvin}}\frac{cm}{T}\,dT
+                =   cm \int_{25\unit{\celsius}}^{75\unit{\celsius}}\frac{1}{T}\,dT
+                =   cm\ln\left( \frac{100\unit{\celsius}}{25\unit{\celsius}} \right)\\
+                &=  386\,\unit{\frac{\joule}{\kilo\gram\cdot\kelvin}} * 2\,\unit{\kilo\gram} * \ln\left( \frac{373\unit{\kelvin}}{298\unit{\kelvin}} \right)\\
+                &=  \boxed{173.3\,\unit{\joule/\kelvin}}
+        \end{align}
+
+    \pagebreak
+    \section{Problem 7}
+        A 50.0 g block of copper whose temperature is 400 K is placed in an insulating box with a 100 g block of lead whose temperature is 200 K. 
+        (a) What is the equilibrium temperature of the two-block system? 
+        (b) What is the change in the internal energy of the system between the initial state and the equilibrium state? 
+        (c) What is the change in the entropy of the system? (See Table 18-3.)
+
+        \subsection{Solution}
+
+    \pagebreak
+    \section{Problem 9}
+        A 10 g ice cube at -10\unit{\celsius} is placed in a lake whose temperature is 15°C. 
+        Calculate the change in entropy of the cube-lake system as the ice cube comes to thermal equilibrium with the lake. 
+        The specific heat of ice is 2220 \unit{\joule/\kilo\gram\cdot\kelvin}. 
+        (Hint: Will the ice cube affect the lake temperature?)
+
+        \subsection{Solution}
+
+    \pagebreak
+    \section{Problem 15}
+        A mixture of 1773 g of water and 227 g of ice is in an initial equilibrium state at 0.000\unit{\celsius}. 
+        The mixture is then, in a reversible process, brought to a second equilibrium state where the water-ice ratio, by mass, is 1.00 : 1.00 at 0.000\unit{\celsius}. 
+        (a) Calculate the entropy change of the system during this process. 
+        (The heat of fusion for water is 333 kJ/kg.) 
+        (b) The system is then returned to the initial equilibrium state in an irreversible process (say, by using a Bunsen burner). 
+        Calculate the entropy change of the system during this process. 
+        (c) Are your answers consistent with the second law of thermodynamics?
+
+        \subsection{Solution}
+
+    \pagebreak
+    \section{Problem 23}
+
+        \subsection{Solution}
+
+    \pagebreak
+    \section{Problem 25}
+
+        \subsection{Solution}
+
+    \pagebreak
+    \section{Problem 27}
+
+        \subsection{Solution}
+
+    \pagebreak
+    \section{Problem 29}
+
+        \subsection{Solution}
+
+    \pagebreak
+    \section{Problem 37}
+
+        \subsection{Solution}
+
+    \pagebreak
+    \section{Problem 39}
+
+        \subsection{Solution}
+
+    \pagebreak
+    \section{Problem 43}
+
+        \subsection{Solution}
+
+    \pagebreak
+    \section{Problem 45}
+
+        \subsection{Solution}
+
+    \pagebreak
+    \section{Problem 49}
+
+        \subsection{Solution}
+
+    \pagebreak
+    \section{Problem 53}
+
+        \subsection{Solution}
+
+    \pagebreak
+    \section{Problem 57}
+
+        \subsection{Solution}
+
+    \pagebreak
+    \section{Problem 67}
+
+        \subsection{Solution}
+
+    \pagebreak
+    \section{Problem 71}
+
+        \subsection{Solution}
+
+    \pagebreak
+
+    \tableofcontents
+
+\end{document}
