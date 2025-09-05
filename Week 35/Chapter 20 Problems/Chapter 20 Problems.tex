@@ -194,15 +194,21 @@
             There's an equivalence statement that can be made about the heat traded between the blocks.
             \begin{gather}
                 Q_{\rm Cu}  =   Q_{\rm Pb}\\
-                c_{\rm Cu} m_{\rm Cu}\,\Delta T_{\rm Cu} = c_{\rm Pb} m_{\rm Pb}\,\Delta T_{\rm Pb}\\
-                386\,\unit{\frac{J}{\kilo\gram\cdot\kelvin}} * 0.05\,\unit{\kilo\gram} * \left( T_f - 400\unit{\kelvin} \right) = 128\,\unit{\frac{J}{\kilo\gram\cdot\kelvin}} * 0.1\,\unit{\kilo\gram} * \left( T_f - 200\unit{\kelvin} \right)\\
-                19.3\,\unit{\joule/\kelvin} * T_f - 19.3\,\unit{\joule/\kelvin} * 400\unit{\kelvin} = 12.8\,\unit{\joule/\kelvin} * T_f - 12.8\,\unit{\joule/\kelvin} * 200\unit{\kelvin}\\
-                T_f * (19.3\,\unit{\joule/\kelvin} - 12.8\,\unit{\joule/\kelvin}) = 19.3\,\unit{\joule/\kelvin} * 400\unit{\kelvin} - 12.8\,\unit{\joule/\kelvin} * 200\unit{\kelvin}\\
-                6.5\,\unit{\joule/\kelvin} * T_f = 7720\,\unit{\joule} - 2560\,\unit{\joule}
-                    =   5160\,\unit{\joule}\\
-                T_f =   \frac{5160\,\unit{\joule}}{6.5\,\unit{\joule/\kelvin}}
-                    =   7
+                c_{\rm Cu} m_{\rm Cu}\,\left| \Delta T_{\rm Cu} \right| = c_{\rm Pb} m_{\rm Pb}\,\left| \Delta T_{\rm Pb} \right|\\
+                386\,\unit{\frac{J}{\kilo\gram\cdot\kelvin}} * 0.05\,\unit{\kilo\gram} * \left( 400\unit{\kelvin} - T_f \right) = 128\,\unit{\frac{J}{\kilo\gram\cdot\kelvin}} * 0.1\,\unit{\kilo\gram} * \left( T_f - 200\unit{\kelvin} \right)\\
+                19.3\,\unit{\joule/\kelvin} * 400\unit{\kelvin} - 19.3\,\unit{\joule/\kelvin} * T_f = 12.8\,\unit{\joule/\kelvin} * T_f - 12.8\,\unit{\joule/\kelvin} * 200\unit{\kelvin}\\
+                T_f * (19.3\,\unit{\joule/\kelvin} + 12.8\,\unit{\joule/\kelvin}) = 19.3\,\unit{\joule/\kelvin} * 400\unit{\kelvin} + 12.8\,\unit{\joule/\kelvin} * 200\unit{\kelvin}\\
+                32.1\,\unit{\joule/\kelvin} * T_f = 7720\,\unit{\joule} + 2560\,\unit{\joule}
+                    =   10280\,\unit{\joule}\\
+                T_f =   \frac{10280\,\unit{\joule}}{32.1\,\unit{\joule/\kelvin}}
+                    =   \boxed{320\unit{\kelvin}}
             \end{gather}
+
+        \subsection{Solution (b)}
+            We can use the first law of thermodynamics here.
+            This involves finding the change in work in each.
+            We already have the formula for the change in heat for each body.
+            Note that the volume is not constant for either and can be calculated using coefficients of expansion.
 
     \pagebreak
     \section{Problem 9}
