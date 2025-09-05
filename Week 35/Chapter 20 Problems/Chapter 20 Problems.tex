@@ -190,7 +190,8 @@
         (b) What is the change in the internal energy of the system between the initial state and the equilibrium state? 
         (c) What is the change in the entropy of the system? (See Table 18-3.)
 
-        \subsection{Solution}
+        \subsection{Solution (a)}
+            There's an equivalence statement 
 
     \pagebreak
     \section{Problem 9}
@@ -203,7 +204,43 @@
             We can assume that the ice will only negligibly affect the lake's temperature.
             From this, we can devise the formula for the energy used to melt and warm up the ice.
             \begin{align}
-                Q   &=  c_{\rm ice} m \Delta T_1 + L_{\rm fus} m + c_{\rm water} m \Delta T_2
+                Q   &=  c_{\rm ice} m \Delta T_1 + L_{\rm fus} m + c_{\rm water} m \Delta T_2\\
+                    &=  2220 * 0.010 * (10\,\unit{\kelvin}) + 334 * 10 + 4186 * 0.010 * (15\,\unit{\kelvin})\\
+                    &=  222 + 3340 + 627.9
+                    =   4189.9\,\unit{\joule}
+            \end{align}
+
+            This is the total heat required for the entire block of ice to melt and warm.
+            We can turn this differentiable, with respect to the temperature when warming and with respect to the mass when melting.
+            \begin{align}
+                dQ  &=  c_{\rm ice} m\,dT + L_{\rm fus}\,dm + c_{\rm water} m\,dT
+            \end{align}
+
+            We can from here find the change in entropy by integral.
+            The heat from fusion will be from 0g to 10g rather than from 10g to 0g because it is measuring the mass converted to water rather than the mass that is ice.
+            \begin{align}
+                \Delta S    &=  \int_{i}^{f}\frac{1}{T}\,dQ
+                    =   \int_{263\unit{\kelvin}}^{273\unit{\kelvin}} \frac{c_{\rm ice} m}{T}\,dT
+                        +   \int_{0\unit{\gram}}^{10\unit{\gram}} L_{\rm fus}\,dm
+                        +   \int_{273\unit{\kelvin}}^{288\unit{\kelvin}} \frac{c_{\rm water} m}{T}\,dT\\
+                    &=  c_{\rm ice} m\,\left[ \ln(T) \right]_{263\unit{\kelvin}}^{273\unit{\kelvin}} + L_{\rm fus}\,\left[ m \right]_{0\unit{\gram}}^{10\unit{\gram}} + c_{\rm ice} m\,\left[ \ln(T) \right]_{273\unit{\kelvin}}^{288\unit{\kelvin}}\\
+                    &=  2220 * 0.010 * \ln\left( \frac{273}{263} \right) + \frac{334 * 10}{273} + 4186 * 0.010 * \ln\left( \frac{288}{273} \right)\\
+                    &=  0.828\,\unit{\joule/\kelvin} + 12.234\,\unit{\joule/\kelvin} + 2.239\,\unit{\joule/\kelvin}
+                    =   15.302\,\unit{\joule/\kelvin}
+            \end{align}
+
+            The lake also releases heat, which would itself give a change in entropy. 
+            Since the lake's temperature is nearly constant, the process is isothermal.
+            \begin{align}
+                \Delta S    &=  \frac{Q}{T}
+                    =   \frac{-4189.9\,\unit{\joule}}{288}
+                    =   -14.548\,\unit{\joule/\kelvin}
+            \end{align}
+
+            Add the two changes in entropy together to find the ultimate change in entropy.
+            \begin{align}
+                \Delta S_{\Sigma}   &=  15.302\,\unit{\joule/\kelvin} - 14.548\unit{\joule/\kelvin}
+                    =   \boxed{0.754\,\unit{\joule/\kelvin}}
             \end{align}
 
     \pagebreak
