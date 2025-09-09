@@ -193,8 +193,9 @@
         \subsection{Solution (a)}
             There's an equivalence statement that can be made about the heat traded between the blocks.
             \begin{gather}
-                Q_{\rm Cu}  =   Q_{\rm Pb}\\
-                c_{\rm Cu} m_{\rm Cu}\,\left| \Delta T_{\rm Cu} \right| = c_{\rm Pb} m_{\rm Pb}\,\left| \Delta T_{\rm Pb} \right|\\
+                Q_{\rm net} =   0   =   Q_{\rm Cu} + Q_{\rm Pb}\\
+                -Q_{\rm Cu}  =   Q_{\rm Pb}\\
+                -c_{\rm Cu} m_{\rm Cu} \Delta T_{\rm Cu} = c_{\rm Pb} m_{\rm Pb} \Delta T_{\rm Pb} \\
                 386\,\unit{\frac{J}{\kilo\gram\cdot\kelvin}} * 0.05\,\unit{\kilo\gram} * \left( 400\unit{\kelvin} - T_f \right) = 128\,\unit{\frac{J}{\kilo\gram\cdot\kelvin}} * 0.1\,\unit{\kilo\gram} * \left( T_f - 200\unit{\kelvin} \right)\\
                 19.3\,\unit{\joule/\kelvin} * 400\unit{\kelvin} - 19.3\,\unit{\joule/\kelvin} * T_f = 12.8\,\unit{\joule/\kelvin} * T_f - 12.8\,\unit{\joule/\kelvin} * 200\unit{\kelvin}\\
                 T_f * (19.3\,\unit{\joule/\kelvin} + 12.8\,\unit{\joule/\kelvin}) = 19.3\,\unit{\joule/\kelvin} * 400\unit{\kelvin} + 12.8\,\unit{\joule/\kelvin} * 200\unit{\kelvin}\\
@@ -205,10 +206,31 @@
             \end{gather}
 
         \subsection{Solution (b)}
-            We can use the first law of thermodynamics here.
-            This involves finding the change in work in each.
-            We already have the formula for the change in heat for each body.
-            Note that the volume is not constant for either and can be calculated using coefficients of expansion.
+            Since the system is insulated, all the energy that goes out of one of the blocks goes into the other. 
+            This makes there no net change in the net energy overall.
+            The answer is \boxed{0}.
+
+        \subsection{Solution (c)}
+            This can be found by an integral, but first we should change a known equation (for the heat) into a differential one.
+            For this, we can use our earlier equation for the heat. 
+            \begin{align}
+                Q   &=  cm\Delta T\\
+                dQ  &=  cm\,dT\\
+                Q_{\rm net} &=  Q_{\rm Cu} + Q_{\rm Pb}\\
+                dQ_{\rm net}    &=  dQ_{\rm Cu} + dQ_{\rm Pb}\\
+                    &=  c_{\rm Cu} m_{\rm Cu} \, dT_{\rm Cu} + c_{\rm Pb} m_{\rm Pb} \, dT_{\rm Pb}
+            \end{align}
+
+            At this point, we can put this into the integral of the change in entropy.
+            \begin{align}
+                \Delta S    &=  \int \frac{1}{T}\,dQ
+                    =   \int_{400\unit{\kelvin}}^{320\unit{\kelvin}} \frac{c_{\rm Cu} m_{\rm Cu}}{T} \,dT + \int_{200\unit{\kelvin}}^{320\unit{\kelvin}} \frac{c_{\rm Pb} m_{\rm Pb}}{T} \,dT\\
+                    &=  c_{\rm Cu} m_{\rm Cu} \left[ \ln(T) \right]_{400\unit{\kelvin}}^{320\unit{\kelvin}} + c_{\rm Pb} m_{\rm Pb} \left[ \ln(T) \right]_{200\unit{\kelvin}}^{320\unit{\kelvin}}\\
+                    &=  c_{\rm Cu} m_{\rm Cu} \ln\left( \frac{320}{400} \right) + c_{\rm Pb} m_{\rm Pb} \ln\left( \frac{320}{200} \right)\\
+                    &=  386\,\unit{\frac{\joule}{\kilo\gram\cdot\kelvin}} * 0.05\,\unit{\kilo\gram} * \ln\left( \frac{320}{400} \right) + 128\,\unit{\frac{\joule}{\kilo\gram\cdot\kelvin}} * 0.1\,\unit{\kilo\gram} * \ln\left( \frac{320}{200} \right)\\
+                    &=  19.3 * \ln(0.8) + 12.8 * \ln(1.6)
+                    =   \boxed{1.709\,\unit{\joule/\kelvin}}
+            \end{align}
 
     \pagebreak
     \section{Problem 9}
@@ -313,31 +335,73 @@
 
     \pagebreak
     \section{Problem 23}
+        A Carnot engine whose low-temperature reservoir is at 17\unit{\celsius} has an efficiency of 40\%. 
+        By how much should the temperature of the high-temperature reservoir be increased to increase the efficiency to 50\%?
 
         \subsection{Solution}
+            First we convert temperature from Celsius to Kelvin.
+            \begin{equation}
+                17\unit{\celsius} + 273.15\unit{\kelvin} = 290.15\unit{\kelvin}
+            \end{equation}
+
+            This gives us the low temperature and we already know the efficiency. 
+            We can also calculate the high temperature.
+            \begin{gather}
+                \varepsilon_C   =   1 - \frac{T_L}{T_H}\\
+                \frac{T_L}{T_H} =   1 - \varepsilon_C\\
+                \begin{align}
+                    T_{H;i} &=  \frac{T_L}{1 - \varepsilon_C}
+                        =   \frac{290.15\unit{\kelvin}}{1 - 0.4}
+                        =   \frac{290.15\unit{\kelvin}}{0.60}
+                        =   483.583\unit{\kelvin}\\
+                    T_{H;f} &=  \frac{T_L}{1 - \varepsilon_C}
+                        =   \frac{290.15\unit{\kelvin}}{1 - 0.5}
+                        =   \frac{290.15\unit{\kelvin}}{0.5}
+                        =   580.3\unit{\kelvin}\\
+                    \Delta T_H  &=  580.3\unit{\kelvin} - 483.583\unit{\kelvin}
+                        =   \boxed{96.717\unit{\kelvin}}
+                \end{align}
+            \end{gather}
 
     \pagebreak
     \section{Problem 25}
+        A Carnot engine has an efficiency of 22.0\%. 
+        It operates between constant-temperature reservoirs differing in temperature by 75.0\unit{\celsiusdegree}. 
+        What is the temperature of the (a) lower-temperature and (b) higher-temperature reservoir?
 
         \subsection{Solution}
 
     \pagebreak
     \section{Problem 27}
+        A Carnot engine operates between 235\unit{\celsius} and 115\unit{\celsius}, absorbing $6.30\E{4}$ J per cycle at the higher temperature.
+        (a) What is the efficiency of the engine? 
+        (b) How much work per cycle is this engine capable of performing?
 
         \subsection{Solution}
 
     \pagebreak
     \section{Problem 29}
+        Figure 20-27 shows a reversible cycle through which 1.00 mol of a monatomic ideal gas is taken. 
+        Assume that $p = 2p_0$, $V = 2V_0$, $p_0 = 1.01 \E{5}$ Pa, and $V_0 = 0.0225 \unit{\meter^3}$. 
+        Calculate (a) the work done during the cycle, (b) the energy added as heat during stroke $abc$, and (c) the efficiency of the cycle. 
+        (d) What is the efficiency of a Carnot engine operating between the highest and lowest temperatures that occur in the cycle? 
+        (e) Is this greater than or less than the efficiency calculated in (c)?
 
         \subsection{Solution}
 
     \pagebreak
     \section{Problem 37}
+        A heat pump is used to heat a building. 
+        The external temperature is less than the internal temperature. 
+        The pump's coefficient of performance is 3.8, and the heat pump delivers 7.54 MJ as heat to the building each hour. 
+        If the heat pump is a Carnot engine working in reverse, at what rate must work be done to run it?
 
         \subsection{Solution}
 
     \pagebreak
     \section{Problem 39}
+        A Carnot air conditioner takes energy from the thermal energy of a room at 70\unit{\fahrenheit} and transfers it as heat to the outdoors, which is at 96\unit{\fahrenheit}. 
+        For each joule of electric energy required to operate the air conditioner, how many joules are removed from the room?
 
         \subsection{Solution}
 
