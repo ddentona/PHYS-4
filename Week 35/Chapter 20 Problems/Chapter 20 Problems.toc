@@ -34,17 +34,17 @@
 \contentsline {subsection}{\numberline {11.1}Solution}{17}{}%
 \contentsline {section}{\numberline {12}Problem 39}{18}{}%
 \contentsline {subsection}{\numberline {12.1}Solution}{18}{}%
-\contentsline {section}{\numberline {13}Problem 43}{18}{}%
-\contentsline {subsection}{\numberline {13.1}Solution}{18}{}%
-\contentsline {section}{\numberline {14}Problem 45}{18}{}%
-\contentsline {subsection}{\numberline {14.1}Solution}{18}{}%
-\contentsline {section}{\numberline {15}Problem 49}{18}{}%
-\contentsline {subsection}{\numberline {15.1}Solution}{18}{}%
-\contentsline {section}{\numberline {16}Problem 53}{18}{}%
-\contentsline {subsection}{\numberline {16.1}Solution}{19}{}%
-\contentsline {section}{\numberline {17}Problem 57}{19}{}%
-\contentsline {subsection}{\numberline {17.1}Solution}{19}{}%
-\contentsline {section}{\numberline {18}Problem 67}{19}{}%
-\contentsline {subsection}{\numberline {18.1}Solution}{19}{}%
-\contentsline {section}{\numberline {19}Problem 71}{19}{}%
+\contentsline {section}{\numberline {13}Problem 43}{19}{}%
+\contentsline {subsection}{\numberline {13.1}Solution}{19}{}%
+\contentsline {section}{\numberline {14}Problem 45}{19}{}%
+\contentsline {subsection}{\numberline {14.1}Solution}{19}{}%
+\contentsline {section}{\numberline {15}Problem 49}{19}{}%
+\contentsline {subsection}{\numberline {15.1}Solution}{19}{}%
+\contentsline {section}{\numberline {16}Problem 53}{19}{}%
+\contentsline {subsection}{\numberline {16.1}Solution}{20}{}%
+\contentsline {section}{\numberline {17}Problem 57}{20}{}%
+\contentsline {subsection}{\numberline {17.1}Solution}{20}{}%
+\contentsline {section}{\numberline {18}Problem 67}{20}{}%
+\contentsline {subsection}{\numberline {18.1}Solution}{20}{}%
+\contentsline {section}{\numberline {19}Problem 71}{20}{}%
 \contentsline {subsection}{\numberline {19.1}Solution}{20}{}%

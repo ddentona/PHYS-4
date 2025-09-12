@@ -28,6 +28,7 @@
     \DeclareSIUnit{\Calorie}{\ Cal}
     \DeclareSIUnit{\celsiusdegree}{C^\circ}
     \DeclareSIUnit{\fahrenheit}{^\circ F}
+    \DeclareSIUnit{\fahrenheitdegree}{F^\circ}
     \DeclareSIUnit{\torr}{\ torr}
 
     \maketitle
@@ -568,9 +569,52 @@
         For each joule of electric energy required to operate the air conditioner, how many joules are removed from the room?
 
         \subsection{Solution}
+            The first thing we do is convert the Fahrenheit temperatures into Celsius.
+            \begin{align}
+                T_{\unit{\celsius}}  &=  \frac{5}{9}(T_{\unit{\fahrenheit}} - 32\unit{\fahrenheitdegree})\,\unit{\celsius}\\
+                T_L &=  70\unit{\fahrenheit}
+                    =   \frac{5}{9}(70\unit{\fahrenheit} - 32\unit{\fahrenheitdegree})\,\unit{\celsius}
+                    =   \frac{5}{9} * 38\unit{\celsius} 
+                    =   21.11\unit{\celsius}\\
+                T_H &=  96\unit{\fahrenheit}
+                    =   \frac{5}{9}(96\unit{\fahrenheit} - 32\unit{\fahrenheitdegree})\,\unit{\celsius}
+                    =   \frac{5}{9} * 64\unit{\celsius}
+                    =   35.56\unit{\celsius}
+            \end{align}
 
-    % \pagebreak
+            Next, we convert Celsius to Kelvin.
+            \begin{align}
+                T_{\unit{\kelvin}}  &=  T_{\unit{\celsius}} + 273.15\unit{\kelvin}\\
+                T_L &=  21.11\unit{\celsius} + 273.15\unit{\kelvin}
+                    =   294.26\unit{\kelvin}\\
+                T_H &=  35.56\unit{\celsius} + 273.15\unit{\kelvin}
+                    =   308.71\unit{\kelvin}
+            \end{align}
+
+            From here, we can find the Carnot coefficient of performance of the air conditioner (a Carnot refrigerator).
+            \begin{align}
+                K_C &=  \frac{T_L}{T_H - T_L}
+                    =   \frac{294.26\unit{\kelvin}}{308.71\unit{\kelvin} - 294.26\unit{\kelvin}}
+                    =   \frac{294.26}{14.45}
+                    =   20.36
+            \end{align}
+
+            This in turn is still a refrigerator, which is a ratio of the heat removed to the work needed to be done.
+            The work in this case would technically be only one joule.
+            \begin{gather}
+                K_C =   \frac{|Q_L|}{|W|}
+                    =   \frac{|Q_L|}{1\unit{\joule}}
+                    =   20.36\\
+                Q_L =   \boxed{20.36\unit{\joule}}
+            \end{gather}
+
+    \pagebreak
     \section{Problem 43}
+        \begin{wrapfigure}{r}{0.25\textwidth}
+            \vspace{-30pt}
+            \includegraphics[width=0.25\textwidth]{picture_20-32.png} 
+            % \label{fig:wrapfig}
+        \end{wrapfigure}
         Figure 20-32 represents a Carnot engine that works between temperatures $T_1$ = 400 K and $T_2$ = 150 K and drives a Carnot refrigerator that works between temperatures $T_3$ = 325 K and $T_4$ = 225 K. 
         What is the ratio $Q_3/Q_1$?
 
