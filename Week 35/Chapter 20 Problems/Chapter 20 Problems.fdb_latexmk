@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1757719798.625 "/Users/dentonaingworth/Documents/CCSF/PHYS-4A/Week 35/Chapter 20 Problems/Chapter 20 Problems.tex" "Chapter 20 Problems.pdf" "Chapter 20 Problems" 1757719799.26063 0
-  "/Users/dentonaingworth/Documents/CCSF/PHYS-4A/Week 35/Chapter 20 Problems/Chapter 20 Problems.tex" 1757719798.43032 38978 94c68d69e31a26d677a50f552ab29f5e ""
+["pdflatex"] 1757720200.51403 "/Users/dentonaingworth/Documents/CCSF/PHYS-4A/Week 35/Chapter 20 Problems/Chapter 20 Problems.tex" "Chapter 20 Problems.pdf" "Chapter 20 Problems" 1757720201.12842 0
+  "/Users/dentonaingworth/Documents/CCSF/PHYS-4A/Week 35/Chapter 20 Problems/Chapter 20 Problems.tex" 1757720199.67134 39383 dabde81e0b5fca17a38dcc81ebda7c79 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm" 1136768653 1536 74b7293ec3713bb7fdca8dd1bd1f469c ""
@@ -77,9 +77,9 @@
   "/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1727305248.69286 5467645 128b85b7cde5f5edc5cb7f1dd7ff8736 ""
   "/usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1727305230 8221424 9bdbcc07e109911bb30a75dc8990d89e ""
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
-  "Chapter 20 Problems.aux" 1757719799.21781 5156 8eb412d07860126cb99789b613ba7bf2 "pdflatex"
-  "Chapter 20 Problems.tex" 1757719798.43032 38978 94c68d69e31a26d677a50f552ab29f5e ""
-  "Chapter 20 Problems.toc" 1757719799.21859 3073 416c2a1c29b189ce0d3d75d64897e26c "pdflatex"
+  "Chapter 20 Problems.aux" 1757720201.08469 5267 a862ebf8b2075ba44c28699663cb6a91 "pdflatex"
+  "Chapter 20 Problems.tex" 1757720199.67134 39383 dabde81e0b5fca17a38dcc81ebda7c79 ""
+  "Chapter 20 Problems.toc" 1757720201.08617 3143 120163f49bb37f825dfca862c234d3b2 "pdflatex"
   "picture_20-27.png" 1757380180.37639 17838 ba038212286cdb63b6d75cbf4d20967b ""
   "picture_20-32.png" 1757380299.73917 33325 ce89f254178f5184dbca77aa6680b38c ""
   (generated)
