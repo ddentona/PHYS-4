@@ -16,7 +16,7 @@
     Halliday \& Resnick, 10th Edition
 }
 
-\author{Doanld Aingworth IV}
+\author{Donald Aingworth IV}
 
 \date{\small Hit me where it Matters}
 
@@ -619,8 +619,29 @@
         What is the ratio $Q_3/Q_1$?
 
         \subsection{Solution}
+            We have some equations related to $Q_1$ and $Q_3$. 
+            \begin{gather}
+                \frac{W}{Q_1} = \varepsilon_C = 1 - \frac{T_2}{T_1} \to
+                Q_1 = W \frac{T_1}{T_1 - T_2}\\
+                \frac{Q_4}{W} = K_C = \frac{T_4}{T_3 - T_4} = \frac{Q_4}{Q_3 - Q_4}\\
+                \frac{W}{Q_4} = \frac{T_3 - T_4}{T_4} = \frac{Q_3 - Q_4}{Q_4}\\
+                Q_3 = Q_4 + W \leftrightarrow Q_4 = Q_3 - W\\
+                Q_3 = W \left( \frac{T_4}{T_3 - T_4} + 1 \right)
+                    =   W \frac{T_3}{T_3 - T_4}
+            \end{gather}
 
-    % \pagebreak
+            From here, we can calculate the fraction of $\frac{Q_3}{Q_1}$.
+            \begin{align}
+                \frac{Q_3}{Q_1} &=  \frac{W \frac{T_3}{T_3 - T_4}}{W \frac{T_1}{T_1 - T_2}}
+                    =   \frac{T_3}{T_3 - T_4} * \frac{T_1 - T_2}{T_1}
+                    =   \frac{325\unit{\kelvin} * (400\unit{\kelvin} - 150\unit{\kelvin})}{400\unit{\kelvin} * (325\unit{\kelvin} - 225\unit{\kelvin})}\\
+                    &=  \frac{325\unit{\kelvin} * 250\unit{\kelvin}}{400\unit{\kelvin} * 100\unit{\kelvin}}
+                    =   \frac{81250}{40000}
+                    =   \frac{65}{32}
+                    =   \boxed{2.03125}
+            \end{align}
+
+    \pagebreak
     \section{Problem 45}
         Construct a table like Table 20-1 for eight molecules.
 
