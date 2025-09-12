@@ -678,8 +678,38 @@
         What is the rate at which entropy increases for the rod-reservoirs system?
 
         \subsection{Solution}
+            The thermal reservoirs can be assumed to have constant temperature. 
+            % The rod is made of copper, so the specific heat is $386\,\unit{\frac{\joule}{\kilo\gram\cdot\kelvin}}$. 
+            We have a formula for the heat that goes from the hot to the cold per unit time, which can be used here, and a formula for the change in entropy.
+            \begin{gather}
+                \Delta S    =   \int_{i}^{f} \frac{1}{T}\,dQ\\
+                \frac{Q}{t} =   \frac{kA}{L}\Delta T
+            \end{gather}
 
-    % \pagebreak
+            The two heat reservoirs have constant temperatures, so we can consider their processes isothermal.
+            This allows us a formula for the heat.
+            \begin{align}
+                \Delta S    &=  \frac{Q}{T}
+            \end{align}
+
+            Divide both sides by the unit time to get the formula for the change in entropy over time, which we can substitute our equation for the heat over time into.
+            \begin{equation}
+                \frac{\Delta S}{t}  =   \frac{1}{T} * \frac{Q}{t}
+                    =   \frac{1}{T} * \frac{kA}{L}\Delta T
+            \end{equation}
+
+            This gives us the change in entropy over time for individual reservoirs.
+            Adding the changes in entropies of the individual reservoirs together, we can get the total change in entropy.
+            The entropy of the hotter system would be decreasing, while that of the colder system would be increasing.
+            This in turn can be substituted in and solved.
+            \begin{align}
+                \frac{\Delta S}{t}  &=  \frac{kA}{L}\Delta T\,\left( \frac{1}{T_C} - \frac{1}{T_H} \right)\\
+                    &=  \frac{401 * \pi (20\E{-3})^2}{1.5}*270\unit{\kelvin}\,\left( \frac{1}{303.15\unit{\kelvin}} - \frac{1}{573.15\unit{\kelvin}} \right)\\
+                    &=  90.704 * 1.55\E{-3}
+                    =   \boxed{0.141\,\unit{\joule/\kelvin\cdot\second}}
+            \end{align}
+
+    \pagebreak
     \section{Problem 53}
         Suppose that a deep shaft were drilled in Earth's crust near one of the poles, where the surface temperature is -40\unit{\celsius}, to a depth where the temperature is 800°C. 
         (a) What is the theoretical limit to the efficiency of an engine operating between these temperatures?
