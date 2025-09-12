@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1757380104.56142 "/Users/dentonaingworth/Documents/CCSF/PHYS-4A/Week 35/Chapter 20 Problems/Chapter 20 Problems.tex" "Chapter 20 Problems.pdf" "Chapter 20 Problems" 1757380105.07529 0
-  "/Users/dentonaingworth/Documents/CCSF/PHYS-4A/Week 35/Chapter 20 Problems/Chapter 20 Problems.tex" 1757380103.81801 23029 9a7ecc420b431b33afffa1f1366ee124 ""
+["pdflatex"] 1757538678.99389 "/Users/dentonaingworth/Documents/CCSF/PHYS-4A/Week 35/Chapter 20 Problems/Chapter 20 Problems.tex" "Chapter 20 Problems.pdf" "Chapter 20 Problems" 1757538679.5303 0
+  "/Users/dentonaingworth/Documents/CCSF/PHYS-4A/Week 35/Chapter 20 Problems/Chapter 20 Problems.tex" 1757538678.25383 27003 b6cc03cdeb3c8f9a56ab123538bfd32e ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm" 1136768653 1536 74b7293ec3713bb7fdca8dd1bd1f469c ""
@@ -74,9 +74,10 @@
   "/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1727305248.69286 5467645 128b85b7cde5f5edc5cb7f1dd7ff8736 ""
   "/usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1727305230 8221424 9bdbcc07e109911bb30a75dc8990d89e ""
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
-  "Chapter 20 Problems.aux" 1757380105.03586 4720 e17a0a2bf7ac0e65f4f87d22138dca85 "pdflatex"
-  "Chapter 20 Problems.tex" 1757380103.81801 23029 9a7ecc420b431b33afffa1f1366ee124 ""
-  "Chapter 20 Problems.toc" 1757380105.03656 2801 235a4ef585a36a8588ce9a6596393587 "pdflatex"
+  "Chapter 20 Problems.aux" 1757538679.4916 4724 185912880086b74974278af116be77fb "pdflatex"
+  "Chapter 20 Problems.tex" 1757538678.25383 27003 b6cc03cdeb3c8f9a56ab123538bfd32e ""
+  "Chapter 20 Problems.toc" 1757538679.49231 2805 162497060484763eeab4d1aa6607e8ee "pdflatex"
+  "picture_20-27.png" 1757380180.37639 17838 ba038212286cdb63b6d75cbf4d20967b ""
   (generated)
   "Chapter 20 Problems.aux"
   "Chapter 20 Problems.log"
