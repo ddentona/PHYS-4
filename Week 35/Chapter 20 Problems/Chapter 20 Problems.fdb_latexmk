@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1757720200.51403 "/Users/dentonaingworth/Documents/CCSF/PHYS-4A/Week 35/Chapter 20 Problems/Chapter 20 Problems.tex" "Chapter 20 Problems.pdf" "Chapter 20 Problems" 1757720201.12842 0
-  "/Users/dentonaingworth/Documents/CCSF/PHYS-4A/Week 35/Chapter 20 Problems/Chapter 20 Problems.tex" 1757720199.67134 39383 dabde81e0b5fca17a38dcc81ebda7c79 ""
+["pdflatex"] 1757722595.33472 "/Users/dentonaingworth/Documents/CCSF/PHYS-4A/Week 35/Chapter 20 Problems/Chapter 20 Problems.tex" "Chapter 20 Problems.pdf" "Chapter 20 Problems" 1757722595.96377 0
+  "/Users/dentonaingworth/Documents/CCSF/PHYS-4A/Week 35/Chapter 20 Problems/Chapter 20 Problems.tex" 1757722594.48396 41149 c5bab809d92c79dfe096b6ccf37eaedd ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm" 1136768653 1536 74b7293ec3713bb7fdca8dd1bd1f469c ""
@@ -38,6 +38,7 @@
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1248133631 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb" 1248133631 32587 1788b0c1c5b39540c96f5e42ccd6dae8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb" 1248133631 32626 4f5c1b83753b1dd3a97d1b399a005b4b ""
+  "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/latxfont/line10.pfb" 1248133631 11493 4f5ed183a47d3197cf8cd322325db6de ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb" 1215737283 136101 f533469f523533d38317ab5729d00c8a ""
   "/usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1461363279 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/usr/local/texlive/2024/texmf-dist/tex/generic/iftex/iftex.sty" 1644112042 7237 bdd120a32c8fdb4b433cf9ca2e7cd98a ""
@@ -55,6 +56,7 @@
   "/usr/local/texlive/2024/texmf-dist/tex/latex/amsmath/amstext.sty" 1686341992 2444 0d0c1ee65478277e8015d65b86983da2 ""
   "/usr/local/texlive/2024/texmf-dist/tex/latex/base/article.cls" 1705352648 20144 147463a6a579f4597269ef9565205cfe ""
   "/usr/local/texlive/2024/texmf-dist/tex/latex/base/size12.clo" 1705352648 8449 f07039d8e4e89f21078d9b5137579bfc ""
+  "/usr/local/texlive/2024/texmf-dist/tex/latex/cancel/cancel.sty" 1388445839 7592 dd751af313a16a0308545d5bfd7aaaa2 ""
   "/usr/local/texlive/2024/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty" 1579991033 13886 d1306dcf79a944f6988e688c1785f9ce ""
   "/usr/local/texlive/2024/texmf-dist/tex/latex/etoolbox/etoolbox.sty" 1601931149 46845 3b58f70c6e861a13d927bff09d35ecbc ""
   "/usr/local/texlive/2024/texmf-dist/tex/latex/graphics-cfg/color.cfg" 1459978653 1213 620bba36b25224fa9b7e1ccb4ecb76fd ""
@@ -77,9 +79,9 @@
   "/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1727305248.69286 5467645 128b85b7cde5f5edc5cb7f1dd7ff8736 ""
   "/usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1727305230 8221424 9bdbcc07e109911bb30a75dc8990d89e ""
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
-  "Chapter 20 Problems.aux" 1757720201.08469 5267 a862ebf8b2075ba44c28699663cb6a91 "pdflatex"
-  "Chapter 20 Problems.tex" 1757720199.67134 39383 dabde81e0b5fca17a38dcc81ebda7c79 ""
-  "Chapter 20 Problems.toc" 1757720201.08617 3143 120163f49bb37f825dfca862c234d3b2 "pdflatex"
+  "Chapter 20 Problems.aux" 1757722595.92013 5267 fcd3ee12137664dfa440c6f271c9f365 "pdflatex"
+  "Chapter 20 Problems.tex" 1757722594.48396 41149 c5bab809d92c79dfe096b6ccf37eaedd ""
+  "Chapter 20 Problems.toc" 1757722595.92086 3143 c850aa38599f8645b21499eef7a21780 "pdflatex"
   "picture_20-27.png" 1757380180.37639 17838 ba038212286cdb63b6d75cbf4d20967b ""
   "picture_20-32.png" 1757380299.73917 33325 ce89f254178f5184dbca77aa6680b38c ""
   (generated)

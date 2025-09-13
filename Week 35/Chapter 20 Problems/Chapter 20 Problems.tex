@@ -1,6 +1,7 @@
 \documentclass[12pt]{article}
 \usepackage{amsmath}
 \usepackage{amssymb}
+\usepackage{cancel}
 \usepackage{graphicx}
 % \usepackage{physics}
 \usepackage{siunitx}
@@ -728,6 +729,39 @@
             \end{align}
 
         \subsection{Solution (b)}
+            We can determine the heat required to warm and melt an unspecified mass of ice from -40\unit{\celsius} to 0\unit{\celsius}. 
+            \begin{align}
+                Q   &=  Q_{\rm ice} + Q_{\rm fus}
+                    =   cm\Delta T + Lm
+                    =   (c\Delta T + L)m\\
+                    &=  (2220\,\unit{\joule/\kilo\gram\cdot\kelvin} * 40\unit\kelvin + 333\E{3} \unit{\joule/\kilo\gram})m\\
+                    &=  421800\,\unit{\joule/\kilo\gram} * m
+            \end{align}
+
+            Using our previously calculated efficiency, we can find the heat used by the engine.
+            \begin{align}
+                \varepsilon &=  \frac{W}{Q_H}\\
+                P_H &=  \frac{P}{\varepsilon}
+                    =   \frac{100\E{6}\unit{\watt}}{0.783}
+                    =   127.714\E{6}\unit{\watt}
+            \end{align}
+
+            This lets us calculate the heat/power remaining.
+            \begin{gather}
+                P_H =   P_C + P\\
+                P_C =   P_H - P
+                    =   127.714\E{6}\unit{\watt} - 100\E{6}\unit{\watt}
+                    =   27.714\E{6}\unit{\watt}
+            \end{gather}
+
+            Using the known power and the equation for the heat required to melt a specific amount of mass, we can calculate the amount of ice heated and melted per second.
+            \begin{align}
+                Q   &=  421800\,\unit{\joule/\kilo\gram} * m \to 
+                P   =   421800\,\unit{\joule/\kilo\gram} * m/t\\
+                \frac{m}{t} &=  \frac{P}{421800\,\unit{\joule/\kilo\gram}}
+                    =   \frac{27.714\E{6}\unit{\watt}}{421800\,\unit{\joule/\kilo\gram}}
+                    =   \boxed{\cancel{65.7\unit{\kilo\gram/\second}}}
+            \end{align}
 
     % \pagebreak
     \section{Problem 57}
