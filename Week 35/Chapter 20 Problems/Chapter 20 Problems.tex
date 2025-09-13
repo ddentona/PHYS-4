@@ -738,20 +738,28 @@
                     &=  421800\,\unit{\joule/\kilo\gram} * m
             \end{align}
 
+            The efficiency would also change because the engine would be only operating between 0\unit{\celsius} and 800\unit{\celsius}.
+            \begin{align}
+                \varepsilon_C   &=  1 - \frac{T_L}{T_H}
+                    =   1 - \frac{273.15}{1073.15}
+                    =   1 - 0.25453
+                    =   0.74547
+            \end{align}
+
             Using our previously calculated efficiency, we can find the heat used by the engine.
             \begin{align}
                 \varepsilon &=  \frac{W}{Q_H}\\
                 P_H &=  \frac{P}{\varepsilon}
-                    =   \frac{100\E{6}\unit{\watt}}{0.783}
-                    =   127.714\E{6}\unit{\watt}
+                    =   \frac{100\E{6}\unit{\watt}}{0.74547}
+                    =   134.144\E{6}\unit{\watt}
             \end{align}
 
             This lets us calculate the heat/power remaining.
             \begin{gather}
                 P_H =   P_C + P\\
                 P_C =   P_H - P
-                    =   127.714\E{6}\unit{\watt} - 100\E{6}\unit{\watt}
-                    =   27.714\E{6}\unit{\watt}
+                    =   134.144\E{6}\unit{\watt} - 100\E{6}\unit{\watt}
+                    =   34.144\E{6}\unit{\watt}
             \end{gather}
 
             Using the known power and the equation for the heat required to melt a specific amount of mass, we can calculate the amount of ice heated and melted per second.
@@ -759,11 +767,11 @@
                 Q   &=  421800\,\unit{\joule/\kilo\gram} * m \to 
                 P   =   421800\,\unit{\joule/\kilo\gram} * m/t\\
                 \frac{m}{t} &=  \frac{P}{421800\,\unit{\joule/\kilo\gram}}
-                    =   \frac{27.714\E{6}\unit{\watt}}{421800\,\unit{\joule/\kilo\gram}}
-                    =   \boxed{\cancel{65.7\unit{\kilo\gram/\second}}}
+                    =   \frac{34.144\E{6}\unit{\watt}}{421800\,\unit{\joule/\kilo\gram}}
+                    =   \boxed{80.9\unit{\kilo\gram/\second}}
             \end{align}
 
-    % \pagebreak
+    \pagebreak
     \section{Problem 57}
         The temperature of 1.00 mol of a monatomic ideal gas is raised reversibly from 300 K to 400 K, with its volume kept constant. 
         What is the entropy change of the gas?
