@@ -777,6 +777,18 @@
         What is the entropy change of the gas?
 
         \subsection{Solution}
+            \begin{gather}
+                Q   =   nC_V \Delta T
+                    =   1 * \frac{3}{2}R    (400\unit{\kelvin} - 300\unit{\kelvin})\\
+                \begin{align}
+                    \Delta S    &=  \int_{300\unit{\kelvin}}^{400\unit{\kelvin}} \frac{1}{T}\,dQ
+                        =   \int_{300\unit{\kelvin}}^{400\unit{\kelvin}} \frac{nC_V}{T}\,dT
+                        =   nC_V \left[ \ln(V) \right]_{300\unit{\kelvin}}^{400\unit{\kelvin}}\\
+                        &=  n C_V \ln\left( \frac{400}{300} \right)
+                        =   1 * \frac{3}{2} R \ln\left( \frac{4}{3} \right)
+                        =   \boxed{3.586\,\unit{\joule/\kelvin}}
+                \end{align}
+            \end{gather}
 
     % \pagebreak
     \section{Problem 67}

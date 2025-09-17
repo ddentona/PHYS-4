@@ -48,4 +48,4 @@
 \contentsline {section}{\numberline {18}Problem 67}{24}{}%
 \contentsline {subsection}{\numberline {18.1}Solution}{24}{}%
 \contentsline {section}{\numberline {19}Problem 71}{24}{}%
-\contentsline {subsection}{\numberline {19.1}Solution}{24}{}%
+\contentsline {subsection}{\numberline {19.1}Solution}{25}{}%
