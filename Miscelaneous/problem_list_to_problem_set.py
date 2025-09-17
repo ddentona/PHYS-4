@@ -3,4 +3,4 @@ def convertToSections(problem_list: str):
         print("\\section{Problem " + p + "}\n\n    \\subsection{Solution}\n\n\\pagebreak")
 
 if __name__ == "__main__":
-    convertToSections('1, 3, 5, 7, 9, 15, 23, 25, 27, 29, 37, 39, 43, 45, 49, 53, 57, 67, 71')
+    convertToSections('1, 3, 5, 9, 15, 19, 21, 25, 30, 31, 35, 37, 41, 43, 45, 53, 61, 65, 73, 75, 83')
