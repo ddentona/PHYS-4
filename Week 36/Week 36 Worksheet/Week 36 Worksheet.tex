@@ -1,0 +1,58 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{cancel}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{physics}
+\usepackage{siunitx}
+\usepackage{pgfplots}
+\usepackage{wrapfig}
+
+\AtBeginDocument{\RenewCommandCopy\qty\SI}
+\newcommand{\E}[1]{\times 10^{#1}}
+
+\title{
+    Worksheet \#5
+    \\  \small
+    PHYS 4C: Waves and Thermodynamics
+    }
+\author{Donald Aingworth IV}
+\date{September 22, 2025}
+
+\begin{document}
+    \DeclareSIUnit{\celsiusdegree}{C^\circ}
+    \DeclareSIUnit{\atm}{ atm}
+
+    \maketitle
+
+    \section{Problem}
+        (20 points) A Carnot heat engine operates on a four step cycle as follows:
+        \begin{enumerate}
+            \item Isothermal expansion at temperature $T_3$, where heat $Q_H$ ﬂows into the system from an external temperature reservoir $T_4$ $(T_4 \geq T_3)$. 
+            This step is reversible if $T_4 = T_3$.
+            \item Adiabatic expansion (no heat ﬂow), where the temperature drops from $T_3$ to $T_2$ $(T_2 < T_3)$. 
+            This step is always reversible (as long as it is quasi-static).
+            \item Isothermal compression at temperature $T_2$, where heat $Q_C$ ﬂows out of the system to an external temperature reservoir $T_1$ $(T_1 \leq T_2)$. 
+            This step is reversible if $T_1 = T_2$.
+            \item Adiabatic compression (no heat ﬂow), where the temperature rises from $T_2$ back up to $T_3$. 
+            This step is always reversible.
+        \end{enumerate}
+        
+        The efficiency of this cycle is given by $e = 1 - T_2/T_3$, and is maximized when $T_3 = T_4$ and $T_2 = T_1$ (reversible), although the work output rate in that case is zero (heat ﬂowrates are zero for steps 1 and 3). 
+        Allowing $T_1 < T_2 < T_3 < T_4$ enables us to consider a real heat engine that would run at a ﬁnite rate.
+        
+        Consider such a heat engine with $T_4$ = 600 K, $T_3$ = 500 K, $T_2$ = 400 K, and $T_1$ = 300 K.
+        Suppose also that the heat conductance for the rods connecting the system to $T_4$ during step 1 and to $T_1$ during step 3 are each 10 W/K, and that the adiabatic steps (2 and 4) are both very rapid (essentially zero time).
+        \begin{enumerate}[label=(\alph*)]
+            \item (6 points) Calculate the eﬃciency of this heat engine. If $Q_H$ = 100 J for one cycle of this heat engine, how much heat ﬂows into the cold reservoir ($Q_C$) and how much work is output ($W$) for each cycle?
+            \item (6 points) Calculate the net change in entropy during one cycle. 
+            During which steps does the positive entropy change occur?
+            \item (8 points) Determine the rate of work production for this engine \\(work/time). 
+            (Hint: calculate the total time for one cycle).
+        \end{enumerate}
+
+        \subsection{Solution (a)}
+            It is given that the heat engine would have the starting temperature of $T_3 = 500\unit{\kelvin}$ and an ending temperature of $T_3 = 400\unit{\kelvin}$. 
+            The 
+\end{document}
