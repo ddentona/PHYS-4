@@ -53,6 +53,81 @@
         \end{enumerate}
 
         \subsection{Solution (a)}
-            It is given that the heat engine would have the starting temperature of $T_3 = 500\unit{\kelvin}$ and an ending temperature of $T_3 = 400\unit{\kelvin}$. 
-            The 
+            It is given that the heat engine would have the starting temperature of $T_3 = 500\unit{\kelvin}$ and an ending temperature of $T_2 = 400\unit{\kelvin}$. 
+            The formula given for efficiency can be used here. 
+            The reason that we would use $T_2$ and $T_3$ instead of $T_1$ and $T_4$ because those are the reservoirs (remaining at constant temperature) directly driving the engine. 
+            \begin{equation}
+                e   =   1 - \frac{T_2}{T_3}
+                    =   1 - \frac{400\unit{\kelvin}}{500\unit{\kelvin}}
+                    =   \frac{1}{5}
+                    =   0.20
+            \end{equation}
+
+            Now we can use the value of $Q_H$ to find the work done. 
+            \begin{gather}
+                e   =   \frac{W}{Q_H}\\
+                W   =   e * Q_H
+                    =   0.2 * 100\,\unit{\joule}
+                    =   \boxed{20\,\unit{\joule}}
+            \end{gather}
+
+            We can use that to find the work done. 
+            \begin{gather}
+                Q_H =   W + Q_L\\
+                Q_L =   Q_H - W
+                    =   100 - 20
+                    =   \boxed{80\,\unit{\joule}}
+            \end{gather}
+
+        \subsection{Solution (b)}
+            Change in entropy is calculatable by an integral.
+            \begin{align}
+                \Delta S    &=  \int_{i}^{f}\frac{1}{T}\,dQ
+            \end{align}
+
+            This is a Carnot engine.
+            In a Carnot engine, we have to assume that the change in entropy \textit{is} the zero. 
+            This is necessary for the engine to have a cyclical process. 
+            \begin{equation}
+                \boxed{\Delta S = 0}
+            \end{equation}
+
+        \subsection{Solution (c)}
+            We have the heat conductance for the engine. 
+            From that, we can calculate the rate at which heat flows through both the rods. 
+            \begin{align}
+                \dv{Q_H}{t} &=  \frac{Q}{t}
+                    =   K\,\Delta T
+                    =   10\,\unit{\watt/\kelvin} * 100\unit{\kelvin}
+                    =   1000\,\unit{\watt}\\
+                \dv{Q_L}{t} &=  \frac{Q}{t}
+                    =   K\,\Delta T
+                    =   10\,\unit{\watt/\kelvin} * 100\unit{\kelvin}
+                    =   1000\,\unit{\watt}
+            \end{align}
+
+            We can use these to calculate the time taken for the heats $Q_H$ and $Q_L$ to get through.
+            \begin{align}
+                t_H &=  Q_H * \frac{1}{\dv{Q_H}{t}}
+                    =  \frac{100\,\unit{\joule}}{1000\,\unit{\joule/\second}}
+                    =   0.1\,\unit{\second}
+                    \\
+                t_L &=  Q_L * \frac{1}{\dv{Q_L}{t}} 
+                    =   \frac{80\,\unit{\joule}}{1000\,\unit{\joule/\second}}
+                    =   0.08\,\unit{\second}
+            \end{align}
+
+            Since the entire process of the engine would be instantaneous, the only time that would be taken would be the time for the heat to go from the hot reservoir into the engine and from the engine into the cold reservoir.
+            \begin{align}
+                t   &=  t_H + t_C
+                    =   0.1 + 0.08
+                    =   0.18\,\unit{\second}
+            \end{align}
+
+            From here, knowing the work output, we can calculate the rate of work production.
+            \begin{align}
+                P_W &=  \frac{W}{t}
+                    =   \frac{20\,\unit{\joule}}{0.18\,\unit{\second}}
+                    =   \boxed{111\,\unit{\watt}}
+            \end{align}
 \end{document}
