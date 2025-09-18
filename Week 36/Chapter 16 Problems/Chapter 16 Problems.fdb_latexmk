@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1758119660.15056 "c:/Users/ddent/OneDrive/Documents/CCSF/PHYS-4A/Week 36/Chapter 16 Problems/Chapter 16 Problems.tex" "Chapter 16 Problems.pdf" "Chapter 16 Problems" 1758119661.26519 0
+["pdflatex"] 1758207841.85807 "c:/Users/ddent/OneDrive/Documents/CCSF/PHYS-4A/Week 36/Chapter 16 Problems/Chapter 16 Problems.tex" "Chapter 16 Problems.pdf" "Chapter 16 Problems" 1758207842.77917 0
   "C:/Users/ddent/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1756785331 151629 65cd6e1296beda1feb8e616e59f2da55 ""
   "C:/Users/ddent/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1724473854 24225046 9a86b7f1ef10f5afb0aa895fddb2583f ""
   "C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233951848 1004 54797486969f23fa377b128694d548df ""
@@ -66,10 +66,11 @@
   "C:/Users/ddent/AppData/Local/Programs/MiKTeX/tex/latex/translations/dicts/translations-basic-dictionary-english.trsl" 1644048522 5588 0c1628daf15f4411ff1f463114c634a3 ""
   "C:/Users/ddent/AppData/Local/Programs/MiKTeX/tex/latex/translations/translations.sty" 1644048522 44247 2188b95d0ee74e31eca4d316263c58a7 ""
   "C:/Users/ddent/AppData/Local/Programs/MiKTeX/tex/latex/wrapfig/wrapfig.sty" 1044403200 26220 3701aebf80ccdef248c0c20dd062fea9 ""
-  "Chapter 16 Problems.aux" 1758119661 4236 e872c1867e41dda1607679397a5f9321 "pdflatex"
-  "Chapter 16 Problems.tex" 1758119659 9673 d8c24046734d1d632895c80caae5b070 ""
-  "Chapter 16 Problems.toc" 1758119661 2481 4b7b78d2875c7547006d286c7a9c6a89 "pdflatex"
-  "c:/Users/ddent/OneDrive/Documents/CCSF/PHYS-4A/Week 36/Chapter 16 Problems/Chapter 16 Problems.tex" 1758119659 9673 d8c24046734d1d632895c80caae5b070 ""
+  "Chapter 16 Problems.aux" 1758207842 4238 dcbb0a9d1763a06758e1f1c88bd75b65 "pdflatex"
+  "Chapter 16 Problems.tex" 1758207841 12065 e6a5dcbddc206fb266d5be7f6efc1809 ""
+  "Chapter 16 Problems.toc" 1758207842 2483 3fe7f68901b54713f73bc4c75f881be5 "pdflatex"
+  "c:/Users/ddent/OneDrive/Documents/CCSF/PHYS-4A/Week 36/Chapter 16 Problems/Chapter 16 Problems.tex" 1758207841 12065 e6a5dcbddc206fb266d5be7f6efc1809 ""
+  "picture_16-33.png" 1758083110 15083 5a5175637ead66662a28ce6bfb3a1141 ""
   (generated)
   "Chapter 16 Problems.aux"
   "Chapter 16 Problems.log"

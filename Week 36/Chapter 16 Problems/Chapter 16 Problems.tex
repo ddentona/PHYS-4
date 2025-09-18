@@ -84,17 +84,63 @@
 
     % \pagebreak
     \section{Problem 9}
+        \begin{wrapfigure}{r}{0.25\textwidth}
+            \vspace{-30pt}
+            \includegraphics[width=0.25\textwidth]{picture_16-33.png} 
+            % \label{fig:wrapfig}
+        \end{wrapfigure}
         A sinusoidal wave moving along a string is shown twice in Fig. 16-33, as crest A travels in the positive direction of an x axis by distance d = 6.0 cm in 4.0 ms. 
         The tick marks along the axis are separated by 10 cm; height H = 6.00 mm.
-        The equation for the wave is in the form $y(x, t) = y_m sin(kx \pm \omega t)$, so what are (a) $y_m$, (b) $k$, (c) $\omega$, and (d) the correct choice of sign in front of $\omega$?
+        The equation for the wave is in the form $y(x, t) = y_m \sin(kx \pm \omega t)$, so what are (a) $y_m$, (b) $k$, (c) $\omega$, and (d) the correct choice of sign in front of $\omega$?
 
         \subsection{Solution}
+            The velocity of the wave would be equivalent to the distance covered divided by the time taken.
+            \begin{equation}
+                v   =   \frac{\Delta x}{\Delta t}
+                    =   \frac{0.06\,\unit{\meter}}{0.004\,\unit{\second}}
+                    =   15\,\unit{\meter/\second}
+            \end{equation}
+
+            The amplitude would also be equal to half the distance between the top and bottom peaks ($H$).
+            \begin{equation}
+                A   =   \frac{H}{2}
+                    =   \frac{6\,\unit{\milli\meter}}{2}
+                    =   3\,\unit{\milli\meter}
+                    =   y_m
+            \end{equation}
+
+            Note that the wave goes through one period over the course of four tick marks of a length of 10 \unit{\centi\meter} each, equivalent to 40 \unit{\centi\meter} total. 
+            This would be equivalent to the wavelength, which can be used to find the frequency.
+            This frequency cna be used to find the angular velocity.
+            \begin{gather}
+                v   =   \lambda f \to
+                f   =   \frac{v}{\lambda}
+                    =   \frac{15\,\unit{\meter/\second}}{0.4\,\unit{\meter}}
+                    =   37.5\,\unit{\hertz}\\
+                f   =   \frac{\omega}{2\pi} \to
+                \omega  =   2\pi f
+                    =   75\pi\,\unit{\radian/\second}
+            \end{gather}
+
+            Knowing our velocity and engular velocity, we can use this to find the angular wave number.
+            \begin{gather}
+                v   =   \frac{\omega}{k} \to
+                k   =   \frac{\omega}{v}
+                    =   \frac{75\pi\,\unit{\radian/\second}}{15\,\unit{\meter/\second}}
+                    =   5\pi\,\unit{\radian/\meter}
+            \end{gather}
+
+            We have our values needed to fill out the sinusoidal wave.
+            Since the wave travels in a positive direction, the sign here would be negative.
+            \begin{equation}
+                \boxed{y(x,t) = (3\,\unit{\milli\meter})\sin((5\pi\,\unit{\radian/\meter})x - (75\pi\,\unit{\radian/\second})t)}
+            \end{equation}
 
     % \pagebreak
     \section{Problem 15}
         A stretched string has a mass per unit length of 5.00 g/cm and a tension of 10.0 N. 
         A sinusoidal wave on this string has an amplitude of 0.12 mm and a frequency of 100 Hz and is traveling in the negative direction of an x axis. 
-        If the wave equation is of the form $y(x, t) = y_m sin(kx \pm \omega t)$, what are (a) $y_m$, (b) $k$, (c) $\omega$, and (d) the correct choice of sign in front of $\omega$?
+        If the wave equation is of the form $y(x, t) = y_m \sin(kx \pm \omega t)$, what are (a) $y_m$, (b) $k$, (c) $\omega$, and (d) the correct choice of sign in front of $\omega$?
 
         \subsection{Solution}
 
