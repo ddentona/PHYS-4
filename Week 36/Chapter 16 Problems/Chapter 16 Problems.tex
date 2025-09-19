@@ -96,9 +96,31 @@
         What are the (a) period and (b) frequency? 
         (c) The wavelength is 1.40 m; what is the wave speed?
 
-        \subsection{Solution}
+        \subsection{Solution (a)}
+            The time to return from maximum displacement in one direction would be a quarter of the time to move from maximum displacement in the same direction (one period). 
+            \begin{equation}
+                T   =   4\,\Delta t
+                    =   4 * 0.170\,\unit{\second}
+                    =   \boxed{0.680\,\unit{\second}}
+            \end{equation}
 
-    % \pagebreak
+        \subsection{Solution (b)}
+            The frequency is the reciprocal of the period. 
+            \begin{equation}
+                f   =   \frac{1}{T}
+                    =   \frac{1}{0.680\,\unit{\second}}
+                    =   \boxed{1.47\,\unit{\hertz}}
+            \end{equation}
+
+        \subsection{Solution (c)}
+            The velocity is equal to the wavelength divided by the period.
+            \begin{equation}
+                v   =   \frac{\lambda}{T}
+                    =   \frac{1.40\,\unit{\meter}}{0.680\,\unit{\second}}
+                    =   \boxed{2.06\,\unit{\meter/\second}}
+            \end{equation}
+
+    \pagebreak
     \section{Problem 9}
         \begin{wrapfigure}{r}{0.25\textwidth}
             \vspace{-30pt}
@@ -159,6 +181,36 @@
         If the wave equation is of the form $y(x, t) = y_m \sin(kx \pm \omega t)$, what are (a) $y_m$, (b) $k$, (c) $\omega$, and (d) the correct choice of sign in front of $\omega$?
 
         \subsection{Solution}
+            We have the value of the amplitude, whch would be equal to $y_m$.
+            \begin{equation}
+                y_m =   A
+                    =   0.12\,\unit{\milli\meter}
+            \end{equation}
+
+            Our frequency can give us the value of $\omega$.
+            \begin{gather}
+                f   =   \frac{\omega}{2\pi}\\
+                \omega  =   2\pi f
+                    =   2\pi * 100\,\unit{\hertz}
+                    =   200\pi\,\unit{\radian/\second}
+            \end{gather} 
+
+            For the wave number $k$, we can start by finding the speed of the wave.
+            This should be done under consideration of a stretched string.
+            \begin{gather}
+                v   =   \sqrt{\frac{\tau}{\mu}}
+                    =   \sqrt{\frac{10.0\,\unit{\newton}}{5.00\,\unit{\gram/\centi\meter}}}
+                    =   \sqrt{\frac{100.0\,\unit{\newton}}{5.00\unit{\kilo\gram/\meter}}}
+                    =   \sqrt{20\,\unit{\meter^2/\second^2}}
+            \end{gather}
+
+            This in turn can be used in conjuction with the angular velocity of the wave. 
+            \begin{gather}
+                v   =   \frac{\omega}{k}\\
+                k   =   \frac{\omega}{v}
+                    =   \frac{200\pi\,\unit{\radian/\second}}{\sqrt{20\,\unit{\meter^2/\second^2}}}
+                    =   
+            \end{gather}
 
     % \pagebreak
     \section{Problem 19}

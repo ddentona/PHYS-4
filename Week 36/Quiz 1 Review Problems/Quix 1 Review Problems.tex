@@ -1,7 +1,10 @@
 \documentclass{article}
+\usepackage{amsmath}
 \usepackage{graphicx}
 \usepackage{siunitx}
 \usepackage{wrapfig}
+
+\newcommand{\E}[1]{\times 10^{#1}}
 
 \begin{document}
     \section{Chapter 18, Problem 78}
@@ -18,6 +21,38 @@
         In terms of A, what rate is (a) energy conducted upward and (b) mass converted from liquid to ice at the top of the central tube? 
         (c) At what rate does the top of the tube move downward because of water freezing there? 
         The thermal conductivity of ice is 0.400 \unit{\watt/\meter\cdot\kelvin}, and the density of liquid water is 1000 \unit{\kilo\gram/\meter^3}.
+
+        \subsection{Solution (a)}
+            There is a formula for the rate at which energy (heat) is conducted upwards.
+            \begin{align}
+                P_{\rm cond}    &=  \frac{kA}{L} \left| \Delta T \right|
+                    =   \frac{kA}{L} \left( T_H - T_C \right)\\
+                    &=  \frac{0.400\,A}{0.12\,\unit{\meter}} * 5\,\unit{\kelvin}
+                    =   \boxed{\frac{5}{3}A}
+            \end{align}
+
+        \subsection{Solution (b)}
+            The energy required to convert water to ice is defined by the formula $Q = L_f m$.
+            We can reorder this to form an equation for the mass converted per unit time.
+            \begin{gather}
+                Q   =   L_f m\\
+                \frac{Q}{L_f}   =   m\\
+                \frac{\frac{Q}{t}}{L_f} =   \frac{m}{t}\\
+                \begin{align}
+                    \frac{m}{t} &=  \frac{P}{L_f}
+                        =   \frac{\frac{5}{3}A\,\unit{\joule/\second}}{333\E{3}}
+                        =   \frac{5}{999\E{3}\,\unit{\joule/\kilo\gram}}A
+                        =   \boxed{5.005\E{-6} * A\,\unit{\kilo\gram/\second}}
+                \end{align}
+            \end{gather}
+
+        \subsection{Solution (c)}
+            Multiply the rate at which mass converts to liquid times the density of liquid water.
+            \begin{align}
+                v   &=  \frac{m}{t} * \frac{1}{\rho}
+                    =   5.005\E{-6} * A\,\unit{\kilo\gram/\second} * 10^{-3}
+                    =   \boxed{5.005\E{-9} * A\,\unit{\meter/\second}}
+            \end{align}
 
     \pagebreak
     \section{Chapter 18, Problem 95}
