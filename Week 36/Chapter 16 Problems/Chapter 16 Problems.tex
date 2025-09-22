@@ -209,31 +209,85 @@
                 v   =   \frac{\omega}{k}\\
                 k   =   \frac{\omega}{v}
                     =   \frac{200\pi\,\unit{\radian/\second}}{\sqrt{20\,\unit{\meter^2/\second^2}}}
-                    =   
+                    =   140.5\,\unit{\meter^{-1}}
             \end{gather}
 
-    % \pagebreak
+            Since the wave is traveling in the negative direction, the sign would be positive.
+            \begin{equation}
+                \boxed{y(x,t)   =   (1.2\E{-4}\,\unit{\meter})\sin((140.5\,\unit{\meter^{-1}})x + (200\pi\,\unit{\radian/\second})t)}
+            \end{equation}
+
+    \pagebreak
     \section{Problem 19}
         What is the speed of a transverse wave in a rope of length 2.00 m and mass 60.0 g under a tension of 500 N?
 
         \subsection{Solution}
+            First find the linear density of the rope.
+            \begin{equation}
+                \mu =   \frac{m}{L}
+                    =   \frac{0.060\,\unit{\kilo\gram}}{2.00\,\unit{\meter}}
+                    =   0.03\,\unit{\kilo\gram/\meter}
+            \end{equation}
+            Then, use the formula for the speed of the wave. 
+            \begin{equation}
+                v   =   \sqrt{\frac{\tau}{\mu}}
+                    =   \sqrt{\frac{500\,\unit{\newton}}{0.03\,\unit{\kilo\gram/\meter}}}
+                    =   \boxed{129.1\,\unit{\meter/\second}}
+            \end{equation}
 
-    % \pagebreak
+    \pagebreak
     \section{Problem 21}
-        A 100 g wire is held under a tension of 250 N with one end at x = 0 and the other at x = 10.0 m. 
-        At time t = 0, pulse 1 is sent along the wire from the end at x = 10.0 m. 
-        At time t = 30.0 ms, pulse 2 is sent along the wire from the end at x = 0. 
-        At what position x do the pulses begin to meet?
+        A 100 g wire is held under a tension of 250 N with one end at $x = 0$ and the other at $x = 10.0$ m. 
+        At time $t = 0$, pulse 1 is sent along the wire from the end at $x = 10.0$ m. 
+        At time $t = 30.0$ ms, pulse 2 is sent along the wire from the end at $x = 0$. 
+        At what position $x$ do the pulses begin to meet?
 
         \subsection{Solution}
+            Since the wire is a wire, the speed can be calculated by first finding the linear density and then the wave velocity. 
+            \begin{gather}
+                \mu =   \frac{m}{L}
+                    =   \frac{0.1\,\unit{\kilo\gram}}{10.0\,\unit{\meter}}
+                    =   0.01\,\unit{\kilo\gram/\meter}\\
+                v   =   \sqrt{\frac{\tau}{\mu}}
+                    =   \sqrt{\frac{250\,\unit{\newton}}{0.01\,\unit{\kilo\gram/\meter}}}
+                    =   \sqrt{25000\,\unit{\meter^2/\second^2}}
+                    =   50\,\sqrt{10}\,\unit{\meter/\second}
+            \end{gather}
 
-    % \pagebreak
+            This will be the speed of both waves, which we can use to find the location of the first wave when the second wave starts up.
+            \begin{align}
+                \Delta x    &=  v * \Delta t
+                    =   50\,\sqrt{10}\,\unit{\meter/\second} \times 30\E{-3}\,\unit{\second}
+                    =   1.5\,\sqrt{10}\,\unit{\meter}\\
+                x_i &=  L - \Delta x
+                    =   10.0\,\unit{\meter} - 1.5\,\sqrt{10}\,\unit{\meter}
+                    =   \frac{20 - 3\sqrt{10}}{2}\,\unit{\meter}
+            \end{align}
+
+            Since the waves will be traveling at the same speed in opposite directions, they will meet at the average point of their starting points. 
+            \begin{align}
+                x_{\rm avg} &=  \frac{x_i}{2}
+                    =   \frac{20 - 3\sqrt{10}}{4}\,\unit{\meter}
+                    =   \boxed{2.628\,\unit{\meter}}
+            \end{align}
+
+    \pagebreak
     \section{Problem 25}
-        A uniform rope of mass m and length L hangs from a ceiling. 
-        (a) Show that the speed of a transverse wave on the rope is a function of y, the distance from the lower end, and is given by $v = \sqrt{gy}$.
+        A uniform rope of mass $m$ and length $L$ hangs from a ceiling. 
+        (a) Show that the speed of a transverse wave on the rope is a function of $y$, the distance from the lower end, and is given by $v = \sqrt{gy}$.
         (b) Show that the time a transverse wave takes to travel the length of the rope is given by $t = 2\sqrt{L/g}$.
 
-        \subsection{Solution}
+        \subsection{Solution (a)}
+            There are two deterministic factors for the velocity of the wave: the tension force and the density of the wire. 
+            There are equations for each of these and they can be put into the velocity equation.
+            The tension force would be equal to the downward force on the portion of the wire, which would only be the gravitational force.
+            \begin{gather}
+                \tau    =   F_g
+                    =   mg * \frac{L - y}{L}\\
+                \mu =   \frac{m}{L}\\
+                v   =   \sqrt{\frac{mg}{m/L} * \frac{y}{L}}
+                    =   \sqrt{gy}
+            \end{gather}
 
     % \pagebreak
     \section{Problem 30}
