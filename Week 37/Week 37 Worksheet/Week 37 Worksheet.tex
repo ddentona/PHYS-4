@@ -6,7 +6,7 @@
 \usepackage{esdiff}
 \usepackage{graphicx}
 \usepackage{siunitx}
-\usepackage{pgfplots}
+% \usepackage{pgfplots}
 \usepackage{wrapfig}
 
 \newcommand{\E}[1]{\times 10^{#1}}
@@ -155,9 +155,9 @@
 
             We can average this over time. The average of $\sin^2$ dependant on only one variable is always $\frac{1}{2}$, as is the average value of cosine. 
             \begin{align}
-                \left\langle K \right\rangle    &=  \frac{1}{2}\mu y_m^2 \omega^2 \left\langle \sin^2(k x - \omega t) \right\rangle\\
-                    &=  \frac{1}{4} \mu y_m^2 \omega^2
-                    =   \frac{1}{4} (1.2\E{-3}\unit{\kilo\gram/\meter}) \left( 3.4\E{-4}\unit{\meter} \right)^2 (960\,\unit{\radian/\second})^2\\
+                \left\langle K \right\rangle    &=  \frac{1}{2}\mu y_m^2 \omega^2 \left\langle \sin^2(k x - \omega t) \right\rangle
+                    =   \frac{1}{4} \mu y_m^2 \omega^2\\
+                    &=  \frac{1}{4} (1.2\E{-3}\unit{\kilo\gram/\meter}) \left( 3.4\E{-4}\unit{\meter} \right)^2 (960\,\unit{\radian/\second})^2\\
                     &=  \boxed{3.196\E{-5}\,\unit{\joule/\meter}}
             \end{align}
 
@@ -169,8 +169,30 @@
             \end{equation}
 
         \subsection{Solution (l)}
+            The average energy transfer would be the total energy multiplied by the wave speed.
+            \begin{align}
+                \left\langle P \right\rangle    &=  v * \left\langle E \right\rangle
+                    =   v * \left\langle K + U \right\rangle
+                    =   v * \left[ \left\langle K \right\rangle + \left\langle U \right\rangle \right]\\
+                    &=  v * \left( \frac{1}{2} \mu y_m^2 \omega^2 \right)
+                    =   (40\,\unit{\meter/\second}) (6.392\E{-5}\,\unit{\joule/\meter})\\
+                    &=  \boxed{0.00256\,\unit{\joule/\second}}
+            \end{align}
 
         \subsection{Solution (m)}
+            This can be found by multiplying the average energy per unit distance by the distance of 100 m. 
+            \begin{align}
+                E_{\rm total}   &=  \Delta x * E
+                    =   100\,\unit{\meter} * 6.392\E{-5}\,\unit{\joule/\meter}
+                    =   \boxed{6.392\,\unit{\milli\joule}}
+            \end{align}
 
         \subsection{Solution (n)}
+            We can take the energy stored in the one hundred meters and divide it by the average rate at which energy is transfered to find the amount of time this transfer takes. 
+            \begin{align}
+                t   &=  \frac{E_{\rm total}}{\left\langle P \right\rangle}
+                    =   \frac{6.392\,\unit{\milli\joule}}{0.00256\,\unit{\joule/\second}}
+                    =   2.496875\,\unit{\second}
+                    \approx \boxed{2.50\,\unit{\second}}
+            \end{align}
 \end{document}
