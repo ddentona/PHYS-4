@@ -47,7 +47,7 @@
             \item Kinetic energy density (per unit length), time-averaged:
             \item Potential energy density, time-averaged:
             \item Rate of energy transfer across some specific point, time-averaged:
-            \item Total energy in a -long section:
+            \item Total energy in a 100 m-long section:
             \item How much time does it take for the amount of energy calculated in part m to cross a specific point in the string?
         \end{enumerate}
 
@@ -142,9 +142,31 @@
             \end{equation}
 
         \subsection{Solution (j)}
-            We can measure the kinetic energy stored over the course of one period and use that to find the average kinetic energy.
+            We can start by finding the kinetic energy per unit length at any given time.
+            \begin{align}
+                K   &=  \frac{1}{2}mv^2
+                    =   \frac{1}{2}\mu\left( \diffp{y}{t} \right)^2\\
+                \psi (x,t)  &=  \psi_m \cos(k x - \omega t)\\
+                \diffp{\psi (x,t)}{t}   &=  -\psi_m \omega \sin(k x - \omega t)\\
+                \left( \diffp{\psi}{t} \right)^2    &=  \psi_m^2 \omega^2 \sin^2(k x - \omega t)\\
+                \left( \diffp{y}{t} \right)^2    &=  y_m^2 \omega^2 \sin^2(k x - \omega t)\\
+                K   &=  \frac{1}{2}\mu y_m^2 \omega^2 \sin^2(k x - \omega t)
+            \end{align}
+
+            We can average this over time. The average of $\sin^2$ dependant on only one variable is always $\frac{1}{2}$, as is the average value of cosine. 
+            \begin{align}
+                \left\langle K \right\rangle    &=  \frac{1}{2}\mu y_m^2 \omega^2 \left\langle \sin^2(k x - \omega t) \right\rangle\\
+                    &=  \frac{1}{4} \mu y_m^2 \omega^2
+                    =   \frac{1}{4} (1.2\E{-3}\unit{\kilo\gram/\meter}) \left( 3.4\E{-4}\unit{\meter} \right)^2 (960\,\unit{\radian/\second})^2\\
+                    &=  \boxed{3.196\E{-5}\,\unit{\joule/\meter}}
+            \end{align}
 
         \subsection{Solution (k)}
+            The average kinetic energy would be equal to the average potential energy. 
+            Such is the nature of standing waves.
+            \begin{equation}
+                \left\langle U \right\rangle    =   \boxed{3.196\E{-5}\,\unit{\joule/\meter}}
+            \end{equation}
 
         \subsection{Solution (l)}
 
