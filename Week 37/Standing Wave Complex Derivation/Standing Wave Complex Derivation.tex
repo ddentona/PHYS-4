@@ -1,0 +1,112 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\newcommand{\E}[1]{\times 10^{#1}}
+\newcommand{\e}[1]{{\rm e}^{#1}}
+\begin{document}
+    \begin{center}
+        \textbf{A Document Detailing the Complex Derivation of a Standing Wave Formula from that of Two Opposite Traveling Waves}\\
+        Author: Think the Duck
+    \end{center}
+    \textit{For Prof Cauthen}
+
+    This is a document meant for the sole purpose of deriving the formula for a standing wave in a string from its definition as two moving waves in opposite directions.
+
+    We will be using the complex notation for a simple traveling wave. 
+    We will be using the constants used for a wave in a string, but this could equally be applied to another situation.
+    or the sake of this problem, I will be dividing the offset angle into two halves from the start. 
+    They are constants and should be treated as such, including division into two or more parts at any necessary time.
+    \begin{equation}
+        \Psi_{\rm fwd}(x,t)   =   \psi_m \e{i(kx + \omega t + \phi + \phi')}
+    \end{equation}
+
+    This is the formula for a traveling wave in one direction (forward).
+    The formula for a traveling wave in the other direction would involve inverting the sign of the angular speed ($\omega$).
+    We can also invert the sign of $\phi'$, selecting it as the offset angle of the angular velocity of both waves.
+    This does nto affect the nature of the wave because it affects neither the amplitude, nor any of the wave's constants, including those used in the wave equation.
+    \begin{equation}
+        \Psi_{\rm rev}(x,t)   =   \psi_m \e{i(kx - \omega t + \phi - \phi')}
+    \end{equation}
+
+    This gives us a pair of complex equations for waves. 
+    It should be noted that both of the exponentials can be equated to two separate exponentials multiplied together.
+    \begin{gather}
+        \Psi_{\rm fwd}(x,t)   =   \psi_m \e{i(kx + \omega t + \phi + \phi')}
+            =   \psi_m \e{i(kx + \phi)} \e{i(\omega t + \phi')}\\
+        \Psi_{\rm rev}(x,t)   =   \psi_m \e{i(kx - \omega t + \phi - \phi')}
+            =   \psi_m \e{i(kx + \phi)} \e{i(-\omega t - \phi')}
+    \end{gather}
+
+    It is said that a standing wave is equivalent to these twotraveling waves going in opposite directions.
+    We can make use of this idea by adding these two values together.
+    Since these waves are equal and opposite, all values of $\phi_m$ are the same.
+    \begin{align}
+        \Psi(x,t)   &=  \Psi_{\rm fwd}(x,t) + \Psi_{\rm rev}(x,t)
+            =   \psi_m \e{i(kx + \omega t + \phi + \phi')} + \psi_m \e{i(kx - \omega t + \phi - \phi')}\\
+            &=  \psi_m \e{i(kx + \phi)} \e{i(\omega t + \phi')} + \psi_m \e{i(kx + \phi)} \e{i(-\omega t - \phi')}\\
+            &=  \psi_m \left( \e{i(kx + \phi)} \e{i(\omega t + \phi')} + \e{i(kx + \phi)} \e{i(-\omega t - \phi')} \right)
+    \end{align}
+    
+    From here, we convert to trigonometric immediately.
+    \begin{align}
+        \Psi(x,t)   =   &\psi_m \left( \left( \cos(kx + \phi) + i\sin(kx + \phi) \right) \left( \cos(\omega t + \phi') + i\sin(\omega t + \phi') \right) \right.\\ &\left.+ \left( \cos(kx + \phi) + i\sin(kx + \phi) \right) \left( \cos(-\omega t - \phi') + i\sin(-\omega t - \phi') \right) \right)
+    \end{align}
+
+    We can separate this into the first and second parts of the equation that is in the parentheses.
+    We start with the first half (the expansion of $\e{i(kx + \phi)} \e{i(\omega t + \phi')}$). 
+    \begin{gather}
+        \left( \cos(kx + \phi) + i\sin(kx + \phi) \right) \left( \cos(\omega t + \phi') + i\sin(\omega t + \phi') \right)
+    \end{gather}
+
+    This can be expanded. 
+    \begin{multline}
+        \cos(kx + \phi)\cos(\omega t + \phi') - \sin(kx + \phi)\sin(\omega t + \phi')\\
+            +   i\left( \cos(kx + \phi)\sin(\omega t + \phi') + \sin(kx + \phi)\cos(\omega t + \phi') \right)
+    \end{multline}
+
+    Next, the second half (the expansion of $\e{i(kx + \phi)} \e{i(-\omega t - \phi')}$). 
+    \begin{gather}
+        \left( \cos(kx + \phi) + i\sin(kx + \phi) \right) \left( \cos(-\omega t - \phi') + i\sin(-\omega t - \phi') \right)
+    \end{gather}
+
+    This can be expanded.
+    \begin{multline}
+        \cos(kx + \phi)\cos(-\omega t - \phi') - \sin(kx + \phi)\sin(-\omega t - \phi')\\
+            +   i\left( \cos(kx + \phi)\sin(-\omega t - \phi') + \sin(kx + \phi)\cos(-\omega t - \phi') \right)
+    \end{multline}
+
+    The only trigonometric identity we will need in this derivation is $\cos(x) = \cos(-x)$ and $\sin(-x) = -\sin(x)$. 
+    We will be using that here.
+    \begin{multline}
+        \cos(kx + \phi)\cos(\omega t + \phi') + \sin(kx + \phi)\sin(\omega t + \phi')\\
+            +   i\left( - \cos(kx + \phi)\sin(\omega t + \phi') + \sin(kx + \phi)\cos(\omega t + \phi') \right)
+    \end{multline}
+
+    The two halves can be added together. 
+    Notice that how in the real plane/axis, the $\sin(kx + \phi)\sin(\omega t + \phi')$ and $-\sin(kx + \phi)\sin(\omega t + \phi')$ cancel each other out, while in the imaginary plane/axis, the $\cos(kx + \phi)\sin(\omega t + \phi')$ and $-\cos(kx + \phi)\sin(\omega t + \phi')$ cancel each other out. 
+    \begin{multline}
+        \Psi(x,t)   =   \psi_m (\cos(kx + \phi)\cos(\omega t + \phi') - \sin(kx + \phi)\sin(\omega t + \phi')\\
+            +   i\left( \cos(kx + \phi)\sin(\omega t + \phi') + \sin(kx + \phi)\cos(\omega t + \phi') \right)\\ + \cos(kx + \phi)\cos(\omega t + \phi') + \sin(kx + \phi)\sin(\omega t + \phi')\\
+            +   i\left( - \cos(kx + \phi)\sin(\omega t + \phi') + \sin(kx + \phi)\cos(\omega t + \phi') \right))
+    \end{multline}
+    \begin{align}
+        \Psi(x,t)   &=  \psi_m (2\cos(kx + \phi)\cos(\omega t + \phi') + 2i \sin(kx + \phi)\cos(\omega t + \phi'))\\
+        \Psi(x,t)   &=  2 \psi_m (\cos(kx + \phi)\cos(\omega t + \phi') + i \sin(kx + \phi)\cos(\omega t + \phi'))
+    \end{align}
+
+    Since we are observing the case of a string, we only will have to work the real part of this.
+    For cases where the real and imaginary are both used (e.g. electromagnetic waves), the imaginary numbers would come into play, but that is not the case here. 
+    \begin{align}
+        y(x,t)  &=  {\rm Re}[\Psi(x,t)]\\
+            &=  {\rm Re}[2 \psi_m (\cos(kx + \phi)\cos(\omega t + \phi') + i \sin(kx + \phi)\cos(\omega t + \phi'))]\\
+            &=  2 \psi_m \cos(kx + \phi)\cos(\omega t + \phi')
+    \end{align}
+
+    Note the constant 2.
+    We can get rid of that by setting $y_m = 2\psi_m$.
+    This has to do with the setup of the waves themsleves, where the two original waves must have a lower amplitude than their product and the total amplitude would be that of the initial two waves added together.
+    \begin{equation}
+        y(x,t)  =   y_m \cos(kx + \phi)\cos(\omega t + \phi')
+    \end{equation}
+
+    This document has fulfilled its sole purpose.
+\end{document}
