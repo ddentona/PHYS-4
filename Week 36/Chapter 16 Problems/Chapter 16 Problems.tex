@@ -2,6 +2,7 @@
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{cancel}
+\usepackage{esdiff}
 \usepackage{graphicx}
 % \usepackage{physics}
 \usepackage{siunitx}
@@ -283,13 +284,27 @@
             The tension force would be equal to the downward force on the portion of the wire, which would only be the gravitational force.
             \begin{gather}
                 \tau    =   F_g
-                    =   mg * \frac{L - y}{L}\\
+                    =   mg * \frac{y}{L}\\
                 \mu =   \frac{m}{L}\\
                 v   =   \sqrt{\frac{mg}{m/L} * \frac{y}{L}}
                     =   \sqrt{gy}
             \end{gather}
 
-    % \pagebreak
+        \subsection{Solution (b)}
+            The formula for time taken at a specific speed can be calculated by dividing the distance by the speed.
+            \begin{gather}
+                t   =   \frac{\Delta x}{v}
+                    =   \frac{dx}{\sqrt{gy}}
+            \end{gather}
+
+            Since the velocity is dependant on the y-position, we can find the total time by integrating over $y$. 
+            \begin{align}
+                t   &=  \int_{0}^{L}\frac{1}{\sqrt{gy}}\,dy
+                    =   2\frac{\sqrt{y}}{\sqrt{g}}\,dy
+                    =   2\sqrt{L/g}
+            \end{align}
+
+    \pagebreak
     \section{Problem 30}
         Use the wave equation to find the speed of a wave given in terms of the general function $h(x, t)$:
         \begin{equation}

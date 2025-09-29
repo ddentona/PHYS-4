@@ -27,6 +27,8 @@ INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/cancel/cancel.sty
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/cancel/cancel.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/esdiff/esdiff.sty
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/esdiff/esdiff.sty
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/graphics/graphicx.sty
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/graphics/graphicx.sty
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/graphics/keyval.sty
