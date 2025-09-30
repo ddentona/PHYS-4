@@ -10,6 +10,7 @@
 
 % \AtBeginDocument{\RenewCommandCopy\qty\SI}
 
+\newcommand{\e}[1]{{\rm e}^{i\left( #1 \right)}}
 \newcommand{\E}[1]{\times 10^{#1}}
 
 \title{
@@ -312,15 +313,62 @@
         \end{equation}
 
         \subsection{Solution}
+            We can just take the second derivative of $y(x,t)$ with regard to both $x$ and $t$.
+            Let's start with $x$.
+            \begin{align}
+                y(x,t)  &=  (4.00 \unit{\milli\meter}) h[(30 \unit{\meter^{-1}})x + (6.0\,\unit{\second^{-1}})t]\\
+                \diff{y}{x}    &=  (30\,\unit{\meter^{-1}}) (4.00 \unit{\milli\meter}) h'[(30 \unit{\meter^{-1}})x + (6.0\,\unit{\second^{-1}})t]\\
+                \diff[2]{y}{x} &=  (30\,\unit{\meter^{-1}})^2 (4.00 \unit{\milli\meter}) h''[(30 \unit{\meter^{-1}})x + (6.0\,\unit{\second^{-1}})t]
+            \end{align}
 
-    % \pagebreak
+            Now we can do with respect to $t$.
+            \begin{align}
+                y(x,t)  &=  (4.00 \unit{\milli\meter}) h[(30 \unit{\meter^{-1}})x + (6.0\,\unit{\second^{-1}})t]\\
+                \diff{y}{t}    &=  (6.0\,\unit{\second^{-1}}) (4.00 \unit{\milli\meter}) h'[(30 \unit{\meter^{-1}})x + (6.0\,\unit{\second^{-1}})t]\\
+                \diff[2]{y}{t}  &=  (6.0\,\unit{\second^{-1}})^2 (4.00 \unit{\milli\meter}) h''[(30 \unit{\meter^{-1}})x + (6.0\,\unit{\second^{-1}})t]
+            \end{align}
+
+            Now we can substitute both of them into the wave equation.
+            \begin{equation}
+                \diffp[2]{\psi}{x}  =   \frac{1}{v^2} \diffp[2]{\psi}{t}
+            \end{equation}
+
+            Noticing that within our earlier second derivatives, there is the identical component of $(4.00 \unit{\milli\meter}) h''[(30 \unit{\meter^{-1}})x + (6.0\,\unit{\second^{-1}})t]$, which we can preemptively cancel out on both sides.
+            \begin{gather}
+                (30\,\unit{\meter^{-1}})^2  =   \frac{1}{v^2}\,(6.0\,\unit{\second^{-1}})^2\\
+                \frac{(6.0\,\unit{\second})^2}{(30\,\unit{\meter})^2}   =   \frac{1}{v^2}\\
+                v^2 =   \frac{(30\,\unit{\meter})^2}{(6.0\,\unit{\second})^2}\\
+                v   =   \frac{30\,\unit{\meter}}{6\,\unit{\second}}
+                    =   \boxed{5.0\,\unit{\meter/\second}}
+            \end{gather}
+
+    \pagebreak
     \section{Problem 31}
         Two identical traveling waves, moving in the same direction, are out of phase by $\pi/2$ rad. 
         What is the amplitude of the resultant wave in terms of the common amplitude $y_m$ of the two combining waves?
 
         \subsection{Solution}
+        We can set equations for both waves.
+        I will be using complex notation, since I prefer it that way.
+        \begin{align}
+            \Psi_1(x,t) &=  y_m \e{kx - \omega t}\\
+            \Psi_2(x,t) &=  y_m \e{kx - \omega t + \frac{\pi}{2}}\\
+            \Psi(x,t)   &=  \Psi_1(x,t) + \Psi_2(x,t)
+                =   y_m \e{kx - \omega t} + y_m \e{kx - \omega t + \frac{\pi}{2}}\\
+                &=  y_m \e{kx - \omega t}\left( 1 + e^{i\frac{\pi}{2}} \right)
+                =   y_m \e{kx - \omega t}\left( 1 + i \right)\\
+                &=  y_m \e{kx - \omega t} * \sqrt{2}\e{\pi/2}
+                =   y_m \sqrt{2} \e{kx - \omega t + \frac{\pi}{2}}
+        \end{align}
 
-    % \pagebreak
+        This gives another wave form equation. 
+        It gives our wave an amplitude. 
+        \begin{equation}
+            A   =   y_m \sqrt{2}
+                =   \boxed{1.414 y_m}
+        \end{equation}
+
+    \pagebreak
     \section{Problem 35}
         Two sinusoidal waves of the same frequency travel in the same direction along a string. 
         If $y_{m1} = 3.0 \unit{\centi\meter}$, $y_{m2} = 4.0 cm$, $\psi_1 = 0$, and $\psi_2 = \pi/2$ rad, what is the amplitude of the resultant wave?
