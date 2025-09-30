@@ -371,21 +371,75 @@
     \pagebreak
     \section{Problem 35}
         Two sinusoidal waves of the same frequency travel in the same direction along a string. 
-        If $y_{m1} = 3.0 \unit{\centi\meter}$, $y_{m2} = 4.0 cm$, $\psi_1 = 0$, and $\psi_2 = \pi/2$ rad, what is the amplitude of the resultant wave?
+        If $y_{m1} = 3.0 \unit{\centi\meter}$, $y_{m2} = 4.0 \unit{\centi\meter}$, $\phi_1 = 0$, and $\phi_2 = \pi/2$ rad, what is the amplitude of the resultant wave?
 
         \subsection{Solution}
+            Since they have the same frequency, they have the same angular speed.
+            \begin{align}
+                \Psi_1  &=  y_{m1}\e{kx - \omega t + \phi_1}
+                    =   (3.0 \unit{\centi\meter})\e{kx - \omega t + 0}\\
+                \Psi_2  &=  y_{m2}\e{kx - \omega t + \phi_2}
+                    =   (4.0 \unit{\centi\meter})\e{kx - \omega t + \frac{\pi}{2}}\\
+                \Psi    &=  \Psi_1 + \Psi_2
+                    =   (3.0 \unit{\centi\meter})\e{kx - \omega t + 0} + (4.0 \unit{\centi\meter})\e{kx - \omega t + \frac{\pi}{2}}\\
+                    &=  \e{kx - \omega t} \left( (3.0 \unit{\centi\meter}) + (4.0 \unit{\centi\meter})\e{\frac{\pi}{2}} \right)\\
+                    &=  \e{kx - \omega t} \left( 3.0 \unit{\centi\meter} + 4.0i \unit{\centi\meter} \right)
+            \end{align}
 
-    % \pagebreak
+            This associates well wth a 3-4-5 triangle.
+            We know that triangle has an hypotenuse of length 5cm can designate that that triangle has an angle of $\theta$.
+            \begin{align}
+                \Psi    &=  \e{kx - \omega t} * (5\unit{\centi\meter})\e{\theta}
+                    =   (5 \unit{\centi\meter})\e{kx - \omega t + \theta}\\
+                A   &=  \boxed{5\,\unit{\centi\meter}}
+            \end{align}
+
+    \pagebreak
     \section{Problem 37}
         These two waves travel along the same string:
         \begin{align}
-            y_1(x, t)   &=  (4.60 \unit{\milli\meter}) sin(2\pi x - 400\pi t)\\
-            y_2(x, t)   &=  (5.60 \unit{\milli\meter}) sin(2\pi x - 400\pi t + 0.80\pi\,\unit{\radian}).
+            y_1(x, t)   &=  (4.60 \unit{\milli\meter}) \sin(2\pi x - 400\pi t)\\
+            y_2(x, t)   &=  (5.60 \unit{\milli\meter}) \sin(2\pi x - 400\pi t + 0.80\pi\,\unit{\radian}).
         \end{align}
         What are (a) the amplitude and (b) the phase angle (relative to wave 1) of the resultant wave? 
         (c) If a third wave of amplitude 5.00 mm is also to be sent along the string in the same direction as the first two waves, what should be its phase angle in order to maximize the amplitude of the new resultant wave?
 
-        \subsection{Solution}
+        \subsection{Solution (a)}
+            I'll start by turning the two waves complex.
+            This is entirely optional.
+            \begin{align}
+                y_1(x, t)   &=  (4.60 \unit{\milli\meter})i \e{2\pi x - 400\pi t}\\
+                y_2(x, t)   &=  (5.60 \unit{\milli\meter})i \e{2\pi x - 400\pi t + 0.80\pi\,\unit{\radian}}
+            \end{align}
+
+            Now we add them together.
+            \begin{align}
+                \Psi(x,t)   &=  y_1(x, t) + y_2(x, t)\\
+                    &=  (4.60 \unit{\milli\meter})i \e{2\pi x - 400\pi t} + (5.60 \unit{\milli\meter})i \e{2\pi x - 400\pi t + 0.80\pi\,\unit{\radian}}\\
+                    &=  i \e{2\pi x - 400\pi t} (4.60 \unit{\milli\meter} + 5.60 \unit{\milli\meter}\,\e{0.80\pi\,\unit{\radian}})\\
+                    &=  i \e{2\pi x - 400\pi t} (4.60\,\unit{\milli\meter} - 4.53\,\unit{\milli\meter} + 3.29i\,\unit{\milli\meter})\\
+                    &=  i \e{2\pi x - 400\pi t} (0.07\,\unit{\milli\meter} + 3.29i\,\unit{\milli\meter})
+            \end{align}
+
+            From here, we can find the amplitude.
+            \begin{align}
+                A   &=  \sqrt{0.07^2 + 3.29^2}
+                    =   \boxed{3.292\,\unit{\milli\meter}}
+            \end{align}
+
+        \subsection{Solution (b)}
+            This can finally be used to find the phase angle.
+            \begin{equation}
+                \arctan\left( \frac{3.29}{0.07} \right) =   \boxed{1.55\,\unit{\radian}}
+            \end{equation}
+
+            It can be used to set up a final equation.
+            \begin{align}
+                \Psi(x,t)   &=  (3.292\,\unit{\milli\meter}) i \e{2\pi x - 400\pi t + 1.55}
+            \end{align}
+
+        \subsection{Solution (c)}
+            Give it the same phase angle of \boxed{1.55\,\unit{\radian}}. 
 
     % \pagebreak
     \section{Problem 41}
