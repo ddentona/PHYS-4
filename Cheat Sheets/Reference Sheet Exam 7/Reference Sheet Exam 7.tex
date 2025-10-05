@@ -1,0 +1,84 @@
+\documentclass[8pt]{minimal}
+\usepackage{amsmath}
+\usepackage{esdiff}
+\usepackage{graphfig}
+
+\begin{document}
+    \setlength{\parindent}{0pt}
+    % \setlength{\voffset}{-50pt}
+    \setlength{\columnsep}{1cm}
+    \twocolumn
+    PHYS 4C Exam 1 Reference Sheet (with \LaTeX)
+
+    \underline{Write Units}
+    Anything not in here can be found in the textbook or your notes.
+
+    \underline{Laws of Thermodynamics}\\
+    0. Transistive Thermodynamic Equilibrium\\
+    1. $\Delta E = Q_{in} + W_{in}$\\
+    2. $\Delta S \geq 0$\\
+    3. 0K can't be reached in finitely many steps
+    \begin{equation*}
+        T_F =   \frac{9}{5}T_C + 32
+    \end{equation*}
+
+    \underline{Thermal Expansion}
+    \begin{gather*}
+        \Delta L    =   \alpha L_i \Delta T\\
+        \Delta V    =   3\alpha V_i \Delta T
+    \end{gather*}
+
+    \underline{Heat}\\
+    Flows from hot to cold
+    \begin{gather*}
+        Q   =   cm\Delta T \text{(Temperature change)}\\
+        Q   =   L_m m \text{(Phase change)}
+    \end{gather*}
+
+    \underline{Thermal processes}
+    \begin{gather*}
+        W   =   -p\Delta V  =   -\int p\,dV\\
+        PV  =   NkT =   nRT; 
+        \Delta E    =   nC_V \Delta T\\
+        C_V =   \left( \frac{f}{2} \right)R; C_p = C_V + 1; \gamma = \frac{C_p}{C_V}
+    \end{gather*}
+    \begin{center}
+        \begin{tabular}{l | c | r}
+            Constant    &   Name    &   Formulae\\
+            $p$ &   Isobaric    &   $Q = nC_p \Delta T; W = -p\Delta V$\\
+            $T$ &   Isothermal  &   $Q = -W = nRT\ln(V_f / V_i)$\\
+            $pV^\gamma , TV^{\gamma - 1}$   &   Adiabatic   &   $Q = 0; W = \Delta E$\\
+            $V$ &   Isochoric   &   $Q = nC_V \Delta T; W = 0$
+        \end{tabular}
+    \end{center}
+
+    \underline{Conductance equations}\\
+    $k$ is the conductance of a material.
+    Conductance over multiple objects works like capacitance equivalence
+    \begin{gather*}
+        \diff{Q}{t} =   K \Delta T; 
+        K   =   \frac{kA}{L}\\
+        \frac{1}{A}\diff{Q}{t}  =   -k\diff{T}{x};
+        \vec{J} =   -k \nabla T
+    \end{gather*}
+
+    \underline{Entropy ($S$) change}
+    \begin{equation*}
+        \Delta S    =   \int_{i}^{f}\frac{1}{T}\,dQ
+    \end{equation*}
+
+    \underline{Engines and Refrigerator}\\
+    Carnot engines/fridges are perfect and ideal versions.
+    Engine efficiency denoted $\varepsilon$
+    \begin{gather*}
+        \varepsilon =   \frac{|W_{out}|}{|Q_{H}|}; 
+        \varepsilon_C   =   1 - \frac{|Q_{L}|}{|Q_{H}|}
+            =   1 - \frac{T_L}{T_H}
+    \end{gather*}
+    Refrigerator efficiency denoted $K$
+    \begin{gather*}
+        K   =   \frac{|Q_L|}{|W_{in}|}; 
+        K_C =   \frac{|Q_{L}|}{|Q_{H}| - |Q_{L}|}
+            =   \frac{T_L}{T_H - T_L}
+    \end{gather*}
+\end{document}
