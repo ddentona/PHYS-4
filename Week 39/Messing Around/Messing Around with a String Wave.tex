@@ -1,0 +1,61 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{esdiff}
+
+\begin{document}
+    This document has no purpose.
+
+    It is noted that there is a tension T in the string.
+    This tension would be cumulative, held up over the length of the string.
+    That means that each miniscule part of the string (call it $dx$) would have a tension acting on it (call it $T$) from each side.
+    The difference between the two sides would be the angle at which it acts.
+    Suppose that a tiny piece of the string $dx$ experiences a force from each side, one from the left and one from the right.
+    The forces would have some nearly identical (albeit not identical) magnitude ($T$), but different directions ($\hat{T}_1$ and $\hat{T}_2$, respectively).
+    Each of these would exert a force on the piece of string.
+    We can apply Newton's second law to this as well.
+    \begin{equation}
+        \vec{F} = \hat{T}_1\,T + \hat{T}_2\,T = \vec{a}\,dm
+    \end{equation}
+
+    We do not have a known mass, but we do have a known density of this string.
+    We can get the mass of a tiny part of the string from that, which we can substitute into the above equation.
+    \begin{gather}
+        dm  =   \mu\,dx\\
+        \left( \hat{T}_1 + \hat{T}_2 \right)\,T = \vec{a}\mu\,dx
+    \end{gather}
+
+    The acceleration can also be expressed in terms of a second derivative.
+    \begin{gather}
+        \vec{a} = \diffp[2]{\vec{y}}{t}\\
+        \left( \hat{T}_1 + \hat{T}_2 \right)\,T = \diffp[2]{\vec{y}}{t}\mu\,dx
+    \end{gather}
+
+    This being a 2D wave, we can separate the tension vectors into both $x$ and $y$ components.
+    These would be dependant on their separate vectors' angles with the horizontal.
+    Since both are unit vectors, we only need to consider the sines and cosines, so no magnitudes.
+    \begin{gather}
+        \hat{T}_1 = \begin{pmatrix} \cos(\theta_1) \\ \sin(\theta_1) \end{pmatrix}\\
+        \hat{T}_2 = \begin{pmatrix} \cos(\theta_2) \\ \sin(\theta_2) \end{pmatrix}\\
+        \hat{T}_1 + \hat{T}_2 = \begin{pmatrix} \cos(\theta_1) \\ \sin(\theta_1) \end{pmatrix} + \begin{pmatrix} \cos(\theta_2) \\ \sin(\theta_2) \end{pmatrix}
+            =   \begin{pmatrix} \cos(\theta_1) + \cos(\theta_2) \\ \sin(\theta_1) + \sin(\theta_2) \end{pmatrix}
+    \end{gather}
+
+    In the case of strings, the values of $\theta_1$ and $\theta_2$ are immeasurably small, so we can estimate and approximate the values of their sines and cosines.
+    \begin{equation}
+        \cos(\theta) \to 1 ; 
+        \sin(\theta) \to \theta
+    \end{equation}
+
+    Bear in mind as well that the $x$-values of the tension forces are in opposite directions, so if ever these cosines are added together, we can set them both to be equal to 1 and cancel them out.
+    Furthermore, the values of $\theta$ are approximately equal to the difference in $y$-value of the piece of string.
+    \begin{gather}
+        \hat{T}_1 + \hat{T}_2   =   \begin{pmatrix} 1 - 1 \\ \theta_1 + \theta_2 \end{pmatrix}
+            =   \begin{pmatrix} 0 \\ dy \end{pmatrix}
+    \end{gather}
+
+    The values of $T$ also do change.
+    The difference in tension would be directly proportional to the slope of the line at that specific point.
+    \begin{equation}
+        T' = \diff{y}{x} T
+    \end{equation}
+\end{document}

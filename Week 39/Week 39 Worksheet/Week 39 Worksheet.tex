@@ -41,5 +41,36 @@
             \item   Solve those equations for $f(x)$ and $g(x)$ separately.
             \item   Substitute into the expression for $y(x,t)$.
         \end{itemize}
-        
+
+        \subsection*{Solution}
+            Suppose that the string's wave has an equation involving a combination of two different solutions.
+            \begin{equation}
+                y(x,t) = f(x - vt) + g(x + vt)
+            \end{equation}
+
+            We can in turn formulate an equation for the velocty of any point at a given time $t$ by takng the partial derivative wth respect to $t$.
+            \begin{equation}
+                \diffp{y}{t}(x,t) = v(g(x + vt) - f(x - vt))
+            \end{equation}
+
+            Setting $t = 0$, we can form two equations, one from the postion and one from the velocty of each particle.
+            Bear in mind that it is given that at time $t = 0$, all parts of the string are at rest.
+            \begin{gather}
+                y(x,0) = Y(x) = f(x) + g(x)\\
+                \diffp{y}{t}(x,0) = 0 = v(g(x) - f(x))
+            \end{gather}
+
+            We can solve the second equation and find a very simple value for $g(x)$.
+            \begin{gather}
+                0 = v(g(x) - f(x))\\
+                0 = g(x) - f(x)\\
+                g(x) = f(x)
+            \end{gather}
+
+            This can be substituted into the first equation.
+            \begin{gather}
+                Y(x) = f(x) + g(x)
+                    =   2f(x)
+                    =   2g(x)
+            \end{gather}
 \end{document}
