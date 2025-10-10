@@ -1,0 +1,45 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{cancel}
+\usepackage{enumitem}
+\usepackage{esdiff}
+\usepackage{graphicx}
+\usepackage{siunitx}
+% \usepackage{pgfplots}
+\usepackage{wrapfig}
+
+\newcommand{\E}[1]{\times 10^{#1}}
+
+\title{
+    Worksheet \#6
+    \\  \small
+    PHYS 4C: Waves and Thermodynamics
+    }
+\author{Donald Aingworth IV}
+\date{September 22, 2025}
+
+\begin{document}
+    \DeclareSIUnit{\celsiusdegree}{C^\circ}
+    \DeclareSIUnit{\atm}{ atm}
+
+    \maketitle
+
+    \setcounter{section}{1}
+    \section*{Problem}
+        One of the fundamental principles of Classical Mechanics is that if the positions and velocities of all particles in an isolated system are known at some initial time and the internal interactions are completely understood (i.e., all force laws are known), then it should be possible (at least in theory) to determine the motion of the entire system for all subsequent time.
+        
+        Suppose we have an infinite string with given tension $T$ and mass/length $\mu$ and it is known at time $t = 0$ that $y(x,0) = Y(x)$ and that all parts of the string are completely at rest. 
+        Determine $y(x,t)$ for the string (do not assume that the wave must travel in one direction or the other). 
+        Does your result make sense?
+        
+        The following procedure is recommended.
+        \begin{itemize}
+            \item   Start with the general expression $y(x,t) = f(x - vt) + g(x + vt)$.
+            \item   Derive an expression for $\diffp{y}{t}$.
+            \item   Set $t = 0$ and construct two equations involving the two unknown functions $f(x)$ and $g(x)$.
+            \item   Solve those equations for $f(x)$ and $g(x)$ separately.
+            \item   Substitute into the expression for $y(x,t)$.
+        \end{itemize}
+        
+\end{document}
