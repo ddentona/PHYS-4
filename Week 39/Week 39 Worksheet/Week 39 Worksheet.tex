@@ -17,7 +17,7 @@
     PHYS 4C: Waves and Thermodynamics
     }
 \author{Donald Aingworth IV}
-\date{September 22, 2025}
+\date{October 13, 2025}
 
 \begin{document}
     \DeclareSIUnit{\celsiusdegree}{C^\circ}
@@ -57,20 +57,53 @@
             Bear in mind that it is given that at time $t = 0$, all parts of the string are at rest.
             \begin{gather}
                 y(x,0) = Y(x) = f(x) + g(x)\\
-                \diffp{y}{t}(x,0) = 0 = v(g(x) - f(x))
+                \diffp{y}{t}(x,0) = 0 = v(g'(x) - f'(x))
             \end{gather}
 
-            We can solve the second equation and find a very simple value for $g(x)$.
+            We can solve the second equation and find a very simple value for $g'(x)$.
             \begin{gather}
-                0 = v(g(x) - f(x))\\
-                0 = g(x) - f(x)\\
-                g(x) = f(x)
+                0 = v(g'(x) - f'(x))\\
+                0 = g'(x) - f'(x)\\
+                g'(x) = f'(x)
             \end{gather}
 
-            This can be substituted into the first equation.
+            We can integrate both sides of these with respect to position. 
             \begin{gather}
-                Y(x) = f(x) + g(x)
-                    =   2f(x)
-                    =   2g(x)
+                \int g'(x)\,dx  =   \int f'(x)\,dx\\
+                g(x)    =   f(x) + c_1\\
+                f(x)    =   g(x) + c_2
             \end{gather}
+
+            We can substitute these into the equation for the wave at time 0.
+            \begin{gather}
+                Y(x)    =   f(x) + g(x)
+                    =   2f(x) + c_1
+                    =   2g(x) + c_2
+            \end{gather}
+
+            Suppose that instead, we set a value of x that depends on $t$. 
+            Since the string is infinite, the domain of $x$ is $\mathbb{R}$, so as long as the substituted value is real, the answer will be within the proper range.
+            We can also solve the above equation for both $f(x)$ and $g(x)$.
+            \begin{gather}
+                f(x)    =   \frac{Y(x) - c_1}{2}\\
+                g(x)    =   \frac{Y(x) - c_2}{2}
+            \end{gather}
+
+            Here is where we can substitute in the value of $x$, in this case making it $x - vt$ for the $f(x)$ and $x + vt$ for $g(x)$.
+            \begin{gather}
+                f(x - vt)   =   \frac{Y(x - vt) - c_1}{2}\\
+                g(x + vt)   =   \frac{Y(x + vt) - c_2}{2}\\
+                \begin{align}
+                    y(x,t)  &=  f(x - vt) + g(x + vt)\\
+                        &=  \frac{Y(x - vt) - c_1}{2} + \frac{Y(x + vt) - c_2}{2}\\
+                        &=  \frac{Y(x - vt) - c_1 + Y(x + vt) - c_2}{2}
+                \end{align}
+            \end{gather}
+
+            Looking back, the two constants would be equal and opposite, so they would cancel.
+            \begin{equation}
+                y(x,t)  =   \frac{Y(x - vt)}{2} + \frac{Y(x + vt)}{2}
+            \end{equation}
+
+            This does make sense.
 \end{document}
