@@ -143,6 +143,33 @@
         What is the depth of the well?
 
         \subsection{Solution}
+            The time taken of 3.00 s is the time taken for the stone to drop plus the time taken for the sound to return up the well.
+            We can create formulas for each of these, using a gravitational constant of $9.81\,\unit{\meter/\second^2}$.
+            \begin{gather}
+                h   =   \frac{1}{2}gt_1^2
+                    =   \frac{(9.81\,\unit{\meter/\second^2})}{2} t_1^2\\
+                h   =   vt_2
+                    =   (343\,\unit{\meter/\second})t_2\\
+                t_1 + t_2   =   3.00\,\unit{\second} \to
+                t_2 =   3.00\,\unit{\second} - t_1
+            \end{gather}
+
+            We can substitute our value of $t_2$ into the equation for the distance traveled by the sound and solve that for $t_1$.
+            \begin{gather}
+                h   =   (343\,\unit{\meter/\second}) (3.00\,\unit{\second} - t_1)\\
+                3.00\,\unit{\second} - t_1  =   \frac{h}{343\,\unit{\meter/\second}}\\
+                t_1 =   3.00\,\unit{\second} - \frac{h}{343\,\unit{\meter/\second}}
+            \end{gather}
+
+            This in turn can be substituted into our other equation for the depth of the well.
+            \begin{gather}
+                h   =   \frac{(9.81\,\unit{\meter/\second^2})}{2} t_1^2
+                    =   \frac{(9.81\,\unit{\meter/\second^2})}{2} \left( 3.00\,\unit{\second} - \frac{h}{343\,\unit{\meter/\second}} \right)^2\\
+                2 (343\,\unit{\meter/\second})^2 h  =   9.81\,\unit{\meter/\second^2} \left( (1029\,\unit{\meter})^2 - (2058\,\unit{\meter})h + h^2 \right)
+            \end{gather}
+
+            This gives us a polynomial.
+            Solving that polynomial gives us a value of \boxed{h = 40.72\,\unit{\meter}}.
 
     \pagebreak
     \section{Problem 11}
@@ -150,7 +177,33 @@
         (a) What is the wavelength in air of such a sound wave? 
         (b) If the speed of sound in tissue is 1500 m/s, what is the wavelength of this wave in tissue?
 
-        \subsection{Solution}
+        \subsection{Solution (a)}
+            We have an equation for frequency and wavelength and an accepted speed of sound in air.
+            \begin{gather}
+                v   =   \lambda f\\
+                v   =   343\,\unit{\meter/\second}
+            \end{gather}
+
+            We can use these to get the wavelength.
+            \begin{align}
+                \lambda &=  \frac{v}{f}
+                    =   \frac{343\,\unit{\meter/\second}}{4,50\E{6}\,\unit{\hertz}}
+                    =   \boxed{7,62\E{-5}\,\unit{\meter}}
+            \end{align}
+
+        \subsection{Solution (b)}
+            Let's do the same thing.
+            \begin{gather}
+                v   =   \lambda f\\
+                v   =   1500\,\unit{\meter/\second}
+            \end{gather}
+
+            We can use these to get the wavelength.
+            \begin{align}
+                \lambda &=  \frac{v}{f}
+                    =   \frac{1500\,\unit{\meter/\second}}{4,50\E{6}\,\unit{\hertz}}
+                    =   \boxed{3,3\E{-4}\unit{\meter}}
+            \end{align}
 
     \pagebreak
     \section{Problem 15}
