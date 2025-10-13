@@ -13,7 +13,8 @@
 \contentsline {subsection}{\numberline {5.1}Solution (a)}{6}{}%
 \contentsline {subsection}{\numberline {5.2}Solution (b)}{6}{}%
 \contentsline {section}{\numberline {6}Problem 15}{7}{}%
-\contentsline {subsection}{\numberline {6.1}Solution}{7}{}%
+\contentsline {subsection}{\numberline {6.1}Solution (a)}{7}{}%
+\contentsline {subsection}{\numberline {6.2}Solution (b)}{7}{}%
 \contentsline {section}{\numberline {7}Problem 17}{8}{}%
 \contentsline {subsection}{\numberline {7.1}Solution}{8}{}%
 \contentsline {section}{\numberline {8}Problem 19}{9}{}%
