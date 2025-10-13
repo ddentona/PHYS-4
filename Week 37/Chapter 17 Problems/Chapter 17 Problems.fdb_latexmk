@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1760366838.64162 "c:/Users/ddent/OneDrive/Documents/CCSF/PHYS-4/Week 37/Chapter 17 Problems/Chapter 17 Problems.tex" "Chapter 17 Problems.pdf" "Chapter 17 Problems" 1760366839.73789 0
+["pdflatex"] 1760367658.67885 "c:/Users/ddent/OneDrive/Documents/CCSF/PHYS-4/Week 37/Chapter 17 Problems/Chapter 17 Problems.tex" "Chapter 17 Problems.pdf" "Chapter 17 Problems" 1760367659.74081 0
   "C:/Users/ddent/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1756785331 151629 65cd6e1296beda1feb8e616e59f2da55 ""
   "C:/Users/ddent/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1724473854 24225046 9a86b7f1ef10f5afb0aa895fddb2583f ""
   "C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233951848 1004 54797486969f23fa377b128694d548df ""
@@ -29,6 +29,7 @@
   "C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1247596667 32722 d7379af29a190c3f453aba36302ff5a9 ""
   "C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb" 1247596666 32362 bc3f3eec7ab7d65fe700963d4017d32c ""
   "C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb" 1247596667 32726 39f0f9e62e84beb801509898a605dbd5 ""
+  "C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1247596667 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb" 1247596667 32626 5abc8bb2f28aa647d4c70f8ea38cc0d3 ""
   "C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb" 1247596667 36118 fad905eba93cff5bce1e185fe980a177 ""
   "C:/Users/ddent/AppData/Local/Programs/MiKTeX/tex/context/base/mkii/supp-pdf.mkii" 1580390158 71627 94eb9990bed73c364d7f53f960cc8c5b ""
@@ -66,10 +67,10 @@
   "C:/Users/ddent/AppData/Local/Programs/MiKTeX/tex/latex/translations/dicts/translations-basic-dictionary-english.trsl" 1644048522 5588 0c1628daf15f4411ff1f463114c634a3 ""
   "C:/Users/ddent/AppData/Local/Programs/MiKTeX/tex/latex/translations/translations.sty" 1644048522 44247 2188b95d0ee74e31eca4d316263c58a7 ""
   "C:/Users/ddent/AppData/Local/Programs/MiKTeX/tex/latex/wrapfig/wrapfig.sty" 1044403200 26220 3701aebf80ccdef248c0c20dd062fea9 ""
-  "Chapter 17 Problems.aux" 1760366839 5894 e21bf400a8c9797d419533671aa06f72 "pdflatex"
-  "Chapter 17 Problems.tex" 1760366837 6194 18f46446d0e82cf9116a1e61bda10fe3 ""
-  "Chapter 17 Problems.toc" 1760366839 3483 13b4f0e4adb12ccac49f62bf993a6d94 "pdflatex"
-  "c:/Users/ddent/OneDrive/Documents/CCSF/PHYS-4/Week 37/Chapter 17 Problems/Chapter 17 Problems.tex" 1760366837 6194 18f46446d0e82cf9116a1e61bda10fe3 ""
+  "Chapter 17 Problems.aux" 1760367659 6003 2845947baed4aed596ddb7009687da52 "pdflatex"
+  "Chapter 17 Problems.tex" 1760367657 7186 03029c8b97dc455a1fa1eabc52743d9d ""
+  "Chapter 17 Problems.toc" 1760367659 3551 ea7b3c26d51ed7f48a5cabced439278b "pdflatex"
+  "c:/Users/ddent/OneDrive/Documents/CCSF/PHYS-4/Week 37/Chapter 17 Problems/Chapter 17 Problems.tex" 1760367657 7186 03029c8b97dc455a1fa1eabc52743d9d ""
   (generated)
   "Chapter 17 Problems.aux"
   "Chapter 17 Problems.log"
