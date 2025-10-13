@@ -484,26 +484,89 @@
     \section{Problem 43}
         What are (a) the lowest frequency, (b) the second lowest frequency, and (c) the third lowest frequency for standing waves on a wire that is 10.0 m long, has a mass of 100 g, and is stretched under a tension of 250 N?
 
-        \subsection{Solution}
+        \subsection{Solution (a)}
+            First find the velocity.
+            \begin{align}
+                v   &=  \sqrt{\frac{\tau}{\mu}}
+                    =   \sqrt{\frac{\tau}{m/L}}
+                    =   \sqrt{\frac{250\,\unit{\newton} * 10.0\,\unit{\meter}}{0.1\,\unit{\kilo\gram}}}\\
+                    &=  \sqrt{\frac{2500\,\unit{\newton\cdot\meter}}{0.1\,\unit{\kilo\gram}}}
+                    =   \sqrt{25000\,\unit{\meter^2/\second^2}}
+                    =   50\sqrt{10}\,\unit{\meter/\second}
+            \end{align}
 
-    % \pagebreak
+            The lowest speed would have a wavelength of twice the length of the wire.
+            We can use this to find the frequency, using the equation $v = \lambda f$.
+            \begin{align}
+                f   &=  \frac{v}{\lambda}
+                    =   \frac{50\sqrt{10}\,\unit{\meter/\second}}{20\,\unit{\meter}}
+                    =   \boxed{2.5\sqrt{10}\,\unit{\hertz}}
+            \end{align}
+
+        \subsection{Solution (b)}
+            In this case, the wavelength will be the length of the string.
+            \begin{align}
+                f   &=  \frac{v}{\lambda}
+                    =   \frac{50\sqrt{10}\,\unit{\meter/\second}}{10\,\unit{\meter}}
+                    =   \boxed{5\sqrt{10}\,\unit{\hertz}}
+            \end{align}
+            
+        \subsection{Solution (c)}
+            In this case, the wavelength will be two thirds the length of the string.
+            \begin{align}
+                f   &=  \frac{v}{\lambda}
+                    =   \frac{50\sqrt{10}\,\unit{\meter/\second}}{\frac{2}{3}*10\,\unit{\meter}}
+                    =   \boxed{7.5\sqrt{10}\,\unit{\hertz}}
+            \end{align}
+
+    \pagebreak
     \section{Problem 45}
         A string that is stretched between fixed supports separated by 75.0 cm has resonant frequencies of 420 and 315 Hz, with no intermediate resonant frequencies. 
         What are (a) the lowest resonant frequency and (b) the wave speed?
 
-        \subsection{Solution}
+        \subsection{Solution (a)}
+            There's an equation for the resonnant frequency.
+            We can apply this ot the two cases.
+            \begin{align}
+                420\,\unit{\hertz}  &=  (n + 1)\frac{v}{2L}\\
+                315\,\unit{\hertz}  &=  n\frac{v}{2L}
+            \end{align}
 
-    % \pagebreak
+            Subtract the latter from the former to find the lowest resonant frequency (i.e. n = 1).
+            \begin{align}
+                420\,\unit{\hertz} - 315\,\unit{\hertz} &=  \frac{v}{2L}
+                    =   f_1
+                    =   \boxed{105\,\unit{\hertz}}
+            \end{align}
+
+        \subsection{Solution (b)}
+            To find the wave speed, we can use the resonant frequency at n = 1.
+            \begin{gather}
+                f   =   \frac{v}{2L}\\
+                v   =   2fL
+                    =   2 * 105\,\unit{\hertz} * 0.75\,\unit{\centi\meter}
+                    =   \boxed{157.5\,\unit{\meter/\second}}
+            \end{gather}
+
+    \pagebreak
     \section{Problem 53}
         A string oscillates according to the equation
         \begin{equation}
-            y = (0.50 \unit{\centi\meter}) \sin \left[  ( \frac{\pi}{3} \unit{\centi\meter^{-1}})x \right] \cos\left[ (40\pi \unit{\second^{-1}} )t \right]
+            y = (0.50 \unit{\centi\meter}) \sin \left[  \left( \frac{\pi}{3}\,\unit{\centi\meter^{-1}} \right)x \right] \cos\left[ (40\pi\,\unit{\second^{-1}} )t \right]
         \end{equation}
         What are the (a) amplitude and (b) speed of the two waves (identical except for direction of travel) whose superposition gives this oscillation? 
         (c) What is the distance between nodes? 
         (d) What is the transverse speed of a particle of the string at the position x = 1.5 cm when t = $\frac{9}{8}$ s?
 
-        \subsection{Solution}
+        \subsection{Solution (a)}
+            If the two waves are identical, their amplitudes will be identical.
+            The amplitude of each would be half the length of their combination.
+            \begin{equation}
+                \frac{5\,\unit{\milli\meter}}{2}    =   \boxed{2.5\,\unit{\milli\meter}}
+            \end{equation}
+
+        \subsection{Solution (b)}
+            There's a 
 
     \pagebreak
     \section{Problem 61}
