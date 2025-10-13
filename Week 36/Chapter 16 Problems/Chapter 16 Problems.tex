@@ -556,7 +556,7 @@
         \end{equation}
         What are the (a) amplitude and (b) speed of the two waves (identical except for direction of travel) whose superposition gives this oscillation? 
         (c) What is the distance between nodes? 
-        (d) What is the transverse speed of a particle of the string at the position x = 1.5 cm when t = $\frac{9}{8}$ s?
+        (d) What is the transverse speed of a particle of the string at the position $x = 1.5$ cm when $t = \frac{9}{8}$ s?
 
         \subsection{Solution (a)}
             If the two waves are identical, their amplitudes will be identical.
@@ -566,7 +566,37 @@
             \end{equation}
 
         \subsection{Solution (b)}
-            There's a 
+            There's a formula for the speed (velocity) of a wave. 
+            \begin{align}
+                v   &=  \frac{\omega}{k}
+                    =   \frac{40\pi}{\frac{\pi}{3}\E{-2}}\,\unit{\meter/\second}
+                    =   120\E{2}\,\unit{\meter/\second}
+            \end{align}
+        
+        \subsection{Solution (c)}
+            The distance between nodes is half the wavelength.
+            \begin{align}
+                \lambda &=  \frac{v}{f}
+                    =   \frac{\frac{\omega}{k}}{\frac{\omega}{2\pi}}
+                    =   \frac{2\pi}{k}
+                    =   \frac{2\pi}{\frac{\pi}{3}\E{-2}\,\unit{\meter^{-1}}}
+                    =   \boxed{6\E{2}\,\unit{\meter}}
+            \end{align}
+
+        \subsection{Solution (d)}
+            The transverse velocity of the wave is the velocity of individual particles.
+            This can be foud by taking the derivative with respect to time.
+            \begin{align}
+                \diff{y}{t}(x,t) &=  \diff{}{t}\left( (0.50 \unit{\centi\meter}) \sin \left[  \left( \frac{\pi}{3}\,\unit{\centi\meter^{-1}} \right)x \right] \cos\left[ (40\pi\,\unit{\second^{-1}} )t \right] \right)\\
+                    &=  -(20\pi \unit{\centi\meter/\second}) \sin \left[  \left( \frac{\pi}{3}\,\unit{\centi\meter^{-1}} \right)x \right] \sin\left[ (40\pi\,\unit{\second^{-1}} )t \right]
+            \end{align}
+
+            We can substitute values into this.
+            \begin{align}
+                \diff{y}{t} \left( 1.5\,\unit{\centi\meter},\frac{9}{8}\,\unit{\second} \right) &=  -(20\pi \unit{\centi\meter/\second}) \sin \left[ \frac{\pi * 1.5}{3} \right] \sin\left[ 40 * \frac{9}{8}\pi \right]\\
+                    &=  -(20\pi \unit{\centi\meter/\second}) \sin \left[ \frac{\pi}{2} \right] \sin\left[ 45\pi \right]
+                    =   \boxed{0}
+            \end{align}
 
     \pagebreak
     \section{Problem 61}
