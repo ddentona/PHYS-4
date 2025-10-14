@@ -231,86 +231,216 @@
 
     \pagebreak
     \section{Problem 17}
+        Two loudspeakers are located 3.35 m apart on an outdoor stage. 
+        A listener is 18.3 m from one and 19.5 m from the other. 
+        During the sound check, a signal generator drives the two speakers in phase with the same amplitude and frequency.
+        The transmitted frequency is swept through the audible range (20 Hz to 20 kHz). 
+        (a) What is the lowest frequency $f_{\rm min,1}$ that gives minimum signal (destructive interference) at the listener's location? 
+        By what number must $f_{\rm min,1}$ be multiplied to get (b) the second lowest frequency $f_{\rm min,2}$ that gives minimum signal and (c) the third lowest frequency $f_{\rm min,3}$ that gives minimum signal? 
+        (d) What is the lowest frequency $f_{\rm max,1}$ that gives maximum signal (constructive interference) at the listener's location? 
+        By what number must $f_{\rm max,1}$ be multiplied to get (e) the second lowest frequency $f_{\rm max,2}$ that gives maximum signal and (f) the third lowest frequency $f_{\rm max,3}$ that gives maximum signal?
 
-        \subsection{Solution}
+        \subsection{Solution (a)}
+            For there to be destructive interference, the path length difference ($19.5\unit{\meter} - 18.3\unit{\meter} = 1.2\unit{\meter}$) divided by the wavelength ($\lambda$) must be equal to a number $n$ which is 0.5 more or less than a natural number.
+            For the shortest possible, we can start with $n = 0.5$.
+            \begin{align}
+                \lambda &=  \frac{1.2\,\unit{\meter}}{0.5}
+                    =   2.4\,\unit{\meter}
+            \end{align}
+
+            From here, we can calculate the frequency from $v = \lambda f$.
+            The velocity is the speed of sound.
+            \begin{align}
+                f   &=  \frac{v}{\lambda}
+                    =   \frac{343\,\unit{\meter/\second}}{2.4\,\unit{\meter}}
+                    =   \boxed{142.9\,\unit{\hertz}}
+            \end{align}
+
+            This is the least. 
+            You can check.
+        
+        \subsection{Solution (b)}
+            Same thing, just for $n = 1.5$.
+            \begin{align}
+                f   &=  \frac{v}{\lambda}
+                    =   \frac{v}{\Delta L/n}
+                    =   \frac{nv}{\Delta L}
+                    =   \frac{1.5 * 343\,\unit{\meter/\second}}{1.2\,\unit{\meter}}
+                    =   \boxed{428.75\,\unit{\hertz}}
+            \end{align}
+        
+        \subsection{Solution (c)}
+            Same thing, just for $n = 2.5$.
+            \begin{align}
+                f   &=  \frac{v}{\lambda}
+                    =   \frac{v}{\Delta L/n}
+                    =   \frac{nv}{\Delta L}
+                    =   \frac{2.5 * 343\,\unit{\meter/\second}}{1.2\,\unit{\meter}}
+                    =   \boxed{714.58\,\unit{\hertz}}
+            \end{align}
+
+        \subsection{Solution (d)}
+            Same thing as part (a), just for constructive interference, $n$ would be equal to a natural number or zero.
+            $n$ being equal to zero would only be the case when there is $\Delta L$ is equal to zero or the wavelength is infinite.
+            The former is not the case and the latter would result in a frequency that is out of the boundaries of the frequency values, so we can just start at $n = 1$.
+            \begin{align}
+                f   &=  \frac{v}{\lambda}
+                    =   \frac{v}{\Delta L/n}
+                    =   \frac{nv}{\Delta L}
+                    =   \frac{1 * 343\,\unit{\meter/\second}}{1.2\,\unit{\meter}}
+                    =   \boxed{285.83\,\unit{\hertz}}
+            \end{align}
+        
+        \subsection{Solution (e)}
+            Same thing, just for $n = 2$.
+            \begin{align}
+                f   &=  \frac{v}{\lambda}
+                    =   \frac{v}{\Delta L/n}
+                    =   \frac{nv}{\Delta L}
+                    =   \frac{2 * 343\,\unit{\meter/\second}}{1.2\,\unit{\meter}}
+                    =   \boxed{571.67\,\unit{\hertz}}
+            \end{align}
+        
+        \subsection{Solution (f)}
+            Same thing, just for $n = 3$.
+            \begin{align}
+                f   &=  \frac{v}{\lambda}
+                    =   \frac{v}{\Delta L/n}
+                    =   \frac{nv}{\Delta L}
+                    =   \frac{3 * 343\,\unit{\meter/\second}}{1.2\,\unit{\meter}}
+                    =   \boxed{857.5\,\unit{\hertz}}
+            \end{align}
 
     \pagebreak
     \section{Problem 19}
+        \begin{wrapfigure}{r}{0.33\textwidth}
+            % \vspace{-30pt}
+            \includegraphics[width=0.33\textwidth]{17-35.png} 
+            % \label{fig:wrapfig}
+        \end{wrapfigure}
+        Figure 17-35 shows two isotropic point sources of sound, $S_1$ and $S_2$. 
+        The sources emit waves in phase at wavelength 0.50 m; they are separated by D = 1.75 m. 
+        If we move a sound detector along a large circle centered at the midpoint between the sources, at how many points do waves arrive at the detector (a) exactly in phase and (b) exactly out of phase?
 
         \subsection{Solution}
 
     \pagebreak
     \section{Problem 20}
+        \begin{center}
+            \includegraphics[width=0.5\textwidth]{17-36.png} 
+        \end{center}
+        Figure 17-36 shows four isotropic point sources of sound that are uniformly spaced on an x axis. The sources emit sound at the same wavelength $\lambda$ and same amplitude sm, and they emit in phase. A point P is shown on the x axis. 
+        Assume that as the sound waves travel to P, the decrease in their amplitude is negligible. 
+        What multiple of $s_m$ is the amplitude of the net wave at P if distance d in the figure is (a) $\lambda$/4, (b) $\lambda$/2, and (c) $\lambda$?
 
         \subsection{Solution}
 
     \pagebreak
     \section{Problem 25}
+        A sound wave of frequency 300 Hz has an intensity of 1.00 \unit{\micro\watt/\meter^2}. 
+        What is the amplitude of the air oscillations caused by this wave?
 
         \subsection{Solution}
 
     \pagebreak
     \section{Problem 27}
+        A certain sound source is increased in sound level by 30.0 dB. By what multiple is (a) its intensity increased and (b) its pressure amplitude increased?
 
         \subsection{Solution}
 
     \pagebreak
     \section{Problem 29}
+        A point source emits sound waves isotropically. 
+        The intensity of the waves 2.50 m from the source is $1.91\E{-4}\,\unit{\watt/\meter^2}$. 
+        Assuming that the energy of the waves is conserved, find the power of the source.
 
         \subsection{Solution}
 
     \pagebreak
     \section{Problem 35}
+        A point source emits 30.0 W of sound isotropically. 
+        A small microphone intercepts the sound in an area of 0.750 \unit{\centi\meter^2}, 200 m from the source. 
+        Calculate (a) the sound intensity there and (b) the power intercepted by the microphone.
 
         \subsection{Solution}
 
     \pagebreak
     \section{Problem 39}
+        (a) Find the speed of waves on a violin string of mass 800 mg and length 22.0 cm if the fundamental frequency is 920 Hz. 
+        (b) What is the tension in the string? 
+        For the fundamental, what is the wavelength of (c) the waves on the string and (d) the sound waves emitted by the string?
+
 
         \subsection{Solution}
 
     \pagebreak
     \section{Problem 41}
+        A violin string 15.0 cm long and fixed at both ends oscillates in its n = 1 mode. 
+        The speed of waves on the string is 250 m/s, and the speed of sound in air is 348 m/s. 
+        What are the (a) frequency and (b) wavelength of the emitted sound wave?
 
         \subsection{Solution}
 
     \pagebreak
     \section{Problem 47}
+        A well with vertical sides and water at the bottom resonates at 7.00 Hz and at no lower frequency. 
+        The air-filled portion of the well acts as a tube with one closed end (at the bottom) and one open end (at the top). 
+        The air in the well has a density of 1.10 kg/m 3 and a bulk modulus of $1.33\E{5}\,\unit{\pascal}$. 
+        How far down in the well is the water surface?
 
         \subsection{Solution}
 
     \pagebreak
     \section{Problem 49}
+        A violin string 30.0 cm long with linear density 0.650 g/m is placed near a loudspeaker that is fed by an audio oscillator of variable frequency. 
+        It is found that the string is set into oscillation only at the frequencies 880 and 1320 Hz as the frequency of the oscillator is varied over the range 500 to 1500 Hz.
+        What is the tension in the string?
 
         \subsection{Solution}
 
     \pagebreak
     \section{Problem 51}
+        The A string of a violin is a little too tightly stretched. 
+        Beats at 4.00 per second are heard when the string is sounded together with a tuning fork that is oscillating accurately at concert A (440 Hz).
+        What is the period of the violin string oscillation?
 
         \subsection{Solution}
 
     \pagebreak
     \section{Problem 53}
+        Two identical piano wires have a fundamental frequency of 600 Hz when kept under the same tension. 
+        What fractional increase in the tension of one wire will lead to the occurrence of 6.0 beats/s when both wires oscillate simultaneously?
 
         \subsection{Solution}
 
     \pagebreak
     \section{Problem 55}
+        A whistle of frequency 540 Hz moves in a circle of radius 60.0 cm at an angular speed of 15.0 rad/s. 
+        What are the (a) lowest and (b) highest frequencies heard by a listener a long distance away, at rest with respect to the center of the circle?
 
         \subsection{Solution}
 
     \pagebreak
     \section{Problem 57}
+        A state trooper chases a speeder along a straight road; both vehicles move at 160 km/h. 
+        The siren on the trooper's vehicle produces sound at a frequency of 500 Hz. 
+        What is the Doppler shift in the frequency heard by the speeder?
 
         \subsection{Solution}
 
     \pagebreak
     \section{Problem 61}
+        A bat is flitting about in a cave, navigating via ultrasonic bleeps. 
+        Assume that the sound emission frequency of the bat is 39 000 Hz. 
+        During one fast swoop directly toward a flat wall surface, the bat is moving at 0.025 times the speed of sound in air. 
+        What frequency does the bat hear reflected off the wall?
 
         \subsection{Solution}
 
     \pagebreak
     \section{Problem 63}
+        An acoustic burglar alarm consists of a source emitting waves of frequency 28.0 kHz. 
+        What is the beat frequency between the source waves and the waves reflected from an intruder walking at an average speed of 0.950 m/s directly away from the alarm?
 
         \subsection{Solution}
 
