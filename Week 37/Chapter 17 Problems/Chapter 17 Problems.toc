@@ -23,9 +23,9 @@
 \contentsline {subsection}{\numberline {7.5}Solution (e)}{9}{}%
 \contentsline {subsection}{\numberline {7.6}Solution (f)}{9}{}%
 \contentsline {section}{\numberline {8}Problem 19}{10}{}%
-\contentsline {subsection}{\numberline {8.1}Solution}{10}{}%
+\contentsline {subsection}{\numberline {8.1}Solution (a)}{10}{}%
 \contentsline {section}{\numberline {9}Problem 20}{11}{}%
-\contentsline {subsection}{\numberline {9.1}Solution}{11}{}%
+\contentsline {subsection}{\numberline {9.1}Solution (a)}{11}{}%
 \contentsline {section}{\numberline {10}Problem 25}{12}{}%
 \contentsline {subsection}{\numberline {10.1}Solution}{12}{}%
 \contentsline {section}{\numberline {11}Problem 27}{13}{}%
