@@ -323,6 +323,70 @@
         If we move a sound detector along a large circle centered at the midpoint between the sources, at how many points do waves arrive at the detector (a) exactly in phase and (b) exactly out of phase?
 
         \subsection{Solution (a)}
+            We are looking for cases where the remainder of $\frac{\Delta L}{\lambda}$ and 1 is 0.5.
+            \begin{equation}
+                \frac{\Delta L}{\lambda} \equiv 0.5 \mod 1
+            \end{equation}
+
+            Suppose that the radius of the circle is $R$.
+            This would create two vectors, once for the distance from $S_1$ and $S_2$.
+            \begin{align}
+                &\vec{L}_1  =   R\begin{pmatrix}
+                    \cos(\theta) + \frac{D}{2}\\
+                    \sin(\theta)
+                \end{pmatrix}
+                &\vec{L}_2  =   R\begin{pmatrix}
+                    \cos(\theta) - \frac{D}{2}\\
+                    \sin(\theta)
+                \end{pmatrix}
+            \end{align}
+
+            From this, we can create a formula for $\Delta L$ and graph it on a plane.
+            \begin{align}
+                \left| \left| L_1 \right| \right|   &=  \sqrt{\left( \cos(\theta) + \frac{D}{2} \right)^2 + \sin^2(\theta)}\\
+                \left| \left| L_2 \right| \right|   &=  \sqrt{\left( \cos(\theta) - \frac{D}{2} \right)^2 + \sin^2(\theta)}\\
+                \Delta L    &=  \sqrt{\left( \cos(\theta) - \frac{D}{2} \right)^2 + \sin^2(\theta)} - \sqrt{\left( \cos(\theta) + \frac{D}{2} \right)^2 + \sin^2(\theta)}
+            \end{align}
+            \begin{center}
+                \includegraphics[width=\textwidth]{Fig-19-1.png}
+            \end{center}
+
+            Looking at it here, we can see that between 0 and $\frac{\pi}{2}$, it does not change direction once.
+            Knowing this, we can first calculate the variation in the value of $\Delta L$.
+            This applies for between when $\theta = 0$ and $\theta = \frac{\pi}{2}$.
+            \begin{align}
+                \Delta L(0) &=  \sqrt{\left( \cos(0) - \frac{D}{2} \right)^2 + \sin^2(0)} - \sqrt{\left( \cos(0) + \frac{D}{2} \right)^2 + \sin^2(0)}\\
+                    &=  \sqrt{\left( \cos(0) - \frac{D}{2} \right)^2} - \sqrt{\left( \cos(0) + \frac{D}{2} \right)^2}
+                    =   -D\\
+                \Delta L\left( \frac{\pi}{2} \right)    &=  \sqrt{\left( \frac{D}{2} \right)^2 + \sin^2(0)} - \sqrt{\left( \frac{D}{2} \right)^2 + \sin^2(0)}
+                    =   0
+            \end{align}
+
+            In any case, we would only have to find the points at which $\frac{\Delta L}{\lambda} \equiv 0.5 \mod 1$ for $0 \leq \Delta L \leq D$.
+            Since $\lambda = 0.5$, dividing everything by $\lambda$ would be equivalent to multiplying by 2, so we can use that for the limits.
+            \begin{gather}
+                0 \leq \Delta L \leq D\\
+                0 \leq \frac{\Delta L}{\lambda} \leq 2D\\
+                0 \leq \frac{L}{\lambda} \leq 3.5
+            \end{gather}
+
+            At this point, we could just count the cases that work for the requirements.
+            If one of the boundary cases applies, we should only consider it as half of a case that works.\\
+            1: $0 \leq 0.5 \leq 3.5$;
+            2: $0 \leq 1.5 \leq 3.5$;
+            3: $0 \leq 2.5 \leq 3.5$;
+            3.5: $0 \leq 3.5 \leq 3.5$\\
+            This leaves us with three and a half cases of congruence in the first quarter of the circle.
+            Multiplying it by the four quarters of the circle, we get a total of $3.5 * 4 = \boxed{14}$ in-phase spots.
+
+        \subsection{Solution}
+            Soem thing, just for $\frac{\Delta L}{\lambda} \equiv 0 \mod 1$.\\
+            0.5: $0 \leq 0 \leq 3.5$;
+            1.5: $0 \leq 1 \leq 3.5$;
+            2.5: $0 \leq 2 \leq 3.5$;
+            3.5: $0 \leq 3 \leq 3.5$\\
+            This leaves us with three and a half cases of congruence in the first quarter of the circle.
+            Multiplying it by the four quarters of the circle, we get a total of $3.5 * 4 = \boxed{14}$ in-phase spots.
 
     \pagebreak
     \section{Problem 20}
