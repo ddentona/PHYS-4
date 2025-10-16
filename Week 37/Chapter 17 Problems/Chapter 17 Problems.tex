@@ -458,6 +458,27 @@
         What is the amplitude of the air oscillations caused by this wave?
 
         \subsection{Solution}
+            There is an equation that relates amplitude to intensity.
+            \begin{equation}
+                I   =   \frac{1}{2}\rho v \omega^2 s_m^2
+            \end{equation}
+
+            We can solve for the amplitude ($s_m$).
+            \begin{gather}
+                s_m^2   =   \frac{2I}{\rho v \omega^2}\\
+                s_m =   \sqrt{\frac{2I}{\rho v \omega^2}}
+            \end{gather}
+
+            We have the density of air ($\rho$), speed of sound ($v$), intensity ($I$), and frequency ($f$).
+            The latter can be easily converted into angular speed ($\omega$).
+            \begin{gather}
+                \omega  =   2\pi f\\
+                \begin{align}
+                    s_m &=  \sqrt{\frac{2I}{\rho v (2\pi f)^2}}
+                        =   \sqrt{\frac{2(1.00\,\unit{\micro\watt/\meter^2})}{1.21\,\unit{\kilo\gram/\meter^3} * 343\,\unit{\meter/\second} * (2\pi\,300\,\unit{\hertz})^2}}\\
+                        &=  \boxed{3.68\E{-8}\,\unit{\meter}}
+                \end{align}
+            \end{gather}
 
     \pagebreak
     \section{Problem 27}
