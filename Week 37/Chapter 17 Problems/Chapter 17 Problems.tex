@@ -484,7 +484,41 @@
     \section{Problem 27}
         A certain sound source is increased in sound level by 30.0 dB. By what multiple is (a) its intensity increased and (b) its pressure amplitude increased?
 
-        \subsection{Solution}
+        \subsection{Solution (a)}
+            Sound level is described by an equation.
+            \begin{equation}
+                \beta = (10\,\unit{\deci\bel}) \log_{10} \frac{I}{I_0}
+            \end{equation}
+
+            We can turn this into a change formula (involving $\Delta$) and solve from there.
+            \begin{gather}
+                \begin{align}
+                    \Delta \beta    &=  \beta_f - \beta_i
+                        =   (10\,\unit{\deci\bel}) \log_{10} \frac{I_f}{I_0} - (10\,\unit{\deci\bel}) \log_{10} \frac{I_i}{I_0}\\
+                        &=  (10\,\unit{\deci\bel}) \left( \log_{10} \frac{I_f}{I_0} - \log_{10} \frac{I_i}{I_0} \right)\\
+                        &=  (10\,\unit{\deci\bel}) \log_{10} \frac{I_f}{I_i}
+                        =   30.0\,\unit{\deci\bel}
+                \end{align}\\
+                \log_{10} \frac{I_f}{I_i} = 3\\
+                \frac{I_f}{I_i} = \boxed{10^3}
+            \end{gather}
+
+        \subsection{Solution (b)}
+            Intensity has an equation we know. So does pressure amplitude.
+            \begin{gather}
+                I   =   \frac{1}{2}\rho v \omega^2 s_m^2\\
+                \Delta p_m  =   (v\rho\omega)s_m
+            \end{gather}
+
+            In this case, the only thing that changes in either equation is the value of $s_m$.
+            If we can find the change multiplicand of $s_m$, we can find the change multiplicand of $\Delta p_m$.
+            \begin{gather}
+                \frac{I_f}{I_i} = \frac{\frac{1}{2}\rho v \omega^2 s_{m,f}^2}{\frac{1}{2}\rho v \omega^2 s_{m,i}^2}
+                    =   \frac{s_{m,f}^2}{s_{m,i}^2}
+                    =   10^3\\
+                \frac{s_{m,f}}{s_{m,i}} =   \sqrt{10^3}
+                    =   \boxed{31.62}
+            \end{gather}
 
     \pagebreak
     \section{Problem 29}
