@@ -661,10 +661,25 @@
     \section{Problem 47}
         A well with vertical sides and water at the bottom resonates at 7.00 Hz and at no lower frequency. 
         The air-filled portion of the well acts as a tube with one closed end (at the bottom) and one open end (at the top). 
-        The air in the well has a density of 1.10 kg/m 3 and a bulk modulus of $1.33\E{5}\,\unit{\pascal}$. 
+        The air in the well has a density of 1.10 \unit{\kilo\gram/\meter^3} and a bulk modulus of $1.33\E{5}\,\unit{\pascal}$. 
         How far down in the well is the water surface?
 
         \subsection{Solution}
+            This well can be treated as a closed end pipe.
+            There is an equation for the frequency of a closed end pipe from its velocity and related values.
+            \begin{align}
+                f   &=  \frac{nv}{4L}
+                    =   \frac{n}{4L} \sqrt{\frac{B}{\rho}}
+            \end{align}
+
+            Solve that for the length of the pipe (the height of the well) and solve the equation.
+            Our value of $n$ will be its minimum, being $1$.
+            \begin{align}
+                L   &=  \frac{n}{4f} \sqrt{\frac{B}{\rho}}
+                    =   \frac{1}{4*7.00\,\unit{\hertz}} \sqrt{\frac{1.33\E{5}\,\unit{\pascal}}{1.10\,\unit{\kilo\gram/\meter^3}}}\\
+                    &=  \frac{\sqrt{1.209\,\unit{\meter^2/\second^2}}}{28\,\unit{\hertz}}
+                    =   \boxed{12.42\,\unit{\meter}}
+            \end{align}
 
     \pagebreak
     \section{Problem 49}
