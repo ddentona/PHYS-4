@@ -759,7 +759,32 @@
         A whistle of frequency 540 Hz moves in a circle of radius 60.0 cm at an angular speed of 15.0 rad/s. 
         What are the (a) lowest and (b) highest frequencies heard by a listener a long distance away, at rest with respect to the center of the circle?
 
-        \subsection{Solution}
+        \subsection{Solution (a)}
+            This is a case of the doppler effect.
+            The initial frequency $f$ would be 540\,\unit{\hertz}.
+            The velocity of the listener ($v_D$) will be 0 since it will be at rest a long distance away.
+            The highest velocity of the source relative to the listener will be its velocity when it is moving directly away from the listener.
+            This would be equal to the radius of the circle times the angular velocity.
+            \begin{equation}
+                v_S =   \omega r
+            \end{equation}
+
+            We can insert this into the equation for the doppler effect to find the effective frequency of the sound.
+            \begin{align}
+                f'  &=  f \frac{v \pm v_D}{v \pm v_S}
+                    =   f\frac{v}{v - \omega r}\\
+                    &=  (540\,\unit{\hertz})\frac{343\,\unit{\meter/\second}}{343\,\unit{\meter/\second} + (15.0\,\unit{\radian/\second})(0.60\,\unit{\meter})}\\
+                    &=  (540\,\unit{\hertz})\frac{343\,\unit{\meter/\second}}{352\,\unit{\meter/\second}}
+                    =   \boxed{526.2\,\unit{\hertz}}
+            \end{align}
+
+        \subsection{Solution (b)}
+            This is the same thing, but the sign of the speed of the source will be opposite.
+            \begin{align}
+                f'  &=  (540\,\unit{\hertz})\frac{343\,\unit{\meter/\second}}{343\,\unit{\meter/\second} - (15.0\,\unit{\radian/\second})(0.60\,\unit{\meter})}\\
+                    &=  (540\,\unit{\hertz})\frac{343\,\unit{\meter/\second}}{334\,\unit{\meter/\second}}
+                    =   \boxed{554.6\,\unit{\hertz}}
+            \end{align}
 
     \pagebreak
     \section{Problem 57}
