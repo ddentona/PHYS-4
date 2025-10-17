@@ -572,7 +572,66 @@
         For the fundamental, what is the wavelength of (c) the waves on the string and (d) the sound waves emitted by the string?
 
 
-        \subsection{Solution}
+        \subsection{Solution (a)}
+            There is a formula for the $n$th fundamental frequency.
+            \begin{equation}
+                f   =   n\frac{v}{2L}
+            \end{equation}
+
+            Being our first fundamental frequency, $n = 1$.
+            From there, we can solve for and find the value of $v$.
+            \begin{align}
+                v   &=  \frac{2L\,f}{n}
+                    =   \frac{2 (0.22\,\unit{\meter}) (920\,\unit{\hertz})}{1}
+                    =   \boxed{404.8\,\unit{\meter/\second}}
+            \end{align}
+
+        \subsection{Solution (b)}
+            Tension can be found from the wave speed and the string's linear density.
+            \begin{equation}
+                v   =   \sqrt{\frac{\tau}{\mu}} \to
+                \tau    =   v^2 \mu
+            \end{equation}
+
+            We can calculate the linear density.
+            \begin{equation}
+                \mu =   \frac{m}{L}
+                    =   \frac{8.00\E{-4}\,\unit{\kilo\gram}}{0.22\,\unit{\meter}}
+            \end{equation}
+
+            From here, w can calculate the tension.
+            \begin{align}
+                \tau    &=  \frac{v^2 m}{L}
+                    =   \frac{(404.8\,\unit{\meter/\second})^2\,(8.00\E{-4}\,\unit{\kilo\gram})}{0.22\,\unit{\meter}}\\
+                    &=  595.8656\,\unit{\newton}
+                    =   \boxed{595.9\,\unit{\newton}}
+            \end{align}
+
+        \subsection{Solution (c)}
+            The wavelength of a fundamental string has a formula that we can use here.
+            \begin{align}
+                \lambda &=  \frac{2L}{n}
+                    =   \frac{2 * 0.22\,\unit{\meter}}{1}
+                    =   \boxed{0.44\,\unit{\meter}}
+            \end{align}
+
+        \subsection{Solution (d)}
+            The sound wave created by a string is not listed in the textbook. 
+            We can create one for ourselves.
+            We assume that the frequency of the wave is dentical to that of the string .
+            The velocity is the speed of sound in air.
+            \begin{align}
+                \lambda_{\rm sound} &=  \frac{v_{\rm sound}}{f_{\rm sound}}
+                    =   \frac{v_{\rm sound}}{2f_{\rm string}}
+            \end{align}
+
+            We know the frequency of the string.
+            We also know the speed of sound in air.
+            \begin{align}
+                \lambda_{\rm sound} &=  \frac{v_{\rm sound}}{2f_{\rm string}}
+                    =   \frac{343\,\unit{\meter/\second}}{920\,\unit{\hertz}}
+                    =   \boxed{0.3728\,\unit{\meter}}
+            \end{align}
 
     \pagebreak
     \section{Problem 41}
