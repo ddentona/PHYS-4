@@ -825,6 +825,22 @@
         What is the beat frequency between the source waves and the waves reflected from an intruder walking at an average speed of 0.950 m/s directly away from the alarm?
 
         \subsection{Solution}
+            Assume that any listener detecting the beats is immobile between the intruder and the alarm.
+            There are two beats that would be detected, with two distinct frequencies.
+            The first frequency will be that of the normal frequency of the alarm, while the second will be the Doppler-shifted frequency after bouncing back from the intruder.
+            The speed of the listener away from the source of the second sound, due to the intruder moving away, will effectively be twice the speed of the intruder in a negative direction.
+            \begin{align}
+                f'  &=  f\,\frac{v + 2 * v_I}{v}
+            \end{align}
+
+            This can be plugged into the beat equation.
+            \begin{align}
+                f_{\rm beat}    &=  f_2 - f_1
+                    =   f_1\,\frac{v + 2 * v_I}{v} - f_1
+                    =   f_1\,\frac{2 * v_I}{v}\\
+                    &=  28.0\,\unit{\kilo\hertz}\,\frac{1.90\,\unit{\meter/\second}}{343\,\unit{\meter/\second}}
+                    =   \boxed{155.1\,\unit{\hertz}}
+            \end{align}
 
     \pagebreak
     \section{Problem 71}
