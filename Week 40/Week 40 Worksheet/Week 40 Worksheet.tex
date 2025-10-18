@@ -9,6 +9,7 @@
 % \usepackage{pgfplots}
 \usepackage{wrapfig}
 
+\newcommand{\e}[1]{e^{i(#1)}}
 \newcommand{\E}[1]{\times 10^{#1}}
 
 \title{
@@ -144,9 +145,10 @@
                     &=  \boxed{968.85\,\unit{\pascal}}
             \end{align}
         
+    \pagebreak
     \section{Problem 2}
         A half-open organ pipe is tuned to A(440) (i.e., the fundamental frequency is $440\,\unit{\hertz}$).
-        Air has a density of $1.21\,\unit{\kilo\gram/\mole}$ and a speed of sound of $343\,\unit{\meter/\second}$ at $20\unit{\celsius}$.
+        Air has a density of $1.21\,\unit{\kilo\gram/\meter^3}$ and a speed of sound of $343\,\unit{\meter/\second}$ at $20\unit{\celsius}$.
         
         \begin{enumerate}[label=\alph*.]
             \item   What is the length of the pipe?
@@ -154,8 +156,77 @@
             \item   If the ambient temperature were raised from 20\unit{\celsius} to 40\unit{\celsius}, what would be the new fundamental frequency of the pipe (ignore changes in the length of the pipe due to the temperature change)?
         \end{enumerate}
     
+        \subsection{Solution (a)}
+            This is calculatable from the formula for the $n$th frequency of a sound wave in what is in this case a half-open tube.
+            \begin{gather}
+                f   =   \frac{nv}{4L}
+            \end{gather}
 
+            We should solve for $L$. Since it is the fundamental frequency, the value of $n$ would be $1$.
+            \begin{align}
+                L   &=  \frac{nv}{4f}
+                    =   \frac{1 * 343\,\unit{\meter/\second}}{4 * 440\,\unit{\hertz}}
+                    =   \boxed{0.195\,\unit{\meter}}
+            \end{align}
 
+        \subsection{Solution (b)}
+            The lecture gives us an equation for the kinetic energy density.
+            We have a known equation for the sound wave.
+            \begin{gather}
+                \rho_K  =   \frac{1}{2} \rho \left( \diffp{s}{t} \right)^2\\
+                s(x,t)  =   s_m \cos(kx - \omega t)
+            \end{gather}
 
+            Our value for $\omega$ would be $2\pi$ times the frequency of the wave, which we do have.
+            At this point, we can take the dericative of $s(x,t)$ with respect to $t$.
+            \begin{equation}
+                \diffp{s}{t}    =   -s_m \omega \cos(kx - \omega t)
+            \end{equation}
 
+            Put that into the equation for the kinetic enregy density.
+            This will allow us to find the kinetic energy density.
+            \begin{align}
+                \rho_K  &=  \frac{1}{2} \rho s_m^2 \omega^2 \cos^2(kx - \omega t)
+            \end{align}
+
+            The kinetic energy density will be at its maximum when $\cos(kx - \omega t) = 1$ and consequently $\cos^2(kx - \omega t) = 1$.
+            We can substitute those in here.
+            Not that this would be the maximum kinetic energy density at the open end, where there would be an antinode.
+            \begin{align}
+                \rho_{\rm K;max;open}   &=  \frac{1}{2} \rho s_m^2 \omega^2\\
+                    &=  \frac{1.21\,\unit{\kilo\gram/\meter^3}}{2} (2.0\E{-6}\,\unit{\meter})^2 (2\pi * 440\,\unit{\hertz})^2\\
+                    &=  \boxed{1.85\E{-5}\,\unit{\joule/\meter^3}}
+            \end{align}
+
+            On the other hand, at the closed end, there would be a node rather than an antinode. 
+            At a node, the kinetic energy is always zero, so at the closed end, the maximum kinetic energy density would be \boxed{0}.
+
+        \subsection{Solution (c)}
+            There is a formula for the speed of sound in air, equal to the square root of the adiabatic index times the universal gas constant times the temperature divided by the molar mass.
+            \begin{equation}
+                v = \sqrt{\frac{\gamma R T}{M}}
+            \end{equation}
+
+            We can rearrange this to isolate the speed of sound and the temperature.
+            \begin{equation}
+                \frac{v}{\sqrt{T}} = \sqrt{\frac{\gamma R}{M}}
+            \end{equation}
+
+            In this case, everything on the left side of the equation will be constant, so we can use a comparison of fractions.
+            From there, we can solve for the speed of sound at 40\unit{\celsius} relative to 20\unit{\celsius}.
+            \begin{gather}
+                \frac{v_{20\unit{\celsius}}}{\sqrt{T_{20\unit{\celsius}}}} = \frac{v_{40\unit{\celsius}}}{\sqrt{T_{40\unit{\celsius}}}}\\
+                v_{40\unit{\celsius}}   =   v_{20\unit{\celsius}}\sqrt{\frac{T_{40\unit{\celsius}}}{T_{20\unit{\celsius}}}}
+            \end{gather}
+
+            We can reuse our formula for the frequency in a half-open tube.
+            This would still have the fundamental frequency ($n = 1$).
+            The temperatures we use should be in Kelvin.
+            \begin{align}
+                f_{40\unit{\celsius}}   &=  \frac{nv}{4L}
+                    =   \frac{v_{20\unit{\celsius}}}{4*\frac{v_{20\unit{\celsius}}}{4f_{20\unit{\celsius}}}} \cdot \sqrt{\frac{T_{40\unit{\celsius}}}{T_{20\unit{\celsius}}}}
+                    =   f_{20\unit{\celsius}}\,\sqrt{\frac{T_{40\unit{\celsius}}}{T_{20\unit{\celsius}}}}\\
+                    &=  440\,\unit{\hertz} \cdot \sqrt{\frac{313.15\unit{\kelvin}}{293.15\unit{\kelvin}}}
+                    =   \boxed{454.8\,\unit{\hertz}}
+            \end{align}
 \end{document}
