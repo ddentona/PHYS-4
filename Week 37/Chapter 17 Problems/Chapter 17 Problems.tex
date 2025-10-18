@@ -793,8 +793,14 @@
         What is the Doppler shift in the frequency heard by the speeder?
 
         \subsection{Solution}
+            Both vehicles are moving at the same speed.
+            The speed of sound is constant throughout.
+            There would be no change in frequency.
+            \begin{equation}
+                \boxed{\Delta f = 0}
+            \end{equation}
 
-    \pagebreak
+    % \pagebreak
     \section{Problem 61}
         A bat is flitting about in a cave, navigating via ultrasonic bleeps. 
         Assume that the sound emission frequency of the bat is 39 000 Hz. 
@@ -802,6 +808,16 @@
         What frequency does the bat hear reflected off the wall?
 
         \subsection{Solution}
+            Suppose the speed of sound is $v$.
+            Both the source and the detector are moving at a speed of $0.025v$.
+            The source is moving towards the detector ($v_S$ would have a negative sign), while the detector is moving towards the source ($v_D$ would have a positive sign).
+            \begin{align}
+                f'  &=  f\frac{v + v_D}{v - v_S}
+                    =   f \frac{v(1.025)}{v(0.975)}
+                    =   f \frac{1.025}{0.975}\\
+                    &=  39000\unit{\hertz} * \frac{1.025}{0.975}
+                    =   \boxed{41000\unit{\hertz}}
+            \end{align}
 
     \pagebreak
     \section{Problem 63}

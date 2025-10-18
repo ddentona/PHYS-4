@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1760735445.09982 "/Users/dentonaingworth/Documents/CCSF/PHYS-4A/Week 37/Chapter 17 Problems/Chapter 17 Problems.tex" "Chapter 17 Problems.pdf" "Chapter 17 Problems" 1760735445.71694 0
-  "/Users/dentonaingworth/Documents/CCSF/PHYS-4A/Week 37/Chapter 17 Problems/Chapter 17 Problems.tex" 1760735444.8924 40972 0d6b0309f85894e26aac6246de3fc268 ""
+["pdflatex"] 1760805824.45833 "/Users/dentonaingworth/Documents/CCSF/PHYS-4A/Week 37/Chapter 17 Problems/Chapter 17 Problems.tex" "Chapter 17 Problems.pdf" "Chapter 17 Problems" 1760805825.06716 0
+  "/Users/dentonaingworth/Documents/CCSF/PHYS-4A/Week 37/Chapter 17 Problems/Chapter 17 Problems.tex" 1760805824.17928 41845 22b062d1629591a11ac097ec25abe722 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/tcrm0600.tfm" 1136768653 1536 12e8c510d3e158fdd0e9a42e75118bd9 ""
@@ -80,9 +80,9 @@
   "17-33.png" 1760541057.18602 19175 d57e6d4d8dee983499deed0c9bf67e52 ""
   "17-35.png" 1760541057.18614 5621 35e8f43a29fa37f21356402ec39b1262 ""
   "17-36.png" 1760541057.18624 6951 347593c34f2df1798c18e9bacfeb293f ""
-  "Chapter 17 Problems.aux" 1760735445.67666 7843 520bd07faee057dd5eb4d6560750c290 "pdflatex"
-  "Chapter 17 Problems.tex" 1760735444.8924 40972 0d6b0309f85894e26aac6246de3fc268 ""
-  "Chapter 17 Problems.toc" 1760735445.67755 4694 f43895ab13ca26ac9fe0a864a6dd973e "pdflatex"
+  "Chapter 17 Problems.aux" 1760805825.02666 7843 ff73dca9c01b29fb8f9e29a4407f5e2a "pdflatex"
+  "Chapter 17 Problems.tex" 1760805824.17928 41845 22b062d1629591a11ac097ec25abe722 ""
+  "Chapter 17 Problems.toc" 1760805825.02761 4694 6bdf00e79a4a4f4ae7f7ffe403f2ef5e "pdflatex"
   "Fig-19-1.png" 1760560118.52363 101166 9e5f6f64b49dca99add1051da1e88b6b ""
   (generated)
   "Chapter 17 Problems.aux"
