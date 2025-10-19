@@ -40,6 +40,20 @@
         What is the corresponding “frequency width” for the emission?
 
         \subsection{Solution}
+            Use the traditional formula for the wavelength.
+            Here, the speed of the wave is the speed of light.
+            We can treat this like an error and raw value issue.
+            \begin{gather}
+                v   =   \lambda f   \to
+                f   =   \frac{c}{\lambda}\\
+                \frac{\delta f}{f} = \frac{\delta \lambda}{\lambda}\\
+                \begin{align}
+                    \delta f    &=  f * \frac{\delta \lambda}{\lambda}
+                        =   c * \frac{\delta \lambda}{\lambda^2}\\
+                        &=  2.998\E{8}\,\unit{\meter/\second} * \frac{0.0100\,\unit{\nano\meter}}{(632.8\,\unit{\nano\meter})^2}\\
+                        &=  \boxed{7.49\,\unit{\giga\hertz}}
+                \end{align}
+            \end{gather}
 
     \pagebreak
     \section{Problem 5}
