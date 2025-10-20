@@ -95,6 +95,23 @@
         What is the intensity of a traveling plane electromagnetic wave if $B_m$ is $1.0\E{-4}\,\unit{\tesla}$?
 
         \subsection{Solution}
+            Start by calculating the electric wave magnitude.
+            \begin{gather}
+                c   =   \frac{E_m}{B_m}\\
+                E_m =   c\,B_m
+                    =   2.998\E{8}\,\unit{\meter/\second} * 1.0\E{-4}\,\unit{\tesla}
+                    =   2.998\E{4}\,\unit{\newton/\coulomb}
+            \end{gather}
+
+            The intensity can be calculated from this.
+            Bear in mind that $E_{\rm rms} = \frac{E_m}{\sqrt{2}}$.
+            \begin{align}
+                I   &=  \frac{1}{c \mu_0} E_{\rm rms}^2
+                    =   \frac{E_m^2}{2c \mu_0}
+                    =   \frac{c B_m^2}{2\mu_0}\\
+                    &=  \frac{2.998\E{8}\,\unit{\meter/\second} * 10^{-8}\,\unit{\tesla^2}}{2*1.257\E{-6}\,\unit{\henry/\meter}}\\
+                    &=  \boxed{1.193\E{6}\,\unit{\watt/\meter}}
+            \end{align}
 
     \pagebreak
     \section{Problem 9}
