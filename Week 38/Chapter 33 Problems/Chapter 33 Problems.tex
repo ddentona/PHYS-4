@@ -61,6 +61,34 @@
         Comment on your answer.
 
         \subsection{Solution}
+            For an $LC$ circuit, the angular frequency is $\frac{1}{\sqrt{LC}}$.
+            \begin{equation}
+                \omega  =   \frac{1}{\sqrt{LC}}
+            \end{equation}
+
+            The linear frequency is calculatable from this.
+            \begin{equation}
+                f   =   \frac{\omega}{2\pi}
+                    =   \frac{1}{2\pi\sqrt{LC}}
+            \end{equation}
+
+            This can be relatable to the wave speed (the speed of light in the case of an EM wave).
+            \begin{gather}
+                v   =   \lambda f\\
+                c   =   \lambda f
+                    =   \frac{\lambda}{2\pi\sqrt{LC}}
+            \end{gather}
+
+            Ths can be solved for the inductance ($L$) and found a solution for.
+            \begin{gather}
+                c   =   \frac{\lambda}{2\pi\sqrt{L}\,\sqrt{C}}\\
+                \sqrt{L}    =   \frac{\lambda}{2\pi c\sqrt{C}}\\
+                \begin{align}
+                    L   &=  \frac{\lambda^2}{(2\pi)^2 c^2 C}\\
+                        &=  \frac{(550\,\unit{\nano\meter})^2}{4\pi^2 (2.998\E{8}\,\unit{\meter/\second})^2 * 17\,\unit{\pico\farad}}\\
+                        &=  \boxed{5.015\E{-21}\,\unit{\henry}}
+                \end{align}
+            \end{gather}
 
     \pagebreak
     \section{Problem 7}
