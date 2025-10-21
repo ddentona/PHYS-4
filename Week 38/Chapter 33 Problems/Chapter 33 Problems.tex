@@ -113,7 +113,7 @@
                     &=  \boxed{1.193\E{6}\,\unit{\watt/\meter}}
             \end{align}
 
-    \pagebreak
+    % \pagebreak
     \section{Problem 9}
         Some neodymium-glass lasers can provide $100\,\unit{\tera\watt}$ of power in 1.0 ns pulses at a wavelength of 0.26 \unit{\micro\meter}. 
         How much energy is contained in a single pulse?
@@ -155,10 +155,41 @@
 
     \pagebreak
     \section{Problem 13}
-        Sunlight just outside Earth's atmosphere has an intensity of 1.40 kW/m2. 
-        Calculate (a) E m and (b) B m for sunlight there, assuming it to be a plane wave.
+        Sunlight just outside Earth's atmosphere has an intensity of 1.40 \unit{\kilo\watt/\meter^2}. 
+        Calculate (a) $E_m$ and (b) $B_m$ for sunlight there, assuming it to be a plane wave.
 
-        \subsection{Solution}
+        \subsection{Solution (a)}
+            The magnitude of the electric field is calculatable from the intensity.
+            Start with the RMS electric field and the intensity.
+            \begin{equation}
+                I = \frac{1}{c \mu_0} E_{rms}^2
+            \end{equation}
+
+            The relationship with the magnitude of the electric field and the RMS electric field ($E_{rms}^2 = \frac{E_m^2}{2}$) can be applied here.
+            \begin{equation}
+                I = \frac{E_m^2}{2c\mu_0}
+            \end{equation}
+
+            This can be solved for $E_m$ to find its value.
+            \begin{align}
+                E_m &=  \sqrt{2Ic\mu_0}\\
+                    &=  \sqrt{2 * 1.40\E{3}\,\unit{\watt/\meter^2} * 2.998\E{8}\,\unit{\meter/\second} * 1.257\E{-6}\,\unit{\henry/\meter}}\\
+                    &=  \sqrt{1.055\E{6}\,\unit{\newton^2/\coulomb^2}}
+                    =   \boxed{1027\,\unit{\newton/\coulomb}}
+            \end{align}
+
+        \subsection{Solution (b)}
+            Use the fraction for electromagnetic waves related to the speed of light.
+            \begin{equation}
+                c   =   \frac{E_m}{B_m}
+            \end{equation}
+
+            Solve for and find the magnitude of the magnetic wave.
+            \begin{align}
+                B_m &=  \frac{E_m}{c}
+                    =   \frac{1027\,\unit{\newton/\coulomb}}{2.998\E{8}\,\unit{\meter/\second}}\\
+                    &=  \boxed{3.426\E{-6}\,\unit{\tesla}}
+            \end{align}
 
     \pagebreak
     \section{Problem 19}
