@@ -251,16 +251,41 @@
                     =   \frac{8.64\E{8}\,\unit{\joule}}{2.998\E{8}\,\unit{\meter/\second}}
                     =   2.882\,\unit{\newton\cdot\second}\\
                 \Delta v    &=  \frac{\Delta p}{m}
-                    =   0.00192\,\unit{\meter/\second}
+                    =   \boxed{0.00192\,\unit{\meter/\second}}
             \end{align}
 
     \pagebreak
     \section{Problem 33}
-        In Fig. 33-40, initially unpolarized light is sent into a system of three polarizing sheets whose polarizing directions make angles of $\theta 1 = 40\unit{\degree}, \theta 2 = 20\unit{\degree}$, and $\theta 3 = 40\unit{\degree}$ with the direction of the y axis. 
+        \begin{wrapfigure}{r}{0.33\textwidth}
+            \vspace{-30pt}
+            \includegraphics[width=0.33\textwidth]{33-40.png} 
+            % \label{fig:wrapfig}
+        \end{wrapfigure}
+        In Fig. 33-40, initially unpolarized light is sent into a system of three polarizing sheets whose polarizing directions make angles of $\theta_1 = 40\unit{\degree}, \theta_2 = 20\unit{\degree}$, and $\theta_3 = 40\unit{\degree}$ with the direction of the y axis. 
         What percentage of the light's initial intensity is transmitted by the system? 
         (Hint: Be careful with the angles.)
 
         \subsection{Solution}
+            First, it would travel through the first polarizing sheet.
+            This would polarize it and cut the intensity in half.
+            \begin{equation}
+                I_1 = \frac{1}{2}I_0
+            \end{equation}
+
+            Next, it would travel through the second polarization disk.
+            Since this makes an angle of 20\unit{\degree} with the horizontal, which itslef makes an angle of 40\unit{\degree} with the prior polarizer, 60\unit{\degree} would be our value of $\theta_2$.
+            \begin{equation}
+                I_2 = I_1 \cos^2(60\unit{\degree}) = \frac{1}{2}I_0 \cos^2(60\unit{\degree})
+            \end{equation}
+
+            Last, it would travel through the second polarization disk.
+            Here, 60\unit{\degree} would again be our value of $\theta_2$.
+            \begin{equation}
+                I_3 = I_2 \cos^2(60\unit{\degree}) = \frac{1}{2}I_0 \cos^2(60\unit{\degree}) \cos^2(60\unit{\degree}) = 0.03125 I_0
+            \end{equation}
+
+            Therefore, the percentage transmitted is \boxed{3.1\%}. 
+            
 
     \pagebreak
     \section{Problem 37}
