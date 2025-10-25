@@ -294,6 +294,59 @@
         (b) What is the minimum number of sheets required if the transmitted intensity is to be more than 60\% of the original intensity?
 
         \subsection{Solution}
+            We would only need \boxed{two} sheets, one at 45\unit{\degree} and one again at 45\unit{\degree}.
+
+        \subsection{Solution (b)}
+            Assume all sheets are equally angularly spaced.
+            This would mean that the angle would be, for $n$ sheets, $\frac{\pi}{2n}$.
+            Furthermore, for one sheet, the intensity reduces to $\cos^2(\theta)$ the original.
+            That means that for $n$ sheets, the intensity would reduce to $\cos^{2n}(\theta)$ of the original.
+            Putting these together, we can solve for $n$ (or try to), setting the other side to be equal to $0.6$.
+            \begin{gather}
+                \cos^{2n}\left( \frac{\pi}{2n} \right) = 0.6\\
+                \cos\left( \frac{\pi}{2n} \right) = 0.6^{\frac{1}{2n}}
+            \end{gather}
+
+            Let's just use guess and check.
+            First $n = 2$:
+            \begin{align}
+                \cos^{4}\left( \frac{\pi}{4} \right) = 0.25 < 0.6
+            \end{align}
+
+            $n = 3$:
+            \begin{align}
+                \cos^{6}\left( \frac{\pi}{6} \right) = 0.42 < 0.6
+            \end{align}
+
+            $n = 4$:
+            \begin{align}
+                \cos^{8}\left( \frac{\pi}{8} \right) = 0.53 < 0.6
+            \end{align}
+
+            $n = 5$:
+            \begin{align}
+                \cos^{10}\left( \frac{\pi}{10} \right) = 0.605 \geq 0.6
+            \end{align}
+
+            Conclusicely, the answer is \boxed{5}. 
+
+        \subsection{My failed attempt to solve (b) without guess and check}
+            Here, we will turn this into complex form. 
+            There will be an imaginary part to this.
+            Since this would be the cosine of it, we could use the pythagorean theorem by assuming a 3-4-5 triangle and finding the other edge will have an edge length of $0.8$.
+            \begin{gather}
+                e^{\frac{i\pi}{2n}} = 0.6^{\frac{1}{2n}} + i 0.8^{\frac{1}{2n}}
+            \end{gather}
+
+            Convert the right side to complex form.
+            \begin{equation}
+                e^{\frac{i\pi}{2n}} = e^{i \frac{\arctan(4/3)}{2n}}
+            \end{equation}
+
+            Take the naural log of everything, then divide everything by $i$. 
+            \begin{equation}
+                \frac{\pi}{2n} = \frac{\arctan(4/3)}{2n}
+            \end{equation}
 
     \pagebreak
     \section{Problem 41}
