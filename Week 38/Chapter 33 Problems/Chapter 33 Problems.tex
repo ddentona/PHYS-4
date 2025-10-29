@@ -423,11 +423,38 @@
 
     \pagebreak
     \section{Problem 45}
+        \begin{wrapfigure}{r}{0.33\textwidth}
+            \vspace{-30pt}
+            \includegraphics[width=0.33\textwidth]{33-46.png} 
+            % \label{fig:wrapfig}
+        \end{wrapfigure}
         When the rectangular metal tank in Fig. 33-46 is filled to the top with an unknown liquid, observer O, with eyes level with the top of the tank, can just see corner E. 
         A ray that refracts toward O at the top surface of the liquid is shown. 
         If D = 85.0 cm and L = 1.10 m, what is the index of refraction of the liquid?
 
         \subsection{Solution}
+            Recall Snell's Law.
+            \begin{equation}
+                n_2 \sin \theta_2 = n_1 \sin \theta_1
+            \end{equation}
+
+            The index of refraction of air is $n_1 = 1.00029$, while the angle we use for in the air is going to be $\frac{\pi}{2}$, making $\sin \theta_2 = 1$.
+            The distance traveled along the diagonal can be found using the Pythagorean Theorem, which can in turn be used to find the sine of the angle.
+            \begin{gather}
+                H = \sqrt{D^2 + L^2}\\
+                \sin(\theta_1) = \frac{D}{H} = \frac{L}{\sqrt{D^2 + L^2}}
+            \end{gather}
+
+            From here, we can find the index of refraction.
+            \begin{gather}
+                n_2 \sin \theta_2 = n_1 \sin \theta_1\\
+                \begin{align}
+                    n_2 &=  \frac{n_1 \sin \theta_1}{\sin \theta_2}
+                        =   n_1 \frac{\sqrt{D^2 + L^2}}{L}\\
+                        &=  1.00029 * \frac{\sqrt{0.85^2 + 1.10^2}}{1.10}
+                        =   \boxed{1.264}
+                \end{align}
+            \end{gather}
 
     \pagebreak
     \section{Problem 49}
