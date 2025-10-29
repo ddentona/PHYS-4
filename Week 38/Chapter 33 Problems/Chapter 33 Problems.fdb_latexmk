@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1761769746.57067 "/Users/dentonaingworth/Documents/CCSF/PHYS-4A/Week 38/Chapter 33 Problems/Chapter 33 Problems.tex" "Chapter 33 Problems.pdf" "Chapter 33 Problems" 1761769747.0711 0
-  "/Users/dentonaingworth/Documents/CCSF/PHYS-4A/Week 38/Chapter 33 Problems/Chapter 33 Problems.tex" 1761769746.35986 25037 8fa78bdb72e9f484646236efdd5dd6cb ""
+["pdflatex"] 1761770361.05214 "/Users/dentonaingworth/Documents/CCSF/PHYS-4A/Week 38/Chapter 33 Problems/Chapter 33 Problems.tex" "Chapter 33 Problems.pdf" "Chapter 33 Problems" 1761770361.60834 0
+  "/Users/dentonaingworth/Documents/CCSF/PHYS-4A/Week 38/Chapter 33 Problems/Chapter 33 Problems.tex" 1761770360.84528 25524 66acbe236971e6a1923253f7978ac134 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/tcrm0600.tfm" 1136768653 1536 12e8c510d3e158fdd0e9a42e75118bd9 ""
@@ -82,9 +82,10 @@
   "33-40.png" 1761005665.65871 37401 70cc2834740ea4e306bc1d1b8b655202 ""
   "33-46.png" 1761005866.94095 36922 833ca07c4cee97d941db2fdd9c141b10 ""
   "33-49.png" 1761005893.72402 23795 969fcf0403c3dc69a5f178e3673320fb ""
-  "Chapter 33 Problems.aux" 1761769747.03115 6054 b0efbf7a8cb379930f3d6ea431ee85b2 "pdflatex"
-  "Chapter 33 Problems.tex" 1761769746.35986 25037 8fa78bdb72e9f484646236efdd5dd6cb ""
-  "Chapter 33 Problems.toc" 1761769747.03192 3602 e37c710e47cfb0e8729dc4a1b74ca749 "pdflatex"
+  "33-51.png" 1761005983.11786 20655 f360f1ac11b9752da305c0c4ff888f27 ""
+  "Chapter 33 Problems.aux" 1761770361.5636 6058 3866c35c23fae107169a409deb2fbf28 "pdflatex"
+  "Chapter 33 Problems.tex" 1761770360.84528 25524 66acbe236971e6a1923253f7978ac134 ""
+  "Chapter 33 Problems.toc" 1761770361.56441 3606 375abfe59640a74e3cb8e2a4b23f4cad "pdflatex"
   (generated)
   "Chapter 33 Problems.aux"
   "Chapter 33 Problems.log"

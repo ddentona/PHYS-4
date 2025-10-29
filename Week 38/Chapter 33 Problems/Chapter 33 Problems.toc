@@ -34,7 +34,7 @@
 \contentsline {section}{\numberline {15}Problem 49}{16}{}%
 \contentsline {subsection}{\numberline {15.1}Solution}{16}{}%
 \contentsline {section}{\numberline {16}Problem 51}{17}{}%
-\contentsline {subsection}{\numberline {16.1}Solution}{17}{}%
+\contentsline {subsection}{\numberline {16.1}Solution (a)}{17}{}%
 \contentsline {section}{\numberline {17}Problem 55}{18}{}%
 \contentsline {subsection}{\numberline {17.1}Solution}{18}{}%
 \contentsline {section}{\numberline {18}Problem 59}{19}{}%
