@@ -355,6 +355,37 @@
         If 0.10 of the incident intensity is transmitted by the two sheets, what is $\theta$?
 
         \subsection{Solution}
+            This requires an equation to take in both polarizations.
+            \begin{equation}
+                I = I_0 \cos^2 (\theta) \cos^2 \left( \frac{\pi}{2} - \theta \right)
+            \end{equation}
+
+            We can use the trig identity of $\cos\left( \frac{\pi}{2} - \theta \right) = \sin(\theta)$ here.
+            \begin{equation}
+                I = I_0 \cos^2 (\theta) \sin^2 ( \theta )
+            \end{equation}
+
+            Now we can use the double angle identity.
+            Also divide both sides by $I_0$.
+            \begin{equation}
+                \frac{I}{I_0} = \left( \frac{1}{2}\sin(2\theta) \right)^2
+            \end{equation}
+
+            Solve this for $\theta$.
+            \begin{gather}
+                \frac{4I}{I_0} = \sin^2(2\theta)\\
+                \sin(2\theta) = \sqrt{\frac{4I}{I_0}}\\
+                2\theta = \arcsin\left( \sqrt{\frac{4I}{I_0}} \right)\\
+                \theta = \frac{1}{2} \arcsin\left( \sqrt{\frac{4I}{I_0}} \right)
+            \end{gather}
+
+            This can be used to find $\theta$.
+            \begin{align}
+                \theta  &=  \frac{1}{2} \arcsin\left( \sqrt{\frac{4I}{I_0}} \right)
+                    =   \frac{1}{2} \arcsin\left( \sqrt{\frac{0.4 I_0}{I_0}} \right)\\
+                    &=  \frac{1}{2} \arcsin\left( \sqrt{0.4} \right)
+                    =   \boxed{0.342\,\unit{\radian}}
+            \end{align}
 
     \pagebreak
     \section{Problem 43}
