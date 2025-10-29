@@ -394,6 +394,32 @@
         If the transmitted intensity varies by a factor of 5.0 during the rotation, what fraction of the intensity of the original beam is associated with the beam's polarized light?
 
         \subsection{Solution}
+            Suppose we separated the insensity of the light into two halves: the polarized half and the unpolarized half.
+            No matter the angle, the unpolarized light will contribute an intensity of $\frac{1}{2}I_{u0}$. 
+            At best, the polarized light will constribute an intensity of $I_{p0}$ while at worst it will contribute an intensity of $0$.
+            This worst point will be where the minimum light will pass through, where all the light will be from the unpolarized light. 
+            The best point will be be where maximum light passes through, where the unpolarized light will contribute $I_{p0}$ and where the transmitted light is five times that of the minumum transmitted light.
+            \begin{equation}
+                I_{p0} + \frac{1}{2}I_{u0} = \frac{5}{2} I_{u0}
+            \end{equation}
+
+            This can be used to find $I_{u0}$.
+            \begin{equation}
+                I_{u0} = \frac{1}{2} I_{p0}
+            \end{equation}
+
+            If the original light has an intensity of $I_{u0} + I_{p0}$, we can find an alternative value for this.
+            \begin{equation}
+                I_0 =   I_{u0} + I_{p0}
+                    =   I_{p0} + \frac{1}{2} I_{p0}
+                    =   \frac{3}{2} I_{u0}
+            \end{equation}
+
+            Now, we can make both sides divide $I_{u0}$ to get our answer.
+            \begin{equation}
+                \frac{I_{u0}}{I_0} = \frac{I_{u0}}{\frac{3}{2} I_{u0}}
+                    =   \boxed{\frac{2}{3}}
+            \end{equation}
 
     \pagebreak
     \section{Problem 45}
