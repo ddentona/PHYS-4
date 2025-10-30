@@ -482,9 +482,37 @@
 
         \subsection{Solution (a)}
             It will hit the boundary between $n_1$ and the air at the same angle as it hits the boundary between $n_1$ and $n_2$, so we can use the respective version of that angle for $\theta_i$ in Snell's Law.
-            \begin{equation}
-                n_1
-            \end{equation}
+            \begin{gather}
+                n_1 \sin(\theta_1) = n_{\rm air} \sin(\theta_{\rm air})\\
+                \frac{n_1}{n_{\rm air}} \sin(\theta_1) = \sin(\theta_{\rm air})\\
+                \begin{align}
+                    \theta_{\rm air}    &=  \arcsin \left( \sin(\theta_1) \frac{n_1}{n_{\rm air}} \right)
+                        =   \arcsin \left( \sin(40.1\unit{\degree}) \frac{1.30}{1.00029} \right)\\
+                        &=  \arcsin(0.8371)
+                        =   \boxed{56.8\unit{\degree}}
+                \end{align}
+            \end{gather}
+
+        \subsection{Solution (b)}
+            Let's make a system of equations.
+            The transmission between different boundaries are going to be governed by Snell's Law.
+            Some geometry can prove that the light leaves one boundary at the same angle it enters the next.
+            \begin{gather}
+                n_1 \sin(\theta_1) = n_2 \sin(\theta_2)\\
+                n_2 \sin(\theta_2) = n_3 \sin(\theta_3)\\
+                n_3 \sin(\theta_3) = n_4 \sin(\theta_4)
+            \end{gather}
+
+            The transistive property is usable here, which we can fnd the answer from.
+            \begin{gather}
+                n_1 \sin(\theta_1) = n_4 \sin(\theta_4)\\
+                \begin{align}
+                    \theta_4    &=  \arcsin \left( \sin(\theta_1) \frac{n_1}{n_4} \right)
+                        =   \arcsin \left( \sin(40.1) \frac{1.30}{1.45} \right)\\
+                        &=  \arcsin (0.5775)
+                        =   \boxed{35.3\unit{\degree}}
+                \end{align}
+            \end{gather}
 
     \pagebreak
     \section{Problem 55}

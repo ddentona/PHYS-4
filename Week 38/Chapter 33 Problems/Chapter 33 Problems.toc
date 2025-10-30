@@ -35,25 +35,26 @@
 \contentsline {subsection}{\numberline {15.1}Solution}{16}{}%
 \contentsline {section}{\numberline {16}Problem 51}{17}{}%
 \contentsline {subsection}{\numberline {16.1}Solution (a)}{17}{}%
-\contentsline {section}{\numberline {17}Problem 55}{18}{}%
-\contentsline {subsection}{\numberline {17.1}Solution}{18}{}%
-\contentsline {section}{\numberline {18}Problem 59}{19}{}%
-\contentsline {subsection}{\numberline {18.1}Solution}{19}{}%
-\contentsline {section}{\numberline {19}Problem 65}{20}{}%
-\contentsline {subsection}{\numberline {19.1}Solution}{20}{}%
-\contentsline {section}{\numberline {20}Problem 69}{21}{}%
-\contentsline {subsection}{\numberline {20.1}Solution}{21}{}%
-\contentsline {section}{\numberline {21}Problem 71}{22}{}%
-\contentsline {subsection}{\numberline {21.1}Solution}{22}{}%
-\contentsline {section}{\numberline {22}Problem 75}{23}{}%
-\contentsline {subsection}{\numberline {22.1}Solution}{23}{}%
-\contentsline {section}{\numberline {23}Problem 83}{24}{}%
-\contentsline {subsection}{\numberline {23.1}Solution}{24}{}%
-\contentsline {section}{\numberline {24}Problem 87}{25}{}%
-\contentsline {subsection}{\numberline {24.1}Solution}{25}{}%
-\contentsline {section}{\numberline {25}Problem 89}{26}{}%
-\contentsline {subsection}{\numberline {25.1}Solution}{26}{}%
-\contentsline {section}{\numberline {26}Problem 91}{27}{}%
-\contentsline {subsection}{\numberline {26.1}Solution}{27}{}%
-\contentsline {section}{\numberline {27}Problem 105}{28}{}%
-\contentsline {subsection}{\numberline {27.1}Solution}{28}{}%
+\contentsline {subsection}{\numberline {16.2}Solution (b)}{17}{}%
+\contentsline {section}{\numberline {17}Problem 55}{19}{}%
+\contentsline {subsection}{\numberline {17.1}Solution}{19}{}%
+\contentsline {section}{\numberline {18}Problem 59}{20}{}%
+\contentsline {subsection}{\numberline {18.1}Solution}{20}{}%
+\contentsline {section}{\numberline {19}Problem 65}{21}{}%
+\contentsline {subsection}{\numberline {19.1}Solution}{21}{}%
+\contentsline {section}{\numberline {20}Problem 69}{22}{}%
+\contentsline {subsection}{\numberline {20.1}Solution}{22}{}%
+\contentsline {section}{\numberline {21}Problem 71}{23}{}%
+\contentsline {subsection}{\numberline {21.1}Solution}{23}{}%
+\contentsline {section}{\numberline {22}Problem 75}{24}{}%
+\contentsline {subsection}{\numberline {22.1}Solution}{24}{}%
+\contentsline {section}{\numberline {23}Problem 83}{25}{}%
+\contentsline {subsection}{\numberline {23.1}Solution}{25}{}%
+\contentsline {section}{\numberline {24}Problem 87}{26}{}%
+\contentsline {subsection}{\numberline {24.1}Solution}{26}{}%
+\contentsline {section}{\numberline {25}Problem 89}{27}{}%
+\contentsline {subsection}{\numberline {25.1}Solution}{27}{}%
+\contentsline {section}{\numberline {26}Problem 91}{28}{}%
+\contentsline {subsection}{\numberline {26.1}Solution}{28}{}%
+\contentsline {section}{\numberline {27}Problem 105}{29}{}%
+\contentsline {subsection}{\numberline {27.1}Solution}{29}{}%
