@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.25)  30 OCT 2025 18:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.25)  30 OCT 2025 18:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -275,7 +275,13 @@ File: 33-57.png Graphic file (type png)
 <use 33-57.png>
 Package pdftex.def Info: 33-57.png  used on input line 554.
 (pdftex.def)             Requested size: 128.70071pt x 72.62793pt.
- [20 <./33-57.png>] [21] [22] [23] [24] [25] [26] [27] [28] [29] (./Chapter 33 Problems.toc [30] [31])
+ [20 <./33-57.png>]
+<33-61.png, id=92, 165.61874pt x 125.46875pt>
+File: 33-61.png Graphic file (type png)
+<use 33-61.png>
+Package pdftex.def Info: 33-61.png  used on input line 593.
+(pdftex.def)             Requested size: 128.70071pt x 97.5053pt.
+ [21 <./33-61.png>] [22] [23] [24] [25] [26] [27] [28] [29] (./Chapter 33 Problems.toc [30] [31])
 \tf@toc=\write3
 \openout3 = `"Chapter 33 Problems.toc"'.
 
@@ -286,18 +292,18 @@ L3 programming layer <2024-02-20>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 7222 strings out of 474116
- 169288 string characters out of 5743682
+ 7229 strings out of 474116
+ 169399 string characters out of 5743682
  1937187 words of memory out of 5000000
- 29525 multiletter control sequences out of 15000+600000
+ 29532 multiletter control sequences out of 15000+600000
  568791 words of font info for 77 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  73i,20n,80p,409b,734s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on "Chapter 33 Problems.pdf" (32 pages, 271206 bytes).
+Output written on "Chapter 33 Problems.pdf" (32 pages, 293122 bytes).
 PDF statistics:
- 187 PDF objects out of 1000 (max. 8388607)
+ 189 PDF objects out of 1000 (max. 8388607)
  113 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 31 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 36 words of extra memory for PDF output out of 10000 (max. 10000000)
 
