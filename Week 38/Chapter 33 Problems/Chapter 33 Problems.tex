@@ -600,6 +600,32 @@
         What is the maximum value of $\theta$ that allows total internal reflection at A?
 
         \subsection{Solution}
+            This uses two concepts: Snell's Law and the Critical Angle.
+            We can see immediately that the angle at $A$ will be twice the critical angle, which we have a formula for.
+            \begin{equation}
+                A = 2\theta_c = 2\sin^{-1} \frac{n_2}{n_1}
+            \end{equation}
+
+            The light would have to debut in the core at an angle related to the critical angle.
+            \begin{gather}
+                \theta_{\rm in} = \frac{\pi}{2} - \theta_c
+                    =   \frac{\pi}{2} - \sin^{-1} \frac{n_2}{n_1}
+            \end{gather}
+
+            We can apply Snell's Law to this.
+            \begin{gather}
+                n_{\rm air} \sin \theta = n_1 \sin \theta_{\rm in}\\
+                \sin \theta =   \frac{n_1}{n_{\rm air}}  \sin \left( \frac{\pi}{2} - \sin^{-1} \frac{n_2}{n_1} \right)
+                    =   \frac{n_1}{n_{\rm air}}  \cos \left( \sin^{-1} \frac{n_2}{n_1} \right)
+            \end{gather}
+
+            From here, we can solve for $\theta$.
+            \begin{align}
+                \theta  &=  \sin^{-1} \left( \frac{n_1}{n_{\rm air}}  \cos \left( \sin^{-1} \frac{n_2}{n_1} \right) \right)\\
+                    &=  \sin^{-1} \left( \frac{1.58}{1.00029}  \cos \left( \sin^{-1} \frac{1.53}{1.58} \right) \right)\\
+                    &=  \sin^{-1} \left( \frac{1.58}{1.00029} * 0.2496 \right)
+                    =   23.2\unit{\degree}
+            \end{align}
 
     \pagebreak
     \section{Problem 69}

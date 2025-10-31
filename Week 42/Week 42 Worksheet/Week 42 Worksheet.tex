@@ -257,15 +257,23 @@
         Note: No opera singers were harmed during the construction of this question or its solution.
 
         \subsection{Solution}
-            These two opera singers as detectors are effectively both traveling towards the source at a speed of twice the speed of the car.
+            The car as a detector is effectively traveling towards the source at a speed of the speed of the car.
             \begin{align}
-                f'  &=  f\frac{v_s + 2 * 0.1 * v_s}{v_s}
-                    =   f * 1.2
+                f'  &=  f\frac{v_s + 0.1 * v_s}{v_s}
+                    =   f * 1.1
+            \end{align}
+
+            Furthermore, the singers as detectors would be receiving sound from the car moving at the speed of the car.
+            \begin{align}
+                f'' &=  f'\frac{v_s}{v_s - 0.1 * v_s}
+                    =   f' * \frac{10}{9}
+                    =   f * 1.1 * \frac{10}{9}
+                    =   f * 1.\bar{2}
             \end{align}
 
             The high A (1) and low A (b) would be accordingly calculatable.
             \begin{align}
-                f'_1 &= f_1 * 1.2 = 880\unit{\hertz} * 1.2 = \boxed{1056\unit{\hertz}}\\
-                f'_2 &= f_2 * 1.2 = 220\unit{\hertz} * 1.2 = \boxed{264\unit{\hertz}}
+                f'_1 &= f_1 * 1.\bar{2} = 880\unit{\hertz} * 1.\bar{2} = \boxed{1075.\bar{5}\unit{\hertz}}\\
+                f'_2 &= f_2 * 1.\bar{2} = 220\unit{\hertz} * 1.\bar{2} = \boxed{268.\bar{8}\unit{\hertz}}
             \end{align}
 \end{document}
