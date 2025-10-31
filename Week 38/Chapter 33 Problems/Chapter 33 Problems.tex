@@ -516,13 +516,44 @@
 
     \pagebreak
     \section{Problem 55}
+        \begin{wrapfigure}{r}{0.33\textwidth}
+            \vspace{-30pt}
+            \includegraphics[width=0.33\textwidth]{33-55.png} 
+            % \label{fig:wrapfig}
+        \end{wrapfigure}
         In Fig. 33-55, a 2.00-m-long vertical pole extends from the bottom of a swimming pool to a point 50.0 cm above the water.
         Sunlight is incident at angle $\theta = 55.0\unit{\degree}$. What is the length of the shadow of the pole on the level bottom of the pool?
 
         \subsection{Solution}
+            We can calculate this in two parts: the distance the light (or lack of light) travels through the air to the water, and the distance the light travels through the water to the ground.
+            We use Snell's Law to calculate the angle the light goes at in the water.
+            \begin{gather}
+                n_1 \sin(\theta_1) = n_2 \sin(\theta_2)\\
+                \sin(\theta_1) = \frac{n_2}{n_1} \sin(\theta_2)\\
+                \theta_1    =   \arcsin\left( \frac{n_2}{n_1} \sin\left( \frac{\pi}{2} - \theta \right) \right)
+                    =   \arcsin\left( \frac{n_2}{n_1} \cos(\theta) \right)
+            \end{gather}
+
+            From here, we can find the distance traveled in both mediums, in both cases using tangents/cotangents.
+            \begin{align}
+                \Delta x_{\rm air}  &=  50\,\unit{\centi\meter} \times \cot(\theta)
+                    =   0.350\,\unit{\meter}\\
+                \Delta x_{\rm water}&=  1.50\,\unit{\meter} \times \tan(\theta_2)
+                    =   1.50\,\unit{\meter} \times \tan\left( \arcsin\left( \frac{1.00029}{1.33} \cos(55\unit{\degree}) \right) \right)\\
+                    &=  1.50\,\unit{\meter} \times \tan\left( \arcsin\left( 0.431 \right) \right)
+                    =   0.717\,\unit{\meter}\\
+                \Delta x    &=  \Delta x_{\rm air} + \Delta x_{\rm water}
+                    =   0.350\,\unit{\meter} + 0.717\,\unit{\meter}
+                    =   \boxed{1.067\,\unit{\meter}}
+            \end{align}
 
     \pagebreak
     \section{Problem 59}
+        \begin{wrapfigure}{r}{0.33\textwidth}
+            \vspace{-30pt}
+            \includegraphics[width=0.33\textwidth]{33-57.png} 
+            % \label{fig:wrapfig}
+        \end{wrapfigure}
         In Fig. 33-57, a ray of light is perpendicular to the face ab of a glass prism (n = 1.52).
         Find the largest value for the angle $\phi$ so that the ray is totally reflected at face ac if the prism is immersed (a) in air and (b) in water.
 
