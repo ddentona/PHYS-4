@@ -108,10 +108,11 @@ INPUT /usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
-INPUT ./Chapter 34 Problems.toc
-INPUT ./Chapter 34 Problems.toc
-INPUT Chapter 34 Problems.toc
-INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT ./34-32.png
+INPUT ./34-32.png
+INPUT ./34-32.png
+INPUT ./34-32.png
+INPUT ./34-32.png
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmr8.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmr6.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
@@ -129,9 +130,29 @@ INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
+INPUT ./T34-4.png
+INPUT ./T34-4.png
+INPUT ./T34-4.png
+INPUT ./T34-4.png
+INPUT ./T34-4.png
+INPUT ./T34-5.png
+INPUT ./T34-5.png
+INPUT ./T34-5.png
+INPUT ./T34-5.png
+INPUT ./T34-5.png
+INPUT ./34-38.png
+INPUT ./34-38.png
+INPUT ./34-38.png
+INPUT ./34-38.png
+INPUT ./34-38.png
+INPUT ./Chapter 34 Problems.toc
+INPUT ./Chapter 34 Problems.toc
+INPUT Chapter 34 Problems.toc
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 OUTPUT Chapter 34 Problems.toc
 INPUT Chapter 34 Problems.aux
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb
