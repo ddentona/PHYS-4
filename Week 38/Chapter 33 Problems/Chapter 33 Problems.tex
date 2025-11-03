@@ -516,20 +516,83 @@
 
     \pagebreak
     \section{Problem 55}
+        \begin{wrapfigure}{r}{0.33\textwidth}
+            \vspace{-30pt}
+            \includegraphics[width=0.33\textwidth]{33-55.png} 
+            % \label{fig:wrapfig}
+        \end{wrapfigure}
         In Fig. 33-55, a 2.00-m-long vertical pole extends from the bottom of a swimming pool to a point 50.0 cm above the water.
         Sunlight is incident at angle $\theta = 55.0\unit{\degree}$. What is the length of the shadow of the pole on the level bottom of the pool?
 
         \subsection{Solution}
+            We can calculate this in two parts: the distance the light (or lack of light) travels through the air to the water, and the distance the light travels through the water to the ground.
+            We use Snell's Law to calculate the angle the light goes at in the water.
+            \begin{gather}
+                n_1 \sin(\theta_1) = n_2 \sin(\theta_2)\\
+                \sin(\theta_1) = \frac{n_2}{n_1} \sin(\theta_2)\\
+                \theta_1    =   \arcsin\left( \frac{n_2}{n_1} \sin\left( \frac{\pi}{2} - \theta \right) \right)
+                    =   \arcsin\left( \frac{n_2}{n_1} \cos(\theta) \right)
+            \end{gather}
+
+            From here, we can find the distance traveled in both mediums, in both cases using tangents/cotangents.
+            \begin{align}
+                \Delta x_{\rm air}  &=  50\,\unit{\centi\meter} \times \cot(\theta)
+                    =   0.350\,\unit{\meter}\\
+                \Delta x_{\rm water}&=  1.50\,\unit{\meter} \times \tan(\theta_2)
+                    =   1.50\,\unit{\meter} \times \tan\left( \arcsin\left( \frac{1.00029}{1.33} \cos(55\unit{\degree}) \right) \right)\\
+                    &=  1.50\,\unit{\meter} \times \tan\left( \arcsin\left( 0.431 \right) \right)
+                    =   0.717\,\unit{\meter}\\
+                \Delta x    &=  \Delta x_{\rm air} + \Delta x_{\rm water}
+                    =   0.350\,\unit{\meter} + 0.717\,\unit{\meter}
+                    =   \boxed{1.067\,\unit{\meter}}
+            \end{align}
 
     \pagebreak
     \section{Problem 59}
+        \begin{wrapfigure}{r}{0.33\textwidth}
+            \vspace{-30pt}
+            \includegraphics[width=0.33\textwidth]{33-57.png} 
+            % \label{fig:wrapfig}
+        \end{wrapfigure}
         In Fig. 33-57, a ray of light is perpendicular to the face ab of a glass prism (n = 1.52).
         Find the largest value for the angle $\phi$ so that the ray is totally reflected at face ac if the prism is immersed (a) in air and (b) in water.
 
-        \subsection{Solution}
+        \subsection{Solution (a)}
+            The index of refraction of air is $1.00029$, while that of water is $1.33$.
+            We would have to find the critical angle for this.
+            \begin{equation}
+                \theta_c = \arcsin \frac{n_{\rm out}}{n_{\rm in}}
+            \end{equation}
+
+            Using Thales' Theorem, we can determine that whatever angle $\phi$ is, $\theta_c = \frac{\pi}{2} - \phi$.
+            For this reason, our quickest solution is to calculate $\theta_c$.
+            \begin{align}
+                \frac{\pi}{2} - \phi    =   \theta_c    
+                    &=  \arcsin \frac{n_{\rm out}}{n_{\rm in}}
+                    =   \arcsin \frac{1.00029}{1.52}
+                    =   41.2\unit{\degree}\\
+                \phi    &=  90\unit{\degree} - 41.2\unit{\degree}
+                    =   \boxed{48.8\unit{\degree}}
+            \end{align}
+
+        \subsection{Solution (b)}
+            Use the same strategy.
+            \begin{align}
+                \frac{\pi}{2} - \phi    =   \theta_c    
+                    &=  \arcsin \frac{n_{\rm out}}{n_{\rm in}}
+                    =   \arcsin \frac{1.33}{1.52}
+                    =   61.0\unit{\degree}\\
+                \phi    &=  90\unit{\degree} - 61.0\unit{\degree}
+                    =   \boxed{29.0\unit{\degree}}
+            \end{align}
 
     \pagebreak
     \section{Problem 65}
+        \begin{wrapfigure}{r}{0.33\textwidth}
+            \vspace{-30pt}
+            \includegraphics[width=0.33\textwidth]{33-61.png} 
+            % \label{fig:wrapfig}
+        \end{wrapfigure}
         Figure 33-61 depicts a simplistic optical fiber: a plastic core ($n_1 = 1.58$) is surrounded by a plastic sheath ($n_2 = 1.53$). 
         A light ray is incident on one end of the fiber at angle $\theta$. 
         The ray is to undergo total internal reflection at point A, where it encounters the core-sheath boundary. 
@@ -537,6 +600,32 @@
         What is the maximum value of $\theta$ that allows total internal reflection at A?
 
         \subsection{Solution}
+            This uses two concepts: Snell's Law and the Critical Angle.
+            We can see immediately that the angle at $A$ will be twice the critical angle, which we have a formula for.
+            \begin{equation}
+                A = 2\theta_c = 2\sin^{-1} \frac{n_2}{n_1}
+            \end{equation}
+
+            The light would have to debut in the core at an angle related to the critical angle.
+            \begin{gather}
+                \theta_{\rm in} = \frac{\pi}{2} - \theta_c
+                    =   \frac{\pi}{2} - \sin^{-1} \frac{n_2}{n_1}
+            \end{gather}
+
+            We can apply Snell's Law to this.
+            \begin{gather}
+                n_{\rm air} \sin \theta = n_1 \sin \theta_{\rm in}\\
+                \sin \theta =   \frac{n_1}{n_{\rm air}}  \sin \left( \frac{\pi}{2} - \sin^{-1} \frac{n_2}{n_1} \right)
+                    =   \frac{n_1}{n_{\rm air}}  \cos \left( \sin^{-1} \frac{n_2}{n_1} \right)
+            \end{gather}
+
+            From here, we can solve for $\theta$.
+            \begin{align}
+                \theta  &=  \sin^{-1} \left( \frac{n_1}{n_{\rm air}}  \cos \left( \sin^{-1} \frac{n_2}{n_1} \right) \right)\\
+                    &=  \sin^{-1} \left( \frac{1.58}{1.00029}  \cos \left( \sin^{-1} \frac{1.53}{1.58} \right) \right)\\
+                    &=  \sin^{-1} \left( \frac{1.58}{1.00029} * 0.2496 \right)
+                    =   23.2\unit{\degree}
+            \end{align}
 
     \pagebreak
     \section{Problem 69}
@@ -544,6 +633,13 @@
         At what angle of incidence does the reflected light end up fully polarized?
 
         \subsection{Solution}
+            Light reflects fully polarized at Brewster's angle.
+            Find that angle.
+            \begin{align}
+                \theta_B    &=  \arctan \frac{n_2}{n_1}
+                    =   \arctan \frac{1.53}{1.33}
+                    =   \boxed{49.0\unit{\degree}}
+            \end{align}
 
     \pagebreak
     \section{Problem 71}
