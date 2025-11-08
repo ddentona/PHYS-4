@@ -1,0 +1,147 @@
+\documentclass[8pt]{minimal}
+\usepackage{amsmath}
+\usepackage{esdiff}
+\usepackage{graphfig}
+
+\begin{document}
+    \setlength{\parindent}{0pt}
+    % \setlength{\voffset}{-50pt}
+    \setlength{\columnsep}{1cm}
+    \twocolumn
+    PHYS 4C Exam 2 Reference Sheet (with \LaTeX)
+
+    \underline{Write Units}
+    Anything not in here can be found in the textbook or your notes.
+
+    \underline{Laws of Thermodynamics}\\
+    0. Transistive Thermodynamic Equilibrium\\
+    1. $\Delta E = Q_{in} + W_{in}$\\
+    2. $\Delta S \geq 0$\\
+    3. 0K can't be reached in finitely many steps
+    \begin{equation*}
+        T_F =   \frac{9}{5}T_C + 32
+    \end{equation*}
+
+    \underline{Thermal Expansion}
+    \begin{gather*}
+        \Delta L    =   \alpha L_i \Delta T\\
+        \Delta V    =   3\alpha V_i \Delta T
+    \end{gather*}
+
+    \underline{Heat}\\
+    Flows from hot to cold
+    \begin{gather*}
+        Q   =   cm\Delta T \text{(Temperature change)}\\
+        Q   =   L_m m \text{(Phase change)}
+    \end{gather*}
+
+    \underline{Thermal processes}
+    \begin{gather*}
+        W   =   -p\Delta V  =   -\int p\,dV\\
+        PV  =   NkT =   nRT; 
+        \Delta E    =   nC_V \Delta T\\
+        C_V =   \left( \frac{f}{2} \right)R; C_p = C_V + 1; \gamma = \frac{C_p}{C_V}
+    \end{gather*}
+    \begin{center}
+        \begin{tabular}{l | c | r}
+            Constant    &   Name    &   Formulae\\
+            $p$ &   Isobaric    &   $Q = nC_p \Delta T; W = -p\Delta V$\\
+            $T$ &   Isothermal  &   $Q = -W = nRT\ln(V_f / V_i)$\\
+            $pV^\gamma , TV^{\gamma - 1}$   &   Adiabatic   &   $Q = 0; W = \Delta E$\\
+            $V$ &   Isochoric   &   $Q = nC_V \Delta T; W = 0$
+        \end{tabular}
+    \end{center}
+
+    \underline{Conductance equations}\\
+    $k$ is the conductance of a material.
+    Conductance over multiple objects works like capacitance equivalence
+    \begin{gather*}
+        \diff{Q}{t} =   K \Delta T; 
+        K   =   \frac{kA}{L}\\
+        \frac{1}{A}\diff{Q}{t}  =   -k\diff{T}{x};
+        \vec{J} =   -k \nabla T
+    \end{gather*}
+
+    \underline{Entropy ($S$) change}
+    \begin{equation*}
+        \Delta S    =   \int_{i}^{f}\frac{1}{T}\,dQ
+    \end{equation*}
+
+    \underline{Engines and Refrigerator}\\
+    Carnot engines/fridges are perfect and ideal versions.
+    Engine efficiency denoted $\varepsilon$
+    \begin{gather*}
+        \varepsilon =   \frac{|W_{out}|}{|Q_{H}|}; 
+        \varepsilon_C   =   1 - \frac{|Q_{L}|}{|Q_{H}|}
+            =   1 - \frac{T_L}{T_H}
+    \end{gather*}
+    Refrigerator efficiency denoted $K$
+    \begin{gather*}
+        K   =   \frac{|Q_L|}{|W_{in}|}; 
+        K_C =   \frac{|Q_{L}|}{|Q_{H}| - |Q_{L}|}
+            =   \frac{T_L}{T_H - T_L}
+    \end{gather*}
+
+    \underline{General Waves}
+    \begin{gather*}
+        \left( \nabla^2 \vec{\psi} = \right) \diffp[2]{\psi}{x} = \frac{1}{v^2}\diffp[2]{\psi}{t}\\
+        \psi(x,t) = \psi_m \cos(kx \mp \omega t)\\
+        v = \lambda f = \frac{\omega}{k}; f = \frac{\omega}{2\pi} = \frac{1}{T}; k = \frac{2\pi}{\lambda}
+    \end{gather*}
+    Consine can be exchanged with another function like $\sin(\theta)$ or $e^{i\theta}$.\\
+    Superposition of waves also fulfills wave equation.\\
+    Pulses tend to follow the Gaussian \\
+    ($e^{-\alpha t}$; $\int_{-\infty}^{\infty} e^{-\alpha t}\,dt = \sqrt{\frac{\pi}{\alpha}}$)
+
+    \underline{Standing waves}\\
+    Two traveling waves in opposite directions
+    \begin{gather*}
+        \psi(x,t)   =   \psi_m \cos(kx + \phi)\cos(\omega t + \phi')\\
+        \psi(x,t)   =   \psi_m \left( e^{i(kx - \omega t)} + e^{i(kx + \omega t)} \right)
+    \end{gather*}
+
+    \underline{String Waves}\\
+    String of tension $\tau$, density $\mu$, energy density $\langle\mu_E\rangle$.
+    \begin{gather*}
+        \mu_K = \frac{1}{2}\mu \left( \diff{\psi}{t} \right)^2;
+        \mu_U = \frac{1}{2}\tau \left( \diff{\psi}{x} \right)^2\\
+        \langle\mu_K\rangle = \langle \mu_U \rangle = \frac{1}{4}\mu\omega^2 y_m^2\\
+        v = \sqrt{\frac{\tau}{\mu}}; \langle\mu_E\rangle = \langle\mu_K\rangle + \langle\mu_U\rangle\\
+        P_{avg} = \frac{1}{2} \mu v \omega^2 \psi_m^2
+    \end{gather*}
+    Resonnance comes when one side is fixed and wavelength is a while number divisor of string length
+    \begin{equation*}
+        f = \frac{v}{\lambda} = n \frac{v}{2L}, \text{for n = 1, 2, 3, ...}
+    \end{equation*}
+    For $n = 1$, called fundamental or first harmonic
+
+    \underline{Sound Waves}\\
+    In air at $20^\circ$C, speed of sound is 343 m/s\\
+    Bulk modulus $B$, temperature $T$, density $\rho$
+    \begin{gather*}
+        s(x,t) = s_m \cos(kx \mp \omega t)\\
+        \Delta p(x,t) = \Delta p_m \sin(kx \mp \omega t)\\
+        v = \sqrt{\frac{B}{\rho}} = \sqrt{\frac{\gamma k T}{m}}; \Delta p_m = (v\rho\omega)s_m
+    \end{gather*}
+    Interference comes from phase difference and path length difference
+    \begin{gather*}
+        \Delta \phi = \frac{\Delta L}{\lambda}2\pi\\
+        \frac{\Delta L}{\lambda} \equiv 0 \mod 1 \text{ for constructive interference}\\
+        \frac{\Delta L}{\lambda} \equiv 0.5 \mod 1 \text{ for destructive interference}
+    \end{gather*}
+    Intensity of a sound wave is rate at which power is transmitted over an area
+    \begin{gather*}
+        I = \frac{P}{A} = \frac{1}{2}\rho v\omega^2 s_m^2\\
+        I_{\Sigma} = I_1 + I_2 + 2\sqrt{I_1 I_2}\cos(\Delta \phi)
+    \end{gather*}
+    Sound level defined in decibels
+    \begin{gather*}
+        \beta = (10\text{ dB})\log_{10} \frac{I}{I_0}\\
+        f_{beat} = f_1 - f_2
+    \end{gather*}
+    Doppler effect comes from detector traveling away (+) from source traveling towards (+) detector
+    \begin{equation*}
+        f' = f\frac{v_s - v_D}{v_s - v_S}
+    \end{equation*}
+
+\end{document}
