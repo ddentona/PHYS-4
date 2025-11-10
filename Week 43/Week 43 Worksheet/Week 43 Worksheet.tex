@@ -1,0 +1,74 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{cancel}
+\usepackage{enumitem}
+\usepackage{esdiff}
+\usepackage{graphicx}
+\usepackage{siunitx}
+% \usepackage{pgfplots}
+\usepackage{wrapfig}
+
+\newcommand{\e}[1]{e^{i(#1)}}
+\newcommand{\E}[1]{\times 10^{#1}}
+
+\title{
+    Worksheet \#12
+    \\  \small
+    PHYS 4C: Waves and Thermodynamics
+    }
+\author{Donald Aingworth IV}
+\date{November 17, 2025}
+
+\begin{document}
+    \DeclareSIUnit{\celsiusdegree}{C^\circ}
+    \DeclareSIUnit{\atm}{ atm}
+
+    \maketitle
+
+    \setcounter{section}{0}
+    \section{Problem 1}
+        Without looking anything up, determine what a light year is in meters.
+
+        \subsection{Solution}
+            I assume we know the speed of light to be $c = 2.998\E{8}\,\unit{\meter/\second}$.
+            We first find the conversion factor of seconds per year.
+            \begin{equation}
+                1\text{ s} \times \frac{1\text{ min}}{60\text{ s}} \times \frac{1\text{ hr}}{60\text{ min}} \times \frac{1\text{ day}}{24\text{ hr}} \times \frac{1\text{ yr}}{365.25\text{ day}} = \frac{1\text{ yr}}{31 557 600}
+            \end{equation}
+
+            Multiply the speed of light by the reciprocal of the conversion factor to find the distance light travels in a year.
+            \begin{equation}
+                c   =   2.998\E{8}\,\unit{\meter/\second} \times 31 557 600\text{ s/yr}
+                    =   9.46\E{15}\text{ m/yr}
+            \end{equation}
+
+            Multiply this by 1 year to find that one lightyear is equal to \boxed{9.46\E{15}\,\unit{\meter}}
+
+    \section{Problem 2}
+        Unpolarized light travelling in the z-direction is incident upon three polaroid filters with pass directions given by $+35\unit{\degree}$, $-40\unit{\degree}$, and $+25\unit{\degree}$ counter-clockwise from $+x$. 
+        Determine the fraction of the original light which passes through the three filters.
+
+        \subsection{Solution}
+            Divide it into four parts with four intensities for the light: initially ($I_0$), then after passing through the first ($I_1$), second ($I_2$), and third ($I_3$) filters.
+            First, the the first filter will filter out half the light's intensity.
+            \begin{equation}
+                I_1 = \frac{1}{2} I_0
+            \end{equation}
+
+            Next, the second filter is $35\unit{\degree} - (-40\unit{\degree}) = 75\unit{\degree}$ away from the first polarization direction. 
+            This can be used to find $I_2$.
+            \begin{equation}
+                I_2 = I_1 \cos^2(75\unit{\degree}) = \frac{1}{2} \cos^2(75\unit{\degree}) I_0
+            \end{equation}
+
+            Last, the third filter is $-40\unit{\degree} - 25\unit{\degree} = -65\unit{\degree}$ away from the first polarization direction. 
+            This can be used to find $I_3$.
+            \begin{align}
+                I_3 &=  I_2 \cos^2(-65\unit{\degree})
+                    =   \frac{1}{2} \cos^2(-65\unit{\degree}) \cos^2(75\unit{\degree}) I_0\\
+                    &=  0.00598 I_0
+            \end{align}
+
+            This tells is that the amount that passes through is \boxed{0.00598}.
+\end{document}
