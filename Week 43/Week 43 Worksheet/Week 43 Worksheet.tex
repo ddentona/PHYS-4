@@ -92,19 +92,86 @@
             \begin{align}
                 \left\langle u \right\rangle    &=  \frac{1}{2}\varepsilon_0 E_m^2
                     =   \frac{1}{2} * 8.854\E{-12}\,\unit{\farad/\meter} (12\,\unit{\volt/\meter})^2\\
-                    &=  6.327\E{-10}\,\unit{\joule/\meter^3}
+                    &=  \boxed{6.327\E{-10}\,\unit{\joule/\meter^3}}
             \end{align}
 
             Next the intensity.
             \begin{align}
                 I   &=  \frac{1}{2}c\varepsilon_0 E_m
                     =   c \left\langle u \right\rangle
-                    =   0.191\,\unit{\watt/\meter^2}
+                    =   \boxed{0.191\,\unit{\watt/\meter^2}}
             \end{align}
 
             Third the momentum density.
             \begin{align}
                 g   &=  \frac{\left\langle u \right\rangle}{c}
-                    =   \frac{6.327\E{-10}\,\unit{\joule/\meter^3}}{2.998\E{8}\,\unit{\meter/\second}}
+                    =   \frac{6.327\E{-10}\,\unit{\joule/\meter^3}}{2.998\E{8}\,\unit{\meter/\second}}\\
+                    &=  \boxed{2.1104\E{-18}\,\unit{\watt/\meter^4}}
             \end{align}
+
+            Last the momentum current density.
+            Suppose that the wave is traveling in only one direction, the $+x$ direction. 
+            \begin{align}
+                \underset{\sim}{\sigma} &=  u \hat{r} \otimes \hat{r}
+                    =   u\begin{bmatrix}
+                            1 & 0 & 0\\
+                            0 & 0 & 0\\
+                            0 & 0 & 0
+                        \end{bmatrix}
+                    =   \begin{bmatrix}
+                            u & 0 & 0\\
+                            0 & 0 & 0\\
+                            0 & 0 & 0
+                        \end{bmatrix}\\
+                    &=  \boxed{
+                            \begin{bmatrix}
+                                6.327\E{-10}& 0 & 0\\
+                                0 & 0 & 0\\
+                                0 & 0 & 0
+                            \end{bmatrix}\,\unit{\newton/\meter^2}
+                        }
+            \end{align}
+
+        \subsection{Solution (c)}
+            \subsubsection{Perfectly Reflecting}
+                A perfectly reflecting surface would absorb none of the energy.
+                This would merely redirect the light, resulting in a force equivalent to twice the energy density times the area affected.
+                \begin{equation}
+                    F   =   2 \left\langle u \right\rangle A
+                        =   2 * 6.327\E{-10}\,\unit{\newton/\meter^2} * 1.0\,\unit{\meter^2}
+                        =   \boxed{1.2654\E{-9}\,\unit{\newton}}
+                \end{equation}
+
+            \subsubsection{Perfectly Absorbing}
+                The perfectly absorbing surface absorbs all energy.
+                Due to that, we can find the rate of absorption by multiplying the intensity by the area covered.
+                \begin{equation}
+                    \diff{E}{t} = IA = 0.191\,\unit{\watt/\meter^2} * 1\,\unit{\meter^2} = \boxed{0.191\,\unit{\watt}}
+                \end{equation}
+
+                The force taken would be equal to the energy density times the area.
+                \begin{equation}
+                    F = \left\langle u \right\rangle A = 6.327\E{-10}\,\unit{\newton/\meter^2} * 1.0\,\unit{\meter^2} = \boxed{6.327\E{-10}\,\unit{\newton}}
+                \end{equation}
+
+        \subsection{Solution (d)}
+            $qz_m$ can be related to the electric field by a sinusoidal equation.
+            \begin{equation}
+                \vec{E}(\vec{r}, t) = \frac{1}{4\pi \varepsilon_0} \times \frac{qz_m \omega^2}{c^2 r} \sin(\theta) \cos(\vec{k}\cdot\vec{r} - \omega t)
+            \end{equation}
+            
+            For the time being, let's set $\sin(\theta) \cos(\vec{k}\cdot\vec{r} - \omega t) = 1$.
+            Due to that, the value of the rest would be equal to the magnitude of the electric field (12\,\unit{\volt/\meter} in this case).
+            We can use that.
+            
+            We can also use the frequency to find the value of $\omega$.
+            \begin{gather}
+                \omega = f * 2\pi = 212\pi\,\unit{\radian/\second}\\
+                E_m = \frac{1}{4\pi \varepsilon_0} * \frac{qz_m \omega^2}{c^2 r}\\
+                \begin{align}
+                    qz_m    &=  \frac{4\pi \varepsilon_0 * E_m * c^2 r}{\omega^2}\\
+                        &=  \frac{4\pi \varepsilon_0 * 12\,\unit{\volt/\meter} * (2.998\E{8}\,\unit{\meter/\second})^2 * 1000\,\unit{\meter}}{(212\pi\,\unit{\radian/\second})^2}\\
+                        &=  \boxed{270412\,\unit{\coulomb\cdot\meter}}
+                \end{align}
+            \end{gather}
 \end{document}
