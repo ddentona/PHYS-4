@@ -1,0 +1,93 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{cancel}
+\usepackage{enumitem}
+\usepackage{esdiff}
+\usepackage{graphicx}
+\usepackage{siunitx}
+% \usepackage{pgfplots}
+\usepackage{wrapfig}
+
+\newcommand{\e}[1]{e^{i(#1)}}
+\newcommand{\E}[1]{\times 10^{#1}}
+
+\title{
+    Worksheet \#14
+    \\  \small
+    PHYS 4C: Waves and Thermodynamics
+    }
+\author{Donald Aingworth IV}
+\date{November 17, 2025}
+
+\begin{document}
+    \DeclareSIUnit{\celsiusdegree}{C^\circ}
+    \DeclareSIUnit{\atm}{ atm}
+
+    \maketitle
+
+    \setcounter{section}{0}
+    \section{Problem 1}
+        (10 points) A light ray is incident upon a triangular prism (n = 1.50) as shown below.
+        \begin{center}
+            \includegraphics[width=0.25\textwidth]{P1.png}
+        \end{center}
+
+        \begin{enumerate}[label=\alph*)]
+            \item   (5 points) Determine the direction of the transmitted light ray (i) as it passes through the prism, and (ii) as it leaves the prism. In each case, indicate the direction by giving the angle relative to horizontal.
+            \item   (5 points) Assuming that the incident light is polarized parallel to the plane of incidence, determine the fraction of light that is transmitted through the prism and out the other side.
+        \end{enumerate}
+
+        \subsection{Solution (a)}
+            \subsubsection{(i) Passing through}
+                First find the angle from the normal at which the light ray hits the prism.
+                \begin{equation}
+                    \theta  =   90\unit{\degree} - (65\unit{\degree} - 20\unit{\degree})
+                            =   45\unit{\degree}
+                \end{equation}
+
+                Now use Snell's Law to find the angle at which it would be in the prism.
+                Assume this to be in a vacuum.
+                \begin{gather}
+                    n_1 \sin(\theta_1) = n_2 \sin(\theta_2)\\
+                    \begin{align}
+                        \theta_2    &=  \arcsin\left( \frac{n_1}{n_2}\sin(\theta_1) \right)
+                            =   \arcsin\left( \frac{1}{1.50}\sin(45\unit{\degree}) \right)\\
+                            &=  \arcsin\left( \frac{2}{3} * \frac{\sqrt{2}}{2} \right)
+                            =   \arcsin\left( \frac{\sqrt{2}}{3} \right)
+                            =   28.1255\unit{\degree}
+                    \end{align}
+                \end{gather}
+
+                Convert to the angle from the horizontal. 
+                \begin{equation}
+                    28.1255\unit{\degree} - 25\unit{\degree} = \boxed{3.1255\unit{\degree}}
+                \end{equation}
+
+            \subsubsection{(ii) Leaving the Prism}
+                First find the incident angle at which the light hits the edge.
+                \begin{equation}
+                    3.1255\unit{\degree} + 15\unit{\degree} = 18.1255\unit{\degree}
+                \end{equation} 
+
+                Use Snell's Law.
+
+
+    \section{Problem 2}
+        (8 points) An extended object is placed 5.0 cm in front of a concave mirror of radius 30 cm.
+        \begin{enumerate}[label=\alph*)]
+            \item   (4 points) Draw a ray diagram showing the mirror, the extended object, at least two light rays, and the extended image.
+            \item   (2 points) Where is the image located? Is it real or virtual?
+            \item   (2 points) Determine the lateral magniﬁcation of the object. Is the image upright or inverted?
+        \end{enumerate}
+
+    \section{Problem 3}
+        (14 points) Two thin lenses, each with a focal length of +40 cm, are lined up with a common axis 60 cm apart. 
+        An object is placed 60 cm in front of the ﬁrst lens.
+        \begin{enumerate}[label=\alph*)]
+            \item   (2 points) Draw the two lenses and the (extended) object in a diagram below.
+            \item   (8 points) Calculate the locations of the image from the ﬁrst lens and the ﬁnal image from the second lens, along with the overall magniﬁcation. Draw the two images as extended objects in your diagram above.
+            \item   (4 points) Keeping the object and ﬁrst lens in place, where would you need to move the second lens if you wanted the overall magniﬁcation to be equal to +8.0?
+        \end{enumerate}
+    
+\end{document}
