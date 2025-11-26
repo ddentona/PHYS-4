@@ -67,40 +67,49 @@
             \subsubsection{(ii) Leaving the Prism}
                 First find the incident angle at which the light hits the edge.
                 \begin{equation}
-                    3.1255\unit{\degree} + 15\unit{\degree} = 18.1255\unit{\degree}
+                    3.1255\unit{\degree} - 15\unit{\degree} = -11.8745\unit{\degree}
                 \end{equation} 
 
                 Use Snell's Law.
                 \begin{align}
                     \theta_2    &=  \arcsin\left( \frac{n_1}{n_2}\sin(\theta_1) \right)
-                        =   \arcsin\left( \frac{1.50}{1}\sin(18.1255\unit{\degree}) \right)\\
-                        &=  27.817\unit{\degree}
+                        =   \arcsin\left( \frac{1.50}{1}\sin(11.8745\unit{\degree}) \right)\\
+                        &=  17.978\unit{\degree}
                 \end{align}
 
                 Next, we return to the angle from the horizontal rather than the angle of incidence.
                 \begin{equation}
-                    27.817\unit{\degree} - 15\unit{\degree} = \boxed{12.817\unit{degree}}
+                    17.978\unit{\degree} - 15\unit{\degree} = \boxed{2.978\unit{\degree}}
                 \end{equation}
 
         \subsection{Solution (b)}
-            If it is parallel to the angle of incidence, 
+            If it is parallel to the angle of incidence, there is a formula for the fraction of the ampliude that reflects.
+            \begin{equation}
+                r_\parallel = \frac{n_1\cos(\theta_2) - n_2\cos(\theta_1)}{n_1\cos(\theta_2) + n_2\cos(\theta_1)}
+            \end{equation}
 
+            We can plug values into this, starting with the angle entering the prism.
+            \begin{align}
+                r_1 &=  \frac{\cos(28.1255\unit{\degree}) - 1.5\cos(45\unit{\degree})}{\cos(28.1255\unit{\degree}) + 1.5\cos(45\unit{\degree})}
+                    =   \frac{-0.178743}{1.942577}
+                    =   -0.0920\\
+                R_1 &=  \left| r_1 \right|^2
+                    =   0.008466\\
+                T_1 &=  1 - R_1
+                    =   0.9915
+            \end{align}
 
-    \section{Problem 2}
-        (8 points) An extended object is placed 5.0 cm in front of a concave mirror of radius 30 cm.
-        \begin{enumerate}[label=\alph*)]
-            \item   (4 points) Draw a ray diagram showing the mirror, the extended object, at least two light rays, and the extended image.
-            \item   (2 points) Where is the image located? Is it real or virtual?
-            \item   (2 points) Determine the lateral magniﬁcation of the object. Is the image upright or inverted?
-        \end{enumerate}
+            Then for the angle at whch it exits the prism.
+            \begin{align}
+                r_2 &=  \frac{1.50\cos(17.978\unit{\degree}) - \cos(11.8745\unit{\degree})}{1.50\cos(17.978\unit{\degree}) + \cos(11.8745\unit{\degree})}
+                    =   \frac{0.44816}{2.40536}
+                    =   0.18632\\
+                R_2 &=  0.03471\\
+                T_2 &=  0.96529
+            \end{align}
 
-    \section{Problem 3}
-        (14 points) Two thin lenses, each with a focal length of +40 cm, are lined up with a common axis 60 cm apart. 
-        An object is placed 60 cm in front of the ﬁrst lens.
-        \begin{enumerate}[label=\alph*)]
-            \item   (2 points) Draw the two lenses and the (extended) object in a diagram below.
-            \item   (8 points) Calculate the locations of the image from the ﬁrst lens and the ﬁnal image from the second lens, along with the overall magniﬁcation. Draw the two images as extended objects in your diagram above.
-            \item   (4 points) Keeping the object and ﬁrst lens in place, where would you need to move the second lens if you wanted the overall magniﬁcation to be equal to +8.0?
-        \end{enumerate}
-    
+            Multiply the two together to get the resultant ratio.
+            \begin{equation}
+                T_m = T_1 T_2 = \boxed{0.957}
+            \end{equation}
 \end{document}
