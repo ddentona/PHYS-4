@@ -36,14 +36,26 @@
 
     \pagebreak
     \section{Problem 1}
-        You look through a camera toward an image of a hummingbird
-in a plane mirror. The camera is 4.30 m in front of the mirror. The bird
-is at camera level, 5.00 m to your right and 3.30 m
-from the mirror. What is the distance between the
-camera and the apparent position of the bird's image
-in the mirror?
+        You look through a camera toward an image of a hummingbird in a plane mirror. 
+        The camera is 4.30 m in front of the mirror. 
+        The bird is at camera level, 5.00 m to your right and 3.30 m from the mirror. 
+        What is the distance between the camera and the apparent position of the bird's image in the mirror?
 
         \subsection{Solution}
+            In a plane mirror, the object will appear as far from the mirror as it is legitimately. 
+            Add the distance from the mirror of the camera to the bird's distance to the mirror.
+            \begin{equation}
+                \Delta x = 4.30\,\unit{\meter} + 3.30\,\unit{\meter} = 7.60\,\unit{\meter}
+            \end{equation}
+
+            Here use the Pythagorean theorem to find the distance.
+            \begin{align}
+                s   &=  \sqrt{\Delta x^2 + \Delta y^2}
+                    =   \sqrt{7.60^2 + 5.00^2}
+                    =   \sqrt{57.76 + 25.00}
+                    =   \sqrt{82.76}
+                    =   \boxed{9.097\,\unit{\meter}}
+            \end{align}
 
     \pagebreak
     \section{Problem 3}
@@ -52,24 +64,52 @@ in the mirror?
             \includegraphics[width=0.15\textwidth]{34-32.png} 
             % \label{fig:wrapfig}
         \end{wrapfigure}
-        In Fig. 34-32, an isotropic point source of light
-S is positioned at distance d from
-a viewing screen A and the light
-intensity I P at point P (level with S)
-is measured. Then a plane mirror
-M is placed behind S at distance d.
-By how much is I P multiplied by the
-presence of the mirror?
+        In Fig. 34-32, an isotropic point source of light $S$ is positioned at distance $d$ from a viewing screen $A$ and the light intensity $I_P$ at point $P$ (level with $S$) is measured. 
+        Then a plane mirror $M$ is placed behind $S$ at distance $d$.
+        By how much is $I_P$ multiplied by the presence of the mirror?
 
         \subsection{Solution}
+            The equation for the intensity of light.
+            \begin{equation}
+                I = \frac{P_s}{4\pi r^2}
+            \end{equation}
+
+            This gives us an equation for $I_P$.
+            \begin{equation}
+                I_P = \frac{P_s}{4\pi d^2}
+            \end{equation}
+
+            Using this, we can create an equation for the intensity at point $P$ from teh light that reflected from the mirror (call it $I_M$).
+            \begin{equation}
+                I_M = \frac{P_s}{4\pi (3d)^2}
+            \end{equation}
+
+            We can use these to calculate the total intensity and relate that to $I_P$.
+            \begin{align}
+                I_{net} &=  I_P + I_M
+                    =   \frac{P_s}{4\pi d^2} + \frac{P_s}{4\pi (3d)^2}\\
+                    &=  \frac{P_s}{4\pi d^2} \left( 1 + \frac{1}{3^2} \right)
+                    =   I_P \left( \frac{10}{9} \right)\\
+                \frac{I_{net}}{I_P} &=  \boxed{\frac{10}{9} = 1.11}
+            \end{align}
 
     \pagebreak
     \section{Problem 7}
         A concave shaving mirror has a radius of curvature of 35.0 cm.
-It is positioned so that the (upright) image of a man's face is 2.50
-times the size of the face. How far is the mirror from the face?
+        It is positioned so that the (upright) image of a man's face is 2.50 times the size of the face. 
+        How far is the mirror from the face?
 
         \subsection{Solution}
+            The upright image size difference tells us the magnification and solve for the position of the image ($i$).
+            \begin{gather}
+                m = -\frac{i}{p} = 2.50\\
+                p = -\frac{i}{2.50}
+            \end{gather}
+
+            Usng this and the focal point, we can find a value of $p$.
+            \begin{gather}
+                \frac{}{}
+            \end{gather}
 
     \pagebreak
     \section{Problem 9-16}
