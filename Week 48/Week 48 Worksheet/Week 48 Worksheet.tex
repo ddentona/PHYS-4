@@ -26,11 +26,115 @@
 
     \maketitle
     \section{Problem 1}
-        (8 points) Two point sources of EM radiation are located 1.00 µm apart and emit the same wavelength in phase with one another. 
-        For what range of wavelengths is it possible to ﬁnd a point in space where the two waves destructively interfere (i.e., 180◦ out of phase)?
+        (8 points) Two point sources of EM radiation are located 1.00 \unit{\micro\meter} apart and emit the same wavelength in phase with one another. 
+        For what range of wavelengths is it possible to ﬁnd a point in space where the two waves destructively interfere (i.e., 180\unit{\degree} out of phase)?
         Express your answer as an inequality.
 
         \subsection{Solution}
+            The phase difference is dependant on the difference in distance traveled ($\Delta s$). 
+            \begin{equation}
+                \Delta \phi = 2\pi \frac{\Delta s}{\lambda}
+            \end{equation}
             
-    
+            For destructive interference to occur, the phase difference must be halfway through a circular phase.
+            \begin{equation}
+                \Delta\phi \equiv \pi \mod 2\pi
+            \end{equation}
+
+            We have a minimum possible value of this and solve for the wavelength.
+            \begin{gather}
+                \Delta \phi = \pi = 2\pi \frac{\Delta s}{\lambda}\\
+                \lambda = 2\,\Delta s
+            \end{gather}
+
+            The largest possible difference in the distances traveled ($\Delta s_{\rm max}$) is the distance between the sources ($d = 1.00\,\unit{\micro\meter}$), while the shortest possible difference in distances ($\Delta s_{\rm min}$) is zero.
+            The triangle inequality would help to solve this.
+            \begin{gather}
+                \Delta s_{\rm max} = d = 1.00\,\unit{\micro\meter}\\
+                \Delta s_{\rm min} = 0
+            \end{gather}
+
+            These have corresponding wavelengths necessary for destructive interference.
+            \begin{gather}
+                \lambda_{\rm max} = 2\Delta s_{\rm max} = 2.00\,\unit{\micro\meter}\\
+                \lambda_{\rm min} = 2\Delta s_{\rm min} = 0
+            \end{gather}
+
+            This gives us proper bounds for the integral.
+            \begin{equation}
+                \boxed{0 < \lambda \leq 2.00\,\unit{\micro\meter}}
+            \end{equation}
+
+    \section{Problem 2}
+        (12 points) An electromagnetic plane wave ($\lambda = 632.8\,\unit{\nano\meter}$) is incident upon a double slit with slit separation $d = 0.20\,\unit{\milli\meter}$. 
+        An interference pattern is observed on a screen $D = 1.00\,\unit{\meter}$ away from the double slit.
+        \begin{enumerate}[label=(\alph*)]
+            \item   (4 points) Determine the separation ($\Delta y$) between adjacent bright fringes for the ﬁrst few bright fringes on the screen.
+            \item   (4 points) What is the total number of bright fringes that can exist on the screen (assuming that the screen is large enough to accomodate them all). At what angle is the ﬁnal fringe?
+            \item   (4 points) Suppose a small dielectric substance with $n = 1.70$ and length $\ell = 2.00\,\unit{\micro\meter}$ is placed just before the second (bottom) slit. In what direction does the interference pattern shift, and by how many fringes?
+        \end{enumerate}
+
+        \subsection{Solution (a)}
+            The separation between fringes is calculatable with a formula.
+            \begin{align}
+                \Delta y    &=  \frac{\lambda D}{d}
+                    =   \frac{632.8\,\unit{\nano\meter} \times 1.00\,\unit{\meter}}{0.20\,\unit{\milli\meter}}
+                    =   3.164\E{-3}\,\unit{\meter}
+                    =   \boxed{3.164\,\unit{\milli\meter}}
+            \end{align}
+
+        \subsection{Solution (b)}
+            The number of fringes on each side is equal to the distance between the sources divided by the wavelength.
+            \begin{align}
+                m_{\rm max} &=  \frac{d}{\lambda}
+                    =   \frac{0.20\,\unit{\milli\meter}}{632.8\,\unit{\nano\meter}}
+                    =   316.06
+                    \approx 316
+            \end{align}
+
+            Doubling this for all the negatives and adding an extra fringe for the central fringe, we get the total number of fringes.
+            \begin{equation}
+                \text{count}(m) = 316 \times 1 + 1
+                    =   \boxed{633}
+            \end{equation}
+
+            The maximum angle would the the arctangent of the distance from the central fringe to the farthest fringe divided by the distance between the sources and the screen.
+            The former is calcualtable by multiplying the number of fringes by the distance between fringes.
+            \begin{align}
+                \theta  &=  \arcsin\left( \frac{m_{\rm max}\,\lambda}{d} \right)
+                    =   \arcsin\left( \frac{316 \times 632.8\,\unit{\nano\meter}}{0.20\,\unit{\milli\meter}} \right)
+                    =   \boxed{88.9\,\unit{\degree}}
+            \end{align}
+
+        \subsection{Solution (c)}
+            This dielectric substance would slow the light that passes through it down and result in a change of phase.
+            \begin{gather}
+                v   =   \frac{c}{n}\\
+                \Delta x = \ell - \frac{\ell}{n}\\
+                \Delta \phi = 2\pi \frac{\Delta x}{\lambda} = 2\pi \frac{\ell - \frac{\ell}{n}}{\lambda}
+            \end{gather}
+
+            This results in effectively a difference in distance traveled of $\Delta x$.
+            This change in distance traveled has to be imitated in the difference in distance traveled by the light rays.
+            It results in a \underline{downward} angle at which the light will travel to the first fringe.
+            \begin{equation}
+                \theta = \arcsin\left( \frac{\Delta x}{d} \right)
+            \end{equation}
+
+            The distance downward that the light goes can be found from this.
+            \begin{equation}
+                y_{\rm change} = D\tan(\theta)
+            \end{equation}
+
+            Divide this by the distance between fringes to find the number of fringes by which it shifts.
+            \begin{align}
+                \Delta m    &=  \frac{y_{\rm change}}{\Delta y}
+                    =   \frac{D\tan(\theta)}{\Delta y}
+                    =   \frac{D\tan\left( \arcsin\left( \frac{\Delta x}{d} \right) \right)}{\Delta y}\\
+                    &=  \frac{D\tan\left( \arcsin\left( \frac{\ell - \frac{\ell}{n}}{d} \right) \right)}{\Delta y}
+                    =   \frac{1.00\,\unit{\meter}\tan\left( \arcsin\left( \frac{2.00\,\unit{\micro\meter} - \frac{2.00\,\unit{\micro\meter}}{1.70}}{0.20\,\unit{\milli\meter}} \right) \right)}{3.164\,\unit{\milli\meter}}\\
+                    &=  1.30
+            \end{align}
+
+            To conclude, it will shift \underline{downward by 1.30 fringes}.
 \end{document}
