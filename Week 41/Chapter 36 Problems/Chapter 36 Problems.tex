@@ -75,8 +75,33 @@
 
     \pagebreak
     \section{Problem 5}
+        A single slit is illuminated by light of wavelengths $\lambda_a$ and $\lambda_b$, chosen so that the first diffraction minimum of the $\lambda_a$ component coincides with the second minimum of the $\lambda_b$ component. 
+        (a) If $\lambda_b = 350\,\unit{\nano\meter}$, what is $\lambda_a$? 
+        For what order number $m_b$ (if any) does a minimum of the $\lambda_b$ component coincide with the minimum of the $\lambda_a$ component in the order number (b) $m_a = 2$ and (c) $m_a = 3$?
 
-        \subsection{Solution}
+        \subsection{Solution (a)}
+            We can define a relationship between $y_a$ and $y_b$.
+            \begin{equation}
+                y_a = y_b
+            \end{equation}
+
+            Approximating $\sin\theta \approx \theta \approx \tan\theta$, we have a relationship equation between $y$ and $\lambda$ for both $a$ and $b$.
+            \begin{gather}
+                a \sin\theta = a \frac{y_a}{D} = m_a \lambda_a\\
+                a \frac{y_b}{D} = m_b \lambda_b \to y_a = y_b = \frac{m_b \lambda_b D}{a}\\
+                a \frac{\frac{m_b \lambda_b D}{a}}{D} = m_a \lambda_a = 2 m_b \lambda_b
+            \end{gather}
+
+            In this case, $m_a$ would be equal to 1, while $m_b$ would be equal to 2.
+            \begin{gather}
+                \lambda_a = 2 \lambda_b = 2 * 350\,\unit{\nano\meter} = \boxed{700\,\unit{\nano\meter}}
+            \end{gather}
+
+        \subsection{Solution (b)}
+            4
+        
+        \subsection{Solution (c)}
+            6
 
     \pagebreak
     \section{Problem 9}

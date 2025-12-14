@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1765735143.87987 "/Users/dentonaingworth/Documents/CCSF/PHYS-4A/Week 39/Chapter 34 Problems/Chapter 34 Problems.tex" "Chapter 34 Problems.pdf" "Chapter 34 Problems" 1765735144.40053 0
-  "/Users/dentonaingworth/Documents/CCSF/PHYS-4A/Week 39/Chapter 34 Problems/Chapter 34 Problems.tex" 1765735143.67057 15234 cfd278036fe94ce1808115edc3f3d1ad ""
+["pdflatex"] 1765748261.57531 "/Users/dentonaingworth/Documents/CCSF/PHYS-4A/Week 39/Chapter 34 Problems/Chapter 34 Problems.tex" "Chapter 34 Problems.pdf" "Chapter 34 Problems" 1765748262.08255 0
+  "/Users/dentonaingworth/Documents/CCSF/PHYS-4A/Week 39/Chapter 34 Problems/Chapter 34 Problems.tex" 1765748261.38091 16249 75a25bd135ad3d697948b0c86d3ff3e3 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -76,9 +76,9 @@
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
   "34-32.png" 1761951676.62575 12350 e5c095a462275706459f15101a28e553 ""
   "34-38.png" 1761952536.91401 14015 3bbecaab06d755d068228683148512eb ""
-  "Chapter 34 Problems.aux" 1765735144.36368 4899 c200f372da571560ba4602cc8095d2be "pdflatex"
-  "Chapter 34 Problems.tex" 1765735143.67057 15234 cfd278036fe94ce1808115edc3f3d1ad ""
-  "Chapter 34 Problems.toc" 1765735144.36443 2898 485f8ac46d2bac9db024f1c5f4f4b8fc "pdflatex"
+  "Chapter 34 Problems.aux" 1765748262.04667 4899 c200f372da571560ba4602cc8095d2be "pdflatex"
+  "Chapter 34 Problems.tex" 1765748261.38091 16249 75a25bd135ad3d697948b0c86d3ff3e3 ""
+  "Chapter 34 Problems.toc" 1765748262.04739 2898 485f8ac46d2bac9db024f1c5f4f4b8fc "pdflatex"
   "T34-4.png" 1761952317.68453 84746 833ded08ca08d45802f8c7815c7b3f63 ""
   "T34-5.png" 1761952422.54335 70282 e786cb60b3519a36d1b2b8a0bd84e09f ""
   (generated)

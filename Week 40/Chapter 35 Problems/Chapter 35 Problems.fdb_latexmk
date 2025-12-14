@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1765739948.32219 "/Users/dentonaingworth/Documents/CCSF/PHYS-4A/Week 40/Chapter 35 Problems/Chapter 35 Problems.tex" "Chapter 35 Problems.pdf" "Chapter 35 Problems" 1765739948.76457 0
-  "/Users/dentonaingworth/Documents/CCSF/PHYS-4A/Week 40/Chapter 35 Problems/Chapter 35 Problems.tex" 1765739948.13936 6656 fc3ecd1271b9c462219fdc883d394c79 ""
+["pdflatex"] 1765752784.05789 "/Users/dentonaingworth/Documents/CCSF/PHYS-4A/Week 40/Chapter 35 Problems/Chapter 35 Problems.tex" "Chapter 35 Problems.pdf" "Chapter 35 Problems" 1765752784.48557 0
+  "/Users/dentonaingworth/Documents/CCSF/PHYS-4A/Week 40/Chapter 35 Problems/Chapter 35 Problems.tex" 1765752783.86499 7576 4a0ef81a441a08eb9abadc29d6cb5f18 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/tcrm0600.tfm" 1136768653 1536 12e8c510d3e158fdd0e9a42e75118bd9 ""
@@ -76,9 +76,9 @@
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
   "35-31.png" 1765735296.47307 8925 7406bc2fe76ad27fb5769e43d9a67e3d ""
   "35-4.png" 1765736671.70333 29024 b056ff6b0aaf1e8c0b71f7077d9401dd ""
-  "Chapter 35 Problems.aux" 1765739948.72924 5289 a79f3eb4cd536e4961bc352349985a85 "pdflatex"
-  "Chapter 35 Problems.tex" 1765739948.13936 6656 fc3ecd1271b9c462219fdc883d394c79 ""
-  "Chapter 35 Problems.toc" 1765739948.72997 3124 19bf4c29d6321118db65815aa976875a "pdflatex"
+  "Chapter 35 Problems.aux" 1765752784.45117 5289 a79f3eb4cd536e4961bc352349985a85 "pdflatex"
+  "Chapter 35 Problems.tex" 1765752783.86499 7576 4a0ef81a441a08eb9abadc29d6cb5f18 ""
+  "Chapter 35 Problems.toc" 1765752784.45189 3124 19bf4c29d6321118db65815aa976875a "pdflatex"
   (generated)
   "Chapter 35 Problems.aux"
   "Chapter 35 Problems.log"
