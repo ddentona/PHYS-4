@@ -253,21 +253,66 @@ O or on the opposite side.
 
     \pagebreak
     \section{Problem 45}
-        You produce an image of the
-Sun on a screen, using a thin lens whose focal length is 20.0 cm.
-What is the diameter of the image? (See Appendix C for needed
-data on the Sun.)
+        You produce an image of the Sun on a screen, using a thin lens whose focal length is 20.0 cm.
+        What is the diameter of the image? 
+        (See Appendix C for needed data on the Sun.)
 
         \subsection{Solution}
+            The sun is about $1.5\E{11}\,\unit{\meter}$ away. 
+            Its radius is about $6.96\E{8}\,\unit{\meter}$, leaving it with a diameter of $1.392\E{9}\,\unit{\meter}$.
+            Our focal length is $0.200\,\unit{\meter}$.
+            We can use this to find the image distance.
+            \begin{gather}
+                \frac{1}{p} + \frac{1}{i} = \frac{1}{f}\\
+                \begin{align}
+                    i   &=  \left( \frac{1}{f} - \frac{1}{p} \right)^{-1}
+                        =   \left( \frac{1}{0.200\,\unit{\meter}} - \frac{1}{1.5\E{11}\,\unit{\meter}} \right)^{-1}\\
+                        &\approx    \left( \frac{1}{0.200} \right)^{-1}
+                        =   0.200\,\unit{\meter}
+                \end{align}
+            \end{gather}
+
+            This can be used to find the magnification.
+            \begin{align}
+                m   &=  -\frac{i}{p}
+                    =   -\frac{0.200\,\unit{\meter}}{1.5\E{11}\,\unit{\meter}}
+                    =   -1.33\E{-12}
+            \end{align}
+
+            Multiply the diameter by the magnefication to find the image diameter.
+            \begin{align}
+                d'  &=  \left| md \right|
+                    =   \left| -1.33\E{-12} \times 1.392\E{9}\,\unit{\meter} \right|\\
+                    &=  \left| -\frac{29}{15625}\,\unit{\meter} \right|
+                    =   \boxed{1.856\E{-3}\,\unit{\meter}}
+            \end{align}
 
     \pagebreak
     \section{Problem 49}
-        An illuminated slide is held 44 cm from a screen. How
-far from the slide must a lens of focal length 11 cm be placed
-(between the slide and the screen) to form an image of the slide's
-picture on the screen?
+        An illuminated slide is held 44 cm from a screen. 
+        How far from the slide must a lens of focal length 11 cm be placed (between the slide and the screen) to form an image of the slide's picture on the screen?
 
         \subsection{Solution}
+            Use the thin lens equation.
+            \begin{equation}
+                \frac{1}{p} + \frac{1}{i} = \frac{1}{f}
+            \end{equation}
+
+            There is also an equation that would allow for the lens to be between the slide and the screen.
+            \begin{equation}
+                p + i = 44\,\unit{\centi\meter}
+            \end{equation}
+
+            Combine these and solve for $p$.
+            \begin{gather}
+                i = 44\,\unit{\centi\meter} - p\\
+                \frac{1}{11\,\unit{\centi\meter}} = \frac{1}{p} + \frac{1}{44\,\unit{\centi\meter} - p}
+                    =   \frac{44\,\unit{\centi\meter} - p  + p}{p(44\,\unit{\centi\meter} - p)}\\
+                44p - p^2 = 484\\
+                0 = p^2 - 44p + 484\\
+                p = \frac{44 \pm \sqrt{44^2 - 4 \times 484}}{2}
+                    =   \boxed{22\,\unit{\centi\meter}}
+            \end{gather}
 
     \pagebreak
     \section{Problem 53}
