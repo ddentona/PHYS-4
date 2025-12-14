@@ -34,10 +34,44 @@
 
     \maketitle
 
+    % Problems start page 1107
+
     \pagebreak
     \section{Problem 1}
+        The distance between the first and fifth minima of a single-slit diffraction pattern is 0.35 mm with the screen 40 cm away from the slit, when light of wavelength 550 nm is used. 
+        (a) Find the slit width. 
+        (b) Calculate the angle $\theta$ of the first diffraction minimum.
 
-        \subsection{Solution}
+        \subsection{Solution (a)}
+            Estimate $\sin \theta \approx \theta \approx \tan \theta = \frac{y}{D}$.
+            $D = 40\,\unit{\centi\meter}$ and never changes in this case.
+            $y$ does change, so we can create a $\Delta y$.
+            \begin{equation}
+                a \sin \theta = a \frac{y}{D} = m\lambda
+            \end{equation}
+
+            We can create a $\Delta y$ on one side and $\Delta m$ on the other, for a separation between the first and fifth fringes.
+            \begin{gather}
+                a \frac{y}{D} = m\lambda\\
+                a \frac{\Delta y}{D} = \Delta m \lambda\\
+                \begin{align}
+                    a   &=  \frac{\Delta m}{\Delta y} \lambda D
+                        =   \frac{4}{0.35\,\unit{\milli\meter}} * 550\,\unit{\nano\meter} * 0.4\,\unit{\meter}
+                        =   \boxed{2.51\,\unit{\milli\meter}}
+                \end{align}
+            \end{gather}
+
+        \subsection{Solution (b)}
+            Divide the distance between fringes by four.
+            \begin{equation}
+                \Delta y = \frac{0.35\,\unit{\milli\meter}}{4} = 87.5\E{-6}\,\unit{\meter}
+            \end{equation}
+            
+            Divide this by the distance to the screen to find the approximate angle.
+            \begin{equation}
+                \theta = \frac{87.5\E{-6}\,\unit{\meter}}{0.4\,\unit{\meter}} 
+                    =   \boxed{2.2\E{-4}}
+            \end{equation}
 
     \pagebreak
     \section{Problem 5}
