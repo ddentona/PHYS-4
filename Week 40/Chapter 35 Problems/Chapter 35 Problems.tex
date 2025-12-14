@@ -34,15 +34,40 @@
 
     \maketitle
 
+    % Problems start page 1074
+
     \pagebreak
     \section{Problem 1}
+        \begin{wrapfigure}{r}{0.25\textwidth}
+            \vspace{-30pt}
+            \includegraphics[width=0.25\textwidth]{35-31.png} 
+            % \label{fig:wrapfig}
+        \end{wrapfigure}
         In Fig. 35-31, a light wave along ray $r_1$ reflects once from a mirror and a light wave along ray $r_2$ reflects twice from that same mirror and once from a tiny mirror at distance $L$ from the bigger mirror. 
         (Neglect the slight tilt of the rays.) 
         The waves have wavelength 620 nm and are initially in phase. 
         (a) What is the smallest value of L that puts the final light waves exactly out of phase? 
         (b) With the tiny mirror initially at that value of L, how far must it be moved away from the bigger mirror to again put the final waves out of phase?
 
-        \subsection{Solution}
+        \subsection{Solution (a)}
+            For the two to be completely out of phase, one of the light waves would have to travel half a wavelength more.
+            We can approximate the distance traveled between big and little mirrors to be equivalent to the distance between the big and little mirror.
+            \begin{gather}
+                2L = \frac{\lambda}{2}\\
+                L = \frac{\lambda}{4} = \frac{620\,\unit{\nano\meter}}{4} = \boxed{155\,\unit{\nano\meter}}
+            \end{gather}
+
+        \subsection{Solution (b)}
+            Replace $\frac{\lambda}{2}$ with $\frac{3\lambda}{2}$.
+            \begin{gather}
+                2L_2 = \frac{3\lambda}{2}\\
+                L_2 = \frac{3\lambda}{4} = \frac{3 \times 620\,\unit{\nano\meter}}{4} = 465\,\unit{\nano\meter}
+            \end{gather}
+
+            Now find the change in $L$.
+            \begin{equation}
+                \Delta L = L_2 - L = 465\,\unit{\nano\meter} - 155\,\unit{\nano\meter} = \boxed{310\,\unit{\nano\meter}}
+            \end{equation}
 
     \pagebreak
     \section{Problem 3}
