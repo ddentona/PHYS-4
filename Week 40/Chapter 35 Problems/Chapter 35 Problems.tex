@@ -71,8 +71,40 @@
 
     \pagebreak
     \section{Problem 3}
+        \begin{wrapfigure}{r}{0.4\textwidth}
+            \vspace{-30pt}
+            \includegraphics[width=0.4\textwidth]{35-4.png} 
+            % \label{fig:wrapfig}
+        \end{wrapfigure}
+        In Fig. 35-4, assume that two waves of light in air, of wavelength 400 nm, are initially in phase. 
+        One travels through a glass layer of index of refraction $n_1 = 1.60$ and thickness $L$. 
+        The other travels through an equally thick plastic layer of index of refraction $n_2 = 1.50$. 
+        (a) What is the smallest value $L$ should have if the waves are to end up with a phase difference of 5.65 rad? 
+        (b) If the waves arrive at some common point with the same amplitude, is their interference fully constructive, fully destructive, intermediate but closer to fully constructive, or intermediate but closer to fully destructive?
 
-        \subsection{Solution}
+        \subsection{Solution (a)}
+            What matters in this case is the difference in values of $kx$ be equal to 5.65 rad.
+            In both cases, $x$ will be equal to $L$.
+            We have a known formula for $k$ from $\lambda_n$, the latter of which can be found from $\lambda$ and $n$.
+            \begin{gather}
+                k_1x - k_2x = 5.65\,\unit{\radian}\\
+                L\left( \frac{2\pi}{\lambda / n_1} - \frac{2\pi}{\lambda / n_2} \right) = 5.65\,\unit{\radian}\\
+                L \left( n_1 - n_2 \right) = \lambda \times \frac{5.65\,\unit{\radian}}{2\pi\,\unit{\radian}}\\
+                \begin{align}
+                    L   &=  \frac{\lambda}{n_1 - n_2} \times \frac{5.65\,\unit{\radian}}{2\pi\,\unit{\radian}}
+                        =   \frac{400\,\unit{\nano\meter}}{1.60 - 1.50} \times \frac{5.65\,\unit{\radian}}{2\pi\,\unit{\radian}}\\
+                        &=  \frac{400\,\unit{\nano\meter} \times 5.65}{0.1 \times 2\pi}
+                        =   \boxed{3.60\,\unit{\micro\meter}}
+                \end{align}
+            \end{gather}
+
+        \subsection{Solution (b)}
+            Divide the phase difference by $2\pi$.
+            \begin{equation}
+                \frac{5.65}{2\pi} = 0.9
+            \end{equation}
+
+            This means it is \underline{intermediate but closer to fully constructive}.
 
     \pagebreak
     \section{Problem 5}
