@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.25)  13 DEC 2025 17:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.25)  13 DEC 2025 15:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"/Users/dentonaingworth/Documents/CCSF/PHYS-4A/Week 39/Chapter 34 Problems/Chapter 34 Problems.tex"
-(/Users/dentonaingworth/Documents/CCSF/PHYS-4A/Week 39/Chapter 34 Problems/Chapter 34 Problems.tex
+**"/Users/dentonaingworth/Documents/CCSF/PHYS-4A/Week 40/Chapter 35 Problems/Chapter 35 Problems.tex"
+(/Users/dentonaingworth/Documents/CCSF/PHYS-4A/Week 40/Chapter 35 Problems/Chapter 35 Problems.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
 (/usr/local/texlive/2024/texmf-dist/tex/latex/base/article.cls
@@ -180,7 +180,7 @@ Package: array 2023/10/16 v2.5g Tabular extension package (FMi)
 \WF@everypar=\toks24
 Package: wrapfig 2003/01/31  v 3.6
 )
-Package translations Info: No language package found. I am going to use `english' as default language. on input line 25.
+Package translations Info: No language package found. I am going to use `english' as default language. on input line 24.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/graphics/color.sty
 Package: color 2022/01/06 v1.3d Standard LaTeX Color (DPC)
  (/usr/local/texlive/2024/texmf-dist/tex/latex/graphics-cfg/color.cfg
@@ -191,23 +191,23 @@ Package color Info: Driver file: pdftex.def on input line 149.
 File: l3backend-pdftex.def 2024-02-20 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count290
 \l__pdf_internal_box=\box64
-) (./Chapter 34 Problems.aux)
-\openout1 = `"Chapter 34 Problems.aux"'.
+) (./Chapter 35 Problems.aux)
+\openout1 = `"Chapter 35 Problems.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
  (/usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count291
@@ -229,63 +229,39 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 )) (/usr/local/texlive/2024/texmf-dist/tex/latex/translations/translations-basic-dictionary-english.trsl
 File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
 )
-Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 25.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 36.
+Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 24.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 35.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 36.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 35.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
-{/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2]
-<34-32.png, id=17, 84.315pt x 135.50626pt>
-File: 34-32.png Graphic file (type png)
-<use 34-32.png>
-Package pdftex.def Info: 34-32.png  used on input line 67.
-(pdftex.def)             Requested size: 58.49762pt x 94.01631pt.
- [3 <./34-32.png>] [4] [5]
-<T34-4.png, id=31, 497.86pt x 276.03125pt>
-File: T34-4.png Graphic file (type png)
-<use T34-4.png>
-Package pdftex.def Info: T34-4.png  used on input line 171.
-(pdftex.def)             Requested size: 390.0pt x 216.23433pt.
- [6 <./T34-4.png>]
-<T34-5.png, id=36, 494.84875pt x 204.765pt>
-File: T34-5.png Graphic file (type png)
-<use T34-5.png>
-Package pdftex.def Info: T34-5.png  used on input line 188.
-(pdftex.def)             Requested size: 390.0pt x 161.37825pt.
- [7 <./T34-5.png>]
-<34-38.png, id=42, 151.56625pt x 95.35625pt>
-File: 34-38.png Graphic file (type png)
-<use 34-38.png>
-Package pdftex.def Info: 34-38.png  used on input line 197.
-(pdftex.def)             Requested size: 97.5pt x 61.34206pt.
- [8 <./34-38.png>] [9] [10] [11] [12] [13] [14] [15] [16] [17] [18] [19] [20] [21] [22] [23] [24] (./Chapter 34 Problems.toc [25])
+{/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3] [4] [5] [6] [7] [8] [9] [10] [11] [12] [13] [14] [15] [16] [17] [18] [19] [20] [21] [22] [23] [24] [25] [26] (./Chapter 35 Problems.toc [27])
 \tf@toc=\write3
-\openout3 = `"Chapter 34 Problems.toc"'.
+\openout3 = `"Chapter 35 Problems.toc"'.
 
- [26] (./Chapter 34 Problems.aux)
+ [28] (./Chapter 35 Problems.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 7200 strings out of 474116
- 168972 string characters out of 5743682
- 1938187 words of memory out of 5000000
- 29507 multiletter control sequences out of 15000+600000
- 567777 words of font info for 74 fonts, out of 8000000 for 9000
+ 7158 strings out of 474116
+ 168243 string characters out of 5743682
+ 1933187 words of memory out of 5000000
+ 29467 multiletter control sequences out of 15000+600000
+ 567132 words of font info for 71 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 73i,12n,80p,317b,669s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on "Chapter 34 Problems.pdf" (26 pages, 246251 bytes).
+ 73i,6n,80p,338b,532s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb>
+Output written on "Chapter 35 Problems.pdf" (28 pages, 82130 bytes).
 PDF statistics:
- 157 PDF objects out of 1000 (max. 8388607)
- 96 compressed objects within 1 object stream
+ 124 PDF objects out of 1000 (max. 8388607)
+ 81 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
