@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1765759726.79744 "/Users/dentonaingworth/Documents/CCSF/PHYS-4A/Week 40/Chapter 35 Problems/Chapter 35 Problems.tex" "Chapter 35 Problems.pdf" "Chapter 35 Problems" 1765759727.2374 0
-  "/Users/dentonaingworth/Documents/CCSF/PHYS-4A/Week 40/Chapter 35 Problems/Chapter 35 Problems.tex" 1765759726.0749 8875 7294edbc906de77893b02a0bbed23b76 ""
+["pdflatex"] 1765833022.92308 "/Users/dentonaingworth/Documents/CCSF/PHYS-4A/Week 40/Chapter 35 Problems/Chapter 35 Problems.tex" "Chapter 35 Problems.pdf" "Chapter 35 Problems" 1765833023.39537 0
+  "/Users/dentonaingworth/Documents/CCSF/PHYS-4A/Week 40/Chapter 35 Problems/Chapter 35 Problems.tex" 1765833022.7196 10097 07cfe150087d7a178bcf7555342eb660 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/tcrm0600.tfm" 1136768653 1536 12e8c510d3e158fdd0e9a42e75118bd9 ""
@@ -34,6 +34,7 @@
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb" 1248133631 32362 179c33bbf43f19adbb3825bb4e36e57a ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb" 1248133631 32726 0a1aea6fcd6468ee2cf64d891f5c43c8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1248133631 32569 5e5ddc8df908dea60932f3c484a54c0d ""
+  "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb" 1248133631 32626 4f5c1b83753b1dd3a97d1b399a005b4b ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb" 1215737283 136101 f533469f523533d38317ab5729d00c8a ""
   "/usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1461363279 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/usr/local/texlive/2024/texmf-dist/tex/generic/iftex/iftex.sty" 1644112042 7237 bdd120a32c8fdb4b433cf9ca2e7cd98a ""
@@ -76,9 +77,9 @@
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
   "35-31.png" 1765735296.47307 8925 7406bc2fe76ad27fb5769e43d9a67e3d ""
   "35-4.png" 1765736671.70333 29024 b056ff6b0aaf1e8c0b71f7077d9401dd ""
-  "Chapter 35 Problems.aux" 1765759727.20019 5398 1f75ce42b550b48f61fd8e9bb8699643 "pdflatex"
-  "Chapter 35 Problems.tex" 1765759726.0749 8875 7294edbc906de77893b02a0bbed23b76 ""
-  "Chapter 35 Problems.toc" 1765759727.20095 3192 a08c92fc250c530ce0dc813befc6b53b "pdflatex"
+  "Chapter 35 Problems.aux" 1765833023.33671 5398 1f75ce42b550b48f61fd8e9bb8699643 "pdflatex"
+  "Chapter 35 Problems.tex" 1765833022.7196 10097 07cfe150087d7a178bcf7555342eb660 ""
+  "Chapter 35 Problems.toc" 1765833023.34461 3192 a08c92fc250c530ce0dc813befc6b53b "pdflatex"
   (generated)
   "Chapter 35 Problems.aux"
   "Chapter 35 Problems.log"

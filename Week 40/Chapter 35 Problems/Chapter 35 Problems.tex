@@ -153,8 +153,25 @@
 
     \pagebreak
     \section{Problem 15}
+        A double-slit arrangement produces interference fringes for sodium light ($\lambda = 589\,\unit{\nano\meter}$) that have an angular separation of $3.50\E{-3}\,\unit{\radian}$. 
+        For what wavelength would the angular separation be 10.0\% greater?
 
         \subsection{Solution}
+            10\% greater than the current angular separation is $3.85\E{-3}\,\unit{\radian}$.
+            We can develop a ratio of the initial equation from Young's experiment and the other case of the equation.
+            \begin{equation}
+                \frac{d\,\sin\theta_2}{d\,\sin\theta_2} = \frac{m_2 \lambda_2}{m_1 \lambda_1}
+            \end{equation}
+
+            The value of $d$ does not change, nor does the value of $m$, so we are left with only the thetas and lambdas and we can solve for the second wavelength.
+            \begin{gather}
+                \frac{\sin\theta_2}{\sin\theta_2} = \frac{\lambda_2}{\lambda_1}\\
+                \begin{align}
+                    \lambda_2   &=  \lambda_1\frac{\sin\theta_2}{\sin\theta_2}
+                        =   589\,\unit{\nano\meter} \times \frac{\sin(3.85\E{-3})}{\sin(3.50\E{-3})}
+                        =   \boxed{648\,\unit{\nano\meter}}
+                \end{align}
+            \end{gather}
 
     \pagebreak
     \section{Problem 17}

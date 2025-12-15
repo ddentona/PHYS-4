@@ -125,8 +125,35 @@
 
     \pagebreak
     \section{Problem 13}
+        Monochromatic light with wavelength 538 nm is incident on a slit with width 0.025 mm. 
+        The distance from the slit to a screen is 3.5 m. 
+        Consider a point on the screen 1.1 cm from the central maximum. 
+        Calculate (a) $\theta$ for that point, (b) $\alpha$, and (c) the ratio of the intensity at that point to the intensity at the central maximum.
+
+        \subsection{Solution (a)}
+            Use the definition of the tangent, then use the arctangent.
+            \begin{gather}
+                \tan(\theta) = \frac{y}{D}\\
+                \theta  =   \arctan\left( \frac{y}{D} \right)
+                    =   \arctan\left( \frac{0.011}{3.5} \right)
+                    =   \boxed{0.003143\,\unit{\radian}}
+            \end{gather}
+
+        \subsection{Solution (b)}
+            Calculate $\alpha$ using its definition.
+            \begin{align}
+                \alpha  &=  \frac{\pi a}{\lambda}\,\sin\theta
+                    =   \frac{\pi (25\E{-6}\,\unit{\meter})}{538\E{-9}\,\unit{\meter}} \sin(0.003143\,\unit{\radian})
+                    =   \boxed{0.4588}
+            \end{align}
 
         \subsection{Solution}
+            This is just calculating the intensity at that angle but foregoing the initial intensity.
+            \begin{align}
+                I_{\rm ratio}   &=  \left( \frac{\sin\alpha}{\alpha} \right)^2
+                    =   \left( \frac{\sin(0.4588)}{0.4588} \right)^2
+                    =   \boxed{0.931}
+            \end{align}
 
     \pagebreak
     \section{Problem 15}
