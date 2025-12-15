@@ -129,8 +129,27 @@
 
     \pagebreak
     \section{Problem 9}
+        In Fig. 35-4, assume that the two light waves, of wavelength 620 nm in air, are initially out of phase by $\pi$ rad.
+        The indexes of refraction of the media are $n_1 = 1.45$ and $n_2 = 1.65$. 
+        What are the (a) smallest and (b) second smallest value of $L$ that will put the waves exactly in phase once they pass through the two media?
 
-        \subsection{Solution}
+        \subsection{Solution (a)}
+            What matters in this case is the difference in values of $kx$ be equal to $\pi$ rad.
+            In both cases, $x$ will be equal to $L$.
+            We have a known formula for $k$ from $\lambda_n$, the latter of which can be found from $\lambda$ and $n$.
+            \begin{gather}
+                k_1 x - k_2 x = L\left( \frac{2\pi}{\lambda / n_1} - \frac{2\pi}{\lambda / n_2} \right) = \pi\\
+                L (n_1 - n_2) = \frac{\lambda}{2}\\
+                L   =   \left| \frac{620\,\unit{\nano\meter}}{2 (1.45 - 1.65)} \right|
+                    =   \frac{620\unit{\nano\meter}}{0.4}
+                    =   \boxed{1.55\,\unit{\micro\meter}}
+            \end{gather}
+
+        \subsection{Solution (b)}
+            Since we're going from $\pi$ to $3\pi$, just multiply it by 3.
+            \begin{equation}
+                3 * 1.55\,\unit{\micro\meter} = \boxed{4.650\,\unit{\micro\meter}}
+            \end{equation}
 
     \pagebreak
     \section{Problem 15}

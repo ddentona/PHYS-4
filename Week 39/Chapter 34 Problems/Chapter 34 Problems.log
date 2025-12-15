@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.25)  14 DEC 2025 13:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.25)  14 DEC 2025 16:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -252,7 +252,7 @@ File: T34-4.png Graphic file (type png)
 Package pdftex.def Info: T34-4.png  used on input line 163.
 (pdftex.def)             Requested size: 390.0pt x 216.23433pt.
 
-Overfull \hbox (8.00633pt too wide) in paragraph at lines 169--181
+Overfull \hbox (11.33966pt too wide) in paragraph at lines 169--181
  [] 
  []
 
@@ -287,7 +287,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  73i,18n,80p,338b,697s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on "Chapter 34 Problems.pdf" (26 pages, 252524 bytes).
+Output written on "Chapter 34 Problems.pdf" (26 pages, 252638 bytes).
 PDF statistics:
  157 PDF objects out of 1000 (max. 8388607)
  96 compressed objects within 1 object stream

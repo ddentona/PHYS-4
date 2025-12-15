@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1765755065.78162 "/Users/dentonaingworth/Documents/CCSF/PHYS-4A/Week 41/Chapter 36 Problems/Chapter 36 Problems.tex" "Chapter 36 Problems.pdf" "Chapter 36 Problems" 1765755066.17903 0
-  "/Users/dentonaingworth/Documents/CCSF/PHYS-4A/Week 41/Chapter 36 Problems/Chapter 36 Problems.tex" 1765755065.12238 5432 532e1d00cf1855aa5cda7f6e48c65979 ""
+["pdflatex"] 1765760436.06334 "/Users/dentonaingworth/Documents/CCSF/PHYS-4A/Week 41/Chapter 36 Problems/Chapter 36 Problems.tex" "Chapter 36 Problems.pdf" "Chapter 36 Problems" 1765760436.49751 0
+  "/Users/dentonaingworth/Documents/CCSF/PHYS-4A/Week 41/Chapter 36 Problems/Chapter 36 Problems.tex" 1765760435.85002 6338 7400deb5afec68be4077899c2b69a9ff ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -70,9 +70,9 @@
   "/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1727305248.69286 5467645 128b85b7cde5f5edc5cb7f1dd7ff8736 ""
   "/usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1727305230 8221424 9bdbcc07e109911bb30a75dc8990d89e ""
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
-  "Chapter 36 Problems.aux" 1765755066.1466 4176 55f3368de5ce8af258130bd5f5892859 "pdflatex"
-  "Chapter 36 Problems.tex" 1765755065.12238 5432 532e1d00cf1855aa5cda7f6e48c65979 ""
-  "Chapter 36 Problems.toc" 1765755066.14725 2462 fad36c15329539ad32fa549ea1f69dca "pdflatex"
+  "Chapter 36 Problems.aux" 1765760436.46081 4176 55f3368de5ce8af258130bd5f5892859 "pdflatex"
+  "Chapter 36 Problems.tex" 1765760435.85002 6338 7400deb5afec68be4077899c2b69a9ff ""
+  "Chapter 36 Problems.toc" 1765760436.4617 2462 fad36c15329539ad32fa549ea1f69dca "pdflatex"
   (generated)
   "Chapter 36 Problems.aux"
   "Chapter 36 Problems.log"

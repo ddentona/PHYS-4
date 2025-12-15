@@ -105,8 +105,23 @@
 
     \pagebreak
     \section{Problem 9}
+        A slit 1.00 mm wide is illuminated by light of wavelength 589 nm. 
+        We see a diffraction pattern on a screen 3.00 m away. 
+        What is the distance between the first two diffraction minima on the same side of the central diffraction maximum?
 
         \subsection{Solution}
+            Use the single slit diffraction equation.
+            Use $\Delta y$ and $\Delta m$, the latter of which will be equal to 1.
+            Also use the small angle approximation.
+            \begin{gather}
+                a \sin\theta \approx a \frac{y}{D} = m\lambda\\
+                y = \frac{m\lambda D}{a}\\
+                \begin{align}
+                    \Delta y    &=  \frac{\Delta m\lambda D}{a}
+                        =   \frac{1 * 589\,\unit{\nano\meter} * 3.00\,\unit{\meter}}{1.00\,\unit{\milli\meter}}
+                        =   \boxed{1.767\,\unit{\milli\meter}}
+                \end{align}
+            \end{gather}
 
     \pagebreak
     \section{Problem 13}
