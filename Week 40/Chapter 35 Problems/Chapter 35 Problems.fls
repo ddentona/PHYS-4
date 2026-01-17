@@ -139,6 +139,21 @@ INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/tcrm0800.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/tcrm0600.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
+INPUT ./35-37.png
+INPUT ./35-37.png
+INPUT ./35-37.png
+INPUT ./35-37.png
+INPUT ./35-37.png
+INPUT ./35-38.png
+INPUT ./35-38.png
+INPUT ./35-38.png
+INPUT ./35-38.png
+INPUT ./35-38.png
+INPUT ./35-40.png
+INPUT ./35-40.png
+INPUT ./35-40.png
+INPUT ./35-40.png
+INPUT ./35-40.png
 INPUT ./Chapter 35 Problems.toc
 INPUT ./Chapter 35 Problems.toc
 INPUT Chapter 35 Problems.toc

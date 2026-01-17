@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1765833022.92308 "/Users/dentonaingworth/Documents/CCSF/PHYS-4A/Week 40/Chapter 35 Problems/Chapter 35 Problems.tex" "Chapter 35 Problems.pdf" "Chapter 35 Problems" 1765833023.39537 0
-  "/Users/dentonaingworth/Documents/CCSF/PHYS-4A/Week 40/Chapter 35 Problems/Chapter 35 Problems.tex" 1765833022.7196 10097 07cfe150087d7a178bcf7555342eb660 ""
+["pdflatex"] 1766284674.45114 "/Users/dentonaingworth/Documents/CCSF/PHYS-4A/Week 40/Chapter 35 Problems/Chapter 35 Problems.tex" "Chapter 35 Problems.pdf" "Chapter 35 Problems" 1766284674.95833 0
+  "/Users/dentonaingworth/Documents/CCSF/PHYS-4A/Week 40/Chapter 35 Problems/Chapter 35 Problems.tex" 1766284674.24137 14739 0afe4a644c672d446d1dd23d5aa26ee6 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/tcrm0600.tfm" 1136768653 1536 12e8c510d3e158fdd0e9a42e75118bd9 ""
@@ -76,10 +76,13 @@
   "/usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1727305230 8221424 9bdbcc07e109911bb30a75dc8990d89e ""
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
   "35-31.png" 1765735296.47307 8925 7406bc2fe76ad27fb5769e43d9a67e3d ""
+  "35-37.png" 1765833979.5802 7311 14fbc9639e7e84031259b9e4cbee83d0 ""
+  "35-38.png" 1766276237.47791 19917 2e28a9e39cf4ac4f24511be8ae581b9e ""
   "35-4.png" 1765736671.70333 29024 b056ff6b0aaf1e8c0b71f7077d9401dd ""
-  "Chapter 35 Problems.aux" 1765833023.33671 5398 1f75ce42b550b48f61fd8e9bb8699643 "pdflatex"
-  "Chapter 35 Problems.tex" 1765833022.7196 10097 07cfe150087d7a178bcf7555342eb660 ""
-  "Chapter 35 Problems.toc" 1765833023.34461 3192 a08c92fc250c530ce0dc813befc6b53b "pdflatex"
+  "35-40.png" 1766276345.18495 19355 ab882b015398b08caaa7f8808799dff0 ""
+  "Chapter 35 Problems.aux" 1766284674.92107 5398 1f75ce42b550b48f61fd8e9bb8699643 "pdflatex"
+  "Chapter 35 Problems.tex" 1766284674.24137 14739 0afe4a644c672d446d1dd23d5aa26ee6 ""
+  "Chapter 35 Problems.toc" 1766284674.92183 3192 a08c92fc250c530ce0dc813befc6b53b "pdflatex"
   (generated)
   "Chapter 35 Problems.aux"
   "Chapter 35 Problems.log"

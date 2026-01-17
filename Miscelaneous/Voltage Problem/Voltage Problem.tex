@@ -1,0 +1,64 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{siunitx}
+
+\begin{document}
+    We start with the equation for the voltage at a given point.
+    \begin{equation}
+        dV = \frac{k\,dq}{r}
+    \end{equation}
+
+    We have a known value for $dq$.
+    \begin{equation}
+        dq = \lambda\,d\ell
+    \end{equation}
+
+    $\ell$ is going to be the individual point along the circle that we will reference.
+    $\ell$ will always be a distance $a$ from the center of the circle and it will always make an angle with the line from the center of the circle to the point $P$ (call the angle $\theta$).
+    Using $\theta$, we can formulate a value for the distance from the angle $\theta$ along the circle to the point $P$.
+    This involves the law of cosines.
+    \begin{equation}
+        x^2 = b^2 + c^2 - 2bc\cos(\alpha)
+    \end{equation}
+
+    Here, we can designate the line from the center to $\ell$ as $b$, the line from the center to point $P$ as $c$, and the ine from $\ell$ to point $P$ as $x$.
+    Following from this, we would have $\theta = \alpha$.
+    Furthermore, we already know the value of $b$ and $c$ to be the radius of the circle $a$.
+    \begin{equation}
+        x^2 = a^2 + a^2 - 2a^2\cos(\theta)
+            = 2a^2(1 - \cos(\theta))
+    \end{equation}
+    \[
+        x   =   \sqrt{2a^2(1 - \cos(\theta))}
+    \]
+    
+    For $x = r$, we can apply this to the earlier differential equation.
+    \[
+        dV = \frac{k\,dq}{r} = \frac{k \lambda\,d\ell}{\sqrt{2a^2(1 - \cos(\theta))}}
+    \]
+
+    $\ell$ can be expressed in terms of $\theta$.
+    This makes use of radians.
+    \begin{equation}
+        d\ell = a\,d\theta
+    \end{equation}
+
+    We can add this to our differential equation.
+    It allows us to cancel out some terms.
+    \[
+        dV = \frac{k \lambda a\,d\theta}{a\sqrt{2(1 - \cos(\theta))}}
+            =   \frac{k \lambda \,d\theta}{\sqrt{2(1 - \cos(\theta))}}
+    \]
+
+    Our last step is to set up an integral.
+    Our boundaries, due to the shape of the insulator, will be between $\theta_0$ and $2\pi - \theta_0$.
+    This is because the insulator is in a circle around its center.
+    One boundary is located at an angle of $\theta_0$ counterclockwise from the normal radius (horizontal radius starting at the center and going to the right).
+    The other boundary is located at the same angle $\theta_0$ clockwise from the normal radius.
+    Since circles and sines go through the same set of values every $2\pi$, we can add $2\pi$ to the second boundary to get $2\pi - \theta_0$.
+    \begin{equation}
+        \boxed{V = \int_{\theta_0}^{2\pi - \theta_0} \frac{k \lambda}{\sqrt{2(1 - \cos(\theta))}} \,d\theta}
+    \end{equation}
+
+    Note: $k$ can be transformed into something involving $\varepsilon_0$ if necessary.
+\end{document}

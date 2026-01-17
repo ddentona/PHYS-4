@@ -175,26 +175,101 @@
 
     \pagebreak
     \section{Problem 17}
+        \begin{wrapfigure}{r}{0.4\textwidth}
+            \vspace{-30pt}
+            \includegraphics[width=0.4\textwidth]{35-37.png} 
+            % \label{fig:wrapfig}
+        \end{wrapfigure}
+        In Fig. 35-37, two radio-frequency point sources $S_1$ and $S_2$, separated by distance $d = 2.0\,\unit{\meter}$, are radiating in phase with $\lambda = 0.50\,\unit{\meter}$.
+        A detector moves in a large circular path around the two sources in a plane containing them. 
+        How many maxima does it detect?
 
         \subsection{Solution}
+            For my first half of my reasoning, see my answer to Chapter 17 Problem 19 (Week 37).
+            \begin{gather}
+                \frac{\Delta L}{\lambda} \equiv 0.5\,\mod 1\\
+                0 \leq \Delta L < d\\
+                0 \leq \frac{\Delta L}{\lambda} < 2d\\
+                0 \leq \frac{L}{\lambda} < 4
+            \end{gather}
+
+            There are four cases of this. 
+            Multiply this by four quarter-circles to get the answer of \boxed{16}.
 
     \pagebreak
     \section{Problem 19}
+        Suppose that Young's experiment is performed with blue-green light of wavelength 500 nm. 
+        The slits are 1.20 mm apart, and the viewing screen is 5.40 m from the slits. 
+        How far apart are the bright fringes near the center of the interference pattern?
 
         \subsection{Solution}
+            Use the small angle approximation $\sin\theta \approx \theta \approx \tan\theta$.
+            We can put this into the equation for the bright fringes in Young's interference experiment.
+            \begin{gather}
+                d \tan\theta = d \frac{\Delta y}{D} = \lambda\\
+                \Delta y    =   \frac{\lambda D}{d}
+                    =   \frac{500\,\unit{\nano\meter} \times 5.40\,\unit{\meter}}{1.20\,\unit{\milli\meter}}
+                    =   \boxed{2.25\,\unit{\milli\meter}}
+            \end{gather}
 
     \pagebreak
     \section{Problem 23}
+        \begin{wrapfigure}{r}{0.3\textwidth}
+            \vspace{-30pt}
+            \includegraphics[width=0.3\textwidth]{35-38.png} 
+            % \label{fig:wrapfig}
+        \end{wrapfigure}
+        In Fig. 35-38, sources $A$ and $B$ emit long-range radio waves of wavelength 400 m, with the phase of the emission from $A$ ahead of that from source $B$ by 90\unit\degree. 
+        The distance $r_A$ from $A$ to detector $D$ is greater than the corresponding distance $r_B$ by 100 m. 
+        What is the phase difference of the waves at $D$?
 
         \subsection{Solution}
+            \boxed{0}
 
     \pagebreak
     \section{Problem 25}
+        \begin{wrapfigure}{r}{0.3\textwidth}
+            \vspace{-30pt}
+            \includegraphics[width=0.3\textwidth]{35-40.png} 
+            % \label{fig:wrapfig}
+        \end{wrapfigure}
+        In Fig. 35-40, two isotropic point sources of light ($S_1$ and $S_2$) are separated by distance 2.70 \unit{\micro\meter} along a $y$ axis and emit in phase at wavelength 900 nm and at the same amplitude. 
+        A light detector is located at point $P$ at coordinate $x_P$ on the $x$ axis. 
+        What is the greatest value of $x_P$ at which the detected light is minimum due to destructive interference?
 
         \subsection{Solution}
+            Pretend it's Young's experiment.
+            \begin{gather}
+                d \frac{y}{D} = \frac{\lambda}{2}\\
+                \begin{align}
+                    D   &=  \frac{2yd}{\lambda}
+                        =   \frac{2 \times 1.35\E{-6}\,\unit{\meter} \times 2.70\E{-6}\,\unit{\meter}}{900\E{-9}\,\unit{\meter}}
+                        =   \boxed{8.1\E{-6}\,\unit{\meter}}
+                \end{align}
+            \end{gather}
+            % For destructive interference to occur, the difference in distance traveled would have to be equal to half the wavelength.
+            % \begin{equation}
+            %     s_2 - s_1 = 450\,\unit{\nano\meter}
+            % \end{equation}
+
+            % $s_2$ above is related to $s_1$ by the pythagorean theorem.
+            % \begin{gather}
+            %     s_2 = \sqrt{s_1^2 + 2.70\,\unit{\micro\meter}}\\
+            %     \sqrt{s_1^2 + (2.70\,\unit{\micro\meter})^2} - s_1 = 450\,\unit{\nano\meter}
+            % \end{gather}
+
+            % From here, we can solve for $s_1$.
+            % \begin{gather}
+            %     s_1 + 450\,\unit{\nano\meter} = \sqrt{s_1^2 + (2.70\,\unit{\micro\meter})^2}\\
+            %     \cancel{s_1^2} + 900\E{-9}s_1 + 202.5\E{-15}\,\unit{\meter} = \cancel{s_1^2} + 7.29\E{-12}\\
+            %     900\E{-9}s_1 = 728.8\E{-12}
+            % \end{gather}
 
     \pagebreak
     \section{Problem 27}
+        A thin flake of mica (n = 1.58) is used to cover one slit of a double-slit interference arrangement. 
+        The central point on the viewing screen is now occupied by what had been the seventh bright side fringe (m = 7). 
+        If $\lambda = 550\,\unit{\nano\meter}$, what is the thickness of the mica?
 
         \subsection{Solution}
 

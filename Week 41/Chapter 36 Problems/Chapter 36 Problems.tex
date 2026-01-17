@@ -157,13 +157,89 @@
 
     \pagebreak
     \section{Problem 15}
+        The full width at half-maximum (FWHM) of a central diffraction maximum is defined as the angle between the two points in the pattern where the intensity is one-half that at the center of the pattern. 
+        (See Fig. 36-8b.) 
+        (a) Show that the intensity drops to one-half the maximum value when $\sin^2 \alpha = \alpha^2/2$. 
+        (b) Verify that $\alpha = 1.39\,\unit{\radian}$ (about 80\unit{\degree}) is a solution to the transcendental equation of (a). 
+        (c) Show that the FWHM is $\Delta\theta = 2 \sin^{-1}(0.442\lambda/a)$, where $a$ is the slit width. 
+        Calculate the FWHM of the central maximum for slit width (d) $1.00\lambda$, (e) $5.00\lambda$, and (f) $10.0\lambda$.
 
-        \subsection{Solution}
+        \subsection{Solution (a)}
+            This is an intensity ratio case.
+            Take the ratio of two cases: one at the maximum and one where the intensity is half the maximum.
+            The ratio you would end up with is as follows.
+            \begin{gather}
+                \frac{1}{2} = \left( \frac{\sin(\alpha)}{\alpha} \right)^2
+            \end{gather}
+
+            Solve for $\sin^2(\alpha)$.
+            \begin{equation}
+                \sin^2 (\alpha) = \frac{\alpha^2}{2}
+            \end{equation}
+
+            TOA.
+
+        \subsection{Solution (b)}
+            Set $\alpha = 1.39\,\unit{\radian}$ and do the calculation.
+            \begin{gather}
+                \sin^2 (\alpha) = \frac{\alpha^2}{2}\\
+                \sin^2 (1.39) = \frac{1.39^2}{2}\\
+                0.9837^2 = \frac{1.9321}{2}\\
+                0.968 \approx 0.966
+            \end{gather}
+
+            TOA. 
+
+        \subsection{Solution (c)}
+            Let's take the case of $\alpha = 1.39\,\unit{\radian}$ and find $\theta$ from the equation for $\alpha$.
+            Use $\frac{\theta}{2}$ instead of $\theta$. 
+            \begin{gather}
+                \alpha = \frac{\pi a}{\lambda} \sin\frac{\theta}{2}\\
+                \sin\frac{\theta}{2} = \frac{\lambda\alpha}{\pi a}\\
+                \begin{align}
+                    \frac{\theta}{2}    &=  \arcsin\left( \frac{\lambda \alpha}{\pi a} \right)
+                        =   \arcsin\left( \frac{\lambda\,1.39}{\pi a} \right)
+                        =   \arcsin\left( \frac{0.442\lambda}{a} \right)
+                \end{align}\\
+                \theta  =   2\arcsin\left( \frac{0.442\lambda}{a} \right)
+            \end{gather}
+
+            TOA.
+        
+        \subsection{Solution (d)}
+            Plug into the equation.
+            \begin{align}
+                \frac{\Delta \theta}{2} &=  \arcsin\left( \frac{0.442\lambda}{a} \right)
+                    =   \arcsin\left( \frac{0.442\lambda}{1.00\lambda} \right)\\
+                \Delta \theta   &=  2\arcsin\left( 0.442 \right)
+                    =   \boxed{0.9156}
+            \end{align}
+        
+        \subsection{Solution (e)}
+            Plug into the equation.
+            \begin{align}
+                \frac{\Delta \theta}{2} &=  \arcsin\left( \frac{0.442\lambda}{a} \right)
+                    =   \arcsin\left( \frac{0.442\lambda}{5.00\lambda} \right)\\
+                \Delta \theta   &=  2\arcsin\left( \frac{0.442}{5.00} \right)
+                    =   \boxed{0.177}
+            \end{align}
+        
+        \subsection{Solution (d)}
+            Plug into the equation.
+            \begin{align}
+                \frac{\Delta \theta}{2} &=  \arcsin\left( \frac{0.442\lambda}{a} \right)
+                    =   \arcsin\left( \frac{0.442\lambda}{10.00\lambda} \right)\\
+                \Delta \theta   &=  2\arcsin\left( \frac{0.442}{10.00} \right)
+                    =   \boxed{0.0884}
+            \end{align}
 
     \pagebreak
     \section{Problem 19}
+        (a) How far from grains of red sand must you be to position yourself just at the limit of resolving the grains if your pupil diameter is 1.5 mm, the grains are spherical with radius $50\,\unit{\micro\meter}$, and the light from the grains has wavelength 650 nm? 
+        (b) If the grains were blue and the light from them had wavelength 400 nm, would the answer to (a) be larger or smaller?
 
-        \subsection{Solution}
+        \subsection{Solution (a)}
+            
 
     \pagebreak
     \section{Problem 21}
