@@ -226,6 +226,45 @@
                 Plugging this into the wave equation, we'll find that this somehow does satisfy the general wave equation.
             
             \subsection{Solution (d)}
+            \begin{proof}
+                Suppose there exists two solutions to the wave equation, $h_1$ and $h_2$.
+                Suppose for later that they combine together with some constants (which we can call $a$ and $b$ respectively) to form a superposition.
+                \begin{gather}
+                    h_{\rm superposition} = a h_1 + b h_2\\
+                    \diffp[2]{}{x}h_1(x,t) = \frac{1}{v^2}\diffp[2]{}{t}h_1(x,t)\\
+                    \diffp[2]{}{x}h_2(x,t) = \frac{1}{v^2}\diffp[2]{}{t}h_2(x,t)
+                \end{gather}
+
+                These can both be multiplied by the constants ($a$ and $b$) on both sides.
+                \begin{gather}
+                    a \diffp[2]{}{x}h_1(x,t) = a \frac{1}{v^2}\diffp[2]{}{t}h_1(x,t)\\
+                    b \diffp[2]{}{x}h_2(x,t) = b \frac{1}{v^2}\diffp[2]{}{t}h_2(x,t)
+                \end{gather}
+
+                From here, we cena bring the constants into the differentials and add the two equations together.
+                Bear in mind the following: $\left[ c \diff{}{a}f(a) = \diff{}{a}c\,f(a) \right]$.
+                \begin{gather}
+                    \diffp[2]{}{x}\left( a\,h_1(x,t) \right) = \frac{1}{v^2}\diffp[2]{}{t}\left( a\,h_1(x,t) \right)\\
+                    \diffp[2]{}{x}\left( b\,h_2(x,t) \right) = \frac{1}{v^2}\diffp[2]{}{t}\left( b\,h_2(x,t) \right)\\
+                    \diffp[2]{}{x}\left( a\,h_1 \right) + \diffp[2]{}{x}\left( b\,h_2 \right) = \frac{1}{v^2}\diffp[2]{}{t}\left( a\,h_1 \right) + \frac{1}{v^2}\diffp[2]{}{t}\left( b\,h_2 \right)
+                \end{gather}
+
+                Combine like terms and combine terms under like derivatives. 
+                \begin{gather}
+                    \left[ \diff{}{a}(f(a)) + \diff{}{a}(g(a)) = \diff{}{a}(f(a) + g(a)) \right]\\
+                    \diffp[2]{}{x}\left( a\,h_1 + b\,h_2 \right) = \frac{1}{v^2}\left( \diffp[2]{}{t}\left( a\,h_1 \right) + \diffp[2]{}{t}\left( b\,h_2 \right) \right)\\
+                    \diffp[2]{}{x}\left( a\,h_1 + b\,h_2 \right) = \frac{1}{v^2} \diffp[2]{}{t}\left( a\,h_1 + b\,h_2 \right) 
+                \end{gather}
+
+                Lastly, we can substitute in $h_{\rm substitution}$.
+                \begin{equation}
+                    \diffp[2]{}{x}\left( h_{\rm substitution} \right) = \frac{1}{v^2} \diffp[2]{}{t}\left( h_{\rm substitution} \right)
+                \end{equation}
+
+                This proves that $h_{\rm substitution}$ is a solution to the wave equation.
+                It also proves the medium will propagate it.
+            \end{proof}
+        \pagebreak
 
         \section{Exercise 2}
             Let's work with the specifics of EM waves. There are two different waves, one for the disturbance of electric field, and the other for the disturbance of the magnetic field. 
