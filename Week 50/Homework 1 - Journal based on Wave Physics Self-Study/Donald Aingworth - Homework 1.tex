@@ -1,6 +1,7 @@
 \documentclass[12pt]{article}
 \usepackage{amsmath}
 \usepackage{amssymb}
+\usepackage{amsthm}
 \usepackage{cancel}
 \usepackage{enumitem}
 \usepackage{esdiff}
@@ -11,6 +12,8 @@
 
 \newcommand{\e}[1]{e^{i(#1)}}
 \newcommand{\E}[1]{\times 10^{#1}}
+
+\renewcommand\qedsymbol{TOA}
 
 \title{
     Homework \#1
@@ -23,35 +26,228 @@
 \begin{document}
     \maketitle
 
-    \section{Exercise 1}
-        The shape drawn is a parabola with its lowest point at $(0,0)$, as shown below.\\
-        \includegraphics[width=\textwidth]{1-1.png}
+    {\large Part 1}
 
-        Scrolling (pinching on a tablet) zooms in and out.
-        Adding $h=(x-4)^2$ adds a second blue parabola 4 units to the right and blue.\\
-        \includegraphics[width=\textwidth]{1-2.png}
+        \section{Exercise 1}
+            The shape drawn is a parabola with its lowest point at $(0,0)$, as shown below.\\
+            \includegraphics[width=\textwidth]{1-1.png}
 
-        Click the symbol next to the graph name to show or hide it.
-        A variable not indicated will require a new variable (e.g. $s$) that can use a slider.
-        Bounds can be set and value variation can be automated.\\
-        \includegraphics[width=\textwidth]{1-3.png}
+            Scrolling (pinching on a tablet) zooms in and out.
+            Adding $h=(x-4)^2$ adds a second blue parabola 4 units to the right and blue.\\
+            \includegraphics[width=\textwidth]{1-2.png}
 
-    \section{Exercise 2}
-        The function $f = \sin(x + t)$ is a sine wave. 
-        As $t$ increases, the function appears to go left, and vice versa.\\
-        \includegraphics[width=\textwidth]{2-1.png}
+            Click the symbol next to the graph name to show or hide it.
+            A variable not indicated will require a new variable (e.g. $s$) that can use a slider.
+            Bounds can be set and value variation can be automated.\\
+            \includegraphics[width=\textwidth]{1-3.png}
 
-        Switching to $f = 5\sin(x + t)$ increases the amplitude of the wave. 
-        Changing the $+$ to a $-$ changes the direction the wave moves when animated.\\
-        \includegraphics[width=\textwidth]{2-2.png}
+        \section{Exercise 2}
+            The function $f = \sin(x + t)$ is a sine wave. 
+            As $t$ increases, the function appears to go left, and vice versa.\\
+            \includegraphics[width=\textwidth]{2-1.png}
 
-    \section{Exercise 3}
-        Superposition can be done by adding functions.\\
-        \includegraphics[width=\textwidth]{3-1.png}
+            Switching to $f = 5\sin(x + t)$ increases the amplitude of the wave. 
+            Changing the $+$ to a $-$ changes the direction the wave moves when animated.\\
+            \includegraphics[width=\textwidth]{2-2.png}
 
-        Sine functions have a phase of $2\pi$, so they repeat every $2\pi$ radians.\\
-        \includegraphics[width=\textwidth]{3-2.png}
+        \section{Exercise 3}
+            Superposition can be done by adding functions.\\
+            \includegraphics[width=\textwidth]{3-1.png}
 
-        Constructive interference means waves work together for total value.
-        Destructive interference means waves work against e/o.
+            Sine functions have a phase of $2\pi$, so they repeat every $2\pi$ radians.\\
+            \includegraphics[width=\textwidth]{3-2.png}
+
+            Constructive interference means waves work together for total value (totals farther from straight line at 0).
+            Destructive interference means waves work against e/o (totals closer to straight line at 0).
+
+        \section{Exercise 4}
+            The wave is described with the below equation.
+            \begin{equation}
+                a(x,t) = 3\,\unit{\frac{\newton}{\coulomb}}\sin\left( \frac{2\pi}{2\,\unit{\meter}}x - \frac{2\pi}{1\,\unit{\second}}t \right)
+            \end{equation}
+
+            The values of $\lambda$, $T$, $A$, and $\phi$ are found here.
+            \begin{gather}
+                \lambda = 2\,\unit{\meter}\\
+                T = 1\,\unit{\second}\\
+                A = 3\,\unit{\frac{\newton}{\coulomb}}\\
+                \phi = 0
+            \end{gather}
+            
+            Here is the wave in Desmos.\\
+            \includegraphics[width=\textwidth]{4-1.png}
+
+            The 2 meter wavelength can be found by looking at how long the wave takes to make a single `S' shape from one $x=0$ to another.
+            The period is the magnitude difference of $t$ required for the wave to go from one shape to the next identical shape.
+            The speed of a wave is the wavelength divided by the period.
+            \begin{align}
+                v   &=  \frac{\lambda}{T}
+                    =   \frac{2\,\unit{\meter}}{1\,\unit{\second}}
+                    =   2\,\unit{\meter/\second}
+            \end{align}
+        
+        \section{Exercise 5}
+            Standing waves oscillate every point up and down at the same time. 
+            When one point is at its apex, every point will be. 
+            When one point is at the middle, every point will be.
+            Different amplitudes, periods, etc. will change the wave's motion, including by changing what it looks like.
+            Below is a wave that I made and I liked.\\
+            \includegraphics[width=\textwidth]{5-1.png}
+    \pagebreak
+
+    {\large Part 2: Primer on Waves (Examples)}
+
+        Waves are generally defined with a function with 2 parameters ($x$ and $t$).
+        \begin{equation}
+            \diffp[2]{f}{x} = \frac{1}{v^2}\diffp[2]{f}{t}
+        \end{equation}
+
+        \section{Hand wave}
+            Wave source is hand.
+            String carries the wave.
+            Wave is string moving up and down.
+            Transverse means wave medium shows the wave perpendicular to axis.
+        
+        \section{Sound wave}
+            Wave source is vocal chords.
+            Air carries wave in its density.
+            Wave is air increasing and decreasing in density.
+            Longitudinal wave means wave medium shows the wave along the axis.
+
+        \section{Electrons' wave}
+            Wave source is moving electrons in antenna.
+            Electric and magnetic fields in space carry the wave.
+            Wave is electromagnetic variation moving up and down away from the antenna.
+            Wave seems to be transverse, but that is unclear as I read it.
+
+            EM wave has below equation(s).
+            \begin{gather}
+                \diffp[2]{\vec{E}}{x} = \varepsilon_0 \mu_0 \diffp[2]{\vec{E}}{t}\\
+                \diffp[2]{\vec{B}}{x} = \varepsilon_0 \mu_0 \diffp[2]{\vec{B}}{t}
+            \end{gather}
+
+            EM wave propagated in direction of $\vec{E} \times \vec{B}$ at speed $c = \frac{1}{\sqrt{\varepsilon_0 \mu_0}}$.
+            Poynting vector $\vec{S}$ is time-based energy density of light.
+            \begin{gather}
+                \vec{S} = \frac{1}{\mu_0} \vec{E} \times \vec{B}\\
+                E_{\rm transfered} = \left| \vec{S} \right| * t * A
+            \end{gather}
+
+        \section{Rain drop wave}
+            Wave source is rain drop hitting pond.
+            Water's surface carries the wave.
+            Water's surface is moving up and down, so the wave is transverse.
+        
+        \section{Other Wave Variables}
+            Wave number $k = \frac{2\pi}{\lambda}$ (radians per length).
+            Angular frequency $\omega = \frac{2\pi}{T} = 2\pi f$ for frequency $f$.
+            $\omega$ is radians per time.
+    \pagebreak
+
+    {\large Part 2: Primer on Waves (Exercises)}
+
+        \section{Exercise 1}
+            The wave equations alluded to above come from using physics to describe a medium. 
+            Here is a wave equation for some sort of disturbance that we are calling h:
+            \begin{equation}
+                \diffp[2]{}{x}h(x,t) = \frac{1}{v^2}\diffp[2]{}{t}h(x,t)
+            \end{equation}
+
+            \begin{enumerate}[label=\alph*)]
+                \item   Show by explicit differentiation and some algebra that this function solves the wave equation: $h(x,t) = h_{\rm max} \sin\left( \frac{2\pi}{\lambda} x - \frac{2\pi}{T} t + \phi \right)$ if:
+                \begin{enumerate}[label=\roman*)]
+                    \item   $v = \lambda / T$
+                    \item   $h_{\rm max}$ is not $x$ or $t$ dependent, and
+                    \item   $\phi$ is constant in space and time.
+                \end{enumerate}
+                \item   How about a wave shape like $h(x,t) = h_{\rm max} \cos\left( \frac{2\pi}{\lambda} x - \frac{2\pi}{T} t + \phi \right)$? Does it work?
+                \item   How about this wave shape? $h(x,t) = h_{\rm max} \sin^2\left( \frac{2\pi}{\lambda} x - \frac{2\pi}{T} t + \phi \right)$
+                \item   Let's say you know that two different traveling waves, $h_1(x,t)$ and $h_2(x,t)$, both independently solve the wave equation. Show explicitly that any linear combination with coefficients that DO NOT have space or time dependence, ie. $h_{\rm superposition} = ah_1 + bh_2$, is also a wave that the medium will propagate.
+            \end{enumerate}
+
+            \subsection{Solution (a)}
+            \begin{proof}
+                Begin with the initial equation of the given wave.
+                \begin{equation}
+                    h(x,t) = h_{\rm max} \sin\left( \frac{2\pi}{\lambda} x - \frac{2\pi}{T} t + \phi \right)
+                \end{equation}
+
+                We want to ensure our equation fits into the (general) wave equation.
+                \begin{equation}
+                    \diffp[2]{}{x}h(x,t) = \frac{1}{v^2}\diffp[2]{}{t}h(x,t)
+                \end{equation}
+
+                The known interchangeable value of the wave speed $v = \frac{\lambda}{T}$ can be substituted into the general wave equation.
+                \begin{equation}
+                    \diffp[2]{}{x}h(x,t) = \frac{T^2}{\lambda^2}\diffp[2]{}{t}h(x,t)
+                \end{equation}
+
+                The next step here is to see what the second derivatives of $h(x,t)$ are with respect to $x$ and $t$.
+                \begin{gather}
+                    \diffp[2]{}{x}h(x,t) = \left( \frac{2\pi}{\lambda} \right)^2 h_{\rm max} \sin\left( \frac{2\pi}{\lambda} x - \frac{2\pi}{T} t + \phi \right)\\
+                    \diffp[2]{}{t}h(x,t) = \left( \frac{2\pi}{T} \right)^2 h_{\rm max} \sin\left( \frac{2\pi}{\lambda} x - \frac{2\pi}{T} t + \phi \right)
+                \end{gather}
+
+                These can be substituted into the general wave equation above, in which from the start we can cancel out $h_{\rm max} \sin\left( \frac{2\pi}{\lambda} x - \frac{2\pi}{T} t + \phi \right)$ on both sides.
+                Then, we can cancel out other values.
+                \begin{gather}
+                    \left( \frac{2\pi}{\lambda} \right)^2 = \frac{T^2}{\lambda^2}\left( \frac{2\pi}{T} \right)^2\\
+                    \left( \frac{\cancel{2\pi}}{\lambda} \right)^2 = \frac{\cancel{T^2}}{\lambda^2}\left( \frac{\cancel{2\pi}}{\cancel{T}} \right)^2\\
+                    \frac{1}{\lambda^2} = \frac{1}{\lambda^2}\\
+                    1 = 1
+                \end{gather}
+            \end{proof}
+
+            \subsection{Solution (b)}
+                Remember that just like how $\diff[2]{}{x}\sin(x) = -\sin(x)$, $\diff[2]{}{x}\cos(x) = -\cos(x)$. 
+                If we put our new wave in instead of our old wave, we would similarly be able to cancel the same values out and find again that it fits with the wave equation.
+
+            \subsection{Solution (c)}
+                In this instance, we should find the second derivatives of the equation.
+                We start with respect to $x$.
+                We will use here an equation of $\theta(x,t) = \frac{2\pi}{\lambda} x - \frac{2\pi}{T} t + \phi$.
+                \begin{align}
+                    \diffp{}{x} \theta(x,t) &= \frac{2\pi}{\lambda}\\
+                    \diffp[2]{}{x}h(x,t)    &= \diffp[2]{}{x} h_{\rm max} \sin^2\left( \frac{2\pi}{\lambda} x - \frac{2\pi}{T} t + \phi \right)
+                        =   \diffp[2]{}{x} h_{\rm max} \sin^2\left( \theta(x,t) \right)\\
+                        &=  h_{\rm max} \diffp{}{x} 2 * \frac{2\pi}{\lambda} * \cos(\theta(x,t)) \sin(\theta(x,t))\\
+                        &=  h_{\rm max} * 2 \left( \frac{2\pi}{\lambda} \right)^2 * \left( \cos^2(\theta(x,t)) - \sin^2(\theta(x,t)) \right)
+                \end{align}
+
+                Next do it with respect to $t$.
+                \begin{align}
+                    \diffp{}{t} \theta(x,t) &= \frac{2\pi}{T}\\
+                    \diffp[2]{}{t}h(x,t)    &= \diffp[2]{}{t} h_{\rm max} \sin^2\left( \frac{2\pi}{\lambda} x - \frac{2\pi}{T} t + \phi \right)
+                        =   \diffp[2]{}{t} h_{\rm max} \sin^2\left( \theta(x,t) \right)\\
+                        &=  h_{\rm max} \diffp{}{t} 2 * \frac{2\pi}{T} * \cos(\theta(x,t)) \sin(\theta(x,t))\\
+                        &=  h_{\rm max} * 2 \left( \frac{2\pi}{T} \right)^2 * \left( \cos^2(\theta(x,t)) - \sin^2(\theta(x,t)) \right)
+                \end{align}
+
+                Plugging this into the wave equation, we'll find that this somehow does satisfy the general wave equation.
+            
+            \subsection{Solution (d)}
+
+        \section{Exercise 2}
+            Let's work with the specifics of EM waves. There are two different waves, one for the disturbance of electric field, and the other for the disturbance of the magnetic field. 
+            In a single light wave, both are present and the relationship between all the physical parameters (speed of each type of wave, wavelength, period, etc...) is tightly constrained as detailed above.
+            \begin{enumerate}[label=\alph*)]
+                \item   If the amplitude of the magnetic field portion of a light wave is $B_{\rm max} = 3\unit{\frac{\newton}{\coulomb \frac{\meter}{\second}}}$ then what must be the amplitude of the electric field component of this light wave? Note that the units of magnetic field strength have the dimensions of force per charge per speed. (This should not be a surprise because of the force law $\vec{F}_{\rm on charge by fields} = q\vec{E} + q\vec{v} \times \vec{B}$ which means that to get magnetic force you have to multiply the magnetic field by both charge and the velocity of the charge.)
+                \item   At a place in a lightwave and at some moment in time the electric field points in the $+x$ direction and the magnetic field points in the $+y$ direction, what direction is the light wave traveling? What is the vector value of this wave's velocity?
+                \item   What if, at a place and time in a light wave, the magnetic field points in the $-z$ direction and the wave is propagating in the $x$ direction, what direction must the magnetic field point?
+                \item   There is a formula to calculate what is called the time-averaged intensity: $I = \frac{1}{2\mu_0 c}E_{\rm max}^2$. What is the intensity if the amplitude of the electric field portion of a lightwave is 5N/C? Answer this in units of Joules per second per meter squared (SI units of energy per time per area)
+                \begin{enumerate}[label=\roman*)]
+                    \item   How long would it take this wave to deliver 3 J on a square cm?
+                    \item   Did this intensity and energy result depend on the frequency of the light (color of the light)?
+                \end{enumerate}
+            \end{enumerate}
+
+        \section{Exercise 3}
+            Let's summarize a lot of these ideas with thinking about a green lightwave:
+            \begin{enumerate}[label=\alph*)]
+                \item   What is the wave number for a green light wave with wavelength of 500 nm?
+                \item   What is the frequency $f$ of this green light wave?
+                \item   What is the angular frequency $\omega$ of this green lightwave?
+                \item   If the amplitude of the electric component of this green light wave is 2 N/C, write down a set of electric and magnetic field waves that represent one green light wave and travel in the positive $+y$ direction.
+                \item   How much energy is delivered by this light wave on a square cm in 5 seconds?
+            \end{enumerate}
 \end{document}
