@@ -280,6 +280,63 @@
                 \end{enumerate}
             \end{enumerate}
 
+            \subsection{Solution (a)}
+                The magnetic field is always proportional to the electric field.
+                \begin{equation}
+                    E   =   cB = 2.998\E{8}\unit{\meter/\second} \cdot 3\,\unit{\frac{\newton}{\coulomb\frac{\meter}{\second}}}
+                        =   \boxed{8.994\E{8}\unit{\frac{\newton}{\coulomb}}}
+                \end{equation}
+
+            \subsection{Solution (b)}
+                Let's do this with the manual cross product, assuming unit vectors for the electromagnetic fields.
+                \begin{align}
+                    \hat{S} &=  \hat{E} \times \hat{B}
+                        =   \begin{pmatrix}1\\0\\0\end{pmatrix} \times \begin{pmatrix}0\\1\\0\end{pmatrix}
+                        =   \det\begin{bmatrix}
+                                \hat{x} & \hat{y}   & \hat{z}\\
+                                1       & 0         & 0     \\
+                                0       & 1         & 0     
+                            \end{bmatrix}\\
+                        &=  \hat{z} \begin{bmatrix}1 & 0 \\ 0 & 1\end{bmatrix}
+                        =   +\hat{z}
+                \end{align}
+
+                Conclusively, it travels in the \boxed{+z} direction.
+
+            \subsection{Solution (c)}
+                The magnetic field would propagate in the \boxed{y} direction.
+                I should note that without knowing whether the electric field propagates in the $+x$ or $-x$ direction, we cannot know whether the magnetic field propagates in the $-y$ or $+y$ direction (respectively).
+
+            \subsection{Solution (d)}
+                To find the intensity, we plug in the electric field we know already.
+                \begin{align}
+                    I   &=  \frac{1}{2\mu_0 c}E_{\rm max}^2
+                        =   \frac{(5\,\unit{\newton/\coulomb})^2}{2 * (1.256\E{-6}\,\unit{\meter\cdot\kilo\gram\cdot\second^{-2}\cdot\ampere^{-2}}) 2.998\E{8}\unit{\meter/\second}}\\
+                        &=  \frac{25}{753.0976}\,\unit{\frac{\joule}{\second\cdot\meter^2}}
+                        =   \boxed{0.0332\,\unit{\frac{\joule}{\second\cdot\meter^2}}}
+                \end{align}
+
+                \subsubsection{Part (i)}
+                    By multiplying the intensity by the surface area, we can find the power.
+                    \begin{equation}
+                        P   =   IA
+                            =   0.0332\,\unit{\frac{\joule}{\second\cdot\meter^2}} \E{-4}
+                            =   3.32\E{-6}\,\unit{\joule/\second}
+                    \end{equation}
+
+                    Next, divide the necessary energy by the power to find the time necessary to collect the energy.
+                    \begin{align}
+                        t   &=  \frac{E}{P}
+                            =   \frac{3\,\unit{\joule}}{3.32\E{-6}\,\unit{\joule/\second}}
+                            =   \boxed{903717.12\,\unit{\second}}
+                    \end{align}
+                
+                \subsubsection{Part (ii)}
+                    I learned in another class that the energy (and as such power) of a light wave depends on the frequency of the light.
+                    However, there is nothing in this class so far that implies that the energy transfered would be dependant on the frequency.
+                    The three components of the intensity ($E_{\rm max}$, $\mu_0$, and $c$) are not dependant on the frequency of the light.
+                    As such, without citing outer sources, my answer would be \underbar{most likely no}.
+
         \section{Exercise 3}
             Let's summarize a lot of these ideas with thinking about a green lightwave:
             \begin{enumerate}[label=\alph*)]
@@ -289,4 +346,44 @@
                 \item   If the amplitude of the electric component of this green light wave is 2 N/C, write down a set of electric and magnetic field waves that represent one green light wave and travel in the positive $+y$ direction.
                 \item   How much energy is delivered by this light wave on a square cm in 5 seconds?
             \end{enumerate}
+
+            \subsection{Solution (a)}
+                Wave number is $2\pi$ divided by wavelength.
+                \begin{equation}
+                    k   =   \frac{2\pi}{\lambda}
+                        =   \frac{2\pi}{500\E{-9}\,\unit{\meter}}
+                        =   \boxed{1.2566\E{7}\,\unit{\meter^{-1}}}
+                \end{equation}
+
+            \subsection{Solution (b)}
+                Frequency is related to wavelength through the speed of light.
+                \begin{equation}
+                    f   =   \frac{c}{\lambda}
+                        =   \frac{2.998\E{8}\,\unit{\meter/\second}}{500\,\unit{\nano\meter}}
+                        =   \boxed{5.996\E{14}\,\unit{\second^{-1}}}
+                \end{equation}
+
+            \subsection{Solution (c)}
+                Angular frequency is frequency times $2\pi$.
+                \begin{equation}
+                    \omega  =   2\pi f
+                        =   2\pi * 5.996\E{14}\,\unit{\second^{-1}}
+                        =   \boxed{3.767\E{15}\,\unit{\hertz}}
+                \end{equation}
+
+            \subsection{Solution (d)}
+                I'll be using cosine.
+                \begin{gather}
+                    E(x,t) = 2\,\unit{\newton/\coulomb}\,\cos\left( (1.2566\E{7}\,\unit{\meter^{-1}})x - (3.767\E{15}\,\unit{\hertz})t \right)\\
+                    E(x,t) = \frac{2\,\unit{\newton/\coulomb}}{c}\,\cos\left( (1.2566\E{7}\,\unit{\meter^{-1}})x - (3.767\E{15}\,\unit{\hertz})t \right)
+                \end{gather}
+
+            \subsection{Solution (e)}
+                Use the intensity equation from before and multply it by the area and the time.
+                \begin{gather}
+                    I = \frac{1}{2\mu_0 c}E_{\rm max}^2 = 0.0053114\,\unit{\frac{\joule}{\meter^2\second}}\\
+                    E_{\rm energy} = I*A*t
+                        =   0.0053114 * 10^{-4} * 5
+                        =   \boxed{2.6557\E{-6}\,\unit{\joule}}
+                \end{gather}
 \end{document}
