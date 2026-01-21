@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.25)  20 JAN 2026 12:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.25)  19 JAN 2026 15:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"/Users/dentonaingworth/Documents/CCSF/PHYS-4A/Week 50/Homework 1 - Journal based on Wave Physics Self-Study/Donald Aingworth - Homework 1.tex"
-(/Users/dentonaingworth/Documents/CCSF/PHYS-4A/Week 50/Homework 1 - Journal based on Wave Physics Self-Study/Donald Aingworth - Homework 1.tex
+**"/Users/dentonaingworth/Documents/CCSF/PHYS-4A/Week 50/Homework 2/Donald Aingworth - Homework 2.tex"
+(/Users/dentonaingworth/Documents/CCSF/PHYS-4A/Week 50/Homework 2/Donald Aingworth - Homework 2.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
 (/usr/local/texlive/2024/texmf-dist/tex/latex/base/article.cls
@@ -96,25 +96,14 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-)) (/usr/local/texlive/2024/texmf-dist/tex/latex/amscls/amsthm.sty
-Package: amsthm 2020/05/29 v2.20.6
-\thm@style=\toks22
-\thm@bodyfont=\toks23
-\thm@headfont=\toks24
-\thm@notefont=\toks25
-\thm@headpunct=\toks26
-\thm@preskip=\skip53
-\thm@postskip=\skip54
-\thm@headsep=\skip55
-\dth@everypar=\toks27
-) (/usr/local/texlive/2024/texmf-dist/tex/latex/cancel/cancel.sty
+)) (/usr/local/texlive/2024/texmf-dist/tex/latex/cancel/cancel.sty
 Package: cancel 2013/04/12 v2.2 Cancel math terms
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2019/06/20 v3.9 Customized lists
-\enitkv@toks@=\toks28
-\labelindent=\skip56
+\enitkv@toks@=\toks22
+\labelindent=\skip53
 \enit@outerparindent=\dimen150
-\enit@toks=\toks29
+\enit@toks=\toks23
 \enit@inbox=\box53
 \enit@count@id=\count274
 \enitdp@description=\count275
@@ -124,7 +113,7 @@ Package: esdiff
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
  (/usr/local/texlive/2024/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
-\KV@toks@=\toks30
+\KV@toks@=\toks24
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
  (/usr/local/texlive/2024/texmf-dist/tex/latex/graphics/trig.sty
@@ -190,19 +179,19 @@ Package: array 2023/10/16 v2.5g Tabular extension package (FMi)
 \col@sep=\dimen158
 \ar@mcellbox=\box62
 \extrarowheight=\dimen159
-\NC@list=\toks31
-\extratabsurround=\skip57
-\backup@length=\skip58
+\NC@list=\toks25
+\extratabsurround=\skip54
+\backup@length=\skip55
 \ar@cellbox=\box63
 )) (/usr/local/texlive/2024/texmf-dist/tex/latex/wrapfig/wrapfig.sty
 \wrapoverhang=\dimen160
 \WF@size=\dimen161
 \c@WF@wrappedlines=\count291
 \WF@box=\box64
-\WF@everypar=\toks32
+\WF@everypar=\toks26
 Package: wrapfig 2003/01/31  v 3.6
 )
-Package translations Info: No language package found. I am going to use `english' as default language. on input line 26.
+Package translations Info: No language package found. I am going to use `english' as default language. on input line 23.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/graphics/color.sty
 Package: color 2022/01/06 v1.3d Standard LaTeX Color (DPC)
  (/usr/local/texlive/2024/texmf-dist/tex/latex/graphics-cfg/color.cfg
@@ -213,23 +202,23 @@ Package color Info: Driver file: pdftex.def on input line 149.
 File: l3backend-pdftex.def 2024-02-20 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count292
 \l__pdf_internal_box=\box65
-) (./Donald Aingworth - Homework 1.aux)
-\openout1 = `"Donald Aingworth - Homework 1.aux"'.
+) (./Donald Aingworth - Homework 2.aux)
+\openout1 = `"Donald Aingworth - Homework 2.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
  (/usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count293
@@ -237,12 +226,12 @@ LaTeX Font Info:    ... okay on input line 26.
 \scratchbox=\box66
 \nofMPsegments=\count294
 \nofMParguments=\count295
-\everyMPshowfont=\toks33
+\everyMPshowfont=\toks27
 \MPscratchCnt=\count296
 \MPscratchDim=\dimen163
 \MPnumerator=\count297
 \makeMPintoPDFobject=\count298
-\everyMPtoPDFconversion=\toks34
+\everyMPtoPDFconversion=\toks28
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -251,84 +240,38 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 )) (/usr/local/texlive/2024/texmf-dist/tex/latex/translations/translations-basic-dictionary-english.trsl
 File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
 )
-Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 26.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 27.
+Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 23.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 24.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 27.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 24.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-<1-1.png, id=1, 1842.885pt x 648.4225pt>
-File: 1-1.png Graphic file (type png)
-<use 1-1.png>
-Package pdftex.def Info: 1-1.png  used on input line 33.
-(pdftex.def)             Requested size: 390.0pt x 137.22151pt.
-<1-2.png, id=3, 2098.84125pt x 647.41875pt>
-File: 1-2.png Graphic file (type png)
-<use 1-2.png>
-Package pdftex.def Info: 1-2.png  used on input line 37.
-(pdftex.def)             Requested size: 390.0pt x 120.29416pt.
-<1-3.png, id=4, 1495.5875pt x 647.41875pt>
-File: 1-3.png Graphic file (type png)
-<use 1-3.png>
-Package pdftex.def Info: 1-3.png  used on input line 42.
-(pdftex.def)             Requested size: 390.0pt x 168.81883pt.
- [1
+) [1
 
-{/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./1-1.png> <./1-2.png>]
-<2-1.png, id=19, 1525.7pt x 255.95625pt>
-File: 2-1.png Graphic file (type png)
-<use 2-1.png>
-Package pdftex.def Info: 2-1.png  used on input line 47.
-(pdftex.def)             Requested size: 390.0pt x 65.42615pt.
-<2-2.png, id=20, 1271.75125pt x 274.02374pt>
-File: 2-2.png Graphic file (type png)
-<use 2-2.png>
-Package pdftex.def Info: 2-2.png  used on input line 51.
-(pdftex.def)             Requested size: 390.0pt x 84.03496pt.
-<3-1.png, id=21, 1299.85625pt x 373.395pt>
-File: 3-1.png Graphic file (type png)
-<use 3-1.png>
-Package pdftex.def Info: 3-1.png  used on input line 55.
-(pdftex.def)             Requested size: 390.0pt x 112.03075pt.
- [2 <./1-3.png> <./2-1.png> <./2-2.png>]
-<3-2.png, id=28, 1359.0775pt x 374.39874pt>
-File: 3-2.png Graphic file (type png)
-<use 3-2.png>
-Package pdftex.def Info: 3-2.png  used on input line 58.
-(pdftex.def)             Requested size: 390.0pt x 107.43599pt.
-<4-1.png, id=29, 2042.63126pt x 552.0625pt>
-File: 4-1.png Graphic file (type png)
-<use 4-1.png>
-Package pdftex.def Info: 4-1.png  used on input line 78.
-(pdftex.def)             Requested size: 390.0pt x 105.39839pt.
- [3 <./3-1.png> <./3-2.png>]
-<5-1.png, id=36, 2493.315pt x 692.5875pt>
-File: 5-1.png Graphic file (type png)
-<use 5-1.png>
-Package pdftex.def Info: 5-1.png  used on input line 95.
-(pdftex.def)             Requested size: 390.0pt x 108.33278pt.
- [4 <./4-1.png> <./5-1.png>] [5] [6] [7] [8] [9] [10] [11] (./Donald Aingworth - Homework 1.aux)
+{/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+Overfull \vbox (17.51689pt too high) has occurred while \output is active []
+
+ [2] (./Donald Aingworth - Homework 2.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 7665 strings out of 474116
- 176622 string characters out of 5743682
- 1942187 words of memory out of 5000000
- 29964 multiletter control sequences out of 15000+600000
- 567172 words of font info for 71 fonts, out of 8000000 for 9000
+ 7481 strings out of 474116
+ 173794 string characters out of 5743682
+ 1928187 words of memory out of 5000000
+ 29792 multiletter control sequences out of 15000+600000
+ 562171 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 73i,20n,80p,780b,636s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/latxfont/line10.pfb>
-Output written on "Donald Aingworth - Homework 1.pdf" (11 pages, 2901483 bytes).
+ 73i,6n,80p,313b,532s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb>
+Output written on "Donald Aingworth - Homework 2.pdf" (2 pages, 49116 bytes).
 PDF statistics:
- 124 PDF objects out of 1000 (max. 8388607)
- 66 compressed objects within 1 object stream
+ 31 PDF objects out of 1000 (max. 8388607)
+ 18 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 46 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
