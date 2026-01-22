@@ -24,36 +24,100 @@
     \maketitle
 
     \section{Question 2}
+        Which physical effect or experiment shows that light has a wave nature?
+        
+        \subsection{Solution}
+            One experiment that demonstrates the wave nature of light is the double slit experiment. 
+            It results in multiple points of constructive and destructive interference, which occur for waves and not particles.
 
     \section{Question 3}
+        Express the kinetic energy \textit{KE} of a particle in terms of its momentum \textbf{p}.
+
+        \subsection{Solution}
+            There are two answers to this. 
+            The first assumes we express it in terms of both momentum and mass.
+            \begin{equation}
+                KE = \boxed{\frac{\vec{p}\cdot\vec{p}}{2m}}
+            \end{equation}
+
+            The second requires we assume momentum has a velocity component to it and uses an antiderivative.
+            \begin{equation}
+                KE = \diff[-1]{p}{v}
+            \end{equation}
 
     \section{Question 4}
+        What would be the wavelength of a wave described by the function $u(x,t) = A \sin(2x/\unit{\centi\meter} - 10\unit{\second})$?
+
+        \subsection{Solution}
+            There is a formula relating $\lambda$ and $k$.
+            \begin{gather}
+                k = \frac{2\pi}{\lambda}\\
+                \begin{align}
+                    \lambda &=  \frac{2\pi}{k}
+                        =   \frac{2\pi}{2\,\unit{\centi\meter^{-1}}}
+                        =   \boxed{\pi\E{2}\,\unit{\meter}}
+                \end{align}
+            \end{gather}
 
     \section{Question 5}
+        What would be the frequency of a wave described by the function $u(x,t) = A \sin(2x/\unit{\centi\meter} - 10t/\unit{\second})$?
+        
+        \subsection{Solution}
+            \begin{gather}
+                \omega = 2\pi f\\
+                f = \frac{\omega}{2\pi} = \frac{10}{2\pi} = \boxed{\frac{5}{\pi}\,\unit{\hertz}}
+            \end{gather}
 
     \section{Question 6}
+        What would be the phase velocity of a wave described by the function $u(x,t) = A \sin(2x/\unit{\centi\meter} - 10t/\unit{\second})$?
+
+        \subsection{Solution}
+            The phase velocity is just the speed of the wave in this case.
+            \begin{equation}
+                v = \frac{\omega}{k} = \frac{10\,\unit{\second^{-1}}}{2\E{-2}\,\unit{\meter^{-1}}} = \boxed{500\,\unit{\meter/\second}}
+            \end{equation}
 
     \section{Question 7}
+        Write down the exponential function corresponding to a traveling wave with a wavelength of 10 cm and a frequency of 10 Hz.
+        
+        \subsection{Solution}
+            The exponential function would have a format involving $k$ and $\omega$.
+            \begin{equation}
+                \psi(x,t) = \psi_0 \e{kx - \omega t} = \psi_0 \e{\frac{2\pi}{\lambda}x - 2\pi f\,t}
+            \end{equation}
 
     \section{Question 8}
+        Write down a trigonometric function describing a stationary wave with a wavelength of 10 cm.
 
     \section{Question 11}
+        Which forms of electromagnetic radiation have a wavelength shorter than visible light?
 
     \section{Question 12}
+        Calculate the frequency of electromagnetic radiation having a wavelength of 10 nm.
 
     \section{Question 13}
+        Write down a formula expressing the energy of a photon in terms of the frequency of light.
 
     \section{Question 14}
+        Write down a formula expressing the energy of a photon in terms of the wavelength of light.
 
     \section{Question 15}
+        What is the energy of the photons for light with a wavelength of 0.1 nm?
 
     \section{Problem 1}
+        Calculate the frequency of light having a wavelength $\lambda = 500\,\unit{\nano\meter}$.
 
     \section{Problem 2}
+        Calculate the energy of the photons for light having a wavelength $\lambda = 500\,\unit{\nano\meter}$.
 
     \section{Problem 3}
+        Suppose that a beam of light consists of photons having an energy of 5.4 eV. 
+        What is the wavelength of the light?
 
     \section{Problem 10}
+        Using Euler's identity, Eq. (I.24) shows that adding two waves given by $y_1 = A\e{kx-\omega t}$ and $y_2 = A\e{kx+\omega t}$ gives a new wave with time-dependent amplitude and position dependence $\e{kx}$.
 
     \section{Problem 11}
+        A very sensitive detector measures the energy of a single photon from starlight at 2.5 eV and at the same time measures its wavelength at 495 nm. 
+        What is the value of Planck's constant at that far-away star?
 \end{document}
