@@ -1,6 +1,7 @@
 \documentclass[12pt]{article}
 \usepackage{amsmath}
 \usepackage{amssymb}
+\usepackage{amsthm}
 \usepackage{cancel}
 \usepackage{enumitem}
 \usepackage{esdiff}
@@ -9,8 +10,10 @@
 % \usepackage{pgfplots}
 \usepackage{wrapfig}
 
-\newcommand{\e}[1]{e^{i(#1)}}
+\newcommand{\e}[1]{e^{i\left(#1\right)}}
 \newcommand{\E}[1]{\times 10^{#1}}
+
+\renewcommand\qedsymbol{TENA}
 
 \title{
     Homework \#2
@@ -40,9 +43,9 @@
                 KE = \boxed{\frac{\vec{p}\cdot\vec{p}}{2m}}
             \end{equation}
 
-            The second requires we assume momentum has a velocity component to it and uses an antiderivative.
+            The second requires we assume momentum has a velocity component to it and uses an antiderivative or an integral.
             \begin{equation}
-                KE = \diff[-1]{p}{v}
+                KE = \diff[-1]{p}{v} = \int p(v)\,dv
             \end{equation}
 
     \section{Question 4}
@@ -86,38 +89,174 @@
                 \psi(x,t) = \psi_0 \e{kx - \omega t} = \psi_0 \e{\frac{2\pi}{\lambda}x - 2\pi f\,t}
             \end{equation}
 
+            We have values of $f$ and $\lambda$, whch we can substitute in.
+            \begin{gather}
+                \psi(x,t) = \psi_0 \e{\frac{2\pi}{0.1\,\unit{\meter}}x - 2\pi * 10\,\unit{\hertz} * t}\\
+                \boxed{\psi(x,t) = \psi_0 \e{(20\pi\,\unit{\meter})\,x - (20\pi\,\unit{\hertz})\,t}}
+            \end{gather}
+
     \section{Question 8}
         Write down a trigonometric function describing a stationary wave with a wavelength of 10 cm.
+
+        \subsection{Solution}
+            I'll be using sine.
+            \begin{equation}
+                \boxed{\psi(x,t) = \psi_0 \sin\left( (20\pi\,\unit{\meter})\,x \right)}
+            \end{equation}
 
     \section{Question 11}
         Which forms of electromagnetic radiation have a wavelength shorter than visible light?
 
+        \subsection{Solution}
+            Looking at the textbook, those with shorter wavelength than visible light are \underbar{ultraviolet, x-rays, and gamma rays}.
+
     \section{Question 12}
         Calculate the frequency of electromagnetic radiation having a wavelength of 10 nm.
+
+        \subsection{Solution}
+            Frequency is inversely proportional to wavelength.
+            \begin{gather}
+                c = \lambda f\\
+                \begin{align}
+                    f   &=  \frac{c}{\lambda}
+                        =   \frac{2.998\E{8}\,\unit{\meter/\second}}{10\E{-9}\,\unit{\meter}}
+                        =   \boxed{2.998\E{16}\,\unit{\hertz}}
+                \end{align}
+            \end{gather}
 
     \section{Question 13}
         Write down a formula expressing the energy of a photon in terms of the frequency of light.
 
+        \subsection{Solution}
+            All credit goes to a German guy named Albert.
+            $f$ refers to Planck's constant.
+            \begin{equation}
+                E = hf
+            \end{equation}
+
     \section{Question 14}
         Write down a formula expressing the energy of a photon in terms of the wavelength of light.
 
+        \subsection{Solution}
+            We have two equations known: one for the energy in terms of frequency, and the other relating frequency and wavelength.
+            \begin{gather}
+                E = hf\\
+                c = \lambda f \to f = \frac{c}{\lambda}
+            \end{gather}
+
+            We can substitute the latter into the former.
+            \begin{equation}
+                \boxed{E = \frac{hc}{\lambda}}
+            \end{equation}
+
     \section{Question 15}
         What is the energy of the photons for light with a wavelength of 0.1 nm?
+        
+        \subsection{Solution}
+            Use the equation from Question 14.
+            \begin{align}
+                E   &=  \frac{hc}{\lambda}
+                    =   \frac{6.62607015\E{-34} \cdot 2.998\E{8}}{10^{-10}}
+                    =   \boxed{1.986\E{-15}\,\unit{\joule}}
+            \end{align}
 
     \section{Problem 1}
         Calculate the frequency of light having a wavelength $\lambda = 500\,\unit{\nano\meter}$.
 
+        \subsection{Solution}
+            Use the relationship between frequency and wavelength.
+            \begin{gather}
+                c = \lambda f\\
+                f   =   \frac{c}{\lambda}
+                    =   \frac{2.998\E{8}}{500\E{-9}}
+                    =   \boxed{5.996\E{14}\,\unit{\hertz}}
+            \end{gather}
+
     \section{Problem 2}
         Calculate the energy of the photons for light having a wavelength $\lambda = 500\,\unit{\nano\meter}$.
+
+        \subsection{Solution}
+            Use the relationhip between wavelength and energy.
+            \begin{align}
+                E   &=  \frac{hc}{\lambda}
+                    =   \frac{6.626\E{-34} * 2.998\E{8}}{500\E{-9}}
+                    =   \boxed{3.973\E{-19}\,\unit{\joule}}
+            \end{align}
 
     \section{Problem 3}
         Suppose that a beam of light consists of photons having an energy of 5.4 eV. 
         What is the wavelength of the light?
 
+        \subsection{Solution}
+            I will be using a new value of $hc$.
+            \begin{align}
+                \lambda &=  \frac{hc}{E}
+                    =   \frac{1240\,\unit{\eV\,\nano\meter}}{5.4\,\unit{\eV}}
+                    =   \boxed{229.6\,\unit{\nano\meter}}
+            \end{align}
+
     \section{Problem 10}
-        Using Euler's identity, Eq. (I.24) shows that adding two waves given by $y_1 = A\e{kx-\omega t}$ and $y_2 = A\e{kx+\omega t}$ gives a new wave with time-dependent amplitude and position dependence $\e{kx}$.
+        Using Euler's identity, Eq. (I.24) show that adding two waves given by $y_1 = A\e{kx-\omega t}$ and $y_2 = A\e{kx+\omega t}$ gives a new wave with time-dependent amplitude and position dependence $\e{kx}$.
+        \begin{equation} \label{I.24}\tag{I.24}
+            e^{i\theta} = \cos\theta + i\sin\theta
+        \end{equation}
+
+        \subsection{Solution}
+        \begin{proof}
+            Time to play the game!
+            Take our two equations.
+            \begin{gather}
+                y_1 = A\e{kx - \omega t}\\
+                y_2 = A\e{kx + \omega t}
+            \end{gather}
+
+            Add these two together in superposition.
+            \begin{gather}
+                y_{\Sigma} = y_1 + y_2 = A\e{kx - \omega t} + A\e{kx + \omega t}
+            \end{gather}
+
+            To begin our manipulation, we can separate values of exponentials.
+            \begin{gather}
+                y_{\Sigma} = A\e{kx}\e{-\omega t} + A\e{kx}\e{\omega t}
+            \end{gather}
+
+            Here, we combine like terms.
+            \begin{gather}
+                y_{\Sigma} = A\e{kx}\left( \e{-\omega t} + \e{\omega t} \right)
+            \end{gather}
+
+            Using \ref{I.24}, we can convert the values inside the parentheses to trigonometric values.
+            We can then use trig identities and positive/negative functions to cancel out values.
+            \begin{align}
+                y_{\Sigma}  &=  A\e{kx}\left( \cos(-\omega t) + \sin(-\omega t) + \cos(\omega t) + \sin(\omega t) \right)\\
+                    &=  A\e{kx}\left( \cos(\omega t) - \sin(\omega t) + \cos(\omega t) + \sin(\omega t) \right)\\
+                    &=  A\e{kx}\left( 2\cos(\omega t) \right)
+                    =   \boxed{2A\cos(\omega t)\e{kx}}
+            \end{align}
+
+            It's not pretty, but it works. 
+            This is indeed a wave with time-dependent amplitude with poposition-dependence $\e{kx}$.
+        \end{proof}
 
     \section{Problem 11}
         A very sensitive detector measures the energy of a single photon from starlight at 2.5 eV and at the same time measures its wavelength at 495 nm. 
         What is the value of Planck's constant at that far-away star?
+
+        \subsection{Solution}
+            Assume the speed of light to be constant everywhere.
+            Radical, I know.
+            Use this in the equation for the energy from wavelength.
+            \begin{equation}
+                E = \frac{hc}{\lambda}
+            \end{equation} 
+
+            Reorder this equation to isolate $h$.
+            \begin{align}
+                h   &=  \frac{E\lambda}{c}
+                    =   \frac{2.5\,\unit{\eV} \cdot 495\,\unit{\nano\meter}}{2.998\E{17}\,\unit{\nano\meter/\second}}\\
+                    &=  \boxed{4.128\E{-15}\,\unit{\eV\cdot\second}}
+            \end{align}
+
+            Doing the math with this, it is remarkably close to what the accepted value of Planck's constant is in our galaxy, off by $0.008\E{-15}\,\unit{\eV\cdot\second}$.
+            Maybe our detector is just not precise enough for measuring Planck's constant from 500 light years away. 
 \end{document}

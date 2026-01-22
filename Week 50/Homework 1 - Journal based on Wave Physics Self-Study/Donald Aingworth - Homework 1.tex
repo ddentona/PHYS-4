@@ -13,7 +13,7 @@
 \newcommand{\e}[1]{e^{i(#1)}}
 \newcommand{\E}[1]{\times 10^{#1}}
 
-\renewcommand\qedsymbol{TOA}
+\renewcommand\qedsymbol{TENA}
 
 \title{
     Homework \#1
@@ -184,11 +184,11 @@
 
                 The next step here is to see what the second derivatives of $h(x,t)$ are with respect to $x$ and $t$.
                 \begin{gather}
-                    \diffp[2]{}{x}h(x,t) = \left( \frac{2\pi}{\lambda} \right)^2 h_{\rm max} \sin\left( \frac{2\pi}{\lambda} x - \frac{2\pi}{T} t + \phi \right)\\
-                    \diffp[2]{}{t}h(x,t) = \left( \frac{2\pi}{T} \right)^2 h_{\rm max} \sin\left( \frac{2\pi}{\lambda} x - \frac{2\pi}{T} t + \phi \right)
+                    \diffp[2]{}{x}h(x,t) = -\left( \frac{2\pi}{\lambda} \right)^2 h_{\rm max} \sin\left( \frac{2\pi}{\lambda} x - \frac{2\pi}{T} t + \phi \right)\\
+                    \diffp[2]{}{t}h(x,t) = -\left( \frac{2\pi}{T} \right)^2 h_{\rm max} \sin\left( \frac{2\pi}{\lambda} x - \frac{2\pi}{T} t + \phi \right)
                 \end{gather}
 
-                These can be substituted into the general wave equation above, in which from the start we can cancel out $h_{\rm max} \sin\left( \frac{2\pi}{\lambda} x - \frac{2\pi}{T} t + \phi \right)$ on both sides.
+                These can be substituted into the general wave equation above, in which from the start we can cancel out $-h_{\rm max} \sin\left( \frac{2\pi}{\lambda} x - \frac{2\pi}{T} t + \phi \right)$ on both sides.
                 Then, we can cancel out other values.
                 \begin{gather}
                     \left( \frac{2\pi}{\lambda} \right)^2 = \frac{T^2}{\lambda^2}\left( \frac{2\pi}{T} \right)^2\\
