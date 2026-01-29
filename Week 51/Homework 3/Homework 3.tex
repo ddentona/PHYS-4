@@ -7,6 +7,7 @@
 \usepackage{esdiff}
 \usepackage{graphicx}
 \usepackage{siunitx}
+\usepackage{ulem}
 % \usepackage{pgfplots}
 \usepackage{wrapfig}
 
@@ -26,81 +27,139 @@
 \begin{document}
     \maketitle
 
-    \section{Question 1}
-        How are the threshold frequency $f_0$ and wavelength $\lambda_0$ for the photoelectric effect related to the work function $W$ of a metal?
+    \section{Questions}
 
-        \subsection{Solution}
+        \subsection{Question 1}
+            How are the threshold frequency $f_0$ and wavelength $\lambda_0$ for the photoelectric effect related to the work function $W$ of a metal?
 
-    \section{Question 2}
-        Write down an equation showing how the maximum kinetic energy of photoelectrons depends upon the wavelength of the incident light and the work function of the metal.
+            \subsubsection{Solution}
+                The work function of a metal is related to the threshold frequency and wavelength separately, since they are dependant on each other.
+                \begin{gather}
+                    W = hf_0 - (KE)_{\rm max}\\
+                    W = \frac{hc}{\lambda_0}
+                \end{gather}
 
-        \subsection{Solution}
+        \subsection{Question 2}
+            Write down an equation showing how the maximum kinetic energy of photoelectrons depends upon the wavelength of the incident light and the work function of the metal.
 
-    \section{Question 3}
-        What would be the work function of a metal with threshold wavelength of 400 nm?
+            \subsubsection{Solution}
+                I'm taking this from the Basic Equations of this chapter.
+                \begin{equation}
+                    (KE)_{\rm max} = \frac{hc}{\lambda} - W
+                \end{equation}
 
-        \subsection{Solution}
+        \subsection{Question 3}
+            What would be the work function of a metal with threshold wavelength of 400 nm?
 
-    \section{Question 4}
-        Would photoelectrons be emitted from a metal if the wavelength of the incident light were longer than the threshold wavelength?
+            \subsubsection{Solution}
+                \begin{align}
+                    W   &=  \frac{hc}{\lambda_0}
+                        =   \frac{1240\,\unit{\eV\cdot\nano\meter}}{400\,\unit{\nano\meter}}
+                        =   \boxed{3.1\,\unit{\eV}}
+                \end{align}
 
-        \subsection{Solution}
+        \subsection{Question 4}
+            Would photoelectrons be emitted from a metal if the wavelength of the incident light were longer than the threshold wavelength?
 
-    \section{Question 6}
-        What causes the dark lines in the solar spectra?
+            \subsubsection{Solution}
+                The minimum in light is set by the frequency.
+                This means that the maximum is given in the wavelength.
+                This means that if it were longer, no photoelectrons would be emitted.
 
-        \subsection{Solution}
+        \subsection{Question 6}
+            What causes the dark lines in the solar spectra?
 
-    \section{Question 7}
-        Suppose that an atom makes a transition from an energy level $E_2$ to an energy level $E_1$ emitting light. 
-        How is the light's frequency f related to the difference of energy, $E_2 - E_1$ ?
+            \subsubsection{Solution}
+                These would be the colors of light waves that are absorbed by atoms somewhere between the sun and the earth.
 
-        \subsection{Solution}
+        \subsection{Question 7}
+            Suppose that an atom makes a transition from an energy level $E_2$ to an energy level $E_1$ emitting light. 
+            How is the light's frequency $f$ related to the difference of energy, $E_2 - E_1$ ?
 
-    \section{Question 8}
-        Write down a formula for the energy levels of hydrogen.
+            \subsubsection{Solution}
+                The frequency is directly proportional to the difference of energy.
+                \begin{equation}
+                    f = \frac{E_2 - E_1}{h}
+                \end{equation}
 
-        \subsection{Solution}
+        \subsection{Question 8}
+            Write down a formula for the energy levels of hydrogen.
 
-    \section{Question 11}
-        What is the energy of the hydrogen atom in the $n = 4$ state?
+            \subsubsection{Solution}
+                Let's use \sout{Ryback's} Rydberg's Equation.
+                \begin{equation}
+                    E = -R\frac{hc}{n} = -\frac{13.6\,\unit{\eV}}{n^2}
+                \end{equation}
 
-        \subsection{Solution}
+        \subsection{Question 11}
+            What is the energy of the hydrogen atom in the $n = 4$ state?
 
-    \section{Question 12}
-        What photon energy would be required to ionize a hydrogen atom in the $n = 5$ state?
+            \subsubsection{Solution}
+                Use Rydberg's equation.
+                \begin{equation}
+                    E_4 = -\frac{13.6\,\unit{\eV}}{4^2} = \boxed{-0.8375\,\unit{\eV}}
+                \end{equation}
 
-        \subsection{Solution}
+        \subsection{Question 12}
+            What photon energy would be required to ionize a hydrogen atom in the $n = 5$ state?
 
-    \section{Question 15}
-        What model of light can be used to describe the \textit{Compton effect}?
+            \subsubsection{Solution}
+                Use Rydberg's equation.
+                \begin{equation}
+                    -E_5 = \frac{13.6\,\unit{\eV}}{5^2} = \boxed{0.544\,\unit{\eV}}
+                \end{equation}
 
-        \subsection{Solution}
+        \subsection{Question 15}
+            What model of light can be used to describe the \textit{Compton effect}?
 
-    \section{Question 16}
-        What is Bragg's law for X-ray diffraction?
+            \subsubsection{Solution}
+                The particle model can be used to describe the Compton effect.
 
-        \subsection{Solution}
+        \subsection{Question 16}
+            What is Bragg's law for X-ray diffraction?
 
-    \section{Question 17}
-        How are the momentum and the wavelength of a particle related?
+            \subsubsection{Solution}
+                Bragg's law defines the requirements for constructive interference to occur between two X-rays of wavelength $\lambda$ hitting two lattices of a crystal a distance $d$ from each other at an angle $\theta$ with the perpendicular.
+                It includes a coefficient $n \in \mathbb{N}$.
+                \begin{equation}
+                    2d\sin(\theta) = n\lambda
+                \end{equation}
 
-        \subsection{Solution}
+        \subsection{Question 17}
+            How are the momentum and the wavelength of a particle related?
 
-    \section{Question 18}
-        Express the momentum of an electron in terms of the angular wave vector $k$.
+            \subsubsection{Solution}
+                The momentum of a particle is defined by its energy, which is defined by its frequency, which is directly related to its wavelength.
+                \begin{equation}
+                    p   =   \frac{E}{c}
+                        =   \frac{hf}{c}
+                        =   \frac{h\cancel{c}}{\cancel{c}\lambda}
+                        =   \frac{h}{\lambda}
+                \end{equation}
 
-        \subsection{Solution}
+        \subsection{Question 18}
+            Express the momentum of an electron in terms of the angular wave vector $k$.
 
-    \section{Question 19}
-        How would the de Broglie wavelength of an electron change if its velocity were to double?
+            \subsubsection{Solution}
+                Use the equation from earlier and relate the wavelength and wave number.
+                \begin{gather}
+                    \lambda = \frac{2\pi}{k}; \hbar = \frac{h}{2\pi}\\
+                    p = \frac{h}{\lambda} = \frac{hk}{2\pi} = \hbar k
+                \end{gather}
 
-        \subsection{Solution}
+        \subsection{Question 19}
+            How would the de Broglie wavelength of an electron change if its velocity were to double?
 
-    \section{Question 20}
-        Describe the interference pattern is produced when a beam of light having a single wavelength is incident upon two slits?
+            \subsubsection{Solution}
+                If the electron's velocity doubles, its momentum doubles.
+                Since wavelength is inversely related to momentum, a doubled momentum would lead to a \underline{halved} wavelength.
 
-        \subsection{Solution}
+        \subsection{Question 20}
+            Describe the interference pattern is produced when a beam of light having a single wavelength is incident upon two slits?
+
+            \subsubsection{Solution}
+                You would wind up with a pattern of light and dark spots (corresponding to where photons do and do not land).
+                This is known as the two-slit experiment.
 
     \section{Problem 1}
         Calculate the energy of the photons for light having a wavelength $\lambda = 200\,\unit{\nano\meter}$.
