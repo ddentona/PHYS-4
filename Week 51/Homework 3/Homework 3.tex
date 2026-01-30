@@ -198,8 +198,8 @@
                     =   \frac{100\,\unit{\joule}}{9.9335\E{-19}\,\unit{\joule}}
                     =   \boxed{1.007\E{20}}
             \end{align}
-
     \pagebreak
+
     \section{Problem 4}
         What will the maximum kinetic energy of the emitted photoelectrons be when ultraviolet light having a wavelength of 200 nm is incident upon the following metal surfaces?
         \begin{enumerate}[label=\alph*)]
@@ -238,8 +238,8 @@
                     &=  6.2\,\unit{\eV} - 4.73\,\unit{\eV}
                     =   \boxed{1.47\,\unit{\eV}}
             \end{align}
-
     \pagebreak
+
     \section{Problem 6}
         Light having a wavelength of 460 nm is incident on a cathode, and electrons are emitted from the metal surface. 
         It is observed that the electrons may be prohibited from reaching the anode by applying a stopping potential of 0.72 eV.
@@ -253,37 +253,137 @@
             \end{equation}
 
             Plug this and the wavelength into the equation for maximum kinetic energy.
-            % \begin{equation}
-                
-            % \end{equation}
+            Rounding in this problem will be to the closest hundredth of an electron-volt.
+            \begin{gather}
+                (KE)_{\rm max} = \frac{hc}{\lambda} - W\\
+                \begin{align}
+                    W   &=  \frac{hc}{\lambda} - (KE)_{\rm max}
+                        =   \frac{1240\,\unit{\eV\,\nano\meter}}{460\,\unit{\nano\meter}} - 0.72\,\unit{\eV}\\
+                        &=  2.70\,\unit{\eV} - 0.72\,\unit{\eV}
+                        =   \boxed{1.98\,\unit{\eV}}
+                \end{align}
+            \end{gather}
 
     \section{Problem 7}
         By how much would the stopping potential in the previous problem increase if the wavelength of the radiation were reduced to 240 nm?
 
         \subsection{Solution}
+            Let's calculate it. 
+            Keep the calculated value of $W$. 
+            \begin{align}
+                (KE)_{\rm max}  &=  \frac{hc}{\lambda} - W
+                    =   \frac{1240\,\unit{\eV\,\nano\meter}}{240\,\unit{\nano\meter}} - 1.98\,\unit{\eV}\\
+                    &=  5.17\,\unit{\eV} - 1.98\,\unit{\eV}
+                    =   \boxed{3.19\,\unit{\eV}}
+            \end{align}
+    \pagebreak
 
     \section{Problem 11}
         An electron in the $n = 5$ state of hydrogen makes a transition to the $n = 2$ state. 
         What are the energy and wavelength of the emitted photon?
 
         \subsection{Solution}
+            Use Rydberg's equation.
+            \begin{align}
+                E_{\gamma}  &=  13.6\,\unit{\eV} \left( \frac{1}{n_2^2} - \frac{1}{n_1^2} \right)
+                    =   13.6\,\unit{\eV} \left( \frac{1}{2^2} - \frac{1}{5^2} \right)
+                    =   \frac{13.6\,\unit{\eV}}{4} - \frac{13.6\,\unit{\eV}}{25}\\
+                    &=  3.4\,\unit{\eV} - 0.544\,\unit{\eV}
+                    =   \boxed{2.9\,\unit{\eV}}
+            \end{align}
 
     \section{Problem 16}
         Ultraviolet light of wavelength 45.0 nm is incident upon a collection of hydrogen atoms in the ground state. 
         Find the kinetic energy and the velocity of the emitted electrons.
 
         \subsection{Solution}
+            Light will be able to transmit energy inversely relative to its wavelength.
+            \begin{equation}
+                E_{\rm photon} = \frac{hc}{\lambda} = \frac{1240\,\unit{\eV\,\nano\meter}}{45.0\,\unit{\nano\meter}} = 27.6\,\unit{\eV}
+            \end{equation}
+
+            This would be reduced by the energy necessary to ionize the atom.
+            Said energy for reduction would be the energy from Rydberg's equation at ground state ($n = 1$).
+            \begin{equation}
+                KE = 27.6\,\unit{\eV} - 13.6\,\unit{\eV} = 14.0\,\unit{\eV}
+            \end{equation}
+
+            Before we move on, convert electron-volts to joules.
+            \begin{equation}
+                14.0\,\unit{\eV} = 2.236\E{-18}\,\unit{\joule}
+            \end{equation}
+
+            Multiply this by two, divide it by the mass of an electron, and take the square root to find the velocity (in no particular direction).
+            \begin{gather}
+                K   =   2.236\E{-18}\,\unit{\joule}\\
+                2K  =   2 * 2.236\E{-18}\,\unit{\joule} = 4.472\E{-18}\,\unit{\joule}\\
+                \frac{2K}{m_e} = \frac{4.472\E{-18}\,\unit{\joule}}{9.109\E{-31}\,\unit{\kilo\gram}} = 4.909\E{12}\,\unit{\meter^2/\second^2}\\
+                \sqrt{\frac{2K}{m_e}} = \sqrt{4.909\E{12}\,\unit{\meter^2/\second^2}}
+                    =   \boxed{2.216\E{6}\,\unit{\meter/\second}}
+            \end{gather}
 
     \section{Problem 20}
         What potential difference must electrons be accelerated through to have the same wavelength as 40 keV X-rays?
 
         \subsection{Solution}
+            First find the wavelength of the $40\,\unit{\kilo\eV}$ X-rays.
+            \begin{equation}
+                \lambda 
+                    =   \frac{hc}{E} 
+                    =   \frac{1240\,\unit{\eV\,\nano\meter}}{40\,\unit{\kilo\eV}}
+                    =   0.031\,\unit{\nano\meter}
+            \end{equation}
+
+            Plug this into the de Broglie wavelength equation.
+            \begin{equation}\label{eq:41}
+                p   =   \frac{h}{\lambda}
+                    =   \frac{6.626\E{-34}\,\unit{\joule\cdot\second}}{0.031\,\unit{\nano\meter}}
+                    =   2.137\E{-23}\unit{\newton\cdot\second}
+            \end{equation}
+
+            Lastly, use this to find the necessary kinetic energy.
+            \begin{equation}\label{eq:42}
+                E   =   \frac{p^2}{2m_e}
+                    =   \frac{\left( 2.137\E{-23}\unit{\newton\cdot\second} \right)^2}{2 \cdot 9.109\E{-31}\unit{\kilo\gram}}
+                    =   2.507\E{-16}\,\unit{\joule}
+            \end{equation}
+
+            Divide this by the charge of the electron to find the necessary potential.
+            \begin{equation}
+                V   =   \frac{E}{q}
+                    =   \frac{2.507\E{-16}\,\unit{\joule}}{1.602\E{-19}\,\unit{\coulomb}}
+                    =   \boxed{1.565\,\unit{\kilo\volt}}
+            \end{equation}
+    \pagebreak
 
     \section{Problem 21}
         Electrons, protons, and neutrons have wavelengths of 0.01 nm. 
         Calculate their kinetic energies.
 
         \subsection{Solution}
+            Combine (\ref{eq:41}) and (\ref{eq:42}).
+            This will bring us an equation usable for each of these wave-particles.
+            \begin{equation} \label{eq:44}
+                E   =   \frac{h^2}{2 m \lambda^2}
+                    =   \frac{(6.626\E{-34}\,\unit{\joule\cdot\second})^2}{2 m (0.01\,\unit{\nano\meter})^2}
+                    =   \frac{2.195\E{-45}\unit{\joule\cdot\kilo\gram}}{m}
+            \end{equation}
 
-    
+            \subsubsection{Electron}
+                Use equation (\ref{eq:44}) with $m = 9.109\E{-31}\,\unit{\kilo\gram}$.
+                \begin{equation}
+                    E   =   \frac{2.195\E{-45}\unit{\joule\cdot\kilo\gram}}{9.109\E{-31}\,\unit{\kilo\gram}} = \boxed{2.41\E{-15}\,\unit{\joule}}
+                \end{equation}
+
+            \subsubsection{Proton}
+                Use equation (\ref{eq:44}) with $m = 1.6726\E{-27}\,\unit{\kilo\gram}$.
+                \begin{equation}
+                    E   =   \frac{2.195\E{-45}\unit{\joule\cdot\kilo\gram}}{1.6726\E{-27}\,\unit{\kilo\gram}} = \boxed{1.3124\E{-18}\,\unit{\joule}}
+                \end{equation}
+
+            \subsubsection{Neutron}
+                Use equation (\ref{eq:44}) with $m = 1.6749\E{-27}\,\unit{\kilo\gram}$.
+                \begin{equation}
+                    E   =   \frac{2.195\E{-45}\unit{\joule\cdot\kilo\gram}}{1.6749\E{-27}\,\unit{\kilo\gram}} = \boxed{1.3106\E{-18}\,\unit{\joule}}
+                \end{equation}
 \end{document}
