@@ -165,6 +165,12 @@
         Calculate the energy of the photons for light having a wavelength $\lambda = 200\,\unit{\nano\meter}$.
 
         \subsection{Solution}
+                Energy of a photon is the quotient between $hc$ (Planck's constant times the speed of light, $1240\,\unit{\eV\cdot\nano\meter}$) and the wavelength of the light.
+                \begin{equation}
+                    E   =   \frac{hc}{\lambda}
+                        =   \frac{1240\,\unit{\eV\cdot\nano\meter}}{200\,\unit{\nano\meter}}
+                        =   \boxed{6.2\,\unit{\eV}}
+                \end{equation}
 
     \section{Problem 2}
         Suppose that a 100 Watt beam of light is incident upon a metal surface. 
@@ -172,7 +178,28 @@
         (Hint: Using the power of the beam, ﬁnd how much energy is incident upon the surface every second.)
 
         \subsection{Solution}
+            First find the energy absorbed in one second, assuming all photons are absorbed by the metal surface (don't ask me why or how).
+            \begin{gather}
+                P   =   \frac{E}{t}\\
+                E_{\rm bulb}    =   Pt 
+                    =   100\,\unit{\watt} \times 1\,\unit{\second}
+                    =   100\,\unit{\joule}
+            \end{gather}
 
+            Convert the energy of each photon from the previous problem to joules.
+            \begin{equation}
+                E_{\rm photon}  =   6.2\unit{\eV} \times \frac{1.6022\E{-19}\,\unit{\eV}}{1\,\unit{J}}
+                    =   9.9335\E{-19}\,\unit{\joule}
+            \end{equation}
+
+            Lastly, divide the energy absorbed by the energy per photon to find the number of photons.
+            \begin{align}
+                n   &=  \frac{E_{\rm bulb}}{E_{\rm photon}}
+                    =   \frac{100\,\unit{\joule}}{9.9335\E{-19}\,\unit{\joule}}
+                    =   \boxed{1.007\E{20}}
+            \end{align}
+
+    \pagebreak
     \section{Problem 4}
         What will the maximum kinetic energy of the emitted photoelectrons be when ultraviolet light having a wavelength of 200 nm is incident upon the following metal surfaces?
         \begin{enumerate}[label=\alph*)]
@@ -181,13 +208,54 @@
             \item   Ag
         \end{enumerate}
 
-        \subsection{Solution}
+        \subsection{Solution (a)}
+            I will be using the same strategy for each of these.
+            Take the work function value of the metal in question.
+            \begin{equation}
+                W_{\rm Na} = 2.28\,\unit{\eV}
+            \end{equation}
 
+            Plug this into the equation for the maximum kinetic energy.
+            Also plug in the wavelength and the value of $hc$.
+            Then compute that to find the answer.
+            \begin{align}
+                (KE)_{\rm max}  &=  \frac{hc}{\lambda} - W
+                    =   \frac{1240\,\unit{\eV\cdot\nano\meter}}{200\,\unit{\nano\meter}} - 2.28\,\unit{\eV}\\
+                    &=  6.2\,\unit{\eV} - 2.28\,\unit{\eV}
+                    =   \boxed{3.92\,\unit{\eV}}
+            \end{align}
+
+        \subsection{Solution (b)}
+            \begin{align}
+                (KE)_{\rm max}  &=  \frac{hc}{\lambda} - W\\
+                    &=  6.2\,\unit{\eV} - 4.08\,\unit{\eV}
+                    =   \boxed{2.12\,\unit{\eV}}
+            \end{align}
+
+        \subsection{Solution (c)}
+            \begin{align}
+                (KE)_{\rm max}  &=  \frac{hc}{\lambda} - W\\
+                    &=  6.2\,\unit{\eV} - 4.73\,\unit{\eV}
+                    =   \boxed{1.47\,\unit{\eV}}
+            \end{align}
+
+    \pagebreak
     \section{Problem 6}
         Light having a wavelength of 460 nm is incident on a cathode, and electrons are emitted from the metal surface. 
         It is observed that the electrons may be prohibited from reaching the anode by applying a stopping potential of 0.72 eV.
         What is the work function of the metal in the cathode?
+
         \subsection{Solution}
+            The maximum KE of electrons emitted is equal to the electron charge times the stopping potential.
+            However, since our stopping potential value is in units of electron volts and not volts, we can assume this refers to the kinetic energy and not the stopping potential.
+            \begin{equation}
+                (KE)_{\rm max} = 0.72\,\unit{\eV}
+            \end{equation}
+
+            Plug this and the wavelength into the equation for maximum kinetic energy.
+            % \begin{equation}
+                
+            % \end{equation}
 
     \section{Problem 7}
         By how much would the stopping potential in the previous problem increase if the wavelength of the radiation were reduced to 240 nm?
