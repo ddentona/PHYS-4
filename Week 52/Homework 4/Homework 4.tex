@@ -1,0 +1,149 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{cancel}
+\usepackage{enumitem}
+\usepackage{esdiff}
+\usepackage{graphicx}
+\usepackage{siunitx}
+\usepackage{ulem}
+% \usepackage{pgfplots}
+\usepackage{wrapfig}
+
+\newcommand{\e}[1]{e^{#1}}
+\newcommand{\ei}[1]{e^{i\left(#1\right)}}
+\newcommand{\E}[1]{\times 10^{#1}}
+
+\renewcommand\qedsymbol{TENA}
+
+\title{
+    Homework \#4
+    \\  \small
+    PHYS 4D: Modern Physics
+    }
+\author{Donald Aingworth IV}
+\date{January 26, 2026}
+
+\begin{document}
+    \maketitle
+
+    \section{Questions}
+        \subsection{Question 4}
+            Denoting the wave function of a particle by $\psi(x)$, write down an expression for the probability that the particle will be found between $a$ and $b$.
+
+            % \subsubsection{Solution}
+
+        \subsection{Question 5}
+            Denoting the wave function of a particle by $\psi(x)$, write down an equation for the average value of $x$.
+
+            % \subsubsection{Solution}
+            
+        \subsection{Question 6}
+            Suppose that a particle, which is confined to move in one-dimension between 0 and $L$, is described by the wave function, $\psi(x)= Ax(L - x)$. 
+            What condition could be imposed upon the wave function $\psi(x)$ to determine the constant $A$?
+
+            % \subsubsection{Solution}
+            
+        \subsection{Question 7}
+            Suppose that a perfectly elastic ball were bouncing back and forth between two rigid walls with no gravity. 
+            Which of the variables, $p$, $|p|$, $E$, would have a constant value?
+
+            % \subsubsection{Solution}
+            
+        \subsection{Question 8}
+            Sketch the form of the wave functions corresponding to the three lowest energy levels of a particle confined to an infinite potential well.
+
+            % \subsubsection{Solution}
+            
+        \subsection{Question 10}
+            What is the value of the kinetic energy of a particle at the classical turning points of an oscillator?
+
+            % \subsubsection{Solution}
+            
+        \subsection{Question 12}
+            Suppose that a harmonic oscillator made a transition from the $n = 3$ to the $n = 2$ state. What would be the energy of the emitted photon?
+
+            % \subsubsection{Solution}
+            
+        \subsection{Question 13}
+            Describe in qualitative terms the form of the wave functions of the harmonic oscillator between the classical turning points?
+
+            % \subsubsection{Solution}
+            
+        \subsection{Question 14}
+            How does the form of the wave function of the harmonic oscillator change as x increase beyond the classical turning point.
+
+            % \subsubsection{Solution}
+            
+        \subsection{Question 18}
+            Describe the wave functions obtained by multiplying the stationary wave $A\e{ikx}$ by the function $\e{-i\omega t}$.
+
+            % \subsubsection{Solution}
+    
+    \section{Problem 3}
+        An electron in a $10\,\unit{\nano\meter}$-wide infinite well makes a transition from the $n = 3$ to the $n = 2$ state emitting a photon.
+        Calculate the energy of the photon and the wavelength of the light.
+
+        % \subsection{Solution}
+
+    \section{Problem 4}
+        Show by direct substitution that the wave function, (\ref{wave}), satisfies Eq. (\ref{2.32}) for the harmonic oscillator. 
+        Calculate the corresponding energy.
+        \begin{gather}\label{wave}
+            \psi(x)= A\e{-\frac{m\omega x^2}{2\hbar}}\\
+            \label{2.32}
+            -\diffp[2]{\psi}{x} + \left( \frac{m\omega^2 x^2}{\hbar^2} \right) \psi = \left( \frac{2mE}{\hbar^2} \right) \psi \tag{2.32}
+        \end{gather}
+
+        % \subsection{Solution}
+
+    \section{Problem 5}
+        Determine the constant A in the preceding problem by requiring that the wave function be normalized.
+        Hint: For an arbitrary value of the constant a, the integral that arises in doing this problem may be evaluated using equation (\ref{5.0}).
+        \begin{equation}\label{5.0}
+            \int_{0}^{\infty} \e{-ax^2}\,dx = \frac{1}{2} \sqrt{\frac{\pi}{a}}
+        \end{equation}
+
+        % \subsection{Solution}
+
+    \section{Problem 6}
+        A particle is described by the below wave function where $A$ and $a$ are constants.
+        \begin{equation}
+            \psi(x) = \left\{ \begin{matrix}
+                Ax\,\e{-ax},    & x > 0\\
+                0,              & x \leq 0
+            \end{matrix} \right.
+        \end{equation}
+
+        \begin{enumerate}[label=\textbf{(\alph*)}]
+            \item   Sketch the wave function.
+            \item   Use the normalization condition to determine the constant $A$.
+            \item   Find the most probable position of the particle.
+            \item   Calculate the average value of the position of the particle.
+        \end{enumerate}
+
+        % \subsection{Solution}
+
+    \section{Problem 7}
+        (a) For a particle moving in the potential well shown in Fig. 2.7, write down the Schrödinger equations for the region where $0 \leq x \leq L$ and the region where $x \geq L$. 
+        (b) Give the general form of the solution in the two regions. 
+        (c) Assuming that the potential is infinite at $x = 0$, impose boundary conditions that are natural for this problem and derive an equation that can be used to find the energy levels for the bound states.
+
+        % \subsection{Solution}
+
+    \section{Problem 8}
+        Show that the wave function of a traveling wave (\ref{2.41}) satisfies the time-dependent Schrödinger equation (\ref{2.47}).
+        \begin{gather}
+            \label{2.41} \tag{2.41} \psi(x,t) = Ae^{ikx} \cdot e^{-i\omega t}\\
+            \label{2.47} \tag{2.47} \left[ \frac{-\hbar^2}{2m}\,\diffp[2]{}{x} + V(x,t) \right] \psi(x,t) = i \hbar \diffp[2]{\psi(x,t)}{t}
+        \end{gather}
+
+        % \subsection{Solution}
+
+    \section{Problem 9}
+        Show how the wave function of the even states of a particle in an infinite well extending from $x = -L/2$ to $x = L/2$ evolve in time.
+
+        % \subsection{Solution}
+
+\end{document}
