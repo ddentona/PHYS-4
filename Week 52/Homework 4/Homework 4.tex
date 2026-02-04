@@ -32,7 +32,12 @@
         \subsection{Question 4}
             Denoting the wave function of a particle by $\psi(x)$, write down an expression for the probability that the particle will be found between $a$ and $b$.
 
-            % \subsubsection{Solution}
+            \subsubsection{Solution}
+                Use an integral and the relationship between $\psi(x)$ and probability.
+                $\psi^\star(x)$ denotes the complex conjugate of $\psi(x)$.
+                \begin{equation}
+                    P(a < x < b) = \int_{a}^{b} \psi^\star(x) \psi(x)\,dx
+                \end{equation}
 
         \subsection{Question 5}
             Denoting the wave function of a particle by $\psi(x)$, write down an equation for the average value of $x$.
@@ -83,12 +88,40 @@
     
     \section{Problem 3}
         An electron in a $10\,\unit{\nano\meter}$-wide infinite well makes a transition from the $n = 3$ to the $n = 2$ state emitting a photon.
-        Calculate the energy of the photon and the wavelength of the light.
+        Calculate (a) the energy of the photon and (b) the wavelength of the light.
 
-        % \subsection{Solution}
+        \subsection{Solution (a)}
+            The equation of the energy in a well is given in equation (2.17).
+            \begin{equation}
+                \label{2.17} \tag{2.17} E = \frac{n^2 h^2}{8mL^2}
+            \end{equation}
 
+            This can be used to calculate the change in energy.
+            \begin{align}
+                \Delta E    &=  E_2 - E_3
+                    =   \frac{2^2 h^2}{8mL^2} - \frac{3^2 h^2}{8mL^2}
+                    =   (2^2 - 3^2)\frac{h^2}{8mL^2}\\
+                    &=  -5\frac{h^2}{8mL^2}
+                    =   -\frac{5 * (6.626\E{-34})^2}{8 (9.109\E{-31}) (10\E{-9})^2}\\
+                    &=  -3.01\E{-21}\,\unit{\joule}
+            \end{align}
+
+            The energy of the photon would be the negative of this.
+            \begin{equation}
+                E_{\rm photon} = -\Delta E = \boxed{3.01\E{-21}\,\unit{\joule}}
+            \end{equation}
+
+        \subsection{Solution (b)}
+            Turn energy to wavelength.
+            \begin{equation}
+                \lambda =   \frac{hc}{E}
+                    =   \frac{1.986\E{-25}\,\unit{\joule\cdot\meter}}{3.01\E{-21}\,\unit{\joule}}
+                    =   \boxed{65.9\,\unit{\micro\meter}}
+            \end{equation}
+    \pagebreak
+    
     \section{Problem 4}
-        Show by direct substitution that the wave function, (\ref{wave}), satisfies Eq. (\ref{2.32}) for the harmonic oscillator. 
+        Show by direct substitution that the wave function (\ref{wave}) satisfies Eq. (\ref{2.32}) for the harmonic oscillator. 
         Calculate the corresponding energy.
         \begin{gather}\label{wave}
             \psi(x)= A\e{-\frac{m\omega x^2}{2\hbar}}\\
