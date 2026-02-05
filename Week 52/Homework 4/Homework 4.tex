@@ -169,7 +169,7 @@
         Show that the wave function of a traveling wave (\ref{2.41}) satisfies the time-dependent Schrödinger equation (\ref{2.47}).
         \begin{gather}
             \label{2.41} \tag{2.41} \psi(x,t) = Ae^{ikx} \cdot e^{-i\omega t}\\
-            \label{2.47} \tag{2.47} \left[ \frac{-\hbar^2}{2m}\,\diffp[2]{}{x} + V(x,t) \right] \psi(x,t) = i \hbar \diffp[2]{\psi(x,t)}{t}
+            \label{2.47} \tag{2.47} \left[ \frac{-\hbar^2}{2m}\,\diffp[2]{}{x} + V(x,t) \right] \psi(x,t) = i \hbar \diffp{\psi(x,t)}{t}
         \end{gather}
 
         % \subsection{Solution}
@@ -177,6 +177,52 @@
     \section{Problem 9}
         Show how the wave function of the even states of a particle in an infinite well extending from $x = -L/2$ to $x = L/2$ evolve in time.
 
-        % \subsection{Solution}
+        \subsection{Solution}
+            There exist three sectons we can use for the potential energy of the particle.
+            \begin{equation}
+                V(x)    =   \left\{ \begin{matrix}
+                    \infty  & x > \frac{L}{2}\\
+                    0       & -\frac{L}{2} \leq x \leq \frac{L}{2}\\
+                    \infty  & x < -\frac{L}{2}
+                \end{matrix} \right.
+            \end{equation}
 
+            The central prong of this is what interests us.
+            It gives us a version of the Schrödinger time-dependant Equation where $V = 0$.
+            \begin{equation}
+                \label{9.2}
+                -\frac{\hbar^2}{2m} \diffp[2]{\psi}{x} = i\hbar\diffp{\psi}{t}
+            \end{equation}
+
+            % We can solve this differential equation pretty easily.
+            % It's exponential, so we can describe it in those terms, in the form of a traveling wave.
+            % \begin{gather}
+            %     \psi = A\ei{kx - \omega t}\\
+            %     \diffp{\psi}{t} = -i\omega A\ei{kx - \omega t}\\
+            %     \diffp[2]{\psi}{x} = -k^2 A\ei{kx - \omega t}
+            % \end{gather}
+
+            % Knowing these, we compare these to our values in Schrödinger's Time-Dependant Equation (\ref{9.2}) to get values of $k$ and $\omega$.
+            % \begin{gather}
+            %     \tag{\ref{9.2}}
+            %     -\frac{\hbar^2}{2m} \diffp[2]{\psi}{x} = i\hbar\diffp{\psi}{t}\\
+            %     \left( -\frac{\hbar^2}{2m} \right) \left( -k^2 A\ei{kx - \omega t} \right) = (i\hbar)\left( -i\omega A\ei{kx - \omega t} \right)\\ \label{9.7}
+            %     \left( \frac{\hbar^{\cancel{2}}}{2m} \right) \left( k^2 \cancel{A\ei{kx - \omega t}} \right) = \cancel{\hbar}\left( \omega \cancel{A\ei{kx - \omega t}} \right) \\
+            %     \frac{\hbar k^2}{2m} = \omega
+            % \end{gather}
+
+            % There are plenty of ways to solve this, but to keep ths simple, let's bring this back to slightly after (\ref{9.7}).
+            % Only cancel out the exponetial and the constant $A$.
+            % \begin{gather}
+            %     \tag{\ref{9.7}}
+            %     \left( \frac{\hbar^{2}}{2m} \right) \left( k^2 \cancel{A\ei{kx - \omega t}} \right) = \hbar\left( \omega \cancel{A\ei{kx - \omega t}} \right)\\
+            %     k^2 \frac{\hbar^2}{2m} = \hbar\omega
+            % \end{gather}
+
+            % We can generate potential values of $\omega$ and $k$.
+            % \begin{gather}
+            %     k = \frac{\sqrt{2m}}{\hbar}\\
+            %     \omega = \frac{1}{\hbar}\\
+            %     \psi = A\ei{\frac{\sqrt{2m}}{\hbar}x - \frac{1}{\hbar} t}
+            % \end{gather}
 \end{document}
