@@ -112,7 +112,7 @@
             \subsubsection{Solution}
                 I used Desmos to make the below image. 
                 The lowest energy level is in \textcolor{teal}{green}, second lowest in \textcolor{orange}{orange}, and third lowest in \textcolor{violet}{purple}.\\
-                \includegraphics[width=\textwidth]{Images/P8.png}
+                \includegraphics[width=\textwidth]{Images/Q8.png}
             \pagebreak
             
         \subsection{Question 10}
@@ -282,7 +282,64 @@
             \item   Calculate the average value of the position of the particle.
         \end{enumerate}
 
-        % \subsection{Solution}
+        \subsection{Solution (a)}
+            Here's a Desmos picture I made of it.\\
+            \includegraphics[width=\textwidth]{Images/P6a.png}
+
+        \subsection{Solution (b)}
+            I'm going to normalize it over the span of $[0,\infty)$.
+            Since it's equal to zero at all ponts, we don't need to consider the span of $(-\infty,0)$.
+            Here, $\psi$ is its own complex conjugate. 
+            \begin{align}
+                \tag{\ref{pdf}}
+                1   &=  \int_{-\infty}^{\infty} \psi^\star(x) \psi(x)\,dx\\
+                1   &=  \int_{0}^{\infty} \psi(x)^2\,dx
+                    =   \int_{0}^{\infty} A^2 x^2\,\e{-2ax}\,dx
+                    =   A^2 \int_{0}^{\infty} x^2\,\e{-2ax}\,dx\\
+                    &   \left[ \begin{matrix} u = x^2 & du = 2x \\ v = -\frac{1}{2a}\e{-2ax} & dv = \e{-2ax} \end{matrix} \right]\\
+                \frac{1}{A^2}   &=  -\frac{x^2\e{-2ax}}{2a} - \int_{0}^{\infty} -\frac{2x}{2a}\e{-2ax}\,dx
+                    =   -\frac{x^2\e{-2ax}}{2a} + \int_{0}^{\infty} \frac{x}{a}\e{-2ax}\,dx\\
+                    &   \left[ \begin{matrix} u = x & du = 1 \\ v = -\frac{1}{2a^2}\e{-2ax} & dv = \frac{1}{a}\e{-2ax} \end{matrix} \right]\\
+                    &=  -\frac{x^2\e{-2ax}}{2a} - \frac{x}{2a^2}\e{-2ax} + \int_{0}^{\infty} \frac{1}{2a^2}\e{-2ax}\,dx\\
+                    &=  \left[ -\frac{x^2\e{-2ax}}{2a} - \frac{x\e{-2ax}}{2a^2} - \frac{\e{-2ax}}{4a^3} \right]_0^\infty
+            \end{align}
+
+            This is getting a bit big, so I'm just going to outsource this to Halliday and Resnick's Physics textbook, which has a citable integral for this in its Appendix E (10th Edition).
+            \begin{equation}\label{gamma} \tag{E.15}
+                \int_{0}^{\infty} x^n \e{-ax}\,dx = \frac{n!}{a^{n + 1}}
+            \end{equation}
+
+            We can use this for $n = 2$ and $a = 2a$.
+            \begin{gather}
+                \frac{1}{A^2}   =  \int_{0}^{\infty} x^2\,\e{-2ax}\,dx
+                    =   \frac{2!}{8a^3}\\
+                \boxed{A = \sqrt{4a^3}}
+            \end{gather}
+
+        \subsection{Solution (c)}
+            The most probable value is the maximum point of the graph, which we can fnd ourselves by first taking the derivative of $\psi$.
+            \begin{equation}
+                \diff{\psi}{x} = A \left( \e{-ax} - ax\e{-ax} \right)
+                    =   A \e{-ax} \left( 1 - ax \right)
+            \end{equation}
+
+            The only point where this would be equal to zero is when \boxed{x = \frac{1}{a}}.
+
+        \subsection{Solution (d)}
+            Recall Equation (\ref{2.21}) from Question 5.
+            \begin{equation}
+                \tag{\ref{2.21}}
+                \left\langle x \right\rangle = \int_{-\infty}^{\infty} x \left| \psi(x) \right|^2\,dx
+            \end{equation}
+
+            This is adaptable to our value of $\psi$.
+            We use equation (\ref{gamma}) here again, like how we used it in part (b).
+            We ignore the range of $(-\infty,0)$ for the same reason as in part (b).
+            \begin{align}
+                \left\langle x \right\rangle    &= \int_{0}^{\infty} x^3 A^2 \e{-2ax}\,dx
+                    =   A^2 \frac{3!}{16a^4}
+                    =   \boxed{\frac{3A^2}{8a^4}}
+            \end{align}
 
     \section{Problem 7}
         (a) For a particle moving in the potential well shown in Fig. 2.7, write down the Schrödinger equations for the region where $0 \leq x \leq L$ and the region where $x \geq L$. 
