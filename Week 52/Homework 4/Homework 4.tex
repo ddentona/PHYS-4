@@ -6,6 +6,7 @@
 \usepackage{enumitem}
 \usepackage{esdiff}
 \usepackage{graphicx}
+\usepackage{multicol}
 \usepackage{siunitx}
 \usepackage{ulem}
 % \usepackage{pgfplots}
@@ -340,13 +341,98 @@
                     =   A^2 \frac{3!}{16a^4}
                     =   \boxed{\frac{3A^2}{8a^4}}
             \end{align}
+        \pagebreak
 
     \section{Problem 7}
-        (a) For a particle moving in the potential well shown in Fig. 2.7, write down the Schrödinger equations for the region where $0 \leq x \leq L$ and the region where $x \geq L$. 
+        \begin{wrapfigure}{r}{0.33\textwidth}
+            \includegraphics[width=0.9\linewidth]{Images/Fig 2-7.png}
+            \caption[2.7]{Potential Well}
+            \label{fig:2.7}
+        \end{wrapfigure}
+        (a) For a particle moving in the potential well shown in Figure \ref{fig:2.7}, write down the Schrödinger equations for the region where $0 \leq x \leq L$ and the region where $x \geq L$. 
         (b) Give the general form of the solution in the two regions. 
         (c) Assuming that the potential is infinite at $x = 0$, impose boundary conditions that are natural for this problem and derive an equation that can be used to find the energy levels for the bound states.
 
-        % \subsection{Solution}
+        \subsection{Solution (a)}
+            Recall Schrödinger's time-independent equation.
+            \begin{equation}
+                \label{eq:71} \tag{71}
+                -\frac{\hbar^2}{2m}\,\diffp[2]{\psi}{x} + V(x)\,\psi = E\,\psi
+            \end{equation}
+            
+            This can be applied for both cases of the value of $V(x)$.
+
+            \subsubsection{$0 \leq x \leq L$}
+                Within this boundary, $V = 0$.
+                We can plug it into (\ref{eq:71}).
+                \begin{gather}
+                    \boxed{-\frac{\hbar^2}{2m}\,\diffp[2]{\psi}{x} = E\,\psi}
+                \end{gather}
+
+            \subsubsection{$x \geq L$}
+                Do the same for $V = V_0$.
+                \begin{equation}
+                    \boxed{-\frac{\hbar^2}{2m}\,\diffp[2]{\psi}{x} + V_0\,\psi = E\,\psi}
+                \end{equation}
+
+        \subsection{Solution (b)}
+            This would also be separated into areas.
+            I will be finding solutions using exponentials.
+
+            \subsubsection{$0 \leq x \leq L$}
+                Start with the equation we found in part (a).
+                \begin{gather}
+                    -\frac{\hbar^2}{2m}\,\diffp[2]{\psi}{x} = E\,\psi
+                \end{gather}
+
+                Solve for $\diffp[2]{\psi}{x}$.
+                \begin{gather}
+                    \diffp[2]{\psi}{x} = -\frac{2mE}{\hbar^2}\,\psi
+                        =   \left( i \frac{\sqrt{2mE}}{\hbar} \right)^2\,\psi
+                \end{gather}
+
+                This can be placed into an exponential.
+                \begin{align} \label{eq:7.b.3}
+                    \boxed{\psi = A\e{i \frac{\sqrt{2mE}}{\hbar} x}}
+                \end{align}
+
+            \subsubsection{$x \geq L$}
+                Start with the equation from part (a).
+                \begin{equation}
+                    -\frac{\hbar^2}{2m}\,\diffp[2]{\psi}{x} + V_0\,\psi = E\,\psi
+                \end{equation}
+
+                Collect all $\psi$ and solve for $\diffp[2]{\psi}{x}$.
+                \begin{gather}
+                    -\frac{\hbar^2}{2m}\,\diffp[2]{\psi}{x} = (E - V_0)\,\psi\\
+                    \diffp[2]{\psi}{x} = -\frac{2m(E - V_0)}{\hbar^2}\,\psi
+                        =   \frac{\sqrt{2m(V_0 - E)}}{\hbar}\,\psi
+                \end{gather}
+
+                This can be placed into an exponential.
+                \begin{align}
+                    \boxed{\psi = A\e{\frac{\sqrt{2m(V_0 - E)}}{\hbar} x}}
+                \end{align}
+
+                Note that this could be a complex exponential, dependant on whether $V_0 - E$ is positive or negative.
+                It is equivalent to (\ref{eq:7.b.3}) when $V_0 = 0$.
+
+        \subsection{Solution (c)}
+            If the potential is infinite at $x = 0$, that means there is no chance in hell that the particle will be found there.
+            We can put this as an inital condition.
+            \begin{equation}\label{eq:7.c.ic0}
+                \psi(0) = 0
+            \end{equation}
+
+            We can find a specific solution to $\psi$ with the initial condition of (\ref{eq:7.c.ic0}).
+            \begin{align}
+                \psi(0) = 0 &=  A\e{\frac{\sqrt{2m(V_0 - E)}}{\hbar} * 0} + c\\
+                c   &=  -A\e{0} = -A\\
+                & \boxed{\psi(x) = A\e{\frac{\sqrt{2m(V_0 - E)}}{\hbar} x} - A}
+            \end{align}
+
+            There appears to be no indication of what $\diffp{\psi}{x}$ is at $x = 0$.
+        \pagebreak
 
     \section{Problem 8}
         Show that the wave function of a traveling wave (\ref{2.41}) satisfies the time-dependent Schrödinger equation (\ref{2.47}).
@@ -355,7 +441,59 @@
             \label{2.47} \tag{2.47} \left[ \frac{-\hbar^2}{2m}\,\diffp[2]{}{x} + V(x,t) \right] \psi(x,t) = i \hbar \diffp{\psi(x,t)}{t}
         \end{gather}
 
-        % \subsection{Solution}
+        \subsection{Solution}
+            \begin{proof}[Show]
+                Take the first derivative of (\ref{2.41}) with respect to $t$, and the second derivative with respect to $x$.
+                \begin{align}
+                    \diffp{\psi}{t} &=  -i\omega Ae^{ikx} \cdot e^{-i\omega t}
+                        =   -i\omega\psi\\
+                    \diffp[2]{\psi}{x}  &=  -k^2 Ae^{ikx} \cdot e^{-i\omega t}
+                        =   -k^2 \psi
+                \end{align}
+    
+                We can plug these into (\ref{2.47}).
+                \begin{gather}
+                    \frac{-\hbar^2}{2m}\,(-k^2) \psi + V(x,t) \psi = i \hbar (-i\omega) \psi\\
+                    \frac{\hbar^2 k^2}{2m} + V(x,t) = \hbar\omega \label{8.4}
+                \end{gather}
+    
+                Recall a handful of equations involving both values in (\ref{8.4}) and $2\pi$.
+                \begin{multicols}{3}
+                    \begin{equation}
+                        \hbar = \frac{h}{2\pi}
+                    \end{equation}
+    
+                    \begin{equation}
+                        k = \frac{2\pi}{\lambda}
+                    \end{equation}
+    
+                    \begin{equation}
+                        \omega = 2\pi f
+                    \end{equation}
+                \end{multicols}
+    
+                We can plug all of these into (\ref{8.4}).
+                \begin{gather}
+                    \frac{\left( \frac{h}{2\pi} \right)^2 \left( \frac{2\pi}{\lambda} \right)^2}{2m} + V(x,t) = \frac{h}{2\pi} * 2\pi f\\ \notag
+                    \frac{\left( \frac{h}{\cancel{2\pi}} \right)^2 \left( \frac{\cancel{2\pi}}{\lambda} \right)^2}{2m} + V(x,t) = \frac{h}{\cancel{2\pi}} * \cancel{2\pi} f\\
+                    \frac{h^2}{2m\lambda^2} + V(x,t) = hf \label{8.8}
+                \end{gather}
+    
+                To proceed, we recall Planck's relation and De Broglie's relation.
+                \begin{gather}
+                    E = hf\\
+                    \lambda = \frac{h}{p} \to p = \frac{h}{\lambda}
+                \end{gather}
+    
+                These can be plugged into (\ref{8.8}).
+                \begin{gather}
+                    \frac{p^2}{2m} + V(x,t) = E\\
+                    K + V(x,t) = E
+                \end{gather}
+    
+                Unless there's a new kind of energy that is not potential or kinetic, this we know is true.
+            \end{proof}
+        \pagebreak
 
     \section{Problem 9}
         Show how the wave function of the even states of a particle in an infinite well extending from $x = -L/2$ to $x = L/2$ evolve in time.
