@@ -259,12 +259,21 @@
                     =   A^2 \int_{-\infty}^{\infty} \e{-\frac{m\omega x^2}{\hbar}}\,dx
             \end{gather}
 
+            Also update Equation (\ref{5.0}) to cover twice the area ($\e{-ax^2}$ is symmetric about the y-axis).
+            \begin{align}
+                \int_{-\infty}^{\infty} \e{-\frac{m\omega x^2}{\hbar}}\,dx  
+                    &=  \int_{0}^{\infty} \e{-\frac{m\omega x^2}{\hbar}}\,dx + \int_{-\infty}^{0} \e{-\frac{m\omega x^2}{\hbar}}\,dx\\
+                    &=  \int_{0}^{\infty} \e{-\frac{m\omega x^2}{\hbar}}\,dx + \int_{0}^{\infty} \e{-\frac{m\omega x^2}{\hbar}}\,dx\\
+                    &=  2 \int_{0}^{\infty} \e{-\frac{m\omega x^2}{\hbar}}\,dx
+                    =   \sqrt{\frac{\pi}{a}}
+            \end{align}
+
             With $a = \frac{m\omega}{\hbar}$, we can use ($\ref{5.0}$).
             \begin{gather}
-                1   =   A^2 * \frac{1}{2} \sqrt{\frac{\pi}{\frac{m\omega}{\hbar}}}
-                    =   A^2 \sqrt{\frac{\pi\hbar}{4m\omega}}\\
-                A^2 =   \sqrt{\frac{4m\omega}{\pi\hbar}} \to
-                \boxed{A = \sqrt[4]{\frac{4m\omega}{\pi\hbar}}}
+                1   =   A^2 * \sqrt{\frac{\pi}{\frac{m\omega}{\hbar}}}
+                    =   A^2 \sqrt{\frac{\pi\hbar}{m\omega}}\\
+                A^2 =   \sqrt{\frac{m\omega}{\pi\hbar}} \to
+                \boxed{A = \sqrt[4]{\frac{m\omega}{\pi\hbar}}}
             \end{gather}
 
     \section{Problem 6}
@@ -514,6 +523,37 @@
                 \label{9.2}
                 -\frac{\hbar^2}{2m} \diffp[2]{\psi}{x} = i\hbar\diffp{\psi}{t}
             \end{equation}
+
+            There exists an equation that can convert us from the time-dependant to the time-independent equation involving the energy.
+            \begin{equation}
+                \psi(x,t) = u_E(x)\e{-i\frac{E}{\hbar}t}
+            \end{equation}
+
+            This can be used with the equation for energy from quantum numbers.
+            \begin{gather}
+                E = \frac{n^2 \pi^2 \hbar^2}{2mL^2}\\
+                \frac{E}{\hbar} = \frac{n^2 \pi^2 \hbar}{2mL^2} = \frac{n^2 \pi h}{4mL^2}\\ 
+                \psi(x,t,n) = u_E(x)\e{-i\frac{n^2 \pi h}{4mL^2}t} \label{9.6}
+            \end{gather}
+
+            We can plug in even values of $n \in \mathbb{N}$.
+            \begin{align}
+                \psi(x,t,2) &=  u_E(x)\e{-i\frac{4 \pi h}{4mL^2}t}  =   u_E(x)\e{-i\frac{\pi h}{mL^2}t}\\
+                \psi(x,t,4) &=  u_E(x)\e{-i\frac{16 \pi h}{4mL^2}t} =   u_E(x)\e{-i\frac{4 \pi h}{mL^2}t}\\
+                \psi(x,t,6) &=  u_E(x)\e{-i\frac{36 \pi h}{4mL^2}t} =   u_E(x)\e{-i\frac{9 \pi h}{mL^2}t}
+            \end{align}
+
+            We can next recall the solutions to even numbered wave functions from earlier in the chapter.
+            \begin{equation}
+                u_E (x) = \psi(x) = \sqrt{\frac{2}{L}} \cos\left( \frac{n\pi x}{L} \right)
+            \end{equation}
+
+            Plug that into our above equation (\ref{9.6}). 
+            \begin{gather}
+                \psi(x,t,n) = \sqrt{\frac{2}{L}} \cos\left( \frac{n\pi x}{L} \right) \e{-i\frac{n^2 \pi h}{4mL^2}t}
+            \end{gather}
+
+            This is pretty much a solution to it and how it would evolve.
 
             % We can solve this differential equation pretty easily.
             % It's exponential, so we can describe it in those terms, in the form of a traveling wave.
