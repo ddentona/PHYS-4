@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.8.23)  9 FEB 2026 08:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.8.23)  9 FEB 2026 19:09
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"c:/Users/ddent/OneDrive/Documents/CCSF/PHYS-4/Week 52/Homework 4/Homework 4.tex"
-(c:/Users/ddent/OneDrive/Documents/CCSF/PHYS-4/Week 52/Homework 4/Homework 4.tex
+**"c:/Users/ddent/OneDrive/Documents/CCSF/PHYS-4/Week 53/Homework 5/Homework 5.tex"
+(c:/Users/ddent/OneDrive/Documents/CCSF/PHYS-4/Week 53/Homework 5/Homework 5.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
 (C:\Users\ddent\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
@@ -303,8 +303,8 @@ Package translations Info: No language package found. I am going to use `english
 File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count302
 \l__pdf_internal_box=\box114
-) (Homework 4.aux)
-\openout1 = `"Homework 4.aux"'.
+) (Homework 5.aux)
+\openout1 = `"Homework 5.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
 LaTeX Font Info:    ... okay on input line 30.
@@ -351,42 +351,38 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 31.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
-{C:/Users/ddent/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2]
-<Images/Q8.png, id=19, 1140.26pt x 502.87875pt>
-File: Images/Q8.png Graphic file (type png)
-<use Images/Q8.png>
-Package pdftex.def Info: Images/Q8.png  used on input line 116.
-(pdftex.def)             Requested size: 390.0pt x 171.99706pt.
- [3 <./Images/Q8.png>] [4] [5] [6] [7] [8]
-<Images/P6a.png, id=46, 1061.9675pt x 381.425pt>
-File: Images/P6a.png Graphic file (type png)
-<use Images/P6a.png>
-Package pdftex.def Info: Images/P6a.png  used on input line 297.
-(pdftex.def)             Requested size: 390.0pt x 140.07742pt.
- [9] [10 <./Images/P6a.png>] [11]
-<Images/Fig 2-7.png, id=57, 338.26375pt x 203.76125pt>
-File: Images/Fig 2-7.png Graphic file (type png)
-<use Images/Fig 2-7.png>
-Package pdftex.def Info: Images/Fig 2-7.png  used on input line 357.
-(pdftex.def)             Requested size: 115.82985pt x 69.77225pt.
- [12 <./Images/Fig 2-7.png>] [13] [14] [15] [16] [17] [18] (Homework 4.aux)
+{C:/Users/ddent/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
+LaTeX Font Info:    Trying to load font information for OT1+qcr on input line 103.
+ (C:\Users\ddent\AppData\Local\Programs\MiKTeX\tex/latex/tex-gyre\ot1qcr.fd
+File: ot1qcr.fd 2009/09/25 v1.2 font definition file for OT1/qcr
+)
+Underfull \hbox (badness 7704) in paragraph at lines 111--113
+\OT1/cmr/m/n/10.95 Suppose a dif-fer-en-tial equa-tion is
+ []
+
+
+Underfull \hbox (badness 7238) in paragraph at lines 111--113
+\OT1/qcr/m/n/10.95 linspace(0.0,10.0,10)\OT1/cmr/m/n/10.95 . How
+ []
+
+[2{C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/tex-gyre/q-rmm.enc}] [3] (Homework 5.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 8335 strings out of 474486
- 187050 string characters out of 5743755
- 1943542 words of memory out of 5000000
- 30545 multiletter control sequences out of 15000+600000
- 568599 words of font info for 76 fonts, out of 8000000 for 9000
+ 8316 strings out of 474486
+ 186788 string characters out of 5743755
+ 1935542 words of memory out of 5000000
+ 30523 multiletter control sequences out of 15000+600000
+ 567909 words of font info for 74 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 73i,21n,80p,319b,612s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\ddent\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/latxfont/line10.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on "Homework 4.pdf" (18 pages, 617380 bytes).
+ 73i,6n,80p,294b,530s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/tex-gyre/qcrr.pfb>
+Output written on "Homework 5.pdf" (3 pages, 152726 bytes).
 PDF statistics:
- 157 PDF objects out of 1000 (max. 8388607)
+ 73 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,0 +1,139 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{cancel}
+\usepackage{enumitem}
+\usepackage{esdiff}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{siunitx}
+\usepackage{ulem}
+% \usepackage{pgfplots}
+\usepackage{wrapfig}
+\usepackage{xcolor}
+
+\newcommand{\e}[1]{e^{#1}}
+\newcommand{\ei}[1]{e^{i\left(#1\right)}}
+\newcommand{\E}[1]{\times 10^{#1}}
+
+\renewcommand\qedsymbol{TENA}
+
+\title{
+    Homework \#5
+    \\  \small
+    PHYS 4D: Modern Physics
+    }
+\author{Donald Aingworth IV}
+% \date{January 26, 2026}
+
+\begin{document}
+    \maketitle
+
+    \section{Questions}
+    \begin{multicols}{2}
+        \small
+        \subsection{Question 1}
+            Give the operators corresponding to the momentum and energy of a particle.
+
+            \subsubsection{Solution}
+                \begin{equation}
+                    \hat{p} = -i \hbar \diffp{}{x};
+                    \hat{H} = -\frac{\hbar^2}{2m} \diffp[2]{}{t} + V(x,t)
+                \end{equation}
+        
+        \subsection{Question 2}
+            Give the general form of an eigenvalue equation.
+
+            \subsubsection{Solution}
+                For operator $\hat{A}$, eigenfunction $\psi$, and eignenvalue $A$.
+                \begin{equation}
+                    \hat{A}\psi = A\psi
+                \end{equation}
+
+        \subsection{Question 3}
+            What significance do the eigenvalues have?
+
+            \subsubsection{Solution}
+                The eigenvalue is the formula for or value of the component being searched for within the bounds of the eigenfunction.
+
+        \subsection{Question 4}
+            What significance do the eigenfunctions have?
+                
+            \subsubsection{Solution}
+                The eigenfunctions serve as the conditions governing the system.
+
+        \subsection{Question 5}
+            Write down the momentum eigenvalue equation.
+            
+            \subsubsection{Solution}
+                Ths is a \textit{solved} momentum eigenvalue equation.
+                \begin{equation}
+                    -i \hbar \diffp{}{x} \psi = \hbar k \psi
+                \end{equation}
+
+        \subsection{Question 6}
+            Is the function $\cos(kx)$ an eigenfunction of the momentum operator?
+
+            \subsubsection{Solution}
+                No. 
+                The first derivative of $\cos(kx)$ is $-k\sin(kx)$, which does not contain $\cos(kx)$ to the point that the sets of terms in the two equations are practically disjoint.
+
+        \subsection{Question 7}
+            Is the function $\cos(kx)$ an eigenfunction of the operator corresponding to the kinetic energy?
+
+        \subsection{Question 8}
+            An electron is described by the wave function $\phi(x)=Ae^{i \alpha x}$, where $\alpha$ denotes the Greek letter alpha. What is the momentum of the electron?
+
+        \subsection{Question 9}
+            How would you determine whether or not a particular wave function represented a state of the system having a definite value of the momentum?
+
+        \subsection{Question 10}
+            Calculate the dot product of the following two vectors.
+            \begin{equation}
+                A = \begin{pmatrix} 4 \\ 3 \\ 2 \\ 1 \end{pmatrix}; 
+                B = \begin{pmatrix} 1 \\ 1 \\ 2 \\ 2 \end{pmatrix}
+            \end{equation}
+
+        \subsection{Question 11}
+            For the two vectors, A and B, given in the preceding question, evaluate matrix multiplication $BA$ and from there $A \cdot BA$.
+
+        \subsection{Question 12}
+            Suppose a function f(x) is defined in an interval between 0 and 10 and an equally spaced grid is created by the command,\\
+                {\fontfamily{qcr}\selectfont x = linspace(0.0,10.0,10)}
+            and suppose the values of the function at the two Gauss quadrature points, $\xi_{i1}$ and $\xi_{i2}$, within each interval are known.
+            Write down a formula for determining the value of the following integral in terms of the values of the function at the Gauss points.
+            \begin{equation}
+                \int_{0}^{10} f(x)\,dx
+            \end{equation}
+
+        \subsection{Question 13}
+            Suppose a differential equation is solved using spline collocation on a grid created by the command {\fontfamily{qcr}\selectfont x = linspace(0.0,10.0,10)}.
+            How many rows and columns do the A, B, and C matrices have?
+
+        \subsection{Question 14}
+            Sketch the wave function for an electron incident upon a potential step when the energy $E$ of the electron is greater than the step height $V_0$.
+
+        \subsection{Question 15}
+            Sketch the wave function for an electron incident upon a potential step when the energy $E$ of the electron is less than the step height $V_0$.
+
+        \subsection{Question 16}
+            Is the wavelength of a particle that has passed over a potential barrier greater than or less than the wavelength of the incident particle?
+
+        \subsection{Question 17}
+            Sketch the wave function of an electron which tunnels through a potential barrier located between 0 and L.
+
+        \subsection{Question 18}
+            Write down the Heisenberg uncertainty relations for the position and the momentum and for the time and the energy.
+
+        \subsection{Question 19}
+            Use the Heisenberg relation for the time and the energy to describe how the energy profile of an excited atomic state depends upon the lifetime of the state.
+
+        \subsection{Question 20}
+            How would the wave function $\psi(x)$ of a particle change as the width of the Fourier transform increases?
+
+        \subsection{Question 21}
+            Suppose that a particle localized between a and b is described by the wave function $\psi(x)$. Write down an equation for the average value of the kinetic energy of the particle.
+            
+    \end{multicols}
+\end{document}

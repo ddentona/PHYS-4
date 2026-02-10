@@ -1,7 +1,7 @@
-PWD c:\Users\ddent\OneDrive\Documents\CCSF\PHYS-4\Week 52\Homework 4
+PWD c:\Users\ddent\OneDrive\Documents\CCSF\PHYS-4\Week 53\Homework 5
 INPUT C:\Users\ddent\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Users\ddent\OneDrive\Documents\CCSF\PHYS-4\Week 52\Homework 4\Homework 4.tex
-OUTPUT Homework 4.log
+INPUT c:\Users\ddent\OneDrive\Documents\CCSF\PHYS-4\Week 53\Homework 5\Homework 5.tex
+OUTPUT Homework 5.log
 INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\tex\latex\base\size12.clo
@@ -78,10 +78,10 @@ INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\tex\latex\graphics\mathcolor.
 INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\tex\latex\graphics\color.sty
 INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
 INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
-INPUT .\Homework 4.aux
-INPUT .\Homework 4.aux
-INPUT Homework 4.aux
-OUTPUT Homework 4.aux
+INPUT .\Homework 5.aux
+INPUT .\Homework 5.aux
+INPUT Homework 5.aux
+OUTPUT Homework 5.aux
 INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
@@ -115,9 +115,10 @@ INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\sym
 INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr17.tfm
 INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
 INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
+INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
 INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr8.tfm
 INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr6.tfm
-INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi12.tfm
+INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi10.tfm
 INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi8.tfm
 INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi6.tfm
 INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy10.tfm
@@ -132,45 +133,21 @@ INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\sym
 INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
-INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
-OUTPUT Homework 4.pdf
+INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmti10.tfm
+OUTPUT Homework 5.pdf
 INPUT C:\Users\ddent\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
-INPUT .\Images\Q8.png
-INPUT .\Images\Q8.png
-INPUT .\Images\Q8.png
-INPUT .\Images\Q8.png
-INPUT .\Images\Q8.png
-INPUT .\Images\Q8.png
-INPUT .\Images\Q8.png
-INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\tcrm1200.tfm
-INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\tcrm0800.tfm
-INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\tcrm0600.tfm
-INPUT .\Images\P6a.png
-INPUT .\Images\P6a.png
-INPUT .\Images\P6a.png
-INPUT .\Images\P6a.png
-INPUT .\Images\P6a.png
-INPUT .\Images\P6a.png
-INPUT .\Images\P6a.png
-INPUT .\Images\Fig 2-7.png
-INPUT .\Images\Fig 2-7.png
-INPUT .\Images\Fig 2-7.png
-INPUT .\Images\Fig 2-7.png
-INPUT .\Images\Fig 2-7.png
-INPUT .\Images\Fig 2-7.png
-INPUT .\Images\Fig 2-7.png
-INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmti12.tfm
-INPUT Homework 4.aux
-INPUT C:\Users\ddent\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1200.pk
-INPUT C:\Users\ddent\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1200.pk
+INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\tex\latex\tex-gyre\ot1qcr.fd
+INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\tex\latex\tex-gyre\ot1qcr.fd
+INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\tex\latex\tex-gyre\ot1qcr.fd
+INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\tfm\public\tex-gyre\rm-qcrr.tfm
+INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\tex-gyre\q-rmm.enc
+INPUT Homework 5.aux
 INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
 INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
 INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmex10.pfb
 INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmex10.pfb
-INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi12.pfb
-INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi12.pfb
-INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi6.pfb
-INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi6.pfb
+INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi10.pfb
+INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi10.pfb
 INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi8.pfb
 INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi8.pfb
 INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr10.pfb
@@ -179,21 +156,13 @@ INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\c
 INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr12.pfb
 INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr17.pfb
 INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr17.pfb
-INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr6.pfb
-INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr6.pfb
 INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr8.pfb
 INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr8.pfb
 INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
 INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
-INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy6.pfb
-INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy6.pfb
-INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy8.pfb
-INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy8.pfb
-INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmti12.pfb
-INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmti12.pfb
-INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\latxfont\line10.pfb
-INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\latxfont\line10.pfb
+INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmti10.pfb
+INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmti10.pfb
 INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\symbols\msbm10.pfb
 INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\symbols\msbm10.pfb
-INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\symbols\msbm7.pfb
-INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\symbols\msbm7.pfb
+INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\type1\public\tex-gyre\qcrr.pfb
+INPUT C:\Users\ddent\AppData\Local\Programs\MiKTeX\fonts\type1\public\tex-gyre\qcrr.pfb
