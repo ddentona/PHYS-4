@@ -31,12 +31,12 @@
     \maketitle
 
     \section{Questions}
-    \begin{multicols}{2}
+    % \begin{multicols}{2}
         \small
         \subsection{Question 1}
             Give the operators corresponding to the momentum and energy of a particle.
 
-            \subsubsection{Solution}
+            \subsubsection{Answer}
                 \begin{equation}
                     \hat{p} = -i \hbar \diffp{}{x};
                     \hat{H} = -\frac{\hbar^2}{2m} \diffp[2]{}{t} + V(x,t)
@@ -45,7 +45,7 @@
         \subsection{Question 2}
             Give the general form of an eigenvalue equation.
 
-            \subsubsection{Solution}
+            \subsubsection{Answer}
                 For operator $\hat{A}$, eigenfunction $\psi$, and eignenvalue $A$.
                 \begin{equation}
                     \hat{A}\psi = A\psi
@@ -54,19 +54,19 @@
         \subsection{Question 3}
             What significance do the eigenvalues have?
 
-            \subsubsection{Solution}
+            \subsubsection{Answer}
                 The eigenvalue is the formula for or value of the component being searched for within the bounds of the eigenfunction.
 
         \subsection{Question 4}
             What significance do the eigenfunctions have?
                 
-            \subsubsection{Solution}
+            \subsubsection{Answer}
                 The eigenfunctions serve as the conditions governing the system.
 
         \subsection{Question 5}
             Write down the momentum eigenvalue equation.
             
-            \subsubsection{Solution}
+            \subsubsection{Answer}
                 Ths is a \textit{solved} momentum eigenvalue equation.
                 \begin{equation}
                     -i \hbar \diffp{}{x} \psi = \hbar k \psi
@@ -75,18 +75,47 @@
         \subsection{Question 6}
             Is the function $\cos(kx)$ an eigenfunction of the momentum operator?
 
-            \subsubsection{Solution}
+            \subsubsection{Answer}
                 No. 
                 The first derivative of $\cos(kx)$ is $-k\sin(kx)$, which does not contain $\cos(kx)$ to the point that the sets of terms in the two equations are practically disjoint.
 
         \subsection{Question 7}
             Is the function $\cos(kx)$ an eigenfunction of the operator corresponding to the kinetic energy?
 
+            \subsubsection{Answer}
+                Yes. 
+                The energy operator involves a second derivative.
+                Taking the second derivative of $\cos(kx)$, we get $-k^2 \cos(kx)$.
+                This does contain $\cos(kx)$, so it is an eigenfunction.
+
         \subsection{Question 8}
-            An electron is described by the wave function $\phi(x)=Ae^{i \alpha x}$, where $\alpha$ denotes the Greek letter alpha. What is the momentum of the electron?
+            An electron is described by the wave function $\psi(x)=Ae^{i \alpha x}$, where $\alpha$ denotes the Greek letter alpha. 
+            What is the momentum of the electron?
+            
+            \subsubsection{Answer}
+                Use the equation with the momentum operator.
+                \begin{equation}
+                    \hat{p} \psi = p \psi
+                \end{equation}
+
+                Plug in the momentum operator $\hat{p} = -i\hbar\diffp{}{x}$ and $\psi = Ae^{i \alpha x}$.
+                \begin{align}
+                    \hat{p} \psi    &=  -i\hbar \diffp{}{x}Ae^{i \alpha x}
+                        =   \hbar\alpha\,Ae^{i \alpha x}
+                \end{align}
+
+                This does contain $\psi$, so we can divide that out of the equation.
+                \begin{gather}
+                    p \psi = \hbar\alpha\,Ae^{i \alpha x}\\
+                    \boxed{p = \hbar\alpha}
+                \end{gather}
 
         \subsection{Question 9}
             How would you determine whether or not a particular wave function represented a state of the system having a definite value of the momentum?
+
+            \subsubsection{Answer}
+                Use the eigenfunction equation for the momentum ($\hat{p} \psi$).
+                If the result is a multiplel of $\psi$, then the wave function did represent a state of the system with a definitive momentum value.
 
         \subsection{Question 10}
             Calculate the dot product of the following two vectors.
@@ -95,8 +124,24 @@
                 B = \begin{pmatrix} 1 \\ 1 \\ 2 \\ 2 \end{pmatrix}
             \end{equation}
 
+            \subsubsection{Answer}
+                \begin{align}
+                    A \cdot B   &=  4 * 1 + 3 * 1 + 2 * 2 + 1 * 2\\
+                        &=  4 + 6 + 4 + 2
+                        =   \boxed{16}
+                \end{align}
+
         \subsection{Question 11}
-            For the two vectors, A and B, given in the preceding question, evaluate matrix multiplication $BA$ and from there $A \cdot BA$.
+            For the two vectors, A and B, given in the preceding question, evaluate item by item $BA$ and from there $A \cdot BA$.
+
+            \subsubsection{Answer}
+                \begin{align}
+                    &BA =   \begin{pmatrix} 4 * 1 \\ 3 * 1 \\ 2 * 2 \\ 1 * 2 \end{pmatrix}
+                        =   \boxed{\begin{pmatrix} 4 \\ 3 \\ 4 \\ 2 \end{pmatrix}} 
+                    &A \cdot BA =   \begin{pmatrix} 4 \\ 3 \\ 2 \\ 1 \end{pmatrix} \cdot \begin{pmatrix} 4 \\ 3 \\ 4 \\ 2 \end{pmatrix}
+                        =   16 + 9 + 8 + 2
+                        =   \boxed{35}
+                \end{align}
 
         \subsection{Question 12}
             Suppose a function f(x) is defined in an interval between 0 and 10 and an equally spaced grid is created by the command,\\
@@ -135,5 +180,5 @@
         \subsection{Question 21}
             Suppose that a particle localized between a and b is described by the wave function $\psi(x)$. Write down an equation for the average value of the kinetic energy of the particle.
             
-    \end{multicols}
+    % \end{multicols}
 \end{document}
