@@ -2,19 +2,19 @@ import matplotlib.pyplot as plt
 import math
 import numpy as np
 
-V0 = 4.5
+L = 5
 E = 10
 A = 5
 
 def V(x):
-    if x > V0:
+    if x > L:
         return 5
     return 0
 
 def PSI(x):
     isim = (V(x) - E < 0)
-    if x > V0:
-        psi = A * np.exp((1j if isim else 1) * (math.sqrt(abs(E - V(x))) * x + math.sqrt(abs(E - V(0))) * V0))
+    if x > L:
+        psi = A * np.exp((1j if isim else 1) * (math.sqrt(abs(E - V(x))) * x + math.sqrt(abs(E - V(0))) * L))
     else: 
         psi = A * np.exp((1j if isim else 1) * (math.sqrt(abs(E - V(x))) * x))
     return psi
