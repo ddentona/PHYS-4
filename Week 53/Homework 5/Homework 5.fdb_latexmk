@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1770762816.84384 "c:/Users/ddent/OneDrive/Documents/CCSF/PHYS-4/Week 53/Homework 5/Homework 5.tex" "Homework 5.pdf" "Homework 5" 1770762818.17026 0
+["pdflatex"] 1771369768.26427 "c:/Users/ddent/OneDrive/Documents/CCSF/PHYS-4/Week 53/Homework 5/Homework 5.tex" "Homework 5.pdf" "Homework 5" 1771369769.31274 0
   "C:/Users/ddent/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1764729592 151629 65cd6e1296beda1feb8e616e59f2da55 ""
   "C:/Users/ddent/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1724473854 24225046 9a86b7f1ef10f5afb0aa895fddb2583f ""
   "C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/tex-gyre/q-rmm.enc" 1256929440 2434 8cf37f8d6de52317eb058102e1390ed0 ""
@@ -80,9 +80,10 @@
   "C:/Users/ddent/AppData/Local/Programs/MiKTeX/tex/latex/ulem/ulem.sty" 1578651445 15682 94f55b803e160cf7fb6e4d77d07cfe1d ""
   "C:/Users/ddent/AppData/Local/Programs/MiKTeX/tex/latex/wrapfig/wrapfig.sty" 1044403200 26220 3701aebf80ccdef248c0c20dd062fea9 ""
   "C:/Users/ddent/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1700127522 55487 80a65caedd3722f4c20a14a69e785d8f ""
-  "Homework 5.aux" 1770762817 3462 e267264f0b2ad8177623a76857ee9fea "pdflatex"
-  "Homework 5.tex" 1770762806 8156 98a48fe9299dfec7f9bd3d7fad6828c5 ""
-  "c:/Users/ddent/OneDrive/Documents/CCSF/PHYS-4/Week 53/Homework 5/Homework 5.tex" 1770762806 8156 98a48fe9299dfec7f9bd3d7fad6828c5 ""
+  "Homework 5.aux" 1771369769 4503 8426b4f99b5015e790ad0aec094aeed9 "pdflatex"
+  "Homework 5.tex" 1771369766 11092 32e5ba48c7fd1dd0596c80231f2096b2 ""
+  "Image_5-8.png" 1771369316 3809 1fe15446149f9eb9d02ede9757aaa638 ""
+  "c:/Users/ddent/OneDrive/Documents/CCSF/PHYS-4/Week 53/Homework 5/Homework 5.tex" 1771369766 11092 32e5ba48c7fd1dd0596c80231f2096b2 ""
   (generated)
   "Homework 5.aux"
   "Homework 5.log"

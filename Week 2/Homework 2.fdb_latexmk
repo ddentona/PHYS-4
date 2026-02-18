@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1725519187.03573 "c:/Users/ddent/OneDrive/Documents/CCSF/PHYS 4A/Week 2/Homework 2.tex" "Homework 2.pdf" "Homework 2" 1725519192.1778 0
-  "C:/Users/ddent/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1725387217 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
+["pdflatex"] 1771362571.30266 "c:/Users/ddent/OneDrive/Documents/CCSF/PHYS-4/Week 2/Homework 2.tex" "Homework 2.pdf" "Homework 2" 1771362575.11571 0
+  "C:/Users/ddent/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1764729592 151629 65cd6e1296beda1feb8e616e59f2da55 ""
   "C:/Users/ddent/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1724473854 24225046 9a86b7f1ef10f5afb0aa895fddb2583f ""
   "C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233951848 1004 54797486969f23fa377b128694d548df ""
   "C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1233951848 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -171,12 +171,12 @@
   "C:/Users/ddent/AppData/Local/Programs/MiKTeX/tex/latex/translations/translations.sty" 1644048522 44247 2188b95d0ee74e31eca4d316263c58a7 ""
   "C:/Users/ddent/AppData/Local/Programs/MiKTeX/tex/latex/wrapfig/wrapfig.sty" 1044403200 26220 3701aebf80ccdef248c0c20dd062fea9 ""
   "C:/Users/ddent/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1700127522 55487 80a65caedd3722f4c20a14a69e785d8f ""
-  "Homework 2.aux" 1725519191 33 6bbbc4989d0c340984f875bce9661f09 "pdflatex"
-  "Homework 2.tex" 1725519185 18017 812bd16dcd19caf6b5c9fdf285653035 ""
-  "c:/Users/ddent/OneDrive/Documents/CCSF/PHYS 4A/Week 2/Homework 2.tex" 1725519185 18017 812bd16dcd19caf6b5c9fdf285653035 ""
-  "graph_1.png" 1724956545 112353 0c3dff726e0f57f6f4ffb359a03ee319 ""
-  "graph_2.png" 1724959270 52749 cf86c0719bd753e2828799ff5b9da927 ""
-  "graph_7.png" 1725386647 144933 6c9829bb153f478bf7f220defbeb7141 ""
+  "Homework 2.aux" 1771362574 33 6bbbc4989d0c340984f875bce9661f09 "pdflatex"
+  "Homework 2.tex" 1759202442 18017 812bd16dcd19caf6b5c9fdf285653035 ""
+  "c:/Users/ddent/OneDrive/Documents/CCSF/PHYS-4/Week 2/Homework 2.tex" 1759202442 18017 812bd16dcd19caf6b5c9fdf285653035 ""
+  "graph_1.png" 1759202442 112353 0c3dff726e0f57f6f4ffb359a03ee319 ""
+  "graph_2.png" 1759202442 52749 cf86c0719bd753e2828799ff5b9da927 ""
+  "graph_7.png" 1759202442 144933 6c9829bb153f478bf7f220defbeb7141 ""
   (generated)
   "Homework 2.aux"
   "Homework 2.log"

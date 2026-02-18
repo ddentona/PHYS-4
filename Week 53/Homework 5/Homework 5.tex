@@ -179,6 +179,73 @@
 
         \subsection{Question 21}
             Suppose that a particle localized between a and b is described by the wave function $\psi(x)$. Write down an equation for the average value of the kinetic energy of the particle.
+
+    \section{Problem 1}
+        Evaluate the product of the momentum operator and each of the two functions
+        \begin{gather}
+            \phi_1(x) = \cos\,kx\\
+            \phi_2(x) = \sin\,kx
+        \end{gather}
+        Are these functions eigenfunctions of the momentum operator?
+
+        \subsection{Solution (1)}
+            The momentum operator is $\hat{p} = -i\hbar\diffp{}{x}$, which we can apply here.
+            \begin{align}
+                \hat{p}\,\phi_1(x)  &=  -i\hbar\diffp{}{x} (\cos\,kx)
+                    =   i\hbar k \sin\,kx
+            \end{align}
+
+            This does not contain $\phi_1$, so it is not an eigenfunction of $\hat{p}$.
+
+        \subsection{Solution (2)}
+            The momentum operator is $\hat{p} = -i\hbar\diffp{}{x}$, which we can apply here.
+            \begin{align}
+                \hat{p}\,\phi_2(x)  &=  -i\hbar\diffp{}{x} (\sin\,kx)
+                    =   -i\hbar k \cos\,kx
+            \end{align}
+
+            This does not contain $\phi_2$, so it is not an eigenfunction of $\hat{p}$.
+
+    \section{Problem 2}
+        Find a linear combination of the functions, $\phi_1(x)$ and $\phi_2(x)$, defined in the previous problem, which is an eigenfunction of the momentum operator.
+
+        \subsection{Solution}
+            We know that Euler's identity is an eigenfunction of the momentum operator. 
+            \begin{equation}
+                e^{ix} = \cos(x) + i\sin(x)
+            \end{equation}
+
+            We can change $x$ into $kx$.
+            \begin{equation}
+                e^{ikx} = \cos(kx) + i\sin(kx)
+            \end{equation}
+
+            This is a linear combination of $\phi_1(x)$ and $\phi_2(x)$, just a complex one.
+            We can check if it is an eigenfunction of the momentum operator.
+            \begin{align}
+                \hat{p}\,\psi(x)    &=  -i\hbar\diffp{}{x} (\cos(kx) + i\sin(kx))
+                    =   -i\hbar\diffp{}{x} (e^{ikx})\\
+                    &=  -i\hbar (ik\e{ikx})
+                    =   \hbar k \e{ikx}
+                    =   \hbar k \psi(x) \qed
+            \end{align}
+        \pagebreak
+
+    \section{Problem 8}
+        \begin{wrapfigure}{r}{0.33\textwidth}
+            \includegraphics[width=0.9\linewidth]{Image_5-8.png}
+            \caption[3.5]{Potential Step}
+            \label{fig:3.5}
+        \end{wrapfigure}
+        For the scattering problem illustrated in Fig. \ref{fig:3.5}, a particle is incident upon a potential step with the energy of the incident particle being less than the step height.
+        Using the notation for this problem given in the text, derive expressions the ratios $A/C$ and $B/C$ and show that $R = 1$.
+
+        \subsection{Solution}
+
+    \section{Problem 10}
+        Using the Heisenberg uncertainty principle, estimate the momentum of an electron confined to a 1.0 nm well.
+
+        \subsection{Solution}
             
     % \end{multicols}
 \end{document}
