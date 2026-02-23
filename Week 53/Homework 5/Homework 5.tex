@@ -117,50 +117,56 @@
                 Use the eigenfunction equation for the momentum ($\hat{p} \psi$).
                 If the result is a multiplel of $\psi$, then the wave function did represent a state of the system with a definitive momentum value.
 
-        \subsection{Question 10}
-            Calculate the dot product of the following two vectors.
-            \begin{equation}
-                A = \begin{pmatrix} 4 \\ 3 \\ 2 \\ 1 \end{pmatrix}; 
-                B = \begin{pmatrix} 1 \\ 1 \\ 2 \\ 2 \end{pmatrix}
-            \end{equation}
+        % \subsection{Question 10}
+        %     Calculate the dot product of the following two vectors.
+        %     \begin{equation}
+        %         A = \begin{pmatrix} 4 \\ 3 \\ 2 \\ 1 \end{pmatrix}; 
+        %         B = \begin{pmatrix} 1 \\ 1 \\ 2 \\ 2 \end{pmatrix}
+        %     \end{equation}
 
-            \subsubsection{Answer}
-                \begin{align}
-                    A \cdot B   &=  4 * 1 + 3 * 1 + 2 * 2 + 1 * 2\\
-                        &=  4 + 6 + 4 + 2
-                        =   \boxed{16}
-                \end{align}
+        %     \subsubsection{Answer}
+        %         \begin{align}
+        %             A \cdot B   &=  4 * 1 + 3 * 1 + 2 * 2 + 1 * 2\\
+        %                 &=  4 + 3 + 4 + 2
+        %                 =   \boxed{13}
+        %         \end{align}
 
-        \subsection{Question 11}
-            For the two vectors, A and B, given in the preceding question, evaluate item by item $BA$ and from there $A \cdot BA$.
+        % \subsection{Question 11}
+        %     For the two vectors, A and B, given in the preceding question, evaluate item by item $BA$ and from there $A \cdot BA$.
 
-            \subsubsection{Answer}
-                \begin{align}
-                    &BA =   \begin{pmatrix} 4 * 1 \\ 3 * 1 \\ 2 * 2 \\ 1 * 2 \end{pmatrix}
-                        =   \boxed{\begin{pmatrix} 4 \\ 3 \\ 4 \\ 2 \end{pmatrix}} 
-                    &A \cdot BA =   \begin{pmatrix} 4 \\ 3 \\ 2 \\ 1 \end{pmatrix} \cdot \begin{pmatrix} 4 \\ 3 \\ 4 \\ 2 \end{pmatrix}
-                        =   16 + 9 + 8 + 2
-                        =   \boxed{35}
-                \end{align}
+        %     \subsubsection{Answer}
+        %         \begin{align}
+        %             &BA =   \begin{pmatrix} 4 * 1 \\ 3 * 1 \\ 2 * 2 \\ 1 * 2 \end{pmatrix}
+        %                 =   \boxed{\begin{pmatrix} 4 \\ 3 \\ 4 \\ 2 \end{pmatrix}} 
+        %             &A \cdot BA =   \begin{pmatrix} 4 \\ 3 \\ 2 \\ 1 \end{pmatrix} \cdot \begin{pmatrix} 4 \\ 3 \\ 4 \\ 2 \end{pmatrix}
+        %                 =   16 + 9 + 8 + 2
+        %                 =   \boxed{35}
+        %         \end{align}
 
-        \subsection{Question 12}
-            Suppose a function f(x) is defined in an interval between 0 and 10 and an equally spaced grid is created by the command,\\
-                {\fontfamily{qcr}\selectfont x = linspace(0.0,10.0,10)}
-            and suppose the values of the function at the two Gauss quadrature points, $\xi_{i1}$ and $\xi_{i2}$, within each interval are known.
-            Write down a formula for determining the value of the following integral in terms of the values of the function at the Gauss points.
-            \begin{equation}
-                \int_{0}^{10} f(x)\,dx
-            \end{equation}
+        % \subsection{Question 12}
+        %     Suppose a function f(x) is defined in an interval between 0 and 10 and an equally spaced grid is created by the command,\\
+        %         {\fontfamily{qcr}\selectfont x = linspace(0.0,10.0,10)}
+        %     and suppose the values of the function at the two Gauss quadrature points, $\xi_{i1}$ and $\xi_{i2}$, within each interval are known.
+        %     Write down a formula for determining the value of the following integral in terms of the values of the function at the Gauss points.
+        %     \begin{equation}
+        %         \int_{0}^{10} f(x)\,dx
+        %     \end{equation}
 
-        \subsection{Question 13}
-            Suppose a differential equation is solved using spline collocation on a grid created by the command {\fontfamily{qcr}\selectfont x = linspace(0.0,10.0,10)}.
-            How many rows and columns do the A, B, and C matrices have?
+        % \subsection{Question 13}
+        %     Suppose a differential equation is solved using spline collocation on a grid created by the command {\fontfamily{qcr}\selectfont x = linspace(0.0,10.0,10)}.
+        %     How many rows and columns do the A, B, and C matrices have?
 
         \subsection{Question 14}
             Sketch the wave function for an electron incident upon a potential step when the energy $E$ of the electron is greater than the step height $V_0$.
 
+            \subsubsection{Answer}
+                \includegraphics[width=250pt]{Image_5-14.jpg}
+
         \subsection{Question 15}
             Sketch the wave function for an electron incident upon a potential step when the energy $E$ of the electron is less than the step height $V_0$.
+
+            \subsubsection{Answer}
+                \includegraphics[width=250pt]{Image_5-15.jpg}
 
         \subsection{Question 16}
             Is the wavelength of a particle that has passed over a potential barrier greater than or less than the wavelength of the incident particle?
@@ -172,6 +178,9 @@
         \subsection{Question 17}
             Sketch the wave function of an electron which tunnels through a potential barrier located between 0 and L.
 
+            \subsubsection{Answer}
+                \includegraphics[width=250pt]{Image_5-17.jpg}
+
         \subsection{Question 18}
             Write down the Heisenberg uncertainty relations for the position and the momentum and for the time and the energy.
 
@@ -181,17 +190,26 @@
                     \Delta t \Delta E = \frac{\hbar}{2}
                 \end{equation}
 
-        \subsection{Question 19}
-            Use the Heisenberg relation for the time and the energy to describe how the energy profile of an excited atomic state depends upon the lifetime of the state.
+        % \subsection{Question 19}
+        %     Use the Heisenberg relation for the time and the energy to describe how the energy profile of an excited atomic state depends upon the lifetime of the state.
 
-        \subsection{Question 20}
-            How would the wave function $\psi(x)$ of a particle change as the width of the Fourier transform increases?
+        % \subsection{Question 20}
+        %     How would the wave function $\psi(x)$ of a particle change as the width of the Fourier transform increases?
 
-            \subsubsection{Answer}
-                It would decrease.
+        %     \subsubsection{Answer}
+        %         It would decrease.
 
         \subsection{Question 21}
             Suppose that a particle localized between a and b is described by the wave function $\psi(x)$. Write down an equation for the average value of the kinetic energy of the particle.
+
+            \subsubsection{Answer}
+                Average values are dictated through the use of $\psi$ and $\psi*$.
+                The value of $K$ has an operator for $K = -\frac{\hbar^2}{2m} \nabla^2$.
+                \begin{equation}
+                    \left\langle K \right\rangle    =   \int_{a}^{b} \psi*(x) K \psi(x)\,dx
+                        =   \int_{a}^{b} \psi*(x) \left( -\frac{\hbar^2}{2m} \nabla^2 \psi(x) \right)\,dx
+                \end{equation}
+                
 
     \section{Problem 1}
         Evaluate the product of the momentum operator and each of the two functions
@@ -218,7 +236,8 @@
             \end{align}
 
             This does not contain $\phi_2$, so it is not an eigenfunction of $\hat{p}$.
-
+        \pagebreak
+        
     \section{Problem 2}
         Find a linear combination of the functions, $\phi_1(x)$ and $\phi_2(x)$, defined in the previous problem, which is an eigenfunction of the momentum operator.
 
@@ -254,11 +273,93 @@
         Using the notation for this problem given in the text, derive expressions the ratios $A/C$ and $B/C$ and show that $R = 1$.
 
         \subsection{Solution}
+            I'll be doing this the way the book did it.
+            I'll be using $D$ instead of $C$, largely because it works out with some thing more coherent this way.
+            We begin with the Schrödinger equation.
+            \begin{equation}
+                -\frac{\hbar^2}{2m} \nabla^2 \psi + V \psi = E \psi
+            \end{equation}
 
+            This exists in two cases, $psi_1$ for $x < 0$ and $\psi_2$ for $x > 0$, with separate values of $V$.
+            They give us two values of $k$.
+            \begin{gather}
+                k_1 = \frac{\sqrt{2mE}}{\hbar}\\
+                k_{2i} = \frac{\sqrt{2m(E - V_0)}}{\hbar} = i\frac{\sqrt{2m(V_0 - E)}}{\hbar}
+            \end{gather}
+
+            We can also defne $k_{2} = -ik_{2i}$.
+            \begin{equation}
+                k_2 = \frac{\sqrt{2m(V_0 - E)}}{\hbar}
+            \end{equation}
+
+            $k_1$ has a specified value of $\psi$ as a traveling wave.
+            Meanwhile, because of the $i$ in $k_{2i}$, the value of $\psi_2$ would be exponential rather than sinusoidal.
+            \begin{gather}
+                \psi_1  =   A \e{i k_1 x} + B \e{-i k_1 x}\\ \label{eq:8-6}
+                \psi_2  =   E \e{i k_{2i} x} + F \e{-i k_{2i} x}
+                        =   C \e{k_{2} x} + D \e{-k_{2} x}
+            \end{gather}
+
+            Given boundary conditions, we have some equations.
+            \begin{gather}
+                \psi_1(0) = \psi_2(0)\\
+                \psi_1'(0) = \psi_2'(0)
+            \end{gather}
+
+            We can set them up through substituting.
+            \begin{gather}
+                A \e{i k_1 x} + B \e{-i k_1 x} = C \e{k_{2} x} + D \e{-k_{2} x}\\
+                i k_1 (A \e{i k_1 x} - B \e{-i k_1 x}) = k_2 (C \e{k_{2} x} - D \e{-k_{2} x})
+            \end{gather}
+
+            Set $x = 0$.
+            Anything to a power of $x$ will be reduced to $1$.
+            \begin{gather}
+                A + B = C + D\\
+                i k_1 (A - B) = k_2 (C - D)\\
+                A - B = \frac{k_2}{i k_1} (C - D)
+            \end{gather}
+
+            Add and subtract the first and the third together.
+            \begin{align}
+                A   &=  \frac{1}{2}(C + D) + \frac{k_2}{2i k_1} (C - D)
+                    =   \frac{ik_1 + k_2}{2i k_1} C + \frac{ik_1 - k_2}{2i k_1} D\\
+                B   &=  \frac{1}{2}(C + D) + \frac{k_2}{2i k_1} (D - C)
+                    =   \frac{ik_1 - k_2}{2i k_1} C + \frac{ik_1 + k_2}{2i k_1} D
+            \end{align}
+
+            Look again at (\ref{eq:8-6}).
+            \begin{equation}
+                \psi_2 = C \e{k_{2} x} + D \e{-k_{2} x} \tag{\ref{eq:8-6}}
+            \end{equation}
+
+            It would be decreasing, not increasing, so it would requre that $C = 0$.
+            \begin{align}
+                A   =   \frac{ik_1 - k_2}{2i k_1} D \to \boxed{\frac{A}{D} = \frac{ik_1 - k_2}{2i k_1}}\\
+                B   =   \frac{ik_1 + k_2}{2i k_1} D \to \boxed{\frac{B}{D} = \frac{ik_1 + k_2}{2i k_1}}
+            \end{align}
+
+            There is a defined formula for the reflection coefficient for waves.
+            \begin{align}
+                R   &=  \frac{B* B}{A* A}
+                    =   \frac{\frac{-ik_1 + k_2}{\cancel{-2i k_1}}}{\frac{-ik_1 - k_2}{\cancel{-2i k_1}}} \cdot \frac{\frac{ik_1 + k_2}{\cancel{2i k_1}}}{\frac{ik_1 - k_2}{\cancel{2i k_1}}}
+                    =   \frac{(-ik_1 + k_2)(ik_1 + k_2)}{(-ik_1 - k_2)(ik_1 - k_2)}
+                    =   \frac{k_2^2 + k_1^2}{k_2^2 + k_1^2}
+                    =   \boxed{1}
+            \end{align}
+        \pagebreak
+    
     \section{Problem 10}
         Using the Heisenberg uncertainty principle, estimate the momentum of an electron confined to a 1.0 nm well.
 
         \subsection{Solution}
+            Being traditionally trained in mathematics, I feel the need to note that the Heisenberg Uncertainty Principle is not about determining actual value but uncertainty, which are two different concepts, even if they come from the same source.
+            Here, we can use the Heisenberg Uncertainty Principle to get a minimum possible uncertainty.
+            \begin{equation}
+                \Delta p    =   \frac{\hbar}{2 \Delta x}
+                    =   \frac{1.055\E{-34}\,\unit{\joule\cdot\second}}{2 \times 1.0\E{-9}\,\unit{\meter}}
+                    =   \boxed{5.275\E{-26}\,\unit{\frac{\kilo\gram\cdot\meter}{\second}}}
+            \end{equation}
             
     % \end{multicols}
 \end{document}

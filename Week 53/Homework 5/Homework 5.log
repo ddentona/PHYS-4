@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.8.23)  17 FEB 2026 20:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.8.23)  22 FEB 2026 19:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -351,34 +351,48 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 31.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
-{C:/Users/ddent/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2] [3]
-LaTeX Font Info:    Trying to load font information for OT1+qcr on input line 148.
- (C:\Users\ddent\AppData\Local\Programs\MiKTeX\tex/latex/tex-gyre\ot1qcr.fd
-File: ot1qcr.fd 2009/09/25 v1.2 font definition file for OT1/qcr
-) [4{C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/tex-gyre/q-rmm.enc}] [5] [6] [7]
-<Image_5-8.png, id=36, 167.12437pt x 99.87312pt>
+{C:/Users/ddent/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2]
+<Image_5-14.jpg, id=18, 1129.21875pt x 659.46375pt>
+File: Image_5-14.jpg Graphic file (type jpg)
+<use Image_5-14.jpg>
+Package pdftex.def Info: Image_5-14.jpg  used on input line 163.
+(pdftex.def)             Requested size: 250.0pt x 145.99817pt.
+ [3]
+<Image_5-15.jpg, id=22, 1112.155pt x 638.385pt>
+File: Image_5-15.jpg Graphic file (type jpg)
+<use Image_5-15.jpg>
+Package pdftex.def Info: Image_5-15.jpg  used on input line 169.
+(pdftex.def)             Requested size: 250.0pt x 143.49405pt.
+ [4 <./Image_5-14.jpg> <./Image_5-15.jpg>]
+<Image_5-17.jpg, id=26, 1116.17pt x 609.27625pt>
+File: Image_5-17.jpg Graphic file (type jpg)
+<use Image_5-17.jpg>
+Package pdftex.def Info: Image_5-17.jpg  used on input line 182.
+(pdftex.def)             Requested size: 250.0pt x 136.45834pt.
+ [5 <./Image_5-17.jpg>] [6] [7]
+<Image_5-8.png, id=39, 167.12437pt x 99.87312pt>
 File: Image_5-8.png Graphic file (type png)
 <use Image_5-8.png>
-Package pdftex.def Info: Image_5-8.png  used on input line 249.
+Package pdftex.def Info: Image_5-8.png  used on input line 268.
 (pdftex.def)             Requested size: 115.82985pt x 69.22188pt.
- [8 <./Image_5-8.png>] (Homework 5.aux)
+ [8 <./Image_5-8.png>] [9] [10] (Homework 5.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 8328 strings out of 474486
- 187048 string characters out of 5743755
- 1935542 words of memory out of 5000000
- 30535 multiletter control sequences out of 15000+600000
- 567909 words of font info for 74 fonts, out of 8000000 for 9000
+ 8303 strings out of 474486
+ 186671 string characters out of 5743755
+ 1941542 words of memory out of 5000000
+ 30516 multiletter control sequences out of 15000+600000
+ 567585 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 73i,15n,80p,294b,530s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/tex-gyre/qcrr.pfb>
-Output written on "Homework 5.pdf" (8 pages, 168048 bytes).
+ 73i,20n,80p,353b,565s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/latxfont/line10.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on "Homework 5.pdf" (10 pages, 511608 bytes).
 PDF statistics:
- 93 PDF objects out of 1000 (max. 8388607)
+ 116 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
