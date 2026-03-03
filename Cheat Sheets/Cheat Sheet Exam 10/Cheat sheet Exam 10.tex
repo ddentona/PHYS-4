@@ -1,0 +1,153 @@
+\documentclass[8pt]{minimal}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{esdiff}
+% \usepackage{fullpage}
+\usepackage{graphfig}
+\usepackage{graphicx}
+\usepackage{siunitx}
+
+\newcommand{\e}[1]{e^{#1}}
+\newcommand{\ei}[1]{e^{i\left(#1\right)}}
+\newcommand{\E}[1]{\times 10^{#1}}
+
+\begin{document}
+    \setlength{\parindent}{0pt}
+    % \setlength{\voffset}{-50pt}
+    \setlength{\columnsep}{0.5cm}
+    % \setlength{\textheight}{length}
+    \twocolumn
+    PHYS 4D Exam 1 Reference Sheet (with \LaTeX)
+
+    \underline{Write Units}
+
+    \underline{Constants}
+        \begin{align*}
+            &h = 6.626\E{-34}\,\unit{\joule\cdot\second}    &\hbar = 1.054\E{-34}\,\unit{\joule\cdot\second}\\
+            &c = 2.998\,\unit{\meter/\second}   &e^{\pm} = \pm 1.602\E{-19}\,\unit{\coulomb}\\
+            &m_e = 9.11\E{-31}\,\unit{\kilo\gram} &m_e = 0.511\,\text{MeV/c}^2\\
+            &\varepsilon_0 = 8.854\mathsf{E}-12\,\unit{\frac{\coulomb^2}{\newton\meter^2}} &\mu_0 = 4\pi\E{-7}\,\unit{\newton/\ampere^2}
+        \end{align*}
+    
+    \underline{General Waves}
+    \begin{gather*}
+        \left( \nabla^2 \vec{\psi} = \right) \diffp[2]{\psi}{x} = \frac{1}{v^2}\diffp[2]{\psi}{t}\\
+        \psi(x,t) = \psi_m \cos(kx \mp \omega t)\\
+        v = \lambda f = \frac{\omega}{k}; f = \frac{\omega}{2\pi} = \frac{1}{T}; k = \frac{2\pi}{\lambda}
+    \end{gather*}
+    Consine can be exchanged with another function like $\sin(\theta)$ or $e^{i\theta}$.\\
+    Superposition of waves also fulfills wave equation.\\
+    Pulses tend to follow the Gaussian \\
+    ($e^{-\alpha t}$; $\int_{-\infty}^{\infty} e^{-\alpha t}\,dt = \sqrt{\frac{\pi}{\alpha}}$)
+
+    \underline{Standing waves}\\
+    Two traveling waves in opposite directions
+    \begin{gather*}
+        \psi(x,t)   =   \psi_m \cos(kx + \phi)\cos(\omega t + \phi')\\
+        \psi(x,t)   =   \psi_m \left( e^{i(kx - \omega t)} + e^{i(kx + \omega t)} \right)
+    \end{gather*}
+
+    \underline{Photoelectric Effect}
+        Photons hitting electrons beyond a certain energy can cause electrons to break free
+        \begin{equation*}
+            {\scriptstyle E = hf = \hbar\omega; KE_{max} = hf - \phi = eV_{stop}; I = \frac{1}{2\mu_0 c} \vec{E}_0^2}
+        \end{equation*}
+
+    \underline{Bohr Model} Proposed quantization of electron angular momentum ($rmv = n\hbar$ for $n \in \mathbb{N}$)\\
+        Explains emission spectrum of atoms\\
+        Derived radius \& energy formulas from velocity
+        \begin{equation*}
+            r_n = \frac{4\pi\varepsilon_0\hbar}{me^2}n^2;
+            E_n = -\frac{me^4}{32\pi^2\varepsilon_0^2\hbar^2}\frac{1}{n^2} \approx \frac{-13.6\unit{\eV}}{n^2}
+        \end{equation*}
+        Bohr radius $a_0$ is $r_n$ when $n = 0$
+
+    \underline{Compton Effect} Shoot photon ($\lambda$) at electron\\ Emits photon ($\lambda'$) at angle $\theta$
+    \begin{gather*}
+        \lambda' - \lambda = \frac{h}{m_e c} (1 - \cos\theta)\\
+        \frac{h}{m_e c} = 0.002426\,\unit{\nano\meter}
+    \end{gather*}
+
+    De Broglie Wavelength: Quantum particles fired at a slit behave like a wave of wavelength $\lambda = \frac{h}{p}$
+
+    \underline{Schrodinger's 1D Equation}
+    \begin{equation*}
+        \left[ -\frac{\hbar^2}{2m}\nabla^2 + V(x) \right]\psi(x) = E\psi(x)
+    \end{equation*}
+    $\vec{F} = -\nabla V$; $\psi$ is probability wave; also used to get averages (function or operator $f$) or constants\\
+    \begin{equation*}
+        P = 1 = \int_{-\infty}^{\infty} \psi^\star \psi\,dx; \left\langle f \right\rangle = \int_{-\infty}^{\infty} \psi^\star f \psi\,dx
+    \end{equation*}
+
+    \underline{Infinte Well}
+    \begin{gather*}
+        V(x) = \begin{cases}
+            0 & \text{if } a < x < b \\
+            \infty & \text{otherwise}
+        \end{cases}; \psi(x) = Ae^{ik}\\
+        k_n^2 = \frac{n^2\pi^2}{(b - a)^2} = \frac{2mE_n}{\hbar^2};
+        E_n = \frac{n^2\pi^2\hbar^2}{2m(b - a)^2}
+    \end{gather*}
+
+    \underline{Finite Well} Transcendental algebra problem
+    \begin{gather*}
+        V(x) = \begin{cases}
+            0 & \text{if } a < x < b \\
+            V_0 & \text{otherwise}
+        \end{cases}
+    \end{gather*}
+
+    \underline{Harmonic Oscillator}
+    $V(x)$ follows Taylor series or $V(x) = \frac{1}{2}kx^2$; uses polynomial $H_n$
+    \begin{gather*}
+        \psi_n(x) = A_n H_n \e{-ax^2}\\ a = \frac{\sqrt{km}}{2\hbar}; E_n = \left( n + \frac{1}{2} \right) \hbar \sqrt{\frac{k}{m}}
+    \end{gather*}
+
+    \underline{Operators} Basically eigenvectors and eigenvalues just with functions and not vectors.
+    \begin{gather*}
+        \hat{A}\psi = A\psi; \hat{p} = -i\hbar\nabla;
+        \hat{E} = -\frac{\hbar^2}{2m}\nabla^2 + V(x)
+    \end{gather*}
+
+    \underline{Heisenberg Uncertainty Principle}
+        \begin{gather*}
+            \Delta x \Delta p \geq \hbar / 2;
+            \Delta t \Delta E \geq \hbar / 2
+        \end{gather*}
+    
+    \underline{Fourier Analysis}: An extra thing you can use for Laplace transforms
+        \begin{gather*}
+            \psi(x) = \frac{1}{\sqrt{2\pi}}\int_{-\infty}^{\infty} g(k) \e{ikx}\,dk\\
+            g(k) = \frac{1}{\sqrt{2\pi}}\int_{-\infty}^{\infty} \psi(k) \e{-ikx}\,dk
+        \end{gather*}
+
+    \underline{Hydrogen Atom}:
+        3D; Uses spherical coordinates
+        \begin{gather*}
+            x = r \sin\theta \cos\phi; y = r \sin\theta \sin\phi; z = r \cos\theta\\
+            r = \sqrt{x^2 + y^2 + z^2}; \theta = \arccos\frac{z}{r}; \phi = \arctan\frac{y}{x}
+        \end{gather*}
+
+        Schrodinger's can be turned spherical.
+        \begin{equation*}
+            {\scriptstyle \left[ \left( \diffp[2]{}{r} + \frac{2}{r}\diffp{}{r} \right) + \frac{1}{r^2\sin\theta}\diffp{}{\theta}\left( \sin\theta \diffp{}{\theta} \right) + \frac{1}{r^2\sin\theta}\diffp[2]{}{\theta}\right]\psi = E\psi}
+        \end{equation*}
+
+        Solution becomes seperable
+        \begin{equation*}
+            \psi(r,\theta,\phi) = R(r) \cdot \Theta(\theta) \cdot \Phi(\phi)
+        \end{equation*}
+
+        \begin{tabular}{c | c | c | c}
+            Name        & Used in   &   Values & Transition\\
+            $n$         & $R(r)$    &   $\mathbb{N}$ & N/A\\
+            $\ell$      & $R(r)$, $\Theta(\theta)$, $\vec{L}$  &   $\mathbb{N} < n$ & $\Delta \ell = \pm 1$\\
+            $m_\ell$    & $\Theta(\theta)$, $\Phi(\phi)$    &   $\mathbb{N}; -\ell \leq m_\ell \leq \ell$ & $\Delta m_\ell \in {-1,0,1}$
+        \end{tabular}
+
+    \underline{Quantum Angular Momentum ($\vec{L}$)}
+        \begin{gather*}
+            L = \hbar \sqrt{\ell(\ell + 1)};
+            L_z = m_\ell \hbar
+        \end{gather*}
+\end{document}
