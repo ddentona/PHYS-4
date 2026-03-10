@@ -53,7 +53,7 @@
             {\scriptstyle E = hf = \hbar\omega; KE_{max} = hf - \phi = eV_{stop}; I = \frac{1}{2\mu_0 c} \vec{E}_0^2}
         \end{equation*}
 
-    \underline{Bohr Model} Proposed quantization of electron angular momentum ($rmv = n\hbar$ for $n \in \mathbb{N}$)\\
+    \underline{Bohr Model} Proposed quantization of electron angular momentum (1 QN: $rmv = n\hbar$ for $n \in \mathbb{N}$)\\
         Explains emission spectrum of atoms\\
         Derived radius \& energy formulas from velocity
         \begin{equation*}
@@ -70,7 +70,7 @@
 
     De Broglie Wavelength: Quantum particles fired at a slit behave like a wave of wavelength $\lambda = \frac{h}{p}$
 
-    \underline{Schrodinger's 1D Equation}
+    \underline{Schrodinger's 1D Equation}: Allows 3 QN
     \begin{equation*}
         \left[ -\frac{\hbar^2}{2m}\nabla^2 + V(x) \right]\psi(x) = E\psi(x)
     \end{equation*}
@@ -96,9 +96,15 @@
             V_0 & \text{otherwise}
         \end{cases}
     \end{gather*}
+    Waves either reflect or transmit at edge
+    \begin{equation*}
+        T = \frac{4k_1k_2}{(k_1 + k_2)^2}; 
+        R = \frac{(k_1 - k_2)^2}{(k_1 + k_2)^2}; 
+        T + R = 1
+    \end{equation*}
 
     \underline{Harmonic Oscillator}
-    $V(x)$ follows Taylor series or $V(x) = \frac{1}{2}kx^2$; uses polynomial $H_n$
+    $V(x)$ follows Taylor series or \\$V(x) = \frac{1}{2}kx^2$; uses polynomial $H_n$
     \begin{gather*}
         \psi_n(x) = A_n H_n \e{-ax^2}\\ a = \frac{\sqrt{km}}{2\hbar}; E_n = \left( n + \frac{1}{2} \right) \hbar \sqrt{\frac{k}{m}}
     \end{gather*}
@@ -133,7 +139,7 @@
             {\scriptstyle \left[ \left( \diffp[2]{}{r} + \frac{2}{r}\diffp{}{r} \right) + \frac{1}{r^2\sin\theta}\diffp{}{\theta}\left( \sin\theta \diffp{}{\theta} \right) + \frac{1}{r^2\sin\theta}\diffp[2]{}{\theta}\right]\psi = E\psi}
         \end{equation*}
 
-        Solution becomes seperable
+        Solution becomes seperable; $\Theta(\theta)$ \& $\Phi(\phi)$ in exam
         \begin{equation*}
             \psi(r,\theta,\phi) = R(r) \cdot \Theta(\theta) \cdot \Phi(\phi)
         \end{equation*}

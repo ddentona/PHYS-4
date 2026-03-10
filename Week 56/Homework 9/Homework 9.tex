@@ -1,0 +1,144 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{cancel}
+\usepackage{enumitem}
+\usepackage{esdiff}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{siunitx}
+\usepackage{ulem}
+% \usepackage{pgfplots}
+\usepackage{wrapfig}
+\usepackage{xcolor}
+
+\newcommand{\e}[1]{e^{#1}}
+\newcommand{\ei}[1]{e^{i\left(#1\right)}}
+\newcommand{\E}[1]{\times 10^{#1}}
+
+\renewcommand\qedsymbol{TENA}
+
+\title{
+    Homework \#9
+    \\  \small
+    PHYS 4D: Modern Physics
+    }
+\author{Donald Aingworth IV}
+\date{March 16, 2026}
+
+\begin{document}
+    \maketitle
+
+    \section{Questions}
+    % \begin{multicols}{2}
+        \small
+        \subsection{Question 1}
+            Upon which assumption is the independent particle based?
+
+            \subsubsection{Answer}
+                The independent particle is based on the assumption that the potential energy between electrons orbiting an atom can be approximated to two separable components each dependent on the location of one atom but not the other.
+                \begin{equation}
+                    \frac{1}{4\pi\varepsilon_0}\frac{e^2}{\left| \vec{r}_1 - \vec{r}_2 \right|} \approx U(\vec{r}_1) + U(\vec{r}_2)
+                \end{equation}
+
+                This makes the differential equation seperable and is partway to the Central Field Aproximation.
+            
+        \subsection{Question 2}
+            What is the Pauli exclusion principle?
+
+            \subsubsection{Answer}
+                In \textit{The Sopranos}, it's a reason for Tony to keep his henchman out of important meetings.
+                In Physics, it refers to how two electrons cannot occupy the same quantum state aound an atom at the same time.
+            
+        \subsection{Question 3}
+            An electron moving in a central field can be described by the quantum numbers, $n$, $l$, $m_s$, and $m_l$. 
+            Upon which of these quantum numbers does the energy of the electron generally depend?
+
+            \subsubsection{Answer}
+                Energy of an electron generally depends on $n$ and $l$. 
+            
+        \subsection{Question 4}
+            Give the principal quantum number $n$ and the orbital angular momentum number $\ell$ of a $3d$ electron.
+
+            \subsubsection{Answer}
+                $n$ is the first half of the electron location denotation, in this case $3$.
+                $\ell$ is the second half of the electron location denotation put through a conversion.
+                In this case, $d$ is equivalent to 2 (or ``George'' in my denotation).
+                \[ \boxed{(n,\ell) = (3,2)} \]
+            
+        \subsection{Question 5}
+            Give the possible values of $m_s$ and $m_\ell$ for a $3d$ electron.
+
+            \subsubsection{Answer}
+                $m_s$ denotes the spin and can only have one of two values, $+\frac{1}{2}$ and $-\frac{1}{2}$.
+                $m_\ell$ can have any integer value in the range of $[-\ell,\ell]$. 
+                From Question 4, we know that $\ell = 2$, so the set of possible values is $m_\ell \in \left\{ -2, -1, 0, 1, 2 \right\}$.
+            
+        \subsection{Question 6}
+            How many electrons does it take to fill the 1s, 2p, and 3d shells?
+
+            \subsubsection{Answer}
+                Capacity $C$ follows an equation involving $\ell$.
+                All shalls of equal value of $\ell$ have the same value of $C$.
+                Here, $d \to 2$, $p \to 1$, and $s \to 0$.
+                \begin{gather}
+                    C(\ell) = 2(2\ell + 1)\\
+                    C(0) = 2(2 * 0 + 1) = 2; C(1) = 2(2*1 + 1) = 6; C(2) = 2(2*2 + 1) = 10
+                \end{gather}
+                
+            
+        \subsection{Question 7}
+            Give the ground configuration of (a) N $(Z = 7)$, (b) Si $(Z = 14)$, (c) Ca $(Z = 20)$
+
+            \subsubsection{Answer}
+                \begin{align}
+                    a:& 1s^2 2s^2 2p^3\\
+                    b:& 1s^2 2s^2 2p^6 3s^2 3p^2\\
+                    c:& 1s^2 2s^2 2p^6 3s^2 3p^6 4s^2
+                \end{align}
+            
+        \subsection{Question 14}
+            How would the size of a carbon atom be affected if one were to remove a single 2p electron?
+
+            \subsubsection{Answer}
+            
+        \subsection{Question 15}
+            Suppose that one were to remove the two electrons from the helium atom. 
+            Would it take more or less energy to remove the second electron once the first electron had been removed? 
+            Explain your answer.
+
+            \subsubsection{Answer}
+            
+    \section{Problem 1}
+        What are the possible values of ml and ms for a single 4f electron. 
+        How many distinct states does an atom with two 4f electrons have?
+
+        \subsection{Solution}
+        
+    \section{Problem 2}
+        Show that the wave function given by Eq. (5.5) changes sign if the coordinates of the two electrons are interchanged.
+
+        \subsection{Solution}
+        
+    \section{Problem 3}
+        Suppose that a lithium atom has one electron in the 1s shell with its spin up $(ms = +1/2)$, another electron in the 1s shell with its spin down $(ms = -1/2)$ and a third electron in the 2s shell with spin up $(ms = + 1/2)$. 
+        Denoting the wave functions for these three states by $\psi_{1,0,\alpha}$, $\psi_{1,0,\beta}$, and $\psi_{2,0,\alpha}$, construct a Slater determinant representing the state of the lithium atom.
+
+        \subsection{Solution}
+        
+    \section{Problem 4}
+        Using the periodic table shown in Fig. 5.2 determine the ground configuration of the following elements: fluorine (F), magnesium (Mg), silicon (Si), potassium (K), and cobalt (Co).
+
+        \subsection{Solution}
+        
+    \section{Problem 5}
+        (a) Give all elements with a $p^4$ ground configuration. 
+        (b) Give all elements with a $d^5$ ground configuration.
+
+        \subsection{Solution}
+\end{document}
+
+Questions: 1-7, 14, 15 (These questions and problems are centered on the first two sections of chapter 5)
+
+Problems: 1-5
