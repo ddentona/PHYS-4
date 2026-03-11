@@ -16,6 +16,7 @@
 \newcommand{\e}[1]{e^{#1}}
 \newcommand{\ei}[1]{e^{i\left(#1\right)}}
 \newcommand{\E}[1]{\times 10^{#1}}
+\newcommand{\tagref}[1]{\tag{\ref{#1}}}
 
 \renewcommand\qedsymbol{TENA}
 
@@ -49,7 +50,7 @@
 
             \subsubsection{Answer}
                 In \textit{The Sopranos}, it's a reason for Tony to keep his henchman out of important meetings.
-                In Physics, it refers to how two electrons cannot occupy the same quantum state aound an atom at the same time.
+                In Physics, it refers to how two electrons cannot occupy the same quantum state around an atom at the same time.
             
         \subsection{Question 3}
             An electron moving in a central field can be described by the quantum numbers, $n$, $l$, $m_s$, and $m_l$. 
@@ -74,7 +75,8 @@
                 $m_s$ denotes the spin and can only have one of two values, $+\frac{1}{2}$ and $-\frac{1}{2}$.
                 $m_\ell$ can have any integer value in the range of $[-\ell,\ell]$. 
                 From Question 4, we know that $\ell = 2$, so the set of possible values is $m_\ell \in \left\{ -2, -1, 0, 1, 2 \right\}$.
-            
+        \pagebreak
+
         \subsection{Question 6}
             How many electrons does it take to fill the 1s, 2p, and 3d shells?
 
@@ -87,7 +89,6 @@
                     C(0) = 2(2 * 0 + 1) = 2; C(1) = 2(2*1 + 1) = 6; C(2) = 2(2*2 + 1) = 10
                 \end{gather}
                 
-            
         \subsection{Question 7}
             Give the ground configuration of (a) N $(Z = 7)$, (b) Si $(Z = 14)$, (c) Ca $(Z = 20)$
 
@@ -104,35 +105,142 @@
             \subsubsection{Answer}
                 If one $2p$ electron were to be removed, the $2p$ shell would not be empty. 
                 What does reduce is the potential energy due to one fewer repellant electron.
-            
+                There is no longer another $2p$ electron to do extra screening, so it would not be repelled by the other $2p$ electron.
+                This would mean that the outermost electron would stay closer to the nucleus.
+                This means the size of the atom would \underline{decrease}.    
+        \pagebreak
+
         \subsection{Question 15}
             Suppose that one were to remove the two electrons from the helium atom. 
             Would it take more or less energy to remove the second electron once the first electron had been removed? 
             Explain your answer.
 
             \subsubsection{Answer}
-            
+                Consider the hamiltonian of the Helium atom.
+                \scriptsize
+                \begin{align}
+                    \hat{H} &=  -\frac{\hbar^2}{2m_1}\nabla_1^2 - \frac{1}{4\pi\varepsilon_0} \frac{Ze^2}{r_1} - \frac{\hbar^2}{2m_1}\nabla_2^2 - \frac{1}{4\pi\varepsilon_0} \frac{Ze^2}{r_2} + \frac{1}{4\pi\varepsilon_0} \frac{Ze^2}{\left| \left| \vec{r}_1 - \vec{r}_2 \right| \right|}
+                \end{align}
+
+                \normalsize
+                Since the atom would not have any electrical energy, the above equation is equivalent to the hamiltonian for the removal of the first electron plus the hamiltonian for the removal of the second electron.
+                
+                Since the two electrons are in the same shell, on average, $r_1 = r_2$ (although $\vec{r}_1 \neq \vec{r}_2$).
+                We can separate the above equation into a hamiltonian for the first electron removal and for the second electron removal.
+                Since there would be only one electron in play after we remove the first electron, the removal of the first electron would take all values involving the first electron (suppose it's $r_1$ with mass $m_1$) with it.
+                \begin{gather}
+                    \hat{H} = \hat{H}_1 + \hat{H}_2\\
+                    \hat{H}_1 = -\frac{\hbar^2}{2m_1}\nabla_1^2 - \frac{1}{4\pi\varepsilon_0} \frac{Ze^2}{r_1} + \frac{1}{4\pi\varepsilon_0} \frac{Ze^2}{\left| \left| \vec{r}_1 - \vec{r}_2 \right| \right|}\\
+                    \hat{H}_2 = - \frac{\hbar^2}{2m_1}\nabla_2^2 - \frac{1}{4\pi\varepsilon_0} \frac{Ze^2}{r_2}
+                \end{gather}
+
+                Comparing the ionization energy with another electron ($\hat{H}_1$) to without ($\hat{H}_2$), we notice that with another electron, there is an extra term $+ \frac{1}{4\pi\varepsilon_0} \frac{Ze^2}{\left| \left| \vec{r}_1 - \vec{r}_2 \right| \right|}$.
+                Since that is positive, and the ionization comes from the negative on the energy of the system, the extra term would reduce the amount of energy necessary to ionize.
+                This means that, without the other electron, ionization would take \underline{more} energy.
+    \pagebreak
+
     \section{Problem 1}
-        What are the possible values of ml and ms for a single 4f electron. 
-        How many distinct states does an atom with two 4f electrons have?
+        What are the possible values of $m_\ell$ and $m_s$ for a single $4f$ electron? 
+        How many distinct states does an atom with two $4f$ electrons have?
 
         \subsection{Solution}
-        
+            Electrons only have two possible values of $m_s$: up ($+\frac{1}{2}$) and down ($-\frac{1}{2}$).
+            For values of $m_\ell$, the only restriction is that $-\ell \leq m_\ell \leq \ell$.
+            Since this is an f orbital (or as I call it, Ringo), $\ell = 3$.
+            This means we can list the possible values of $m_\ell$.
+            \begin{equation}
+                m_\ell \in \{-3,-2,-1,0,1,2,3\}
+            \end{equation}
+
+            That means there are a total of 14 possible values of $(m_\ell, m_s)$, each of which the first electron could take.
+            The second electron could be any of the other possible values of $(m_\ell, m_s)$ besides the value of the first one, leaving it with 13 possible values.
+            Multiplying the 14 values of the first by the 13 values of the second, we get \boxed{182} distinct states.
+        \pagebreak
+
     \section{Problem 2}
         Show that the wave function given by Eq. (5.5) changes sign if the coordinates of the two electrons are interchanged.
+        \begin{equation}
+            \label{eq:5.5} \tag{5.5}
+            \Psi = \frac{1}{\sqrt{2}} \left[ \phi_a(1) \phi_b(2) - \phi_a(2) \phi_b(1) \right]
+        \end{equation}
 
         \subsection{Solution}
-        
+            \begin{proof}[Show]
+                Start with equation \ref{eq:5.5}.
+                \begin{equation}\tagref{eq:5.5}
+                    \Psi_{a,b}(1,2) = \frac{1}{\sqrt{2}} \left[ \phi_a(1) \phi_b(2) - \phi_a(2) \phi_b(1) \right]            
+                \end{equation}
+
+                Now, reverse the 1 and the 2.
+                \begin{equation}
+                    \Psi_{a,b}(2,1) = \frac{1}{\sqrt{2}} \left[ \phi_a(2) \phi_b(1) - \phi_a(1) \phi_b(2) \right]
+                \end{equation}
+
+                Multiply everything by $-1$.
+                \begin{align}
+                    -\Psi_{a,b}(2,1)    &=  -\frac{1}{\sqrt{2}} \left[ \phi_a(2) \phi_b(1) - \phi_a(1) \phi_b(2) \right]\\
+                        &=  \frac{1}{\sqrt{2}} \left[ -\phi_a(2) \phi_b(1) + \phi_a(1) \phi_b(2) \right]\\
+                        &=  \frac{1}{\sqrt{2}} \left[ \phi_a(1) \phi_b(2) - \phi_a(2) \phi_b(1) \right]
+                        =   \Psi_{a,b}(1,2)
+                \end{align}
+            \end{proof}
+    \pagebreak
+            
     \section{Problem 3}
         Suppose that a lithium atom has one electron in the 1s shell with its spin up $(ms = +1/2)$, another electron in the 1s shell with its spin down $(ms = -1/2)$ and a third electron in the 2s shell with spin up $(ms = + 1/2)$. 
         Denoting the wave functions for these three states by $\psi_{1,0,\alpha}$, $\psi_{1,0,\beta}$, and $\psi_{2,0,\alpha}$, construct a Slater determinant representing the state of the lithium atom.
 
         \subsection{Solution}
-        
+            This just uses a square matrix and a determinant.
+            Our row values will be the states $a = (1,0,\alpha)$, $b = (1,0,\beta)$, and $c = (2,0,\alpha)$.
+            Our columns will be our three electrons, which I'll just call 1, 2, and 3.
+            The value $N$ will here be 3, so $\sqrt{N!} = \sqrt{6}$.
+            \begin{align}
+                \Psi    &=  \frac{1}{\sqrt{3!}} \left| \begin{matrix}
+                    \psi_{a}(1) &\psi_{a}(2)    &\psi_{a}(3) \\
+                    \psi_{b}(1) &\psi_{b}(2)    &\psi_{b}(3) \\
+                    \psi_{c}(1) &\psi_{c}(2)    &\psi_{c}(3)
+                \end{matrix} \right|
+            \end{align}
+
+            Expand this.
+            \begin{multline}
+                \Psi    =   \frac{1}{\sqrt{3!}} \left[ \psi_{a}(1) \left| \begin{matrix}
+                            \psi_{b}(2) &\psi_{b}(3)  \\
+                            \psi_{c}(2) &\psi_{c}(3)
+                        \end{matrix} \right|\right.
+                        -   \psi_{a}(2) \left| \begin{matrix}
+                                \psi_{b}(1) &\psi_{b}(3)  \\
+                                \psi_{c}(1) &\psi_{c}(3)
+                            \end{matrix} \right|\\
+                        +   \left.\psi_{a}(3) \left| \begin{matrix}
+                                \psi_{b}(1) &\psi_{b}(2)  \\
+                                \psi_{c}(1) &\psi_{c}(2)
+                            \end{matrix} \right| \right]
+            \end{multline}
+
+            Expand this.
+            \begin{multline}
+                \Psi    =   \frac{1}{\sqrt{6}} \left[ \psi_{a}(1)(\psi_{b}(2)\psi_{c}(3) - \psi_{b}(3)\psi_{c}(2))\right.\\
+                        -   \psi_{a}(2) (\psi_{b}(1)\psi_{c}(3) - \psi_{b}(3)\psi_{c}(1))\\
+                        +   \left.\psi_{a}(3)(\psi_{b}(1)\psi_{c}(2) - \psi_{b}(2)\psi_{c}(1))
+                            \right]
+            \end{multline}
+
+            You can multiply this out more, but the determinat is completed, so I just won't expand go further.
+    \pagebreak
+
     \section{Problem 4}
         Using the periodic table shown in Fig. 5.2 determine the ground configuration of the following elements: fluorine (F), magnesium (Mg), silicon (Si), potassium (K), and cobalt (Co).
 
         \subsection{Solution}
+            \begin{align}
+                \text{F}:&  1s^2 2s^2 2p^5\\
+                \text{Mg}:& 1s^2 2s^2 2p^6 3s^2\\
+                \text{Si}:& 1s^2 2s^2 2p^6 3s^2 3p^6 4s^2\\
+                \text{K}:&  \\
+                \text{Co}:& 
+            \end{align}
         
     \section{Problem 5}
         (a) Give all elements with a $p^4$ ground configuration. 
@@ -141,6 +249,6 @@
         \subsection{Solution}
 \end{document}
 
-Questions: 1-7, 14, 15 (These questions and problems are centered on the first two sections of chapter 5)
+% Questions: 1-7, 14, 15 (These questions and problems are centered on the first two sections of chapter 5)
 
-Problems: 1-5
+% Problems: 1-5
