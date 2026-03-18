@@ -119,7 +119,7 @@
                 Consider the hamiltonian of the Helium atom.
                 \scriptsize
                 \begin{align}
-                    \hat{H} &=  -\frac{\hbar^2}{2m_1}\nabla_1^2 - \frac{1}{4\pi\varepsilon_0} \frac{Ze^2}{r_1} - \frac{\hbar^2}{2m_1}\nabla_2^2 - \frac{1}{4\pi\varepsilon_0} \frac{Ze^2}{r_2} + \frac{1}{4\pi\varepsilon_0} \frac{Ze^2}{\left| \left| \vec{r}_1 - \vec{r}_2 \right| \right|}
+                    \hat{H} &=  -\frac{\hbar^2}{2m_1}\nabla_1^2 - \frac{1}{4\pi\varepsilon_0} \frac{Ze^2}{r_1} - \frac{\hbar^2}{2m_1}\nabla_2^2 - \frac{1}{4\pi\varepsilon_0} \frac{Ze^2}{r_2} + \frac{1}{4\pi\varepsilon_0} \frac{e^2}{\left| \left| \vec{r}_1 - \vec{r}_2 \right| \right|}
                 \end{align}
 
                 \normalsize
@@ -130,7 +130,7 @@
                 Since there would be only one electron in play after we remove the first electron, the removal of the first electron would take all values involving the first electron (suppose it's $r_1$ with mass $m_1$) with it.
                 \begin{gather}
                     \hat{H} = \hat{H}_1 + \hat{H}_2\\
-                    \hat{H}_1 = -\frac{\hbar^2}{2m_1}\nabla_1^2 - \frac{1}{4\pi\varepsilon_0} \frac{Ze^2}{r_1} + \frac{1}{4\pi\varepsilon_0} \frac{Ze^2}{\left| \left| \vec{r}_1 - \vec{r}_2 \right| \right|}\\
+                    \hat{H}_1 = -\frac{\hbar^2}{2m_1}\nabla_1^2 - \frac{1}{4\pi\varepsilon_0} \frac{Ze^2}{r_1} + \frac{1}{4\pi\varepsilon_0} \frac{e^2}{\left| \left| \vec{r}_1 - \vec{r}_2 \right| \right|}\\
                     \hat{H}_2 = - \frac{\hbar^2}{2m_1}\nabla_2^2 - \frac{1}{4\pi\varepsilon_0} \frac{Ze^2}{r_2}
                 \end{gather}
 
@@ -154,7 +154,7 @@
 
             That means there are a total of 14 possible values of $(m_\ell, m_s)$, each of which the first electron could take.
             The second electron could be any of the other possible values of $(m_\ell, m_s)$ besides the value of the first one, leaving it with 13 possible values.
-            Multiplying the 14 values of the first by the 13 values of the second, we get \boxed{182} distinct states.
+            Multiplying the 14 values of the first by the 13 values of the second and dividing by two to account for doubles, we get \boxed{91} distinct states.
         \pagebreak
 
     \section{Problem 2}
@@ -227,7 +227,7 @@
                             \right]
             \end{multline}
 
-            You can multiply this out more, but the determinat is completed, so I just won't expand go further.
+            You can multiply this out more, but the determinant is completed, so I just won't expand go further.
     \pagebreak
 
     \section{Problem 4}
