@@ -142,21 +142,125 @@
     \pagebreak
     
     \section{Chapter 8, Problem 1}
-        (a) List the six possible sets of quantum numbers (n, l, ml, ms) of a 2p electron. 
-        (b) Suppose we have an atom such as carbon, which has two 2p electrons. 
+        (a) List the six possible sets of quantum numbers $(n, \ell, m_\ell, m_s)$ of a $2p$ electron. 
+        (b) Suppose we have an atom such as carbon, which has two $2p$ electrons. 
         Ignoring the Pauli principle, how many different possible combinations of quantum numbers of the two electrons are there? 
         (c) How many of the possible combinations of part (b) are eliminated by applying the Pauli principle? 
         (d) Suppose carbon is in an excited state with conﬁguration $2p^1 3p^1$. 
         Does the Pauli principle restrict the choice of quantum numbers for the electrons? 
         How many different sets of quantum numbers are possible for the two electrons?
-        \subsection{Solution}
+        
+        \subsection{Solution (a)}
+            In every case, $n = 2$ and $\ell = 1$.
+            The possible values of $m_\ell$ are $\{-1, 0, 1\}$ and the possible values of $m_s$ are $\{-\frac{1}{2}, \frac{1}{2}\}$.
+            This gives us our six possible values.
+            \begin{align*}
+                &(2, 1, +1, +\frac{1}{2})   &(2, 1, +1, -\frac{1}{2})\\
+                &(2, 1, 0, +\frac{1}{2})    &(2, 1, 0, -\frac{1}{2})\\
+                &(2, 1, -1, +\frac{1}{2})   &(2, 1, -1, -\frac{1}{2})
+            \end{align*}
+
+        \subsection{Solution (b)}
+            Use triangle numbers, to acount for repeats.
+            In this case, it's the sixth triangle number (6 possible values).
+            \begin{equation}
+                C = \sum_{i = 1}^{6} i = 6+5+4+3+2+1 = \boxed{21}
+            \end{equation}
+        
+        \subsection{Solution (c)}
+            This is an $n$ choose $r$ problem where the order does matter. 
+            \begin{equation}
+                \binom{n}{r} = \frac{n!}{r!(n - r)!}
+            \end{equation}
+
+            In this case, $n = 6$ possible configurations and $r = 2$ electrons.
+            \begin{align}
+                C   &=  \binom{6}{2} 
+                    =   \frac{6!}{2!(6 - 2)!}
+                    =   \frac{6 * 5}{2}
+                    =   15
+            \end{align}
+
+            This means that \boxed{6} combinations are eliminated.
+
+        \subsection{Solution (d)}
+            Pauli does restrict every electron, but in this case, the value of $n$ will be different for each electron, so there will be no other restrictions on values.
+            One electron has $n = 2$, while the other has $n = 3$.
+            $m_\ell$ has the same 6 possible values. 
+            Due to the different values of $n$, there will be no repeats. 
+            Multiple the number of possible values of each together.
+            \begin{equation}
+                C = 6 * 6 = \boxed{36}
+            \end{equation}
     \pagebreak
     
     \section{Chapter 8, Problem 19}
         A small helium-neon laser produces a light beam with an average power of 3.5 mW and a diameter of 2.4 mm.
         (a) How many photons per second are emitted by the laser?
         (b) What is the amplitude of the electric ﬁeld of the light wave? Compare this result with the electric ﬁeld at a distance of 1 m from an incandescent light bulb that emits 100 W of visible light.
-        \subsection{Solution}
+
+        \subsection{Solution (a)}
+            The power can be converted to energy by multiplying by one second.
+            \begin{equation}
+                E_{\rm laser}   =   P * t 
+                    =   3.5\,\unit{\milli\watt} * 1 \unit{\second}
+                    =   3.5\,\unit{\milli\joule}
+                    =   3.5\E{-3}\,\unit{\joule}
+            \end{equation}
+
+            A helium-neon laser has laser beams that come from the neon. 
+            Said neon makes the transition from $2p^5 5s^1$ to $2p^5 3p^1$.
+            The transition of an electron from $n = 5$ to $n = 3$ emits a photon, whose energy we can calculate.
+            \begin{align}
+                E_{\rm photon}  &=  -13.6\,\unit{\eV} * 10^2 * \left( \frac{1}{5^2} - \frac{1}{3^2} \right)
+                    =   13.6\,\unit{\eV} * 10^2 * \frac{16}{225}\\
+                    &=  13.6\,\unit{\eV} * \frac{64}{9} * \frac{1\,\unit{\joule}}{6.242\E{18}\,\unit{\eV}}
+                    =   \frac{13.6\,\unit{\joule} * 64}{9 * 6.242\E{18}\,\unit{\eV}}\\
+                    &=  1.549\E{-17}\,\unit{\joule}
+            \end{align}
+
+            If we divide the total energy by the energy of each photon, we will get the total number of photons, approximately. 
+            \begin{align}
+                n   &=  \frac{E_{\rm laser}}{E_{\rm photon}}
+                    =   \frac{3.5\E{-3}\,\unit{\joule}}{1.549\E{-17}\,\unit{\joule}}
+                    =   \boxed{2.26\E{14}}
+            \end{align}
+
+        \subsection{Solution (b)}
+            The intensity light wave can be found with its power and its area concentrated to.
+            \begin{equation}
+                I = \frac{P}{A} = \frac{P}{\pi r^2} = \frac{3.5\,\unit{\milli\watt}}{\pi (1.2\,\unit{\milli\meter})^2}
+            \end{equation}
+
+            The electric field can be calcualted from the intensity.
+            \begin{align}
+                |\vec{E}|   &=  \sqrt{2I\mu_0 c}
+                    =   \sqrt{\frac{2P\mu_0 c}{\pi r^2}}
+                    =   \sqrt{\frac{8\E{-7}\,\unit{\newton/\ampere^2} * P c}{r^2}}\\
+                    &=  \sqrt{\frac{8\E{-7}\,\unit{\newton/\ampere^2} * 3.5\,\unit{\milli\watt} * 2.998\E{8}\,\unit{\meter/\second}}{(1.2\,\unit{\milli\meter})^2}}\\
+                    &=  \sqrt{\frac{80 * 3.5\E{-3} * 2.998}{1.44\E{-6}}\,\unit{\frac{\newton^2}{\coulomb^2}}}
+                    =   \sqrt{\frac{5246500}{9}}\,\unit{\frac{\newton}{\coulomb}}
+                    =   \boxed{763.5\,\unit{\newton/\coulomb}}
+            \end{align}
+
+            Meanwhile, intensity from an incandescent light is calculatable from the total power of the bulb and the distance from it.
+            \begin{equation}
+                I = \frac{P}{4\pi r^2}
+            \end{equation}
+
+            Plug this into the equation of the electric field and solve for it.
+            \begin{align}
+                |\vec{E}|   &=  \sqrt{2I\mu_0 c}
+                    =   \sqrt{\frac{2 P \mu_0 c}{4\pi r^2}}
+                    =   \sqrt{\frac{P \mu_0 c}{2 \pi r^2}}\\
+                    &=  \sqrt{\frac{100\,\unit{\watt} * 4\pi\E{-7}\,\unit{\newton/\ampere^2} * 2.998\E{8}\,\unit{\meter/\second}}{2 \pi (1\,\unit{\meter})^2}}\\
+                    &=  \sqrt{100\,\unit{\watt/\meter^2} * 20 * 2.998\,\unit{\newton\meter/\ampere^2\second}}\\
+                    &=  \sqrt{2000 * 2.998\,\unit{\newton^2/\coulomb^2}}
+                    =   \sqrt{5996}\,\unit{\newton/\coulomb}
+                    =   77.43\,\unit{\newton/\coulomb}
+            \end{align}
+
+            One meter away, the electric field is about a tenth of the electric field of the laser.
     \pagebreak
     
     \section{Chapter 8, Problem 21}
@@ -164,6 +268,38 @@
         What is the effective charge seen by the outer electron? 
         (b) If the $3s$ electron of a sodium atom is moved to the $4f$ state, the measured binding energy is 0.85 eV. 
         What is the effective charge seen by an electron in this state?
-        \subsection{Solution}
-    
+
+        \subsection{Solution (a)}
+            On the periodic table, Sodium has the atomic number 11.
+            Its ground state electron configuration is $\rm 1s^2 2s^2 2p^6 3s^1$. 
+            This means that there is only one outer electron, for which $n = 3$.
+            Use the formula for the energy of a screened electron to find the value of $Z_{\rm eff}$.
+            Inverse the sign of the $13.6\,\unit{\eV}$ so we don't end up with an imaginary number.
+            \begin{gather}
+                E_n = (13.6\,\unit{\eV}) \frac{Z_{\rm eff}^2}{n^2} \to Z_{\rm eff}^2 = \frac{E_n n^2}{13.6\,\unit{\eV}}\\
+                \begin{align}
+                    Z_{\rm eff} &=  \sqrt{\frac{E_n n^2}{13.6\,\unit{\eV}}}
+                        =   3\sqrt{\frac{5.14}{13.6}}
+                        =   3\sqrt{0.378}
+                        =   3 * 0.615
+                        =   \boxed{1.84}
+                \end{align}
+            \end{gather}
+
+        \subsection{Solution (b)}
+            First subtract the binding energy from the ionization energy to find the ionization energy from the $4f$ state.
+            \begin{equation}
+                E_4 =   E_3 - \Delta E
+                    =   5.14\,\unit{\eV} - 0.85\,\unit{\eV}
+                    =   4.29\,\unit{\eV}
+            \end{equation}
+
+            From here, use the same equation as in part (a).
+            \begin{align}
+                Z_{\rm eff} &=  \sqrt{\frac{E_n n^2}{13.6\,\unit{\eV}}}
+                    =   4\sqrt{\frac{4.29}{13.6}}
+                    =   4\sqrt{3.15}
+                    =   4 * 0.562
+                    =   \boxed{2.25}
+            \end{align}
 \end{document}
