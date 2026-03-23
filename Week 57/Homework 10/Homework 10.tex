@@ -38,107 +38,197 @@
             How does the quantum-mechanical interpretation of the hydrogen atom differ from the Bohr model?
 
             \subsubsection{Answer}
+                The Quantum Mechanical model uses the particle-wave duality of quantum particles and treats electron positions in shells rather than in orbits.
+                It also treats position in a probablistic manner rather than a definite manner.
 
         \subsection{Chapter 7, Question 3}
-            What are the meanings of the quantum numbers n, l, m l according to (a) the quantum-mechanical calculation; (b) the vector model; (c) the Bohr (orbital) model?
+            What are the meanings of the quantum numbers $n, \ell, m_\ell$ according to (a) the quantum-mechanical calculation; (b) the vector model; (c) the Bohr (orbital) model?
 
-            \subsubsection{Answer}
+            \subsubsection{Answer (a) and (b)}
+                \begin{equation}
+                    \psi = R_{n,\ell}(r) \Theta_{\ell, m_\ell}(\theta) \Phi_{m_\ell}(\phi)
+                \end{equation}
+                $n$, within the context of quantum mechanics, determines energy levels.
+                It affects the radial position of the electron.
+                The energy level is described by equation (\ref{eq:1}).
+                \begin{equation}
+                    \label{eq:1}
+                    E_n = -\frac{me^4}{32\pi^2 \varepsilon_0^2 \hbar^2} \frac{1}{n^2}
+                \end{equation}
+
+                $\ell$ is used to calculate the magnitude of the angular momentum.
+                It also affects the magnitude and planar position of the electron.
+                The angular momentum magnitude is found using equation (\ref{eq:2}).
+                \begin{equation}
+                    \label{eq:2}
+                    |\textbf{L}| = \sqrt{\ell(\ell + 1)}\hbar
+                \end{equation}
+
+                $m_\ell$ is used to calculate the magnitude of the z-component of the angular momentum.
+                It also affects the planar angle and vertical position of the electron.
+                The angular momentum z-component is found using equation (\ref{eq:3}).
+                \begin{equation}
+                    \label{eq:3}
+                    L_z = m_\ell \hbar
+                \end{equation}
+
+            \subsubsection{Answer (c)}
+                In the Bohr model, $n$ represents both the distance from the center (as in (\ref{eq:1})) and the angular momentum of the electron ($L = n\hbar$).
+                It also determines energy levels.
+                $\ell$ and $m_\ell$ represent nothing.
             
         \subsection{Chapter 7, Question 5}
             How does the orbital angular momentum differ between the Bohr model and the quantum-mechanical calculation?
 
             \subsubsection{Answer}
+                In Bohr, it is a function of only the principal quantum number, so $L = n\hbar$.
+                In QM, we only know the magnitude and the z-component of $L$.
+                They are described by (\ref{eq:2}) and (\ref{eq:3}).
+                \begin{gather}
+                    \tag{\ref{eq:2}}
+                    |\textbf{L}| = \sqrt{\ell(\ell + 1)}\hbar\\
+                    \tag{\ref{eq:3}}
+                    L_z = m_\ell \hbar
+                \end{gather}
             
         \subsection{Chapter 7, Question 11}
-            The probability density $\psi* \psi$ does not depend on $\phi$ for the wave functions listed in Table 7.1. 
+            The probability density $\psi^* \psi$ does not depend on $\phi$ for the wave functions listed in Table 7.1. 
             What is the signiﬁcance of this?
 
             \subsubsection{Answer}
+                Its significance is that the relevant values cancel out each other.
+                Notably, the Heisenberg Uncertainty Principle says we can't know both position and momentum beyond a certain level.
+                Since we already know the z-value of angular momentum to an exact degree (see equation (\ref{eq:3})), it makes sense that we would have no idea what the one value that affects z-position is.
             
         \subsection{Chapter 7, Question 13}
             Can a hydrogen atom in its ground state absorb a photon (of the proper energy) and end up in the 3d state?
 
             \subsubsection{Answer}
+                No. 
+                The rules are that $\Delta \ell = \pm 1$ and $\Delta m_\ell \in \{-1, 0, 1\}$.
+                This involves transitioning for $\Delta \ell = 2$, which is more than the allowed value(s).
             
-        \subsection{Chapter 7, Question 15}
-            The photon has a spin quantum number of 1, but its spin magnetic moment is zero. 
-            Explain.
+        % \subsection{Chapter 7, Question 15}
+        %     The photon has a spin quantum number of 1, but its spin magnetic moment is zero. 
+        %     Explain.
 
-            \subsubsection{Answer}
+        %     \subsubsection{Answer}
+        %         The spin magnetic moment is defined by the 
             
-        \subsection{Chapter 7, Question 19}
-            How would (a) the Zeeman effect and (b) the ﬁne structure be different in a muonic hydrogen atom? 
-            (See Problems 41 and 42 in Chapter 6.) 
-            The muon has the same spin as the electron, but is 207 times as massive.
+        % \subsection{Chapter 7, Question 19}
+        %     How would (a) the Zeeman effect and (b) the ﬁne structure be different in a muonic hydrogen atom? 
+        %     (See Problems 41 and 42 in Chapter 6.) 
+        %     The muon has the same spin as the electron, but is 207 times as massive.
 
-            \subsubsection{Answer}
+        %     \subsubsection{Answer}
             
-        \subsection{Chapter 7, Problem 21}
-            List the excited states (in spectroscopic notation) to which the $4p$ state can make downward transitions.
+        % \subsection{Chapter 7, Problem 21}
+        %     List the excited states (in spectroscopic notation) to which the $4p$ state can make downward transitions.
 
-            \subsubsection{Answer}
+        %     \subsubsection{Answer}
             
-        \subsection{Chapter 7, Problem 22}
-            (a) A hydrogen atom is in an excited $5g$ state, from which it makes a series of transitions by emitting photons, ending in the $1s$ state. 
-            Show, on a diagram similar to Figure 7.19, the sequence of transitions that can occur. 
-            (b) Repeat part (a) if the atom begins in the $5d$ state.
+        % \subsection{Chapter 7, Problem 22}
+        %     (a) A hydrogen atom is in an excited $5g$ state, from which it makes a series of transitions by emitting photons, ending in the $1s$ state. 
+        %     Show, on a diagram similar to Figure 7.19, the sequence of transitions that can occur. 
+        %     (b) Repeat part (a) if the atom begins in the $5d$ state.
 
-            \subsubsection{Answer}
+        %     \subsubsection{Answer}
             
-        \subsection{Chapter 7, Problem 25}
-            A collection of hydrogen atoms is placed in a magnetic field of 3.50 T. 
-            Ignoring the effects of electron spin, find the wavelengths of the three normal Zeeman components (a) of the 3d to 2p transition; (b) of the 3s to 2p transition.
+        % \subsection{Chapter 7, Problem 25}
+        %     A collection of hydrogen atoms is placed in a magnetic field of 3.50 T. 
+        %     Ignoring the effects of electron spin, find the wavelengths of the three normal Zeeman components (a) of the 3d to 2p transition; (b) of the 3s to 2p transition.
 
-            \subsubsection{Answer}
+        %     \subsubsection{Answer}
             
-        \subsection{Chapter 7, Problem 27}
-            Calculate the energies and wavelengths of the 3d to 2p transition, taking into account the ﬁne structure of both levels.
-            How many component wavelengths might there be in the transition?
+        % \subsection{Chapter 7, Problem 27}
+        %     Calculate the energies and wavelengths of the 3d to 2p transition, taking into account the ﬁne structure of both levels.
+        %     How many component wavelengths might there be in the transition?
 
-            \subsubsection{Answer}
+        %     \subsubsection{Answer}
             
-        \subsection{Chapter 7, Problem 34}
-            For the 1s, 2s, and 2p states of hydrogen, show that $(r^{-1})_{\rm av} = 1/n^2a_0$. 
-            This turns out to be a general result for any state of hydrogen. 
-            Based on this result, explain why the Bohr model gives such a good estimate for the ﬁne-structure splitting as well as for other magnetic effects due to the circulating electron.
+        % \subsection{Chapter 7, Problem 34}
+        %     For the 1s, 2s, and 2p states of hydrogen, show that $(r^{-1})_{\rm av} = 1/n^2a_0$. 
+        %     This turns out to be a general result for any state of hydrogen. 
+        %     Based on this result, explain why the Bohr model gives such a good estimate for the ﬁne-structure splitting as well as for other magnetic effects due to the circulating electron.
 
-            \subsubsection{Answer}
+        %     \subsubsection{Answer}
             
     \pagebreak
     
     \section{Chapter 8, Question 2}
         Why do the $4s$ and $3d$ subshells appear so close in energy, when they belong to different principal quantum numbers $n$?
 
-        \subsection{Solution}
-    \pagebreak
+        \subsection{Answer}
+            This is because the the large number of electrons in the inner shells in the $n = 3$ shell cause a lot of screening.
+            Both the $4s$ and $3d$ are affected by this screening, to the point that they have around the same energy.
+            They are not exactly the same energy, and the amount of energy of each depends on the element, which is what results in the $3d$ shell of Copper filling up faster than its $4s$ shell. 
+    % \pagebreak
     
     \section{Chapter 8, Question 3}
         Would you expect element 107 to be a good conductor or a poor conductor? 
         How about element 111? 
         Do you expect element 112 to be paramagnetic or diamagnetic?
 
-        \subsection{Solution}
+        \subsection{Answer}
+            Element 107 (Bh) has a configuration of $\rm [Rn] 7s^2 5f^{14} 6d^5$.
+            Transition metals with half-filled d-shells have higher resistivities than their neighbors.
+            Therefore, I expect it to have a high resistivity, but not an absurdly high one. 
+            This means a \underline{poor conductor}.
+
+            Element 111 (Rg) has a configuration of $\rm [Rn] 7s^2 5f^{14} 6d^{9}$.
+            I expect it to be a much better conductivity than Bohrium.
+            This means a \underline{good conductor}.
+
+            Element 112 has a configuration of $\rm [Rn] 7s^2 5f^{14} 6d^{10}$.
+            It has only full shells.
+            This means \underline{diamagnetic}.
     \pagebreak
 
     \section{Chapter 8, Question 10}
-        Suppose we do a Stern-Gerlach experiment using an atom that has angular momentum quantum numbers L and S in its ground state. 
+        Suppose we do a Stern-Gerlach experiment using an atom that has angular momentum quantum numbers $L$ and $S$ in its ground state. 
         Into how many components will the beam split? 
         Do you expect them to be equally spaced?
 
-        \subsection{Solution}
+        \subsection{Answer}
+            Having to do with magnetic field coming from motion and spin of electrons, motion from a magnet would come from different values of $L$ and $S$.
+            There are two kinds of spin, one that comes from the angular momentum ($L$) and one that comes from the spin ($S$). 
+            There is a total rotational, which we can denote $J$ and which would be the sum of the angular momentum and the spin.
+            \begin{equation}
+                \vec{J} = \vec{L} + \vec{S}
+            \end{equation}
+
+            From $L$, there are $2L + 1$ possible values of $m_\ell$.
+            From $S$, there are two possible values of $m_s$ for electrons, which are $\pm \frac{1}{2}$.
+            If we add them together as vectors and take the absolute value, we get $J$.
+            This results in a total of $2J + 1$ components, which we would expect to be equally spaced.
     \pagebreak
     
     \section{Chapter 8, Question 17}
-        The ﬁrst excited state in sodium is a ﬁne-structure doublet; the wavelengths emitted in the decay of these states are 589.59 nm and 589.00 nm, a difference of 0.59 nm.
-        The excited $4s^1$ state in sodium (see Figure 8.4) decays to the $3p$ doublet with the emission of radiation at the wavelengths 1138.15 nm and 1140.38 nm, a difference of 2.23 nm. Explain how the $3p$ ﬁne structure can give a wavelength difference of 0.59 nm in one case and 2.23 nm in the other case.
+        The first excited state in sodium is a ﬁne-structure doublet; the wavelengths emitted in the decay of these states are 589.59 nm and 589.00 nm, a difference of 0.59 nm.
+        The excited $4s^1$ state in sodium (see Figure 8.4) decays to the $3p$ doublet with the emission of radiation at the wavelengths 1138.15 nm and 1140.38 nm, a difference of 2.23 nm. 
+        Explain how the $3p$ ﬁne structure can give a wavelength difference of 0.59 nm in one case and 2.23 nm in the other case.
 
         \subsection{Solution}
+            There are two parts to this, one rooted in Physics and one rooted in math.
+            For Physics, we consider the idea of splitting energy levels for each electron.
+            This splitting can result in a difference in the change in the energy that emits a photon.
+
+            Even if the differences in the changes in energy were the same, the wavelengths would still be different. 
+            Wavelength is inversely proportional to energy of the photon.
+            Inverse proportionality has a whose different scale in change in proportionality.
+            For example, while the difference between 3 and 4 is equal to the difference between 4 and 5, the difference between $\frac{1}{3}$ and $\frac{1}{4}$ is more than the difference between $\frac{1}{4}$ and $\frac{1}{5}$.
+            This acts on the changes in energy and wavelength as well, resulting in larger wavelength spreads even if the energy spreads' sizes are identical.
     \pagebreak
     
     \section{Chapter 8, Question 20}
         Explain what is meant by a population inversion and why it is necessary for the operation of a laser.
 
         \subsection{Solution}
+            A population inversion is when the proportions of energy levels swaps from mostly low and a few high to mostly high and a few low. 
+            Atoms in the ground state can absorb the photons emitted by other atoms.
+            If they are absorbed, they cannot exit the enclosure of the laser. 
+            Without the population inversion, most of the photons released will be reabsorbed by other atoms.
+            Having the population inversion lowers the possibility of the photons being reabsorbed and strengthens the amplitude of the laser.
     \pagebreak
     
     \section{Chapter 8, Problem 1}
