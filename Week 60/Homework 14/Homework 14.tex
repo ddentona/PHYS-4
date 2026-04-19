@@ -1,0 +1,149 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{cancel}
+\usepackage{enumitem}
+\usepackage{esdiff}
+\usepackage{graphicx}
+\usepackage[version=4,textfontname=sffamily,mathfontname=mathsf]{mhchem}
+\usepackage{multicol}
+\usepackage{siunitx}
+\usepackage{ulem}
+% \usepackage{pgfplots}
+\usepackage{wrapfig}
+\usepackage{xcolor}
+
+\newcommand{\e}[1]{e^{#1}}
+\newcommand{\ei}[1]{e^{i\left(#1\right)}}
+\newcommand{\E}[1]{\times 10^{#1}}
+\newcommand{\tagref}[1]{\tag{\ref{#1}}}
+
+\renewcommand\qedsymbol{TENA}
+
+\title{
+    Homework \#14
+    \\  \small
+    PHYS 4D: Modern Physics
+    \\
+    Problems from Krane's textbook
+    }
+\author{Donald Aingworth IV}
+\date{April 20, 2026}
+
+\begin{document}
+\maketitle
+\DeclareSIUnit{\amu}{amu}
+
+\section{Questions, Chapter 11}
+    \subsection{Question 2}
+        How should Eq. 11.7 be modiﬁed to be valid for \ce{MgO} and \ce{BaO}?
+        \begin{equation}
+            \label{eq:11.7} \tag{11.7}
+            E_{\rm coh} = \frac{1}{2}(B)(2N_A) = BN_A
+        \end{equation}
+        
+        \subsubsection{Answer}
+            Let's take a closer look at that value $B$. 
+            It can be expanded.
+            \begin{equation}
+                B = -U(R_0) = \frac{\alpha e^2}{4\pi\varepsilon_0 R_0} \left( 1 - \frac{1}{n} \right)
+            \end{equation}
+
+            There are two values here to be explored.
+            The first is the Madelung constant $\alpha$, which is dependant on the binding structure. 
+            \ce{MgO} and \ce{BaO} are both fcc structures, so they have Madelung constant $\alpha = 1.7476$.
+            The second is $n$, which comes from an exponent of the equilibrium separation determined from compressability data.
+            For \ce{MgO}, $n = 7$.
+            For \ce{BaO}, $n = 9.5$.
+
+    \subsection{Question 3}
+        From Figure 11.11, estimate the Einstein temperature for lead. 
+        (Hint: Consider Eq. 11.11 when $T = T_E$.)
+
+        \subsubsection{Answer}
+
+    \subsection{Question 4}
+        A graph of $C/T$ vs. $T^2$ for solid argon (similar to Figure 11.13) goes through the origin; that is, its y-intercept is zero. 
+        Explain.
+
+        \subsubsection{Answer}
+
+    \subsection{Question 7}
+        (a) Why does the electrical conductivity of a metal decrease as the temperature is increased? 
+        (b) How would you expect the conductivity of a semiconductor to change with temperature?
+
+        \subsubsection{Answer}
+
+    \subsection{Question 12}
+        Three different materials have filled valence bands and empty conduction bands, and the Fermi energy lies in the middle of the gap. 
+        The gap energies are 10 eV, 1 eV, and 0.01 eV. 
+        Classify the electrical properties of these materials at room temperature and at 3 K.
+
+        \subsubsection{Answer}
+
+\section{Problem 7}
+    Calculate the Coulomb energy and the repulsion energy for \ce{NaCl} at its equilibrium separation.
+
+    \subsection{Solution}
+        According to Table 11.1, \ce{NaCl} has an fcc structure.
+        This means that the Madelung constant $\alpha = 1.7476$. 
+        The coulombic potential energy of an ion in an ionic solid is defined by equation (\ref{eq:11.1}).
+        \begin{equation}
+            \label{eq:11.1} \tag{11.1}
+            U_C = -\alpha \frac{e^2}{4\pi\varepsilon_0} \frac{1}{R}
+        \end{equation}
+
+        For \ce{NaCl}, the nearest-neighbor separation $R_0 = 0.281\,\unit{\nano\meter}$.
+        Plug all of these into equation (\ref{eq:11.1}).
+        \begin{align}
+            U_C &=  -\alpha \frac{e^2}{4\pi\varepsilon_0} \frac{1}{R_0}
+                =   -1.7476 \frac{(8.99\E{9}\,\unit{\frac{\newton\cdot\meter^2}{\coulomb^2}})(1.602\E{-19}\,\unit{\coulomb})^2}{0.281\E{-9}\,\unit{\meter}}\\
+                &=  \boxed{-1.435\E{-18}\,\unit{\joule}}
+        \end{align}
+
+        You can arrive at the repulsion energy by dividing the Coulomb energy by the negative of the exponent $n$.
+        In the case of \ce{NaCl}, $n = 9$ and $-n = -9$.
+        \begin{equation}
+            U_R =   \frac{U_C}{-n}
+                =   \frac{-1.435\E{-18}\,\unit{\joule}}{-9}
+                =   \boxed{1.594\E{-19}\,\unit{\joule}}
+        \end{equation}
+
+\section{Problem 11}
+
+    \subsection{Solution}
+
+\section{Problem 12}
+
+    \subsection{Solution}
+
+\section{Problem 13}
+
+    \subsection{Solution}
+
+\section{Problem 15}
+
+    \subsection{Solution}
+
+\section{Problem 16}
+
+    \subsection{Solution}
+
+\section{Problem 22}
+
+    \subsection{Solution}
+
+\section{Problem 23}
+
+    \subsection{Solution}
+
+\section{Problem 28}
+
+    \subsection{Solution}
+
+\section{Problem 29}
+
+    \subsection{Solution}
+
+\end{document}
