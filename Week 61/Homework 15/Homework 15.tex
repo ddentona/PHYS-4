@@ -1,0 +1,292 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{cancel}
+\usepackage{enumitem}
+\usepackage{esdiff}
+\usepackage{graphicx}
+\usepackage[version=4,textfontname=sffamily,mathfontname=mathsf]{mhchem}
+\usepackage{multicol}
+\usepackage{siunitx}
+\usepackage{ulem}
+% \usepackage{pgfplots}
+\usepackage{wrapfig}
+\usepackage{xcolor}
+
+\newcommand{\e}[1]{e^{#1}}
+\newcommand{\ei}[1]{e^{i\left(#1\right)}}
+\newcommand{\E}[1]{\times 10^{#1}}
+\newcommand{\tagref}[1]{\tag{\ref{#1}}}
+
+\renewcommand\qedsymbol{TENA}
+
+\title{
+    Homework \#14
+    \\  \small
+    PHYS 4D: Modern Physics
+    \\
+    Problems from Krane's textbook
+    }
+\author{Donald Aingworth IV}
+\date{April 27, 2026}
+
+\begin{document}
+\maketitle
+\DeclareSIUnit{\amu}{amu}
+\DeclareSIUnit{\light}{c}
+\DeclareSIUnit{\lightyear}{c\cdot yr}
+\DeclareSIUnit{\year}{yr}
+\DeclareSIUnit{\yr}{yr}
+
+\section{Questions, Chapter 2}
+    \subsection{Question 1}
+        Explain in your own words what is meant by the term ``relativity''. 
+        Are there different theories of relativity?
+
+        \subsubsection{Answer}
+            Relativity is the description of the observation of events with different positions and velocities.
+            There are multiple theories of relativity, all of which postulate that physics works the same in all reference frames.
+            Classical relativity posits no limit to speed and considers a single observation of the speed of time.
+            Special relativity builds on classical relativity and posits thar the speed of light must be identical in all reference frames.
+            General relativity also exists, and concerns gravity and the shape of spacetime.
+        \pagebreak
+
+    \subsection{Question 8}
+        How does relativity combine space and time coordinates into spacetime?
+        
+        \subsubsection{Answer}
+            It uses the pythagorean theorem, the speed of the moving observer, and an electron clock to relate the velocities.
+            It uses equations, most of which involve $u^2/c^2$, to relate the time elapsed in one time frame, the velocity of another time frame relative to the first, and the time elapsed in the other time frame.
+
+    \subsection{Question 10}
+        Explain in your own words the terms \textit{time dilation} and \textit{length contraction}.
+
+        \subsubsection{Answer}
+            Time dilation refers to moving objects appearing to experience time slower than objects moving at lesser speeds.
+            Length contraction refers to moving objects appearing to have significantly shorter length relative to their length at rest. 
+            This is usually only observable in objects moving at relatively incredibly high speeds, usually close to the speed of light.
+    \pagebreak
+
+\section{Problem 6} % 2.4
+    An astronaut must journey to a distant planet, which is 200 light-years from Earth. 
+    What speed will be necessary if the astronaut wishes to age only 10 years during the round trip?
+
+    \subsection{Solution}
+        Take the formula for time dilation.
+        \begin{equation}
+            \Delta t    =   \frac{\Delta t_0}{\sqrt{1 - u^2/c^2}}
+        \end{equation}
+
+        Define time in years and velocity in terms of light-years.
+        We can replace $\Delta t$ with $\frac{L}{u}$.
+        Substitute in with the equation for relative $L$.
+        Then, solve for $u$.
+        I'll be using the quadratic formula and removing values of $c$ for the sake of cleanliness.
+        \begin{gather}
+            \Delta t    =   \frac{\Delta t_0}{\sqrt{1 - u^2/c^2}}\\
+            \frac{L}{u}    =   \frac{\Delta t_0}{\sqrt{1 - u^2/c^2}}\\
+            L_0 \sqrt{1 - u^2/c^2} * \sqrt{1 - u^2/c^2} = u\,\Delta t_0\\
+            L_0 - L_0 \frac{u^2}{c^2} = u\,\Delta t_0\\
+            0   =   u^2 + \frac{\Delta t_0}{L_0} u - 1
+                =   u^2 + \frac{5}{200} u - 1\\
+            \begin{align}
+                u   &=  \frac{-\frac{1}{40} \pm \sqrt{\left( \frac{1}{40} \right)^2 + 4}}{2}c
+                    =   \frac{-\frac{1}{40} \pm 2.000156}{2}c\\
+                    &=  \frac{1.975}{2}c
+                    =   \boxed{0.988c}
+            \end{align}
+        \end{gather}
+    \pagebreak
+
+\section{Problem 8}
+    High-energy particles are observed in laboratories by photographing tracks they leave in certain detectors; the length of the track depends on the speed of the particle and its lifetime. 
+    A particle moving at 0.995c leaves a track 1.25 mm long. 
+    What is the proper lifetime of the particle?
+
+    \subsection{Solution}
+        First, find the observed lifetime of the particle.
+        \begin{equation}
+            \Delta t_o = \frac{\Delta x}{v}
+                =   \frac{1.25\,\unit{\milli\meter}}{0.995 * 2.998\E{8}\,\unit{\meter/\second}}
+                =   4.19\E{-12}\,\unit{\second}
+        \end{equation}
+
+        Put that into the formula for the proper lifetime of the particle.
+        \begin{align}
+            \Delta t    &=  \frac{\Delta t_o}{\sqrt{1 - u^2/c^2}}
+                =   \frac{4.19\E{-12}\,\unit{\second}}{\sqrt{1 - (0.995)^2}}
+                =   \frac{4.19\E{-12}\,\unit{\second}}{\sqrt{1 - 0.990025}}\\
+                &=  \frac{4.19\E{-12}\,\unit{\second}}{\sqrt{0.009975}}
+                =   \frac{4.19\E{-12}\,\unit{\second}}{0.09987}
+                =   \boxed{4.195\E{-11}\,\unit{\second}}
+        \end{align}
+    \pagebreak
+
+\section{Problem 9}
+    Carry out the missing steps in the derivation of Eq. 2.17.
+    \begin{equation}
+        \label{eq:2.17} \tag{2.17}
+        v = \frac{v' + u}{1 + v'u/c^2}
+    \end{equation}
+
+    \subsection{Solution}
+        We begin, as the book says, with Equations (2.15) and (2.16) and solve them for $\Delta t_1$ and $\Delta t_2$.
+        \begin{gather}
+            \tag{2.15}
+            v \Delta t_1 = L + u\Delta t_1\\
+            (v - u) \Delta t_1 = L\\
+            \Delta t_1 = \frac{L}{v - u}\\
+            \tag{2.16}
+            c \Delta t_2 = L - u \Delta t_2\\
+            (c + u) \Delta t_2 = L\\
+            \Delta t_2 = \frac{L}{c + u}
+        \end{gather}
+
+        Add these together to get the total time elapsed.
+        \begin{align}
+            \Delta t    &=  \Delta t_1 + \Delta t_2
+                =   \frac{L}{v - u} + \frac{L}{c + u}
+                =   L \frac{c + u + v - u}{(v - u)(c + u)}\\
+                &=  L \frac{c + v}{(v - u)(c + u)}
+        \end{align}
+
+        Relate this to both $\Delta t_o$ and $L_o$ from prior formulas.
+        \begin{gather}
+            \Delta t = \frac{\Delta t_o}{\sqrt{1 - u^2/c^2}}\\
+            L = L_o \sqrt{1 - u^2/c^2}\\
+            \frac{\Delta t_o}{\sqrt{1 - u^2/c^2}} = L_o \sqrt{1 - u^2/c^2} \frac{c + v}{(v - u)(c + u)}\\
+            \Delta t_o  =   L_o \frac{(c + v)(1 - u^2/c^2)}{(v - u)(c + u)}
+        \end{gather}
+
+        Relate this to the formula for the time interval passed relative to the clock itself, Eq. (\ref{eq:2.14}).
+        \begin{gather}
+            \label{eq:2.14} \tag{2.14}
+            \Delta t_o = \frac{L_o}{v'} + \frac{L_o}{c}
+                =   L_o \frac{v' + c}{v'c}\\
+            L_o \frac{v' + c}{v'c} = L_o \frac{(c + v)(1 - u^2/c^2)}{(v - u)(c + u)}\\
+            \frac{v' + c}{v'c (1 - u^2/c^2)} = \frac{c + v}{(v - u)(c + u)}
+        \end{gather}
+
+        \begin{gather}
+            (v' + c)(v - u)(c + u) = v'c(c + v)\left( 1 - \frac{u^2}{c^2} \right)\\
+            \begin{split}
+                v'vc + v'vu - v'uc - v'u^2 &+ c^2v + cvu - c^2u - cu^2 \\
+                    &= v'c^2 + v'vc - \frac{v'c^2u^2}{c^2} - \frac{v'vcu^2}{c^2}
+            \end{split}
+            \\
+            v'vu + c^2v + cvu + \frac{v'vu^2}{c} = v'c^2 + v'uc + c^2u + cu^2 + v'u^2 - v'u^2 \\
+            v\left( v'u + c^2 + cu + \frac{v'u^2}{c} \right) = v'c^2 + v'uc + c^2u + cu^2 \\
+            v\left( c(c + u) + \frac{v'uc}{c} + \frac{v'u^2}{c} \right) = v'c(u + c) + cu(u + c) \\
+            v\left( c(c + u) + \frac{v'u}{c}(c + u) \right) = c(u + c)(v' + u) \\
+            v (c + u) \left( c + \frac{v'u}{c} \right) = c(u + c)(v' + u) \\
+            v \left( 1 + \frac{v'u}{c^2} \right) = v' + u \\
+            \boxed{v = \frac{v' + u}{1 + \frac{v'u}{c^2}}}
+        \end{gather}
+    \pagebreak
+
+\section{Problem 10}
+    Two spaceships approach the Earth from opposite directions.
+    According to an observer on the Earth, ship A is moving at a speed of 0.753c and ship B at a speed of 0.851c. 
+    What is the velocity of ship A as observed from ship B? 
+    Of ship B as observed from ship A?
+    
+    \subsection{Solution}
+        Recall the equation for classical velocity addition.
+        \begin{equation}
+            v = v' + u
+        \end{equation}
+
+        Start with the equation for relativistic velocity.
+        \begin{equation}
+            v = \frac{v' + u}{1 + \frac{v'u}{c^2}}
+        \end{equation}
+
+        Within the classical equation, suppose that $u = v_{BA}$, the velocity of B as perceived from A.
+        We can call the velocity of A as perceived from earth $v_A$, a stand-in for $v'$.
+        $v$ will then be replaced by the velocity of B as perceived from earth, or $v_B$.
+        Plug these into the classical velocity addition equation and solve for $v_{BA}$.
+        \begin{gather}
+            v_B = v_A + v_{BA}\\
+            v_{BA} = v_B - v_A
+        \end{gather}
+
+        Compare like terms with the classical relativity equation to find what replaces what when plugging into the spacial relativistic velocity equation.
+        \begin{gather}
+            v \to v_{BA};
+            v' \to v_B;
+            u \to -v_A\\
+            \begin{align}
+                v_{BA}  &=  \frac{v_B - v_A}{1 - \frac{v_A v_B}{c^2}}
+                    =   \frac{0.851\,\unit{\light} - 0.753\,\unit{\light}}{1 - 0.851 * 0.753}
+                    =   \frac{0.098}{0.359197}\,\unit{\light}
+                    =   \boxed{0.273\,\unit{\light}}
+            \end{align}
+        \end{gather}
+
+        For the speed of A as seen from B, take the negative, so $v_{AB} = \boxed{-0.273\,\unit{\light}}$.
+    \pagebreak
+
+\section{Problem 15} % 2.5 
+    Observer $O$ ﬁres a light beam in the $y$ direction ($v_y = c$).
+    Use the Lorentz velocity transformation to ﬁnd $v'_x$ and $v'_y$ and show that $O'$ also measures the value $c$ for the speed of light. 
+    Assume that $O'$ moves relative to $O$ with velocity $u$ in the $x$ direction.
+
+    \subsection{Solution}
+        First define the velocity vector. \begin{equation}
+            \vec{v} = \begin{pmatrix} v_x \\ v_y \\ v_z \end{pmatrix} = \begin{pmatrix} 0 \\ c \\ 0 \end{pmatrix}
+        \end{equation}
+
+        First find $v_x$.
+        \begin{align}
+            v_x'    &=  \frac{v_x - u}{1 - v_x u/c^2}
+                =   \frac{0 - u}{1 - 0 u/c^2}
+                =   -\frac{u}{1}
+                =   -u
+        \end{align}
+
+        Then $v_y$.
+        \begin{align}
+            v_y'    &=  \frac{v_y \sqrt{1 - u^2/c^2}}{1 - v_x u/c^2}
+                =   \frac{c \sqrt{1 - u^2/c^2}}{1 - 0 u/c^2}
+                =   \sqrt{c^2 - u^2}
+        \end{align}
+
+        Lastly $v_z$ for good measure.
+        \begin{equation}
+            v_z'    =   \frac{v_z \sqrt{1 - u^2/c^2}}{1 - v_x u/c^2}
+                =   \frac{0 \sqrt{1 - u^2/c^2}}{1 - 0 u/c^2}
+                =   0
+        \end{equation}
+
+        To find the speed of light, invoke Pythagoras.
+        \begin{equation}
+            \left| \vec{v} \right|  =   \sqrt{(-u)^2 + \sqrt{c^2 - u^2}^2}\\
+                =   \sqrt{u^2 + c^2 - u^2}
+                =   \sqrt{c^2}
+                =   c
+        \end{equation}
+        TENA
+    \pagebreak
+
+\section{Problem 18}
+    A rod in the reference frame of observer $O$ makes an angle of $31\unit{\degree}$ with the $x$ axis. 
+    According to observer $O'$, who is in motion in the $x$ direction with velocity $u$, the rod makes an angle of $46\unit{\degree}$ with the $x$ axis. 
+    Find the velocity $u$.
+
+    \subsection{Solution}
+        If $O'$ is only moving along the $x$ axis, we don't even need to use the Lorentz transformation.
+        Suppose the rod has a length $\ell$.
+        In the $x$-axis from $O$, the rod extends a distance of $\ell\cos(31\unit\degree)$, which can be our value of $L_o$.
+        In the $x$-axis from $O'$, the rod extends a distance of $\ell\cos(46\unit\degree)$, which can be our value of $L$.
+        From here, we can use the length transformation equation to find $u$.
+        \begin{gather}
+            L = L_o \sqrt{1 - u^2/c^2}\\
+            \frac{L^2}{L_o^2} = 1 - u^2/c^2\\
+            \frac{u^2}{c^2} =   1 - \frac{L^2}{L_o^2}
+                =   1 - \frac{\cos^2(46\unit\degree)}{\cos^2(31\unit\degree)}
+                =   1 - \frac{0.48255}{0.73474}
+                =   0.34323\\
+            \boxed{u = 0.58586c}
+        \end{gather}
+\end{document}

@@ -56,24 +56,65 @@
             The second is $n$, which comes from an exponent of the equilibrium separation determined from compressability data.
             For \ce{MgO}, $n = 7$.
             For \ce{BaO}, $n = 9.5$.
+        \pagebreak
 
     \subsection{Question 3}
-        From Figure 11.11, estimate the Einstein temperature for lead. 
-        (Hint: Consider Eq. 11.11 when $T = T_E$.)
+        \begin{wrapfigure}{r}{0.25\textwidth}
+            \vspace{-30pt}
+            \includegraphics[width=0.25\textwidth]{Images/Fig 11-11.png} 
+            \label{fig:11.11}
+        \end{wrapfigure}
+        From Figure 11.11 (on the right), estimate the Einstein temperature for lead. 
+        (Hint: Consider Eq. \ref{eq:11.11} when $T = T_E$.)
+        \begin{equation}
+            \label{eq:11.11} \tag{11.11}
+            C = 3R \left( \frac{T_E}{T} \right)^2 \frac{\e{T_E / T}}{\left( \e{T_E / T} - 1 \right)^2}
+        \end{equation}
 
         \subsubsection{Answer}
+            Suppose we take the hint and set $T = T_E$.
+            \begin{equation}
+                C   =   3R \left( \frac{T_E}{T_E} \right)^2 \frac{\e{T_E / T_E}}{\left( \e{T_E / T_E} - 1 \right)^2}
+                    =   3R\frac{e}{(e-1)^2}
+            \end{equation}
+
+            The universal gas constant $R = 8.314\,\unit{\frac{\joule}{\mole\cdot\kelvin}}$, so $3R = 24.9\,\unit{\frac{\joule}{\mole\cdot\kelvin}}$.
+            \begin{equation}
+                C   =   \left( 24.9\,\unit{\frac{\joule}{\mole\cdot\kelvin}} \right) \frac{e}{(e-1)^2}
+                    =   22.9\,\unit{\frac{\joule}{\mole\cdot\kelvin}}
+            \end{equation}
+
+            Looking at the graph from Fig. 11.11, I'd estimate that that lands at around \boxed{80\,\unit{\kelvin}}.
 
     \subsection{Question 4}
-        A graph of $C/T$ vs. $T^2$ for solid argon (similar to Figure 11.13) goes through the origin; that is, its y-intercept is zero. 
+        A graph of $C/T$ vs. $T^2$ for solid argon (similar to Figure 11.13) goes through the origin; that is, its $y$-intercept is zero. 
         Explain.
 
         \subsubsection{Answer}
+            The value of $C$ is bifurcated into the electron-based heat capacity as in (\ref{eq:10.63}) and the lattice-based heat capacity, as in the Debye equation for heat capacity in (\ref{eq:11.12}). 
+            \begin{gather}
+                \label{eq:10.63} \tag{10.63}
+                C_e = \frac{\pi^2 k^2 N T}{2 E_F}\\
+                \label{eq:11.12} \tag{11.12}
+                C_D = \frac{12\pi^4}{5}R\left( \frac{T}{T_D} \right)^3
+            \end{gather}
+
+            In this case for (\ref{eq:10.63}), $N$ refers to the number of electrons contributed to the electron gas.
+            Argon is a noble gas, so there are no electrons contributed to the gas and $N = 0$.
+            This means that $C_e = 0$, so $C_e / T = 0$, which is why the intercept is zero.
 
     \subsection{Question 7}
         (a) Why does the electrical conductivity of a metal decrease as the temperature is increased? 
         (b) How would you expect the conductivity of a semiconductor to change with temperature?
 
-        \subsubsection{Answer}
+        \subsubsection{Answer (a)}
+            We always assume that the lattice structure is roughly constant and ideal. 
+            This is not fully true. 
+            Higher temperatures increase the motion of the nuclei, and in turn increases the chance of a collision of an electron with a lattice ion.
+            This results in higher resistivity at higher temperatures.
+        
+        \subsection{Answer (b)}
+            I would expect the conductivity to lower as temperature increases for the reasons discussed in part (a).
 
     \subsection{Question 12}
         Three different materials have filled valence bands and empty conduction bands, and the Fermi energy lies in the middle of the gap. 
@@ -81,6 +122,11 @@
         Classify the electrical properties of these materials at room temperature and at 3 K.
 
         \subsubsection{Answer}
+            10 eV is an insulator.
+            1 eV is a semiconductor.
+            0.01 eV is a conductor if not a superconductor.
+        
+    \pagebreak
 
 \section{Problem 7}
     Calculate the Coulomb energy and the repulsion energy for \ce{NaCl} at its equilibrium separation.
@@ -110,40 +156,281 @@
                 =   \boxed{1.594\E{-19}\,\unit{\joule}}
         \end{equation}
 
-\section{Problem 11}
+    \pagebreak
 
-    \subsection{Solution}
+\section{Problem 11}
+    (a) At what temperature do the lattice and electronic heat capacities of copper become equal to each other? 
+    Take $T_D = 343\,\unit{\kelvin}$ and $E_F = 7.03\,\unit{\eV}$. 
+    (b) Which contribution is larger above this temperature? 
+    (c) Below this temperature?
+
+    \subsection{Solution (a)}
+        Copper has one valence electron, so for each mole of copper, $N = N_A$.
+        From here, we can set (\ref{eq:10.63}) and (\ref{eq:11.12}) equal to each other and solve for $T$.
+        \begin{gather}
+            \frac{\pi^2 R k T}{2E_F} = \frac{12\pi^4}{5}R\left( \frac{T}{T_D} \right)^3\\
+            \frac{kT}{E_F} = \frac{24\pi^2}{5} * \frac{T^3}{T_D^3}\\
+            T^2 =   \frac{5kT_D^3}{24\pi^2 E_F}\\
+            \begin{align}
+                T   &=  \sqrt{\frac{5kT_D^3}{24\pi^2 E_F}}
+                    =   \sqrt{\frac{5 * 8.617\E{-5}\,\unit{\eV/\kelvin} * (343\,\unit{\kelvin})^3}{24\pi^2 * 7.03\,\unit{\eV}}}\\
+                    &=  \sqrt{\frac{17386\,\unit{\eV\cdot\kelvin^2}}{1665.2\,\unit{\eV}}}
+                    =   \sqrt{10.441\,\unit{\kelvin^2}}
+                    =   \boxed{3.23\,\unit{\kelvin}}
+            \end{align}
+        \end{gather}
+
+    \subsection{Solution (b)}
+        Calculate $C$ in both cases with $T = 4\,\unit{\kelvin}$.
+        I'll be dividing $\pi^2 R$ from both sides so as not to mix units and keep things simple.
+        \begin{gather}
+            \begin{align}
+                \frac{C_e}{\pi^2 R} &=  \frac{k T}{2 E_F}
+                    =   \frac{8.617\E{-5}\,\unit{\eV/\kelvin} * 4\,\unit{\kelvin}}{14.06\,\unit{\eV}}
+                    =   2.45\E{-5}
+            \end{align}\\
+            \begin{align}
+                \frac{C_D}{\pi^2 R} &=  \frac{12\pi^2}{5}\left( \frac{T}{T_D} \right)^3
+                    =   \frac{12\pi^2}{5}\left( \frac{4\,\unit{\kelvin}}{343\,\unit{\kelvin}} \right)^3
+                    =   3.76\E{-5}
+            \end{align}
+        \end{gather}
+
+        The lattice heat capacity is higher.
+
+    \subsection{Solution (c)}
+        Calculate $C$ in both cases with $T = 3\,\unit{\kelvin}$.
+        I'll be dividing $\pi^2 R$ from both sides so as not to mix units and keep things simple.
+        \begin{gather}
+            \begin{align}
+                \frac{C_e}{\pi^2 R} &=  \frac{k T}{2 E_F}
+                    =   \frac{8.617\E{-5}\,\unit{\eV/\kelvin} * 3\,\unit{\kelvin}}{14.06\,\unit{\eV}}
+                    =   1.84\E{-5}
+            \end{align}\\
+            \begin{align}
+                \frac{C_D}{\pi^2 R} &=  \frac{12\pi^2}{5}\left( \frac{T}{T_D} \right)^3
+                    =   \frac{12\pi^2}{5}\left( \frac{3\,\unit{\kelvin}}{343\,\unit{\kelvin}} \right)^3
+                    =   1.58\E{-5}
+            \end{align}
+        \end{gather}
+
+        The electronic heat capacity is higher.
+    % \pagebreak
 
 \section{Problem 12}
+    (a) The heat capacity of solid argon at a temperature of 2.00 K is $2.00\E{-2}\,\unit{\frac{\joule}{\mole\cdot\kelvin}}$. 
+    What is the Debye temperature of solid argon? (See Question 4.) 
+    (b) What value do you expect for the heat capacity at a temperature of 3.00 K?
 
-    \subsection{Solution}
+    \subsection{Solution (a)}
+        From Question 4, we know that the heat capacity of argon is equal to its Debye heat capacity.
+        \begin{gather}
+            C   =   \frac{12\pi^4}{5}R\left( \frac{T}{T_D} \right)^3\\
+            \begin{align}
+                T_D &=  T\sqrt[3]{\frac{12\pi^4 R}{5 C}}
+                    =   2.00\,\unit{\kelvin}\,\sqrt[3]{\frac{12\pi^4 * 8.31}{5 * 2.00\E{-2}}}
+                    =   2.00\,\unit{\kelvin}\,\sqrt[3]{\frac{9713.6}{1.00\E{-1}}}\\
+                    &=  2.00\,\unit{\kelvin}\,\sqrt[3]{97136}
+                    =   2.00\,\unit{\kelvin} * 45.97
+                    =   \boxed{91.9\,\unit{\kelvin}}
+            \end{align}
+        \end{gather}
+
+    \subsection{Solution (b)}
+        Use $T = 3.00\,\unit{\kelvin}$.
+        \begin{align}
+            C   &=  \frac{12\pi^4}{5}R\left( \frac{T}{T_D} \right)^3
+                =   \frac{12\pi^4}{5} * 8.31 * \left( \frac{3.00}{91.9} \right)^3
+                =   \boxed{6.76\E{-6}\,\unit{\frac{\joule}{\mole\cdot\kelvin}}}
+        \end{align}
+    \pagebreak
 
 \section{Problem 13}
+    When $C/T$ is plotted against $T^2$ for potassium, the graph gives a straight line with a slope of $2.57\E{-3}\,\unit{\frac{\joule}{\mole\cdot\kelvin^4}}$.
+    What is the Debye temperature for potassium?
 
     \subsection{Solution}
+        First take the formula value of $C/T$, then divide that by $T^2$ to get the slope ($C/T^3$).
+        \begin{gather}
+            C = \frac{12\pi^4 R T^3}{5 T_D^3}\\
+            \frac{C}{T} = \frac{12\pi^4 R T^2}{5 T_D^3}\\
+            \frac{C}{T^3} = \frac{12\pi^4 R}{5 T_D^3} = m\\
+            \begin{align}
+                T_D &=  \sqrt[3]{\frac{12\pi^4 R}{5 \left( \frac{C}{T^3} \right)}}
+                    =   \sqrt[3]{\frac{12\pi^4 8.31}{5 * 2.57\E{-3}}\,\unit{\kelvin^3}}
+                    =   \sqrt[3]{755925}\,\unit{\kelvin}
+                    =   \boxed{91.1\,\unit{\kelvin}}
+            \end{align}
+        \end{gather}
+    \pagebreak
 
-\section{Problem 15}
+\section{Problem 15} % 11.3
+    (a) In copper at room temperature, what is the electron energy at which the Fermi-Dirac distribution function has the value 0.1? 
+    (b) Over what energy range does the Fermi-Dirac distribution function for copper drop from 0.9 to 0.1?
 
-    \subsection{Solution}
+    \subsection{Solution (a)}
+        Here is the Fermi-Dirac Distribution Function.
+        \begin{gather}
+            f_{\rm FD}(E) = \frac{1}{\e{(E - E_F)/kT} + 1} = 0.1\\
+            \e{(E - E_F)/kT} + 1 = 10\\
+            \e{(E - E_F)/kT} = 9\\
+            \frac{E - E_F}{kT} = \ln(9)\\
+            E = kT \ln(9) + E_F
+        \end{gather}
+        
+        At room temperature, $kT \approx 0.025\,\unit{\eV}$.An approximate equation for $E_F(T)$ is below.
+        \begin{equation}
+            E_F(T) \approx E_F(0)\left[ 1 - \frac{\pi^2(kT)^2}{12 E_F(0)^2} \right]
+                =   E_F(0) - \frac{\pi^2(kT)^2}{12 E_F(0)}
+        \end{equation}
+
+        At $T = 0$, $E_F$ is given by (\ref{eq:10.50}).
+        \begin{equation}
+            \label{eq:10.50}
+            E_F(0) = \frac{h^2}{2m}\left( \frac{3N}{8\pi V} \right)^{2/3}
+        \end{equation}
+
+        Looking at Example 11.4, the density of copper atoms at room temperature is $\frac{N}{V} = 8.49\E{28}$ atoms/\unit{\meter^3}.
+        \begin{align}
+            E_F(0)  &=  \frac{(hc)^2}{2mc^2}\left( \frac{3}{8\pi} \frac{N}{V} \right)^{2/3}\\
+                &=  \frac{(1240\,\unit{\eV\cdot\nano\meter})^2}{2(0.511\E{6}\,\unit{\eV})} \left( \frac{3}{8\pi} * 8.49\E{28}\unit{\meter^{-3}} \right)^{2/3}\\
+                &=  \frac{1.5376\E{-12}\,\unit{\eV^2 \meter^2}}{1.022\E{6}\,\unit{\eV}} \left( 1.01\E{28}\,\unit{\meter^{-3}} \right)^{2/3}\\
+                &=  1.5045\E{-18}\,\unit{\eV\cdot\meter^2} * 4.683\E{18}\,\unit{\meter^2}
+                =   7.0456\,\unit{\eV}\\
+            E_F &=  7.0456\,\unit{\eV} - \frac{\pi^2(0.025\,\unit{\eV})^2}{12 * 7.0456\,\unit{\eV}}
+                =   7.0455\,\unit{\eV}\\
+            E   &=  0.025\,\unit{\eV} * \ln(9) + 7.0455\,\unit{\eV}
+                =   \boxed{7.1005\,\unit{\eV}}
+        \end{align}
+
+    \subsection{Solution (b)}
+        Find the energy at $f_{\rm FD} = 0.9$.
+        \begin{gather}
+            f_{\rm FD}(E) = \frac{1}{\e{(E - E_F)/kT} + 1} = 0.9\\
+            \e{(E - E_F)/kT} + 1 = 90\\
+            \e{(E - E_F)/kT} = 89\\
+            \frac{E - E_F}{kT} = \ln(89)\\
+            E   =   kT \ln(89) + E_F
+                =   0.025\,\unit{\eV} * \ln(89) + 7.0455\,\unit{\eV}
+                =   7.1578\,\unit{\eV}
+        \end{gather}
+
+        The energy range is \boxed{7.1578\,\unit{\eV} \to 7.1005\,\unit{\eV}}.
+    \pagebreak
 
 \section{Problem 16}
+    Calculate the de Broglie wavelength of an electron with energy $E_F$ in copper, and compare the value with the atomic separation in copper.
 
     \subsection{Solution}
+        Recall the formula for the de Broglie wavelength.
+        \begin{equation}
+            \lambda = \frac{h}{p} = \frac{h}{\sqrt{2mE}}
+        \end{equation}
 
-\section{Problem 22}
+        The Fermi energy fro copper os $7.03\,\unit{\eV}$, while its mass is $511\E{3}\,\unit{\eV/}c^2$.
+        \begin{align}
+            \lambda &=  \frac{hc}{\sqrt{1.022\E{6}\,\unit{\eV}*7.03\,\unit{\eV}}}
+                =   \frac{1240\E{-9}\,\unit{\eV\cdot\meter}}{\sqrt{7.184660\E{6}\,\unit{\eV^2}}}\\
+                &=  \frac{1240\E{-9}\,\unit{\eV\cdot\meter}}{2680\,\unit{\eV}}
+                =   \boxed{0.4626\,\unit{\nano\meter}}
+        \end{align}
+
+        The separation between atoms in copper is $0.289\,\unit{\nano\meter}$.
+        This is about half the de Broglie wavelength of an electron in copper with energy $E_F$.
+    \pagebreak
+
+\section{Problem 22} % 11.4
+    Estimate the ratio of the concentration of electrons in the conduction band of carbon (an insulator) and silicon (a semiconductor) at room temperature (293 K). 
+    The energy gaps are 5.5 eV for carbon and 1.1 eV for silicon. 
+    Assume the Fermi energy lies at the center of the gap.
 
     \subsection{Solution}
+        From the Fermi-Dirac function, we have a distribution function.
+        \begin{equation}
+            f_{\rm FD}(E) = \frac{1}{\e{(E-E_F)/kT} + 1}
+        \end{equation}
+
+        As $\e{(E-E_F)/kT}$ increases (such as at room temperature), it approaches $f_{\rm FD} = \e{-(E-E_F)/kT}$.
+        If we set $E$ equal to the energy at the top of the gap, we can then say that $E - E_F = \frac{E_g}{2}$.
+        \begin{equation}
+            f_{\rm FD}(E) = \e{-\frac{E_g}{2kT}} ; N = d\,f(E) \to N \propto \e{-\frac{E_g}{2kT}}
+        \end{equation}
+
+        For the ratio of electron counts, just take a ratio.
+        At room temperature, $kT \approx 0.025\,\unit{\eV}$.
+        \begin{align}
+            \frac{N_{\ce{C}}}{N_{\ce{Si}}} &= \frac{\e{-\frac{E_{g;\ce{C}}}{2kT}}}{\e{-\frac{E_{g;\ce{Si}}}{2kT}}}
+                =   \e{-\frac{E_{g;\ce{C}} - E_{g;\ce{Si}}}{2kT}}
+                =   \e{-\frac{5.5\,\unit{\eV} - 1.1\,\unit{\eV}}{2*0.025\,\unit{\eV}}}\\
+                &=  \e{-\frac{4.4\,\unit{\eV}}{0.050\,\unit{\eV}}}
+                =   \boxed{6.05\E{-39}}
+        \end{align}
+    \pagebreak
 
 \section{Problem 23}
+    Estimate the ratio of the number of electrons in the conduction bands of germanium ($E_g$ = 0.66 eV) and silicon ($E_g$ = 1.12 eV) at a temperature of 400 K. 
+    Assume the Fermi energy is at the center of the gap.
 
     \subsection{Solution}
+        For the ratio of electron counts, just take a ratio.
+        See the previous problem.
+        \begin{align}
+            kT  &=  8.617\E{-5}\,\unit{\eV/\kelvin} * 400\,\unit{\kelvin}
+                =   0.034468\,\unit{\eV}\\
+            \frac{N_{\ce{Ge}}}{N_{\ce{Si}}} &= \frac{\e{-\frac{E_{g;\ce{Ge}}}{2kT}}}{\e{-\frac{E_{g;\ce{Si}}}{2kT}}}
+                =   \e{-\frac{E_{g;\ce{Ge}} - E_{g;\ce{Si}}}{2kT}}
+                =   \e{-\frac{0.66\,\unit{\eV} - 1.12\,\unit{\eV}}{2*0.034468\,\unit{\eV}}}\\
+                &=  \e{\frac{0.46\,\unit{\eV}}{0.068936\,\unit{\eV}}}
+                =   \boxed{790.65}
+        \end{align}
+    \pagebreak
 
-\section{Problem 28}
+\section{Problem 28} % 11.6
+    The temperature of a sample of intrinsic silicon is increased by 100 K over room temperature (293 K). 
+    Estimate the increase in conductivity that we would expect from this increase in temperature. 
+    The gap energy in silicon is 1.1 eV.
 
     \subsection{Solution}
+        Take the Fermi-Dirac function value for silicon at $293\,\unit{\kelvin}$ and $393\,\unit{\kelvin}$.
+        \begin{align}
+            f_{\rm FD}(293\,\unit{\kelvin}) &=  \e{-\frac{1.1\,\unit{\eV}}{2*0.025\,\unit{\eV}}}
+                =   2.79\E{-10}\\
+            f_{\rm FD}(393\,\unit{\kelvin}) &=  \e{-\frac{1.1\,\unit{\eV}}{2*8.617\E{-5}\,\unit{\eV/\kelvin} * 393\,\unit{\kelvin}}}
+                =   8.84\E{-8}
+        \end{align}
+
+        There is a formula for the conductivity.
+        \begin{equation}
+            \sigma = \frac{ne^2\tau}{m} = \frac{ne^2}{m} * \frac{l}{v_{\rm avg}}
+        \end{equation}
+
+        Do a ratio.
+        \begin{gather}
+            \sigma \propto T^{3/2} f_{\rm FD}\\
+            \frac{\sigma_{f}}{\sigma_{i}} = \left( \frac{T_f}{T_i} \right)^{3/2} \frac{f_{\rm FD;f}}{f_{\rm FD;i}}
+                =   \boxed{492}
+        \end{gather}
+    \pagebreak
 
 \section{Problem 29}
+    (a) Estimate the fraction of the electrons in the valence band of intrinsic silicon that can be excited to the conduction band at a temperature of 100 K and at room temperature. 
+    Take the energy gap in silicon to be 1.1 eV. 
+    (b) By what factor would the conductivity of a metal change over this same temperature interval?
 
-    \subsection{Solution}
+    \subsection{Solution (a)}
+        Do another ratio.
+        \begin{align}
+            n(100\,\unit{\kelvin})  &=  \e{-\frac{E_g}{2k*100\,\unit{\kelvin}}}
+                =   \e{-\frac{1.1\,\unit{\eV}}{2*8.617\E{-5}*100\,\unit{\kelvin}}}
+                =   \boxed{1.9\E{-28}}\\
+            n(293\,\unit{\kelvin})  &=  \e{-\frac{E_g}{2k*293\,\unit{\kelvin}}}
+                =   \e{-\frac{1.1\,\unit{\eV}}{2*8.617\E{-5}*293\,\unit{\kelvin}}}
+                =   \boxed{3.5\E{-10}}
+        \end{align}
 
+    \subsection{Solution (b)}
+        \begin{equation}
+            \frac{\sigma_{f}}{\sigma_{i}} = \left( \frac{T_f}{T_i} \right)^{3/2} \frac{n_f}{n_i}
+                =   \boxed{4.23\E{18}}
+        \end{equation}
 \end{document}
