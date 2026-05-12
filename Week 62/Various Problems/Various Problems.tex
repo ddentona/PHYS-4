@@ -41,15 +41,41 @@ Equations used:
 
     For dilute gas, go straight to Maxwell-Boltzmann.
     \begin{gather*}
-        K_{avg} = \frac{3}{2}kT\\ 
         k = 1.38\E{-23}\,\unit{\joule/\kelvin} = 8.617\E{-5}\,\unit{\eV/\kelvin}\\
-        N(E) = \frac{2N}{\sqrt{\pi}(kT)^{3/2}}E^{1/2}\e{E/kT}
+        K_{avg} = \frac{3}{2}kT;
+        N(E) = \frac{2N}{\sqrt{\pi}(kT)^{3/2}}E^{\frac{1}{2}}\e{-\frac{E}{kT}}
     \end{gather*}
 
     Approximate tiny distribution integrals.
     \begin{equation*}
         \int_{E_m}^{E_m + \Delta E} N(E) dE \approx N(E) * \Delta E
     \end{equation*}
+
+    \underline{Relativity}
+        $\Delta t_0$ is proper time; $L_0$ = proper length
+        \begin{gather*}
+            \Delta t = \frac{\Delta t_0}{\sqrt{1 - u^2/c^2}}; 
+            L = L_0\sqrt{1 - u^2/c^2}\\
+            v = \frac{v' - u}{1 + v'u/c^2}; 
+            f' = f\sqrt{\frac{1 - u/c}{1 + u/c}}
+        \end{gather*}
+        Lorentz Transforms
+        \footnotesize
+        \begin{gather*}
+            x' = \frac{x - ut}{\sqrt{1 - u^2/c^2}};
+            \begin{matrix}
+                y' = y;\\
+                z' = z;
+            \end{matrix}
+            t' = \frac{t - (u/c^2)x}{\sqrt{1 - u^2/c^2}}\\
+            v'_x = \frac{v_x - u}{1 - v_x u/c^2};
+            v'_y = \frac{v_y \sqrt{1 - u^2 / c^2}}{1 - v_x u/c^2}
+            v'_z = \frac{v_z \sqrt{1 - u^2 / c^2}}{1 - v_x u/c^2}
+        \end{gather*}
+        \normalsize
+
+        Relativity alters momentum and energy
+
 \end{multicols}
 
 \pagebreak
@@ -195,42 +221,114 @@ Equations used:
 
     But if two events can only be connected by a signal that travels faster than light, which is impossible, then the two events cannot be causally connected- and there can be an observer frame that observes the events to happen simultaneously, a different observer frame observes event A to happen first and event B later; and another observer frame to observe that the event B happens first.
 
-    (b) Pick two events A and B that would be connected by a signal that travels at twice the speed of light and pick A to have happened first and list them.
+    Pick two events A and B that would be connected by a signal that travels at twice the speed of light and pick A to have happened first and list them.
 
-    (c) What is the relative velocity of a frame where observers in that frame would see A and B happen at the same time?
-
-    (d) What are the relative velocities of frames that would see B happen first?
+    (b) What is the relative velocity of a frame where observers in that frame would see A and B happen at the same time?
+    What are the relative velocities of frames that would see B happen first?
 
     \subsection*{Solution (a)}
         If event A causes event B by a light signal, then A and B are colinear in a spacetime diagram along a line of slope 1.
         A would also take place before B. 
-        \begin{equation*}
-            t_B > t_A
-        \end{equation*}
+        \begin{gather*}
+            t_B > t_A\\
+            0 < t_B - t_A = \Delta t_0
+        \end{gather*}
 
         Suppose for contradiction that in some frame of reference, event B takes place at the same time or before event A.
-        \begin{equation*}
-            t_B' \leq t_A'
-        \end{equation*}
+        \begin{gather*}
+            t_B' \leq t_A'\\
+            t_B' - t_A' = \Delta t \leq 0
+        \end{gather*}
 
         If we are in a relativistic frame of reference, we are traveling at a specific speed $u$.
         We can apply the Lorentz transformation for the time here.
         \begin{gather*}
-            t' = \frac{t - (u/c^2)x}{\sqrt{1 - u^2/c^2}}\\
-            \frac{t_B - (u/c^2)x_B}{\sqrt{1 - u^2/c^2}} \leq \frac{t_A - (u/c^2)x_A}{\sqrt{1 - u^2/c^2}}\\
-            t_B - (u/c^2)x_B \leq t_A - (u/c^2)x_A
+            \Delta t = \frac{\Delta t_0}{\sqrt{1 - u^2/c^2}} \leq 0\\
+            \Delta t_0 \leq 0\\
+            t_B - t_A \leq 0\\
+            t_B \leq t_A
         \end{gather*}
+
+        This is a contradiction.
+        As such, B always happens after A.
+
+    \subsection*{Solution (b)}
+        Suppose that event A and B have $(x,t)$ coordinates $(2\,\unit{\lightyear}, 1\,\unit{\year})$ and $(4\,\unit{\lightyear}, 2\,\unit{\year})$, respectively.
+        We can apply the Lorentz transformation here.
+        \begin{gather*}
+            t' = 0 = \frac{t - (u/c^2)x}{\sqrt{1 - u^2/c^2}}
+        \end{gather*}
+
+        For ths to be equal to zero, $t$ must be equal to $(u/c^2)x$.
+        \begin{gather*}
+            t = (u/c^2)x\\
+            u = \frac{t c^2}{x}
+        \end{gather*}
+
+        The value of $\frac{x}{t}$ is $2c$ in this instance.
+        We can plug this in.
+        \begin{align*}
+            u = \frac{c^2}{2c} = \frac{c}{2}
+        \end{align*}
+
+        If the frame is traveling at a speed of $\frac{c}{2}$, the events would appear to happen at the same time.
+        Any faster and event A would appear to happen after event B.
     \pagebreak
 
 \section*{Problem 11}
-    Consider two protons headed towards each other with the same speeds. Each proton has mass $m_p = 938.8\,\unit{\eV/\light^2}$. 
+    Consider two protons headed towards each other with the same speeds. Each proton has mass $m_p = 938.8\,\unit{\mega\eV/\light^2}$. 
     They collide and create a deuteron with mass $m_d = 1875.6\,\unit{\mega\eV/\light^2}$ and a positively charged particle called the 'pion plus'. 
     The pion particle symbol is $\pi^+$ and its mass is $m_\pi = 139.6\,\unit{\mega\eV/\light^2}$. 
     This interaction can be symbolized with $p^+ + p^+ \to \pi^+ + d^+$.
 
     (a) What is the minimum kinetic energy that each proton must have in order for this to be able to happen? % 69 MeV
 
-    (b) Say that the two protons head into the collision from opposite directions each with 100 MeV of kinetic energy. How much momentum will the pion have after it is created?
+    (b) Say that the two protons head into the collision from opposite directions each with 100 MeV of kinetic energy. 
+    How much momentum will the pion have after it is created?
+
+    \subsection*{Solution (a)}
+        For the minimum necessary velocity for genesis, we assume that upon being created, the two new particles will be completely immobile, so no kinetic energy.
+        This means the only energy after creation is their rest energy, which we can calculate.
+        \begin{align*}
+            E_{net} &=  m_\pi c^2 + m_d c^2
+                =   139.6\,\unit{\mega\eV} + 1875.6\,\unit{\mega\eV}
+                =   2015.2\,\unit{\mega\eV}
+        \end{align*}
+
+        From here, divide it by two and subtract the rest energy of the proton to find the necessary kinetic energy of each photon.
+        \begin{align*}
+            E_{p^+} &=  \frac{2015.2}{2}\,\unit{\mega\eV}
+                =   1007.6\,\unit{\mega\eV}\\
+            K   &=  E_{p^+} - E_0
+                =   1007.6\,\unit{\mega\eV} - 938.8\,\unit{\mega\eV}
+                =   \boxed{68.8\,\unit{\mega\eV}}
+        \end{align*}
+
+        % From here, we can use the total energy of the two photons and find the velocity.
+        % \begin{gather*}
+        %     2015.2\,\unit{\eV} = \frac{mc^2}{\sqrt{1 - v^2 / c^2}}\\
+        %     1 - v^2/c^2 = \left( \frac{mc^2}{2015.2\,\unit{\mega\eV}} \right)^2\\
+        %     \frac{v^2}{c^2} = 1 - \left( \frac{938.8\,\unit{\mega\eV}}{2015.2\,\unit{\mega\eV}} \right)^2
+        %         =   1 - (0.466)^2
+        %         =   1 - 0.217
+        %         =   0.783\\
+        %     v = \boxed{0.885c}
+        % \end{gather*}
+
+    \subsection*{Solution (b)}
+        The deuterion, if created immobile, will have only its rest energy, which is the rest energy of the two protons that created it.
+        This means the 200\,\unit{\mega\eV} of energy (100\,\unit{\eV} from each proton) will all go to the pion.
+        \begin{gather*}
+            E^2 =   (pc)^2 + (mc^2)^2\\
+            \begin{align*}    
+                p^2 &=  \left( \frac{E}{c} \right)^2 - (mc)^2
+                    =   (200\,\unit{\mega\eV/\light})^2 - (139.6\,\unit{\mega\eV/\light})^2\\
+                    &=  40\E{15}\,\unit{\eV^2/\light^2} - 19.488\E{15}\,\unit{\eV^2/\light^2}
+                    =   20.512\E{15}\,\unit{\eV^2/\light^2}
+            \end{align*}\\
+            p   =   \sqrt{20.512\E{15}\,\unit{\eV^2/\light^2}}
+                =   \boxed{143\,\unit{\mega\eV/\light}}
+        \end{gather*}
 
 \setcounter{chapter}{7}
 \chapter{Many Electron Atoms}
