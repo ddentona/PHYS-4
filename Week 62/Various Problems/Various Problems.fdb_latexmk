@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1778558480.19631 "c:/Users/ddent/OneDrive/Documents/CCSF/PHYS-4/Week 62/Various Problems/Various Problems.tex" "Various Problems.pdf" "Various Problems" 1778558481.74413 0
+["pdflatex"] 1778718767.07792 "c:/Users/ddent/OneDrive/Documents/CCSF/PHYS-4/Week 62/Various Problems/Various Problems.tex" "Various Problems.pdf" "Various Problems" 1778718768.90412 0
   "C:/Users/ddent/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1772552384 151629 65cd6e1296beda1feb8e616e59f2da55 ""
   "C:/Users/ddent/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk" 1745290926 11548 bd2ebe0534d4572809355ccc78e5dd26 ""
   "C:/Users/ddent/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1724473854 24225046 9a86b7f1ef10f5afb0aa895fddb2583f ""
@@ -47,6 +47,7 @@
   "C:/Users/ddent/AppData/Local/Programs/MiKTeX/tex/latex/amsmath/amstext.sty" 1686931788 2444 0d0c1ee65478277e8015d65b86983da2 ""
   "C:/Users/ddent/AppData/Local/Programs/MiKTeX/tex/latex/base/report.cls" 1705273579 23203 f5d913095ece2233436f0e628619cd37 ""
   "C:/Users/ddent/AppData/Local/Programs/MiKTeX/tex/latex/base/size12.clo" 1705273578 8449 f07039d8e4e89f21078d9b5137579bfc ""
+  "C:/Users/ddent/AppData/Local/Programs/MiKTeX/tex/latex/chemgreek/chemgreek.sty" 1579207476 47530 64600845afa9c25b782d42fa33f66772 ""
   "C:/Users/ddent/AppData/Local/Programs/MiKTeX/tex/latex/enumitem/enumitem.sty" 1738917170 52272 63d293bc0d496619edb57585740861a2 ""
   "C:/Users/ddent/AppData/Local/Programs/MiKTeX/tex/latex/epstopdf-pkg/epstopdf-base.sty" 1623003186 13886 d1306dcf79a944f6988e688c1785f9ce ""
   "C:/Users/ddent/AppData/Local/Programs/MiKTeX/tex/latex/etoolbox/etoolbox.sty" 1601897756 46845 3b58f70c6e861a13d927bff09d35ecbc ""
@@ -60,15 +61,20 @@
   "C:/Users/ddent/AppData/Local/Programs/MiKTeX/tex/latex/graphics/mathcolor.ltx" 1665067579 3171 1cf0d440b5464e2f034398ce4ef36f75 ""
   "C:/Users/ddent/AppData/Local/Programs/MiKTeX/tex/latex/graphics/trig.sty" 1665067579 4023 293ea1c16429fc0c4cf605f4da1791a9 ""
   "C:/Users/ddent/AppData/Local/Programs/MiKTeX/tex/latex/l3backend/l3backend-pdftex.def" 1704400941 30006 57b07afb710ee2f649c65cfbafda39c1 ""
+  "C:/Users/ddent/AppData/Local/Programs/MiKTeX/tex/latex/l3kernel/expl3.sty" 1704401523 6565 189a69b081829349174d0a0f0ab9e4d5 ""
+  "C:/Users/ddent/AppData/Local/Programs/MiKTeX/tex/latex/l3packages/l3keys2e/l3keys2e.sty" 1696961617 4674 15ab6bdfc97f65b00e59c2867851f715 ""
+  "C:/Users/ddent/AppData/Local/Programs/MiKTeX/tex/latex/l3packages/xparse/xparse.sty" 1696961617 9327 c30c00c0072edba199ede5889311aaa9 ""
+  "C:/Users/ddent/AppData/Local/Programs/MiKTeX/tex/latex/mhchem/mhchem.sty" 1707592118 133877 abeecc93dabd0b08364240f40830f21b ""
   "C:/Users/ddent/AppData/Local/Programs/MiKTeX/tex/latex/siunitx/siunitx.sty" 1722530071 331901 8e373e87bf2462d3ed23f986c6aabfb0 ""
   "C:/Users/ddent/AppData/Local/Programs/MiKTeX/tex/latex/tools/array.sty" 1700599895 12667 e4b5eb11e4b7239e6c8a52bbe074a6c6 ""
+  "C:/Users/ddent/AppData/Local/Programs/MiKTeX/tex/latex/tools/calc.sty" 1700599895 10214 547fd4d29642cb7c80bf54b49d447f01 ""
   "C:/Users/ddent/AppData/Local/Programs/MiKTeX/tex/latex/tools/multicol.sty" 1700599895 32515 51caec75eda9c8890135f12f1a4eddc3 ""
   "C:/Users/ddent/AppData/Local/Programs/MiKTeX/tex/latex/translations/dicts/translations-basic-dictionary-english.trsl" 1644048522 5588 0c1628daf15f4411ff1f463114c634a3 ""
   "C:/Users/ddent/AppData/Local/Programs/MiKTeX/tex/latex/translations/translations.sty" 1644048522 44247 2188b95d0ee74e31eca4d316263c58a7 ""
   "Images/Fig_8-4.png" 1778544017 72054 bc3b1321b7a93cf8e48acef321a2d9a6 ""
-  "Various Problems.aux" 1778558481 4022 95f7edf6db695967581f527896575646 "pdflatex"
-  "Various Problems.tex" 1778558479 29617 96317dc564d4db90d1e6c0875d11c55f ""
-  "c:/Users/ddent/OneDrive/Documents/CCSF/PHYS-4/Week 62/Various Problems/Various Problems.tex" 1778558479 29617 96317dc564d4db90d1e6c0875d11c55f ""
+  "Various Problems.aux" 1778718768 5620 b2a2dd5a6f258d722f48e3d69b41de78 "pdflatex"
+  "Various Problems.tex" 1778718764 33334 ff4c904cf44944ef6b45f2fe8e58696c ""
+  "c:/Users/ddent/OneDrive/Documents/CCSF/PHYS-4/Week 62/Various Problems/Various Problems.tex" 1778718764 33334 ff4c904cf44944ef6b45f2fe8e58696c ""
   (generated)
   "Various Problems.aux"
   "Various Problems.log"
