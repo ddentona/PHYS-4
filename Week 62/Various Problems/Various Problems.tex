@@ -629,23 +629,78 @@ How many different sets of quantum numbers are possible for the two electrons?
 \chapter{Molecular Structure}
 Equations used:
 \begin{multicols}{2}
-    Various equations
+    \scriptsize
+    \begin{gather*}
+        E(\ce{H2+}) = -16.3\,\unit{\eV};
+        E(\ce{H2}) = -31.7\,\unit{\eV}\\
+        N_A = 6.022\E{23}\,\unit{\mole^{-1}}\\
+        1\,\unit{\eV} = 1.602\E{-19}\,\unit{\joule}\\
+        1\,\unit{\joule} = 6.242\E{18}\,\unit{\eV}\\
+        U_C = -\frac{q_1 q_2}{(4\pi\varepsilon_0)R_{eq}}\\
+        \hbar c = 197.3\,\unit{\eV\cdot\nano\meter};
+        hc = 1240\,\unit{\eV\cdot\nano\meter}\\
+        c^2 = 931.5\,\unit{\mega\eV/\amu}\\
+        \left| \Delta N \right| = \left| \Delta L \right| = 1
+    \end{gather*}
+    \normalsize
 \end{multicols}
 \pagebreak
 
-\section{Problem 1}
+\section{Problem 1} % 9.1
     Calculate the ionization energy of \ce{H2}.
 
-\section{Problem 3}
+    \subsection{Solution}
+        The ionization energy of Hydrogen is the energy of \ce{H2+} minus the energy of \ce{H2}.
+        \begin{equation}
+            E(\ce{H2+}) + E(\ce{H2}) = -16.3\,\unit{\eV} + 31.7\,\unit{\eV}
+                =   \boxed{15.4\,\unit{\eV}}
+        \end{equation}
+
+\section{Problem 3} % 9.2
     Bond strengths are frequently given in units of kilojoules per mole. 
     Find the molecular dissociation energy (in eV) from the following bond strengths: (a) \ce{NaCl}, 410 kJ/mole; (b) \ce{Li2}, 106 kJ/mole; (c) \ce{N2}, 945 kJ/mole.
 
+    \subsection{Solution (a)}
+        Just convert the energy to that for an individual bond.
+        \begin{align}
+            E   &=  410\,\unit{\kilo\joule/\mole} \times \frac{1000\,\unit{\kilo\joule}}{1\,\unit{\joule}} \times \frac{1\,\unit{\mole}}{6.022\E{23}} \times 6.242\E{18}\,\unit{\eV/\joule}\\
+                &=  6.81\E{-19}\,\unit{\joule} \times 6.242\E{18}\,\unit{\eV/\joule}
+                =   \boxed{4.25\,\unit{\eV}}
+        \end{align}
+
+    \subsection{Solution (b)}
+        \begin{align}
+            E   &=  106\,\unit{\kilo\joule/\mole} \times \frac{1000\,\unit{\kilo\joule}}{1\,\unit{\joule}} \times \frac{1\,\unit{\mole}}{6.022\E{23}} \times 6.242\E{18}\,\unit{\eV/\joule}\\
+                &=  1.76\E{-19}\,\unit{\joule} \times 6.242\E{18}\,\unit{\eV/\joule}
+                =   \boxed{1.10\,\unit{\eV}}
+        \end{align}
+
+    \subsection{Solution (c)}
+        \begin{align}
+            E   &=  945\,\unit{\kilo\joule/\mole} \times \frac{1000\,\unit{\kilo\joule}}{1\,\unit{\joule}} \times \frac{1\,\unit{\mole}}{6.022\E{23}} \times 6.242\E{18}\,\unit{\eV/\joule}\\
+                &=  1.569\E{-18}\,\unit{\joule} \times 6.242\E{18}\,\unit{\eV/\joule}
+                =   \boxed{9.80\,\unit{\eV}}
+        \end{align}
+    \pagebreak
+ 
 \section{Problem 5}
     For each of the following pairs of molecules, predict which will have the larger dissociation energy: (a) \ce{Li2} and \ce{Be2}; (b) \ce{B2} and \ce{C2}; (c) \ce{CO} and \ce{O2}. 
     Check your prediction against tabulated values of the bond strengths or dissociation energies.
 
-\section{Problem 7}
+\section{Problem 7} % 9.3
     Calculate the Coulomb energy of \ce{KBr} at the equilibrium separation distance.
+    
+    \subsection{Solution}
+        Looking at Table 9.5, we know that the equilibrium separation of \ce{KBr} is $0.282\,\unit{\nano\meter}$.
+        The Potassium and the bromine would both have an ionized charge of $\pm 1$.
+        We have an equation for the coulombic energy from the equilibrium separation. 
+        \begin{align}
+            U_C &=  -\frac{q_1 q_2}{(4\pi\varepsilon_0)R_{eq}}
+                =   \frac{e^2}{(4\pi\varepsilon_0) R_{eq}}
+                =   \frac{(1.602\E{-19})^2}{(4\pi * 8.854\E{-12}) * 0.282\,\unit{\nano\meter}}\\
+                &=  \boxed{8.18\E{-19}\,\unit{\joule}}
+                =   \boxed{5.11\,\unit{\eV}}
+        \end{align}
 
 \section{Problem 9}
     (a) Assuming a separation of 0.193 nm, compute the expected electric dipole moment of \ce{NaF}. 
@@ -655,24 +710,88 @@ Equations used:
 \section{Problem 11}
     The equilibrium separation of \ce{BaO} is 0.194 nm and the measured electric dipole moment is $26.5\E{-30}\,\unit{\coulomb\cdot\meter}$. 
     Calculate the fractional ionic character, assuming two valence electrons.
+    \pagebreak
 
-\section{Problem 13}
+\section{Problem 13} % 9.4
     The vibrational transition in \ce{BeO} is observed at a wavelength of 6.724 \unit{\micro\meter}. 
     What is the effective force constant of \ce{BeO}?
+
+    \subsection{Solution}
+        We can convert wavelength to energy.
+        \begin{equation}
+            E = \frac{hc}{\lambda}
+        \end{equation}
+
+        That can be related to the angular frequency, which can be related to the effective force constant.
+        \begin{gather}
+            \frac{hc}{\lambda} = E = \hbar \omega\\
+            \omega = \sqrt{\frac{k}{m}} = \frac{hc}{\hbar\lambda} = \frac{2\pi c}{\lambda}\\
+            k = \frac{4 \pi^2 mc^2}{\lambda^2}
+        \end{gather}
+
+        Take the harmonic mean of the masses to find the mass used here.
+        From there, we can 
+        \begin{align}
+            m   &=  \frac{m_1 m_2}{m_1 + m_2}
+                =   \frac{9.012 \times 16.00}{9.012 + 16.00} \times \frac{1\,\unit{\amu}}{6.022\E{26}\,\unit{\kilo\gram}}\\
+                &=  \frac{144.192}{25.012} \times \frac{1\,\unit{\amu}}{6.022\E{26}\,\unit{\kilo\gram}}
+                =   5.765 \times \frac{1\,\unit{\amu}}{6.022\E{26}\,\unit{\kilo\gram}}
+                =   9.573\E{-27}\,\unit{\kilo\gram}\\
+            k   &=  \frac{4 \pi^2 * 9.573\E{-27}\,\unit{\kilo\gram} * (2.998\E{8})^2}{(6.724\,\unit{\micro\meter})^2}
+                =   \boxed{751\,\unit{\newton/\meter}}
+        \end{align}
+    \pagebreak
 
 \section{Problem 15}
     The vibrational energy of \ce{CO} is 0.2691 eV when the constituents of the molecule are the most abundant isotopes of carbon (m = 12.00 u) and oxygen (m = 16.00 u).
     (a) What would be the vibrational energy if the oxygen were replaced by the less abundant isotope with m = 18.00 u?
     (b) What would be the vibrational energy if the carbon in the original \ce{CO} were replaced with radioactive carbon (used in radiocarbon dating) with mass 14.00 u?
 
-\section{Problem 17}
+\section{Problem 17} % 9.5
     Following the method of Example 9.4, calculate the energies and wavelengths of the three lowest rotational transitions emitted by molecular NaCl. 
     In what region of the electromagnetic spectrum would these radiations be found?
+
+    \subsection{Solution}
+        Example 9.4 starts with finding the rotational quantity $B$.
+        For \ce{NaCl}, the effective mass can be found using the harmonic mean.
+        Its equivalent radius, given in table 9.5, is 0.236\,\unit{\nano\meter}.
+        \begin{align}
+            m   &=  \frac{m_1 m_2}{m_1 + m_2}
+                =   \frac{22.99 * 35.45}{22.99 + 35.45}\,\unit{\amu}
+                =   13.95\,\unit{\amu}\\
+            B   &=  \frac{\hbar^2}{2mR_{eq}^2}
+                =   \frac{\hbar^2 c^2}{2mc^2 R_{eq}^2}
+                =   \frac{(197.3\,\unit{\eV\cdot\nano\meter})^2}{2 * 13.95\,\unit{\amu} * 931.5\,\unit{\mega\eV/\amu} * (0.236\,\unit{\nano\meter})^2}\\ \addtocounter{equation}{1}
+                &=  \frac{38927.29\,\unit{\eV}}{1.447\E{9}}
+                =   26.89\,\E{-6}\,\unit{\eV}
+        \end{align}
+
+        We can find the wavelength through the energy, and we can find the energy through the rotational quantity and even numbers.
+        \begin{align}
+            \lambda_n   &=  \frac{hc}{E_n}
+                =   \frac{hc}{2nB}
+                =   \frac{1}{n} \cdot \frac{1240\,\unit{\eV\cdot\nano\meter}}{2*26.89\,\E{-6}\,\unit{\eV}}
+                =   \frac{23.06}{n}\,\unit{\milli\meter}\\ \addtocounter{equation}{2}
+            \lambda_1   &=  \frac{hc}{E_1}
+                =   \frac{23.06}{1}\,\unit{\milli\meter}
+                =   \boxed{23.06\,\unit{\milli\meter}}\\
+            \lambda_2   &=  \frac{hc}{E_2}
+                =   \frac{hc}{4B}
+                =   \frac{23.06}{2}\,\unit{\milli\meter}
+                =   \boxed{11.53\,\unit{\milli\meter}}\\ 
+            \lambda_3   &=  \frac{hc}{E_3}
+                =   \frac{hc}{6B}
+                =   \frac{23.06}{3}\,\unit{\milli\meter}
+                =   \boxed{7.686\,\unit{\milli\meter}}
+        \end{align}
+
+        These are radiowaves or radar.
+    \pagebreak
 
 \section{Problem 19}
     Find the difference in the rotational parameter \ce{B} of \ce{HCl} for the two different masses of \ce{Cl} (35 u and 37 u).
 
-\section{Problem 21}
+\section{Problem 21} % 9.6
     Figure 9.30 illustrates the combined rotational-vibrational structure when the vibrational energy is much larger than the rotational energy. 
     Make a sketch showing the reverse situation, in which the rotational energy is much larger than the vibrational energy. 
     Use a scale in which B = 10 units and hf = 2 units; show rotational levels up to L = 3 and vibrational levels to N = 3.
@@ -682,6 +801,31 @@ Equations used:
     \begin{gather}\tag{9.19}
         E_{NL} = (N + \frac{1}{2})hf + BL(L + 1)
     \end{gather}
+
+    \subsection{Solution}
+        We have stats known about the value of the change in the constants $N$ and $L$.
+        \begin{equation}
+            \left| \Delta N \right| = \left| \Delta L \right| = 1 \to \Delta N = \Delta L = \pm 1
+        \end{equation}
+
+        Suppose that $\Delta L = L_f - L$ and $\Delta N = N_f - N$. 
+        This gives us values for $L_f$ and $N_f$ relative to $L$ and $N$. 
+        \begin{equation}
+            L_f = L \pm 1; N_f = N \pm 1
+        \end{equation}
+
+        We can plug these in.
+        \begin{align}
+            \Delta E    &=  E_f - E_i
+                =   (N_f + \frac{1}{2})hf + BL_f(L_f + 1) - (N + \frac{1}{2})hf - BL(L + 1)\\
+                &=  (N \pm 1 + \frac{1}{2})hf + B(L \pm 1)(L \pm 1 + 1) - (N + \frac{1}{2})hf - BL(L + 1)\\
+                &=  \pm hf + B(L(L \pm 1 + 1) \pm (L \pm 1 + 1)) - BL(L + 1)\\
+                &=  \pm hf + BL(L + 1) \pm BL \pm B(L \pm 1) \mp B - BL(L + 1)\\
+                &=  \pm hf \pm BL \pm B(L \pm 1) \mp B
+                =   \pm hf \pm BL \pm BL \mp B \mp B\\
+                &=  \boxed{\pm hf \pm 2B(L - 1)}
+        \end{align}
+    \pagebreak
 
 \section{Problem 25}
     Derive Eq. 9.23 from Eq. 9.22.
@@ -695,4 +839,35 @@ Equations used:
     The most intense absorption line in the rotational-vibrational spectrum of \ce{CO} at room temperature occurs for L = 7. 
     Justify this value with a calculation. 
     (The equilibrium separation of \ce{CO} is 0.113 nm.)
+
+
+\chapter{Statistical Physics}
+Equations used:
+\begin{multicols}{2}
+    \scriptsize
+    \begin{gather*}
+        TBD
+    \end{gather*}
+    \normalsize
+\end{multicols}
+\pagebreak
+
+\section{Problem 1} % 10.1
+    A collection of three noninteracting particles shares 3 units of energy. 
+    Each particle is restricted to having an integral number of units of energy. 
+    (a) How many macrostates are there? 
+    (b) How many microstates are there in each of the macrostates? 
+    (c) What is the probability of ﬁnding one of the particles with 2 units of energy? 
+    With 0 units of energy?
+
+\section{Problem 3}
+    Consider a system consisting of two particles, one with spin s = 1 and another with spin s = 1/2. 
+    (a) Considering a microstate to be an assignment of the z component of the spins of each of the particles, what is the total number of microstates of the two-particle system? 
+    (b) How many macrostates are there for the total spin of the two-particle system? 
+    (c) Find the number of microstates for each macrostate, and be sure the total number agrees with your answer to part (a).
+
+    \subsection{Solution (a)}
+        
+\section{Problem 5} % 10.2
+    Calculate the probabilities given in Table 10.3 for E = 0 and E = 3 for (a) integral spin and (b) spin 1/2.
 \end{document}
