@@ -105,9 +105,10 @@
         V(x) = \begin{cases}
             0 & \text{if } a < x < b \\
             \infty & \text{otherwise}
-        \end{cases}; \psi(x) = Ae^{ik}\\
-        k_n^2 = \frac{n^2\pi^2}{(b - a)^2} = \frac{2mE_n}{\hbar^2};
-        E_n = \frac{n^2\pi^2\hbar^2}{2m(b - a)^2} \approx \frac{n^2 * 54.8\E{-69}\,\unit{\joule\cdot\second}}{m(b - a)^2}
+        \end{cases}; \psi(x) = Ae^{ik};
+        k_n^2 = \frac{n^2\pi^2}{(b - a)^2} = \frac{2mE_n}{\hbar^2}\\
+        E_n = \frac{n^2\pi^2\hbar^2}{2m(b - a)^2} \approx \frac{n^2 * 54.8\E{-69}\,\unit{\joule^2\cdot\second^2}}{m(b - a)^2}
+            \approx \frac{n^2 * 4.276\E{-30}\,\unit{\eV^2\cdot\second^2}}{m(b - a)^2}
     \end{gather*}
 
     \underline{Finite Well} Transcendental algebra problem
@@ -335,6 +336,7 @@
             E   =   K + E_0
                 =   \frac{mc^2}{\sqrt{1 - v^2/c^2}};
             E_0 =   mc^2\\
-            E^2 =   (pc)^2 + (mc^2)^2; E \approxeq pc
+            E^2 =   (pc)^2 + (mc^2)^2; E \approxeq pc\\
+            v = \frac{p}{\sqrt{m^2 + p^2/c^2}} = c\sqrt{1 - \left( \frac{mc^2}{E} \right)}
         \end{gather*}
 \end{document}
