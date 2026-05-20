@@ -3,6 +3,7 @@
 \usepackage{amssymb}
 \usepackage{amsthm}
 \usepackage{enumitem}
+\usepackage{esdiff}
 \usepackage{graphicx}
 \usepackage{mhchem}
 \usepackage{multicol}
@@ -330,6 +331,119 @@ Equations used:
             p   =   \sqrt{20.512\E{15}\,\unit{\eV^2/\light^2}}
                 =   \boxed{143\,\unit{\mega\eV/\light}}
         \end{gather*}
+
+\setcounter{chapter}{1}
+
+\chapter{Special Relativity}
+
+\pagebreak
+\section{Problem 53}
+    Electrons are accelerated to high speeds by a two-stage machine. 
+    The ﬁrst stage accelerates the electrons from rest to $v = 0.99c$. 
+    The second stage accelerates the electrons from $0.99c$ to $0.999c$. 
+    (a) How much energy does the first stage add to the electrons? 
+    (b) How much energy does the second stage add in increasing the velocity by only 0.9\%?
+
+\pagebreak
+\section{Problem 55}
+    An electron moving at a speed of $v_i = 0.960c$ in the positive x direction collides with another electron at rest. 
+    After the collision, one electron is observed to move with a speed of $v_{1f} = 0.956c$ at an angle of $\theta_1 = 9.7\unit{\degree}$ with the x axis. 
+    (a) Use conservation of momentum to ﬁnd the velocity (magnitude and direction) of the second electron. 
+    (b) Based only on the original data given in the problem, use conservation of energy to ﬁnd the speed of the second electron.
+
+\pagebreak
+\section{Problem 56}
+    A pion has a rest energy of 135 MeV. 
+    It decays into two gamma ray photons, bursts of electromagnetic radiation that travel at the speed of light. 
+    A pion moving through the laboratory at v = 0.98c decays into two gamma ray photons of equal energies, making equal angles $\theta$ with the original direction of motion. 
+    Find the angle $\theta$ and the energies of the two gamma ray photons.
+
+    \subsection{Solution}
+        The pion separates into two photons of equal energy.
+        We can calculate its total energy and the energy of each of the two photons.
+        \begin{align}
+            E_\pi &= \frac{mc^2}{\sqrt{1 - v^2/c^2}}\\
+            E_\gamma &= \frac{mc^2}{2\sqrt{1 - v^2/c^2}}
+        \end{align}
+
+        This gives us the energies of the two photons.
+        Each of the two photons will be traveling at the speed of light $c$. 
+        The momentum can also be found.
+        \begin{align}
+            p_{\pi} &=  \frac{mv}{\sqrt{1 - v^2/c^2}}
+        \end{align}
+
+        In any given direction, the momentum remains constant, so let's conider the $x$-direction.
+        \begin{align}
+            p_\pi   &=  p_\gamma \cos(\theta_1) + p_\gamma \cos(\theta_2)
+                =   2p_\gamma \cos(\theta)
+        \end{align}
+
+        For a photon, which moves at the speed of light, there is a special relationship between energy and momentum.
+        \begin{gather}
+            E_\gamma   =   p_\gamma c \to p_\gamma = \frac{E_\gamma}{c}\\
+            p_\pi = 2 \frac{E}{c} \cos(\theta) = \frac{mv}{\sqrt{1 - v^2/c^2}}\\
+            \cos(\theta) = \frac{p_\pi}{2 p_\gamma}
+                =   \frac{mv}{\sqrt{1 - v^2/c^2}} \cdot \frac{c}{2 E_\gamma}
+                =   \frac{mv}{\sqrt{1 - v^2/c^2}} \cdot \frac{\sqrt{1 - v^2/c^2}}{mc}\\
+            \theta  =   \arccos\left( \frac{v}{c} \right)
+                =   \boxed{0.2}
+        \end{gather}
+
+\setcounter{chapter}{3}
+\chapter{Particle Waves}
+
+\pagebreak
+\section{Problem 31}
+    A free electron bounces elastically back and forth in one dimension between two walls that are L = 0.50 nm apart.
+    (a) Assuming that the electron is represented by a de Broglie standing wave with a node at each wall, show that the permitted de Broglie wavelengths are $\lambda_n = 2L/n$ (n = 1, 2, 3, etc.).
+    (b) Find the values of the kinetic energy of the electron for n = 1, 2, and 3.
+
+    \subsection{Solution (a)}
+        A standing wave has wavelengths only as long as some positive integer divisor of twice its wavelength.
+        This means that the wavelength would be $\lambda_n = 2L/n$.
+        I see this as common sense.
+
+    \subsection{Solution (b)}
+        Use the De Broglie wavelength and solve for momentum.
+        \begin{equation}
+            \lambda = \frac{h}{p} \to p = \frac{h}{\lambda} = \frac{hn}{2L\lambda}
+        \end{equation}
+
+        Plug that into the conversion between momentum and kinetic energy.
+        \begin{align}
+            K_n &=  \frac{p^2}{2m} = \frac{h^2 n^2}{8L^2 \lambda^2}
+        \end{align}
+
+\chapter{Schrodinger Equation}
+
+\pagebreak
+\section{Problem 31}
+    An electron is trapped in a one-dimensional well of width 0.132 nm. 
+    The electron is in the n = 10 state. 
+    (a) What is the energy of the electron? 
+    (b) What is the uncertainty in its momentum? (Hint: Use Eq. 4.10.) 
+    (c) What is the uncertainty in its position? How do these results change as $n \to \infty$? 
+    Is this consistent with classical behavior?
+
+    \subsection{Solution}
+        
+\chapter{The Terrible Bohr}
+
+\pagebreak
+\section{Problem 35}
+    A hydrogen atom is in the $n = 6$ state. 
+    (a) Counting all possible paths, how many different photon energies can be emitted if the atom ends up in the ground state? 
+    (b) Suppose only $\Delta n = 1$ transitions were allowed. 
+    How many different photon energies would be emitted? 
+    (c) How many different photon energies would occur in a Thomson-model hydrogen atom?
+
+\chapter{Hydrogen Atom}
+
+\pagebreak
+\section{Problem 29}
+    Find the probabilities for the $n = 2$, $l = 0$ and $n = 2$, $l = 1$ electron states in hydrogen to be further than $r = 5a_0$ from the nucleus. 
+    Which has the greater probability to be far from the nucleus?
 
 \setcounter{chapter}{7}
 \chapter{Many Electron Atoms}
@@ -835,11 +949,62 @@ Equations used:
         2L + 1 = \sqrt{\frac{2kT}{B}}
     \end{gather}
 
+    \subsection{Solution}
+        Take the derivative of both sides with respect to L.
+        Assume that $\diff{p}{L} = 0$.
+        \begin{gather}
+            \begin{align}
+                \diff{p}{L} &=  0
+                    =   \diff{}{L}\left[ (2L + 1) \e{-\frac{(N + \frac{1}{2})hf + BL(L + 1)}{kT}}\right]\\
+                    &=  2\e{-\frac{(N + \frac{1}{2})hf + BL(L + 1)}{kT}} - \frac{B(2L + 1)^2}{kT}\e{-\frac{(N + \frac{1}{2})hf + BL(L + 1)}{kT}}
+            \end{align}\\
+            2\e{-\frac{(N + \frac{1}{2})hf + BL(L + 1)}{kT}} = \frac{B(2L + 1)^2}{kT}\e{-\frac{(N + \frac{1}{2})hf + BL(L + 1)}{kT}}\\
+            2 = \frac{B}{kT}(2L + 1)^2\\
+            (2L+1)^2 = \frac{2kT}{B}\\
+            2L + 1 = \sqrt{\frac{2kT}{B}}
+        \end{gather}
+    \pagebreak
+
 \section{Problem 27}
     The most intense absorption line in the rotational-vibrational spectrum of \ce{CO} at room temperature occurs for L = 7. 
     Justify this value with a calculation. 
     (The equilibrium separation of \ce{CO} is 0.113 nm.)
 
+    \subsection{Solution}
+        Find the equivalent mass.
+        \begin{align}
+            m   &=  \frac{16.00 * 12.01}{16.00 + 12.01}
+                =   \frac{192.16}{28.01}
+                =   6.86\,\unit{\amu}\\
+                &=  6.86 * 1.66\E{-27}\,\unit{\kilo\gram}
+                =   11.37\E{-27}\,\unit{\kilo\gram}
+        \end{align}
+
+        Next, find the rotational constant.
+        \begin{align}
+            B   &=  \frac{\hbar^2}{2mR_{eq}^2}
+                =   \frac{(1.054\E{-34}\,\unit{\joule\cdot\second})^2}{2 * 11.37\E{-27}\,\unit{\kilo\gram}(0.113\E{-9}\,\unit{\meter})^2}\\
+                &=  \frac{11.11\E{-69}\,\unit{\joule^2\cdot\second^2}}{402.2\E{-48}\,\unit{\kilo\gram\cdot\meter^2}}
+                =   27.62\E{-24}\,\unit{\joule}
+        \end{align}
+
+        At room temperature, $kT$ is approxmately $0.025\,\unit{\eV}$, or $4.005\E{-21}\,\unit{\joule}$.
+        Use this in equation (9.23).
+        \begin{align}
+            2L + 1  &=  \sqrt{\frac{2*4.005\E{-21}\,\unit{\joule}}{27.62\E{-24}\,\unit{\joule}}}
+                =   \sqrt{290}
+                =   17.03
+                \approx 17\\
+            2L  =   16 \to L = 8
+        \end{align}
+
+        Not exactly, but not too far off.
+    \pagebreak
+
+\section{Problem 34}
+    (a) In a collection of \ce{H2} molecules at room temperature, what is the ratio of the number of molecules in the N = 1 vibrational state to the number in the N = 0 vibrational state? 
+    (Ignore the rotational structure for this problem.) 
+    (b) What is the ratio of the number in the N = 2 state to the number in the ground state?
 
 \chapter{Statistical Physics}
 Equations used:
@@ -870,4 +1035,9 @@ Equations used:
         
 \section{Problem 5} % 10.2
     Calculate the probabilities given in Table 10.3 for E = 0 and E = 3 for (a) integral spin and (b) spin 1/2.
+
+    \pagebreak
+\section{Problem 35}
+    In sodium metal at room temperature, compute the energy difference between the points at which the Fermi-Dirac distribution function has the values 0.1 and 0.9. 
+    What do you conclude about the ``sharpness'' of the distribution?
 \end{document}

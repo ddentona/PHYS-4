@@ -1,0 +1,340 @@
+\documentclass[8pt]{extarticle}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{esdiff}
+% \usepackage{fullpage}
+\usepackage{graphfig}
+\usepackage{graphicx}
+\usepackage{siunitx}
+
+\usepackage{xcolor} % \textcolor{red}{NEW: for highlighting changes}
+\usepackage[
+  paper=letterpaper,       % \textcolor{red}{NEW: set page size}
+  top=0.25in,
+  bottom=0.25in,           % \textcolor{red}{NEW: smaller bottom margin = text goes lower}
+  left=0.25in,
+  right=0.25in
+]{geometry}                % \textcolor{red}{NEW: controls text box size}
+
+\newcommand{\e}[1]{e^{#1}}
+\newcommand{\ei}[1]{e^{i\left(#1\right)}}
+\newcommand{\E}[1]{\times 10^{#1}}
+
+\begin{document}
+    \DeclareSIUnit{\amu}{amu}
+    \DeclareSIUnit{\light}{c}
+    \DeclareSIUnit{\lightyear}{c\cdot yr}
+    \DeclareSIUnit{\gauss}{G}
+    \DeclareSIUnit{\year}{yr}
+    \DeclareSIUnit{\yr}{yr}
+
+    \setlength{\parindent}{0pt}
+    \setlength{\columnsep}{0.5cm}
+    \twocolumn
+    PHYS 4D Final Exam Cheat Sheet (with \LaTeX)
+
+    \underline{Write Units}
+
+    \underline{Constants}
+        \begin{align*}
+            &h = 6.626\E{-34}\,\unit{\joule\cdot\second}    &\hbar = 1.054\E{-34}\,\unit{\joule\cdot\second}\\
+            &h = 4.135\E{-15}\,\unit{\eV\cdot\second}    &\hbar = 6.582\E{-16}\,\unit{\eV\cdot\second}\\
+            &hc = 1240\,\unit{\eV\cdot\nano\meter}  &\hbar c = 197.3\,\unit{\eV\cdot\nano\meter}\\
+            &k_B = 1.38\E{-23}\,\unit{\joule/\kelvin}   &k_B = 8.617\E{-5}\,\unit{\eV/\kelvin}\\
+            &c = 2.998\E{8}\,\unit{\meter/\second}   &e^{\pm} = \pm 1.602\E{-19}\,\unit{\coulomb}\\
+            &1\,\unit{\joule} = 6.242\E{18}\,\unit{\eV} &1\,\unit{\eV} = 1.602\E{-19}\,\unit{\joule}\\
+            &m_e = 9.11\E{-31}\,\unit{\kilo\gram} &m_e = 0.511\,\unit{\mega\eV/\light^2}\\
+            &\varepsilon_0 = 8.854\E{-12}\,\unit{\coulomb^2/\newton\meter^2} &\mu_0 = 4\pi\E{-7}\,\unit{\newton/\ampere^2}\\
+            &1\,\unit{\amu} = 1.66\E{-27}\,\unit{\kilo\gram}    &1\,\unit{\kilo\gram} = 6.022\E{26}\,\unit{\amu}
+        \end{align*}
+    
+    \underline{General Waves}
+    \begin{gather*}
+        \left( \nabla^2 \vec{\psi} = \right) \diffp[2]{\psi}{x} = \frac{1}{v^2}\diffp[2]{\psi}{t}
+        v = \lambda f = \frac{\omega}{k}\\
+        \psi(x,t) = \psi_m \cos(kx \mp \omega t);
+        f = \frac{\omega}{2\pi} = \frac{1}{T}; k = \frac{2\pi}{\lambda}
+    \end{gather*}
+    Consine can be exchanged with another function like $\sin(\theta)$ or $e^{i\theta}$.\\
+    Superposition of waves also fulfills wave equation.\\
+    Pulses tend to follow the Gaussian \\
+    ($e^{-\alpha t}$; $\int_{-\infty}^{\infty} e^{-\alpha t}\,dt = \sqrt{\frac{\pi}{\alpha}}$)
+
+    \underline{Standing waves}\\
+    Two traveling waves in opposite directions
+    \begin{gather*}
+        \psi(x,t)   =   \psi_m \cos(kx + \phi)\cos(\omega t + \phi')
+        % \psi(x,t)   
+        =   \psi_m \left( e^{i(kx - \omega t)} + e^{i(kx + \omega t)} \right)
+    \end{gather*}
+
+    \underline{Photoelectric Effect}
+        Photons hitting electrons beyond a certain energy can cause electrons to break free
+        \begin{equation*}
+            {\scriptstyle E = hf = \hbar\omega; KE_{max} = hf - \phi = eV_{stop}; I = \frac{1}{2\mu_0 c} \vec{E}_0^2}
+        \end{equation*}
+
+    \underline{Bohr Model} Proposed quantization of electron angular momentum (1 QN: $rmv = n\hbar$ for $n \in \mathbb{N}$)\\
+        Explains emission spectrum of atoms\\
+        Derived radius \& energy formulas from velocity
+        \begin{equation*}
+            r_n = \frac{4\pi\varepsilon_0\hbar}{me^2}n^2;
+            E_n = -\frac{me^4}{32\pi^2\varepsilon_0^2\hbar^2}\frac{1}{n^2} \approx \frac{-13.6\unit{\eV}}{n^2}
+        \end{equation*}
+        Bohr radius $a_0$ is $r_n$ when $n = 0$
+
+    \underline{Compton Effect} Shoot photon ($\lambda$) at electron\\ Emits photon ($\lambda'$) at angle $\theta$
+    \begin{gather*}
+        \lambda' - \lambda = \frac{h}{m_e c} (1 - \cos\theta);
+        \frac{h}{m_e c} = 0.002426\,\unit{\nano\meter}
+    \end{gather*}
+
+    De Broglie Wavelength: Quantum particles fired at a slit behave like a wave of wavelength $\lambda = \frac{h}{p}$
+
+    \underline{Schrodinger's 1D Equation}: Allows 3 QN
+    \begin{equation*}
+        \left[ -\frac{\hbar^2}{2m}\nabla^2 + V(x) \right]\psi(x) = E\psi(x)
+    \end{equation*}
+    $\vec{F} = -\nabla V$; $\psi$ is probability wave; also used to get averages (function or operator $f$) or constants\\
+    \begin{equation*}
+        P = 1 = \int_{-\infty}^{\infty} \psi^\star \psi\,dx; \left\langle f \right\rangle = \int_{-\infty}^{\infty} \psi^\star f \psi\,dx
+    \end{equation*}
+
+    \underline{Infinte Well}
+    \begin{gather*}
+        V(x) = \begin{cases}
+            0 & \text{if } a < x < b \\
+            \infty & \text{otherwise}
+        \end{cases}; \psi(x) = Ae^{ik}\\
+        k_n^2 = \frac{n^2\pi^2}{(b - a)^2} = \frac{2mE_n}{\hbar^2};
+        E_n = \frac{n^2\pi^2\hbar^2}{2m(b - a)^2} \approx \frac{n^2 * 54.8\E{-69}\,\unit{\joule\cdot\second}}{m(b - a)^2}
+    \end{gather*}
+
+    \underline{Finite Well} Transcendental algebra problem
+    \begin{gather*}
+        V(x) = \begin{cases}
+            0 & \text{if } a < x < b \\
+            V_0 & \text{otherwise}
+        \end{cases}
+    \end{gather*}
+    Waves either reflect or transmit at edge
+    \begin{equation*}
+        T = \frac{4k_1k_2}{(k_1 + k_2)^2}; 
+        R = \frac{(k_1 - k_2)^2}{(k_1 + k_2)^2}; 
+        T + R = 1
+    \end{equation*}
+
+    \underline{Harmonic Oscillator}
+    $V(x)$ follows Taylor series or $V(x) = \frac{1}{2}kx^2$; uses polynomial $H_n$
+    \begin{gather*}
+        \psi_n(x) = A_n H_n \e{-ax^2}; a = \frac{\sqrt{km}}{2\hbar}; E_n = \left( n + \frac{1}{2} \right) \hbar \sqrt{\frac{k}{m}}
+    \end{gather*}
+
+    \underline{Operators} Basically eigenvectors and eigenvalues just with functions and not vectors.
+    \begin{gather*}
+        \hat{A}\psi = A\psi; 
+        \hat{x} = x;
+        \hat{p} = -i\hbar\nabla;
+        \hat{E} = -\frac{\hbar^2}{2m}\nabla^2 + V(x)
+    \end{gather*}
+
+    \underline{Heisenberg Uncertainty Principle}
+        \begin{gather*}
+            \Delta x \Delta p \geq \hbar / 2;
+            \Delta t \Delta E \geq \hbar / 2
+        \end{gather*}
+    
+    \underline{Fourier Analysis}: An extra thing you can use for Laplace transforms
+        \begin{gather*}
+            \psi(x) = \frac{1}{\sqrt{2\pi}}\int_{-\infty}^{\infty} g(k) \e{ikx}\,dk;
+            g(k) = \frac{1}{\sqrt{2\pi}}\int_{-\infty}^{\infty} \psi(k) \e{-ikx}\,dk
+        \end{gather*}
+
+    \underline{Hydrogen Atom}:
+        3D; Uses spherical coordinates
+        \begin{gather*}
+            x = r \sin\theta \cos\phi; y = r \sin\theta \sin\phi; z = r \cos\theta\\
+            r = \sqrt{x^2 + y^2 + z^2}; \theta = \arccos\frac{z}{r}; \phi = \arctan\frac{y}{x}
+        \end{gather*}
+
+        Schrodinger's can be turned spherical.
+        \begin{equation*}
+            {\left[ \left( \diffp[2]{}{r} + \frac{2}{r}\diffp{}{r} \right) + \frac{1}{r^2\sin\theta}\diffp{}{\theta}\left( \sin\theta \diffp{}{\theta} \right) + \frac{1}{r^2\sin\theta}\diffp[2]{}{\theta}\right]\psi = E\psi}
+        \end{equation*}
+
+        Solution becomes seperable; $\Theta(\theta)$ \& $\Phi(\phi)$ in exam
+        \begin{equation*}
+            \psi(r,\theta,\phi) = R(r) \cdot \Theta(\theta) \cdot \Phi(\phi)
+        \end{equation*}
+
+        \begin{tabular}{c | c | c | c}
+            Name        & Used in   &   Values & Transition\\
+            $n$         & $R(r)$    &   $\mathbb{N}$ & N/A\\
+            $\ell$      & $R(r)$, $\Theta(\theta)$, $\vec{L}$  &   $\mathbb{N} < n$ & $\Delta \ell = \pm 1$\\
+            $m_\ell$    & $\Theta(\theta)$, $\Phi(\phi)$    &   $\mathbb{N}; -\ell \leq m_\ell \leq \ell$ & $\Delta m_\ell \in {-1,0,1}$
+        \end{tabular}
+
+        Probability functions:
+        \begin{gather*}
+            P(r) = r^2 \left| R(r) \right|^2; 
+            P(\theta, \phi) = \left| \Theta(\theta) \Phi(\phi) \right|
+        \end{gather*}
+
+    \underline{Quantum Angular Momentum ($\vec{L}$)}
+        \begin{gather*}
+            L = \hbar \sqrt{\ell(\ell + 1)};
+            L_z = m_\ell \hbar
+        \end{gather*}
+
+    \underline{Zeeman Effect}
+        Uses magnetic mield $B$
+        \begin{gather*}
+            U = m_L \mu_B B;
+            \mu_B = \frac{e^+ \hbar}{2m_e} \approx 5.788\E{-9}\,\unit{\eV/\gauss}
+        \end{gather*}
+
+    \underline{Many-Electron Atoms}
+        \begin{gather*}
+            E_n = (-13.6\,\unit{\eV})\frac{Z_{eff}^2}{n^2};
+            Z_{eff} = q_{nucleus} - q_{screeners}
+        \end{gather*}
+        For transition energies:
+        \begin{gather*}
+            \Delta E = 13.6\,\unit{\eV}(Z - 1)^2\left( \frac{1}{n_i^2} - \frac{1}{n_f^2} \right)
+        \end{gather*}
+        For electrons in incomplete shells, exists angular ($L$) \& magnetic ($M_L$) Q.N's:
+        \begin{gather*}
+            |L_i| = \hbar\sqrt{l_i(l_i + 1)};
+            L_{max} = l_1 + l_2; 
+            L_{min} = |l_1 - l_2|\\
+            L \in [L_{min}, L_{max}] \cap \mathbb{N};
+            M_L = \sum m_{l,i};
+            M_L \in [-L, L] \cap \mathbb{N}
+        \end{gather*}
+        $S$ can be computed same as $M_L$ but with spin quantum number\\
+        Hund's rule: $L = M_{L, max}$, $S = M_{S, max}$; maximize total spin\\
+        $\Delta L \in \{0, \pm 1\}; \Delta S = 0$\\
+        HeNe laser produces photons
+        \begin{gather*}
+            \lambda = 632.8\,\unit{\nano\meter}; E = 1.96\,\unit{\eV};
+            E_0 = \sqrt{\frac{2I}{c\varepsilon_0}}; I = \frac{P}{A}
+        \end{gather*} 
+
+    \underline{Molecular Structure}
+        \scriptsize
+        \begin{gather*}
+            E(H + H^+) = E(H) + E(H^+) = -13.6\,\unit{\eV} + 0; 
+            E(H_2^+) = -16.3\,\unit{\eV};
+            E(H_2) = -31.7\,\unit{\eV}
+        \end{gather*}
+        \normalsize
+        Covalent bonded atoms share electrons, forming bonding then antibonding\\
+        Bond dissociation energy inversely proportional to periodic y-coord and equilibrium separation, proportional to periodic x-coord\\
+        Ionic bonds come from 2 ions pulled by Coulombic force\\
+        Pauli exclusion prevents 2 atoms from being too close; has potential energy
+        \begin{equation*}
+            E_{molecule} = U_R + U_C + \Delta E_{ionization}; U_C = -\frac{q_1 q_2}{4\pi\varepsilon_0 R_{eq}}
+        \end{equation*}
+        Can be considered electric dipole of moment $p$, often off from measured value
+        \begin{gather*}
+            p = qr = qR_{eq}
+        \end{gather*}
+
+        Vibrational states in molecules:
+        \begin{equation*}
+            E_N = (N + \frac{1}{2})\hbar \omega; 
+            \omega = \sqrt{\frac{k}{m}} = 2\pi f;
+            \Delta N = \pm 1
+        \end{equation*}
+        Use harmonic mean for mass
+        \begin{equation*}
+            m = \left( \sum \frac{1}{m_i} \right)^{-1} \left[ = \frac{m_1 \cdot m_2}{m_1 + m_2} \right]
+        \end{equation*}
+        Rotational energy also exists, from Q.N. $L$
+        \begin{gather*}
+            E_L = \frac{L(L+1)\hbar^2}{2mR_{eq}^2};
+            B = \frac{\hbar^2}{2mR_{eq}^2};
+            \Delta L = \pm 1; 
+            2L + 1 = \sqrt{\frac{2kT}{B}}\\
+            p(E_{NL}) = (2L + 1)\e{-\frac{E_{NL}}{kT}} = (2L + 1)\e{-\frac{(N + \frac{1}{2})hf + BL(L + 1)}{kT}}
+        \end{gather*}
+
+    \underline{Statistical Physics}\\
+        Indistinguishable particles measure probability of finding one with specific energy $E$; 
+        Uses microstate weight $W_i$;
+        $U(E)$ is energy density at energy E
+        \begin{gather*}
+            p(E) = \frac{\sum_{i}^{} N_{E,i} W_i}{N_{total} \sum_{i}^{}W_i}\\
+            U(E) = E g(E) f(E);
+            dN = N(E)\,dE = V g(E) f(E)\,dE
+        \end{gather*}
+
+        Can find density of particles in energy state $E$
+        \begin{gather*}
+            g_{mass}(E) = \frac{4\pi(2s + 1)\sqrt{2}(mc^2)^{3/2}}{(hc)^3};
+            g_{\gamma}(E) = \frac{E^2}{\pi^2(\hbar c)^3} = \frac{8\pi E^2}{(hc)^3}
+        \end{gather*}
+
+        For dilute gas, go straight to Maxwell-Boltzmann.
+        \begin{gather*}
+            k = 1.38\E{-23}\,\unit{\joule/\kelvin} = 8.617\E{-5}\,\unit{\eV/\kelvin};
+            K_{avg} = \frac{3}{2}kT\\
+            N(E) = \frac{2N}{\sqrt{\pi}(kT)^{3/2}}E^{\frac{1}{2}}\e{-\frac{E}{kT}};
+            N(v) = N \sqrt{\frac{2}{\pi}}\left( \frac{m}{kT} \right)^\frac{3}{2} v^2 \e{-\frac{mv^2}{2kT}}
+        \end{gather*}
+
+        Approximate tiny distribution integrals.
+        \begin{equation*}
+            \int_{E_m}^{E_m + \Delta E} N(E) dE \approx N(E) * \Delta E
+        \end{equation*}
+
+        Doppler Broadening of Spectral Line
+        \begin{equation*}
+            \Delta f = 2f_0\sqrt{(2\ln(2))kT/mc^2}
+        \end{equation*}
+
+        Blackbody radiation energy distribution comes from Bose-Einstein distribution
+        \begin{gather*}
+            f_{BE}(E) = \frac{1}{A_{BE}\e{E/kT} - 1};
+            U = \frac{8\pi^5 k_{B}^4}{15(hc)^3}T^4
+        \end{gather*}
+
+        Fermi-Dirac energy uses Fermi energy $E_F$
+        \begin{gather*}
+            f_{FD}(E) = \frac{1}{\e{\frac{E - E_F}{kT}} + 1};
+            E_F = \frac{h^2}{2m}\left( \frac{3N}{8\pi V} \right)^\frac{2}{3}; 
+            E_m = \frac{3}{5}E_F
+        \end{gather*}
+
+    \underline{Relativity}
+        $\Delta t_0$ is proper time; $L_0$ = proper length
+        \begin{gather*}
+            \Delta t = \frac{\Delta t_0}{\sqrt{1 - u^2/c^2}}; 
+            L = L_0\sqrt{1 - u^2/c^2}\\
+            v = \frac{v' - u}{1 + v'u/c^2}; 
+            f' = f\sqrt{\frac{1 - u/c}{1 + u/c}}
+        \end{gather*}
+        Lorentz Transforms
+        \footnotesize
+        \begin{gather*}
+            x' = \frac{x - ut}{\sqrt{1 - u^2/c^2}};
+            \begin{matrix}
+                y' = y;\\
+                z' = z;
+            \end{matrix}
+            t' = \frac{t - (u/c^2)x}{\sqrt{1 - u^2/c^2}}\\
+            v'_x = \frac{v_x - u}{1 - v_x u/c^2};
+            v'_y = \frac{v_y \sqrt{1 - u^2 / c^2}}{1 - v_x u/c^2}
+            v'_z = \frac{v_z \sqrt{1 - u^2 / c^2}}{1 - v_x u/c^2}
+        \end{gather*}
+        \normalsize
+
+        Relativity alters momentum and energy; total remains constant in any dimension/direction
+        \begin{gather*}
+            \vec{p} = \frac{m\vec{v}}{\sqrt{1 - v^2/c^2}};
+            E   =   K + E_0
+                =   \frac{mc^2}{\sqrt{1 - v^2/c^2}};
+            E_0 =   mc^2\\
+            E^2 =   (pc)^2 + (mc^2)^2; E \approxeq pc
+        \end{gather*}
+\end{document}

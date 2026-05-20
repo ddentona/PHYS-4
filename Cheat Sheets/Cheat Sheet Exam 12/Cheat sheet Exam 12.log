@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.8.23)  19 MAY 2026 12:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.8.23)  19 MAY 2026 21:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"c:/Users/ddent/OneDrive/Documents/CCSF/PHYS-4/Cheat Sheets/Cheat Sheet Exam 11/Cheat sheet Exam 11.tex"
-(c:/Users/ddent/OneDrive/Documents/CCSF/PHYS-4/Cheat Sheets/Cheat Sheet Exam 11/Cheat sheet Exam 11.tex
+**"c:/Users/ddent/OneDrive/Documents/CCSF/PHYS-4/Cheat Sheets/Cheat Sheet Exam 12/Cheat sheet Exam 12.tex"
+(c:/Users/ddent/OneDrive/Documents/CCSF/PHYS-4/Cheat Sheets/Cheat Sheet Exam 12/Cheat sheet Exam 12.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
 (C:\Users\ddent\AppData\Local\Programs\MiKTeX\tex/latex/extsizes\extarticle.cls
@@ -221,8 +221,8 @@ Package translations Info: No language package found. I am going to use `english
 File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count291
 \l__pdf_internal_box=\box63
-) (Cheat sheet Exam 11.aux)
-\openout1 = `"Cheat sheet Exam 11.aux"'.
+) (Cheat sheet Exam 12.aux)
+\openout1 = `"Cheat sheet Exam 12.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
 LaTeX Font Info:    ... okay on input line 23.
@@ -295,39 +295,37 @@ Package translations Info: loading dictionary `translations-basic-dictionary' fo
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 27.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 34.
 (C:\Users\ddent\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 27.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 34.
  (C:\Users\ddent\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 10000) in paragraph at lines 85--87
+Underfull \hbox (badness 10000) in paragraph at lines 97--99
 
  []
 
 [1
 
 
-{C:/Users/ddent/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2
-
-] (Cheat sheet Exam 11.aux)
+{C:/Users/ddent/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2] (Cheat sheet Exam 12.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 8072 strings out of 474486
- 184948 string characters out of 5743755
- 1973542 words of memory out of 5000000
- 30296 multiletter control sequences out of 15000+600000
+ 8089 strings out of 474486
+ 185304 string characters out of 5743755
+ 1975542 words of memory out of 5000000
+ 30313 multiletter control sequences out of 15000+600000
  561814 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 73i,16n,80p,353b,615s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 73i,16n,80p,340b,622s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmex7.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmex8.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/ddent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on "Cheat sheet Exam 11.pdf" (2 pages, 178025 bytes).
+Output written on "Cheat sheet Exam 12.pdf" (2 pages, 177596 bytes).
 PDF statistics:
  74 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
